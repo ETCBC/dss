@@ -1,0 +1,135 @@
+@ separates Hebrew lexemes from their parsing details
+% separates Aramaic
+X = joins (as an example) prepositions and suffixes
+0 = unreadable
+
+particles
+
+P = particle
+
+c = conjunction
+p = preposition
+a = article
+o = object
+i = interjection
+ii = interrogative
+n = negative
+r = relative
+d = adverb
++ = compound preposition
+
+nouns (part of speech, type, gender, number, state)
+
+n = noun
+
+c = common
+p = proper
+
+m = masculine
+f = feminine
+
+p = plural
+s = singular
+d = dual
+b = both
+
+c = construct
+a = absolute
+
+adjectives
+u = number
+c = cardinal
+
+a = adjective
+
+m = masculine
+f = feminine
+
+s = singular
+d = dual
+c = construct
+
+d = determined
+
+
+
+verbs (part of speech, binyanim, aspect, person, gender, number, jussive)
+
+v = verb
+
+q = qal
+Q = passive qal
+h = hifil
+n = nifal
+p = piel
+P = pual
+t = hitpael
+H = hofal
+a = palel
+b = hpealal
+d = pilpel
+e = polel
+f = polal
+i = pulal
+k = poel
+l - poal
+m = tifil
+s = hishtafel
+u = hotpaal
+v = hit-opel
+w = hitpalpel
+x = nitpael
+
+
+Aramaic
+A = aphel
+B = haphel
+D = hophal
+F = hithpeel
+H = hishtaphel
+K = ithpaal
+L = ithpeel
+M = pael
+N = peal
+O = peil
+R = shaphel
+S = hithpaal
+V = ithpoel
+1 = Apoel
+
+d = determined
+
+v = imperative
+P = participle
+p = perfect
+w = preterite
+i = imperfect
+q = infinitive
+s = passive participle
+v = imperative
+
+c = construct
+a = absolute
+
+1 = 1st person
+2 = 2nd person
+3 = 3rd person
+m = masculine
+f = feminine
+
+j = jussive
+h = cohortativeheh
+
+pronoun (part of speech, state, person, gender, number)
+p = pronoun
+i = independent
+ii = interrogative
+
+
+Xh = paragogicHeh
+Xd = directionalHeh
+Xn = paragogicNun
+
+
+suffix (X joins suffix to the word before, person, gender, number)
+

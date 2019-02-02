@@ -1,2 +1,2 @@
-# dss
-Dead Sea Scrolls in TF format based on Abegg's data
+# qumran
+Qumran texts in TF format based on Abegg's data
