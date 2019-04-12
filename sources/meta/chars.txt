@@ -1,3 +1,4 @@
+# consonant
 א	a
 ב	b
 ג	g
@@ -26,7 +27,8 @@ m	M
 שׂ	c
 שׁ	v
 ת	t
-־	-
+
+# vowel
 ַ	A
 ָ	D
 ֶ	R
@@ -38,3 +40,25 @@ m	M
 ֲ	S
 ֱ	T
 ֳ	F
+
+# punctuation
+־	-
+׃	.
+
+# bracket
+(
+)
+<
+>
+{
+}
+[
+]
+«
+»
+≤
+≥
+
+# flag
+«
+¥

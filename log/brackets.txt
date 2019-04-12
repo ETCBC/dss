@@ -1,0 +1,139 @@
+BRACKETS ≥ ≤ ...
+	   bib:          2989 occurrences
+	   bib: WARNING: 1 imbalances
+
+		   bib: 87400      ≥     l/hM
+		   bib: 87401      ≥     ol
+		   bib: 87402      ≥     py
+		   bib: 87403      ≥     yhwh
+		   bib: 87404      ≥     .
+		   bib: 87405      ≥ ==> ≥
+		   bib: 87406      ≥     ≤
+		   bib: 87407      ≥     [
+		   bib: 87408      ≥     /
+		   bib: 87409      ≥     w
+		   bib: 87410      ≥     ydbr
+		
+
+	nonbib:          4053 occurrences
+	nonbib: WARNING: 1 imbalances
+
+		nonbib: 36143      ≤     --
+		nonbib: 36144      ≤     [
+		nonbib: 36145      ≤     ]
+		nonbib: 36146      ≤     --
+		nonbib: 36147      ≤     [\\\\]
+		nonbib: 36148      ≤ ==> ≤]
+		nonbib: 36149      ≤     --
+		nonbib: 36150      ≤     [
+		nonbib: 36151      ≤     ]
+		nonbib: 36152      ≤     --
+		nonbib: 36153      ≤     [\\
+		
+
+BRACKETS » « ...
+	   bib: OK       776 balanced occurrences
+
+	nonbib: OK       1036 balanced occurrences
+
+BRACKETS ) ( ...
+	   bib:          41 occurrences
+	   bib: WARNING: 1 imbalances
+
+		   bib:185447      (     mh
+		   bib:185448      (     ypw
+		   bib:185449      (     ddy/K
+		   bib:185450      (     ajwt/y
+		   bib:185451      (     /
+		   bib:185452      ( ==> h«\\wØ(
+		   bib:185453      (     mh
+		   bib:185454      (     fb|]w[
+		   bib:185455      (     ddy/K
+		   bib:185456      (     mN
+		   bib:185457      (     yyN
+		
+
+	nonbib: OK       626 balanced occurrences
+
+BRACKETS > < ...
+	   bib: OK       8 balanced occurrences
+
+	nonbib: OK       182 balanced occurrences
+
+BRACKETS } { ...
+	   bib: OK       4 balanced occurrences
+
+	nonbib: OK       146 balanced occurrences
+
+BRACKETS ] [ ...
+	   bib: OK       55718 balanced occurrences
+
+	nonbib:          131978 occurrences
+	nonbib: WARNING: 4 imbalances
+
+		nonbib: 36143      ]     --
+		nonbib: 36144      ]     [
+		nonbib: 36145      ]     ]
+		nonbib: 36146      ]     --
+		nonbib: 36147      ]     [\\\\]
+		nonbib: 36148      ] ==> ≤]
+		nonbib: 36149      ]     --
+		nonbib: 36150      ]     [
+		nonbib: 36151      ]     ]
+		nonbib: 36152      ]     --
+		nonbib: 36153      ]     [\\
+
+		nonbib:140500      ]     --
+		nonbib:140501      ]     b
+		nonbib:140502      ]     [CAAå
+		nonbib:140503      ]     w
+		nonbib:140504      ]     b]
+		nonbib:140505      ] ==> CA]AAå[
+		nonbib:140506      ]     ]
+		nonbib:140507      ]     --
+		nonbib:140508      ]     b
+		nonbib:140509      ]     CAA[åAAåAAå
+		nonbib:140510      ]     w
+
+		nonbib:140578      ]     a|
+		nonbib:140579      ]     b
+		nonbib:140580      ]     CAAåAAAå
+		nonbib:140581      ]     w
+		nonbib:140582      ]     b]
+		nonbib:140583      ] ==> C]AA[A|å|AAAå
+		nonbib:140584      ]     bt|w»lt
+		nonbib:140585      ]     a
+		nonbib:140586      ]     b
+		nonbib:140587      ]     CA|]A[å|AAåAAå
+		nonbib:140588      ]     w
+
+		nonbib:140612      ]     w
+		nonbib:140613      ]     b
+		nonbib:140614      ]     DAAAåAAå
+		nonbib:140615      ]     w
+		nonbib:140616      ]     b]
+		nonbib:140617      ] ==> DAAAAA]AAå
+		nonbib:140618      ]     gdy
+		nonbib:140619      ]     [a|
+		nonbib:140620      ]     b
+		nonbib:140621      ]     DA]AåA[AåAAå
+		nonbib:140622      ]     w
+		
+
+BRACKETS >> << ...
+	   bib: OK       86 balanced occurrences
+
+	nonbib: OK       208 balanced occurrences
+
+BRACKETS }} {{ ...
+	   bib: OK       386 balanced occurrences
+
+	nonbib: OK       1026 balanced occurrences
+
+BRACKETS ]] [[ ...
+	   bib: OK       0 balanced occurrences
+
+	nonbib: OK       0 balanced occurrences
+
+OVERALL IMBALANCES:  7
+OVERALL OCCURRENCES: 199263
