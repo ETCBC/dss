@@ -287,7 +287,9 @@ def readChars():
   with open(CHAR_TABLE) as fh:
     curGroup = ''
     for line in fh:
-      line = line.rstrip()
+      line = line.rstrip('\n')
+      if not line:
+        continue
       if line.startswith('#'):
         curGroup = line.split(maxsplit=1)[1]
       else:
@@ -384,7 +386,7 @@ def checkChars():
       cRep = c
       orig = origFromTrans[c]
     freq = charsFound[c]
-    charRep = f'{cRep} => {orig}' if cRep != orig else cRep
+    charRep = cRep if cRep == orig else f'{cRep} => {orig}'
     report(f'{charRep} occurs {freq:>6} x', only=True)
 
 
@@ -498,9 +500,9 @@ def convert():
   readBooks()
   readData(limit=None)
   if checkSource:
-    checkBooks()
     checkChars()
     checkBrackets()
+    checkBooks()
 
   cv = getConverter()
 

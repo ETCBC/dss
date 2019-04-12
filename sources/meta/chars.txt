@@ -41,6 +41,9 @@ m	M
 ֱ	T
 ֳ	F
 
+# whitespace
+ 	 
+
 # punctuation
 ־	-
 ׃	.
