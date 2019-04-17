@@ -35,7 +35,7 @@ TF_DIR = f'{BASE}/tf'
 
 # SOURCE DECODING
 
-tr = Transcription()
+TR = Transcription()
 
 BIB = 'bib'
 NONBIB = 'nonbib'
@@ -93,9 +93,6 @@ for (src, fields) in COLUMNS.items():
     CLEN[src] = len(CINDEX[src])
 
 
-MISSING = '--'
-MISSING_ESC = '‥'
-
 CONSONANTS = (
     ('א', 'a'),
     ('ב', 'b'),
@@ -105,7 +102,7 @@ CONSONANTS = (
     ('ו', 'w'),
     ('ז', 'z'),
     ('ח', 'j'),
-    ('ט', 't'),
+    ('ט', 'f'),
     ('י', 'y'),
     ('כ', 'k'),
     ('ך', 'K'),
@@ -122,39 +119,83 @@ CONSONANTS = (
     ('ץ', 'X'),
     ('ק', 'q'),
     ('ר', 'r'),
-    ('שׂ', 'c'),
-    ('שׁ', 'v'),
+    ('שׂ', 'c'),  # FB2B sin
+    ('שׁ', 'v'),  # FB2A shin
+    ('שׁ', 'C'),  # 05E9 dotless shin
     ('ת', 't'),
 )
 CONSONANT_SET = {x[1] for x in CONSONANTS}
 
 VOWELS = (
-    ('\u05b7', 'A'),
-    ('\u05b8', 'D'),
-    ('\u05b6', 'R'),
-    ('\u05b5', 'E'),
-    ('\u05b4', 'I'),
-    ('\u05b9', 'O'),
-    ('\u05b3', 'F'),
-    ('\u05bb', 'U'),
-    ('\u05b2', 'S'),
-    ('\u05b1', 'T'),
+    ('\u05b0', 'V'),  # sheva
+    ('\u05b0', '∂'),  # sheva ??
+    ('\u05b0', '√'),  # sheva ??
+    ('\u05b0', 'J'),  # sheva after kaf
+    ('\u05b1', 'T'),  # hataf segol
+    ('\u05b2', 'S'),  # hataf patah
+    ('\u05b3', 'F'),  # hataf qamats
+    ('\u05b3', 'ƒ'),  # hataf qamats ??
+    ('\u05b4', 'I'),  # hiriq
+    ('\u05b4', 'ˆ'),  # hiriq ??
+    ('\u05b4', 'î'),  # hiriq ??
+    ('\u05b4', 'Ê'),  # hiriq without preceding consonant
+    ('\u05b5', 'E'),  # tsere
+    ('\u05b5', 'é'),  # tsere ??
+    ('\u05b5', '´'),  # tsere ??
+    ('\u05b6', 'R'),  # segol
+    ('\u05b6', '®'),  # segol ??
+    ('\u05b6', '‰'),  # segol ??
+    ('\u05b7', 'A'),  # patah
+    ('\u05b8', 'D'),  # qamats
+    ('\u05b8', 'Î'),  # qamats ??
+    ('\u05b8', 'Å'),  # qamats ??
+    ('\u05b9', 'O'),  # holam
+    ('\u05ba', 'ø'),  # holam ??
+    ('\u05ba', 'Ï'),  # holam ??
+    ('\u05bb', 'U'),  # qubbuts
+    ('\u05bb', 'ü'),  # qubbuts ??
+    ('\u05bb', '¨'),  # qubbuts ??
 )
 VOWEL_SET = {x[1] for x in VOWELS}
 
-WHITESPACE = (
-    (' ', '\u00a0'),
+LETTERS = (
 )
-WHITESPACE_SET = {x[1] for x in WHITESPACE}
+LETTER_SET = {x[1] for x in LETTERS}
 
+POINTS = (
+    ('\u05bc', ';'),  # dagesh
+)
 
-PUNCTUATION = (
+POINT_SET = {x[1] for x in POINTS}
+
+ACCENTS = (
+    ('', '◊'),  # ??
+    ('', '…'),  # ??
+    ('', 'Ú'),  # ??
+    ('', '¥'),  # ??
+    ('', 'Ω'),  # ??
+)
+
+ACCENT_SET = {x[1] for x in ACCENTS}
+
+PUNCTS = (
     ('־', '-'),
     ('׃', '.'),
 )
-PUNCTUATION_SET = {x[1] for x in PUNCTUATION}
+PUNCT_SET = {x[1] for x in PUNCTS}
 
-DIGIT = (
+HEBREW_MAP = {}
+for chars in (CONSONANTS, VOWELS, POINTS, ACCENTS, PUNCTS):
+  for (o, t) in chars:
+    HEBREW_MAP[t] = o
+
+CONSONANT = 'consonant'
+VOWEL = 'vowel'
+POINT = 'point'
+ACCENT = 'point'
+PUNCT = 'punct'
+
+DIGITS = (
     ('0', '0'),
     ('1', '1'),
     ('2', '2'),
@@ -167,57 +208,58 @@ DIGIT = (
     ('9', '9'),
 )
 
+NUMERALS = (
+    ('1A', 'A'),
+    ('1a', 'å'),
+    ('1B', 'B'),
+    ('1f', '∫'),
+    ('10', 'C'),
+    ('20', 'D'),
+    ('100', 'F'),
+)
+CAPITALS = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+
+NUMERAL_SET = {x[1] for x in NUMERALS + DIGITS} | CAPITALS
+NUMERALS_INV = {}
+NUMERALS_INV.update({k: k for k in CAPITALS})
+NUMERALS_INV.update({k: value for (value, k) in NUMERALS})
+NUMERALS_INV.update({k: value for (value, k) in DIGITS})
+
+ONE = '\\'
+ONE_REPL = '/'
+
+TOKENS = (
+    ('missing', '░'),
+    ('doubtful', '?'),
+    ('uncertain', '/'),
+    ('uncertain', '\\'),
+    ('unknown', '�'),
+    ('add', '+'),
+    ('paleodivider', '±'),
+)
+TOKEN_SET = {x[1] for x in TOKENS}
+TOKENS_INV = {k: name for (name, k) in TOKENS}
+
+MISSING = '--'
+MISSING_ESC = '░'
+
+# nonbib 53527 lex: CHAG
+# nonbib 53566 lex: HN
+# nonbib 53584 lex: THE
+#    only occurrences of GH
+
+WHITESPACE = (
+    (' ', '\u00a0'),
+)
+WHITESPACE_SET = {x[1] for x in WHITESPACE}
+
 FLAGS = (
     ('damaged', '«'),
-    ('f1', '¥'),
-    ('f2', '+'),
-    ('f3', '/'),
-    ('f4', ';'),
-    ('f5', '?'),
-    ('f6', 'B'),
-    ('f7', 'C'),
-    ('f8', 'G'),
-    ('f9', 'H'),
-    ('f10', 'J'),
-    ('f11', 'V'),
-    ('f12', '\\'),
-    ('f13', '_'),
-    ('f14', 'f'),
-    ('f15', 'i'),
-    ('f16', '|'),
-    ('f17', '¨'),
-    ('f18', '®'),
-    ('f19', '±'),
-    ('f20', '´'),
-    ('f21', 'Å'),
-    ('f22', 'Ê'),
-    ('f23', 'Î'),
-    ('f24', 'Ï'),
-    ('f25', 'Ø'),
-    ('f26', 'Ú'),
-    ('f27', 'å'),
-    ('f28', 'é'),
-    ('f29', 'î'),
-    ('f30', 'ø'),
-    ('f31', 'ü'),
-    ('f32', 'ƒ'),
-    ('f33', 'ˆ'),
-    ('f34', '˝'),
-    ('f35', 'Ω'),
-    ('f36', '‥'),
-    ('f37', '…'),
-    ('f38', '‰'),
-    ('f39', '∂'),
-    ('f40', '√'),
-    ('f41', '∫'),
-    ('f42', '◊'),
-    ('f43', '�'),
+    ('damagedUncertain', '|'),
+    ('uncertain', 'Ø'),
 )
 
-unknownRe = re.compile(r'^[fc][0-9]+$')
-
 FLAGS_INV = {k: name for (name, k) in FLAGS}
-KNOWN_FLAGS = {k: name for (name, k) in FLAGS if not unknownRe.match(name)}
 
 BRACKETS = (
     ('correction_ancient', False, '>>', '<<', '┤', '├'),  # vl vr
@@ -234,24 +276,25 @@ BRACKETS = (
 BRACKETS_INV = {}
 BRACKETS_INV.update({x[4] if len(x) > 4 else x[2]: (x[0], True) for x in BRACKETS})
 BRACKETS_INV.update({x[5] if len(x) > 4 else x[3]: (x[0], False) for x in BRACKETS})
-KNOWN_BRACKETS = {k: v for (k, v) in BRACKETS_INV.items() if not unknownRe.match(v[0])}
 
 BRACKETS_ESC = tuple(x for x in BRACKETS if len(x) > 4)
 BRACKETS_ESCPURE = tuple(x for x in BRACKETS if len(x) > 4 and not x[1])
 BRACKETS_SPECIAL = tuple(x for x in BRACKETS if x[1])
 
-CMAP = {}
-for kind in (CONSONANTS, VOWELS, WHITESPACE, PUNCTUATION, DIGIT):
-  CMAP.update({t: o for (o, t) in kind})
+BRACKETS_ESCAPED = (
+    {x[2] for x in BRACKETS_ESC} |
+    {x[3] for x in BRACKETS_ESC}
+)
 
-EMAP = {}
-for kind in (CONSONANTS, VOWELS, PUNCTUATION):
-  EMAP.update({t: tr.from_hebrew(o) for (o, t) in kind})
+CHARS = set()
+for kind in (CONSONANTS, VOWELS, POINTS, ACCENTS, PUNCTS, LETTERS, NUMERALS, WHITESPACE, DIGITS):
+  CHARS |= {x[1] for x in kind}
 
-CMAP.update({f[1]: f[1] for f in FLAGS})
-CMAP.update({b[2]: b[4] if len(b) > 4 else b[2] for b in BRACKETS})
-CMAP.update({b[3]: b[5] if len(b) > 4 else b[3] for b in BRACKETS})
+for kind in (TOKENS, FLAGS):
+  CHARS |= {x[1] for x in kind}
 
+CHARS |= {b[2] for b in BRACKETS}
+CHARS |= {b[3] for b in BRACKETS}
 
 bEsc = {}
 bEsc.update({x[2]: x[4] for x in BRACKETS_ESC})
@@ -303,6 +346,18 @@ FIXES = dict(
         157910: {
             TRANS: ('^b', '^b^', 'imbalance in ^ brackets'),
         },
+        191862: {
+            TRANS: ('y»tkwØ_nw', 'y»tkwØnw', '_ removed (1 of 3)'),
+        },
+        225327: {
+            TRANS: ('t_onh]', 'tonh]', '_ removed (1 of 3)'),
+        },
+        259060: {
+            TRANS: ('oyN_', 'oyN', '_ removed (1 of 3)'),
+        },
+        291988: {
+            TRANS: ('[˝w»b|a|]', '[w»b|a|]', 'strange, unique character removed'),
+        },
     },
     bib={
         147775: {
@@ -310,6 +365,9 @@ FIXES = dict(
         },
         158295: {
             TRANS: ('[\\\\]^', '[\\\\]', 'imbalance in ^ brackets'),
+        },
+        202008: {
+            TRANS: ('alwhiM', 'alwhyM', 'hireq => yod'),
         },
     },
 )
@@ -514,6 +572,7 @@ def tokenizeData():
   def esc(text):
     nonlocal prevS
 
+    text = text.replace(ONE, ONE_REPL)
     text = text.replace(MISSING, MISSING_ESC)
     for bs in BRACKETS_SPECIAL:
       bRe = bSpecialRe[bs[0]]
@@ -570,12 +629,13 @@ def checkChars():
   charsMapped = set()
   charsUnmapped = {}
   exampleLimit = 3
-  charsFlag = {}
+  charsLetter = {}
+  numerals = collections.Counter()
 
   def showFlagChars():
-    lexes = set(charsFlag[LEX]) if LEX in charsFlag else set()
-    transes = set(charsFlag[TRANS]) if TRANS in charsFlag else set()
-    for (name, freqs) in sorted(charsFlag.items()):
+    lexes = set(charsLetter[LEX]) if LEX in charsLetter else set()
+    transes = set(charsLetter[TRANS]) if TRANS in charsLetter else set()
+    for (name, freqs) in sorted(charsLetter.items()):
       report(f'\t{name}:')
       for (c, freq) in sorted(freqs.items(), key=lambda x: (-x[1], x[0])):
         label = (
@@ -587,17 +647,30 @@ def checkChars():
         )
         report(f'\t\t{label:<5} {c} {freq:>6} x')
 
+  def showNumerals():
+    report('NUMERALS')
+    for (num, freq) in sorted(numerals.items()):
+      report(f'\t{num:<30} : {freq:>5} x')
+
   lexDisRe = re.compile(r'(?:^[0-9]+$)|(?:[_-][0-9]+$)')
+  numeralRe = re.compile(f'[{"".join(NUMERALS_INV)}]+')
 
   for src in dataRaw:
     for (i, fields) in dataRaw[src]:
       word = fields[TRANS]
       lex = fields[LEX]
       lexBare = lexDisRe.sub('', lex)
+      isNumeral = word.isupper()
+      if isNumeral:
+        nums = numeralRe.findall(word)
+        for num in nums:
+          numerals[num] += 1
       for (name, text) in ((TRANS, word), (LEX, lexBare)):
         for c in text:
           charsFound[c] += 1
-          if c in CMAP:
+          if isNumeral and c.isupper() and name == TRANS and c not in CHARS:
+            charsMapped.add(c)
+          elif c in CHARS:
             charsMapped.add(c)
           else:
             if c in charsUnmapped:
@@ -605,10 +678,10 @@ def checkChars():
                 charsUnmapped[c].append((src, i, fields))
             else:
               charsUnmapped[c] = [(src, i, fields)]
-        if c in FLAGS_INV:
-          charsFlag.setdefault(name, collections.Counter())[c] += 1
+          if c in LETTER_SET:
+            charsLetter.setdefault(name, collections.Counter())[c] += 1
 
-  unused = set(charsFound) - charsMapped
+  unused = set(CHARS) - charsMapped - BRACKETS_ESCAPED - {MISSING_ESC}
   if unused:
     report(f'WARNING: {len(unused)} declared but unused characters')
     unusedStr = ''.join(sorted(unused))
@@ -630,6 +703,7 @@ def checkChars():
     report('OK: no unmapped characters')
   report(f'MAPPED ({len(charsMapped)})')
   showFlagChars()
+  showNumerals()
 
 
 def checkBracketPair(b, e):
@@ -713,14 +787,6 @@ def prepare():
   global logh
   logh = open(REPORT, 'w')
 
-  if os.path.exists(OUT_DIR):
-    rmtree(OUT_DIR)
-  os.makedirs(LOG_DIR, exist_ok=True)
-  if not os.path.exists(LOG_DIR):
-    os.makedirs(LOG_DIR, exist_ok=True)
-  TF = Fabric(locations=[OUT_DIR])
-  return CV(TF)
-
 
 def finalize():
   logh.close()
@@ -729,10 +795,10 @@ def finalize():
 # SET UP CONVERSION
 
 def getConverter():
-  if not os.path.exists(LOG_DIR):
-    os.makedirs(LOG_DIR, exist_ok=True)
   if os.path.exists(OUT_DIR):
     rmtree(OUT_DIR)
+  if not os.path.exists(LOG_DIR):
+    os.makedirs(LOG_DIR, exist_ok=True)
   TF = Fabric(locations=[OUT_DIR])
   return CV(TF)
 
@@ -782,6 +848,11 @@ def director(cv):
     if token:
       curSlot = cv.slot()
       cv.feature(curSlot, lettersa=token, type=typ)
+      if typ in {CONSONANT, VOWEL, POINT, ACCENT, PUNCT}:
+        letterso = ''.join(HEBREW_MAP[c] for c in token)
+        letterse = TR.from_hebrew(letterso)
+        cv.feature(curSlot, letterso=letterso, letterse=letterse)
+
       for kind in curBrackets:
         cv.feature(curSlot, **{kind: 1})
 
@@ -812,27 +883,47 @@ def director(cv):
         curLine = cv.node(LINE)
 
       word = fields[TRANS]
+      isNumeral = word.isupper()
       token = ''
       typ = None
       for c in word:
-        if c in CONSONANT_SET:
+        if c in TOKEN_SET:
+          addSlot()
+          token = c
+          typ = TOKENS_INV[c]
+          addSlot()
+        elif c in CONSONANT_SET:
           addSlot()
           token = c
           typ = 'consonant'
         elif c in VOWEL_SET:
-          token += c
-        elif c in PUNCTUATION_SET:
+          if token and typ == 'consonant':
+            token += c
+          else:
+            addSlot()
+            token = c
+            typ = 'vowel'
+            addSlot()
+        elif isNumeral and c in NUMERAL_SET:
+          if token and typ == 'numeral':
+            token += c
+          else:
+            addSlot()
+            token = c
+            typ = 'numeral'
+        elif c in PUNCT_SET:
           addSlot()
           token = c
           typ = 'punctuation'
+          addSlot()
         elif c in WHITESPACE_SET:
           addSlot()
           token = c
           typ = 'whitespace'
-        elif c in KNOWN_FLAGS:
-          cv.feature(curSlot, **{KNOWN_FLAGS[c]: 1})
-        elif c in KNOWN_BRACKETS:
-          (kind, isOpen) = KNOWN_BRACKETS[c]
+        elif c in FLAGS_INV:
+          cv.feature(curSlot, **{FLAGS_INV[c]: 1})
+        elif c in BRACKETS_INV:
+          (kind, isOpen) = BRACKETS_INV[c]
           if isOpen:
             curBrackets.add(kind)
           else:
