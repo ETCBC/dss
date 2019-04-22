@@ -2,14 +2,15 @@
 Reading    bib beginning-end ...242661 lines
 Reading nonbib beginning-end ...340161 lines
 FIXES:
-	bib   :147775 "[^≥" => "[≥"              : applied
-	bib   :158295 "[\\]^" => "[\\]"          : applied
-	bib   :202008 "alwhiM" => "alwhyM"       : applied
-	nonbib:157910 "^b" => "^b^"              : applied
-	nonbib:191862 "y»tkwØ_nw" => "y»tkwØnw"  : applied
-	nonbib:225327 "t_onh]" => "tonh]"        : applied
-	nonbib:259060 "oyN_" => "oyN"            : applied
-	nonbib:291988 "[˝w»b|a|]" => "[w»b|a|]"  : applied
+	bib   :147775 "[^≥" => "[≥" (imbalance in ^ brackets : applied
+	bib   :158295 "[\\]^" => "[\\]" (imbalance in ^ brackets : applied
+	bib   :202008 "alwhiM" => "alwhyM" (hireq => yod : applied
+	nonbib:157910 "^b" => "^b^" (imbalance in ^ brackets : applied
+	nonbib:191862 "y»tkwØ_nw" => "y»tkwØnw" (_ removed (1 of 3) : applied
+	nonbib:225327 "t_onh]" => "tonh]" (_ removed (1 of 3) : applied
+	nonbib:259060 "oyN_" => "oyN" (_ removed (1 of 3) : applied
+	nonbib:291988 "[˝w»b|a|]" => "[w»b|a|]" (strange, unique character removed : applied
+	nonbib:313632 "13,3,1" => "13" (strange numbering replaced by plain number : applied
 DIAGNOSTICS 43 lines
 bib   :   482 	SCROLL -Q2        => 1Q2
 bib   :   829 	SCROLL -Q3        => 1Q3
@@ -56,6 +57,152 @@ bib   :237020 	SCROLL -4Se1      => 34Se1
 bib   :237062 	SCROLL -Se1       => 34Se1
 OK: no unmapped characters
 MAPPED (102)
+	in lex field:
+		both  /      1 x
+		both  0      1 x
+		both  A  62534 x
+		both  B    125 x
+		both  C    171 x
+		both  D  49510 x
+		both  E  28591 x
+		both  F    315 x
+		both  I  37459 x
+		both  K   6532 x
+		both  M  25937 x
+		both  N  26996 x
+		both  P   3538 x
+		both  R  33727 x
+		both  S  13120 x
+		both  T   3530 x
+		both  X   4434 x
+		both  \ 114780 x
+		both  a  81965 x
+		both  b  64384 x
+		both  d  33022 x
+		both  f   7046 x
+		both  g   9372 x
+		both  h  89716 x
+		both  j  26308 x
+		both  k  29396 x
+		both  l  86753 x
+		both  m  45484 x
+		both  n  23289 x
+		both  o  44001 x
+		both  p  14562 x
+		both  q  17060 x
+		both  r  64992 x
+		both  s   7226 x
+		both  t  29254 x
+		both  w  91727 x
+		both  x  10080 x
+		both  y  65547 x
+		both  z   8511 x
+		both         1 x
+		both  å   4468 x
+		both  �     18 x
+		onl<y ;  69366 x
+		onl<y J   3483 x
+		onl<y O  18212 x
+		onl<y U   1115 x
+		onl<y V  66618 x
+		onl<y c  10780 x
+		onl<y v  44565 x
+		onl<y ¥   1237 x
+		onl<y ¨     39 x
+		onl<y ®   9560 x
+		onl<y ´   2180 x
+		onl<y Å   4442 x
+		onl<y Ê    279 x
+		onl<y Î  10417 x
+		onl<y Ï      4 x
+		onl<y Ú   9043 x
+		onl<y é   2655 x
+		onl<y î   4683 x
+		onl<y ø  28135 x
+		onl<y ü    110 x
+		onl<y ƒ    165 x
+		onl<y ˆ  12627 x
+		onl<y Ω    129 x
+		onl<y …  14888 x
+		onl<y ‰   7680 x
+		onl<y ∂  13231 x
+		onl<y √   3908 x
+		onl<y ◊  50405 x
+	in trans field:
+		both  /  61594 x
+		both  0      2 x
+		both  A   1229 x
+		both  B    234 x
+		both  C  55786 x
+		both  D    249 x
+		both  E      2 x
+		both  F      9 x
+		both  I      1 x
+		both  K   9761 x
+		both  M  35416 x
+		both  N  16926 x
+		both  P   1976 x
+		both  R      1 x
+		both  S      1 x
+		both  T      2 x
+		both  X   3096 x
+		both  \  26568 x
+		both  a  86552 x
+		both  b  64389 x
+		both  d  32847 x
+		both  f   7071 x
+		both  g   9352 x
+		both  h  94367 x
+		both  j  26289 x
+		both  k  38648 x
+		both  l  86326 x
+		both  m  57483 x
+		both  n  35044 x
+		both  o  43924 x
+		both  p  16142 x
+		both  q  17041 x
+		both  r  64645 x
+		both  s   7251 x
+		both  t  58588 x
+		both  w 143484 x
+		both  x  11419 x
+		both  y 124829 x
+		both  z   8484 x
+		both       380 x
+		both  å    145 x
+		both  �      3 x
+		onl<y (    334 x
+		onl<y )    333 x
+		onl<y +     65 x
+		onl<y - 107761 x
+		onl<y .  29915 x
+		onl<y 1     20 x
+		onl<y 2     16 x
+		onl<y 3     14 x
+		onl<y 4     12 x
+		onl<y 5     11 x
+		onl<y 6      6 x
+		onl<y 7      5 x
+		onl<y 8      2 x
+		onl<y 9      2 x
+		onl<y <    389 x
+		onl<y >    389 x
+		onl<y ?    610 x
+		onl<y G      1 x
+		onl<y H      3 x
+		onl<y [  93846 x
+		onl<y ]  93850 x
+		onl<y ^   3164 x
+		onl<y {   1487 x
+		onl<y |  40190 x
+		onl<y }   1487 x
+		onl<y «  26878 x
+		onl<y ±     18 x
+		onl<y »  15541 x
+		onl<y Ø  10327 x
+		onl<y ∫     13 x
+		onl<y ≤   3521 x
+		onl<y ≥   3521 x
 NUMERALS
 	A                              :    48 x
 	AA                             :    21 x

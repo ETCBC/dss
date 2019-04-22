@@ -209,13 +209,13 @@ DIGITS = (
 )
 
 NUMERALS = (
-    ('1A', 'A'),
-    ('1a', 'å'),
-    ('1B', 'B'),
-    ('1f', '∫'),
-    ('10', 'C'),
-    ('20', 'D'),
-    ('100', 'F'),
+    (' 1A ', 'A'),
+    (' 1a ', 'å'),
+    (' 1B ', 'B'),
+    (' 1f ', '∫'),
+    (' 10 ', 'C'),
+    (' 20 ', 'D'),
+    (' 100 ', 'F'),
 )
 CAPITALS = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 
@@ -225,23 +225,23 @@ NUMERALS_INV.update({k: k for k in CAPITALS})
 NUMERALS_INV.update({k: value for (value, k) in NUMERALS})
 NUMERALS_INV.update({k: value for (value, k) in DIGITS})
 
-ONE = '\\'
-ONE_REPL = '/'
-
-TOKENS = (
-    ('missing', '░'),
-    ('doubtful', '?'),
-    ('uncertain', '/'),
-    ('uncertain', '\\'),
-    ('unknown', '�'),
-    ('add', '+'),
-    ('paleodivider', '±'),
-)
-TOKEN_SET = {x[1] for x in TOKENS}
-TOKENS_INV = {k: name for (name, k) in TOKENS}
-
 MISSING = '--'
 MISSING_ESC = '░'
+
+TOKENS = (
+    ('missing', '--', '░', ' 0 '),
+    ('doubtful', '?', None, ' ~ '),
+    ('uncertain', '/', None, ' ? '),
+    ('uncertain', '\\', '/', ' ? '),
+    ('unknown', '�', None, ' ! '),
+    ('add', '+', '+', ' + '),
+    ('paleodivider', '±', None, ' | '),
+)
+TOKENS_ESC = {x[1]: x[2] for x in TOKENS if x[2]}
+TOKENS_UNESC = {x[2]: x[1] for x in TOKENS if x[2]}
+TOKEN_SET = {x[2] or x[1] for x in TOKENS}
+TOKENS_INV = {k or a: name for (name, a, k, x) in TOKENS}
+TOKENS_REP = {name: x for (name, a, k, x) in TOKENS}
 
 # nonbib 53527 lex: CHAG
 # nonbib 53566 lex: HN
@@ -249,42 +249,47 @@ MISSING_ESC = '░'
 #    only occurrences of GH
 
 WHITESPACE = (
-    (' ', '\u00a0'),
+    ('_', '\u00a0'),
 )
 WHITESPACE_SET = {x[1] for x in WHITESPACE}
 
 FLAGS = (
-    ('damaged', '«'),
-    ('damagedUncertain', '|'),
-    ('uncertain', 'Ø'),
+    ('damaged', '«', '#'),
+    ('damagedUncertain', '|', '#?'),
+    ('uncertain', 'Ø', '?'),
 )
 
-FLAGS_INV = {k: name for (name, k) in FLAGS}
+FLAGS_INV = {k: name for (name, k, x) in FLAGS}
+FLAGS_REP = {name: x for (name, a, k, x) in FLAGS}
 
 BRACKETS = (
-    ('correction_ancient', False, '>>', '<<', '┤', '├'),  # vl vr
-    ('correction_modern', False, '>', '<'),
-    ('correction_supra', True, '^', '^', '┛', '┗'),  # UL UR
-    ('removed_ancient', False, '}}', '{{', '┫', '┣'),  # VL VR
-    ('removed_modern', False, '}', '{'),
-    ('vacat', False, '≥', '≤'),
-    ('alternative', False, ')', '('),
-    ('reconstruction_modern', False, ']', '['),
-    ('c1', True, '»', '«', '┘', '└'),  # ul ur
+    ('correctionAncient', False, '>>', '<<', '┤', '├', '(<< ', ' >>)'),  # vl vr
+    ('correctionModern', False, '>', '<', None, None, '(< ', ' >)'),
+    ('correctionSupra', True, '^', '^', '┛', '┗', '(^ ', ' ^)'),  # UL UR
+    ('removedAncient', False, '}}', '{{', '┫', '┣', '({{ ', ' }})'),  # VL VR
+    ('removedModern', False, '}', '{', None, None, '({ ', ' })'),
+    ('vacat', False, '≥', '≤', None, None, '(<= ', ' =>)'),
+    ('alternative', False, ')', '(', None, None, '( ', ' )'),
+    ('reconstructionModern', False, ']', '[', None, None, '[ ', ' ]'),
+    ('damaged', True, '»', '«', '┘', '└', '(# ', ' #)'),  # ul ur
 )
 
 BRACKETS_INV = {}
-BRACKETS_INV.update({x[4] if len(x) > 4 else x[2]: (x[0], True) for x in BRACKETS})
-BRACKETS_INV.update({x[5] if len(x) > 4 else x[3]: (x[0], False) for x in BRACKETS})
+BRACKETS_INV.update({x[4] or x[2]: (x[0], True) for x in BRACKETS})
+BRACKETS_INV.update({x[5] or x[3]: (x[0], False) for x in BRACKETS})
 
-BRACKETS_ESC = tuple(x for x in BRACKETS if len(x) > 4)
-BRACKETS_ESCPURE = tuple(x for x in BRACKETS if len(x) > 4 and not x[1])
+BRACKETS_ESC = tuple(x for x in BRACKETS if x[4] or x[5])
+BRACKETS_ESCPURE = tuple(x for x in BRACKETS if (x[4] or x[5]) and not x[1])
 BRACKETS_SPECIAL = tuple(x for x in BRACKETS if x[1])
 
 BRACKETS_ESCAPED = (
     {x[2] for x in BRACKETS_ESC} |
     {x[3] for x in BRACKETS_ESC}
 )
+
+BRACKETS_REP = {}
+BRACKETS_REP.update({x[4] or x[2]: x[6] for x in BRACKETS})
+BRACKETS_REP.update({x[5] or x[3]: x[7] for x in BRACKETS})
 
 CHARS = set()
 for kind in (CONSONANTS, VOWELS, POINTS, ACCENTS, PUNCTS, LETTERS, NUMERALS, WHITESPACE, DIGITS):
@@ -335,7 +340,8 @@ def bunesc(c):
 def unesc(text):
   for (cEsc, c) in bUnesc.items():
     text = text.replace(cEsc, c)
-  text = text.replace(MISSING_ESC, MISSING)
+  for (tx, t) in TOKENS_UNESC.items():
+    text = text.replace(tx, t)
   return text
 
 
@@ -358,6 +364,9 @@ FIXES = dict(
         291988: {
             TRANS: ('[˝w»b|a|]', '[w»b|a|]', 'strange, unique character removed'),
         },
+        313632: {
+            LINE: ('13,3,1', '13', 'strange numbering replaced by plain number'),
+        }
     },
     bib={
         147775: {
@@ -375,7 +384,7 @@ FIXES = dict(
 
 # TF CONFIGURATION
 
-slotType = 'consonant'
+slotType = 'sign'
 
 generic = dict(
     acronym='dss',
@@ -433,6 +442,33 @@ featureMeta = {
     },
     'after': {
         'description': 'material between this word and the next',
+    },
+    'construction_ancient': {
+        'description': 'correction made by an ancient editor',
+    },
+    'construction_modern': {
+        'description': 'correction made by a modern editor',
+    },
+    'construction_supra': {
+        'description': 'supralinear (ancient) correction',
+    },
+    'removed_ancient': {
+        'description': 'removed by an ancient editor',
+    },
+    'removed_modern': {
+        'description': 'removed by a modern editor',
+    },
+    'reconstruction_modern': {
+        'description': 'reconstructed by a modern editor',
+    },
+    'vacat': {
+        'description': 'empty space',
+    },
+    'alternative': {
+        'description': 'alternative reading',
+    },
+    'damaged': {
+        'description': 'damaged material',
     },
 }
 
@@ -557,7 +593,7 @@ def readData(start=None, end=None):
               if applied is True else
               f'not applicable to "{applied}'
           )
-          fixRep = f'{src:<6}:{line:>6} "{text}" => "{correction}"'
+          fixRep = f'{src:<6}:{line:>6} "{text}" => "{correction}" ({reason}'
           report(f'\t{fixRep:<40} : {statusRep}')
 
     report(f'DIAGNOSTICS {len(diags)} lines')
@@ -572,8 +608,8 @@ def tokenizeData():
   def esc(text):
     nonlocal prevS
 
-    text = text.replace(ONE, ONE_REPL)
-    text = text.replace(MISSING, MISSING_ESC)
+    for (t, tx) in TOKENS_ESC.items():
+      text = text.replace(t, tx)
     for bs in BRACKETS_SPECIAL:
       bRe = bSpecialRe[bs[0]]
       text = bRe.sub(bSpecialRepl(bs[4], bs[5]), text)
@@ -632,19 +668,21 @@ def checkChars():
   charsLetter = {}
   numerals = collections.Counter()
 
-  def showFlagChars():
+  def showChars():
     lexes = set(charsLetter[LEX]) if LEX in charsLetter else set()
     transes = set(charsLetter[TRANS]) if TRANS in charsLetter else set()
-    for (name, freqs) in sorted(charsLetter.items()):
-      report(f'\t{name}:')
-      for (c, freq) in sorted(freqs.items(), key=lambda x: (-x[1], x[0])):
+    charsLetterShow = {}
+    for (name, freqs) in charsLetter.items():
+      for (c, freq) in freqs.items():
         label = (
             'both'
             if c in lexes and c in transes else
-            'lex'
-            if c in lexes else
-            'trans'
+            'only'
         )
+        charsLetterShow.setdefault(name, []).append((label, c, freq))
+    for (name, items) in sorted(charsLetterShow.items()):
+      report(f'\tin {name} field:')
+      for (label, c, freq) in sorted(items):
         report(f'\t\t{label:<5} {c} {freq:>6} x')
 
   def showNumerals():
@@ -678,8 +716,7 @@ def checkChars():
                 charsUnmapped[c].append((src, i, fields))
             else:
               charsUnmapped[c] = [(src, i, fields)]
-          if c in LETTER_SET:
-            charsLetter.setdefault(name, collections.Counter())[c] += 1
+          charsLetter.setdefault(name, collections.Counter())[c] += 1
 
   unused = set(CHARS) - charsMapped - BRACKETS_ESCAPED - {MISSING_ESC}
   if unused:
@@ -702,7 +739,7 @@ def checkChars():
   else:
     report('OK: no unmapped characters')
   report(f'MAPPED ({len(charsMapped)})')
-  showFlagChars()
+  showChars()
   showNumerals()
 
 
@@ -830,14 +867,28 @@ def convert():
   return result
 
 
+def verseNum(text):
+  if text.isdigit():
+    return (text, None)
+  return (text[0:-1], text[-1])
+
+
 # DIRECTOR
 
 def director(cv):
   report('Compiling feature data from tokens')
 
+  prevBook = None
+  prevChapter = None
+  prevVerse = None
+
   prevScroll = None
   prevFragment = None
   prevLine = None
+
+  curBook = None
+  curChapter = None
+  curVerse = None
 
   curScroll = None
   curFragment = None
@@ -852,11 +903,14 @@ def director(cv):
         letterso = ''.join(HEBREW_MAP[c] for c in token)
         letterse = TR.from_hebrew(letterso)
         cv.feature(curSlot, letterso=letterso, letterse=letterse)
+      elif typ in {TOKENS}:
+        letterso = TOKENS_REP[typ]
 
       for kind in curBrackets:
         cv.feature(curSlot, **{kind: 1})
 
   nScroll = 0
+  nBook = 0
   for (src, lines) in dataToken.items():
     curSlot = None
     curBrackets = set()
@@ -873,14 +927,54 @@ def director(cv):
         curScroll = cv.node(SCROLL)
         curFragment = cv.node(FRAGMENT)
         curLine = cv.node(LINE)
+        cv.feature(curScroll, acro=thisScroll)
+        cv.feature(curFragment, label=thisFragment)
+        cv.feature(curLine, number=int(thisLine))
       elif fields[FRAGMENT] != prevFragment:
         cv.terminate(curLine)
         cv.terminate(curFragment)
         curFragment = cv.node(FRAGMENT)
         curLine = cv.node(LINE)
+        cv.feature(curFragment, label=thisFragment)
+        cv.feature(curLine, number=int(thisLine))
       elif fields[LINE] != prevLine:
         cv.terminate(curLine)
         curLine = cv.node(LINE)
+        cv.feature(curLine, number=int(thisLine))
+
+      if src == 'bib':
+        thisBook = fields[BOOK]
+        thisChapter = fields[CHAPTER]
+        thisVerse = fields[VERSE]
+        (vnum, vlabel) = verseNum(thisVerse)
+        if fields[BOOK] != prevBook:
+          nBook += 1
+          cv.terminate(curVerse)
+          cv.terminate(curChapter)
+          cv.terminate(curBook)
+          curBook = cv.node(BOOK)
+          curChapter = cv.node(CHAPTER)
+          curVerse = cv.node(VERSE)
+          cv.feature(curBook, acro=thisBook)
+          cv.feature(curChapter, label=thisChapter)
+          cv.feature(curVerse, number=vnum)
+          if vlabel:
+            cv.feature(curVerse, label=vlabel)
+        elif fields[CHAPTER] != prevChapter:
+          cv.terminate(curVerse)
+          cv.terminate(curChapter)
+          curChapter = cv.node(CHAPTER)
+          curVerse = cv.node(VERSE)
+          cv.feature(curChapter, label=thisChapter)
+          cv.feature(curVerse, number=vnum)
+          if vlabel:
+            cv.feature(curVerse, label=vlabel)
+        elif fields[VERSE] != prevVerse:
+          cv.terminate(curVerse)
+          curVerse = cv.node(VERSE)
+          cv.feature(curVerse, number=vnum)
+          if vlabel:
+            cv.feature(curVerse, label=vlabel)
 
       word = fields[TRANS]
       isNumeral = word.isupper()
@@ -932,10 +1026,18 @@ def director(cv):
       prevScroll = thisScroll
       prevFragment = thisFragment
       prevLine = thisLine
+      if src == 'bib':
+        prevBook = thisBook
+        prevChapter = thisChapter
+        prevVerse = thisVerse
 
     cv.terminate(curLine)
     cv.terminate(curFragment)
     cv.terminate(curScroll)
+    if src == 'bib':
+      cv.terminate(curVerse)
+      cv.terminate(curChapter)
+      cv.terminate(curBook)
 
   return True
 
