@@ -120,14 +120,14 @@ feature | values | Abegg | ETCBC | Unicode | description
 **correction** | `2` | `>>zwnh«<<` | `(<< ZWNH# >>)` | | material is corrected by an ancient editor, marked by being within double angle brackets  `<< >>`
 **correction** | `3` | `^dbr/y^` | `(^ DBR ? J ^)` | | material is corrected by an ancient editor, marked by being within double angle brackets  `<< >>`
 **reconstruction** | `1` | `]p[n»y` | `[P]N##Y` | | material is reconstructed by a modern editor, marked by being within square brackets  `[ ]`
-**removed** | `1` | `}m«x«r«yØM«{` | `{M(# Y #)R#J?m#}` | | material is removed by a modern editor, marked by being within single braces  `< >`
-**removed** | `2` | `twlo}}t{{` | `TWL<{{t}}` | | material is removed by an ancient editor, marked by being within double braces  `<< >>`
-**token[aeu]** | `m` | `M` | `מ` | | transliteration of an individual sign
+**removed** | `1` | `}m«x«r«yØM«{` | `{M#Y#R#J?m#}` | | material is removed by a modern editor, marked by being within single braces  `{ }`
+**removed** | `2` | `twlo}}t{{` | `TWL<{{t}}` | | material is removed by an ancient editor, marked by being within double braces  `{{ }}`
+**token[aeu]** | | `m` | `M` | `מ` | transliteration of an individual sign
 **type** | | | | | type of sign, see table above
 **uncertain** | `1` | `b«NØ` | `B#n?` | | indicates *uncertainty of degree=1* by flag `|`
-**uncertain** | `2` | `at«` `aj«y»/K` | `>T#` `>X(# J #) ? k` | | indicates *uncertainty of degree=2* by flag `«` or brackets `« »`
+**uncertain** | `2` | `at«` `aj«y»/K` | `>T#` `>X#J##) ? k` | | indicates *uncertainty of degree=2* by flag `«` or brackets `« »`
 **uncertain** | `3` | `]p[n»y` | `[P]N##Y` | | indicates *uncertainty of degree=3* by flag `»`
-**uncertain** | `4` | `a|hrwN` | `>#?HRWn` | | indicates *uncertainty of degree=4* by flag `|`
+**uncertain** | `4` | `a\|hrwN` | `>#?HRWn` | | indicates *uncertainty of degree=4* by flag `\|`
 **vacat** | `1` | `≥ ≤` | `(- -)` | | indicates an empty, unwritten space by brackets `≤ ≥`
 
 Node type [*word*](#word)
@@ -329,7 +329,7 @@ source | etcbc | unicode | description
 --- | --- | --- | ---
 `--` | ` 0 ` | `ε` | missing sign
 `?` | ` ? ` | ` ? ` | uncertain sign, note spaces around the unicode representation
-`\\` | ` ~ ` | `~` | doubtful sign
+``\`` | ` ~ ` | `~` | doubtful sign
 `�` | ` ! ` | `!` | doubtful sign
 `+` | ` + ` | `+` | addition symbol between numerals
 
