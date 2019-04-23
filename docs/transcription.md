@@ -119,14 +119,14 @@ feature | values | Abegg | ETCBC | Unicode | description
 **correction** | `1` | `yqw>mw<N` | `JQW(< MW >)n` | | material is corrected by a modern editor, marked by being within single angle brackets  `< >`
 **correction** | `2` | `>>zwnh«<<` | `(<< ZWNH# >>)` | | material is corrected by an ancient editor, marked by being within double angle brackets  `<< >>`
 **correction** | `3` | `^dbr/y^` | `(^ DBR ? J ^)` | | material is corrected by an ancient editor, marked by being within double angle brackets  `<< >>`
-**reconstruction** | `1` | `]p[n»y` | `[P]N##Y` | | material is reconstructed by a modern editor, marked by being within square brackets  `[ ]`
+**reconstruction** | `1` | `]p[n»y` | `[P]N#?Y` | | material is reconstructed by a modern editor, marked by being within square brackets  `[ ]`
 **removed** | `1` | `}m«x«r«yØM«{` | `{M#Y#R#J?m#}` | | material is removed by a modern editor, marked by being within single braces  `{ }`
 **removed** | `2` | `twlo}}t{{` | `TWL<{{t}}` | | material is removed by an ancient editor, marked by being within double braces  `{{ }}`
 **token[aeu]** | | `m` | `M` | `מ` | transliteration of an individual sign
 **type** | | | | | type of sign, see table above
 **uncertain** | `1` | `b«NØ` | `B#n?` | | indicates *uncertainty of degree=1* by flag `|`
-**uncertain** | `2` | `at«` `aj«y»/K` | `>T#` `>X#J##) ? k` | | indicates *uncertainty of degree=2* by flag `«` or brackets `« »`
-**uncertain** | `3` | `]p[n»y` | `[P]N##Y` | | indicates *uncertainty of degree=3* by flag `»`
+**uncertain** | `2` | `at«` `aj«y»/K` | `>T#` `>X#J#?) ? k` | | indicates *uncertainty of degree=2* by flag `«` or brackets `« »`
+**uncertain** | `3` | `]p[n»y` | `[P]N#?Y` | | indicates *uncertainty of degree=3* by flag `»`
 **uncertain** | `4` | `a\|hrwN` | `>#?HRWn` | | indicates *uncertainty of degree=4* by flag `\|`
 **vacat** | `1` | `≥ ≤` | `(- -)` | | indicates an empty, unwritten space by brackets `≤ ≥`
 
@@ -136,7 +136,7 @@ Sequence of signs separated corresponding to a single line in the Abegg data fil
 If a word is adjacent to a next word, the Abegg data file has `B` in a certain column,
 and we leave the *after* feature without value.
 
-feature | values | description
+feature | Abegg | ETCBC | Unicode | description
 ------- | ------ | ------ | -----------
 **after** | ` ` | | | whether there is a space after a word and before the next word
 **letters[aeu]** | `mmnw` | `MMNW]` | `ממנו` | letters of a word excluding flags and brackets and punctuation, but with white space
@@ -152,6 +152,8 @@ Clusters of different types need not be nested properly with respect to each oth
 
 The type of a cluster is stored in the feature `type`.
 
+This is a summary of the source encoding, see also the features at the sign level with the same names above.
+
 type | value | examples | description
 ------- | ------ | ------ | ---
 `correction` | `1` | `< >` | correction made by a modern editor
@@ -160,7 +162,7 @@ type | value | examples | description
 `removed` | `1` | `{ }` | removed by a modern editor
 `removed` | `2` | `{{  }}` | removed by an ancient editor
 `reconstruction` | `1` | `[ ]` | reconstructed by a modern editor
-`vacat` | `1` | `≤ ≥)` | empty space
+`vacat` | `1` | `≤ ≥` | empty space
 `alternative` | `1` | `( )` | alternative
 `uncertain` | `1` `2` `3` `4` | `« »` | uncertain, with level of uncertainty
 
@@ -176,7 +178,7 @@ Subdivision of a containing [*fragment*](#fragment).
 Corresponds to a set of source data lines with the same value in the *line* column.
 
 feature | values | description
-------- | ------ | ------ | -----------
+------- | ------ | ------
 **number** | `3` | number of a physical line (integer valued)
 
 Node type [*fragment*](#fragment)
@@ -190,7 +192,7 @@ Corresponds to a set of source data lines with the same value in the *fragment* 
 For non-biblical scrolls, the fragment is usually called *column*. 
 
 feature | values | description
-------- | ------ | ------ | -----------
+------- | ------ | ------
 **label** | `f3` | label of a physical fragment or column
 
 Node type [*scroll*](#scroll)
@@ -201,7 +203,7 @@ Section level 1.
 Corresponds to a set of source data lines with the same value in the *scroll* column.
 
 feature | values | description
-------- | ------ | ------ | -----------
+------- | ------ | ------
 **acro** | `1Q1` | short name of a physical scroll
 
 Node type [*halfverse*](#halfverse)
@@ -215,7 +217,7 @@ Corresponds to a set of source data lines with the same non-numerical part in th
 Not every verse is divided in half verses.
 
 feature | values | description
-------- | ------ | ------ | -----------
+------- | ------ | ------
 **number** | `3` | number of its containing part
 **label** | `a` | the non-numerical part of the verse number
 
@@ -230,7 +232,7 @@ Corresponds to a set of source data lines with the same numerical part in the *v
 The division in verses may or may not coincide with the division in lines.
 
 feature | values | description
-------- | ------ | ------ | -----------
+------- | ------ | ------
 **number** | `3` | number of a verse line (integer valued), without the non-integer part
 
 Node type [*chapter*](#chapter)
@@ -244,7 +246,7 @@ Corresponds to a set of source data lines with the same value in the *chapter* c
 The division in chapters may or may not coincide with the division in fragments.
 
 feature | values | description
-------- | ------ | ------ | -----------
+------- | ------ | ------
 **label** | `6` `f6` | label of a chapter
 
 Node type [*book*](#book)
@@ -257,7 +259,7 @@ Corresponds to a set of source data lines with the same value in the *book* colu
 The division in books may or may not coincide with the division in scrolls.
 
 feature | values | description
-------- | ------ | ------ | -----------
+------- | ------ | ------
 **acro** | `Gen` `1Q1` | short name of a book
 
 Slots
