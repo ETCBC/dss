@@ -88,11 +88,12 @@ Reference table of features
 
 *(Keep this under your pillow)*
 
-Some features come in three variants, with the last letter being:
+Some features come in three variants, a main variant
+and two variants with the letter *e* of *a* after the feature name.
 
-* **a** the original transcription (Abegg)
+* *main variant* the unicode value
 * **e** the ETCBC transcription, or something that fits into ETCBC transcriptions
-* **u** the unicode value
+* **a** the original transcription (Abegg)
 
 Node type [*sign*](#sign)
 -------------------------
@@ -105,7 +106,8 @@ The type of sign is stored in the feature `type`.
 type | examples | rewritten/etcbc | unicode | description
 ------- | ------ | ------ | --- | ---
 `consonant` | `m` `M` | `M` `m`| `מ` `ם` | normal consonantal letter
-`punctuation` | ` ` `-` `.` `±` `/`| `_` `&` `00` `62` `61`| ` ` `־` `׃` `״` `׳`| non-breaking space, maqaf, sof pasuq, paleo divider, morpheme break 
+`vowel` | `I` | `I`| ` ִ ` | normal consonantal letter
+`punct` | ` ` `-` `.` `±` `/`| `_` `&` `00` `62` `61`| ` ` `־` `׃` `״` `׳`| non-breaking space, maqaf, sof pasuq, paleo divider, morpheme break 
 `numeral` | `A` `B` `C` `D` `F` `å` `∫`  | ` 1A ` ` 1B ` ` 10 ` ` 20 ` ` 100 ` ` 1a ` ` 1f ` | ` 1A ` ` 1B ` ` 10 ` ` 20 ` ` 100 ` ` 1a ` ` 1f ` | a numeral, only in words that are a numeral as a whole
 `missing` | `--` | ` 0 ` | `ε` | representation of a missing sign
 `uncertain` | `?` | ` ? ` | ` ? ` | representation of an uncertain sign (degree 1)
@@ -122,7 +124,7 @@ feature | values | Abegg | ETCBC | Unicode | description
 **reconstruction** | `1` | `]p[n»y` | `[P]N#?Y` | | material is reconstructed by a modern editor, marked by being within square brackets  `[ ]`
 **removed** | `1` | `}m«x«r«yØM«{` | `{M#Y#R#J?m#}` | | material is removed by a modern editor, marked by being within single braces  `{ }`
 **removed** | `2` | `twlo}}t{{` | `TWL<{{t}}` | | material is removed by an ancient editor, marked by being within double braces  `{{ }}`
-**glyph[aeu]** | | `m` | `M` | `מ` | transliteration of an individual sign
+**glyph[ea]** | | `m` | `M` | `מ` | transliteration of an individual sign
 **type** | | | | | type of sign, see table above
 **uncertain** | `1` | `b«NØ` | `B#n?` | | indicates *uncertainty of degree=1* by flag `|`
 **uncertain** | `2` | `at«` `aj«y»/K` | `>T#` `>X#J#?) ? k` | | indicates *uncertainty of degree=2* by flag `«` or brackets `« »`
@@ -139,9 +141,10 @@ and we leave the *after* feature without value.
 feature | Abegg | ETCBC | Unicode | description
 ------- | ------ | ------ | --- | --------
 **after** | ` ` | | | whether there is a space after a word and before the next word
-**letters[aeu]** | `mmnw` | `MMNW]` | `ממנו` | letters of a word excluding flags and brackets and punctuation, but with white space
-**punc[aeu]** | `.` | `00` | `׃` | punctuation at the end of a word
-**trans[aeu]** | `mm/nw[` | `MM61NW]` | `ממ׳נו]` | full transcription of a word, including flags and clustering characters
+**glyph[ea]** | `mmnw` | `MMNW]` | `ממנו` | letters of a word excluding flags and brackets
+**lex[ea]** | `mIN` | `MIn` | `מִן` | lexeme of a word
+**punc[ea]** | `.` | `00` | `׃` | punctuation at the end of a word
+**full[ea]** | `mm/nw[` | `MM61NW]` | `ממ׳נו]` | full transcription of a word, including flags and clustering characters
 
 Node type [*cluster*](#cluster)
 -------------------------------
@@ -278,11 +281,11 @@ This is the basic unit of writing.
 
 **The node type [*sign*](#sign) is our slot type in the Text-Fabric representation of this corpus.**
 
-All signs have the features **type** and **glyph[aeu]**.
+All signs have the features **type** and **glyph[ea]**.
 
 The *type* stores the kind of glyph, such as `consonant`.
-The *glypha glyphe glyphu* features store the transcription of the glyph, without any flags
-and brackets. They store it in the Abegg transcription, ETCBC transcription, and in Unicode.
+The *glyph glyphe glypha* features store the transcription of the glyph, without any flags
+and brackets. They store it in Unicode, ETCBC transcription, and Abegg code.
 
 These features do not suffice to reconstruct the original Abegg transcription.
 
@@ -429,24 +432,25 @@ Words are the contents of the transcription fields of the source data lines.
 Words will be separated by spaces and punctuation, or by nothing, in case the
 connection field in the same source data line has a `B`. 
 
-They have features **letters[aeu] trans[aeu] punc[aeu] after**.
+They have features **glyph[ea] full[ea] punc[ea] after**.
 
-For each of the letters `a e u` there is such a feature, and it gives the value in
-Abegg, ETCBC, and Unicode representation respectively.
+The bare feature contains the Unicode representation.
+For each of the letters `e a` there is such a feature, and it gives the value in
+ETCBC and Abegg transcription.
 
-* **trans[aeu]** full value of the word: letters, symbols, punctuation, brackets;
-  `transa` is the original content of the trans field in the source data file
-* **letters[aeu]** letter value of the word: consonants, vowels, digits, numerals;
-  no punctuation, flags, or brackets;
-  if there are no letters, this feature has no value for that word;
-* **punc[aeu]** the trailing punctuation of a word, if any;
+* **full[ea]** full value of the word: letters, symbols, punctuation, brackets;
+  `fulla` is the original content of the trans field in the source data file
+* **glyph[ea]** letter value of the word: consonants, vowels, digits, numerals, punctuation;
+  no flags, or brackets;
+  if there are no glyphs, this feature has no value for that word;
+* **punc[ea]** the trailing punctuation of a word, if any;
 * **after** a space when the full representation of a word should be followed by a space,
   i.e. when the connection field does not have a `B`.
 
 The source transcription can be reconstructed by walking over all words and printing
 
 ```
-transa + after
+fulla + after
 ```
 
 for each word.
@@ -454,7 +458,7 @@ for each word.
 A non-text-critical transcription can be generated by printing 
 
 ```
-lettersa + punca + after
+glypha + punca + after
 ```
 
 for each word.
@@ -462,8 +466,8 @@ for each word.
 Or, in ETCBC transcription / Unicode:
 
 ```
-letterse + punce + after
-lettersu + puncu + after
+glyphe + punce + after
+glyph + punc + after
 ```
 
 These features will be used in the *text-formats* below.
@@ -478,9 +482,12 @@ format | kind | description
 `text-orig-full` | plain | the full source data, including flags and cluster characters, in unicode
 `text-trans-full` | plain | the full source data, including flags and cluster characters, in etcbc transcription
 `text-source-full` | plain | the full source data, including flags and cluster characters, in Abegg transcription
-`text-orig-plain` | plain | the essential bits: letters and numerals, no flags and brackets and punctuation; in unicode
-`text-trans-plain` | plain | the essential bits: letters and numerals, no flags and brackets and punctuation; in etcbc transcription
-`text-source-plain` | plain | the essential bits: letters and numerals, no flags and brackets and punctuation; in Abegg transcription
+`text-orig-plain` | plain | the essential bits: glyphs, no flags and brackets; in unicode
+`text-trans-plain` | plain | the essential bits: glyphs, no flags and brackets; in etcbc transcription
+`text-source-plain` | plain | the essential bits: glyphs, no flags and brackets; in Abegg transcription
+`lex-orig-full` | plain | lexeme of a word in unicode
+`lex-trans-full` | plain | lexeme of a word in etcbc transcription
+`lex-source-full` | plain | lexeme of a word in Abegg transcription
 `layout-orig-full` | layout | as `text-orig-full` but the flag and cluster information is visible in layout
 `layout-trans-full` | layout | as `text-trans-full` but the flag and cluster information is visible in layout
 `layout-source-full` | layout | as `text-source-full` but the flag and cluster information is visible in layout

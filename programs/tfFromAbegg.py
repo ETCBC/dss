@@ -51,12 +51,21 @@ HALFVERSE = 'halfverse'
 SCROLL = 'scroll'
 FRAGMENT = 'fragment'
 LINE = 'line'
-TRANS = 'trans'
+CLUSTER = 'cluster'
+WORD = 'word'
+SIGN = 'sign'
 LEX = 'lex'
+
+TRANS = 'trans'
+
 MORPH = 'morph'
 BOUND = 'bound'
 INTERLINEAR = 'interlinear'
 SCRIPT = 'script'
+
+B = 'B'
+
+# fields
 
 COLUMNS = {
     BIB: (
@@ -94,6 +103,17 @@ for (src, fields) in COLUMNS.items():
     CLEN[src] = len(CINDEX[src])
 
 
+# character types
+
+CONSONANT = 'consonant'
+VOWEL = 'vowel'
+POINT = 'point'
+PUNCT = 'punct'
+NUMERAL = 'numeral'
+MISSING = 'missing'
+UNCERTAIN = 'uncertain'
+ADD = 'add'
+
 CONSONANTS = (
     ('א', 'a'),
     ('ב', 'b'),
@@ -125,7 +145,7 @@ CONSONANTS = (
     ('שׁ', 'C'),  # 05E9 dotless shin
     ('ת', 't'),
 )
-CONSONANT_SET = {x[1] for x in CONSONANTS}
+CONSONANTS_SET = {x[1] for x in CONSONANTS}
 
 VOWELS = (
     ('\u05b0', 'V'),  # sheva
@@ -158,11 +178,7 @@ VOWELS = (
     ('\u05bb', 'ü'),  # qubbuts
     ('\u05bb', '¨'),  # qubbuts
 )
-VOWEL_SET = {x[1] for x in VOWELS}
-
-LETTERS = (
-)
-LETTER_SET = {x[1] for x in LETTERS}
+VOWELS_SET = {x[1] for x in VOWELS}
 
 POINTS = (
     ('\u05bc', ';'),  # dagesh
@@ -172,7 +188,7 @@ POINTS = (
     ('\u05bc', 'Ω'),  # dagesh
 )
 
-POINT_SET = {x[1] for x in POINTS}
+POINTS_SET = {x[1] for x in POINTS}
 
 PUNCTS = (
     ('\u00a0', '\u00a0'),
@@ -181,30 +197,10 @@ PUNCTS = (
     ('\u05f3', '/'),  # geresh as morpheme separator
     ('\u05f4', '±'),  # gershayim as paleo divider
 )
-PUNCT_SET = {x[1] for x in PUNCTS}
+PUNCTS_SET = {x[1] for x in PUNCTS}
 
-HEBREW_MAP = {}
-for chars in (CONSONANTS, VOWELS, POINTS, PUNCTS):
-  for (o, t) in chars:
-    HEBREW_MAP[t] = o
-
-CONSONANT = 'consonant'
-VOWEL = 'vowel'
-POINT = 'point'
-PUNCT = 'punct'
-
-DIGITS = (
-    ('0', '0'),
-    ('1', '1'),
-    ('2', '2'),
-    ('3', '3'),
-    ('4', '4'),
-    ('5', '5'),
-    ('6', '6'),
-    ('7', '7'),
-    ('8', '8'),
-    ('9', '9'),
-)
+DIGITS = set('0123456789')
+CAPITALS = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 
 NUMERALS = (
     (' 1A ', 'A'),
@@ -215,33 +211,23 @@ NUMERALS = (
     (' 20 ', 'D'),
     (' 100 ', 'F'),
 )
-CAPITALS = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 
-NUMERAL_SET = {x[1] for x in NUMERALS + DIGITS} | CAPITALS
-NUMERALS_INV = {}
-NUMERALS_INV.update({k: k for k in CAPITALS})
-NUMERALS_INV.update({k: value for (value, k) in NUMERALS})
-NUMERALS_INV.update({k: value for (value, k) in DIGITS})
-
-MISSING = '--'
-MISSING_ESC = '░'
+NUMERALS_SET = {x[1] for x in NUMERALS} | DIGITS | CAPITALS
 
 TOKENS = (
-    ('missing', '--', '░', ' 0 ', 'ε'),
-    ('uncertain', '?', None, ' ? ', ' ? '),
-    ('uncertain', '\\', None, ' # ', ' # '),
-    ('uncertain', '�', None, ' #? ', ' #? '),
-    ('add', '+', '+', ' + ', '+'),
+    (MISSING, '--', '░', ' 0 ', 'ε'),
+    (UNCERTAIN, '?', None, ' ? ', ' ? '),
+    (UNCERTAIN, '\\', None, ' # ', ' # '),
+    (UNCERTAIN, '�', None, ' #? ', ' #? '),
+    (ADD, '+', '+', ' + ', '+'),
 )
 TOKENS_FIX = (
     ('/', '\\'),
 )
 TOKENS_ESC = {x[1]: x[2] for x in TOKENS if x[2]}
 TOKENS_UNESC = {x[2]: x[1] for x in TOKENS if x[2]}
-TOKEN_SET = {x[2] or x[1] for x in TOKENS}
+TOKENS_SET = {x[2] or x[1] for x in TOKENS}
 TOKENS_INV = {x[2] or x[1]: x[0] for x in TOKENS}
-TOKENS_REP = {x[2] or x[1]: x[3] for x in TOKENS}
-TOKENS_UNI = {x[2] or x[1]: x[4] for x in TOKENS}
 
 # nonbib 53527 lex: CHAG
 # nonbib 53566 lex: HN
@@ -255,8 +241,8 @@ FLAGS = (
     ('uncertain', 4, '|', '##'),
 )
 
+FLAGS_SET = {x[2] for x in FLAGS}
 FLAGS_INV = {a: name for (name, v, a, k) in FLAGS}
-FLAGS_REP = {name: k for (name, v, a, k) in FLAGS}
 FLAGS_VALUE = {name: v for (name, v, a, k) in FLAGS}
 
 BRACKETS = (
@@ -280,17 +266,10 @@ BRACKETS_ESC = tuple(x for x in BRACKETS if x[5] or x[6])
 BRACKETS_ESCPURE = tuple(x for x in BRACKETS if (x[5] or x[6]) and not x[2])
 BRACKETS_SPECIAL = tuple(x for x in BRACKETS if x[2])
 
-BRACKETS_ESCAPED = (
-    {x[3] for x in BRACKETS_ESC} |
-    {x[4] for x in BRACKETS_ESC}
-)
+GLYPHS = CONSONANTS_SET | VOWELS_SET | POINTS_SET | PUNCTS_SET | NUMERALS_SET
 
-BRACKETS_REP = {}
-BRACKETS_REP.update({x[5] or x[3]: x[7] for x in BRACKETS})
-BRACKETS_REP.update({x[6] or x[4]: x[8] for x in BRACKETS})
-
-CHARS = set()
-for kind in (CONSONANTS, VOWELS, POINTS, PUNCTS, LETTERS, NUMERALS, DIGITS):
+CHARS = DIGITS | CAPITALS
+for kind in (CONSONANTS, VOWELS, POINTS, PUNCTS, NUMERALS):
   CHARS |= {x[1] for x in kind}
 
 for (kind, index) in ((TOKENS, 1), (FLAGS, 2)):
@@ -298,6 +277,26 @@ for (kind, index) in ((TOKENS, 1), (FLAGS, 2)):
 
 CHARS |= {x[3] for x in BRACKETS}
 CHARS |= {x[4] for x in BRACKETS}
+
+
+CHARS_UNI = {}
+CHARS_REP = {}
+for chars in (CONSONANTS, VOWELS, POINTS, PUNCTS):
+  for x in chars:
+    CHARS_UNI[x[1]] = x[0]
+    CHARS_REP[x[1]] = TR.from_hebrew(x[0])
+CHARS_UNI.update({x: f' {x} ' for x in CAPITALS})
+CHARS_REP.update({x: f' {x} ' for x in CAPITALS})
+CHARS_UNI.update({x[1]: x[0] for x in NUMERALS})
+CHARS_REP.update({x[1]: x[0] for x in NUMERALS})
+CHARS_UNI.update({x[1]: f' {x[0]} ' for x in DIGITS})
+CHARS_REP.update({x[1]: f' {x[0]} ' for x in DIGITS})
+CHARS_REP.update({x[2] or x[1]: x[3] for x in TOKENS})
+CHARS_UNI.update({x[2] or x[1]: x[4] for x in TOKENS})
+CHARS_UNI.update({x[2]: x[3] for x in FLAGS})
+CHARS_REP.update({x[5] or x[3]: x[7] for x in BRACKETS})
+CHARS_REP.update({x[6] or x[4]: x[8] for x in BRACKETS})
+
 
 bEsc = {}
 bEsc.update({x[3]: x[5] for x in BRACKETS_ESC})
@@ -343,6 +342,11 @@ def unesc(text):
   return text
 
 
+lexDisRe = re.compile(r'^(.*?)(?:[_-]?)([0-9]+$)')
+lexDisXRe = re.compile(r'(?:^[0-9]+$)|(?:[_-][0-9]+$)')
+numeralRe = re.compile(f'[{"".join(NUMERALS_SET)}]+')
+
+
 # SOURCE FIXING
 
 FIXES = dict(
@@ -382,7 +386,7 @@ FIXES = dict(
 
 # TF CONFIGURATION
 
-slotType = 'sign'
+slotType = SIGN
 
 generic = dict(
     acronym='dss',
@@ -398,10 +402,13 @@ generic = dict(
 otext = {
     'sectionFeatures': 'acro,label,number',
     'sectionTypes': 'codex,fragment,line',
-    'fmt:text-orig-full': f'{{lettersu}}{{after}}',
-    'fmt:text-trans-full': f'{{lettersa}}{{after}}',
-    'fmt:text-etcbc-full': f'{{letterse}}{{after}}',
-    'fmt:lex-orig-full': f'{{lexu}}{{after}}',
+    'fmt:text-orig-full': f'{{full}}{{after}}',
+    'fmt:text-trans-full': f'{{fulla}}{{after}}',
+    'fmt:text-source-full': f'{{fulle}}{{after}}',
+    'fmt:text-orig-plain': f'{{glyph}}{{after}}',
+    'fmt:text-trans-plain': f'{{glypha}}{{after}}',
+    'fmt:text-source-plain': f'{{glyphe}}{{after}}',
+    'fmt:lex-orig-full': f'{{lex}}{{after}}',
     'fmt:lex-trans-full': f'{{lexa}}{{after}}',
     'fmt:lex-etcbc-full': f'{{lexe}}{{after}}',
 }
@@ -412,61 +419,89 @@ intFeatures = set('''
 
 featureMeta = {
     'acro': {
-        'description': 'Acronym of codex',
-    },
-    'label': {
-        'description': 'label of fragment',
-    },
-    'number': {
-        'description': 'Number of line',
-    },
-    'lettersu': {
-        'description': 'unicode hebrew letters of a word or consonant',
-    },
-    'lettersa': {
-        'description': 'transliterated text (Abegg) of a word or consonant',
-    },
-    'letterse': {
-        'description': 'transliterated text (ETCBC) of a word or consonant',
-    },
-    'lexu': {
-        'description': 'unicode hebrew letters of a lexeme',
-    },
-    'lexa': {
-        'description': 'transliterated text (Abegg) of a lexeme',
-    },
-    'lexe': {
-        'description': 'transliterated text (ETCBC) of a lexeme',
+        'description': 'acronym of a scroll or book',
     },
     'after': {
-        'description': 'material between this word and the next',
-    },
-    'construction_ancient': {
-        'description': 'correction made by an ancient editor',
-    },
-    'construction_modern': {
-        'description': 'correction made by a modern editor',
-    },
-    'construction_supra': {
-        'description': 'supralinear (ancient) correction',
-    },
-    'removed_ancient': {
-        'description': 'removed by an ancient editor',
-    },
-    'removed_modern': {
-        'description': 'removed by a modern editor',
-    },
-    'reconstruction_modern': {
-        'description': 'reconstructed by a modern editor',
-    },
-    'vacat': {
-        'description': 'empty space',
+        'description': 'space behind the word, if any',
+        'values': ' (space)',
     },
     'alternative': {
         'description': 'alternative reading',
+        'values': '1',
     },
-    'damaged': {
-        'description': 'damaged material',
+    'correction': {
+        'description': 'correction made by an ancient or modern editor',
+        'values': '1 = modern, 2 = ancient, 3 = ancient supralinear',
+    },
+    'glypha': {
+        'description': 'representation (Abegg) of a word or sign',
+    },
+    'glyphe': {
+        'description': 'representation (ETCBC) of a word or sign',
+    },
+    'glyph': {
+        'description': 'representation (Unicode) of a word or sign',
+    },
+    'label': {
+        'description': 'label of a fragment or chapter',
+    },
+    'lexa': {
+        'description': 'representation (Abegg) of a lexeme',
+    },
+    'lexe': {
+        'description': 'representation (ETCBC) of a lexeme',
+    },
+    'lexu': {
+        'description': 'representation (Unicode) of a lexeme',
+    },
+    'number': {
+        'description': 'number of line or verse',
+    },
+    'punca': {
+        'description': 'trailing punctuation (Abegg) of a word',
+    },
+    'punce': {
+        'description': 'trailing punctuation (ETCBC) of a word',
+    },
+    'puncu': {
+        'description': 'trailing punctuation (Unicode) of a word',
+    },
+    'removed': {
+        'description': 'removed by an ancient or modern editor',
+        'values': '1 = modern, 2 = ancient',
+    },
+    'reconstruction': {
+        'description': 'reconstructed by a modern editor',
+        'values': '1',
+    },
+    'fulla': {
+        'description': (
+            'full transcription (Abegg) of a word'
+            ' including flags and brackets'
+        ),
+    },
+    'fulle': {
+        'description': (
+            'full transcription (ETCBC) of a word'
+            ' including flags and brackets'
+        ),
+    },
+    'fullu': {
+        'description': (
+            'full transcription (Unicode) of a word'
+            ' including flags and brackets'
+        ),
+    },
+    'type': {
+        'description': 'type of sign or cluster',
+    },
+    'uncertain': {
+        'description': 'uncertain material in various degrees: higher degree is less certain',
+        'values': '1 2 3 4',
+    },
+    'vacat': {
+        'description': 'empty, unwritten space',
+        'values': '1',
     },
 }
 
@@ -691,14 +726,11 @@ def checkChars():
     for (num, freq) in sorted(numerals.items()):
       report(f'\t{num:<30} : {freq:>5} x')
 
-  lexDisRe = re.compile(r'(?:^[0-9]+$)|(?:[_-][0-9]+$)')
-  numeralRe = re.compile(f'[{"".join(NUMERALS_INV)}]+')
-
   for src in dataRaw:
     for (i, fields) in dataRaw[src]:
       word = fields[TRANS]
       lex = fields[LEX]
-      lexBare = lexDisRe.sub('', lex)
+      lexBare = lexDisXRe.sub('', lex)
       isNumeral = word.isupper()
       if isNumeral:
         nums = numeralRe.findall(word)
@@ -719,7 +751,7 @@ def checkChars():
               charsUnmapped[c] = [(src, i, fields)]
           charsLetter.setdefault(name, collections.Counter())[c] += 1
 
-  unused = set(CHARS) - charsMapped - BRACKETS_ESCAPED - {MISSING_ESC}
+  unused = set(CHARS) - charsMapped
   if unused:
     report(f'WARNING: {len(unused)} declared but unused characters')
     unusedStr = ''.join(sorted(unused))
@@ -897,17 +929,22 @@ def director(cv):
   curFragment = None
   curLine = None
 
+  curBrackets = {}
+
+  curWord = None
+  curSlot = None
+
+  lexIndex = {}
+
   def addSlot():
     nonlocal curSlot
     if token:
       curSlot = cv.slot()
-      cv.feature(curSlot, lettersa=token, type=typ)
-      if typ in {CONSONANT, VOWEL, POINT, PUNCT}:
-        letterso = ''.join(HEBREW_MAP[c] for c in token)
-        letterse = TR.from_hebrew(letterso)
-        cv.feature(curSlot, letterso=letterso, letterse=letterse)
-      elif typ in {TOKENS}:
-        letterso = TOKENS_REP[token]
+      cv.feature(curSlot, glypha=token, type=typ)
+      if typ in {CONSONANT, VOWEL, POINT, PUNCT, NUMERAL} | TOKENS:
+        glyphu = ''.join(CHARS_UNI[c] for c in token)
+        glyphe = ''.join(CHARS_REP[c] for c in token)
+      cv.feature(curSlot, glyphu=glyphu, glyphe=glyphe)
 
       for (name, value) in curBrackets.items():
         cv.feature(curSlot, **{name: value})
@@ -916,7 +953,6 @@ def director(cv):
   nBook = 0
   for (src, lines) in dataToken.items():
     curSlot = None
-    curBrackets = {}
     for (i, fields) in lines:
       thisScroll = fields[SCROLL]
       thisFragment = fields[FRAGMENT]
@@ -990,38 +1026,64 @@ def director(cv):
           cv.feature(curHalfVerse, number=thisVerse, label=thisHalfVerse)
 
       word = fields[TRANS]
+      lexa = fields[LEX]
+      lexaDis = lexDisRe.findall(lexa)
+      if lexaDis:
+        (lexaB, lexaN) = lexaDis
+        lexaN = f'_{lexaN}' if lexaN else ''
+        lexa = f'{lexaB}{lexaN}'
+      else:
+        (lexaB, lexaN) = (lexa, '')
+      lexu = (''.join(CHARS_UNI[c] for c in lexaB)) + lexaN
+      lexe = (''.join(CHARS_REP[c] for c in lexaB)) + lexaN
+      thisLex = lexIndex.get(lexu, None)
+      if thisLex:
+        cv.resume(thisLex)
+      else:
+        thisLex = cv.node(LEX)
+        lexIndex[lexu] = thisLex
+      curWord = cv.node(WORD)
+      cv.feature(thisLex, lexa=lexa, lexe=lexe, lexu=lexu)
+      cv.feature(curWord, lexa=lexa, lexe=lexe, lexu=lexu)
       isNumeral = word.isupper()
       token = ''
       typ = None
+      after = ' ' if fields[BOUND] == B else None
+      glypha = ''.join(c for c in word if c in GLYPHS)
+      glyphu = ''.join(CHARS_UNI[c] for c in glypha)
+      glyphe = ''.join(CHARS_REP[c] for c in glypha)
+      fulla = word
+      fullu = ''.join(CHARS_UNI[c] for c in fulla)
+      fulle = ''.join(CHARS_REP[c] for c in fulla)
       for c in word:
-        if c in TOKEN_SET:
+        if c in TOKENS_SET:
           addSlot()
           token = c
           typ = TOKENS_INV[c]
           addSlot()
-        elif c in CONSONANT_SET:
+        elif c in CONSONANTS_SET:
           addSlot()
           token = c
-          typ = 'consonant'
-        elif c in VOWEL_SET:
-          if token and typ == 'consonant':
+          typ = CONSONANT
+        elif c in VOWELS_SET:
+          if token and typ == CONSONANT:
             token += c
           else:
             addSlot()
             token = c
-            typ = 'vowel'
+            typ = VOWEL
             addSlot()
-        elif isNumeral and c in NUMERAL_SET:
-          if token and typ == 'numeral':
+        elif isNumeral and c in NUMERALS_SET:
+          if token and typ == NUMERAL:
             token += c
           else:
             addSlot()
             token = c
-            typ = 'numeral'
-        elif c in PUNCT_SET:
+            typ = NUMERAL
+        elif c in PUNCTS_SET:
           addSlot()
           token = c
-          typ = 'punctuation'
+          typ = PUNCT
           addSlot()
         elif c in FLAGS_INV:
           name = FLAGS_INV[c]
@@ -1035,6 +1097,24 @@ def director(cv):
           else:
             del curBrackets[name]
       addSlot()
+      punca = ''
+      punce = ''
+      puncu = ''
+      cv.feature(curWord, fulla=fulla, fulle=fulle, fullu=fullu, after=after)
+      if glypha:
+        cv.feature(curWord, glypha=glypha)
+      if glyphe:
+        cv.feature(curWord, glyphe=glyphe)
+      if glyphu:
+        cv.feature(curWord, glyphu=glyphu)
+      if punca:
+        cv.feature(curWord, punca=punca)
+      if punce:
+        cv.feature(curWord, punce=punce)
+      if puncu:
+        cv.feature(curWord, puncu=puncu)
+      cv.terminate(curWord)
+      cv.terminate(thisLex)
       prevScroll = thisScroll
       prevFragment = thisFragment
       prevLine = thisLine
