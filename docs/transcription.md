@@ -137,7 +137,7 @@ If a word is adjacent to a next word, the Abegg data file has `B` in a certain c
 and we leave the *after* feature without value.
 
 feature | Abegg | ETCBC | Unicode | description
-------- | ------ | ------ | -----------
+------- | ------ | ------ | --- | --------
 **after** | ` ` | | | whether there is a space after a word and before the next word
 **letters[aeu]** | `mmnw` | `MMNW]` | `ממנו` | letters of a word excluding flags and brackets and punctuation, but with white space
 **punc[aeu]** | `.` | `00` | `׃` | punctuation at the end of a word
@@ -406,7 +406,7 @@ In the table below, the *value* is the value that the associated feature has for
 signs within that type of brackets under the given description.
 
 source / unicode | etcbc | value | description
---- | --- | ---
+--- | --- | --- | ---
 `^ ^` | `(^ ^)` | 3 | correction by ancient editor, supralinear
 `>> <<` | `(<< >>)` | 3 | correction by ancient editor, supralinear
 `>> <<` | `(<< >>)` | 2 | correction by ancient editor
