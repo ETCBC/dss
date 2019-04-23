@@ -47,6 +47,7 @@ NOFIELD = '-'
 BOOK = 'book'
 CHAPTER = 'chapter'
 VERSE = 'verse'
+HALFVERSE = 'halfverse'
 SCROLL = 'scroll'
 FRAGMENT = 'fragment'
 LINE = 'line'
@@ -108,7 +109,7 @@ CONSONANTS = (
     ('ך', 'K'),
     ('ל', 'l'),
     ('מ', 'm'),
-    ('m', 'M'),
+    ('ם', 'M'),
     ('נ', 'n'),
     ('ן', 'N'),
     ('ס', 's'),
@@ -128,33 +129,34 @@ CONSONANT_SET = {x[1] for x in CONSONANTS}
 
 VOWELS = (
     ('\u05b0', 'V'),  # sheva
-    ('\u05b0', '∂'),  # sheva ??
-    ('\u05b0', '√'),  # sheva ??
-    ('\u05b0', 'J'),  # sheva after kaf
+    ('\u05b0', '√'),  # sheva
+    ('\u05b0', 'J'),  # sheva
+    ('\u05b0', '◊'),  # sheva
     ('\u05b1', 'T'),  # hataf segol
     ('\u05b2', 'S'),  # hataf patah
     ('\u05b3', 'F'),  # hataf qamats
-    ('\u05b3', 'ƒ'),  # hataf qamats ??
+    ('\u05b3', 'ƒ'),  # hataf qamats
+    ('\u05b3', 'Ï'),  # hataf qamats
     ('\u05b4', 'I'),  # hiriq
-    ('\u05b4', 'ˆ'),  # hiriq ??
-    ('\u05b4', 'î'),  # hiriq ??
-    ('\u05b4', 'Ê'),  # hiriq without preceding consonant
+    ('\u05b4', 'ˆ'),  # hiriq
+    ('\u05b4', 'î'),  # hiriq
+    ('\u05b4', 'Ê'),  # hiriq
     ('\u05b5', 'E'),  # tsere
-    ('\u05b5', 'é'),  # tsere ??
-    ('\u05b5', '´'),  # tsere ??
+    ('\u05b5', 'é'),  # tsere
+    ('\u05b5', '´'),  # tsere
     ('\u05b6', 'R'),  # segol
-    ('\u05b6', '®'),  # segol ??
-    ('\u05b6', '‰'),  # segol ??
+    ('\u05b6', '®'),  # segol
+    ('\u05b6', '‰'),  # segol
     ('\u05b7', 'A'),  # patah
+    ('\u05b7', 'Å'),  # patah
     ('\u05b8', 'D'),  # qamats
-    ('\u05b8', 'Î'),  # qamats ??
-    ('\u05b8', 'Å'),  # qamats ??
+    ('\u05b8', '∂'),  # qamats
+    ('\u05b8', 'Î'),  # qamats
     ('\u05b9', 'O'),  # holam
-    ('\u05ba', 'ø'),  # holam ??
-    ('\u05ba', 'Ï'),  # holam ??
+    ('\u05b9', 'ø'),  # holam
     ('\u05bb', 'U'),  # qubbuts
-    ('\u05bb', 'ü'),  # qubbuts ??
-    ('\u05bb', '¨'),  # qubbuts ??
+    ('\u05bb', 'ü'),  # qubbuts
+    ('\u05bb', '¨'),  # qubbuts
 )
 VOWEL_SET = {x[1] for x in VOWELS}
 
@@ -164,35 +166,31 @@ LETTER_SET = {x[1] for x in LETTERS}
 
 POINTS = (
     ('\u05bc', ';'),  # dagesh
+    ('\u05bc', '…'),  # dagesh
+    ('\u05bc', 'Ú'),  # dagesh
+    ('\u05bc', '¥'),  # dagesh
+    ('\u05bc', 'Ω'),  # dagesh
 )
 
 POINT_SET = {x[1] for x in POINTS}
 
-ACCENTS = (
-    ('', '◊'),  # ??
-    ('', '…'),  # ??
-    ('', 'Ú'),  # ??
-    ('', '¥'),  # ??
-    ('', 'Ω'),  # ??
-)
-
-ACCENT_SET = {x[1] for x in ACCENTS}
-
 PUNCTS = (
-    ('־', '-'),
-    ('׃', '.'),
+    ('\u00a0', '\u00a0'),
+    ('\u05be', '-'),  # maqaf
+    ('\u05c3', '.'),  # sof pasuq
+    ('\u05f3', '/'),  # geresh as morpheme separator
+    ('\u05f4', '±'),  # gershayim as paleo divider
 )
 PUNCT_SET = {x[1] for x in PUNCTS}
 
 HEBREW_MAP = {}
-for chars in (CONSONANTS, VOWELS, POINTS, ACCENTS, PUNCTS):
+for chars in (CONSONANTS, VOWELS, POINTS, PUNCTS):
   for (o, t) in chars:
     HEBREW_MAP[t] = o
 
 CONSONANT = 'consonant'
 VOWEL = 'vowel'
 POINT = 'point'
-ACCENT = 'point'
 PUNCT = 'punct'
 
 DIGITS = (
@@ -229,92 +227,92 @@ MISSING = '--'
 MISSING_ESC = '░'
 
 TOKENS = (
-    ('missing', '--', '░', ' 0 '),
-    ('doubtful', '?', None, ' ~ '),
-    ('uncertain', '/', None, ' ? '),
-    ('uncertain', '\\', '/', ' ? '),
-    ('unknown', '�', None, ' ! '),
-    ('add', '+', '+', ' + '),
-    ('paleodivider', '±', None, ' | '),
+    ('missing', '--', '░', ' 0 ', 'ε'),
+    ('uncertain', '?', None, ' ? ', ' ? '),
+    ('doubtful', '\\', None, ' ~ ', '~'),
+    ('unknown', '�', None, ' ! ', '!'),
+    ('add', '+', '+', ' + ', '+'),
+)
+TOKENS_FIX = (
+    ('/', '\\'),
 )
 TOKENS_ESC = {x[1]: x[2] for x in TOKENS if x[2]}
 TOKENS_UNESC = {x[2]: x[1] for x in TOKENS if x[2]}
 TOKEN_SET = {x[2] or x[1] for x in TOKENS}
-TOKENS_INV = {k or a: name for (name, a, k, x) in TOKENS}
-TOKENS_REP = {name: x for (name, a, k, x) in TOKENS}
+TOKENS_INV = {x[2] or x[1]: x[0] for x in TOKENS}
+TOKENS_REP = {x[0]: x[3] for x in TOKENS}
+TOKENS_UNI = {x[0]: x[4] for x in TOKENS}
 
 # nonbib 53527 lex: CHAG
 # nonbib 53566 lex: HN
 # nonbib 53584 lex: THE
 #    only occurrences of GH
 
-WHITESPACE = (
-    ('_', '\u00a0'),
-)
-WHITESPACE_SET = {x[1] for x in WHITESPACE}
-
 FLAGS = (
-    ('damaged', '«', '#'),
-    ('damagedUncertain', '|', '#?'),
-    ('uncertain', 'Ø', '?'),
+    ('uncertain', 1, 'Ø', '?'),
+    ('uncertain', 2, '«', '#'),
+    ('uncertain', 3, '»', '#?'),
+    ('uncertain', 4, '|', '##'),
 )
 
-FLAGS_INV = {k: name for (name, k, x) in FLAGS}
-FLAGS_REP = {name: x for (name, a, k, x) in FLAGS}
+FLAGS_INV = {a: name for (name, v, a, k) in FLAGS}
+FLAGS_REP = {name: k for (name, v, a, k) in FLAGS}
+FLAGS_VALUE = {name: v for (name, v, a, k) in FLAGS}
 
 BRACKETS = (
-    ('correctionAncient', False, '>>', '<<', '┤', '├', '(<< ', ' >>)'),  # vl vr
-    ('correctionModern', False, '>', '<', None, None, '(< ', ' >)'),
-    ('correctionSupra', True, '^', '^', '┛', '┗', '(^ ', ' ^)'),  # UL UR
-    ('removedAncient', False, '}}', '{{', '┫', '┣', '({{ ', ' }})'),  # VL VR
-    ('removedModern', False, '}', '{', None, None, '({ ', ' })'),
-    ('vacat', False, '≥', '≤', None, None, '(<= ', ' =>)'),
-    ('alternative', False, ')', '(', None, None, '( ', ' )'),
-    ('reconstructionModern', False, ']', '[', None, None, '[ ', ' ]'),
-    ('damaged', True, '»', '«', '┘', '└', '(# ', ' #)'),  # ul ur
+    ('correction', 3, True, '^', '^', '┛', '┗', '(^ ', ' ^)'),  # UL UR
+    ('correction', 2, False, '>>', '<<', '┤', '├', '(<< ', ' >>)'),  # vl vr
+    ('correction', 1, False, '>', '<', None, None, '(< ', ' >)'),
+    ('removed', 2, False, '}}', '{{', '┫', '┣', '{{ ', ' }}'),  # VL VR
+    ('removed', 1, False, '}', '{', None, None, '{ ', ' }'),
+    ('vacat', 1, False, '≥', '≤', None, None, '(- ', ' -)'),
+    ('alternative', 1, False, ')', '(', None, None, '( ', ' )'),
+    ('reconstruction', 1, False, ']', '[', None, None, '[ ', ' ]'),
+    ('uncertain', 2, True, '»', '«', '┘', '└', '(# ', ' #)'),  # ul ur
 )
 
 BRACKETS_INV = {}
-BRACKETS_INV.update({x[4] or x[2]: (x[0], True) for x in BRACKETS})
-BRACKETS_INV.update({x[5] or x[3]: (x[0], False) for x in BRACKETS})
+BRACKETS_INV.update({x[5] or x[3]: (x[0], True) for x in BRACKETS})
+BRACKETS_INV.update({x[6] or x[4]: (x[0], False) for x in BRACKETS})
+BRACKETS_VALUE = {x[0]: x[1] for x in BRACKETS}
 
-BRACKETS_ESC = tuple(x for x in BRACKETS if x[4] or x[5])
-BRACKETS_ESCPURE = tuple(x for x in BRACKETS if (x[4] or x[5]) and not x[1])
-BRACKETS_SPECIAL = tuple(x for x in BRACKETS if x[1])
+BRACKETS_ESC = tuple(x for x in BRACKETS if x[5] or x[6])
+BRACKETS_ESCPURE = tuple(x for x in BRACKETS if (x[5] or x[6]) and not x[2])
+BRACKETS_SPECIAL = tuple(x for x in BRACKETS if x[2])
 
 BRACKETS_ESCAPED = (
-    {x[2] for x in BRACKETS_ESC} |
-    {x[3] for x in BRACKETS_ESC}
+    {x[3] for x in BRACKETS_ESC} |
+    {x[4] for x in BRACKETS_ESC}
 )
 
 BRACKETS_REP = {}
-BRACKETS_REP.update({x[4] or x[2]: x[6] for x in BRACKETS})
 BRACKETS_REP.update({x[5] or x[3]: x[7] for x in BRACKETS})
+BRACKETS_REP.update({x[6] or x[4]: x[8] for x in BRACKETS})
 
 CHARS = set()
-for kind in (CONSONANTS, VOWELS, POINTS, ACCENTS, PUNCTS, LETTERS, NUMERALS, WHITESPACE, DIGITS):
+for kind in (CONSONANTS, VOWELS, POINTS, PUNCTS, LETTERS, NUMERALS, DIGITS):
   CHARS |= {x[1] for x in kind}
 
-for kind in (TOKENS, FLAGS):
-  CHARS |= {x[1] for x in kind}
+for (kind, index) in ((TOKENS, 1), (FLAGS, 2)):
+  CHARS |= {x[index] for x in kind}
 
-CHARS |= {b[2] for b in BRACKETS}
-CHARS |= {b[3] for b in BRACKETS}
+CHARS |= {x[3] for x in BRACKETS}
+CHARS |= {x[4] for x in BRACKETS}
 
 bEsc = {}
-bEsc.update({x[2]: x[4] for x in BRACKETS_ESC})
 bEsc.update({x[3]: x[5] for x in BRACKETS_ESC})
+bEsc.update({x[4]: x[6] for x in BRACKETS_ESC})
 
 bUnesc = {}
-bUnesc.update({x[4]: x[2] for x in BRACKETS_ESC})
 bUnesc.update({x[5]: x[3] for x in BRACKETS_ESC})
+bUnesc.update({x[6]: x[4] for x in BRACKETS_ESC})
 
 
 bSpecialRe = {}
-for bs in BRACKETS_SPECIAL:
-  name = bs[0]
-  b = re.escape(bs[2])
-  e = re.escape(bs[3])
+for x in BRACKETS_SPECIAL:
+  name = x[0]
+  b = re.escape(x[3])
+  e = re.escape(x[4])
   bsRe = re.compile(
       f'{b}'
       f'([^{b}{e}]*)'
@@ -608,21 +606,24 @@ def tokenizeData():
   def esc(text):
     nonlocal prevS
 
+    for (t, tx) in TOKENS_FIX.items():
+      if text == t:
+        text = tx
     for (t, tx) in TOKENS_ESC.items():
       text = text.replace(t, tx)
-    for bs in BRACKETS_SPECIAL:
-      bRe = bSpecialRe[bs[0]]
-      text = bRe.sub(bSpecialRepl(bs[4], bs[5]), text)
-      b = bs[2]
-      e = bs[3]
-      bEsc = bs[4]
-      eEsc = bs[5]
+    for x in BRACKETS_SPECIAL:
+      bRe = bSpecialRe[x[0]]
+      text = bRe.sub(bSpecialRepl(x[5], x[6]), text)
+      b = x[3]
+      e = x[4]
+      bEsc = x[5]
+      eEsc = x[6]
       if b == e and b in text:
         r = eEsc if prevS == bEsc else bEsc
         prevS = r
         text = text.replace(b, r)
-    for be in BRACKETS_ESCPURE:
-      text = text.replace(be[2], be[4]).replace(be[3], be[5])
+    for x in BRACKETS_ESCPURE:
+      text = text.replace(x[3], x[5]).replace(x[4], x[6])
     return text
 
   def V(name, x):
@@ -809,7 +810,7 @@ def checkBracketPair(b, e):
 def checkBrackets():
   totalErrs = 0
   totalOccs = 0
-  for (name, kind, b, e, *x) in BRACKETS:
+  for (name, value, kind, b, e, *x) in BRACKETS:
     (bEsc, eEsc) = x if len(x) else (b, e)
 
     (errs, occs) = checkBracketPair(bEsc, eEsc)
@@ -881,6 +882,7 @@ def director(cv):
   prevBook = None
   prevChapter = None
   prevVerse = None
+  prevHalfVerse = None
 
   prevScroll = None
   prevFragment = None
@@ -889,6 +891,7 @@ def director(cv):
   curBook = None
   curChapter = None
   curVerse = None
+  curHalfVerse = None
 
   curScroll = None
   curFragment = None
@@ -899,26 +902,26 @@ def director(cv):
     if token:
       curSlot = cv.slot()
       cv.feature(curSlot, lettersa=token, type=typ)
-      if typ in {CONSONANT, VOWEL, POINT, ACCENT, PUNCT}:
+      if typ in {CONSONANT, VOWEL, POINT, PUNCT}:
         letterso = ''.join(HEBREW_MAP[c] for c in token)
         letterse = TR.from_hebrew(letterso)
         cv.feature(curSlot, letterso=letterso, letterse=letterse)
       elif typ in {TOKENS}:
         letterso = TOKENS_REP[typ]
 
-      for kind in curBrackets:
-        cv.feature(curSlot, **{kind: 1})
+      for (name, value) in curBrackets.items():
+        cv.feature(curSlot, **{name: value})
 
   nScroll = 0
   nBook = 0
   for (src, lines) in dataToken.items():
     curSlot = None
-    curBrackets = set()
+    curBrackets = {}
     for (i, fields) in lines:
       thisScroll = fields[SCROLL]
       thisFragment = fields[FRAGMENT]
       thisLine = fields[LINE]
-      if fields[SCROLL] != prevScroll:
+      if thisScroll != prevScroll:
         nScroll += 1
         progress(f'scroll {nScroll:<5} {thisScroll:<20}', newline=False)
         cv.terminate(curLine)
@@ -930,14 +933,14 @@ def director(cv):
         cv.feature(curScroll, acro=thisScroll)
         cv.feature(curFragment, label=thisFragment)
         cv.feature(curLine, number=int(thisLine))
-      elif fields[FRAGMENT] != prevFragment:
+      elif thisFragment != prevFragment:
         cv.terminate(curLine)
         cv.terminate(curFragment)
         curFragment = cv.node(FRAGMENT)
         curLine = cv.node(LINE)
         cv.feature(curFragment, label=thisFragment)
         cv.feature(curLine, number=int(thisLine))
-      elif fields[LINE] != prevLine:
+      elif thisLine != prevLine:
         cv.terminate(curLine)
         curLine = cv.node(LINE)
         cv.feature(curLine, number=int(thisLine))
@@ -946,9 +949,10 @@ def director(cv):
         thisBook = fields[BOOK]
         thisChapter = fields[CHAPTER]
         thisVerse = fields[VERSE]
-        (vnum, vlabel) = verseNum(thisVerse)
-        if fields[BOOK] != prevBook:
+        (thisVerse, thisHalfVerse) = verseNum(thisVerse)
+        if thisBook != prevBook:
           nBook += 1
+          cv.terminate(curHalfVerse)
           cv.terminate(curVerse)
           cv.terminate(curChapter)
           cv.terminate(curBook)
@@ -957,24 +961,33 @@ def director(cv):
           curVerse = cv.node(VERSE)
           cv.feature(curBook, acro=thisBook)
           cv.feature(curChapter, label=thisChapter)
-          cv.feature(curVerse, number=vnum)
-          if vlabel:
-            cv.feature(curVerse, label=vlabel)
-        elif fields[CHAPTER] != prevChapter:
+          cv.feature(curVerse, number=thisVerse)
+          if thisHalfVerse:
+            curHalfVerse = cv.node(HALFVERSE)
+            cv.feature(curHalfVerse, number=thisVerse, label=thisHalfVerse)
+        elif thisChapter != prevChapter:
+          cv.terminate(curHalfVerse)
           cv.terminate(curVerse)
           cv.terminate(curChapter)
           curChapter = cv.node(CHAPTER)
           curVerse = cv.node(VERSE)
           cv.feature(curChapter, label=thisChapter)
-          cv.feature(curVerse, number=vnum)
-          if vlabel:
-            cv.feature(curVerse, label=vlabel)
-        elif fields[VERSE] != prevVerse:
+          cv.feature(curVerse, number=thisVerse)
+          if thisHalfVerse:
+            curHalfVerse = cv.node(HALFVERSE)
+            cv.feature(curHalfVerse, number=thisVerse, label=thisHalfVerse)
+        elif thisVerse != prevVerse:
+          cv.terminate(curHalfVerse)
           cv.terminate(curVerse)
           curVerse = cv.node(VERSE)
-          cv.feature(curVerse, number=vnum)
-          if vlabel:
-            cv.feature(curVerse, label=vlabel)
+          cv.feature(curVerse, number=thisVerse)
+          if thisHalfVerse:
+            curHalfVerse = cv.node(HALFVERSE)
+            cv.feature(curHalfVerse, number=thisVerse, label=thisHalfVerse)
+        elif thisHalfVerse != prevHalfVerse:
+          cv.terminate(curHalfVerse)
+          curHalfVerse = cv.node(HALFVERSE)
+          cv.feature(curHalfVerse, number=thisVerse, label=thisHalfVerse)
 
       word = fields[TRANS]
       isNumeral = word.isupper()
@@ -1010,18 +1023,17 @@ def director(cv):
           token = c
           typ = 'punctuation'
           addSlot()
-        elif c in WHITESPACE_SET:
-          addSlot()
-          token = c
-          typ = 'whitespace'
         elif c in FLAGS_INV:
-          cv.feature(curSlot, **{FLAGS_INV[c]: 1})
+          name = FLAGS_INV[c]
+          value = FLAGS_VALUE[name]
+          cv.feature(curSlot, **{FLAGS_INV[c]: value})
         elif c in BRACKETS_INV:
-          (kind, isOpen) = BRACKETS_INV[c]
+          (name, isOpen) = BRACKETS_INV[c]
+          value = BRACKETS_VALUE[name]
           if isOpen:
-            curBrackets.add(kind)
+            curBrackets[name] = value
           else:
-            curBrackets.discard(kind)
+            del curBrackets[name]
       addSlot()
       prevScroll = thisScroll
       prevFragment = thisFragment
@@ -1035,6 +1047,7 @@ def director(cv):
     cv.terminate(curFragment)
     cv.terminate(curScroll)
     if src == 'bib':
+      cv.terminate(curHalfVerse)
       cv.terminate(curVerse)
       cv.terminate(curChapter)
       cv.terminate(curBook)

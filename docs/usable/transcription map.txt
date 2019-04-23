@@ -1,0 +1,124 @@
+```CONSONANTS = (
+    ('א', 'a'), *
+    ('ב', 'b'), *
+    ('ג', 'g'), *
+    ('ד', 'd'), *
+    ('ה', 'h'), *
+    ('ו', 'w'), *
+    ('ז', 'z'), *
+    ('ח', 'j'), *
+    ('ט', 'f'), *
+    ('י', 'y'), *
+    ('כ', 'k'), *
+    ('ך', 'K'), *
+    ('ל', 'l'), *
+    ('מ', 'm'), *
+    ('m', 'M'), *
+    ('נ', 'n'), *
+    ('ן', 'N'), *
+    ('ס', 's'), *
+    ('פ', 'p'), *
+    ('ף', 'P'), *
+    ('ע', 'o'), *
+    ('צ', 'x'), *
+    ('ץ', 'X'), *
+    ('ק', 'q'), *
+    ('ר', 'r'), *
+    ('שׂ', 'c'),  # FB2B sin *
+    ('שׁ', 'v'),  # FB2A shin *
+    ('שׁ', 'C'),  # 05E9 dotless shin *
+    ('ת', 't'), *
+)```
+(edited)
+```VOWELS = (
+    ('\u05b0', 'V'),  # sheva *
+    ('\u05b0', '∂'),  # sheva ?? - qamats. This appears to only occur after a resh, qof, or dalet
+	which makes be think it is used so that the placement of the vowel fits correctly under these consonants.
+	
+mVoDr∂h_1 qamats-he
+aAbVr∂hDM 
+cDr∂h_2
+mIvVq∂l
+d;∂bDr
+
+    ('\u05b0', '√'),  # sheva ?? - yes, after resh and dalet (maybe others)
+    ('\u05b0', 'J'),  # sheva after kaf *
+    ('\u05b1', 'T'),  # hataf segol *
+    ('\u05b2', 'S'),  # hataf patah *
+    ('\u05b3', 'F'),  # hataf qamats *
+    ('\u05b3', 'ƒ'),  # hataf qamats ?? - yes for resh, dalet, and qof
+    ('\u05b4', 'I'),  # hiriq *
+    ('\u05b4', 'ˆ'),  # hiriq ?? - yes
+    ('\u05b4', 'î'),  # hiriq ?? - yes, under resh, dalet and maybe others
+    ('\u05b4', 'Ê'),  # hiriq without preceding consonant *
+    ('\u05b5', 'E'),  # tsere *
+    ('\u05b5', 'Ê'),  # tsere ?? - this appears to be the same character as two above - botha are 'Ê'
+    ('\u05b5', '´'),  # tsere ?? - yes
+    ('\u05b6', 'R'),  # segol *
+    ('\u05b6', '®'),  # segol ?? - yes, under bet, dalet, resh, maybe others
+    ('\u05b6', '‰'),  # segol ?? - yes, after smaller consonants like gimel, nun
+    ('\u05b7', 'A'),  # patah *
+    ('\u05b8', 'D'),  # qamats *
+    ('\u05b8', 'Î'),  # qamats ?? - yes, after smaller consonants
+    ('\u05b8', 'Å'),  # qamats ?? - patah, after smaller consonants
+    ('\u05b9', 'O'),  # holam *
+    ('\u05ba', 'ø'),  # holam ?? - yes
+    ('\u05ba', 'Ï'),  # holam ?? - hataf qamats, after smaller consonants
+    ('\u05bb', 'U'),  # qubbuts *
+    ('\u05bb', 'ü'),  # qubbuts ?? - yes
+    ('\u05bb', '¨'),  # qubbuts ?? - yes
+)```
+I do not know why there are multiple transliterations for "the same" vowels.
+```POINTS = (
+    ('\u05bc', ';'),  # dagesh *
+)```
+```ACCENTS = (
+    ('', '◊'),  # ?? - sheva, after smaller consonants
+    ('', '…'),  # ?? - dagesh
+    ('', 'Ú'),  # ?? - dagesh
+    ('', '¥'),  # ?? - dagesh with yod
+    ('', 'Ω'),  # ?? - dagesh with nun
+)```
+I think these are all non-vowel pointings, maybe accents. They occur with a consonant together with an other point which is the vowel.
+For the moment, I strip them in the hebrew representation.
+```PUNCTS = (
+    ('־', '-'), - I can't find an example of this
+    ('׃', '.'), - I can't find an example of this
+)```
+```TOKENS = (
+    ('missing', '░'), - I can't find an example of this
+    ('doubtful', '?'), *
+    ('uncertain', '/'), - used to seperate a suffix from the word to which it is bound, can't find an example of it being used to mark an uncertain reading
+    ('uncertain', '\\'), *
+    ('unknown', '�'), *
+    ('add', '+'), *
+    ('paleodivider', '±'), *
+)```
+The character for missing comes from `--`, which I escape as a single character for ease of processing. (edited) 
+I am not sure whether the labels missing, doubtful, uncertain, unknown are all to the point.
+```WHITESPACE = (
+    (' ', '\u00a0'), *
+)```
+A non-breaking space occurs within words.
+```FLAGS = (
+    ('damaged', '«'),
+    ('damagedUncertain', '|'), *
+    ('uncertain', 'Ø'), - this character as well as '«' mark somewhat uncertain readings, while '|' and '»' mark very uncertain readings.
+	There are basically three levels of uncertain readings: somewhat, very, and we have no idea!
+)```
+Again, I am not completely sure about whether these are the designated labels.
+```BRACKETS = (
+    ('correction_ancient', False, '>>', '<<', '┤', '├'),  # vl vr
+    ('correction_modern', False, '>', '<'),
+    ('correction_supra', True, '^', '^', '┛', '┗'),  # UL UR
+    ('removed_ancient', False, '}}', '{{', '┫', '┣'),  # VL VR
+    ('removed_modern', False, '}', '{'),
+    ('vacat', False, '≥', '≤'),
+    ('alternative', False, ')', '('),
+    ('reconstruction_modern', False, ']', '['),
+    ('c1', True, '»', '«', '┘', '└'),  # ul ur
+)```
+The last brackets are unclear to me: '»', '«'. If there are 5th and 6th elements in the tuple: these are my own escape characters for those brackets, and that is needed for correct parsing, for 3 different reasons:
+• opening and closing are the same (`^ ^`)
+• double characters are used (`{{ }} << >>`)
+• one of the bracket characters also uccurs in isolation with a different meaning (`«`) - in isolation, this placed after a character who's reading is somewhat uncertain, while » is used to mark very uncertain readings

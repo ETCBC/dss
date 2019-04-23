@@ -43,6 +43,7 @@ this corpus we have node types for:
 [*line*](#line),
 [*fragment*](#fragment),
 [*scroll*](#scroll).
+[*halfverse*](#halfverse),
 [*verse*](#verse),
 [*chapter*](#chapter),
 [*book*](#book).
@@ -61,15 +62,18 @@ In this corpus we use:
 Note that we do have node types corresponding to *book*, *chapter*, and *verse*,
 but they are not configured as TF-sections.
 
-Unicode Glyphs
+Transcription
 --------------
 We map the transcriptions and lexemes to Hebrew unicode.
 The transcriptions are consonant only, the lexemes are pointed.
-It seems that various transcription schemes for the pointing are at work,
-so that a single vowel is transcribed by two or sometimes three special characters.
+Vowel points have been transcribed by one or more special characters, probably
+in order to fine-tune the position of those points with respect to their
+consonants.
 We reduce them to the Hebrew unicodes.
 
 We also supply the ETCBC transcription for Hebrew material.
+For the full details see the extensive
+[Hebrew transcription table](https://annotation.github.io/text-fabric/Writing/Hebrew.html).
 
 Other docs
 ----------
@@ -83,161 +87,183 @@ Reference table of features
 
 *(Keep this under your pillow)*
 
+Some features come in three variants, with the last letter being:
+
+* **a** the original transcription (Abegg)
+* **e** the ETCBC transcription, or something that fits into ETCBC transcriptions
+* **u** the unicode value
+
 Node type [*sign*](#sign)
 -------------------------
 
 Basic unit containing a single symbol, mostly a consonant, but it can also be 
-a white space, punctuation, or a text-critical sign.
+punctuation, or a text-critical sign.
 
 The type of sign is stored in the feature `type`.
 
-type | examples | rewritten/etcbc | description
-------- | ------ | ------ | ---
-`consonant` | `m` `M` | | normal consonantal letter
-`punctuation` | `-` `.` | `&` `00` | maqaf, sof pasuq 
-`whitespace` | ` ` | `_` | non-breaking whitespace within a word
-`numeral` | `A` `B` `C` `D` `F` `å` `∫`  | ` 1 ` ` 1B ` ` 10 ` ` 20 ` ` 100 ` ` 1a ` ` 1f ` | a numeral, only in words that are a numeral as a whole
-`missing` | `--` | ` 0 ` | representation of a missing sign
-`doubtful` | `?` | ` ~ ` | representation of a doubtful sign
-`uncertain` | `/` `\\` | ` ? ` | representation of an uncertain sign
-`unknown` | `�` | ` ! ` | representation of an unknown sign
-`add` | `+` | ` + ` | representation of an addition between numerals
-`divider` | `±` | ` | ` | representation of paleo divider
+type | examples | rewritten/etcbc | unicode | description
+------- | ------ | ------ | --- | ---
+`consonant` | `m` `M` | `M` `m`| `מ` `ם` | normal consonantal letter
+`punctuation` | ` ` `-` `.` `±` `/`| `_` `&` `00` `62` `61`| ` ` `־` `׃` `״` `׳`| non-breaking space, maqaf, sof pasuq, paleo divider, morpheme break 
+`numeral` | `A` `B` `C` `D` `F` `å` `∫`  | ` 1A ` ` 1B ` ` 10 ` ` 20 ` ` 100 ` ` 1a ` ` 1f ` | ` 1A ` ` 1B ` ` 10 ` ` 20 ` ` 100 ` ` 1a ` ` 1f ` | a numeral, only in words that are a numeral as a whole
+`missing` | `--` | ` 0 ` | `ε` | representation of a missing sign
+`doubtful` | `\\` | ` ~ ` | `~` | representation of a doubtful sign
+`uncertain` | `?` | ` ? ` | ` ? ` | representation of an uncertain sign
+`unknown` | `�` | ` ! ` | `!`| representation of an unknown sign
+`add` | `+` | ` + ` | `+` | representation of an addition between numerals
 
-feature | values | examples | rewritten/etcbc | description
-------- | ------ | ------ | ----------- | ---
-**after** | | | | what comes after a sign before the next sign
-**correctionAncient** | `1` | `>>zwnh«<<` | `(<< ZWNH# >>)` | whether a sign is corrected by an ancient editor, marked by being within double angle brackets  `<< >>`
-**correctionModern** | `1` | `yqw>mw<N` | `YQW(< MW >)n` | whether a sign is corrected by a modern editor, marked by being within single angle brackets  `< >`
-**correctionSupra** | `1` | `^dbr/y^` | `(^ DBR ? Y ^)` | whether a sign is corrected by an ancient editor, marked by being within double angle brackets  `<< >>`
-**damaged** | `1` | `at«` `aj«y»/K` | `>T#` `>X(# J #) ? k` | indicates the presence of the *damaged* flag `«` or brackets `« »`
-**damagedUncertain** | `1` | `a|hrwN` | `>#?HRWn` | indicates the presence of the *damaged_uncertain* flag `|`
-**uncertain** | `1` | `b«NØ` | `B#n?` | indicates the presence of the *damaged_uncertain* flag `|`
-**type** | | | | type of sign, see table above
+feature | values | Abegg | ETCBC | Unicode | description
+------- | ------ | ------ | ----------- | --- | ---
+**alternative** | `1` | `lwz/)h(` | `LWZ61(H)` | | indicates an alternative material, marked by being within brackets `( )`
+**correction** | `1` | `yqw>mw<N` | `JQW(< MW >)n` | | material is corrected by a modern editor, marked by being within single angle brackets  `< >`
+**correction** | `2` | `>>zwnh«<<` | `(<< ZWNH# >>)` | | material is corrected by an ancient editor, marked by being within double angle brackets  `<< >>`
+**correction** | `3` | `^dbr/y^` | `(^ DBR ? J ^)` | | material is corrected by an ancient editor, marked by being within double angle brackets  `<< >>`
+**reconstruction** | `1` | `]p[n»y` | `[P]N##Y` | | material is reconstructed by a modern editor, marked by being within square brackets  `[ ]`
+**removed** | `1` | `}m«x«r«yØM«{` | `{M(# Y #)R#J?m#}` | | material is removed by a modern editor, marked by being within single braces  `< >`
+**removed** | `2` | `twlo}}t{{` | `TWL<{{t}}` | | material is removed by an ancient editor, marked by being within double braces  `<< >>`
+**token[aeu]** | `m` | `M` | `מ` | | transliteration of an individual sign
+**type** | | | | | type of sign, see table above
+**uncertain** | `1` | `b«NØ` | `B#n?` | | indicates *uncertainty of degree=1* by flag `|`
+**uncertain** | `2` | `at«` `aj«y»/K` | `>T#` `>X(# J #) ? k` | | indicates *uncertainty of degree=2* by flag `«` or brackets `« »`
+**uncertain** | `3` | `]p[n»y` | `[P]N##Y` | | indicates *uncertainty of degree=3* by flag `»`
+**uncertain** | `4` | `a|hrwN` | `>#?HRWn` | | indicates *uncertainty of degree=4* by flag `|`
+**vacat** | `1` | `≥ ≤` | `(- -)` | | indicates an empty, unwritten space by brackets `≤ ≥`
 
 Node type [*word*](#word)
 -------------------------
-Sequence of signs separated by `-`. Sometimes the `-` is omitted. Very rarely there is an other character between two signs, such as `:` or `/`. Words themselves are separated by spaces.
+Sequence of signs separated corresponding to a single line in the Abegg data files.
+If a word is adjacent to a next word, the Abegg data file has `B` in a certain column,
+and we leave the *after* feature without value.
 
-feature | values | in ATF | description
+feature | values | description
 ------- | ------ | ------ | -----------
-**after** | ` ` | | what comes after a word before the next word
-**atf** | `{disz}sze-ep-_{d}suen` | idem | full atf of a word, including flags and clustering characters
-**sym** **symr** **symu** | | | essential parts of a word, composed of the **sym**, **symr**, **symu** values of its individual signs; the **-r** variant uses accented letters; the **-u** variant uses cuneiform unicode
+**after** | ` ` | | | whether there is a space after a word and before the next word
+**letters[aeu]** | `mmnw` | `MMNW]` | `ממנו` | letters of a word excluding flags and brackets and punctuation, but with white space
+**punc[aeu]** | `.` | `00` | `׃` | punctuation at the end of a word
+**trans[aeu]** | `mm/nw[` | `MM61NW]` | `ממ׳נו]` | full transcription of a word, including flags and clustering characters
 
 Node type [*cluster*](#cluster)
 -------------------------------
 
 Grouped sequence of [*signs*](#sign). There are different
-types of these bracketings. Clusters may be nested.
-But clusters of different types need not be nested properly with respect to each other.
+types of these bracketings. Clusters of the same type are not nested.
+Clusters of different types need not be nested properly with respect to each other.
 
 The type of a cluster is stored in the feature `type`.
 
-type | examples | description
-------- | ------ | ------
-`correctionAncient` | `<<  >>` | correction made by an ancient editor
-`correctionModern` | `< >` | correction made by a modern editor
-`correctionSupra` | `^ ^` | supralinear (ancient) correction
-`removedAncient` | `{{  }}` | removed by an ancient editor
-`removedModern` | `{ }` | removed by a modern editor
-`reconstructionModern` | `[ ]` | reconstructed by a modern editor
-`vacat` | `≤ ≥)` | empty space
-`alternative` | `( )` | alternative
-`damaged` | `« »` | damaged
+type | value | examples | description
+------- | ------ | ------ | ---
+`correction` | `1` | `< >` | correction made by a modern editor
+`correction` | `2` | `<<  >>` | correction made by an ancient editor
+`correction` | `3` | `^ ^` | supralinear (ancient) correction
+`removed` | `1` | `{ }` | removed by a modern editor
+`removed` | `2` | `{{  }}` | removed by an ancient editor
+`reconstruction` | `1` | `[ ]` | reconstructed by a modern editor
+`vacat` | `1` | `≤ ≥)` | empty space
+`alternative` | `1` | `( )` | alternative
+`uncertain` | `1` `2` `3` `4` | `« »` | uncertain, with level of uncertainty
 
 Each cluster induces a sign feature with the same name as the type of the cluster,
-which gets value 1 precisely when the sign is in that cluster.
+which gets a numeric value, as indicated in the table.
 
 Node type [*line*](#line)
 -------------------------
 
-Subdivision of a containing [*face*](#face).
-Corresponds to a transcription or comment line in the source data.
+Section level 3.
 
-feature | values | in ATF | description
+Subdivision of a containing [*fragment*](#fragment).
+Corresponds to a set of source data lines with the same value in the *line* column.
+
+feature | values | description
 ------- | ------ | ------ | -----------
-**col** | `1` | `@column 1` | number of the column in which the line occurs; without prime, see also `primecol`
-**ln** | `1` | `1. [a-na]` | ATF line number of a numbered transcription line; without prime, see also `primeln`; see also **lnc**
-**lnc** | `$a` `$b` | `$ rest broken` | ATF line number of a comment line (`$`); the value `$` plus `a`, `b` etc., every new column restarts this numbering; see also `ln`
-**lnno** | | | combination of **col**, **primecol**, **ln**, **primeln** to identify a line
-**primecol** | `1'` | whether the column number has a prime `'` | 
-**primeln** | `1'` | whether the line number has a prime `'` | 
-**remarks** | `reading la-mi! proposed by Von Soden` | `# reading la-mi! proposed by Von Soden` | the contents of a remark targetedto the contents of a transcription line; the `remark` feature is present on the line that is being commented; multiple remark lines will be joined with a newline
-**srcLn** | `1. [a-na x]-da-a-a`| idem | see [source data](#source-data)
-**srcLnNum** | 29908 | not represented | see [source data](#source-data)
-**trans** | `1` | | indicates whether a line has a translation (in the form of a following meta line (`#`))
-**translation@en** | `was given (lit. sealed) to me—` | `#tr.en: was given (lit. sealed) to me—` | English translation in the form of a meta line (`#`)
+**number** | `3` | number of a physical line (integer valued)
 
-Node type [*face*](#face)
+Node type [*fragment*](#fragment)
 -------------------------
 
-One of the sides of an *object* belonging to a document [*document*](#document).
-In most cases, the object is a *tablet*, but it can also be an *envelope*, or yet an other kind of object. 
+Section level 2.
 
-feature | values | in ATF | description
+Subdivision of a containing [*scroll*](#scroll).
+Corresponds to a set of source data lines with the same value in the *fragment* column.
+
+For non-biblical scrolls, the fragment is usually called *column*. 
+
+feature | values | description
 ------- | ------ | ------ | -----------
-**face** | `obverse` `reverse` `seal 1` `envelope - seal 1` | `@obverse` `@reverse` `@seal 1` | type of face, if on an object different from a tablet, the type of object is prepended
-**object** | `tablet` `envelope` | `@tablet` `@envelope` | object on which a face is situated; seals are not objects but faces
-**srcLn** | `@obverse` | idem | see [source data](#source-data)
-**srcLnNum** | 29907 | not represented | see [source data](#source-data)
+**label** | `f3` | label of a physical fragment or column
 
-Node type [*document*](#document)
------------------------------
+Node type [*scroll*](#scroll)
+-------------------------
 
-The main entity of which the corpus is composed, representing the transcription
-of all objects associated with it.
+Section level 1.
 
-feature | values | in ATF | description
+Corresponds to a set of source data lines with the same value in the *scroll* column.
+
+feature | values | description
 ------- | ------ | ------ | -----------
-**collection** | `AbB` | `&P509373 = AbB 01, 059` | the collection of a [*document*](#document)
-**docnote** | `Bu 1888-05-12, 200` | `&P365091 = CT 02, pl. 10, Bu 1888-05-12, 200` | additional remarks in the document identification
-**docnumber** | `059` | `&P509373 = AbB 01, 059` | the identification of a [*document*](#document) as number within a collection - volume
-**lang** | `akk` `sux` |  | the language the document is written in. `akk` = *Akkadian*, `sux` = *Sumerian*. See the sign feature `langalt` for the language of smaller portions of the document
-**pnumber** | `P509373` | `&P509373 = AbB 01, 059` | the P-number identification of a [*document*](#document)
-**srcfile** | AbB-primary or AbB-secondary | not represented | see [source data](#source-data)
-**srcLn** | `&P494060 = AbB 14, 226` | idem | see [source data](#source-data)
-**srcLnNum** | 29904 | not represented | see [source data](#source-data)
-**volume** | `01` | `&P509373 = AbB 01, 059` | the volume of a [*document*](#document) as number within a collection
+**acro** | `1Q1` | short name of a physical scroll
 
-We also store a bunch of the metadata fields that preced the transliterations in the source
-files:
+Node type [*halfverse*](#halfverse)
+-------------------------
 
-feature | from metadata field | description
-------- | ------ | ------
-author | Author(s) | author 
-pubdate | Publication date | publication date 
-museumname | Collection | museum name 
-museumcode | Museum no. | museum code 
-excavation | Excavation no. | excavation number 
-period | Period | period indication 
-material | Material | material indication 
-genre | Genre | genre 
-subgenre | Sub-genre | sub-genre 
-transcriber | ATF source | person who did the encoding into ATF 
-ARK | UCLA Library ARK | persistent identifier of type ARK 
+Only for biblical scrolls. Not a section type.
 
-Source data
-===========
+Subdivision of a containing [*verse*](#verse).
+Corresponds to a set of source data lines with the same non-numerical part in the *verse* column.
 
-All nodes that correspond directly to a line in the corpus, also get features by
-which you can retrieve the original transcription.
+Not every verse is divided in half verses.
 
-For documents and faces the line refers to the source line where the encoding starts.
+feature | values | description
+------- | ------ | ------ | -----------
+**number** | `3` | number of its containing part
+**label** | `a` | the non-numerical part of the verse number
 
-*   **srcfile** the name of the source file, it does not occur as such in the source data;
-*   **srcLn** the literal contents of the line in the source;
-*   **srcLnNum** the line number of the corresponding line in the source file,
-    not the ATF line number, but *n* as in the *n*-th line in the file,
-    it does not occur as such in the source data. 
+Node type [*verse*](#verse)
+-------------------------
+
+Only for biblical scrolls. Not a section type.
+
+Subdivision of a containing [*chapter*](#chapter).
+Corresponds to a set of source data lines with the same numerical part in the *verse* column.
+
+The division in verses may or may not coincide with the division in lines.
+
+feature | values | description
+------- | ------ | ------ | -----------
+**number** | `3` | number of a verse line (integer valued), without the non-integer part
+
+Node type [*chapter*](#chapter)
+-------------------------
+
+Only for biblical scrolls. Not a section type.
+
+Subdivision of a containing [*book*](#book).
+Corresponds to a set of source data lines with the same value in the *chapter* column.
+
+The division in chapters may or may not coincide with the division in fragments.
+
+feature | values | description
+------- | ------ | ------ | -----------
+**label** | `6` `f6` | label of a chapter
+
+Node type [*book*](#book)
+-------------------------
+
+Only for biblical scrolls. Not a section type.
+
+Corresponds to a set of source data lines with the same value in the *book* column.
+
+The division in books may or may not coincide with the division in scrolls.
+
+feature | values | description
+------- | ------ | ------ | -----------
+**acro** | `Gen` `1Q1` | short name of a book
 
 Slots
 =====
 
-Slots are the textual positions. They can be occupied by individual signs or inline comments `($ ccc $)`.
-We have inserted empty slots on comment lines (starting with `$`)
-in order to anchor these lines at the right
-place in the text sequence and to store the comment itself in the feature `comment`.
+Slots are the textual positions.
+They are be occupied by individual signs (consonants, punctuation, miscellaneous signs).
 
 We discuss the node types we are going to construct. A node type corresponds to
 a textual object. Some node types will be marked as a section level.
@@ -249,165 +275,95 @@ This is the basic unit of writing.
 
 **The node type [*sign*](#sign) is our slot type in the Text-Fabric representation of this corpus.**
 
-All signs have the features **atf**, **atfpre**, **atfpost** and **after**.
+All signs have the features **type** and **token[aeu]**.
 
-Together they are the building blocks by which the complete original ATF sequence for that sign
-can be reconstructed:
+The *type* stores the kind of token, such as `consonant`.
+The *tokena tokene tokene* features store the transcription of the token, without any flags
+and brackets. They store it in the Abegg transcription, ETCBC transcription, and in Unicode.
 
-    atfpre + atf + atfpost + after
+These features do not suffice to reconstruct the original Abegg transcription.
 
-*atf* contains the encoding of the sign itself, including possible flags.
+### Punctuation
 
-*atfpre* and *atfpost* contain the bracketing characters before and after the sign.
+Punctuation is either a mark or a white space, or a boundary.
+All punctuation characters have Unicode representations.
+For some we have *borrowed* a Hebrew character that has a different meaning in the Masoretic text,
+but that does not occur otherwise in the Dead Sea Scrolls.
+The reason is that we can represent Hebrew consonants plus punctuation in a smooth,
+right-to-left way.
 
-*after* contains the linking characters with the next sign, usually a `-` or a ` `.
+source | etcbc | unicode | description
+--- | --- | --- | ---
+` ` | `_` | ` ` | non-breaking intra-word space
+`-` | `&` | `־` | maqaf
+`.` | `00` | `׃` | sof pasuq
+`±` | `62` | `״` | gershayim (mis)used as paleo divider 
+`/` | `61` | `׳` | geresh (mis)used as morpheme break
 
-For analytical purposes, there is a host of other features on signs, depending on the type of sign.
+### Numerals
 
-### Simple signs ###
+Numerals are ancient signs for denoting quantities.
 
-The defining trait of a sign is its *reading* and/or optionally its *grapheme*.
+source | etcbc/unicode
+--- | ---
+`A` | ` 1A `
+`å` | ` 1a `
+`B` | ` 1B `
+`∫` | ` 1b `
+`C` | ` 10 `
+`D` | ` 20 `
+`F` | ` 100 `
 
-We will collect the name string of a sign, without variants and flags, and store
-it in the sign feature **reading** if it is lowercase, and **grapheme** if it is uppercase.
+There is no separate Unicode representation for these numerals.
+Their ETCBC transcription is surrounded by spaces.
 
-The *type* of such signs is `reading` or `grapheme`. 
+### Miscellaneous
 
-Simple signs may be *augmented* with *flags* (see below).
+Several characters have to do with uncertainty and illegibility.
+They have an improvised Unicode representations.
+We propose an transcription that works inside the ETCBC transcription.
+Note that these have spaces around them.
 
-### Unknown signs ###
+source | etcbc | unicode | description
+--- | --- | --- | ---
+`--` | ` 0 ` | `ε` | missing sign
+`?` | ` ? ` | ` ? ` | uncertain sign, note spaces around the unicode representation
+`\\` | ` ~ ` | `~` | doubtful sign
+`�` | ` ! ` | `!` | doubtful sign
+`+` | ` + ` | `+` | addition symbol between numerals
 
-The letters `x` and `X`, `n` and `N` in isolation stand for an unknown signs.
-
-The *type* of such signs is `unknown`. 
-
-If the value is `x` or `n`, it will stored in **reading**, if it is `X` or `N` in **grapheme**.
-
-The `x` and `X` stand for completely unknown signs, the `n` and `N` stand for unknown signs
-of which it is known that they are numerals.
-
-**N.B:** See under numerals below, where `n` plays a slightly different role.
-
-### Ellipsis ###
-
-The value `...`stands for an unknown number of missing signs.
-
-The *type* of such signs is `ellipsis`. 
-
-The **grapheme** feature will be filled with `...`. 
-
-### Numerals: repeats and fractions ###
-
-Signs, especially those with a numeric meaning, may be repeated.
-
-    5(disz)
-
-Numeric signs may also be preceded with a *fraction*:
-
-    5/6(disz)
-
-We store the integral number before the brackets in the feature **repeat**,
-and the fraction in the feature **fraction**.
-
-If the repeat is `n`, it means that the amount of repetition is uncertain
-or that a repetition is missing.
-We store it as `repeat` = `-1`, so repeats always have an integer value.
-
-In a numeral, within the brackets you find the **reading** or **grapheme**,
-depending on whether it is lowercase or uppercase..
-
-Numeral signs have type `numeral`.
-
-After the closing bracket the numeral may be augmented with *flags*.
-
-### Complex signs: operators ###
-
-There are two constructs that have the same shape, but not the same meaning.
-Both lead to a complex sign.
-
-Correction:
-
-    szu!(LI)
-
-Operator (`x`):
-
-    isx(USZ)
-
-In both cases we see a **reading**, followed by an **operator** (`!` or `x`),
-followed by a **grapheme**.
-
-The type of such signs is `complex`.
-
-The grapheme might be quite complex: an expression with or without surrounding `| |`,
-and with operators `.` inside.
-We have not broken down these graphemes in our conversion, they are stored as is in **grapheme**.
-
-### Comment signs ###
-
-Within a transcription line, you might encounter expressions of the form `($` *ccc* `$)`.
-
-These are *inline* comments, not to be confused with structural line comments (`$` lines)
-or other line comments (`#` lines) which occupy a line of their own.
-
-Such comments will be converted to single signs, of type `comment`, and the comment itself
-goes into the feature **comment**. 
-
-The comment, surrounded by the `($ $)` goes into the feature **atf**.
-
-### Commentline signs ###
-Commentline signs have been artificially added to comment lines (`$` lines) in order to 
-anchor them to the textual sequence.
-
-The comment text of the line goes into the feature **comment** of the single commentline
-sign of that line. It also goes to features `sym`, `symr`, `symu` and `atf`.
-
-### Empty signs ###
-
-Empty signs may have been generated as the result of faulty inputs.
-The conversion program detects these errors and issues messages about them.
-The current run of the conversion has not detected empty signs.
+Signs also have features corresponding to flags and brackets, that store under which flag
+or inside which brackets the sign occurs:
+**uncertain** **correction** **remove** **vacat** **alternative** **reconstruction**.
 
 ### Flags ###
 
 *Signs* may have *flags*.
 In transcription they show up as a special trailing character.
-Flags code for signs that are damaged, questionable (in their reading), remarkable, or collated.
+Flags code for signs that are damaged, questionable (in their reading), in short: uncertain.
 
-#### collated `*` ####
+We propose an transcription that works inside the ETCBC transcription.
+Note that these have *no* spaces around them.
 
-Example:
+We use this for the Unicode represenatation as well.
 
-  5. _8(gesz2)* sze gur_ i-ib-szu-u2
+source | etcbc / unicode | description
+--- | --- | ---
+`Ø` | `?` | uncertain, degree 1
+`«` | `#` | uncertain, degree 2
+`»` | `#?` | uncertain, degree 3
+`|` | `##` | uncertain, degree 4
 
-Here the numeral `8(gesz2)` is collated.
+Note that there is also a bracket pair for uncertainty level 2.
 
-#### remarkable `!` ####
+We discuss the brackets under the node type [*cluster*](#cluster).
+Each type of bracket corresponds to a feature of the same name at the *sign* level.
 
-Only if the `!` is not followed by `(GGG)`
+With some difficulty, you can reconstruct the Abegg source from this, modulo the order
+of flags and brackets. 
 
-Example:
-
-    8. a-di isz!-ti i-na-an-na
-
-Here the reading `isz` is remarkable.
-
-#### question `?` ####
-
-Questionable identification.
-
-Example:
-
-    6. sza a-na ti?-bi a-bi-ka be-li szu-um-szu
-
-Here the reading `ti` is questionable.
-
-#### damage `#` ####
-
-Example:
-
-    10. _ma2_ a-na ra-ka-ab s,u2-ha-ar-tim#
-
-Here the reading `tim` is damaged.
+The recommended way to reconstruct the original transcriptions by Abegg is to go to the
+word level.
 
 The other nodes
 ===============
@@ -415,8 +371,8 @@ The other nodes
 Cluster
 -------
 
-One or more [*signs*](#sign) may be bracketed by `_ _` or by `( )` or by `[ ]` or by `< >` or by `<< >>`:
-together they form a *cluster*.
+One or more [*signs*](#sign) may be bracketed by certain delimiters.
+Together they form a *cluster*.
 
 Each pair of boundary signs marks a cluster of a certain type.
 This type is stored in the feature **type**.
@@ -424,8 +380,6 @@ This type is stored in the feature **type**.
 Clusters are not be nested in clusters of the same type.
 
 Clusters of one type in general do not respect the boundaries of clusters of other types.
-
-Clusters do not cross line boundaries.
 
 Clusters may contain just one [*sign*](#sign).
 
@@ -436,167 +390,67 @@ So, if `c` is a cluster, you can get its signs by
 
 More over, every type of cluster corresponds to a numerical feature on signs with the same name
 as that type.
-It has value `1` for those signs that are inside a cluster of that type and no value otherwise.
 
-### langalt `_ _` ###
+We propose an transcription that works inside the ETCBC transcription.
+Note that these have *sometimes* a space at the inner side.
 
-Marks a switch to the alternate language.
-In this corpus, the documents are mainly in Akkadian (`akk`). The alternate language is Sumerian (`sux`).
+We use the original brackets for the Unicode representation as well.
+But note that in the original the direction of the brackets is inverted, due to the conversion process
+that has stripped RTL and LTR triggering characters.
+In the Unicode representation we restore the proper direction.
 
-### det `{ }` ###
+In the table below, the *value* is the value that the associated feature has for 
+signs within that type of brackets under the given description.
 
-Marks a glosses of the determinative kind.
-
-### uncertain `( )` ###
-
-Marks uncertain readings.
-
-### missing `[ ]` ###
-
-Marks missing signs.
-
-### excised `<< >>` ###
-
-Marks signs that have been excised by the editor in order to arrive at a reading.
-
-### supplied `< >` ###
-
-Marks signs that have been supplied by the editor in order to arrive at a reading
+source / unicode | etcbc | value | description
+--- | --- | ---
+`^ ^` | `(^ ^)` | 3 | correction by ancient editor, supralinear
+`>> <<` | `(<< >>)` | 3 | correction by ancient editor, supralinear
+`>> <<` | `(<< >>)` | 2 | correction by ancient editor
+`> <` | `(< >)` | 1 | correction by modern editor
+`}} {{` | `({{ }})` | 2 | removed by ancient editor
+`} {` | `({ })` | 1 | removed by modern editor
+`≥ ≤` | `(- -)` | 1 | vacat: an empty, unwritten space in the manuscript
+`) (` | `( )` | 1 | alternative reading
+`] [` | `[ ]` | 1 | modern reconstruction
+`» «` | `(# #)` | 2 | uncertainty of degree 2
 
 Word
 ----
 
-Words are sequences of signs joined by `-` or occasionally `:` or `/`.
-Words themselves are separated by spaces ` `.
+Words are the contents of the transcription fields of the source data lines.
+Words will be separated by spaces and punctuation, or by nothing, in case the
+connection field in the same source data line has a `B`. 
 
-They have only one feature: **atf**, which contains the original ATF source,
-including cluster characters that are glued to the word or occur inside it.
+They have features **letters[aeu] trans[aeu] punc[aeu] after**.
 
-Line
-----
+For each of the letters `a e u` there is such a feature, and it gives the value in
+Abegg, ETCBC, and Unicode representation respectively.
 
-**This node type is section level 3**
+* **trans** full value of the word: letters, symbols, punctuation, brackets;
+  `transa` is the original content of the trans field in the source data file
+* **letters** letter value of the word: consonants, vowels, digits, numerals;
+  no punctuation, flags, or brackets;
+  if there are no letters, this feature has no value for that word;
+* **punc** the trailing punctuation of a word, if any;
+* **after** a space when the full representation of a word should be followed by a space,
+  i.e. when the connection field does not have `B`a.
 
-A node of type *line* corresponds to a numbered line with transcribed
-material or to a line with a structural comment (which starts with `$`).
+The source transcription can be reconstructed by walking over all words and printing
 
-Lines that start with a `#` are comments to the previous line or metadata to the document.
-Their contents are turned into document and line features, but they do not give rise
-to line nodes.
+```
+transa + after
+```
 
-Lines get a column number from preceding `@column i` lines (if any), and this gets stored in 
-**col**.
+for each word.
 
-There is no node type corresponding to columns.
+A non-text-critical transcription can be generated by printing 
 
-The ATF number at the start of the line goes into **ln**, without the `.`.
+```
+lettersa + punca + after
+```
 
-If primes `'` are present on column numbers and line numbers, they will not get stored on
-**col** and **ln**, but instead the features **primcol** and **primeln** will receive a `1`.
-
-The number of the line in the source file is stored in **srcLnNum**,
-the unmodified contents of the line, including the ATF line number goes into **srcLn**.
-
-If the line is a structural comment (`$`), the contents of the line goes into
-the **comment** feature of its sole sign, a sign of type `commentline`.
-
-If a line has a comment in the form of one or more following lines that start with `# `,
-then these lines will be joined with newlines and collectively go into **remarks**.
-
-If a line has a translation, say in English, marked by a following line starting with 
-`#tr.en:`, then the contents of the translation will be added to **translation@en**.
-
-If a line has any translation at all, in whatever language, the feature **trans** becomes `1`.
-
-Face
-----
-
-**This node type is section level 2**
-
-[*Lines*](#line) are grouped into [*faces*](#face).
-
-*Faces* are marked by lines like
-
-    @obverse
-
-or
-
-    @reverse
-
-or
-
-    @seal 1
-
-There are a few other possibilities, such as:
-
-    @left edge
-    @upper edge
-
-A node of type *face* corresponds to the material after a *face* specifier and
-before the next *face* specifier or the end of an object or [*document*](#document).
-
-Note that *objects*, such as *tablets*, *envelopes* and *eyestones* are also 
-marked by `@` lines.
-Whenever the object is not a tablet, the type of object will prepended to the name of the face:
-
-The obverse of an envelope is
-
-    @envelope - obverse
-
-whereas
-
-    @obverse
-
-is the obverse of a tablet.
-
-Seals are faces, not objects.
-
-The resulting face type is stored in the feature **face**.
-
-The object on which a face resides, goes to the feature **object**.
-
-Faces also have features **srcLn** and **srcLnNum**, like lines.
-In this cases, they refer to the line where a face starts.
-
-Document
-------
-
-**This node type is section level 1.**
-
-[*Faces*](#face) are grouped into *documents*.
-
-*Documents* are started by lines like
-
-    &P510635 = AbB 12, 112
-
-Here we collect
-
-* `P002174` as the **pnumber** of the *document*,
-* `AbB` as the **collection**,
-* `12` as the **volume**,
-* `112` as the **docnumber**
-
-If this line has irregular content, we put the irregular material into **docnote**:
-
-* `&P497776 = Fs Landsberger 235`
-  * **collection**, **volume**, **docnumber** undefined;
-  * **docnote** = `Fs Landsberger 235`
-* `&P479394 = CT 33, pl. 26, BM 097405`
-  * **collection** = `CT`
-  * **volume** = `33`
-  * **docnumber** = `26`
-  * **docnote** = `BM 097405`
-
-We also add the name of the source file as a feature **srcfile**,
-with possible values:
-
-* `AbB-primary` for documents whose primary publication is `AbB` ;
-* `AbB-secondary` for documents whose secondary publication(s) has `AbB` .
-
-This corpus is just a set of *documents*. The position of a particular document in
-the whole set is not meaningful. The main identification of documents is by their
-**pnumber**,
-not by any sequence number within the corpus.
+for each word.
 
 Text formats
 =============
@@ -605,12 +459,15 @@ The following text formats are defined (you can also list them with `T.formats`)
 
 format | kind | description
 --- | --- | ---
-`text-orig-full` | plain | the full atf, including flags and cluster characters
-`text-orig-plain` | plain | the essential bits: readings, graphemes, repeats, fractions, operators, no clusters, flags, inline comments
-`text-orig-rich` | plain | as `text-orig-plain` but with accented characters
-`text-orig-unicode` | plain | as `text-orig-plain` but with cuneiform unicode characters, hyphens are suppressed
-`layout-orig-rich` | layout | as `text-orig-rich` but the flag and cluster information is visible in layout
-`layout-orig-unicode` | layout | as `text-orig-unicode` but the flag and cluster information is visible in layout
+`text-orig-full` | plain | the full source data, including flags and cluster characters, in unicode
+`text-trans-full` | plain | the full source data, including flags and cluster characters, in etcbc transcription
+`text-source-full` | plain | the full source data, including flags and cluster characters, in Abegg transcription
+`text-orig-plain` | plain | the essential bits: letters and numerals, no flags and brackets and punctuation; in unicode
+`text-trans-plain` | plain | the essential bits: letters and numerals, no flags and brackets and punctuation; in etcbc transcription
+`text-source-plain` | plain | the essential bits: letters and numerals, no flags and brackets and punctuation; in Abegg transcription
+`layout-orig-full` | layout | as `text-orig-full` but the flag and cluster information is visible in layout
+`layout-trans-full` | layout | as `text-trans-full` but the flag and cluster information is visible in layout
+`layout-source-full` | layout | as `text-source-full` but the flag and cluster information is visible in layout
 
 The formats with `text` result in strings that are plain text, without additional formatting.
 
@@ -618,5 +475,5 @@ The formats with `layout` result in pieces html with css-styles; the richness of
 in the plain representation, e.g. blurry characters when signs are damaged or uncertain.
 
 See also the 
-[showcases](https://nbviewer.jupyter.org/github/annotation/tutorials/blob/master/oldbabylonian/display.ipynb).
+[showcases](https://nbviewer.jupyter.org/github/annotation/tutorials/blob/master/dss/display.ipynb).
 
