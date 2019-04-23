@@ -229,8 +229,8 @@ MISSING_ESC = '░'
 TOKENS = (
     ('missing', '--', '░', ' 0 ', 'ε'),
     ('uncertain', '?', None, ' ? ', ' ? '),
-    ('doubtful', '\\', None, ' ~ ', '~'),
-    ('unknown', '�', None, ' ! ', '!'),
+    ('uncertain', '\\', None, ' # ', ' # '),
+    ('uncertain', '�', None, ' #? ', ' #? '),
     ('add', '+', '+', ' + ', '+'),
 )
 TOKENS_FIX = (
@@ -240,8 +240,8 @@ TOKENS_ESC = {x[1]: x[2] for x in TOKENS if x[2]}
 TOKENS_UNESC = {x[2]: x[1] for x in TOKENS if x[2]}
 TOKEN_SET = {x[2] or x[1] for x in TOKENS}
 TOKENS_INV = {x[2] or x[1]: x[0] for x in TOKENS}
-TOKENS_REP = {x[0]: x[3] for x in TOKENS}
-TOKENS_UNI = {x[0]: x[4] for x in TOKENS}
+TOKENS_REP = {x[2] or x[1]: x[3] for x in TOKENS}
+TOKENS_UNI = {x[2] or x[1]: x[4] for x in TOKENS}
 
 # nonbib 53527 lex: CHAG
 # nonbib 53566 lex: HN
@@ -907,7 +907,7 @@ def director(cv):
         letterse = TR.from_hebrew(letterso)
         cv.feature(curSlot, letterso=letterso, letterse=letterse)
       elif typ in {TOKENS}:
-        letterso = TOKENS_REP[typ]
+        letterso = TOKENS_REP[token]
 
       for (name, value) in curBrackets.items():
         cv.feature(curSlot, **{name: value})

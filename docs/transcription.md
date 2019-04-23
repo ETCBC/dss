@@ -108,9 +108,9 @@ type | examples | rewritten/etcbc | unicode | description
 `punctuation` | ` ` `-` `.` `±` `/`| `_` `&` `00` `62` `61`| ` ` `־` `׃` `״` `׳`| non-breaking space, maqaf, sof pasuq, paleo divider, morpheme break 
 `numeral` | `A` `B` `C` `D` `F` `å` `∫`  | ` 1A ` ` 1B ` ` 10 ` ` 20 ` ` 100 ` ` 1a ` ` 1f ` | ` 1A ` ` 1B ` ` 10 ` ` 20 ` ` 100 ` ` 1a ` ` 1f ` | a numeral, only in words that are a numeral as a whole
 `missing` | `--` | ` 0 ` | `ε` | representation of a missing sign
-`doubtful` | ``\`` | ` ~ ` | `~` | representation of a doubtful sign
-`uncertain` | `?` | ` ? ` | ` ? ` | representation of an uncertain sign
-`unknown` | `�` | ` ! ` | `!`| representation of an unknown sign
+`uncertain` | `?` | ` ? ` | ` ? ` | representation of an uncertain sign (degree 1)
+`uncertain` | ``\`` | ` # ` | ` # ` | representation of a uncertain sign (degree 2)
+`uncertain` | `�` | ` #? ` | ` #? `| representation of an uncertain sign (degree 3)
 `add` | `+` | ` + ` | `+` | representation of an addition between numerals
 
 feature | values | Abegg | ETCBC | Unicode | description
@@ -122,7 +122,7 @@ feature | values | Abegg | ETCBC | Unicode | description
 **reconstruction** | `1` | `]p[n»y` | `[P]N#?Y` | | material is reconstructed by a modern editor, marked by being within square brackets  `[ ]`
 **removed** | `1` | `}m«x«r«yØM«{` | `{M#Y#R#J?m#}` | | material is removed by a modern editor, marked by being within single braces  `{ }`
 **removed** | `2` | `twlo}}t{{` | `TWL<{{t}}` | | material is removed by an ancient editor, marked by being within double braces  `{{ }}`
-**token[aeu]** | | `m` | `M` | `מ` | transliteration of an individual sign
+**glyph[aeu]** | | `m` | `M` | `מ` | transliteration of an individual sign
 **type** | | | | | type of sign, see table above
 **uncertain** | `1` | `b«NØ` | `B#n?` | | indicates *uncertainty of degree=1* by flag `|`
 **uncertain** | `2` | `at«` `aj«y»/K` | `>T#` `>X#J#?) ? k` | | indicates *uncertainty of degree=2* by flag `«` or brackets `« »`
@@ -278,10 +278,10 @@ This is the basic unit of writing.
 
 **The node type [*sign*](#sign) is our slot type in the Text-Fabric representation of this corpus.**
 
-All signs have the features **type** and **token[aeu]**.
+All signs have the features **type** and **glyph[aeu]**.
 
-The *type* stores the kind of token, such as `consonant`.
-The *tokena tokene tokene* features store the transcription of the token, without any flags
+The *type* stores the kind of glyph, such as `consonant`.
+The *glypha glyphe glyphu* features store the transcription of the glyph, without any flags
 and brackets. They store it in the Abegg transcription, ETCBC transcription, and in Unicode.
 
 These features do not suffice to reconstruct the original Abegg transcription.
@@ -355,9 +355,11 @@ source | etcbc / unicode | description
 `Ø` | `?` | uncertain, degree 1
 `«` | `#` | uncertain, degree 2
 `»` | `#?` | uncertain, degree 3
-`|` | `##` | uncertain, degree 4
+`\|` | `##` | uncertain, degree 4
 
 Note that there is also a bracket pair for uncertainty level 2.
+
+### Brackets
 
 We discuss the brackets under the node type [*cluster*](#cluster).
 Each type of bracket corresponds to a feature of the same name at the *sign* level.
@@ -385,6 +387,8 @@ Clusters are not be nested in clusters of the same type.
 Clusters of one type in general do not respect the boundaries of clusters of other types.
 
 Clusters may contain just one [*sign*](#sign).
+
+Cluster boundaries are usually within words.
 
 In Text-Fabric, cluster nodes are linked to the signs it contains.
 So, if `c` is a cluster, you can get its signs by 
@@ -430,14 +434,14 @@ They have features **letters[aeu] trans[aeu] punc[aeu] after**.
 For each of the letters `a e u` there is such a feature, and it gives the value in
 Abegg, ETCBC, and Unicode representation respectively.
 
-* **trans** full value of the word: letters, symbols, punctuation, brackets;
+* **trans[aeu]** full value of the word: letters, symbols, punctuation, brackets;
   `transa` is the original content of the trans field in the source data file
-* **letters** letter value of the word: consonants, vowels, digits, numerals;
+* **letters[aeu]** letter value of the word: consonants, vowels, digits, numerals;
   no punctuation, flags, or brackets;
   if there are no letters, this feature has no value for that word;
-* **punc** the trailing punctuation of a word, if any;
+* **punc[aeu]** the trailing punctuation of a word, if any;
 * **after** a space when the full representation of a word should be followed by a space,
-  i.e. when the connection field does not have `B`a.
+  i.e. when the connection field does not have a `B`.
 
 The source transcription can be reconstructed by walking over all words and printing
 
@@ -454,6 +458,15 @@ lettersa + punca + after
 ```
 
 for each word.
+
+Or, in ETCBC transcription / Unicode:
+
+```
+letterse + punce + after
+lettersu + puncu + after
+```
+
+These features will be used in the *text-formats* below.
 
 Text formats
 =============
