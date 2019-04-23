@@ -42,7 +42,7 @@ this corpus we have node types for:
 [*cluster*](#cluster),
 [*line*](#line),
 [*fragment*](#fragment),
-[*scroll*](#scroll).
+[*scroll*](#scroll),
 [*halfverse*](#halfverse),
 [*verse*](#verse),
 [*chapter*](#chapter),
@@ -66,7 +66,8 @@ Transcription
 --------------
 We map the transcriptions and lexemes to Hebrew unicode.
 The transcriptions are consonant only, the lexemes are pointed.
-Vowel points have been transcribed by one or more special characters, probably
+The vowels we encounter in the source data
+been transcribed by one or more special characters, probably
 in order to fine-tune the position of those points with respect to their
 consonants.
 We reduce them to the Hebrew unicodes.
@@ -107,7 +108,7 @@ type | examples | rewritten/etcbc | unicode | description
 `punctuation` | ` ` `-` `.` `±` `/`| `_` `&` `00` `62` `61`| ` ` `־` `׃` `״` `׳`| non-breaking space, maqaf, sof pasuq, paleo divider, morpheme break 
 `numeral` | `A` `B` `C` `D` `F` `å` `∫`  | ` 1A ` ` 1B ` ` 10 ` ` 20 ` ` 100 ` ` 1a ` ` 1f ` | ` 1A ` ` 1B ` ` 10 ` ` 20 ` ` 100 ` ` 1a ` ` 1f ` | a numeral, only in words that are a numeral as a whole
 `missing` | `--` | ` 0 ` | `ε` | representation of a missing sign
-`doubtful` | `\\` | ` ~ ` | `~` | representation of a doubtful sign
+`doubtful` | ``\`` | ` ~ ` | `~` | representation of a doubtful sign
 `uncertain` | `?` | ` ? ` | ` ? ` | representation of an uncertain sign
 `unknown` | `�` | ` ! ` | `!`| representation of an unknown sign
 `add` | `+` | ` + ` | `+` | representation of an addition between numerals
