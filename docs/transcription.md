@@ -479,17 +479,17 @@ The following text formats are defined (you can also list them with `T.formats`)
 
 format | kind | description
 --- | --- | ---
-`text-orig-full` | plain | the full source data, including flags and cluster characters, in unicode
-`text-trans-full` | plain | the full source data, including flags and cluster characters, in etcbc transcription
-`text-source-full` | plain | the full source data, including flags and cluster characters, in Abegg transcription
-`text-orig-plain` | plain | the essential bits: glyphs, no flags and brackets; in unicode
-`text-trans-plain` | plain | the essential bits: glyphs, no flags and brackets; in etcbc transcription
-`text-source-plain` | plain | the essential bits: glyphs, no flags and brackets; in Abegg transcription
-`lex-orig-full` | plain | lexeme of a word in unicode
-`lex-trans-full` | plain | lexeme of a word in etcbc transcription
-`lex-source-full` | plain | lexeme of a word in Abegg transcription
-`layout-orig-full` | layout | as `text-orig-full` but the flag and cluster information is visible in layout
-`layout-trans-full` | layout | as `text-trans-full` but the flag and cluster information is visible in layout
+`text-orig-full`     | plain | the source text, glyphs only, no flags / brackets, in unicode
+`text-trans-full`    | plain | the source text, glyphs only, no flags / brackets, in etcbc transcription
+`text-source-full`   | plain | the source text, glyphs only, no flags / brackets, in Abegg transcription
+`text-orig-extra`    | plain | the source text with flags and brackets, in unicode
+`text-trans-extra`   | plain | the source text with flags and brackets, in etcbc transcription
+`text-source-extra`  | plain | the source text with flags and brackets, in Abegg transcription
+`lex-orig-full`      | plain | lexeme of a word in unicode
+`lex-trans-full`     | plain | lexeme of a word in etcbc transcription
+`lex-source-full`    | plain | lexeme of a word in Abegg transcription
+`layout-orig-full`   | layout | as `text-orig-full`   but the flag and cluster information is visible in layout
+`layout-trans-full`  | layout | as `text-trans-full`  but the flag and cluster information is visible in layout
 `layout-source-full` | layout | as `text-source-full` but the flag and cluster information is visible in layout
 
 The formats with `text` result in strings that are plain text, without additional formatting.

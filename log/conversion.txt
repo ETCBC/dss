@@ -2,15 +2,21 @@
 Reading    bib beginning-end ...242661 lines
 Reading nonbib beginning-end ...340161 lines
 FIXES:
-	bib   :147775 "[^≥" => "[≥" (imbalance in ^ brackets : applied
-	bib   :158295 "[\\]^" => "[\\]" (imbalance in ^ brackets : applied
-	bib   :202008 "alwhiM" => "alwhyM" (hireq => yod : applied
-	nonbib:157910 "^b" => "^b^" (imbalance in ^ brackets : applied
-	nonbib:191862 "y»tkwØ_nw" => "y»tkwØnw" (_ removed (1 of 3) : applied
-	nonbib:225327 "t_onh]" => "tonh]" (_ removed (1 of 3) : applied
-	nonbib:259060 "oyN_" => "oyN" (_ removed (1 of 3) : applied
-	nonbib:291988 "[˝w»b|a|]" => "[w»b|a|]" (strange, unique character removed : applied
-	nonbib:313632 "13,3,1" => "13" (strange numbering replaced by plain number : applied
+	applied: bib   : 87334 "≥" => "≥≤" (missing ≤ bracket
+	applied: bib   :147775 "[^≥" => "[≥" (imbalance in ^ brackets
+	applied: bib   :158295 "[\\]^" => "[\\]" (imbalance in ^ brackets
+	applied: bib   :185452 "h«\\wØ(" => "h«\\wØ" (spurious ( bracket
+	applied: bib   :202008 "alwhiM" => "alwhyM" (hireq => yod
+	applied: nonbib: 36148 "≤]" => "≥≤" (spurious ] bracket, missing ≥ bracket
+	applied: nonbib:140504 "b]" => "b" (spurious ] bracket
+	applied: nonbib:140582 "b]" => "b" (spurious ] bracket
+	applied: nonbib:140616 "b]" => "b" (spurious ] bracket
+	applied: nonbib:157910 "^b" => "^b^" (imbalance in ^ brackets
+	applied: nonbib:191862 "y»tkwØ_nw" => "y»tkwØnw" (_ removed (1 of 3)
+	applied: nonbib:225327 "t_onh]" => "tonh]" (_ removed (1 of 3)
+	applied: nonbib:259060 "oyN_" => "oyN" (_ removed (1 of 3)
+	applied: nonbib:291988 "[˝w»b|a|]" => "[w»b|a|]" (strange, unique character removed
+	applied: nonbib:313632 "13,3,1" => "13" (strange numbering replaced by plain number
 DIAGNOSTICS 43 lines
 bib   :   482 	SCROLL -Q2        => 1Q2
 bib   :   829 	SCROLL -Q3        => 1Q3
@@ -100,34 +106,34 @@ MAPPED (102)
 		both         1 x
 		both  å   4468 x
 		both  �     18 x
-		onl<y ;  69366 x
-		onl<y J   3483 x
-		onl<y O  18212 x
-		onl<y U   1115 x
-		onl<y V  66618 x
-		onl<y c  10780 x
-		onl<y v  44565 x
-		onl<y ¥   1237 x
-		onl<y ¨     39 x
-		onl<y ®   9560 x
-		onl<y ´   2180 x
-		onl<y Å   4442 x
-		onl<y Ê    279 x
-		onl<y Î  10417 x
-		onl<y Ï      4 x
-		onl<y Ú   9043 x
-		onl<y é   2655 x
-		onl<y î   4683 x
-		onl<y ø  28135 x
-		onl<y ü    110 x
-		onl<y ƒ    165 x
-		onl<y ˆ  12627 x
-		onl<y Ω    129 x
-		onl<y …  14888 x
-		onl<y ‰   7680 x
-		onl<y ∂  13231 x
-		onl<y √   3908 x
-		onl<y ◊  50405 x
+		only  ;  69366 x
+		only  J   3483 x
+		only  O  18212 x
+		only  U   1115 x
+		only  V  66618 x
+		only  c  10780 x
+		only  v  44565 x
+		only  ¥   1237 x
+		only  ¨     39 x
+		only  ®   9560 x
+		only  ´   2180 x
+		only  Å   4442 x
+		only  Ê    279 x
+		only  Î  10417 x
+		only  Ï      4 x
+		only  Ú   9043 x
+		only  é   2655 x
+		only  î   4683 x
+		only  ø  28135 x
+		only  ü    110 x
+		only  ƒ    165 x
+		only  ˆ  12627 x
+		only  Ω    129 x
+		only  …  14888 x
+		only  ‰   7680 x
+		only  ∂  13231 x
+		only  √   3908 x
+		only  ◊  50405 x
 	in trans field:
 		both  /  61594 x
 		both  0      2 x
@@ -171,38 +177,38 @@ MAPPED (102)
 		both       380 x
 		both  å    145 x
 		both  �      3 x
-		onl<y (    334 x
-		onl<y )    333 x
-		onl<y +     65 x
-		onl<y - 107761 x
-		onl<y .  29915 x
-		onl<y 1     20 x
-		onl<y 2     16 x
-		onl<y 3     14 x
-		onl<y 4     12 x
-		onl<y 5     11 x
-		onl<y 6      6 x
-		onl<y 7      5 x
-		onl<y 8      2 x
-		onl<y 9      2 x
-		onl<y <    389 x
-		onl<y >    389 x
-		onl<y ?    610 x
-		onl<y G      1 x
-		onl<y H      3 x
-		onl<y [  93846 x
-		onl<y ]  93850 x
-		onl<y ^   3164 x
-		onl<y {   1487 x
-		onl<y |  40190 x
-		onl<y }   1487 x
-		onl<y «  26878 x
-		onl<y ±     18 x
-		onl<y »  15541 x
-		onl<y Ø  10327 x
-		onl<y ∫     13 x
-		onl<y ≤   3521 x
-		onl<y ≥   3521 x
+		only  (    333 x
+		only  )    333 x
+		only  +     65 x
+		only  - 107761 x
+		only  .  29915 x
+		only  1     20 x
+		only  2     16 x
+		only  3     14 x
+		only  4     12 x
+		only  5     11 x
+		only  6      6 x
+		only  7      5 x
+		only  8      2 x
+		only  9      2 x
+		only  <    389 x
+		only  >    389 x
+		only  ?    610 x
+		only  G      1 x
+		only  H      3 x
+		only  [  93846 x
+		only  ]  93846 x
+		only  ^   3164 x
+		only  {   1487 x
+		only  |  40190 x
+		only  }   1487 x
+		only  «  26878 x
+		only  ±     18 x
+		only  »  15541 x
+		only  Ø  10327 x
+		only  ∫     13 x
+		only  ≤   3522 x
+		only  ≥   3522 x
 NUMERALS
 	A                              :    48 x
 	AA                             :    21 x
@@ -305,8 +311,48 @@ NUMERALS
 	TR                             :     1 x
 	X                              :    31 x
 	∫                              :     1 x
+LAST-OF-LINE of 52917 lines
+	Number of times word "/" does not end a line: 118
+		bib    :    587 in 1Q2 f1:6
+		bib    :    732 in 1Q2 f5_6:4
+		bib    :    873 in 1Q3 f1:3
+		bib    :   2238 in 1Q4 f12:5
+		bib    :   2271 in 1Q4 f13:2
+		bib    :  22013 in 1Qisaa 34:15
+		bib    :  27923 in 1Qisaa 46:9
+		bib    :  36900 in 1Q8 20:16
+		bib    :  40108 in 1Q8 26:36
+		bib    :  44449 in 2Q2 f1:7
+	Number of ways to end a line: 6115 ways to end a line
+		[           16617 x
+		/           15414 x
+		.           10156 x
+		≤             390 x
+		kwl           114 x
+		a             113 x
+		[\             93 x
+		aCr            90 x
+		a[             85 x
+		at             65 x
+		kwl[           55 x
+		at[            54 x
+		lwa            52 x
+		≤[             47 x
+		al             45 x
+		aCr[           41 x
+		lwa[           37 x
+		ol             37 x
+		al[            34 x
+		ayC            33 x
 Tokenizing    bib ...242661 entries
 Tokenizing nonbib ...340161 entries
+BRACKETS ^ ^ ...
+	   bib: OK       1264 balanced occurrences
+
+	nonbib: OK       1900 balanced occurrences
+
+	IMBALANCES:  0
+	OCCURRENCES: 3164
 BRACKETS >> << ...
 	   bib: OK       86 balanced occurrences
 
@@ -321,13 +367,6 @@ BRACKETS > < ...
 
 	IMBALANCES:  0
 	OCCURRENCES: 190
-BRACKETS ^ ^ ...
-	   bib: OK       1264 balanced occurrences
-
-	nonbib: OK       1900 balanced occurrences
-
-	IMBALANCES:  0
-	OCCURRENCES: 3164
 BRACKETS }} {{ ...
 	   bib: OK       386 balanced occurrences
 
@@ -343,118 +382,26 @@ BRACKETS } { ...
 	IMBALANCES:  0
 	OCCURRENCES: 150
 BRACKETS ≥ ≤ ...
-	   bib:          2989 occurrences
-	   bib: WARNING: 1 imbalances
+	   bib: OK       2990 balanced occurrences
 
-		   bib: 87400      ≥     l/hM
-		   bib: 87401      ≥     ol
-		   bib: 87402      ≥     py
-		   bib: 87403      ≥     yhwh
-		   bib: 87404      ≥     .
-		   bib: 87405      ≥ ==> ≥
-		   bib: 87406      ≥     ≤
-		   bib: 87407      ≥     [
-		   bib: 87408      ≥     /
-		   bib: 87409      ≥     w
-		   bib: 87410      ≥     ydbr
-		
+	nonbib: OK       4054 balanced occurrences
 
-	nonbib:          4053 occurrences
-	nonbib: WARNING: 1 imbalances
-
-		nonbib: 36143      ≤     --
-		nonbib: 36144      ≤     [
-		nonbib: 36145      ≤     ]
-		nonbib: 36146      ≤     --
-		nonbib: 36147      ≤     [////]
-		nonbib: 36148      ≤ ==> ≤]
-		nonbib: 36149      ≤     --
-		nonbib: 36150      ≤     [
-		nonbib: 36151      ≤     ]
-		nonbib: 36152      ≤     --
-		nonbib: 36153      ≤     [//
-		
-
-	IMBALANCES:  2
-	OCCURRENCES: 7042
+	IMBALANCES:  0
+	OCCURRENCES: 7044
 BRACKETS ) ( ...
-	   bib:          41 occurrences
-	   bib: WARNING: 1 imbalances
-
-		   bib:185447      (     mh
-		   bib:185448      (     ypw
-		   bib:185449      (     ddy/K
-		   bib:185450      (     ajwt/y
-		   bib:185451      (     /
-		   bib:185452      ( ==> h«//wØ(
-		   bib:185453      (     mh
-		   bib:185454      (     fb|]w[
-		   bib:185455      (     ddy/K
-		   bib:185456      (     mN
-		   bib:185457      (     yyN
-		
+	   bib: OK       40 balanced occurrences
 
 	nonbib: OK       626 balanced occurrences
 
-	IMBALANCES:  1
-	OCCURRENCES: 667
+	IMBALANCES:  0
+	OCCURRENCES: 666
 BRACKETS ] [ ...
 	   bib: OK       55718 balanced occurrences
 
-	nonbib:          131978 occurrences
-	nonbib: WARNING: 4 imbalances
+	nonbib: OK       131974 balanced occurrences
 
-		nonbib: 36143      ]     --
-		nonbib: 36144      ]     [
-		nonbib: 36145      ]     ]
-		nonbib: 36146      ]     --
-		nonbib: 36147      ]     [////]
-		nonbib: 36148      ] ==> ≤]
-		nonbib: 36149      ]     --
-		nonbib: 36150      ]     [
-		nonbib: 36151      ]     ]
-		nonbib: 36152      ]     --
-		nonbib: 36153      ]     [//
-
-		nonbib:140500      ]     --
-		nonbib:140501      ]     b
-		nonbib:140502      ]     [CAAå
-		nonbib:140503      ]     w
-		nonbib:140504      ]     b]
-		nonbib:140505      ] ==> CA]AAå[
-		nonbib:140506      ]     ]
-		nonbib:140507      ]     --
-		nonbib:140508      ]     b
-		nonbib:140509      ]     CAA[åAAåAAå
-		nonbib:140510      ]     w
-
-		nonbib:140578      ]     a|
-		nonbib:140579      ]     b
-		nonbib:140580      ]     CAAåAAAå
-		nonbib:140581      ]     w
-		nonbib:140582      ]     b]
-		nonbib:140583      ] ==> C]AA[A|å|AAAå
-		nonbib:140584      ]     bt|w»lt
-		nonbib:140585      ]     a
-		nonbib:140586      ]     b
-		nonbib:140587      ]     CA|]A[å|AAåAAå
-		nonbib:140588      ]     w
-
-		nonbib:140612      ]     w
-		nonbib:140613      ]     b
-		nonbib:140614      ]     DAAAåAAå
-		nonbib:140615      ]     w
-		nonbib:140616      ]     b]
-		nonbib:140617      ] ==> DAAAAA]AAå
-		nonbib:140618      ]     gdy
-		nonbib:140619      ]     [a|
-		nonbib:140620      ]     b
-		nonbib:140621      ]     DA]AåA[AåAAå
-		nonbib:140622      ]     w
-		
-
-	IMBALANCES:  4
-	OCCURRENCES: 187696
+	IMBALANCES:  0
+	OCCURRENCES: 187692
 BRACKETS » « ...
 	   bib: OK       776 balanced occurrences
 
@@ -462,8 +409,8 @@ BRACKETS » « ...
 
 	IMBALANCES:  0
 	OCCURRENCES: 1812
-OVERALL IMBALANCES:  7
-OVERALL OCCURRENCES: 202427
+OVERALL IMBALANCES:  0
+OVERALL OCCURRENCES: 202424
 998 CODEX ACRONYMS in the data
 	10Q1
 	11Q1
