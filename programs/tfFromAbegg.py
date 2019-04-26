@@ -115,6 +115,15 @@ FIXES = dict(
         36148: {
             TRANS: ('≤]', '≥≤', 'spurious ] bracket, missing ≥ bracket'),
         },
+        53527: {
+            TRANS: ('CHAG', 'chag', 'lowercasing'),
+        },
+        53566: {
+            TRANS: ('HN', 'hn', 'lowercasing'),
+        },
+        53584: {
+            TRANS: ('THE', 'hn', 'lowercasing'),
+        },
         55019: {
             TRANS: (f'{NB}±', '≥≤', 'spurious non-breaking space before paleodivider'),
         },
@@ -139,8 +148,21 @@ FIXES = dict(
         259060: {
             TRANS: ('oyN_', 'oyN', '_ removed (1 of 3)'),
         },
+        261956: {
+            TRANS: ('a', 'A', 'a is numeral A'),
+        },
+        263103: {
+            TRANS: ('a', 'A', 'a is numeral A'),
+        },
         291988: {
             TRANS: ('[˝w»b|a|]', '[w»b|a|]', 'strange, unique character removed'),
+        },
+        301907: {
+            TRANS: ('3', ']3[', 'wrapped a digit in "] ["'),
+        },
+        313324: {
+            LEX: ('\\0', '\\', 'distribute "\\0" over two fields'),
+            MORPH: ('', '0', 'distribute "\\0" over two fields'),
         },
         313632: {
             LINE: ('13,3,1', '13', 'strange numbering replaced by plain number'),
@@ -152,6 +174,12 @@ FIXES = dict(
         },
         147775: {
             TRANS: ('[^≥', '[≥', 'imbalance in ^ brackets'),
+        },
+        154735: {
+            TRANS: ('≥1a≤', '≥a≤', 'spurious character "1"'),
+        },
+        154751: {
+            TRANS: ('≥2a≤', '≥a≤', 'spurious character "2"'),
         },
         158295: {
             TRANS: ('[\\\\]^', '[\\\\]', 'imbalance in ^ brackets'),
@@ -242,6 +270,7 @@ VOWELS = (
     ('\u05b6', '‰'),  # segol
     ('\u05b7', 'A'),  # patah
     ('\u05b7', 'Å'),  # patah
+    ('\u05b7', 'å'),  # patah
     ('\u05b8', 'D'),  # qamats
     ('\u05b8', '∂'),  # qamats
     ('\u05b8', 'Î'),  # qamats
@@ -266,29 +295,40 @@ POINTS_SET = {x[1] for x in POINTS}
 SEPS = (
     (NB, NB),
     ('\u05be', '-'),  # maqaf
-    ('\u05f3', '/'),  # geresh as morpheme separator
+    ('\u05c0', '/'),  # paseq as morpheme separator
 )
 SEPS_SET = {x[1] for x in SEPS}
 
 PUNCTS = (
     ('\u05c3', '.'),  # sof pasuq
-    ('\u05f4', '±'),  # gershayim as paleo divider
+    ('\u05c3' * 2, '±'),  # double sof pasuq as paleo divider
 )
 PUNCTS_SET = {x[1] for x in PUNCTS}
 
-DIGITS = set('0123456789')
+N1A = 'å'
+N1F = '∫'
 
 NUMERALS = (
-    (' 1A ', 'A'),
-    (' 1a ', 'å'),
-    (' 1B ', 'B'),
-    (' 1f ', '∫'),
-    (' 10 ', 'C'),
-    (' 20 ', 'D'),
-    (' 100 ', 'F'),
+    ('\u05d0', 'A'),  # alef
+    ('\u05d0\u05c4', N1A),  # alef with upper dot
+    ('\u05d0\u05c5', 'B'),  # alef with lower dot
+    ('\u05d0\u05bd', N1F),  # alef with meteg
+    ('\u05d9', 'C'),  # yod
+    ('\u05da', 'D'),  # kaf
+    ('\u05e7', 'F'),  # qof
 )
+GERESH = '\u05f3'
+GERSHAYIM = '\u05f4'
 
-NUMERALS_SET = {x[1] for x in NUMERALS} | DIGITS
+NUMERALS_SET = {x[1] for x in NUMERALS}
+NUMERALS_INV = {x[1]: x[0] for x in NUMERALS}
+
+
+def uniFromNum(num):
+  if len(num) == 1:
+    return f'{GERESH}{NUMERALS_INV[num]}'
+  return f'{"".join(NUMERALS_INV[c] for c in num[0:-1])}{GERSHAYIM}{NUMERALS_INV[num[-1]]}'
+
 
 TOKENS = (
     (MISSING, '--', '░', ' 0 ', 'ε'),
@@ -344,11 +384,30 @@ BRACKETS_ESC = tuple(x for x in BRACKETS if x[5] or x[6])
 BRACKETS_ESCPURE = tuple(x for x in BRACKETS if (x[5] or x[6]) and not x[2])
 BRACKETS_SPECIAL = tuple(x for x in BRACKETS if x[2])
 
+DIGITS_H = (
+    ('a', '1'),
+    ('b', '2'),
+    ('g', '3'),
+    ('d', '4'),
+    ('h', '5'),
+    ('w', '6'),
+    ('z', '7'),
+    ('j', '8'),
+    ('f', '9'),
+    ('y', '10'),
+    ('ya', '11'),
+    ('yb', '12'),
+)
+DIGITS_SET = set('0123456789')
+DIGITSH_SET = set('abgdhwzjfy')
+DIGITS_INV = {x[1]: x[0] for x in DIGITS_H}
+
 GLYPHS_ALPHA = CONSONANTS_SET | VOWELS_SET | POINTS_SET | SEPS_SET
+GLYPHS_LEX = GLYPHS_ALPHA | DIGITS_SET
 GLYPHS_SET = GLYPHS_ALPHA | NUMERALS_SET
 GLYPHS_AMBI = GLYPHS_ALPHA & NUMERALS_SET
 
-CHARS = DIGITS
+CHARS = set()
 for kind in (CONSONANTS, VOWELS, POINTS, SEPS, PUNCTS, NUMERALS):
   CHARS |= {x[1] for x in kind}
 
@@ -363,13 +422,7 @@ CHARS = reduce(
     (set(x) for x in CHARS),
     set(),
 )
-
-CHARN_UNI = {}
-CHARN_REP = {}
-CHARN_UNI.update({x[1]: x[0] for x in NUMERALS})
-CHARN_REP.update({x[1]: x[0] for x in NUMERALS})
-CHARN_UNI.update({x: f' {x} ' for x in DIGITS})
-CHARN_REP.update({x: f' {x} ' for x in DIGITS})
+CHARS_LEX = CHARS | DIGITS_SET
 
 CHARS_UNI = {}
 CHARS_REP = {}
@@ -432,11 +485,14 @@ def unesc(text):
 
 
 lexDisRe = re.compile(r'^(.*?)(?:[_-]?)([0-9]+$)')
-lexDisXRe = re.compile(r'(?:^[0-9]+$)|(?:[_-][0-9]+$)')
+lexDisXRe = re.compile(r'[_-][0-9]+$')
+capitalRe = re.compile(f'^[A-Z{N1A}{N1F}]+$')
 numeralRe = re.compile(f'^[{"".join(NUMERALS_SET)}]+$')
+numeralMRe = re.compile(f'''(^'[{DIGITSH_SET}]+$)|(^[{DIGITSH_SET}]+"[{DIGITSH_SET}]$)''')
+digitRe = re.compile(f'^[0-9]+$')
 ambiRe = re.compile(f'^[{"".join(GLYPHS_AMBI)}]+$')
-nonGlyphRe = re.compile(f'[^{re.escape("".join(GLYPHS_SET))}]+')
-
+nonGlyphRe = re.compile(f'[^A-Za-z{re.escape("".join(GLYPHS_SET))}]+')
+nonGlyphLexRe = re.compile(f'[^A-Za-z{re.escape("".join(GLYPHS_LEX))}]+')
 
 # TF CONFIGURATION
 
@@ -561,11 +617,13 @@ featureMeta = {
 
 # DATA READING
 
+LIMIT = 10
+
 dataRaw = {}
 dataToken = {}
 etcbcFromTrans = {}
 charGroups = {}
-bookFromCode = {}
+acroFromCode = {}
 logh = None
 
 
@@ -593,17 +651,19 @@ def readBooks():
   with open(MAN_TABLE) as fh:
     for line in fh:
       (code, book) = line.rstrip().split('\t')
-      bookFromCode[code] = book
-  report(f'{len(bookFromCode)} manuscripts mapped')
+      acroFromCode[code] = book
+  report(f'SCROLL acronym mapping: {len(acroFromCode)} names mapped', only=True)
+  report('', only=True)
 
 
 def readData(start=None, end=None):
   diags = []
   fixes = {}
+  numFixes = {}
 
   def V(name, x):
     if name == SCROLL:
-      return bookFromCode.get(x, x)
+      return acroFromCode.get(x, x)
     return '' if x == NOFIELD else x
 
   def parseLine():
@@ -629,6 +689,20 @@ def readData(start=None, end=None):
         else:
           fixed = text
         fixes.setdefault(src, {}).setdefault(i + 1, {})[name] = (text, correction, reason, fixed)
+
+    text = result[TRANS]
+    if text.startswith(']') and text.endswith('['):
+      num = text[1:-1]
+      if len(num) > 1:
+        num = num[::-1]
+      if num in DIGITS_INV:
+        numNew = DIGITS_INV[num]
+        numNew = f"'{numNew}" if len(numNew) == 1 else f'{numNew[0:-1]}"{numNew[-1]}'
+        result[TRANS] = numNew
+        numFixes.\
+            setdefault(f'{num} => {numNew}', {}).\
+            setdefault(src, []).\
+            append(i + 1)
 
     codex = result[SCROLL]
     match = codexMinRe.match(codex)
@@ -661,9 +735,12 @@ def readData(start=None, end=None):
         parseLine()
         dataRaw.setdefault(src, []).append((i, result))
     report(f'{len(dataRaw[src]):<6} lines')
+  report('', only=True)
 
   if checkSource:
-    report(f'FIXES:')
+    nDeclared = sum(sum(len(x) for x in srcs.values()) for srcs in FIXES.values())
+    report(f'FIXES: DECLARED', only=True)
+    nApplied = 0
     for (src, lines) in sorted(FIXES.items()):
       for (line, corrections) in sorted(lines.items()):
         for (name, correction) in sorted(corrections.items()):
@@ -673,6 +750,8 @@ def readData(start=None, end=None):
           else:
             (text, correction, reason) = FIXES[src][line][name]
             applied = None
+          if applied is True:
+            nApplied += 1
           statusRep = (
               'incorrect location'
               if applied is None else
@@ -680,12 +759,31 @@ def readData(start=None, end=None):
               if applied is True else
               f'not applicable to "{applied}'
           )
-          fixRep = f'{src:<6}:{line:>6} "{text}" => "{correction}" ({reason}'
-          report(f'\t{statusRep}: {fixRep}')
+          fixRep = f'{src:<6}:{line:>6} "{text:>10}" => "{correction:<10}" ({reason}'
+          report(f'\t{statusRep}: {fixRep}', only=True)
+    statusRep = (
+        f'all {nDeclared} applied'
+        if nDeclared == nApplied else
+        f'ERROR: {nDeclared - nApplied} not applied'
+    )
+    report(f'FIXES: {nDeclared} declared: {statusRep}')
+    report('', only=True)
 
-    report(f'DIAGNOSTICS {len(diags)} lines')
+    report(f'FIXES: DIGITS', only=True)
+    nOccs = 0
+    for (num, srcs) in sorted(numFixes.items()):
+      report(f'{num} ({sum(len(x) for x in srcs.values())} x)', only=True)
+      for (src, lines) in srcs.items():
+        nOccs += len(lines)
+        linesRep = ' '.join(str(i + 1) for i in lines[0:LIMIT])
+        report(f'\t{src:<6} {len(lines)} x: {linesRep}', only=True)
+    report(f"FIXES: DIGITS ]n[ => {len(numFixes)} numerals in {nOccs} occurrences")
+    report('', only=True)
+
+    report(f'FIXES: SCROLLS: {len(diags)} scroll name completions')
     for (src, i, diag) in diags:
-      report(f'{src:<6}:{i:>6} \t{diag}')
+      report(f'{src:<6}:{i:>6} \t{diag}', only=True)
+    report('', only=True)
 
 
 def tokenizeData():
@@ -735,19 +833,21 @@ def tokenizeData():
       parseLine()
       dataToken.setdefault(src, []).append((i, result))
     report(f'{len(dataToken[src]):<6} entries')
+  report('', only=True)
 
 
 def checkBooks():
-  booksFound = set()
+  scrollsFound = set()
 
   for (src, lines) in dataRaw.items():
     for (i, fields) in lines:
       book = fields[SCROLL]
-      booksFound.add(book)
+      scrollsFound.add(book)
 
-  report(f'{len(booksFound)} CODEX ACRONYMS in the data')
-  for book in sorted(booksFound):
+  report(f'SCROLLS: {len(scrollsFound)} ACRONYMS in the data')
+  for book in sorted(scrollsFound):
     report(f'\t{book}', only=True)
+  report('', only=True)
 
 
 def checkChars():
@@ -757,12 +857,15 @@ def checkChars():
   exampleLimit = 3
   charsLetter = {}
   numerals = collections.Counter()
+  numeralCand = {}
+  numeralLexTF = {}
+  numeralLexFT = {}
   lastOfLine = collections.Counter()
   slashInner = {}
-  ambiWords = {}
   nLines = 0
 
   def showChars():
+    report(f'CHARACTERS: MAPPED: {"".join(sorted(charsMapped))}', only=True)
     lexes = set(charsLetter[LEX]) if LEX in charsLetter else set()
     transes = set(charsLetter[TRANS]) if TRANS in charsLetter else set()
     charsLetterShow = {}
@@ -774,36 +877,54 @@ def checkChars():
             'only'
         )
         charsLetterShow.setdefault(name, []).append((label, c, freq))
+    report(f'CHARACTERS: {sum(len(x) for x in charsLetterShow.values())} used')
     for (name, items) in sorted(charsLetterShow.items()):
-      report(f'\tin {name} field:')
+      report(f'\tin {name} field:', only=True)
       for (label, c, freq) in sorted(items):
-        report(f'\t\t{label:<5} {c} {freq:>6} x')
-
-  def showAmbi():
-    report(f'NUMERAL OR NOT A NUMERAL? {len(ambiWords)} words')
-    for (word, srcs) in ambiWords.items():
-      report(f'\t{word}')
-      for (src, lines) in srcs.items():
-        report(f'\t\t{src} {len(lines)} x')
-        for (i, scroll, fragment, line) in lines[0:10]:
-          report(f'\t\t\t{i:>6} in {scroll} {fragment}:{line} "{word}"')
+        report(f'\t\t{label:<5} {c} {freq:>6} x', only=True)
+    report('', only=True)
 
   def showNumerals():
-    report('NUMERALS')
-    for (num, freq) in sorted(numerals.items()):
-      report(f'\t{num:<30} : {freq:>5} x')
+    report(f'NUMERALS: {len(numerals)} distinct numerals in {sum(numerals.values())} occurrences')
+    report(f'\t{"LEX":>7} = {"WORD":<17} (freq x)', only=True)
+    for ((word, lex), freq) in sorted(numerals.items()):
+      lexRep = f'"{lex}"'
+      wordRep = f'"{word}"'
+      report(f'\t{lexRep:>7} = {wordRep:<17} : {freq:>5} x', only=True)
+    report('', only=True)
+
+    for (dest, msg) in (
+        (numeralCand, f'NUMERALS: {len(numeralCand)} unrecognized potential numerals'),
+        (numeralLexTF, f'NUMERALS: TRANS-yes LEX-no:  {len(numeralLexTF):>2} conflicts'),
+        (numeralLexFT, f'NUMERALS: TRANS-no  LEX-yes: {len(numeralLexFT):>2} conflicts'),
+    ):
+      report(msg, only=not len(dest))
+      if len(dest):
+        report(f'\t{"LEX":>7} = {"WORD":<15} (freq x)', only=True)
+      for ((word, lex), srcs) in sorted(dest.items()):
+        nF = sum(len(x) for x in srcs.values())
+        lexRep = f'"{lex}"'
+        wordRep = f'"{word}"'
+        report(f'\t{lexRep:>7} = {wordRep:<17} ({nF} x)', only=True)
+        for (src, lines) in srcs.items():
+          report(f'\t{"":>7}{src} ({len(lines)} x)', only=True)
+          for (i, scroll, fragment, line) in lines[0:10]:
+            report(f'\t{"":>7}\t{i + 1:>6} in {scroll} {fragment}:{line} "{word}"', only=True)
+      report('', only=True)
 
   def showLastOfLine():
-    report(f'LAST-OF-LINE of {nLines} lines')
+    report(f'LINES: {nLines} lines')
     nInner = sum(len(x) for x in slashInner.values())
-    report(f'\tNumber of times word "/" does not end a line: {nInner}')
+    report(f'\tNumber of times word "/" does not end a line: {nInner}', only=True)
     for (src, lines) in slashInner.items():
       for (i, scroll, fragment, line) in lines[0:10]:
-        report(f'\t\t{src:<6} : {i:>6} in {scroll} {fragment}:{line}')
+        report(f'\t\t{src:<6} : {i:>6} in {scroll} {fragment}:{line}', only=True)
+    report('', only=True)
 
-    report(f'\tNumber of ways to end a line: {len(lastOfLine)} ways to end a line')
+    report(f'\tNumber of ways to end a line: {len(lastOfLine)} ways to end a line', only=True)
     for (word, amount) in sorted(lastOfLine.items(), key=lambda x: (-x[1], x[0]))[0:20]:
-      report(f'\t\t{word:<10} {amount:>6} x')
+      report(f'\t\t{word:<10} {amount:>6} x', only=True)
+    report('', only=True)
 
   prevTrans = None
   prevLine = None
@@ -825,22 +946,61 @@ def checkChars():
         if prevTrans == '/':
           slashInner.setdefault(src, []).append((i, prevScroll, prevFragment, prevLine))
 
+      lexBare = lexDisXRe.sub('', lex)
+      lexPure = nonGlyphLexRe.sub('', lexBare)
+      isNumLex = lexPure and digitRe.match(lexPure)
+      if isNumLex:
+        lex = lex[::-1]
+        lexPure = lexPure[::-1]
+
+      isNumM = numeralMRe.match(word)
       wordPure = nonGlyphRe.sub('', word)
-      if wordPure:
-        if len(wordPure) == 1 and ambiRe.match(wordPure):
-          ambiWords.\
-              setdefault(wordPure, {}).\
+      isNumTrans = wordPure and numeralRe.match(wordPure)
+      isAmbi = wordPure and ambiRe.match(wordPure)
+
+      isNumCand = capitalRe.match(wordPure)
+
+      if isNumCand and not isNumTrans and (isNumLex or not lexPure):
+        numeralCand.\
+            setdefault((wordPure, lexPure), {}).\
+            setdefault(src, []).\
+            append((i, thisScroll, thisFragment, thisLine))
+
+      if isNumTrans and isNumLex:
+        numerals[(wordPure, lexPure)] += 1
+
+      if not isAmbi:
+        dest = (
+            numeralLexTF
+            if isNumTrans and not isNumLex else
+            numeralLexFT
+            if not isNumTrans and isNumLex else
+            None
+        )
+        if dest is not None:
+          dest.\
+              setdefault((wordPure, lexPure), {}).\
               setdefault(src, []).\
               append((i, thisScroll, thisFragment, thisLine))
 
-      if numeralRe.match(wordPure):
-        numerals[wordPure] += 1
+      digital = DIGITS_SET | {"'", '"'}
 
-      lexBare = lexDisXRe.sub('', lex)
-      for (name, text) in ((TRANS, word), (LEX, lexBare)):
+      for (name, legal, text) in ((TRANS, CHARS, word), (LEX, CHARS_LEX, lexBare)):
         for c in text:
           charsFound[c] += 1
-          if c in CHARS:
+          if (
+              c in legal
+              or
+              (
+                  c in digital
+                  and
+                  (
+                      (name == TRANS and isNumM)
+                      or
+                      (name == LEX and isNumLex)
+                  )
+              )
+          ):
             charsMapped.add(c)
           else:
             if c in charsUnmapped:
@@ -854,30 +1014,27 @@ def checkChars():
       prevScroll = thisScroll
       prevTrans = word
 
-  unused = set(CHARS) - charsMapped - TOKENS_FIXED
+  unused = (CHARS | CHARS_LEX) - charsMapped - TOKENS_FIXED
   if unused:
-    report(f'WARNING: {len(unused)} declared but unused characters')
     unusedStr = ''.join(sorted(unused))
-    report(f'\tunused = {unusedStr}')
+    report(f'CHARACTERS: WARNING: UNUSED: {unusedStr} ({len(unused)} chars)')
   totalUnmapped = 0
   if charsUnmapped:
-    report(f'WARNING: {len(charsUnmapped)} unmapped characters')
+    unmappedStr = ''.join(sorted(charsUnmapped))
     for (c, examples) in sorted(charsUnmapped.items()):
       freq = charsFound[c]
       totalUnmapped += freq
-      report(f'{c:<6} occurs {freq:>6} x')
+      report(f'{c:<6} occurs {freq:>6} x', only=True)
       for (src, i, fields) in examples:
-        report(f'\t{src}:{i + 1} trans="{unesc(fields[TRANS])}" lex="{fields[LEX]}"')
-      report('')
-    unmappedStr = ''.join(sorted(charsUnmapped))
-    report(f'UNMAPPED: {unmappedStr}')
-    report(f'TOTAL {totalUnmapped} occurrences of unmapped characters')
-  else:
-    report('OK: no unmapped characters')
-  report(f'MAPPED ({len(charsMapped)})')
+        report(f'\t{src}:{i + 1} trans="{unesc(fields[TRANS])}" lex="{fields[LEX]}"', only=True)
+      report('', only=True)
+    report(
+        f'CHARACTERS: WARNING: UNMAPPED:'
+        f' {unmappedStr} ({len(charsUnmapped)} distinct chars in {totalUnmapped} occurrences)'
+    )
+    report('', only=True)
   showChars()
   showNumerals()
-  showAmbi()
   showLastOfLine()
 
 
@@ -886,7 +1043,7 @@ def checkBracketPair(b, e):
   limitContext = 5
 
   (bOrig, eOrig) = (bunesc(b), bunesc(e))
-  report(f'BRACKETS {bOrig} {eOrig} ...')
+  report(f'BRACKETS {bOrig} {eOrig} ...', only=True)
 
   last = None
   errors = {}
@@ -917,29 +1074,29 @@ def checkBracketPair(b, e):
     theseErrors = errors.get(src, [])
     nErrors = len(theseErrors)
     if nErrors:
-      report(f'\t{src:>6}:          {nOccs[src]} occurrences')
-      report(f'\t{src:>6}: WARNING: {nErrors} imbalances')
+      report(f'\t{src:>6}:          {nOccs[src]} occurrences', only=True)
+      report(f'\t{src:>6}: WARNING: {nErrors} imbalances', only=True)
       for (i, c) in theseErrors[0:limitErrors]:
         start = max((0, i - limitContext))
         end = min((nLines, i + limitContext + 1))
-        report('')
+        report('', only=True)
         for (j, fields) in lines:
           if start <= j < end:
             trans = fields[TRANS]
             prefix = '==>' if i == j else '   '
-            report(f'\t\t{src:>6}:{j + 1:>6} {bunesc(c):>6} {prefix} {unesc(trans)}')
+            report(f'\t\t{src:>6}:{j + 1:>6} {bunesc(c):>6} {prefix} {unesc(trans)}', only=True)
       msg = f'... and {nErrors -limitErrors} more' if nErrors > limitErrors else ''
-      report(f'\t\t{msg}')
+      report(f'\t\t{msg}', only=True)
     else:
-      report(f'\t{src:>6}: OK       {nOccs[src]} balanced occurrences')
-
-    report('')
+      report(f'\t{src:>6}: OK       {nOccs[src]} balanced occurrences', only=True)
+    report('', only=True)
 
   totalErrs = sum(len(x) for x in errors.values())
   totalOccs = sum(x for x in nOccs.values())
 
-  report(f'\tIMBALANCES:  {totalErrs}')
-  report(f'\tOCCURRENCES: {totalOccs}')
+  report(f'\tIMBALANCES:  {totalErrs}', only=True)
+  report(f'\tOCCURRENCES: {totalOccs}', only=True)
+  report('', only=True)
 
   return (totalErrs, totalOccs)
 
@@ -956,8 +1113,9 @@ def checkBrackets():
     totalErrs += errs
     totalOccs += occs
 
-  report(f'OVERALL IMBALANCES:  {totalErrs}')
-  report(f'OVERALL OCCURRENCES: {totalOccs}')
+  status = f'ERROR: {totalErrs} imbalances' if totalErrs else 'all balanced'
+  report(f'BRACKETS: {status} ({totalOccs} bracket occurrences)')
+  report('', only=True)
 
 
 def prepare():
@@ -989,12 +1147,13 @@ def convert():
   readData()
   if checkSource:
     checkChars()
-  if checkOnly:
-    return True
   tokenizeData()
   if checkSource:
     checkBrackets()
     checkBooks()
+
+  if checkOnly:
+    return True
 
   cv = getConverter()
 
@@ -1057,11 +1216,10 @@ def director(cv):
     if not errors:
       report('NO ERRORS')
     else:
-      limit = 10
       for (kind, instances) in sorted(errors.items()):
         report(f'ERROR: {kind} ({len(instances)} x)')
         for (e, (src, i, instance)) in enumerate(instances):
-          report(f'\t{src:<6} : {i + 1:>6} = {instance}', only=e >= limit)
+          report(f'\t{src:<6} : {i + 1:>6} = {instance}', only=e >= LIMIT)
       report('END OF ERRORS')
 
   def addSlot():
@@ -1069,17 +1227,21 @@ def director(cv):
     if token:
       curSlot = cv.slot()
       cv.feature(curSlot, glypha=token, type=typ)
-      if typ in {CONSONANT, VOWEL, POINT, SEP, PUNCT, NUMERAL} | TOKENS_TYPE:
-        charsUni = CHARN_UNI if typ == NUMERAL else CHARS_UNI
-        charsRep = CHARN_REP if typ == NUMERAL else CHARS_REP
-        glyph = ''.join(charsUni[c] for c in token)
-        glyphe = ''.join(charsRep[c] for c in token)
+      if typ == NUMERAL:
+        glyph = uniFromNum(token)
+        glyphe = TR.from_hebrew(glyph)
+      elif typ in {CONSONANT, VOWEL, POINT, SEP, PUNCT} | TOKENS_TYPE:
+        glyph = ''.join(CHARS_UNI[c] for c in token)
+        glyphe = ''.join(CHARS_REP[c] for c in token)
       cv.feature(curSlot, glyph=glyph, glyphe=glyphe)
 
       for (name, value) in curBrackets:
         cv.feature(curSlot, **{name: value})
 
   def terminateWord():
+    if 'B' in glypha:
+      print(f'\n"{glypha}"\n')
+      print(f'\n"{fulla}"\n')
     glyph = ''.join(CHARS_UNI[c] for c in glypha)
     glyphe = ''.join(CHARS_REP[c] for c in glypha)
     full = ''.join(CHARS_UNI[c] for c in fulla)
@@ -1193,6 +1355,8 @@ def director(cv):
         fulla += thisFulla
         punca += thisPunca
 
+      (lexaB, lexaN) = (lexa, '')
+      isNumLex = False
       if lexa:
         lexaDis = lexDisRe.findall(lexa)
         if lexaDis:
@@ -1201,8 +1365,18 @@ def director(cv):
           lexa = f'{lexaB}{lexaN}'
         else:
           (lexaB, lexaN) = (lexa, '')
-        lex = (''.join(CHARS_UNI[c] for c in lexaB)) + lexaN
-        lexe = (''.join(CHARS_REP[c] for c in lexaB)) + lexaN
+        lexPure = nonGlyphLexRe.sub('', lexaB)
+        isNumLex = lexPure and digitRe.match(lexPure)
+        if lexa == 'B':
+          error('Unknown lexeme', lexa)
+          lexaB = ''
+        elif isNumLex:
+          lexaB = lexaB[::-1]
+          lex = lexaB + lexaN
+          lexe = lexaB + lexaN
+        else:
+          lex = (''.join(CHARS_UNI[c] for c in lexaB)) + lexaN
+          lexe = (''.join(CHARS_REP[c] for c in lexaB)) + lexaN
         thisLex = lexIndex.get(lex, None)
         if thisLex:
           cv.resume(thisLex)
@@ -1212,63 +1386,77 @@ def director(cv):
         cv.feature(thisLex, lexa=lexa, lexe=lexe, lex=lex)
         cv.feature(curWord, lexa=lexa, lexe=lexe, lex=lex)
 
-      isNumeral = thisGlypha and numeralRe.match(thisGlypha)
-      token = ''
-      typ = None
-      for c in thisFulla:
-        if c in TOKENS_SET:
-          addSlot()
-          token = c
-          typ = TOKENS_INV[c]
-          addSlot()
-        elif c in CONSONANTS_SET:
-          addSlot()
-          token = c
-          typ = CONSONANT
-        elif c in VOWELS_SET:
-          if token and typ == CONSONANT:
-            token += c
-          else:
+      isNumTrans = thisGlypha and numeralRe.match(thisGlypha)
+      isNumeral = isNumTrans and isNumLex
+      isNumH = numeralMRe.match(thisFulla)
+
+      if isNumH:
+        token = thisFulla
+        typ = NUMERAL
+        addSlot()
+        token = ''
+        typ = None
+        terminateWord()
+        glypha = ''
+        fulla = ''
+      else:
+        token = ''
+        typ = None
+        for c in thisFulla:
+          if c in TOKENS_SET:
             addSlot()
             token = c
-            typ = VOWEL
+            typ = TOKENS_INV[c]
             addSlot()
-        elif isNumeral and c in NUMERALS_SET:
-          if token and typ == NUMERAL:
-            token += c
-          else:
+          elif c in CONSONANTS_SET:
             addSlot()
             token = c
-            typ = NUMERAL
-        elif c in SEPS_SET:
-          addSlot()
-          token = c
-          typ = SEP
-          addSlot()
-        elif c in PUNCTS_SET:
-          addSlot()
-          token = c
-          typ = PUNCT
-          addSlot()
-        elif c in FLAGS_INV:
-          name = FLAGS_INV[c]
-          value = FLAGS_VALUE[name]
-          cv.feature(curSlot, **{FLAGS_INV[c]: value})
-        elif c in BRACKETS_INV:
-          (name, value, isOpen) = BRACKETS_INV[c]
-          key = (name, value)
-          if isOpen:
-            cn = cv.node(CLUSTER)
-            curBrackets[key] = cn
-            cv.feature(cn, type=f'{name}{value}')
-          else:
-            cn = curBrackets[key]
-            if not cv.linked(cn):
-              em = cv.slot()
-              cv.feature(em, type=EMPTY)
-            cv.terminate(cn)
-            del curBrackets[key]
-      addSlot()
+            typ = CONSONANT
+          elif c in VOWELS_SET:
+            if token and typ == CONSONANT:
+              token += c
+            else:
+              addSlot()
+              token = c
+              typ = VOWEL
+              addSlot()
+          elif isNumeral and c in NUMERALS_SET:
+            if token and typ == NUMERAL:
+              token += c
+            else:
+              addSlot()
+              token = c
+              typ = NUMERAL
+          elif c in SEPS_SET:
+            addSlot()
+            token = c
+            typ = SEP
+            addSlot()
+          elif c in PUNCTS_SET:
+            addSlot()
+            token = c
+            typ = PUNCT
+            addSlot()
+          elif c in FLAGS_INV:
+            name = FLAGS_INV[c]
+            value = FLAGS_VALUE[name]
+            cv.feature(curSlot, **{FLAGS_INV[c]: value})
+          elif c in BRACKETS_INV:
+            (name, value, isOpen) = BRACKETS_INV[c]
+            key = (name, value)
+            if isOpen:
+              cn = cv.node(CLUSTER)
+              curBrackets[key] = cn
+              cv.feature(cn, type=f'{name}{value}')
+            else:
+              cn = curBrackets[key]
+              if not cv.linked(cn):
+                em = cv.slot()
+                cv.feature(em, type=EMPTY)
+              cv.terminate(cn)
+              del curBrackets[key]
+        addSlot()
+
       prevScroll = thisScroll
       prevFragment = thisFragment
       prevLine = thisLine
@@ -1311,9 +1499,9 @@ checkSource = len(sys.argv) > 1 and '-check' in sys.argv[1:]
 checkOnly = len(sys.argv) > 1 and '-checkonly' in sys.argv[1:]
 checkSource = checkSource or checkOnly
 
-report(f'Abegg transcription to TF converter for {REPO}')
-report(f'Abegg source version = {VERSION_SRC}')
-report(f'TF  target version = {VERSION_TF}')
+report(f'This is tfFromAbegg converting {REPO} transcriptions to TF:')
+report(f'\tsource version = {VERSION_SRC}')
+report(f'\ttarget version = {VERSION_TF}')
 good = convert()
 
 if not checkOnly and generateTf and good:

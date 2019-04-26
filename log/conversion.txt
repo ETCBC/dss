@@ -1,24 +1,65 @@
-16 manuscripts mapped
+SCROLL acronym mapping: 16 names mapped
+
 Reading    bib beginning-end ...242661 lines
 Reading nonbib beginning-end ...340161 lines
-FIXES:
-	applied: bib   : 87334 "≥" => "≥≤" (missing ≤ bracket
-	applied: bib   :147775 "[^≥" => "[≥" (imbalance in ^ brackets
-	applied: bib   :158295 "[\\]^" => "[\\]" (imbalance in ^ brackets
-	applied: bib   :185452 "h«\\wØ(" => "h«\\wØ" (spurious ( bracket
-	applied: bib   :202008 "alwhiM" => "alwhyM" (hireq => yod
-	applied: nonbib: 36148 "≤]" => "≥≤" (spurious ] bracket, missing ≥ bracket
-	applied: nonbib: 55019 " ±" => "≥≤" (spurious non-breaking space before paleodivider
-	applied: nonbib:140504 "b]" => "b" (spurious ] bracket
-	applied: nonbib:140582 "b]" => "b" (spurious ] bracket
-	applied: nonbib:140616 "b]" => "b" (spurious ] bracket
-	applied: nonbib:157910 "^b" => "^b^" (imbalance in ^ brackets
-	applied: nonbib:191862 "y»tkwØ_nw" => "y»tkwØnw" (_ removed (1 of 3)
-	applied: nonbib:225327 "t_onh]" => "tonh]" (_ removed (1 of 3)
-	applied: nonbib:259060 "oyN_" => "oyN" (_ removed (1 of 3)
-	applied: nonbib:291988 "[˝w»b|a|]" => "[w»b|a|]" (strange, unique character removed
-	applied: nonbib:313632 "13,3,1" => "13" (strange numbering replaced by plain number
-DIAGNOSTICS 43 lines
+
+FIXES: DECLARED
+	applied: bib   : 87334 "         ≥" => "≥≤        " (missing ≤ bracket
+	applied: bib   :147775 "       [^≥" => "[≥        " (imbalance in ^ brackets
+	applied: bib   :154735 "      ≥1a≤" => "≥a≤       " (spurious character "1"
+	applied: bib   :154751 "      ≥2a≤" => "≥a≤       " (spurious character "2"
+	applied: bib   :158295 "     [\\]^" => "[\\]      " (imbalance in ^ brackets
+	applied: bib   :185452 "   h«\\wØ(" => "h«\\wØ    " (spurious ( bracket
+	applied: bib   :202008 "    alwhiM" => "alwhyM    " (hireq => yod
+	applied: nonbib: 36148 "        ≤]" => "≥≤        " (spurious ] bracket, missing ≥ bracket
+	applied: nonbib: 53527 "      CHAG" => "chag      " (lowercasing
+	applied: nonbib: 53566 "        HN" => "hn        " (lowercasing
+	applied: nonbib: 53584 "       THE" => "hn        " (lowercasing
+	applied: nonbib: 55019 "         ±" => "≥≤        " (spurious non-breaking space before paleodivider
+	applied: nonbib:140504 "        b]" => "b         " (spurious ] bracket
+	applied: nonbib:140582 "        b]" => "b         " (spurious ] bracket
+	applied: nonbib:140616 "        b]" => "b         " (spurious ] bracket
+	applied: nonbib:157910 "        ^b" => "^b^       " (imbalance in ^ brackets
+	applied: nonbib:191862 " y»tkwØ_nw" => "y»tkwØnw  " (_ removed (1 of 3)
+	applied: nonbib:225327 "    t_onh]" => "tonh]     " (_ removed (1 of 3)
+	applied: nonbib:259060 "      oyN_" => "oyN       " (_ removed (1 of 3)
+	applied: nonbib:261956 "         a" => "A         " (a is numeral A
+	applied: nonbib:263103 "         a" => "A         " (a is numeral A
+	applied: nonbib:291988 " [˝w»b|a|]" => "[w»b|a|]  " (strange, unique character removed
+	applied: nonbib:301907 "         3" => "]3[       " (wrapped a digit in "] ["
+	applied: nonbib:313324 "        \0" => "\         " (distribute "\0" over two fields
+	applied: nonbib:313324 "          " => "0         " (distribute "\0" over two fields
+	applied: nonbib:313632 "    13,3,1" => "13        " (strange numbering replaced by plain number
+FIXES: 26 declared: all 26 applied
+
+FIXES: DIGITS
+1 => 'a (12 x)
+	nonbib 12 x: 315150 315693 316582 317483 317949 318500 318780 321102 321377 322044
+10 => 'y (2 x)
+	nonbib 2 x: 318617 318918
+11 => y"a (2 x)
+	nonbib 2 x: 318628 318928
+12 => y"b (1 x)
+	nonbib 1 x: 318944
+2 => 'b (14 x)
+	nonbib 14 x: 315163 315712 316598 316895 317192 317495 317963 318513 318800 321116
+3 => 'g (14 x)
+	nonbib 14 x: 301908 315735 316617 316909 317209 317503 317967 318528 318811 321131
+4 => 'd (12 x)
+	nonbib 12 x: 316633 316922 317224 317507 317971 318541 318825 321144 321410 322100
+5 => 'h (11 x)
+	nonbib 11 x: 316649 316944 317241 317511 317975 318550 318842 321156 321425 324918
+6 => 'w (6 x)
+	nonbib 6 x: 316659 316954 318563 318854 324934 326795
+7 => 'z (5 x)
+	nonbib 5 x: 318576 318872 324304 324950 326814
+8 => 'j (2 x)
+	nonbib 2 x: 318590 318886
+9 => 'f (2 x)
+	nonbib 2 x: 318602 318899
+FIXES: DIGITS ]n[ => 12 numerals in 83 occurrences
+
+FIXES: SCROLLS: 43 scroll name completions
 bib   :   482 	SCROLL -Q2        => 1Q2
 bib   :   829 	SCROLL -Q3        => 1Q3
 bib   :   830 	SCROLL -Q3        => 1Q3
@@ -62,21 +103,11 @@ bib   :217472 	SCROLL -1Q5       => 11Q5
 bib   :217482 	SCROLL -Q5        => 11Q5
 bib   :237020 	SCROLL -4Se1      => 34Se1
 bib   :237062 	SCROLL -Se1       => 34Se1
-WARNING: 2 unmapped characters
-G      occurs      1 x
-	nonbib:53527 trans="CHAG" lex="0"
 
-H      occurs      3 x
-	nonbib:53527 trans="CHAG" lex="0"
-	nonbib:53566 trans="HN" lex="0"
-	nonbib:53584 trans="THE" lex="0"
-
-UNMAPPED: GH
-TOTAL 4 occurrences of unmapped characters
-MAPPED (100)
+CHARACTERS: MAPPED: "'()+-./0123456789;<>?ABCDEFIJKMNOPRSTUVX[\]^abcdfghjklmnopqrstvwxyz{|} ¥¨«®±´»ÅÊÎÏØÚåéîøüƒˆΩ…‰∂√∫≤≥◊�
+CHARACTERS: 144 used
 	in lex field:
 		both  /      1 x
-		both  0      1 x
 		both  A  62534 x
 		both  B    125 x
 		both  C    171 x
@@ -95,6 +126,7 @@ MAPPED (100)
 		both  \ 114780 x
 		both  a  81965 x
 		both  b  64384 x
+		both  c  10780 x
 		both  d  33022 x
 		both  f   7046 x
 		both  g   9372 x
@@ -117,12 +149,21 @@ MAPPED (100)
 		both         1 x
 		both  å   4468 x
 		both  �     18 x
+		only  0     94 x
+		only  1    162 x
+		only  2    152 x
+		only  3     86 x
+		only  4     71 x
+		only  5     64 x
+		only  6     36 x
+		only  7     35 x
+		only  8     21 x
+		only  9     36 x
 		only  ;  69366 x
 		only  J   3483 x
 		only  O  18212 x
 		only  U   1115 x
 		only  V  66618 x
-		only  c  10780 x
 		only  v  44565 x
 		only  ¥   1237 x
 		only  ¨     39 x
@@ -147,68 +188,59 @@ MAPPED (100)
 		only  ◊  50405 x
 	in trans field:
 		both  /  61594 x
-		both  0      2 x
-		both  A   1229 x
+		both  A   1230 x
 		both  B    234 x
-		both  C  55786 x
+		both  C  55785 x
 		both  D    249 x
-		both  E      2 x
+		both  E      1 x
 		both  F      9 x
 		both  I      1 x
 		both  K   9761 x
 		both  M  35416 x
-		both  N  16926 x
+		both  N  16925 x
 		both  P   1976 x
 		both  R      1 x
 		both  S      1 x
-		both  T      2 x
+		both  T      1 x
 		both  X   3096 x
 		both  \  26568 x
-		both  a  86552 x
-		both  b  64389 x
-		both  d  32847 x
-		both  f   7071 x
-		both  g   9352 x
-		both  h  94367 x
-		both  j  26289 x
+		both  a  86565 x
+		both  b  64404 x
+		both  c      1 x
+		both  d  32859 x
+		both  f   7073 x
+		both  g   9367 x
+		both  h  94381 x
+		both  j  26291 x
 		both  k  38648 x
 		both  l  86326 x
 		both  m  57483 x
-		both  n  35044 x
+		both  n  35046 x
 		both  o  43924 x
 		both  p  16142 x
 		both  q  17041 x
 		both  r  64645 x
 		both  s   7251 x
 		both  t  58588 x
-		both  w 143484 x
+		both  w 143490 x
 		both  x  11419 x
-		both  y 124829 x
-		both  z   8484 x
+		both  y 124834 x
+		both  z   8489 x
 		both       379 x
 		both  å    145 x
 		both  �      3 x
+		only  "      3 x
+		only  '     80 x
 		only  (    333 x
 		only  )    333 x
 		only  +     65 x
 		only  - 107761 x
 		only  .  29915 x
-		only  1     20 x
-		only  2     16 x
-		only  3     14 x
-		only  4     12 x
-		only  5     11 x
-		only  6      6 x
-		only  7      5 x
-		only  8      2 x
-		only  9      2 x
 		only  <    389 x
 		only  >    389 x
 		only  ?    610 x
-		only  G      1 x
-		only  H      3 x
-		only  [  93846 x
-		only  ]  93846 x
+		only  [  93764 x
+		only  ]  93764 x
 		only  ^   3164 x
 		only  {   1487 x
 		only  |  40190 x
@@ -220,192 +252,216 @@ MAPPED (100)
 		only  ∫     13 x
 		only  ≤   3523 x
 		only  ≥   3523 x
-NUMERALS
-	01                             :     2 x
-	1                              :    12 x
-	11                             :     2 x
-	2                              :    14 x
-	21                             :     1 x
-	3                              :    14 x
-	4                              :    12 x
-	5                              :    11 x
-	6                              :     6 x
-	7                              :     5 x
-	8                              :     2 x
-	9                              :     2 x
-	A                              :    18 x
-	AA                             :    14 x
-	AAA                            :    16 x
-	AAAA                           :     2 x
-	AAAAA                          :     3 x
-	AAAAAA                         :     3 x
-	AAAAAAA                        :     2 x
-	AAAAAAAAA                      :     2 x
-	AAAAAAAAAD                     :    16 x
-	AAAAAAAAå                      :     1 x
-	AAAAAAAD                       :     1 x
-	AAAAAAAå                       :     3 x
-	AAAAAAAåå                      :     1 x
-	AAAAAAB                        :     4 x
-	AAAAAABD                       :     2 x
-	AAAAAAå                        :     3 x
-	AAAAAå                         :     4 x
-	AAAAå                          :     1 x
-	AAAA∫                          :     2 x
-	AAAA∫FDCAAAAA∫                 :     1 x
-	AAAB                           :    23 x
-	AAABB                          :    14 x
-	AAABBB                         :     9 x
-	AAABBD                         :     2 x
-	AAABD                          :     1 x
-	AAAFDDC                        :     1 x
-	AAAå                           :     5 x
-	AAAåAAAå                       :     1 x
-	AAA∫                           :     1 x
-	AAB                            :     2 x
-	AABAå                          :     2 x
-	AABB                           :     4 x
-	AABBB                          :     1 x
-	AABF                           :     1 x
-	AAå                            :     3 x
-	AAåAAåAAå                      :     2 x
-	AB                             :     1 x
-	AF                             :     1 x
-	AFDAAAAAA                      :     1 x
-	AFDC                           :     1 x
-	AFDDC                          :     1 x
-	Aå                             :     7 x
-	B                              :    23 x
-	BB                             :     6 x
-	BBB                            :     2 x
-	BBBD                           :     1 x
-	BBD                            :     2 x
-	C                              :   741 x
-	CA                             :     6 x
-	CAA                            :     5 x
-	CAAA                           :     1 x
-	CAAAAAAAAå                     :     1 x
-	CAAAAAAAB                      :     2 x
-	CAAAAAAB                       :     2 x
-	CAAAAAABB                      :     3 x
-	CAAAAAAå                       :     1 x
-	CAAAAAA∫                       :     1 x
-	CAAAAAB                        :     1 x
-	CAAAAAB∫                       :     1 x
-	CAAAAAå                        :     2 x
-	CAAAAAåB                       :     1 x
-	CAAAAB                         :     1 x
-	CAAAAå                         :     3 x
-	CAAAB                          :    11 x
-	CAAABB                         :     2 x
-	CAAABBBB                       :     1 x
-	CAAAå                          :     5 x
-	CAAAåAAAå                      :     3 x
-	CAAB                           :     1 x
-	CAABAABAå                      :     1 x
-	CAABAABB                       :     1 x
-	CAAå                           :     5 x
-	CAAåAAAå                       :     3 x
-	CAAåAAå                        :     3 x
-	CAAåAAåAAå                     :     5 x
-	CAå                            :     1 x
-	CAåB                           :     1 x
-	CAååBBå                        :     1 x
-	CBB                            :     1 x
-	CC                             :    97 x
-	D                              :    15 x
-	DA                             :     9 x
-	DAA                            :     3 x
-	DAAA                           :     1 x
-	DAAAAA                         :     1 x
-	DAAAAAAAA                      :     1 x
-	DAAAAAAAå                      :     3 x
-	DAAAAAAAåå                     :     1 x
-	DAAAAAAå                       :     4 x
-	DAAAAAB                        :     1 x
-	DAAAAå                         :     3 x
-	DAAABB                         :     8 x
-	DAAAå                          :     3 x
-	DAAAåAAå                       :     1 x
-	DAAå                           :     6 x
-	DAAåAAå                        :     3 x
-	DAAåAAåAAå                     :     4 x
-	DAå                            :     6 x
-	DC                             :    30 x
-	DCA                            :     3 x
-	DCAAABB                        :     6 x
-	DCAAAB∫                        :     1 x
-	DCAå                           :     1 x
-	DD                             :    10 x
-	DDA                            :     2 x
-	DDAA                           :     3 x
-	DDC                            :     1 x
-	DDCAA                          :     1 x
-	DDCAAAAB                       :     1 x
-	DDCAAA∫                        :     1 x
-	DDCAAA∫A                       :     1 x
-	DDCB                           :     2 x
-	DDD                            :     2 x
-	DDDA                           :     1 x
-	DDDAAAAAB                      :     1 x
-	DDDAAAA∫                       :     2 x
-	DDDC                           :     4 x
-	DDDCA                          :     1 x
-	DDDD                           :     3 x
-	DDDDAAA                        :     1 x
-	DDDDCAAAAAAAAå                 :     1 x
-	DDDDCBB                        :     1 x
-	FCAAAA∫                        :     1 x
-	FDC                            :     1 x
-NUMERAL OR NOT A NUMERAL? 3 words
-	C
-		bib 93 x
-			  2572 in 1Q4 f45:2 "C"
-			  2660 in 1Q4 f57:2 "C"
-			  4394 in 1Q5 f26:3 "C"
-			  5208 in 1Q6 f17:2 "C"
-			 52997 in 4Q1 f53:2 "C"
-			 56328 in 4Q8a f1:1 "C"
-			 61985 in 4Q12 f1:3 "C"
-			 67461 in 4Q14 f37:2 "C"
-			 85005 in 4Q23 f91:1 "C"
-			 97534 in 4Q27 f85:1 "C"
-		nonbib 648 x
-			  4235 in CD 13:19 "C"
-			  4867 in CD 15:11 "C"
-			  5894 in CD 20:4 "C"
-			 13809 in 1QSb 5:3 "C"
-			 14074 in 1QSb f9:1 "C"
-			 23372 in 1QHa 4:18 "C"
-			 24211 in 1QHa 5:38 "C"
-			 24672 in 1QHa 6:39 "C"
-			 24688 in 1QHa 6:40 "C"
-			 25279 in 1QHa 8:12 "C"
-	D
-		nonbib 15 x
-			 99744 in 4Q249e f1i_3:6 "D"
-			138267 in 4Q317 f1+1aii:25 "D"
-			140511 in 4Q318 4:6 "D"
-			140589 in 4Q318 7:2 "D"
-			140695 in 4Q318 7:7 "D"
-			140799 in 4Q318 8:4 "D"
-			140931 in 4Q318 f4:1 "D"
-			142867 in 4Q320 f1ii:5 "D"
-			142878 in 4Q320 f1ii:6 "D"
-			149251 in 4Q348 f1:2 "D"
-	A
-		nonbib 18 x
-			138284 in 4Q317 f1+1aii:26 "A"
-			140536 in 4Q318 4:9 "A"
-			140631 in 4Q318 7:4 "A"
-			140736 in 4Q318 8:1 "A"
-			141832 in 4Q319 f12:1 "A"
-			141849 in 4Q319 f12:2 "A"
-			141884 in 4Q319 f13:1 "A"
-			141927 in 4Q319 f13:3 "A"
-			141944 in 4Q319 f13:4 "A"
-			142443 in 4Q319 f73:3 "A"
-LAST-OF-LINE of 52917 lines
+
+NUMERALS: 125 distinct numerals in 463 occurrences
+	    LEX = WORD              (freq x)
+	    "1" = "A"               :    20 x
+	    "2" = "AA"              :    14 x
+	    "3" = "AAA"             :    16 x
+	    "4" = "AAAA"            :     2 x
+	    "5" = "AAAAA"           :     3 x
+	    "6" = "AAAAAA"          :     3 x
+	    "7" = "AAAAAAA"         :     2 x
+	    "9" = "AAAAAAAAA"       :     2 x
+	   "29" = "AAAAAAAAAD"      :    16 x
+	    "9" = "AAAAAAAAå"       :     1 x
+	   "27" = "AAAAAAAD"        :     1 x
+	    "8" = "AAAAAAAå"        :     3 x
+	    "9" = "AAAAAAAåå"       :     1 x
+	    "7" = "AAAAAAB"         :     4 x
+	   "27" = "AAAAAABD"        :     2 x
+	    "7" = "AAAAAAå"         :     3 x
+	    "6" = "AAAAAå"          :     4 x
+	    "5" = "AAAAå"           :     1 x
+	    "5" = "AAAA∫"           :     2 x
+	  "536" = "AAAA∫FDCAAAAA∫"  :     1 x
+	    "4" = "AAAB"            :    23 x
+	    "5" = "AAABB"           :    14 x
+	    "6" = "AAABBB"          :     9 x
+	   "25" = "AAABBD"          :     2 x
+	   "24" = "AAABD"           :     1 x
+	  "350" = "AAAFDDC"         :     1 x
+	    "4" = "AAAå"            :     5 x
+	    "8" = "AAAåAAAå"        :     1 x
+	    "4" = "AAA∫"            :     1 x
+	    "3" = "AAB"             :     2 x
+	    "5" = "AABAå"           :     2 x
+	    "4" = "AABB"            :     4 x
+	    "5" = "AABBB"           :     1 x
+	  "300" = "AABF"            :     1 x
+	    "3" = "AAå"             :     3 x
+	    "9" = "AAåAAåAAå"       :     2 x
+	    "2" = "AB"              :     1 x
+	  "100" = "AF"              :     1 x
+	  "126" = "AFDAAAAAA"       :     1 x
+	  "130" = "AFDC"            :     1 x
+	  "150" = "AFDDC"           :     1 x
+	    "2" = "Aå"              :     7 x
+	    "1" = "B"               :    23 x
+	    "2" = "BB"              :     6 x
+	    "3" = "BBB"             :     2 x
+	   "23" = "BBBD"            :     1 x
+	   "22" = "BBD"             :     2 x
+	   "10" = "C"               :    14 x
+	   "11" = "CA"              :     5 x
+	   "12" = "CAA"             :     5 x
+	   "13" = "CAAA"            :     1 x
+	   "19" = "CAAAAAAAAå"      :     1 x
+	   "17" = "CAAAAAAAB"       :     1 x
+	   "18" = "CAAAAAAAB"       :     1 x
+	   "17" = "CAAAAAAB"        :     2 x
+	   "18" = "CAAAAAABB"       :     3 x
+	   "17" = "CAAAAAAå"        :     1 x
+	   "17" = "CAAAAAA∫"        :     1 x
+	   "16" = "CAAAAAB"         :     1 x
+	   "17" = "CAAAAAB∫"        :     1 x
+	   "16" = "CAAAAAå"         :     2 x
+	   "17" = "CAAAAAåB"        :     1 x
+	   "15" = "CAAAAB"          :     1 x
+	   "15" = "CAAAAå"          :     3 x
+	   "14" = "CAAAB"           :    11 x
+	   "15" = "CAAABB"          :     2 x
+	   "17" = "CAAABBBB"        :     1 x
+	   "14" = "CAAAå"           :     5 x
+	   "18" = "CAAAåAAAå"       :     3 x
+	   "13" = "CAAB"            :     1 x
+	   "18" = "CAABAABAå"       :     1 x
+	   "17" = "CAABAABB"        :     1 x
+	   "13" = "CAAå"            :     5 x
+	   "17" = "CAAåAAAå"        :     3 x
+	   "16" = "CAAåAAå"         :     3 x
+	   "19" = "CAAåAAåAAå"      :     5 x
+	   "12" = "CAå"             :     1 x
+	   "13" = "CAåB"            :     1 x
+	   "16" = "CAååBBå"         :     1 x
+	   "12" = "CBB"             :     1 x
+	   "20" = "D"               :    15 x
+	   "21" = "DA"              :     9 x
+	   "22" = "DAA"             :     3 x
+	   "23" = "DAAA"            :     1 x
+	   "25" = "DAAAAA"          :     1 x
+	   "28" = "DAAAAAAAA"       :     1 x
+	   "28" = "DAAAAAAAå"       :     3 x
+	   "29" = "DAAAAAAAåå"      :     1 x
+	   "27" = "DAAAAAAå"        :     4 x
+	   "26" = "DAAAAAB"         :     1 x
+	   "25" = "DAAAAå"          :     3 x
+	   "25" = "DAAABB"          :     8 x
+	   "24" = "DAAAå"           :     3 x
+	   "27" = "DAAAåAAå"        :     1 x
+	   "23" = "DAAå"            :     6 x
+	   "26" = "DAAåAAå"         :     3 x
+	   "29" = "DAAåAAåAAå"      :     4 x
+	   "22" = "DAå"             :     6 x
+	   "30" = "DC"              :    30 x
+	   "31" = "DCA"             :     3 x
+	   "35" = "DCAAABB"         :     6 x
+	   "35" = "DCAAAB∫"         :     1 x
+	   "32" = "DCAå"            :     1 x
+	   "40" = "DD"              :    10 x
+	   "41" = "DDA"             :     2 x
+	   "42" = "DDAA"            :     3 x
+	   "50" = "DDC"             :     1 x
+	   "52" = "DDCAA"           :     1 x
+	   "55" = "DDCAAAAB"        :     1 x
+	   "54" = "DDCAAA∫"         :     1 x
+	   "55" = "DDCAAA∫A"        :     1 x
+	   "51" = "DDCB"            :     2 x
+	   "60" = "DDD"             :     2 x
+	   "61" = "DDDA"            :     1 x
+	   "67" = "DDDAAAAAB"       :     1 x
+	   "65" = "DDDAAAA∫"        :     1 x
+	   "66" = "DDDAAAA∫"        :     1 x
+	   "70" = "DDDC"            :     4 x
+	   "71" = "DDDCA"           :     1 x
+	   "80" = "DDDD"            :     3 x
+	   "83" = "DDDDAAA"         :     1 x
+	   "99" = "DDDDCAAAAAAAAå"  :     1 x
+	   "92" = "DDDDCBB"         :     1 x
+	  "115" = "FCAAAA∫"         :     1 x
+	  "130" = "FDC"             :     1 x
+
+NUMERALS: 10 unrecognized potential numerals
+	    LEX = WORD            (freq x)
+	     "" = "CM"              (1 x)
+	       nonbib (1 x)
+	       	 23205 in 1QHa 3:25 "CM"
+	    "0" = "DI"              (1 x)
+	       nonbib (1 x)
+	       	 53625 in 3Q15 2:9 "DI"
+	     "" = "K"               (4 x)
+	       nonbib (4 x)
+	       	 23550 in 1QHa 4:30 "K"
+	       	 24649 in 1QHa 6:37 "K"
+	       	 25277 in 1QHa 8:12 "K"
+	       	196200 in 4Q415 f32:2 "K"
+	    "0" = "KEN"             (1 x)
+	       nonbib (1 x)
+	       	 53453 in 3Q15 1:4 "KEN"
+	     "" = "M"               (139 x)
+	       bib (5 x)
+	       	116037 in 4Q46 f1:3 "M"
+	       	146509 in 4Q57 f54:1 "M"
+	       	158291 in 4Q72 f2_3:2 "M"
+	       	169232 in 4Q82 f15_26:7 "M"
+	       	171789 in 4Q82 f47b+51_58:19 "M"
+	       nonbib (134 x)
+	       	 13403 in 1QSb 3:6 "M"
+	       	 23143 in 1QHa 3:15 "M"
+	       	 23212 in 1QHa 3:26 "M"
+	       	 23255 in 1QHa 3:29 "M"
+	       	 23914 in 1QHa 5:22 "M"
+	       	 24708 in 1QHa 7:11 "M"
+	       	 25243 in 1QHa 8:8 "M"
+	       	 25937 in 1QHa 9:13 "M"
+	       	 27008 in 1QHa 11:2 "M"
+	       	 27015 in 1QHa 11:3 "M"
+	     "" = "N"               (3 x)
+	       nonbib (3 x)
+	       	 35269 in 1QHa 25:29 "N"
+	       	172020 in 4Q381 f102:2 "N"
+	       	293131 in 4Q570 f20:1 "N"
+	     "" = "NK"              (1 x)
+	       nonbib (1 x)
+	       	291850 in 4Q562 f7:1 "NK"
+	    "0" = "SK"              (1 x)
+	       nonbib (1 x)
+	       	 53771 in 3Q15 4:2 "SK"
+	    "0" = "TR"              (1 x)
+	       nonbib (1 x)
+	       	 53718 in 3Q15 3:7 "TR"
+	     "" = "X"               (1 x)
+	       nonbib (1 x)
+	       	171385 in 4Q381 f76_77:6 "X"
+
+NUMERALS: TRANS-yes LEX-no:   0 conflicts
+
+NUMERALS: TRANS-no  LEX-yes:  7 conflicts
+	    LEX = WORD            (freq x)
+	    "0" = "DI"              (1 x)
+	       nonbib (1 x)
+	       	 53625 in 3Q15 2:9 "DI"
+	    "0" = "KEN"             (1 x)
+	       nonbib (1 x)
+	       	 53453 in 3Q15 1:4 "KEN"
+	    "0" = "SK"              (1 x)
+	       nonbib (1 x)
+	       	 53771 in 3Q15 4:2 "SK"
+	    "0" = "TR"              (1 x)
+	       nonbib (1 x)
+	       	 53718 in 3Q15 3:7 "TR"
+	    "0" = "chag"            (1 x)
+	       nonbib (1 x)
+	       	 53527 in 3Q15 1:12 "chag"
+	    "0" = "hn"              (2 x)
+	       nonbib (2 x)
+	       	 53566 in 3Q15 2:2 "hn"
+	       	 53584 in 3Q15 2:4 "hn"
+	   "28" = "kj"              (1 x)
+	       nonbib (1 x)
+	       	238013 in 4Q502 f22:5 "kj"
+
+LINES: 52917 lines
 	Number of times word "/" does not end a line: 118
 		bib    :    587 in 1Q2 f1:6
 		bib    :    732 in 1Q2 f5_6:4
@@ -417,13 +473,14 @@ LAST-OF-LINE of 52917 lines
 		bib    :  36900 in 1Q8 20:16
 		bib    :  40108 in 1Q8 26:36
 		bib    :  44449 in 2Q2 f1:7
-	Number of ways to end a line: 6115 ways to end a line
+
+	Number of ways to end a line: 6116 ways to end a line
 		[           16617 x
 		/           15414 x
 		.           10156 x
 		≤             390 x
 		kwl           114 x
-		a             113 x
+		a             111 x
 		[\             93 x
 		aCr            90 x
 		a[             85 x
@@ -438,3 +495,1082 @@ LAST-OF-LINE of 52917 lines
 		ol             37 x
 		al[            34 x
 		ayC            33 x
+
+Tokenizing    bib ...242661 entries
+Tokenizing nonbib ...340161 entries
+
+BRACKETS ^ ^ ...
+	   bib: OK       1264 balanced occurrences
+
+	nonbib: OK       1900 balanced occurrences
+
+	IMBALANCES:  0
+	OCCURRENCES: 3164
+
+BRACKETS >> << ...
+	   bib: OK       86 balanced occurrences
+
+	nonbib: OK       208 balanced occurrences
+
+	IMBALANCES:  0
+	OCCURRENCES: 294
+
+BRACKETS > < ...
+	   bib: OK       8 balanced occurrences
+
+	nonbib: OK       182 balanced occurrences
+
+	IMBALANCES:  0
+	OCCURRENCES: 190
+
+BRACKETS }} {{ ...
+	   bib: OK       386 balanced occurrences
+
+	nonbib: OK       1026 balanced occurrences
+
+	IMBALANCES:  0
+	OCCURRENCES: 1412
+
+BRACKETS } { ...
+	   bib: OK       4 balanced occurrences
+
+	nonbib: OK       146 balanced occurrences
+
+	IMBALANCES:  0
+	OCCURRENCES: 150
+
+BRACKETS ≥ ≤ ...
+	   bib: OK       2990 balanced occurrences
+
+	nonbib: OK       4056 balanced occurrences
+
+	IMBALANCES:  0
+	OCCURRENCES: 7046
+
+BRACKETS ) ( ...
+	   bib: OK       40 balanced occurrences
+
+	nonbib: OK       626 balanced occurrences
+
+	IMBALANCES:  0
+	OCCURRENCES: 666
+
+BRACKETS ] [ ...
+	   bib: OK       55718 balanced occurrences
+
+	nonbib: OK       131810 balanced occurrences
+
+	IMBALANCES:  0
+	OCCURRENCES: 187528
+
+BRACKETS » « ...
+	   bib: OK       776 balanced occurrences
+
+	nonbib: OK       1036 balanced occurrences
+
+	IMBALANCES:  0
+	OCCURRENCES: 1812
+
+BRACKETS: all balanced (202262 bracket occurrences)
+
+SCROLLS: 998 ACRONYMS in the data
+	10Q1
+	11Q1
+	11Q10
+	11Q11
+	11Q12
+	11Q13
+	11Q14
+	11Q15
+	11Q16
+	11Q17
+	11Q18
+	11Q19
+	11Q2
+	11Q20
+	11Q21
+	11Q22
+	11Q23
+	11Q25
+	11Q26
+	11Q27
+	11Q29
+	11Q3
+	11Q30
+	11Q4
+	11Q5
+	11Q6
+	11Q7
+	11Q8
+	11Q9
+	1Q1
+	1Q10
+	1Q11
+	1Q12
+	1Q13
+	1Q14
+	1Q15
+	1Q16
+	1Q17
+	1Q18
+	1Q19
+	1Q19bis
+	1Q2
+	1Q20
+	1Q21
+	1Q22
+	1Q23
+	1Q24
+	1Q25
+	1Q26
+	1Q27
+	1Q29
+	1Q3
+	1Q30
+	1Q31
+	1Q32
+	1Q34bis
+	1Q35
+	1Q36
+	1Q37
+	1Q38
+	1Q39
+	1Q4
+	1Q40
+	1Q41
+	1Q42
+	1Q43
+	1Q44
+	1Q45
+	1Q46
+	1Q47
+	1Q49
+	1Q5
+	1Q50
+	1Q51
+	1Q52
+	1Q53
+	1Q54
+	1Q55
+	1Q56
+	1Q57
+	1Q58
+	1Q6
+	1Q62
+	1Q63
+	1Q64
+	1Q65
+	1Q66
+	1Q67
+	1Q68
+	1Q69
+	1Q7
+	1Q70
+	1Q70bis
+	1Q71
+	1Q72
+	1Q8
+	1Q9
+	1QHa
+	1QIsaa
+	1QM
+	1QS
+	1QSa
+	1QSb
+	1Qisaa
+	1QpHab
+	2Q1
+	2Q10
+	2Q11
+	2Q12
+	2Q13
+	2Q14
+	2Q15
+	2Q16
+	2Q17
+	2Q18
+	2Q19
+	2Q2
+	2Q20
+	2Q21
+	2Q22
+	2Q23
+	2Q24
+	2Q25
+	2Q26
+	2Q27
+	2Q28
+	2Q29
+	2Q3
+	2Q30
+	2Q31
+	2Q32
+	2Q33
+	2Q4
+	2Q5
+	2Q6
+	2Q7
+	2Q8
+	2Q9
+	34Se1
+	34Se2
+	3Q1
+	3Q10
+	3Q11
+	3Q12
+	3Q13
+	3Q14
+	3Q15
+	3Q2
+	3Q3
+	3Q4
+	3Q5
+	3Q6
+	3Q7
+	3Q8
+	3Q9
+	4Q1
+	4Q10
+	4Q100
+	4Q101
+	4Q102
+	4Q103
+	4Q103a
+	4Q104
+	4Q105
+	4Q106
+	4Q107
+	4Q108
+	4Q109
+	4Q11
+	4Q110
+	4Q111
+	4Q112
+	4Q113
+	4Q114
+	4Q115
+	4Q116
+	4Q117
+	4Q118
+	4Q12
+	4Q123
+	4Q124
+	4Q125
+	4Q128
+	4Q129
+	4Q12a
+	4Q13
+	4Q130
+	4Q131
+	4Q132
+	4Q133
+	4Q134
+	4Q135
+	4Q136
+	4Q137
+	4Q138
+	4Q139
+	4Q14
+	4Q140
+	4Q141
+	4Q142
+	4Q143
+	4Q144
+	4Q145
+	4Q146
+	4Q149
+	4Q15
+	4Q150
+	4Q151
+	4Q152
+	4Q153
+	4Q154
+	4Q155
+	4Q156
+	4Q157
+	4Q158
+	4Q159
+	4Q16
+	4Q160
+	4Q161
+	4Q162
+	4Q163
+	4Q164
+	4Q165
+	4Q166
+	4Q167
+	4Q168
+	4Q169
+	4Q17
+	4Q170
+	4Q171
+	4Q172
+	4Q173
+	4Q174
+	4Q175
+	4Q176
+	4Q176a
+	4Q177
+	4Q178
+	4Q179
+	4Q18
+	4Q180
+	4Q181
+	4Q182
+	4Q183
+	4Q184
+	4Q185
+	4Q186
+	4Q19
+	4Q196
+	4Q197
+	4Q198
+	4Q199
+	4Q2
+	4Q20
+	4Q200
+	4Q201
+	4Q202
+	4Q203
+	4Q204
+	4Q205
+	4Q206
+	4Q207
+	4Q208
+	4Q209
+	4Q21
+	4Q210
+	4Q211
+	4Q212
+	4Q213
+	4Q213a
+	4Q213b
+	4Q214
+	4Q214a
+	4Q214b
+	4Q215
+	4Q215a
+	4Q216
+	4Q217
+	4Q218
+	4Q219
+	4Q22
+	4Q220
+	4Q221
+	4Q222
+	4Q223_224
+	4Q225
+	4Q226
+	4Q227
+	4Q228
+	4Q23
+	4Q230
+	4Q234
+	4Q235
+	4Q238
+	4Q24
+	4Q242
+	4Q243
+	4Q244
+	4Q245
+	4Q246
+	4Q247
+	4Q248
+	4Q249
+	4Q249a
+	4Q249b
+	4Q249c
+	4Q249d
+	4Q249e
+	4Q249f
+	4Q249g
+	4Q249h
+	4Q249i
+	4Q249j
+	4Q249k
+	4Q249l
+	4Q249m
+	4Q249n
+	4Q249o
+	4Q249p
+	4Q249q
+	4Q249r
+	4Q249s
+	4Q249t
+	4Q249u
+	4Q249v
+	4Q249w
+	4Q249x
+	4Q249y
+	4Q249z
+	4Q25
+	4Q250
+	4Q250a
+	4Q250b
+	4Q250c
+	4Q250d
+	4Q250e
+	4Q250f
+	4Q250g
+	4Q250h
+	4Q250i
+	4Q250j
+	4Q251
+	4Q252
+	4Q253
+	4Q253a
+	4Q254
+	4Q254a
+	4Q255
+	4Q256
+	4Q257
+	4Q258
+	4Q259
+	4Q26
+	4Q260
+	4Q261
+	4Q262
+	4Q263
+	4Q264
+	4Q264a
+	4Q265
+	4Q266
+	4Q267
+	4Q268
+	4Q269
+	4Q26a
+	4Q26b
+	4Q26c
+	4Q27
+	4Q270
+	4Q271
+	4Q272
+	4Q273
+	4Q274
+	4Q275
+	4Q276
+	4Q277
+	4Q278
+	4Q279
+	4Q28
+	4Q280
+	4Q281a
+	4Q281b
+	4Q281c
+	4Q281d
+	4Q281e
+	4Q281f
+	4Q282a
+	4Q282b
+	4Q282c
+	4Q282d
+	4Q282e
+	4Q282f
+	4Q282g
+	4Q282h
+	4Q282i
+	4Q282j
+	4Q282k
+	4Q282l
+	4Q282m
+	4Q282n
+	4Q282o
+	4Q282p
+	4Q282q
+	4Q282r
+	4Q282s
+	4Q282t
+	4Q284
+	4Q284a
+	4Q285
+	4Q286
+	4Q287
+	4Q288
+	4Q289
+	4Q29
+	4Q290
+	4Q291
+	4Q292
+	4Q293
+	4Q294
+	4Q298
+	4Q299
+	4Q3
+	4Q30
+	4Q300
+	4Q301
+	4Q302
+	4Q303
+	4Q304
+	4Q305
+	4Q306
+	4Q307
+	4Q31
+	4Q313
+	4Q313a
+	4Q313b
+	4Q317
+	4Q318
+	4Q319
+	4Q32
+	4Q320
+	4Q321
+	4Q321a
+	4Q322
+	4Q322a
+	4Q323
+	4Q324
+	4Q324a
+	4Q324b
+	4Q324c
+	4Q324d
+	4Q324e
+	4Q324f
+	4Q324g
+	4Q324h
+	4Q324i
+	4Q325
+	4Q326
+	4Q328
+	4Q329
+	4Q329a
+	4Q33
+	4Q330
+	4Q331
+	4Q332
+	4Q332a
+	4Q333
+	4Q334
+	4Q337
+	4Q338
+	4Q339
+	4Q34
+	4Q340
+	4Q341
+	4Q342
+	4Q343
+	4Q344
+	4Q345
+	4Q346
+	4Q346a
+	4Q347
+	4Q348
+	4Q35
+	4Q351
+	4Q352
+	4Q352a
+	4Q353
+	4Q354
+	4Q356
+	4Q357
+	4Q358
+	4Q359
+	4Q36
+	4Q360
+	4Q360a
+	4Q364
+	4Q365
+	4Q365a
+	4Q366
+	4Q367
+	4Q368
+	4Q369
+	4Q37
+	4Q370
+	4Q371
+	4Q372
+	4Q373
+	4Q373a
+	4Q374
+	4Q375
+	4Q376
+	4Q377
+	4Q378
+	4Q379
+	4Q38
+	4Q380
+	4Q381
+	4Q382
+	4Q383
+	4Q384
+	4Q385
+	4Q385a
+	4Q385b
+	4Q385c
+	4Q386
+	4Q387
+	4Q387a
+	4Q388
+	4Q388a
+	4Q389
+	4Q38a
+	4Q38b
+	4Q38c
+	4Q38d
+	4Q39
+	4Q390
+	4Q391
+	4Q392
+	4Q393
+	4Q394
+	4Q395
+	4Q396
+	4Q397
+	4Q398
+	4Q399
+	4Q4
+	4Q40
+	4Q400
+	4Q401
+	4Q402
+	4Q403
+	4Q404
+	4Q405
+	4Q406
+	4Q407
+	4Q408
+	4Q409
+	4Q41
+	4Q410
+	4Q411
+	4Q412
+	4Q413
+	4Q414
+	4Q415
+	4Q416
+	4Q417
+	4Q418
+	4Q418a
+	4Q418b
+	4Q418c
+	4Q419
+	4Q42
+	4Q420
+	4Q421
+	4Q422
+	4Q423
+	4Q424
+	4Q425
+	4Q426
+	4Q427
+	4Q428
+	4Q429
+	4Q43
+	4Q430
+	4Q431
+	4Q432
+	4Q433
+	4Q433a
+	4Q434
+	4Q435
+	4Q436
+	4Q437
+	4Q438
+	4Q439
+	4Q44
+	4Q440
+	4Q440a
+	4Q440b
+	4Q441
+	4Q442
+	4Q443
+	4Q444
+	4Q445
+	4Q446
+	4Q447
+	4Q448
+	4Q449
+	4Q45
+	4Q450
+	4Q451
+	4Q452
+	4Q453
+	4Q454
+	4Q455
+	4Q456
+	4Q457a
+	4Q457b
+	4Q458
+	4Q459
+	4Q46
+	4Q460
+	4Q461
+	4Q462
+	4Q463
+	4Q464
+	4Q464a
+	4Q464b
+	4Q465
+	4Q466
+	4Q467
+	4Q468a
+	4Q468aa
+	4Q468b
+	4Q468bb
+	4Q468c
+	4Q468cc
+	4Q468dd
+	4Q468e
+	4Q468f
+	4Q468g
+	4Q468i
+	4Q468j
+	4Q468k
+	4Q468l
+	4Q468m
+	4Q468n
+	4Q468o
+	4Q468p
+	4Q468q
+	4Q468r
+	4Q468s
+	4Q468t
+	4Q468u
+	4Q468v
+	4Q468w
+	4Q468x
+	4Q468y
+	4Q468z
+	4Q469
+	4Q47
+	4Q470
+	4Q471
+	4Q471a
+	4Q471b
+	4Q471c
+	4Q472
+	4Q472a
+	4Q473
+	4Q474
+	4Q475
+	4Q476
+	4Q476a
+	4Q477
+	4Q478
+	4Q479
+	4Q48
+	4Q480
+	4Q481
+	4Q481a
+	4Q481b
+	4Q481c
+	4Q481d
+	4Q481e
+	4Q482
+	4Q483
+	4Q484
+	4Q485
+	4Q486
+	4Q487
+	4Q488
+	4Q489
+	4Q49
+	4Q490
+	4Q491
+	4Q492
+	4Q493
+	4Q494
+	4Q495
+	4Q496
+	4Q497
+	4Q498
+	4Q499
+	4Q5
+	4Q50
+	4Q500
+	4Q501
+	4Q502
+	4Q503
+	4Q504
+	4Q505
+	4Q506
+	4Q507
+	4Q508
+	4Q509
+	4Q51
+	4Q510
+	4Q511
+	4Q512
+	4Q513
+	4Q514
+	4Q515
+	4Q516
+	4Q517
+	4Q518
+	4Q519
+	4Q52
+	4Q520
+	4Q521
+	4Q522
+	4Q523
+	4Q524
+	4Q525
+	4Q526
+	4Q527
+	4Q528
+	4Q529
+	4Q53
+	4Q530
+	4Q531
+	4Q532
+	4Q533
+	4Q534
+	4Q535
+	4Q536
+	4Q537
+	4Q538
+	4Q539
+	4Q54
+	4Q540
+	4Q541
+	4Q542
+	4Q543
+	4Q544
+	4Q545
+	4Q546
+	4Q547
+	4Q548
+	4Q549
+	4Q55
+	4Q550
+	4Q551
+	4Q552
+	4Q553
+	4Q553a
+	4Q554
+	4Q554a
+	4Q555
+	4Q556
+	4Q556a
+	4Q557
+	4Q558
+	4Q558a
+	4Q559
+	4Q56
+	4Q560
+	4Q561
+	4Q562
+	4Q563
+	4Q564
+	4Q565
+	4Q566
+	4Q567
+	4Q568
+	4Q569
+	4Q57
+	4Q570
+	4Q571
+	4Q572
+	4Q573
+	4Q574
+	4Q575
+	4Q575a
+	4Q576
+	4Q577
+	4Q578
+	4Q579
+	4Q58
+	4Q580
+	4Q581
+	4Q582
+	4Q583
+	4Q584
+	4Q585
+	4Q586
+	4Q587
+	4Q59
+	4Q6
+	4Q60
+	4Q61
+	4Q62
+	4Q62a
+	4Q63
+	4Q64
+	4Q65
+	4Q66
+	4Q67
+	4Q68
+	4Q69
+	4Q69a
+	4Q69b
+	4Q7
+	4Q70
+	4Q71
+	4Q72
+	4Q72a
+	4Q72b
+	4Q73
+	4Q74
+	4Q75
+	4Q76
+	4Q77
+	4Q78
+	4Q79
+	4Q80
+	4Q81
+	4Q82
+	4Q83
+	4Q84
+	4Q85
+	4Q86
+	4Q87
+	4Q88
+	4Q89
+	4Q8a
+	4Q8b
+	4Q8c
+	4Q8d
+	4Q9
+	4Q90
+	4Q91
+	4Q92
+	4Q93
+	4Q94
+	4Q95
+	4Q96
+	4Q97
+	4Q98
+	4Q98a
+	4Q98b
+	4Q98c
+	4Q98d
+	4Q98e
+	4Q98f
+	4Q98g
+	4Q99
+	5/6hev1a
+	5/6hev1b
+	5Q1
+	5Q10
+	5Q11
+	5Q12
+	5Q13
+	5Q14
+	5Q15
+	5Q16
+	5Q17
+	5Q18
+	5Q19
+	5Q2
+	5Q20
+	5Q22
+	5Q23
+	5Q24
+	5Q25
+	5Q3
+	5Q4
+	5Q5
+	5Q6
+	5Q7
+	5Q9
+	6Q1
+	6Q10
+	6Q11
+	6Q12
+	6Q13
+	6Q14
+	6Q15
+	6Q16
+	6Q17
+	6Q18
+	6Q19
+	6Q2
+	6Q20
+	6Q21
+	6Q22
+	6Q23
+	6Q24
+	6Q26
+	6Q27
+	6Q28
+	6Q29
+	6Q3
+	6Q30
+	6Q31
+	6Q4
+	6Q5
+	6Q6
+	6Q7
+	6Q8
+	6Q9
+	8Q1
+	8Q2
+	8Q3
+	8Q4
+	8Q5
+	9Q1
+	Arugleviticus
+	CD
+	KhQ1
+	KhQ2
+	KhQ3
+	Mas1
+	Mas1a
+	Mas1b
+	Mas1c
+	Mas1d
+	Mas1e
+	Mas1f
+	Mur1
+	Mur2
+	Mur3
+	Mur4
+	Mur88
+	Murx
+	PAM43660
+	PAM43661
+	PAM43663
+	PAM43664
+	PAM43665
+	PAM43666
+	PAM43667
+	PAM43668
+	PAM43669
+	PAM43670
+	PAM43671
+	PAM43672
+	PAM43673
+	PAM43674
+	PAM43675
+	PAM43676
+	PAM43677
+	PAM43678
+	PAM43679
+	PAM43680
+	PAM43682
+	PAM43683
+	PAM43684
+	PAM43685
+	PAM43686
+	PAM43688
+	PAM43689
+	PAM43690
+	PAM43691
+	PAM43692
+	PAM43693
+	PAM43694
+	PAM43695
+	PAM43696
+	PAM43697
+	PAM43698
+	PAM43699
+	PAM43700
+	PAM43701
+	PAM44102
+	Pam43113
+	Pam43124
+	Sdeir1
+	X4
+	XQ6
+	XQ7
+	XQ8
+	Xhev/se2
+	Xhev/se3
+	Xhev/se5
+	Xjoshua
+	Xjudges
+	Xq1
+	Xq2
+	Xq3
+
+Compiling feature data from tokens
