@@ -9,42 +9,28 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-04-27T19:38:57Z
+@dateWritten=2019-04-27T20:13:05Z
 
 774554	Greek
 Greek
 Greek
+774748	Greek
 Greek
 Greek
+774837	Greek
 Greek
-774751	Greek
+774883	Greek
 Greek
+774994	Greek
 Greek
+775226	Greek
 Greek
+775363	Greek
 Greek
-774842	Greek
-Greek
-Greek
-774889	Greek
-Greek
-Greek
-Greek
-775002	Greek
-Greek
-Greek
-Greek
-775236	Greek
-Greek
-Greek
-Greek
-775375	Greek
-Greek
-Greek
-Greek
-1786937	Greek
-1787011	Greek
-1787044	Greek
-1787062	Greek
-1787103	Greek
-1787189	Greek
-1787240	Greek
+1786923	Greek
+1786997	Greek
+1787030	Greek
+1787048	Greek
+1787089	Greek
+1787175	Greek
+1787226	Greek
