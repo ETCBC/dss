@@ -9,9 +9,9 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-04-27T19:08:32Z
+@dateWritten=2019-04-27T19:38:49Z
 
-1530896	[ W
+1530912	[ W
 JR>
 >L ]HJm
 KJ

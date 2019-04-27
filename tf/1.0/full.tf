@@ -9,9 +9,9 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-04-27T19:08:31Z
+@dateWritten=2019-04-27T19:38:48Z
 
-1530896	[ ו
+1530912	[ ו
 ירא
 אל ]הים
 כי

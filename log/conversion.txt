@@ -56,14 +56,14 @@ FIXES: SUBNUMBERS
 	nonbib 2 x: 318602 318899
 FIXES: SUBNUMBERS 12 in 82 occurrences
 
-FIXES: FOREIGN
+FIXES: FOREIGNS
 	CH => X (1 distinct cases)
 		CHAG => XAG (1 occurrences)
 			nonbib:53527
 	TH => O (1 distinct cases)
 		THE => OE (1 occurrences)
 			nonbib:53584
-FIXES: FOREIGN 2 rules; 2 cases; 2 occurrences
+FIXES: FOREIGNS 2 rules; 2 cases; 2 occurrences
 
 FIXES: SCROLLS: 43 scroll name completions
 bib   :   482 	SCROLL -Q2        => 1Q2
@@ -436,7 +436,7 @@ NUMERALS: TRANS-no  LEX-yes:  1 conflicts
 	       nonbib (1 x)
 	       	238013 in 4Q502 f22:5 "kj"
 
-FOREIGN: 7 distinct words in 7 occurrences
+FOREIGNS: 7 distinct words in 7 occurrences
 	"DI": 1 occurrences
 		nonbib (1 x)
 			 53625 in 3Q15 2:9 "DI"

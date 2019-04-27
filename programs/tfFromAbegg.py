@@ -225,6 +225,7 @@ TERM = 'term'
 
 GLYPH = 'empty'
 EMPTY = 'empty'
+FOREIGN = 'foreign'
 OTHER = 'other'
 
 CORRECTION = 'correction'
@@ -369,7 +370,7 @@ SIGMA = '\u03a3'
 TAU = '\u03a4'
 CHI = '\u03a7'
 
-FOREIGN = (
+FOREIGNS = (
     (ALPHA, 'A', None),
     (GAMMA, 'G', None),
     (DELTA, 'D', None),
@@ -384,12 +385,12 @@ FOREIGN = (
     (TAU, 'T', None),
     (CHI, 'CH', 'X'),
 )
-FOREIGN_ESC = {x[1]: x[2] for x in FOREIGN if x[2]}
-FOREIGN_SET = {x[2] or x[1] for x in FOREIGN}
-FOREIGN_UNI = {x[2] or x[1]: x[0] for x in FOREIGN}
-FOREIGN_REP = FOREIGN_UNI
+FOREIGNS_ESC = {x[1]: x[2] for x in FOREIGNS if x[2]}
+FOREIGNS_SET = {x[2] or x[1] for x in FOREIGNS}
+FOREIGNS_UNI = {x[2] or x[1]: x[0] for x in FOREIGNS}
+FOREIGNS_REP = FOREIGNS_UNI
 
-FOREIGN_REAL = (NUMERALS_SET - CONSONANTS_SET) | VOWELS_SET | FOREIGN_SET
+FOREIGNS_REAL = (NUMERALS_SET - CONSONANTS_SET) | VOWELS_SET | FOREIGNS_SET
 
 EM = 'ε'
 
@@ -451,7 +452,7 @@ DIGITS_SET = set('0123456789')
 
 GLYPHS_ALPHA = CONSONANTS_SET | VOWELS_SET | POINTS_SET | SEPS_SET
 GLYPHS_LEX = GLYPHS_ALPHA | DIGITS_SET
-GLYPHS_SET = GLYPHS_ALPHA | NUMERALS_SET | FOREIGN_SET
+GLYPHS_SET = GLYPHS_ALPHA | NUMERALS_SET | FOREIGNS_SET
 GLYPHS_AMBI = GLYPHS_ALPHA & NUMERALS_SET
 
 CHARS = set()
@@ -532,7 +533,7 @@ def unesc(text):
 
 lexDisRe = re.compile(r'^(.*?)(?:[_-])([0-9]+)$')
 lexDisXRe = re.compile(r'[_-][0-9]+$')
-foreignRe = re.compile(f'^[{"".join(FOREIGN_SET)}]+$')
+foreignRe = re.compile(f'^[{"".join(FOREIGNS_SET)}]+$')
 capitalNumRe = re.compile(f'^[A-Z{N1A}{N1F}]+$')
 numeralRe = re.compile(f'^[{"".join(NUMERALS_SET)}]+$')
 digitRe = re.compile(f'^[0-9]+$')
@@ -750,7 +751,7 @@ def readData(start=None, end=None):
             setdefault(src, {}).\
             setdefault(i + 1, {})[name] = (text, correction, reason, fixed)
 
-    for (t, tx) in FOREIGN_ESC.items():
+    for (t, tx) in FOREIGNS_ESC.items():
       text = result[TRANS]
       if t in text:
         newText = text.replace(t, tx)
@@ -855,7 +856,7 @@ def readData(start=None, end=None):
     report(f"FIXES: SUBNUMBERS {len(subNumbers)} in {nOccs} occurrences")
     report('', only=True)
 
-    report(f'FIXES: FOREIGN', only=True)
+    report(f'FIXES: FOREIGNS', only=True)
     totalRules = len(foreignFixes)
     totalCases = 0
     totalOccs = 0
@@ -869,7 +870,7 @@ def readData(start=None, end=None):
         report(f'\t\t{fr} => {to} ({nOccs} occurrences)', only=True)
         for (src, i) in occs:
           report(f'\t\t\t{src:<6}:{i}', only=True)
-    report(f'FIXES: FOREIGN {totalRules} rules; {totalCases} cases; {totalOccs} occurrences')
+    report(f'FIXES: FOREIGNS {totalRules} rules; {totalCases} cases; {totalOccs} occurrences')
     report('', only=True)
 
     report(f'FIXES: SCROLLS: {len(diags)} scroll name completions')
@@ -1007,7 +1008,7 @@ def checkChars():
 
   def showForeign():
     nForeign = sum(sum(len(x) for x in srcs.values()) for srcs in foreign.values())
-    report(f'FOREIGN: {len(foreign)} distinct words in {nForeign} occurrences')
+    report(f'FOREIGNS: {len(foreign)} distinct words in {nForeign} occurrences')
     for (word, srcs) in sorted(foreign.items()):
       nF = sum(len(x) for x in srcs.values())
       report(f'\t"{word}": {nF} occurrences', only=True)
@@ -1097,7 +1098,7 @@ def checkChars():
       digital = DIGITS_SET
 
       for (name, legal, text) in (
-          (TRANS, CHARS | FOREIGN_SET, word),
+          (TRANS, CHARS | FOREIGNS_SET, word),
           (LEX, CHARS_LEX, lexBare),
       ):
         for c in text:
@@ -1334,7 +1335,7 @@ def director(cv):
     result = ''
     try:
       result = (
-          ''.join(FOREIGN_UNI[c] if c in FOREIGN_UNI else CHARS_UNI[c] for c in text)
+          ''.join(FOREIGNS_UNI[c] if c in FOREIGNS_UNI else CHARS_UNI[c] for c in text)
           if asForeign else
           ''.join(NUMERALS_UNI[c] if c in NUMERALS_UNI else CHARS_UNI[c] for c in text)
           if asNum else
@@ -1348,7 +1349,7 @@ def director(cv):
     result = ''
     try:
       result = (
-          ''.join(FOREIGN_REP[c] if c in FOREIGN_REP else CHARS_UNI[c] for c in text)
+          ''.join(FOREIGNS_REP[c] if c in FOREIGNS_REP else CHARS_UNI[c] for c in text)
           if asForeign else
           ''.join(NUMERALS_REP[c] if c in NUMERALS_REP else CHARS_REP[c] for c in text)
           if asNum else
@@ -1528,10 +1529,13 @@ def director(cv):
             glyphe=asRep(glypho, asNum=isNum, asForeign=isForeign),
         )
       if isForeign:
-        cv.feature(curSlot, language=GREEK)
+        cv.feature(curWord, language=GREEK)
 
       typ = None
       for c in fullo:
+        if isForeign:
+          typ = FOREIGN
+          addSlot()
         if isNum and c in NUMERALS_SET:
           typ = NUMERAL
           addSlot()
