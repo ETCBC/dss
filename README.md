@@ -7,7 +7,7 @@
 
 # Dead Sea Scrolls
 
-[![sha](sha.png) Software Heritage Archive](https://archive.softwareheritage.org/browse/origin/https://github.com/etcbc/dss/)
+[![sha](sha.png) Software Heritage Archive](https://archive.softwareheritage.org/browse/origin/https://github.com/ETCBC/dss/)
 
 [![DOI](https://zenodo.org/badge/168822533.svg)](https://zenodo.org/badge/latestdoi/168822533)
 
