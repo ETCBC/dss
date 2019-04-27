@@ -1536,7 +1536,7 @@ def director(cv):
         if isForeign:
           typ = FOREIGN
           addSlot()
-        if isNum and c in NUMERALS_SET:
+        elif isNum and c in NUMERALS_SET:
           typ = NUMERAL
           addSlot()
         elif c in TOKENS_SET:
