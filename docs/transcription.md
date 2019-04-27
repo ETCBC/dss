@@ -101,7 +101,7 @@ type | source | etcbc | unicode | description
 `cons` | `m` `M` | `M` `m`| `מ` `ם` | normal consonantal letter
 `vowel` | `I` | `I`| ` ִ ` | normal consonantal letter
 `punct` | ` ` `-` `.` `±` `/`| `_` `&` `00` `0000` `'`| ` ` `־` `׃` `׃׃` `׳`| non-breaking space, maqaf, sof pasuq, paleo divider, morpheme break 
-`numeral` | `A` `D` | `&gt;'` `k'` | `א׳` `ך׳` | a numeral 
+`numeral` | `A` `D` | `>'` `k'` | `א׳` `ך׳` | a numeral 
 `missing` | `--` | ` 0 ` | `ε` | representation of a missing sign
 `uncertain` | `?` | ` ? ` | ` ? ` | representation of an uncertain sign (degree 1)
 `uncertain` | ``\`` | ` # ` | ` # ` | representation of a uncertain sign (degree 2)
@@ -323,10 +323,10 @@ Numerals are ancient signs for denoting quantities.
 
 source | etcbc | unicode | value
 --- | --- | --- | ---
-`A` | `&gt;'` | `א׳` | 1
-`å` | `&gt;52` | `אׄ` | 1
-`B` | `&gt;53` | `אׅ` | 1
-`∫` | `&gt;35` | `אֽ` | 1
+`A` | `>'` | `א׳` | 1
+`å` | `>52` | `אׄ` | 1
+`B` | `>53` | `אׅ` | 1
+`∫` | `>35` | `אֽ` | 1
 `C` | `J'` | `י׳` | 10
 `D` | `k'` | `ך׳` | 20
 `F` | `Q'` | `ק׳` | 100
