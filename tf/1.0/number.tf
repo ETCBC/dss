@@ -9,9 +9,9 @@
 @source=Martin Abegg, personal communication
 @valueType=int
 @writtenBy=Text-Fabric
-@dateWritten=2019-04-27T14:27:00Z
+@dateWritten=2019-04-27T18:35:06Z
 
-1452972	1
+1452969	1
 1
 18
 18
@@ -39,7 +39,7 @@
 5
 5
 13
-1517439	18
+1517436	18
 19
 20
 21

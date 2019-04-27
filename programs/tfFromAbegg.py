@@ -9,6 +9,30 @@ from tf.fabric import Fabric
 from tf.writing.transcription import Transcription
 from tf.convert.walker import CV
 
+help = '''
+
+python3 tfFromAbegg.py options
+
+Converts Abegg's data files to TF
+Optionally performs checks.
+Optionally loads the TF for the first time.
+
+-checkonly  only perform checks, do not generate TF
+-check      performs checks, generates TF (by default, checks are not performed)
+-load       load TF after generation (by default the TF is not loaded)
+-notf       do not generate TF
+-force      let the TF converter continue after errors, so that you can see the final TF
+'''
+
+# OPTIONS
+
+generateTf = len(sys.argv) == 1 or '-notf' not in sys.argv[1:]
+checkSource = len(sys.argv) > 1 and '-check' in sys.argv[1:]
+checkOnly = len(sys.argv) > 1 and '-checkonly' in sys.argv[1:]
+force = len(sys.argv) > 1 and '-force' in sys.argv[1:]
+load = len(sys.argv) > 1 and '-load' in sys.argv[1:]
+checkSource = checkSource or checkOnly
+
 # LOCATIONS
 
 ORG = 'etcbc'
@@ -65,6 +89,7 @@ INTERLINEAR = 'interlinear'
 SCRIPT = 'script'
 
 B = 'B'
+NOLEX = '0'
 
 # fields
 
@@ -114,15 +139,6 @@ FIXES = dict(
     nonbib={
         36148: {
             TRANS: ('≤]', '≥≤', 'spurious ] bracket, missing ≥ bracket'),
-        },
-        53527: {
-            TRANS: ('CHAG', 'chag', 'lowercasing'),
-        },
-        53566: {
-            TRANS: ('HN', 'hn', 'lowercasing'),
-        },
-        53584: {
-            TRANS: ('THE', 'hn', 'lowercasing'),
         },
         55019: {
             TRANS: (f'{NB}±', '≥≤', 'spurious non-breaking space before paleodivider'),
@@ -337,6 +353,40 @@ NUMERALS_SET = {x[1] for x in NUMERALS}
 NUMERALS_UNI = {x[1]: x[0] for x in NUMERALS}
 NUMERALS_REP = {x[1]: TR.from_hebrew(x[0]) for x in NUMERALS}
 
+ALPHA = '\u0391'
+GAMMA = '\u0393'
+DELTA = '\u0394'
+EPSILON = '\u0395'
+ETA = '\u0397'
+IOTA = '\u0399'
+KAPPA = '\u039a'
+NU = '\u039d'
+RHO = '\u03a1'
+SIGMA = '\u03a3'
+TAU = '\u03a4'
+CHI = '\u03a7'
+
+FOREIGN = (
+    (ALPHA, 'A', None),
+    (GAMMA, 'G', None),
+    (DELTA, 'D', None),
+    (EPSILON, 'E', None),
+    (ETA, 'H', None),
+    (IOTA, 'I', None),
+    (KAPPA, 'K', None),
+    (NU, 'N', None),
+    (RHO, 'R', None),
+    (SIGMA, 'S', None),
+    (TAU, 'T', None),
+    (CHI, 'CH', 'X'),
+)
+FOREIGN_ESC = {x[1]: x[2] for x in FOREIGN if x[2]}
+FOREIGN_SET = {x[2] or x[1] for x in FOREIGN}
+FOREIGN_UNI = {x[2] or x[1]: x[0] for x in FOREIGN}
+FOREIGN_REP = FOREIGN_UNI
+
+FOREIGN_REAL = (NUMERALS_SET - CONSONANTS_SET) | VOWELS_SET | FOREIGN_SET
+
 EM = 'ε'
 
 TOKENS = (
@@ -397,7 +447,7 @@ DIGITS_SET = set('0123456789')
 
 GLYPHS_ALPHA = CONSONANTS_SET | VOWELS_SET | POINTS_SET | SEPS_SET
 GLYPHS_LEX = GLYPHS_ALPHA | DIGITS_SET
-GLYPHS_SET = GLYPHS_ALPHA | NUMERALS_SET
+GLYPHS_SET = GLYPHS_ALPHA | NUMERALS_SET | FOREIGN_SET
 GLYPHS_AMBI = GLYPHS_ALPHA & NUMERALS_SET
 
 CHARS = set()
@@ -478,7 +528,8 @@ def unesc(text):
 
 lexDisRe = re.compile(r'^(.*?)(?:[_-])([0-9]+)$')
 lexDisXRe = re.compile(r'[_-][0-9]+$')
-capitalRe = re.compile(f'^[A-Z{N1A}{N1F}]+$')
+foreignRe = re.compile(f'^[{"".join(FOREIGN_SET)}]+$')
+capitalNumRe = re.compile(f'^[A-Z{N1A}{N1F}]+$')
 numeralRe = re.compile(f'^[{"".join(NUMERALS_SET)}]+$')
 digitRe = re.compile(f'^[0-9]+$')
 ambiRe = re.compile(f'^[{"".join(GLYPHS_AMBI)}]+$')
@@ -654,6 +705,7 @@ def readBooks():
 def readData(start=None, end=None):
   diags = []
   fixes = {}
+  foreignFixes = {}
   subNumbers = {}
   subLabel = None
   doIt = True
@@ -687,7 +739,19 @@ def readData(start=None, end=None):
           result[name] = correction
         else:
           fixed = text
-        fixes.setdefault(src, {}).setdefault(i + 1, {})[name] = (text, correction, reason, fixed)
+        fixes.\
+            setdefault(src, {}).\
+            setdefault(i + 1, {})[name] = (text, correction, reason, fixed)
+
+    for (t, tx) in FOREIGN_ESC.items():
+      text = result[TRANS]
+      if t in text:
+        newText = text.replace(t, tx)
+        result[TRANS] = newText
+        foreignFixes.\
+            setdefault((t, tx), {}).\
+            setdefault((text, newText), []).\
+            append((src, i + 1))
 
     doIt = True
     text = result[TRANS]
@@ -781,7 +845,24 @@ def readData(start=None, end=None):
         nOccs += len(lines)
         linesRep = ' '.join(str(i + 1) for i in lines[0:LIMIT])
         report(f'\t{src:<6} {len(lines)} x: {linesRep}', only=True)
-    report(f"FIXES: SUBNUMBERS ]n[ => {len(subNumbers)} subnumbers in {nOccs} occurrences")
+    report(f"FIXES: SUBNUMBERS {len(subNumbers)} in {nOccs} occurrences")
+    report('', only=True)
+
+    report(f'FIXES: FOREIGN', only=True)
+    totalRules = len(foreignFixes)
+    totalCases = 0
+    totalOccs = 0
+    for ((t, tx), cases) in sorted(foreignFixes.items()):
+      nCases = len(cases)
+      totalCases += nCases
+      report(f'\t{t} => {tx} ({nCases} distinct cases)', only=True)
+      for ((fr, to), occs) in cases.items():
+        nOccs = len(occs)
+        totalOccs += nOccs
+        report(f'\t\t{fr} => {to} ({nOccs} occurrences)', only=True)
+        for (src, i) in occs:
+          report(f'\t\t\t{src:<6}:{i}', only=True)
+    report(f'FIXES: FOREIGN {totalRules} rules; {totalCases} cases; {totalOccs} occurrences')
     report('', only=True)
 
     report(f'FIXES: SCROLLS: {len(diags)} scroll name completions')
@@ -864,6 +945,7 @@ def checkChars():
   numeralCand = {}
   numeralLexTF = {}
   numeralLexFT = {}
+  foreign = {}
   lastOfLine = collections.Counter()
   slashInner = {}
   nLines = 0
@@ -916,6 +998,18 @@ def checkChars():
             report(f'\t{"":>7}\t{i + 1:>6} in {scroll} {fragment}:{line} "{word}"', only=True)
       report('', only=True)
 
+  def showForeign():
+    nForeign = sum(sum(len(x) for x in srcs.values()) for srcs in foreign.values())
+    report(f'FOREIGN: {len(foreign)} distinct words in {nForeign} occurrences')
+    for (word, srcs) in sorted(foreign.items()):
+      nF = sum(len(x) for x in srcs.values())
+      report(f'\t"{word}": {nF} occurrences', only=True)
+      for (src, lines) in srcs.items():
+        report(f'\t\t{src} ({len(lines)} x)', only=True)
+        for (i, scroll, fragment, line) in lines[0:10]:
+          report(f'\t\t\t{i + 1:>6} in {scroll} {fragment}:{line} "{word}"', only=True)
+    report('', only=True)
+
   def showLastOfLine():
     report(f'LINES: {nLines} lines')
     nInner = sum(len(x) for x in slashInner.values())
@@ -952,7 +1046,7 @@ def checkChars():
 
       lexBare = lexDisXRe.sub('', lex)
       lexPure = nonGlyphLexRe.sub('', lexBare)
-      isNumLex = lexPure and digitRe.match(lexPure)
+      isNumLex = lexPure and lexPure != '0' and digitRe.match(lexPure)
       if isNumLex:
         lex = lex[::-1]
         lexPure = lexPure[::-1]
@@ -961,7 +1055,7 @@ def checkChars():
       isNumTrans = wordPure and numeralRe.match(wordPure)
       isAmbi = wordPure and ambiRe.match(wordPure)
 
-      isNumCand = capitalRe.match(wordPure)
+      isNumCand = capitalNumRe.match(wordPure)
 
       if isNumCand and not isNumTrans and (isNumLex or not lexPure):
         numeralCand.\
@@ -986,9 +1080,19 @@ def checkChars():
               setdefault(src, []).\
               append((i, thisScroll, thisFragment, thisLine))
 
-      digital = DIGITS_SET | {"'", '"'}
+      isForeign = wordPure and lex == NOLEX and foreignRe.match(wordPure)
+      if isForeign:
+        foreign.\
+            setdefault(wordPure, {}).\
+            setdefault(src, []).\
+            append((i, thisScroll, thisFragment, thisLine))
 
-      for (name, legal, text) in ((TRANS, CHARS, word), (LEX, CHARS_LEX, lexBare)):
+      digital = DIGITS_SET
+
+      for (name, legal, text) in (
+          (TRANS, CHARS | FOREIGN_SET, word),
+          (LEX, CHARS_LEX, lexBare),
+      ):
         for c in text:
           charsFound[c] += 1
           if (
@@ -1030,6 +1134,7 @@ def checkChars():
     report('', only=True)
   showChars()
   showNumerals()
+  showForeign()
   showLastOfLine()
 
 
@@ -1160,6 +1265,7 @@ def convert():
       intFeatures=intFeatures,
       featureMeta=featureMeta,
       generateTf=generateTf,
+      force=force,
   )
   finalize()
   return result
@@ -1217,36 +1323,40 @@ def director(cv):
           report(f'\t{src:<6} : {i + 1:>6} = {instance}', only=e >= LIMIT)
       report('END OF ERRORS')
 
-  def asUni(text, asNum=False):
+  def asUni(text, asNum=False, asForeign=False):
     result = ''
     try:
       result = (
+          ''.join(FOREIGN_UNI[c] if c in FOREIGN_UNI else CHARS_UNI[c] for c in text)
+          if asForeign else
           ''.join(NUMERALS_UNI[c] if c in NUMERALS_UNI else CHARS_UNI[c] for c in text)
           if asNum else
           ''.join(CHARS_UNI[c] for c in text)
       )
     except KeyError:
-      error('unknown character', text)
+      error('unknown character uni', text)
     return result
 
-  def asRep(text, asNum=False):
+  def asRep(text, asNum=False, asForeign=False):
     result = ''
     try:
       result = (
+          ''.join(FOREIGN_REP[c] if c in FOREIGN_REP else CHARS_UNI[c] for c in text)
+          if asForeign else
           ''.join(NUMERALS_REP[c] if c in NUMERALS_REP else CHARS_REP[c] for c in text)
           if asNum else
           ''.join(CHARS_REP[c] for c in text)
       )
     except KeyError:
-      error('unknown character', text)
+      error('unknown character rep', text)
     return result
 
   def addSlot():
     nonlocal curSlot
     curSlot = cv.slot()
     isNum = typ == NUMERAL
-    glyph = asUni(c, asNum=isNum)
-    glyphe = asRep(c, asNum=isNum)
+    glyph = asUni(c, asNum=isNum, asForeign=isForeign)
+    glyphe = asRep(c, asNum=isNum, asForeign=isForeign)
     cv.feature(curSlot, glyph=glyph, glyphe=glyphe, glypho=unesc(c), type=typ)
     for (name, value) in curBrackets:
       cv.feature(curSlot, **{name: value})
@@ -1347,7 +1457,7 @@ def director(cv):
         else:
           (lexoB, lexN) = (lexo, '')
         lexPure = nonGlyphLexRe.sub('', lexoB)
-        isNumLex = lexPure and digitRe.match(lexPure)
+        isNumLex = lexPure and lexPure != '0' and digitRe.match(lexPure)
 
         if isNumLex:
           lexoB = lexoB[::-1]
@@ -1386,6 +1496,7 @@ def director(cv):
 
       isNumTrans = glypho and numeralRe.match(glypho)
       isNum = isNumTrans and isNumLex
+      isForeign = glypho and lexo == NOLEX and foreignRe.match(glypho)
 
       typ = (
           PUNCT if punco else
@@ -1398,14 +1509,14 @@ def director(cv):
       cv.feature(
           curWord,
           type=typ,
-          full=asUni(fullo, asNum=isNum),
-          fulle=asRep(fullo, asNum=isNum),
+          full=asUni(fullo, asNum=isNum, asForeign=isForeign),
+          fulle=asRep(fullo, asNum=isNum, asForeign=isForeign),
       )
       if glypho:
         cv.feature(
             curWord,
-            glyph=asUni(glypho, asNum=isNum),
-            glyphe=asRep(glypho, asNum=isNum),
+            glyph=asUni(glypho, asNum=isNum, asForeign=isForeign),
+            glyphe=asRep(glypho, asNum=isNum, asForeign=isForeign),
         )
 
       typ = None
@@ -1482,16 +1593,11 @@ def loadTf():
   api = TF.load(loadableFeatures, silent=False)
   if api:
     report(f'max node = {api.F.otype.maxNode}')
-    report(api.F.glyph.freqList(nodeTypes={WORD})[0:20])
+    for (word, freq) in api.F.glyph.freqList(nodeTypes={WORD})[0:20]:
+      report(f'{freq:>6} x {word}')
 
 
 # MAIN
-
-generateTf = len(sys.argv) == 1 or '-notf' not in sys.argv[1:]
-checkSource = len(sys.argv) > 1 and '-check' in sys.argv[1:]
-checkOnly = len(sys.argv) > 1 and '-checkonly' in sys.argv[1:]
-load = len(sys.argv) > 1 and '-load' in sys.argv[1:]
-checkSource = checkSource or checkOnly
 
 report(f'This is tfFromAbegg converting {REPO} transcriptions to TF:')
 report(f'\tsource version = {VERSION_SRC}')

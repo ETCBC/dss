@@ -9,9 +9,9 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-04-27T14:26:58Z
+@dateWritten=2019-04-27T18:35:04Z
 
-1338513	1
+1338510	1
 3
 22
 23
@@ -2152,7 +2152,7 @@ f1
 f3_7ii
 f1
 f2
-1441785	f1
+1441782	f1
 f2
 f3
 f4
@@ -13367,7 +13367,7 @@ b
 a
 b
 b
-1463451	1
+1463448	1
 2
 3
 1

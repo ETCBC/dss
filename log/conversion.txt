@@ -12,9 +12,6 @@ FIXES: DECLARED
 	applied: bib   :185452 "   h«\\wØ(" => "h«\\wØ    " (spurious ( bracket
 	applied: bib   :202008 "    alwhiM" => "alwhyM    " (hireq => yod
 	applied: nonbib: 36148 "        ≤]" => "≥≤        " (spurious ] bracket, missing ≥ bracket
-	applied: nonbib: 53527 "      CHAG" => "chag      " (lowercasing
-	applied: nonbib: 53566 "        HN" => "hn        " (lowercasing
-	applied: nonbib: 53584 "       THE" => "hn        " (lowercasing
 	applied: nonbib: 55019 "         ±" => "≥≤        " (spurious non-breaking space before paleodivider
 	applied: nonbib:140504 "        b]" => "b         " (spurious ] bracket
 	applied: nonbib:140582 "        b]" => "b         " (spurious ] bracket
@@ -30,7 +27,7 @@ FIXES: DECLARED
 	applied: nonbib:313324 "        \0" => "\         " (distribute "\0" over two fields
 	applied: nonbib:313324 "          " => "0         " (distribute "\0" over two fields
 	applied: nonbib:313632 "    13,3,1" => "13        " (strange numbering replaced by plain number
-FIXES: 26 declared: all 26 applied
+FIXES: 23 declared: all 23 applied
 
 FIXES: SUBNUMBERS
 1 (12 x)
@@ -57,7 +54,13 @@ FIXES: SUBNUMBERS
 	nonbib 2 x: 318590 318886
 9 (2 x)
 	nonbib 2 x: 318602 318899
-FIXES: SUBNUMBERS ]n[ => 12 subnumbers in 82 occurrences
+FIXES: SUBNUMBERS 12 in 82 occurrences
+
+FIXES: FOREIGN
+	CH => X (1 distinct cases)
+		CHAG => XAG (1 occurrences)
+			nonbib:53527
+FIXES: FOREIGN 1 rules; 1 cases; 1 occurrences
 
 FIXES: SCROLLS: 43 scroll name completions
 bib   :   482 	SCROLL -Q2        => 1Q2
@@ -104,8 +107,8 @@ bib   :217482 	SCROLL -Q5        => 11Q5
 bib   :237020 	SCROLL -4Se1      => 34Se1
 bib   :237062 	SCROLL -Se1       => 34Se1
 
-CHARACTERS: MAPPED: ()+-./0123456789;<>?ABCDEFIJKMNOPRSTUVX[\]^abcdfghjklmnopqrstvwxyz{|} ¥¨«®±´»ÅÊÎÏØÚåéîøüƒˆΩ…‰∂√∫≤≥◊�
-CHARACTERS: 142 used
+CHARACTERS: MAPPED: ()+-./0123456789;<>?ABCDEFGHIJKMNOPRSTUVX[\]^abcdfghjklmnopqrstvwxyz{|} ¥¨«®±´»ÅÊÎÏØÚåéîøüƒˆΩ…‰∂√∫≤≥◊�
+CHARACTERS: 143 used
 	in lex field:
 		both  /      1 x
 		both  A  62534 x
@@ -126,7 +129,6 @@ CHARACTERS: 142 used
 		both  \ 114780 x
 		both  a  81965 x
 		both  b  64384 x
-		both  c  10780 x
 		both  d  33022 x
 		both  f   7046 x
 		both  g   9372 x
@@ -164,6 +166,7 @@ CHARACTERS: 142 used
 		only  O  18212 x
 		only  U   1115 x
 		only  V  66618 x
+		only  c  10780 x
 		only  v  44565 x
 		only  ¥   1237 x
 		only  ¨     39 x
@@ -188,34 +191,33 @@ CHARACTERS: 142 used
 		only  ◊  50405 x
 	in trans field:
 		both  /  61594 x
-		both  A   1230 x
+		both  A   1231 x
 		both  B    234 x
 		both  C  55785 x
 		both  D    249 x
-		both  E      1 x
+		both  E      2 x
 		both  F      9 x
 		both  I      1 x
 		both  K   9761 x
 		both  M  35416 x
-		both  N  16925 x
+		both  N  16926 x
 		both  P   1976 x
 		both  R      1 x
 		both  S      1 x
-		both  T      1 x
-		both  X   3096 x
+		both  T      2 x
+		both  X   3097 x
 		both  \  26568 x
-		both  a  86551 x
+		both  a  86550 x
 		both  b  64389 x
-		both  c      1 x
 		both  d  32847 x
 		both  f   7071 x
-		both  g   9353 x
-		both  h  94370 x
+		both  g   9352 x
+		both  h  94367 x
 		both  j  26289 x
 		both  k  38648 x
 		both  l  86326 x
 		both  m  57483 x
-		both  n  35046 x
+		both  n  35044 x
 		both  o  43924 x
 		both  p  16142 x
 		both  q  17041 x
@@ -237,6 +239,8 @@ CHARACTERS: 142 used
 		only  <    389 x
 		only  >    389 x
 		only  ?    610 x
+		only  G      1 x
+		only  H      2 x
 		only  [  93764 x
 		only  ]  93764 x
 		only  ^   3164 x
@@ -379,23 +383,17 @@ NUMERALS: 125 distinct numerals in 463 occurrences
 	  "115" = "FCAAAA∫"         :     1 x
 	  "130" = "FDC"             :     1 x
 
-NUMERALS: 10 unrecognized potential numerals
+NUMERALS: 6 unrecognized potential numerals
 	    LEX = WORD            (freq x)
 	     "" = "CM"              (1 x)
 	       nonbib (1 x)
 	       	 23205 in 1QHa 3:25 "CM"
-	    "0" = "DI"              (1 x)
-	       nonbib (1 x)
-	       	 53625 in 3Q15 2:9 "DI"
 	     "" = "K"               (4 x)
 	       nonbib (4 x)
 	       	 23550 in 1QHa 4:30 "K"
 	       	 24649 in 1QHa 6:37 "K"
 	       	 25277 in 1QHa 8:12 "K"
 	       	196200 in 4Q415 f32:2 "K"
-	    "0" = "KEN"             (1 x)
-	       nonbib (1 x)
-	       	 53453 in 3Q15 1:4 "KEN"
 	     "" = "M"               (139 x)
 	       bib (5 x)
 	       	116037 in 4Q46 f1:3 "M"
@@ -422,42 +420,40 @@ NUMERALS: 10 unrecognized potential numerals
 	     "" = "NK"              (1 x)
 	       nonbib (1 x)
 	       	291850 in 4Q562 f7:1 "NK"
-	    "0" = "SK"              (1 x)
-	       nonbib (1 x)
-	       	 53771 in 3Q15 4:2 "SK"
-	    "0" = "TR"              (1 x)
-	       nonbib (1 x)
-	       	 53718 in 3Q15 3:7 "TR"
 	     "" = "X"               (1 x)
 	       nonbib (1 x)
 	       	171385 in 4Q381 f76_77:6 "X"
 
 NUMERALS: TRANS-yes LEX-no:   0 conflicts
 
-NUMERALS: TRANS-no  LEX-yes:  7 conflicts
+NUMERALS: TRANS-no  LEX-yes:  1 conflicts
 	    LEX = WORD            (freq x)
-	    "0" = "DI"              (1 x)
-	       nonbib (1 x)
-	       	 53625 in 3Q15 2:9 "DI"
-	    "0" = "KEN"             (1 x)
-	       nonbib (1 x)
-	       	 53453 in 3Q15 1:4 "KEN"
-	    "0" = "SK"              (1 x)
-	       nonbib (1 x)
-	       	 53771 in 3Q15 4:2 "SK"
-	    "0" = "TR"              (1 x)
-	       nonbib (1 x)
-	       	 53718 in 3Q15 3:7 "TR"
-	    "0" = "chag"            (1 x)
-	       nonbib (1 x)
-	       	 53527 in 3Q15 1:12 "chag"
-	    "0" = "hn"              (2 x)
-	       nonbib (2 x)
-	       	 53566 in 3Q15 2:2 "hn"
-	       	 53584 in 3Q15 2:4 "hn"
 	   "28" = "kj"              (1 x)
 	       nonbib (1 x)
 	       	238013 in 4Q502 f22:5 "kj"
+
+FOREIGN: 7 distinct words in 7 occurrences
+	"DI": 1 occurrences
+		nonbib (1 x)
+			 53625 in 3Q15 2:9 "DI"
+	"HN": 1 occurrences
+		nonbib (1 x)
+			 53566 in 3Q15 2:2 "HN"
+	"KEN": 1 occurrences
+		nonbib (1 x)
+			 53453 in 3Q15 1:4 "KEN"
+	"SK": 1 occurrences
+		nonbib (1 x)
+			 53771 in 3Q15 4:2 "SK"
+	"THE": 1 occurrences
+		nonbib (1 x)
+			 53584 in 3Q15 2:4 "THE"
+	"TR": 1 occurrences
+		nonbib (1 x)
+			 53718 in 3Q15 3:7 "TR"
+	"XAG": 1 occurrences
+		nonbib (1 x)
+			 53527 in 3Q15 1:12 "XAG"
 
 LINES: 52984 lines
 	Number of times word "/" does not end a line: 118
@@ -64782,4 +64778,20 @@ ERROR: lexeme information for empty word (63083 x)
 	nonbib : 340056 = \\\
 	nonbib : 340060 = \
 	nonbib : 340066 = \
+ERROR: unknown character rep (7 x)
+	nonbib :  53453 = 0
+	nonbib :  53527 = 0
+	nonbib :  53566 = 0
+	nonbib :  53584 = 0
+	nonbib :  53625 = 0
+	nonbib :  53718 = 0
+	nonbib :  53771 = 0
+ERROR: unknown character uni (7 x)
+	nonbib :  53453 = 0
+	nonbib :  53527 = 0
+	nonbib :  53566 = 0
+	nonbib :  53584 = 0
+	nonbib :  53625 = 0
+	nonbib :  53718 = 0
+	nonbib :  53771 = 0
 END OF ERRORS

@@ -9,9 +9,9 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-04-27T14:26:50Z
+@dateWritten=2019-04-27T18:34:56Z
 
-1530899	[w
+1530896	[w
 yra
 al]hyM
 ky
@@ -256110,7 +256110,7 @@ od
 nyqrt
 h
 fbylh«
-chag
+XAG
 .
 b
 CyØa
@@ -256143,7 +256143,7 @@ h
 molwt
 kkryN
 DDA
-hn
+HN
 .
 b
 mort
@@ -256161,7 +256161,7 @@ zhb
 CCyN
 w
 jmC
-hn
+THE
 .
 b
 xryj

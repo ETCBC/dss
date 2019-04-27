@@ -9,9 +9,9 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-04-27T14:26:49Z
+@dateWritten=2019-04-27T18:34:56Z
 
-1530899	[ W
+1530896	[ W
 JR>
 >L ]HJm
 KJ
@@ -256036,7 +256036,7 @@ MCQL
 KKRJn
 CB
 <CRH
-k;n
+ΚΕΝ
 00
 B
 NPC
@@ -256110,7 +256110,7 @@ CC
 NJQRT
 H
 VBJLH#
-FH>G
+ΧΑΓ
 00
 B
 CJ?>
@@ -256143,7 +256143,7 @@ H
 M<LWT
 KKRJn
  -)
-HN
+ΗΝ
 00
 B
 M<RT
@@ -256161,7 +256161,7 @@ ZHB
 CCJn
 W
 XMC
-HN
+ΤΗΕ
 00
 B
 YRJX
@@ -256202,7 +256202,7 @@ C
 B'W
 KKRJn
 <SR
-@I
+ΔΙ
 00
 B
 BWR
@@ -256288,7 +256288,7 @@ CC
 KSp
 KK
  -)
-:EE
+ΤΡ
 00
 B
 CJT
@@ -256339,7 +256339,7 @@ B
 YPWN'W
 KK#[ 
  ]J'>'>'>'>52
-:Ak
+ΣΚ
  -)
 B
 >M>
