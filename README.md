@@ -7,8 +7,11 @@
 
 # Dead Sea Scrolls
 
+[![sha](sha.png) Software Heritage Archive](https://archive.softwareheritage.org/browse/origin/https://github.com/etcbc/dss/)
 
-# Dead Sea Scrolls corus in Text-Fabric
+[![DOI](https://zenodo.org/badge/168822533.svg)](https://zenodo.org/badge/latestdoi/168822533)
+
+# Dead Sea Scrolls corpus in Text-Fabric
 
 This repo is a research environment for the study of the Dead Sea Scrolls.
 You can run your own programs off-line, and publish your work in online notebooks.
@@ -59,8 +62,12 @@ This repo is joint work of
 * [Martin Abegg](https://en.wikipedia.org/wiki/Martin_Abegg)
   for providing his data files to us;
 
-**N.B.:** Releases of this repo have been archived at [Zenodo](https://zenodo.org).
-Click the DOI badge to be taken to the archive. There you find ways to cite this work.
+**N.B.:** Releases of this repo have been archived at
+the
+[Software Heritage Archive](https://www.softwareheritage.org)
+and
+[Zenodo](https://zenodo.org).
+Click the badges to be taken to the archives. There you find ways to cite this work.
 
 Status
 ------
