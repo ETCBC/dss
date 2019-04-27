@@ -10,7 +10,7 @@
 @valueType=str
 @values=1 = modern, 2 = ancient
 @writtenBy=Text-Fabric
-@dateWritten=2019-04-27T18:35:08Z
+@dateWritten=2019-04-27T19:08:43Z
 
 2225	2
 2

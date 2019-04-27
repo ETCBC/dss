@@ -10,7 +10,7 @@
 @valueType=str
 @values=1 2 3 4
 @writtenBy=Text-Fabric
-@dateWritten=2019-04-27T18:35:10Z
+@dateWritten=2019-04-27T19:08:46Z
 
 61	4
 171	4

@@ -353,11 +353,14 @@ NUMERALS_SET = {x[1] for x in NUMERALS}
 NUMERALS_UNI = {x[1]: x[0] for x in NUMERALS}
 NUMERALS_REP = {x[1]: TR.from_hebrew(x[0]) for x in NUMERALS}
 
+GREEK = 'Greek'
+
 ALPHA = '\u0391'
 GAMMA = '\u0393'
 DELTA = '\u0394'
 EPSILON = '\u0395'
 ETA = '\u0397'
+THETA = '\u0398'
 IOTA = '\u0399'
 KAPPA = '\u039a'
 NU = '\u039d'
@@ -372,6 +375,7 @@ FOREIGN = (
     (DELTA, 'D', None),
     (EPSILON, 'E', None),
     (ETA, 'H', None),
+    (THETA, 'TH', 'O'),
     (IOTA, 'I', None),
     (KAPPA, 'K', None),
     (NU, 'N', None),
@@ -597,6 +601,9 @@ featureMeta = {
     },
     'label': {
         'description': 'label of a fragment or chapter or line',
+    },
+    'language': {
+        'description': 'language of a word or sign, only if it is Greek',
     },
     'lexo': {
         'description': 'representation (original source Abegg) of a lexeme',
@@ -1358,6 +1365,8 @@ def director(cv):
     glyph = asUni(c, asNum=isNum, asForeign=isForeign)
     glyphe = asRep(c, asNum=isNum, asForeign=isForeign)
     cv.feature(curSlot, glyph=glyph, glyphe=glyphe, glypho=unesc(c), type=typ)
+    if isForeign:
+      cv.feature(curSlot, language=GREEK)
     for (name, value) in curBrackets:
       cv.feature(curSlot, **{name: value})
 
@@ -1518,6 +1527,8 @@ def director(cv):
             glyph=asUni(glypho, asNum=isNum, asForeign=isForeign),
             glyphe=asRep(glypho, asNum=isNum, asForeign=isForeign),
         )
+      if isForeign:
+        cv.feature(curSlot, language=GREEK)
 
       typ = None
       for c in fullo:

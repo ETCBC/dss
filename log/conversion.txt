@@ -60,7 +60,10 @@ FIXES: FOREIGN
 	CH => X (1 distinct cases)
 		CHAG => XAG (1 occurrences)
 			nonbib:53527
-FIXES: FOREIGN 1 rules; 1 cases; 1 occurrences
+	TH => O (1 distinct cases)
+		THE => OE (1 occurrences)
+			nonbib:53584
+FIXES: FOREIGN 2 rules; 2 cases; 2 occurrences
 
 FIXES: SCROLLS: 43 scroll name completions
 bib   :   482 	SCROLL -Q2        => 1Q2
@@ -108,7 +111,7 @@ bib   :237020 	SCROLL -4Se1      => 34Se1
 bib   :237062 	SCROLL -Se1       => 34Se1
 
 CHARACTERS: MAPPED: ()+-./0123456789;<>?ABCDEFGHIJKMNOPRSTUVX[\]^abcdfghjklmnopqrstvwxyz{|} ¥¨«®±´»ÅÊÎÏØÚåéîøüƒˆΩ…‰∂√∫≤≥◊�
-CHARACTERS: 143 used
+CHARACTERS: 144 used
 	in lex field:
 		both  /      1 x
 		both  A  62534 x
@@ -121,6 +124,7 @@ CHARACTERS: 143 used
 		both  K   6532 x
 		both  M  25937 x
 		both  N  26996 x
+		both  O  18212 x
 		both  P   3538 x
 		both  R  33727 x
 		both  S  13120 x
@@ -163,7 +167,6 @@ CHARACTERS: 143 used
 		only  9     36 x
 		only  ;  69366 x
 		only  J   3483 x
-		only  O  18212 x
 		only  U   1115 x
 		only  V  66618 x
 		only  c  10780 x
@@ -201,10 +204,11 @@ CHARACTERS: 143 used
 		both  K   9761 x
 		both  M  35416 x
 		both  N  16926 x
+		both  O      1 x
 		both  P   1976 x
 		both  R      1 x
 		both  S      1 x
-		both  T      2 x
+		both  T      1 x
 		both  X   3097 x
 		both  \  26568 x
 		both  a  86550 x
@@ -240,7 +244,7 @@ CHARACTERS: 143 used
 		only  >    389 x
 		only  ?    610 x
 		only  G      1 x
-		only  H      2 x
+		only  H      1 x
 		only  [  93764 x
 		only  ]  93764 x
 		only  ^   3164 x
@@ -442,12 +446,12 @@ FOREIGN: 7 distinct words in 7 occurrences
 	"KEN": 1 occurrences
 		nonbib (1 x)
 			 53453 in 3Q15 1:4 "KEN"
+	"OE": 1 occurrences
+		nonbib (1 x)
+			 53584 in 3Q15 2:4 "OE"
 	"SK": 1 occurrences
 		nonbib (1 x)
 			 53771 in 3Q15 4:2 "SK"
-	"THE": 1 occurrences
-		nonbib (1 x)
-			 53584 in 3Q15 2:4 "THE"
 	"TR": 1 occurrences
 		nonbib (1 x)
 			 53718 in 3Q15 3:7 "TR"
