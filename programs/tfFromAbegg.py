@@ -196,7 +196,7 @@ FIXES = dict(
 
 # various types (of characters, flags, brackets/clusters)
 
-CONSONANT = 'consonant'
+CONS = 'consonant'
 VOWEL = 'vowel'
 POINT = 'point'
 SEP = 'separator'
@@ -299,14 +299,14 @@ POINTS = (
 
 POINTS_SET = {x[1] for x in POINTS}
 
-GERESH_POINT = '\u05f3'
+GERESH_PUNCT = '\u05f3'
 GERESH_ACCENT = '\u059c'
 MAQAF = '\u05be'
 
 SEPS = (
     (NB, NB),  # non breaking space inside a word
     (MAQAF, '-'),  # maqaf
-    (GERESH_POINT, '/'),  # morpheme separator
+    (GERESH_PUNCT, '/'),  # morpheme separator
 )
 SEPS_SET = {x[1] for x in SEPS}
 
@@ -324,21 +324,23 @@ DOT_L = '\u05c5'
 METEG = '\u05bd'
 
 NUMERALS = (
-    (f'{ALEF}{GERESH_POINT}', 'A'),
+    (f'{ALEF}{GERESH_PUNCT}', 'A'),
     (f'{ALEF}{DOT_U}', N1A),
     (f'{ALEF}{DOT_L}', 'B'),
     (f'{ALEF}{METEG}', N1F),
-    (f'{YOD}{GERESH_POINT}', 'C'),
-    (f'{KAF_E}{GERESH_POINT}', 'D'),
-    (f'{QOF}{GERESH_POINT}', 'F'),
+    (f'{YOD}{GERESH_PUNCT}', 'C'),
+    (f'{KAF_E}{GERESH_PUNCT}', 'D'),
+    (f'{QOF}{GERESH_PUNCT}', 'F'),
 )
 
 NUMERALS_SET = {x[1] for x in NUMERALS}
 NUMERALS_UNI = {x[1]: x[0] for x in NUMERALS}
 NUMERALS_REP = {x[1]: TR.from_hebrew(x[0]) for x in NUMERALS}
 
+EM = 'ε'
+
 TOKENS = (
-    (MISSING, '--', '░', ' 0 ', 'ε'),
+    (MISSING, '--', '░', ' 0 ', EM),
     (UNCERTAIN, '?', None, ' ? ', ' ? '),
     (UNCERTAIN, '\\', None, ' # ', ' # '),
     (UNCERTAIN, '�', None, ' #? ', ' #? '),
@@ -372,14 +374,14 @@ FLAGS_INV = {a: name for (name, v, a, k) in FLAGS}
 FLAGS_VALUE = {name: v for (name, v, a, k) in FLAGS}
 
 BRACKETS = (
-    (CORRECTION, 3, True, '^', '^', '┛', '┗', '(^ ', ' ^)'),  # UL UR
-    (CORRECTION, 2, False, '>>', '<<', '┤', '├', '(<< ', ' >>)'),  # vl vr
-    (CORRECTION, 1, False, '>', '<', None, None, '(< ', ' >)'),
+    (CORRECTION, 3, True, '^', '^', '◀', '▶', '(^ ', ' ^)'),  # PL PR
+    (CORRECTION, 2, False, '>>', '<<', '┛', '┗', '(<< ', ' >>)'),  # UL UR
+    (CORRECTION, 1, False, '>', '<', '┘', '└', '(< ', ' >)'),  # ul ur
     (REMOVED, 2, False, '}}', '{{', '┫', '┣', '{{ ', ' }}'),  # VL VR
-    (REMOVED, 1, False, '}', '{', None, None, '{ ', ' }'),
-    (VACAT, 1, False, '≥', '≤', None, None, '(- ', ' -)'),
-    (ALTERNATIVE, 1, False, ')', '(', None, None, '( ', ' )'),
-    (RECONSTRUCTION, 1, False, ']', '[', None, None, '[ ', ' ]'),
+    (REMOVED, 1, False, '}', '{', '┤', '├', '{ ', ' }'),  # vl vr
+    (VACAT, 1, False, '≥', '≤', '┐', '┌', '(- ', ' -)'),  # dl dr
+    (ALTERNATIVE, 1, False, ')', '(', '◐', '◑', '( ', ' )'),  # 0L 0R
+    (RECONSTRUCTION, 1, False, ']', '[', '┑', '┍', '[ ', ' ]'),  # dL dR
     (UNCERTAIN, 2, True, '»', '«', '┘', '└', '(# ', ' #)'),  # ul ur
 )
 
@@ -435,8 +437,8 @@ bEsc.update({x[3]: x[5] for x in BRACKETS_ESC})
 bEsc.update({x[4]: x[6] for x in BRACKETS_ESC})
 
 bUnesc = {}
-bUnesc.update({x[5]: x[3] for x in BRACKETS_ESC})
-bUnesc.update({x[6]: x[4] for x in BRACKETS_ESC})
+bUnesc.update({x[5]: x[4] for x in BRACKETS_ESC})
+bUnesc.update({x[6]: x[3] for x in BRACKETS_ESC})
 
 
 bSpecialRe = {}
@@ -480,8 +482,9 @@ capitalRe = re.compile(f'^[A-Z{N1A}{N1F}]+$')
 numeralRe = re.compile(f'^[{"".join(NUMERALS_SET)}]+$')
 digitRe = re.compile(f'^[0-9]+$')
 ambiRe = re.compile(f'^[{"".join(GLYPHS_AMBI)}]+$')
-nonGlyphRe = re.compile(f'[^A-Za-z{re.escape("".join(GLYPHS_SET))}]+')
-nonGlyphLexRe = re.compile(f'[^A-Za-z{re.escape("".join(GLYPHS_LEX))}]+')
+nonPunctRe = re.compile(f'[^{re.escape("".join(PUNCTS_SET))}]+')
+nonGlyphRe = re.compile(f'[^{re.escape("".join(GLYPHS_SET))}]+')
+nonGlyphLexRe = re.compile(f'[^{re.escape("".join(GLYPHS_LEX))}]+')
 
 # TF CONFIGURATION
 
@@ -503,13 +506,13 @@ otext = {
     'sectionTypes': 'scroll,fragment,line',
     'fmt:text-orig-full': f'{{glyph}}{{punc}}{{after}}',
     'fmt:text-trans-full': f'{{glyphe}}{{punce}}{{after}}',
-    'fmt:text-source-full': f'{{glypha}}{{punca}}{{after}}',
+    'fmt:text-source-full': f'{{glypho}}{{punco}}{{after}}',
     'fmt:text-orig-extra': f'{{full}}{{after}}',
     'fmt:text-trans-extra': f'{{fulle}}{{after}}',
-    'fmt:text-source-extra': f'{{fulla}}{{after}}',
+    'fmt:text-source-extra': f'{{fullo}}{{after}}',
     'fmt:lex-orig-full': f'{{lex}}{{punc}}{{after}}',
     'fmt:lex-trans-full': f'{{lexe}}{{punce}}{{after}}',
-    'fmt:lex-etcbc-full': f'{{lexa}}{{punca}}{{after}}',
+    'fmt:lex-etcbc-full': f'{{lexo}}{{punco}}{{after}}',
 }
 
 intFeatures = set('''
@@ -532,11 +535,11 @@ featureMeta = {
         'description': 'correction made by an ancient or modern editor',
         'values': '1 = modern, 2 = ancient, 3 = ancient supralinear',
     },
-    'glypha': {
-        'description': 'representation (Abegg) of a word or sign',
+    'glypho': {
+        'description': 'representation (original source Abegg) of a word or sign',
     },
     'glyphe': {
-        'description': 'representation (ETCBC) of a word or sign',
+        'description': 'representation (ETCBC transliteration) of a word or sign',
     },
     'glyph': {
         'description': 'representation (Unicode) of a word or sign',
@@ -544,11 +547,11 @@ featureMeta = {
     'label': {
         'description': 'label of a fragment or chapter or line',
     },
-    'lexa': {
-        'description': 'representation (Abegg) of a lexeme',
+    'lexo': {
+        'description': 'representation (original source Abegg) of a lexeme',
     },
     'lexe': {
-        'description': 'representation (ETCBC) of a lexeme',
+        'description': 'representation (ETCBC transliteration) of a lexeme',
     },
     'lex': {
         'description': 'representation (Unicode) of a lexeme',
@@ -559,11 +562,11 @@ featureMeta = {
     'occ': {
         'description': 'edge feature from a lexeme to its occurrences',
     },
-    'punca': {
-        'description': 'trailing punctuation (Abegg) of a word',
+    'punco': {
+        'description': 'trailing punctuation (original source Abegg) of a word',
     },
     'punce': {
-        'description': 'trailing punctuation (ETCBC) of a word',
+        'description': 'trailing punctuation (ETCBC transliteration) of a word',
     },
     'punc': {
         'description': 'trailing punctuation (Unicode) of a word',
@@ -576,15 +579,15 @@ featureMeta = {
         'description': 'reconstructed by a modern editor',
         'values': '1',
     },
-    'fulla': {
+    'fullo': {
         'description': (
-            'full transcription (Abegg) of a word'
+            'full transcription (original source Abegg) of a word'
             ' including flags and brackets'
         ),
     },
     'fulle': {
         'description': (
-            'full transcription (ETCBC) of a word'
+            'full transcription (ETCBC transliteration) of a word'
             ' including flags and brackets'
         ),
     },
@@ -1241,7 +1244,10 @@ def director(cv):
   def addSlot():
     nonlocal curSlot
     curSlot = cv.slot()
-    cv.feature(curSlot, glypha=c, type=typ)
+    isNum = typ == NUMERAL
+    glyph = asUni(c, asNum=isNum)
+    glyphe = asRep(c, asNum=isNum)
+    cv.feature(curSlot, glyph=glyph, glyphe=glyphe, glypho=unesc(c), type=typ)
     for (name, value) in curBrackets:
       cv.feature(curSlot, **{name: value})
 
@@ -1317,37 +1323,39 @@ def director(cv):
             cv.feature(curHalfVerse, number=thisVerse, label=thisHalfVerse)
 
       after = ' ' if fields[BOUND] == B else None
-      fulla = fields[TRANS]
-      lexa = fields[LEX]
-      glypha = ''.join(c for c in fulla if c in GLYPHS_SET)
-      punca = ''.join(c for c in fulla if c in PUNCTS_SET)
-      if punca and glypha:
-        error('punctuation and glyphs on same line', fulla)
+      fullo = fields[TRANS]
+      lexo = fields[LEX]
+      glypho = nonGlyphRe.sub('', fullo)
+      punco = nonPunctRe.sub('', fullo)
+      if punco and glypho:
+        error('punctuation and glyphs on same line', fullo)
+      if not glypho and lexo:
+        error('lexeme information for empty word', lexo)
 
-      if lexa == 'B':
-        error('Unknown lexeme', lexa)
-        lexa = ''
+      if lexo == 'B':
+        error('Unknown lexeme', lexo)
+        lexo = ''
       isNumLex = False
 
-      if lexa:
-        (lexaB, lexN) = (lexa, '')
-        lexaDis = lexDisRe.findall(lexa)
-        if lexaDis:
-          (lexaB, lexN) = lexaDis[0]
+      if lexo:
+        (lexoB, lexN) = (lexo, '')
+        lexoDis = lexDisRe.findall(lexo)
+        if lexoDis:
+          (lexoB, lexN) = lexoDis[0]
           lexN = f'_{lexN}' if lexN else ''
-          lexa = f'{lexaB}{lexN}'
+          lexo = f'{lexoB}{lexN}'
         else:
-          (lexaB, lexN) = (lexa, '')
-        lexPure = nonGlyphLexRe.sub('', lexaB)
+          (lexoB, lexN) = (lexo, '')
+        lexPure = nonGlyphLexRe.sub('', lexoB)
         isNumLex = lexPure and digitRe.match(lexPure)
 
         if isNumLex:
-          lexaB = lexaB[::-1]
-          lex = lexaB
-          lexe = lexaB
+          lexoB = lexoB[::-1]
+          lex = lexoB
+          lexe = lexoB
         else:
-          lex = asUni(lexaB)
-          lexe = asRep(lexaB)
+          lex = asUni(lexoB)
+          lexe = asRep(lexoB)
         lex += lexN
         lexe += lexN
         thisLex = lexIndex.get(lex, None)
@@ -1356,51 +1364,52 @@ def director(cv):
         else:
           thisLex = cv.node(LEX)
           lexIndex[lex] = thisLex
-        cv.feature(thisLex, lexa=lexa, lexe=lexe, lex=lex)
+        cv.feature(thisLex, lexo=lexo, lexe=lexe, lex=lex)
 
-      curWord = cv.node(WORD)
-      cv.feature(curWord, fulla=fulla)
-      if after:
-        cv.feature(curWord, after=after)
-      if glypha:
-        cv.feature(curWord, glypha=glypha)
-      if punca:
-        cv.feature(
-            curWord,
-            punca=punca,
-            punc=asUni(punca),
-            punce=asRep(punca),
-        )
-      if lexa:
-        cv.feature(curWord, lexa=lexa, lexe=lexe, lex=lex)
+      if punco or glypho:
+        curWord = cv.node(WORD)
+        cv.feature(curWord, fullo=unesc(fullo))
+        if after:
+          cv.feature(curWord, after=after)
+        if glypho:
+          cv.feature(curWord, glypho=glypho)
+        if punco:
+          cv.feature(
+              curWord,
+              punco=punco,
+              punc=asUni(punco),
+              punce=asRep(punco),
+          )
+      if glypho and lexo:
+        cv.feature(curWord, lexo=lexo, lexe=lexe, lex=lex)
         cv.edge(thisLex, curWord, occ=None)
 
-      isNumTrans = glypha and numeralRe.match(glypha)
+      isNumTrans = glypho and numeralRe.match(glypho)
       isNum = isNumTrans and isNumLex
 
       typ = (
-          PUNCT if punca else
+          PUNCT if punco else
           NUMERAL if isNum else
-          GLYPH if glypha else
-          EMPTY if not fulla else
+          GLYPH if glypho else
+          EMPTY if not fullo else
           OTHER
       )
 
       cv.feature(
           curWord,
           type=typ,
-          full=asUni(fulla, asNum=isNum),
-          fulle=asRep(fulla, asNum=isNum),
+          full=asUni(fullo, asNum=isNum),
+          fulle=asRep(fullo, asNum=isNum),
       )
-      if glypha:
+      if glypho:
         cv.feature(
             curWord,
-            glyph=asUni(glypha, asNum=isNum),
-            glyphe=asRep(glypha, asNum=isNum),
+            glyph=asUni(glypho, asNum=isNum),
+            glyphe=asRep(glypho, asNum=isNum),
         )
 
       typ = None
-      for c in fulla:
+      for c in fullo:
         if isNum and c in NUMERALS_SET:
           typ = NUMERAL
           addSlot()
@@ -1408,7 +1417,7 @@ def director(cv):
           typ = TOKENS_INV[c]
           addSlot()
         elif c in CONSONANTS_SET:
-          typ = CONSONANT
+          typ = CONS
           addSlot()
         elif c in VOWELS_SET:
           typ = VOWEL
@@ -1426,10 +1435,11 @@ def director(cv):
         elif c in BRACKETS_INV:
           (name, value, isOpen) = BRACKETS_INV[c]
           key = (name, value)
+          valRep = '' if value == 1 else value
           if isOpen:
             cn = cv.node(CLUSTER)
             curBrackets[key] = cn
-            cv.feature(cn, type=f'{name}{value}')
+            cv.feature(cn, type=f'{name}{valRep}')
           else:
             cn = curBrackets[key]
             if not cv.linked(cn):
@@ -1472,7 +1482,7 @@ def loadTf():
   api = TF.load(loadableFeatures, silent=False)
   if api:
     report(f'max node = {api.F.otype.maxNode}')
-    report(api.F.root.freqList()[0:20])
+    report(api.F.glyph.freqList(nodeTypes={WORD})[0:20])
 
 
 # MAIN
@@ -1480,6 +1490,7 @@ def loadTf():
 generateTf = len(sys.argv) == 1 or '-notf' not in sys.argv[1:]
 checkSource = len(sys.argv) > 1 and '-check' in sys.argv[1:]
 checkOnly = len(sys.argv) > 1 and '-checkonly' in sys.argv[1:]
+load = len(sys.argv) > 1 and '-load' in sys.argv[1:]
 checkSource = checkSource or checkOnly
 
 report(f'This is tfFromAbegg converting {REPO} transcriptions to TF:')
@@ -1487,5 +1498,5 @@ report(f'\tsource version = {VERSION_SRC}')
 report(f'\ttarget version = {VERSION_TF}')
 good = convert()
 
-if not checkOnly and generateTf and good:
+if not checkOnly and load and generateTf and good:
   loadTf()
