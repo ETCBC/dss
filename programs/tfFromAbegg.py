@@ -18,10 +18,12 @@ Optionally performs checks.
 Optionally loads the TF for the first time.
 
 -checkonly  only perform checks, do not generate TF
+-morphonly  only perform morphology checks, do not generate TF
 -check      performs checks, generates TF (by default, checks are not performed)
 -load       load TF after generation (by default the TF is not loaded)
 -notf       do not generate TF
 -force      let the TF converter continue after errors, so that you can see the final TF
+-debug      run in debug mode
 '''
 
 # OPTIONS
@@ -29,7 +31,9 @@ Optionally loads the TF for the first time.
 generateTf = len(sys.argv) == 1 or '-notf' not in sys.argv[1:]
 checkSource = len(sys.argv) > 1 and '-check' in sys.argv[1:]
 checkOnly = len(sys.argv) > 1 and '-checkonly' in sys.argv[1:]
+checkMorphOnly = len(sys.argv) > 1 and '-morphonly' in sys.argv[1:]
 force = len(sys.argv) > 1 and '-force' in sys.argv[1:]
+debug = len(sys.argv) > 1 and '-debug' in sys.argv[1:]
 load = len(sys.argv) > 1 and '-load' in sys.argv[1:]
 checkSource = checkSource or checkOnly
 
@@ -215,7 +219,7 @@ FIXES = dict(
 CONS = 'consonant'
 VOWEL = 'vowel'
 POINT = 'point'
-SEP = 'separator'
+SEP = 'sep'
 PUNCT = 'punct'
 NUMERAL = 'numeral'
 MISSING = 'missing'
@@ -316,14 +320,14 @@ POINTS = (
 
 POINTS_SET = {x[1] for x in POINTS}
 
-GERESH_PUNCT = '\u05f3'
+GERESH_POINT = '\u05f3'
 GERESH_ACCENT = '\u059c'
 MAQAF = '\u05be'
 
 SEPS = (
     (NB, NB),  # non breaking space inside a word
     (MAQAF, '-'),  # maqaf
-    (GERESH_PUNCT, '/'),  # morpheme separator
+    (GERESH_POINT, '/'),  # morpheme separator
 )
 SEPS_SET = {x[1] for x in SEPS}
 
@@ -341,13 +345,13 @@ DOT_L = '\u05c5'
 METEG = '\u05bd'
 
 NUMERALS = (
-    (f'{ALEF}{GERESH_PUNCT}', 'A'),
+    (f'{ALEF}{GERESH_ACCENT}', 'A'),
     (f'{ALEF}{DOT_U}', N1A),
     (f'{ALEF}{DOT_L}', 'B'),
     (f'{ALEF}{METEG}', N1F),
-    (f'{YOD}{GERESH_PUNCT}', 'C'),
-    (f'{KAF_E}{GERESH_PUNCT}', 'D'),
-    (f'{QOF}{GERESH_PUNCT}', 'F'),
+    (f'{YOD}{GERESH_ACCENT}', 'C'),
+    (f'{KAF_E}{GERESH_ACCENT}', 'D'),
+    (f'{QOF}{GERESH_ACCENT}', 'F'),
 )
 
 NUMERALS_SET = {x[1] for x in NUMERALS}
@@ -376,16 +380,17 @@ FOREIGNS = (
     (DELTA, 'D', None),
     (EPSILON, 'E', None),
     (ETA, 'H', None),
-    (THETA, 'TH', 'O'),
+    (THETA, 'TH', THETA),
     (IOTA, 'I', None),
     (KAPPA, 'K', None),
     (NU, 'N', None),
     (RHO, 'R', None),
     (SIGMA, 'S', None),
     (TAU, 'T', None),
-    (CHI, 'CH', 'X'),
+    (CHI, 'CH', CHI),
 )
 FOREIGNS_ESC = {x[1]: x[2] for x in FOREIGNS if x[2]}
+FOREIGNS_UNESC = {x[2]: x[1] for x in FOREIGNS if x[2]}
 FOREIGNS_SET = {x[2] or x[1] for x in FOREIGNS}
 FOREIGNS_UNI = {x[2] or x[1]: x[0] for x in FOREIGNS}
 FOREIGNS_REP = FOREIGNS_UNI
@@ -526,6 +531,8 @@ def bunesc(c):
 def unesc(text):
   for (cEsc, c) in bUnesc.items():
     text = text.replace(cEsc, c)
+  for (tx, t) in FOREIGNS_UNESC.items():
+    text = text.replace(tx, t)
   for (tx, t) in TOKENS_UNESC.items():
     text = text.replace(tx, t)
   return text
@@ -541,6 +548,420 @@ ambiRe = re.compile(f'^[{"".join(GLYPHS_AMBI)}]+$')
 nonPunctRe = re.compile(f'[^{re.escape("".join(PUNCTS_SET))}]+')
 nonGlyphRe = re.compile(f'[^{re.escape("".join(GLYPHS_SET))}]+')
 nonGlyphLexRe = re.compile(f'[^{re.escape("".join(GLYPHS_LEX))}]+')
+
+
+# MORPHOLOGY
+
+SP_FT = 'sp'
+LS_FT = 'ls'
+VS_FT = 'vs'
+VT_FT = 'vt'
+MD_FT = 'md'
+UVF_FT = 'uvf'
+PS_FT = 'ps'
+GN_FT = 'gn'
+NU_FT = 'nu'
+ST_FT = 'st'
+DET_FT = 'det'
+ERR = 'error'
+
+NULL = '0'
+UNKNOWN = 'unknown'
+
+MORPH_ESC = (
+    ('ii', 'ï'),
+    ('Pp+Pa', 'På'),
+    ('g0', '0'),
+    ('gm', 'm'),
+    ('gf', 'f'),
+)
+
+SP = {  # part-of-speech
+    'n': ('subs', 'noun'),
+    'v': ('verb', 'verb'),
+    'P': ('part', 'particle'),
+    'p': ('pron', 'pronoun'),
+    'a': ('adjv', 'adjective'),
+    'u': ('num', 'numeral'),
+}
+SP_SET = set(SP)
+
+LS = {  # Lexical Set
+    'P': {
+        'c': ('conj', 'conjunction'),
+        'p': ('prep', 'preposition'),
+        'a': ('art', 'article'),
+        'å': ('prepa', 'preposition plus article'),
+        'o': ('obj', 'object marker'),
+        'i': ('interj', 'interjection'),
+        'ï': ('interr', 'interrogative'),
+        'n': ('neg', 'negative'),
+        'r': ('rel', 'relative'),
+        'd': ('adv', 'adverb'),
+    },
+    'a': {
+        'c': ('card', 'cardinal'),
+    },
+    'n': {
+        'c': ('common', 'common'),
+        'p': ('proper', 'proper'),
+    },
+    'p': {
+        'i': ('indep', 'independent'),
+        'ï': ('interr', 'interrogative'),
+    },
+    'u': {
+        'o': ('obj', 'object marker'),
+    },
+}
+LS_SET = {m: set(ms) for (m, ms) in LS.items()}
+
+HEBREW = 'hebrew'
+ARAMAIC = 'aramaic'
+
+VS = {
+    HEBREW: {
+        'q': ('qal', 'qal'),
+        'Q': ('passive qal', 'passive qal'),
+        'h': ('hifil', 'hifil'),
+        'n': ('nifal', 'nifal'),
+        'p': ('piel', 'piel'),
+        'P': ('pual', 'pual'),
+        't': ('hitpael', 'hitpael'),
+        'H': ('hofal', 'hofal'),
+        'a': ('palel', 'palel'),
+        'b': ('hpealal', 'hpealal'),
+        'd': ('pilpel', 'pilpel'),
+        'e': ('polel', 'polel'),
+        'f': ('polal', 'polal'),
+        'i': ('pulal', 'pulal'),
+        'k': ('poel', 'poel'),
+        'l': ('poal', 'poal'),
+        'm': ('tifil', 'tifil'),
+        's': ('hishtafel', 'hishtafel'),
+        'u': ('hotpaal', 'hotpaal'),
+        'v': ('hit-opel', 'hit-opel'),
+        'w': ('hitpalpel', 'hitpalpel'),
+        'x': ('nitpael', 'nitpael'),
+    },
+    ARAMAIC: {
+        'A': ('aphel', 'aphel'),
+        'B': ('haphel', 'haphel'),
+        'D': ('hophal', 'hophal'),
+        'F': ('hithpeel', 'hithpeel'),
+        'H': ('hishtaphel', 'hishtaphel'),
+        'K': ('ithpaal', 'ithpaal'),
+        'L': ('ithpeel', 'ithpeel'),
+        'M': ('pael', 'pael'),
+        'N': ('peal', 'peal'),
+        'O': ('peil', 'peil'),
+        'R': ('shaphel', 'shaphel'),
+        'S': ('hithpaal', 'hithpaal'),
+        'V': ('ithpoel', 'ithpoel'),
+        '1': ('apoel', 'apoel'),
+    },
+}
+VS_SET = {m: set(ms) for (m, ms) in VS.items()}
+
+VT = {
+    'v': ('impv', 'imperative'),
+    'P': ('ptca', 'participle'),
+    'p': ('perf', 'perfect'),
+    'w': ('pret', 'preterite'),
+    'i': ('impf', 'imperfect'),
+    'q': ('inf', 'infinitive'),
+    's': ('ptcp', 'passive participle'),
+}
+VT_SET = set(VT)
+
+UVF = {
+    'h': ('paraH', 'paragogic he'),
+    'd': ('direct', 'directional he'),
+    'n': ('paraN', 'paragogoc nun'),
+}
+UVF_SET = set(UVF)
+
+PS = {  # person
+    '1': ('1', '1st person'),
+    '2': ('2', '2nd person'),
+    '3': ('3', '3rd person'),
+}
+PS_SET = set(PS)
+
+GN = {  # gender
+    'm': ('m', 'masculine'),
+    'f': ('f', 'feminine'),
+    'c': ('c', 'common'),
+}
+GN_SET = set(GN)
+
+NU = {  # number
+    's': ('s', 'single'),
+    'd': ('d', 'dual'),
+    'p': ('p', 'plural'),
+    'b': ('b', 'both'),
+    'c': ('c', 'construct'),
+}
+NU_SET = set(NU)
+
+ST = {  # state
+    'c': ('c', 'construct'),
+    'a': ('a', 'absolute'),
+}
+ST_SET = set(ST)
+
+DET = {  # state
+    'd': ('det', 'determined'),
+}
+DET_SET = set(DET)
+
+MD = {
+    'j': ('juss', 'jussive'),
+    'h': ('cohh', 'cohortative heh'),
+}
+MD_SET = set(MD)
+
+
+def checkMorph():
+  morphFound = collections.Counter()
+  morphError = collections.Counter()
+  morphGood = collections.Counter()
+  morphMsg = {}
+  wrongVtLang = {}
+
+  def showMorph():
+    totalMorphs = sum(morphFound.values())
+    totalGood = sum(morphGood.values())
+    totalError = sum(morphError.values())
+    report(f'MORPH: {len(morphFound)} distinct tags in {totalMorphs} occurrences')
+    if morphError:
+      report(f'MORPH: {totalError} occs errored, {totalGood} ok')
+      for (morpho, amount) in sorted(morphError.items()):
+        msg = morphMsg[morpho]
+        report(f'\t{morpho:<10} {amount:>5} x {msg}', only=True)
+      report('', only=True)
+    report(f'MORPH: all {totalGood} good parsings', only=True)
+    for (morpho, amount) in sorted(morphGood.items()):
+      parsed = morphParsed[morpho]
+      report(f'\t{morpho:<10} {amount:>5} x {parsed}', only=True)
+    report('', only=True)
+    for (morpho, amount) in sorted(morphFound.items()):
+      report(f'\t{morpho:<10} {amount:>5} x', only=True)
+    report('', only=True)
+
+    for (dest, msg) in (
+        (wrongVtLang, f'MORPH: {len(wrongVtLang)} wrong language for verbal stem'),
+    ):
+      report(msg, only=not len(dest))
+      if len(dest):
+        for (tag, errs) in sorted(dest.items()):
+          nE = sum(sum(len(x) for x in srcs.values()) for srcs in errs.values())
+          report(f'\t{tag:<7} ({len(errs)} cases in {nE} occurrences)', only=True)
+          for (err, srcs) in sorted(errs.items()):
+            nS = sum(len(x) for x in srcs.values())
+            report(f'\t\t{err:<20} ({nS} x)', only=True)
+            for (src, lines) in srcs.items():
+              report(f'\t\t\t{src} ({len(lines)} x)', only=True)
+              report(', '.join(str(i + 1) for i in lines[0:10]), only=True)
+      report('', only=True)
+
+  def parseMorph(morpho, lang=HEBREW):
+    done = ''
+    parsed = {}
+
+    # empty morph tag
+
+    if not morpho or morpho.startswith('\\'):
+      if debug:
+        print(f'{morpho} => {parsed}')
+      return parsed
+
+    # escapes
+
+    morph = morpho
+    for (t, tx) in MORPH_ESC:
+      morph = morph.replace(t, tx)
+
+    # letter 1 of the morph tag
+
+    m = morph[0]
+    sp = m
+
+    if len(morph) == 1 and m in UVF_SET:  # paragogics and directionals
+      parsed = {UVF_FT: UVF[m][0]}
+    elif m == NULL:
+      parsed[SP_FT] = UNKNOWN
+    elif m in SP_SET:  # codes with a part of speech
+      parsed[SP_FT] = SP[m][0]
+    else:
+      pass
+
+    done += m
+    morph = morph[1:]
+    if not morph:
+      if sp == 'v':
+        parsed[VS_FT] = UNKNOWN
+        parsed[VT_FT] = UNKNOWN
+      else:
+        pass
+      if debug:
+        print(f'{morpho} => {parsed}')
+      return parsed
+
+    # letter 2 of the morph tag
+
+    m = morph[0]
+    reconsider = False
+
+    if sp == 'v':  # verbs
+      if m == NULL:
+        parsed[VS_FT] = UNKNOWN
+      elif m in VS_SET[lang]:  # verbal stem vs in own language
+        parsed[VS_FT] = VS[lang][m][0]
+      else:
+        otherLang = HEBREW if lang == ARAMAIC else ARAMAIC
+        if m in VS_SET[otherLang]:  # verbal stem vs in other language
+          parsed[VS_FT] = VS[otherLang][m][0]
+          wrongVtLang.\
+              setdefault(morpho, {}).\
+              setdefault(f'{lang} => {otherLang}', {}).\
+              setdefault(src, []).\
+              append(i)
+        else:
+          parsed[VS_FT] = UNKNOWN
+          parsed.\
+              setdefault(ERR, {}).\
+              setdefault('char', []).\
+              append(m)
+    elif sp in LS:  # other parts of speech
+      if m == NULL:
+        parsed[LS_FT] = UNKNOWN
+      elif m in LS_SET[sp]:  # sub part of speech (lexical set, ls)
+        parsed[LS_FT] = LS[sp][m][0]
+      else:
+        reconsider = True
+
+    if not reconsider:
+      done += m
+      morph = morph[1:]
+      if not morph:
+        if sp == 'v':
+          parsed[VT_FT] = UNKNOWN
+        if debug:
+          print(f'{morpho} => {parsed}')
+        return parsed
+
+    # letter 3 of the morph tag (or 2 if reconsider)
+
+    m = morph[0]
+    reconsider = False
+
+    if sp == 'v':
+      if m == NULL:
+        parsed[VT_FT] = UNKNOWN
+      elif m in VT_SET:
+        parsed[VT_FT] = VT[m][0]
+      else:
+        reconsider = True
+    else:
+      reconsider = True
+
+    if not reconsider:
+      done += m
+      morph = morph[1:]
+      if not morph:
+        if debug:
+          print(f'{morpho} => {parsed}')
+        return parsed
+
+    # the remaining letters of the morph tag
+
+    # we are going to parse the remaining characters for
+    # person gender number state det
+    # in that order and we do not complain if a category is missing
+
+    if debug:
+      print(f'\t{done} => {parsed}')
+
+    for m in morph:
+      if m in PS_SET:
+        if PS_FT not in parsed:
+          parsed[PS_FT] = PS[m][0]
+      elif m in GN_SET:
+        if GN_FT not in parsed:
+          parsed[GN_FT] = GN[m][0]
+      elif m in NU_SET:
+        if NU_FT not in parsed:
+          parsed[NU_FT] = NU[m][0]
+      elif m in ST_SET:
+        if ST_FT not in parsed:
+          parsed[ST_FT] = ST[m][0]
+      elif m in DET_SET:
+        if DET_FT not in parsed:
+          parsed[DET_FT] = DET[m][0]
+      elif sp == 'v' and m in MD_SET:
+        if MD_FT not in parsed:
+          parsed[MD_FT] = MD[m][0]
+      elif m == NULL:
+        if PS_FT not in parsed:
+          parsed[PS_FT] = UNKNOWN
+        elif GN_FT not in parsed:
+          parsed[GN_FT] = UNKNOWN
+        elif NU_FT not in parsed:
+          parsed[NU_FT] = UNKNOWN
+        elif ST_FT not in parsed:
+          parsed[ST_FT] = UNKNOWN
+        elif DET_FT not in parsed:
+          parsed[DET_FT] = UNKNOWN
+        elif sp == 'v' and MD_FT not in parsed:
+          parsed[MD_FT] = UNKNOWN
+        else:
+          parsed.\
+              setdefault(ERR, {}).\
+              setdefault('feature', []).\
+              append(m)
+      else:
+        parsed.setdefault(ERR, {}).\
+            setdefault('char', []).\
+            append(m)
+      if debug:
+        print(f'\t{m} => {parsed}')
+
+    if debug:
+      print(f'{morpho} => {parsed}')
+    return parsed
+
+  if debug:
+    src = 'xxx'
+    i = 0
+    morph = None
+    while morph is None or morph:
+      morph = input('morph [ENTER to stop]> ')
+      parseMorph(morph)
+    return
+
+  for (src, lines) in dataRaw.items():
+    for (i, fields) in lines:
+      morpho = fields[MORPH]
+      parts = morpho.split('X')
+      for part in parts:
+        morphFound[part] += 1
+
+  for (morpho, amount) in morphFound.items():
+    parsed = parseMorph(morpho)
+    if ERR in parsed:
+      morphError[morpho] += amount
+      msg = '; '.join(
+          f'{msg}:{"".join(chars)}'
+          for (msg, chars) in parsed[ERR].items()
+      )
+      morphMsg[morpho] = msg
+    else:
+      morphGood[morpho] += amount
+      morphParsed[morpho] = parsed
+
+  showMorph()
+
 
 # TF CONFIGURATION
 
@@ -591,52 +1012,9 @@ featureMeta = {
         'description': 'correction made by an ancient or modern editor',
         'values': '1 = modern, 2 = ancient, 3 = ancient supralinear',
     },
-    'glypho': {
-        'description': 'representation (original source Abegg) of a word or sign',
-    },
-    'glyphe': {
-        'description': 'representation (ETCBC transliteration) of a word or sign',
-    },
-    'glyph': {
-        'description': 'representation (Unicode) of a word or sign',
-    },
-    'label': {
-        'description': 'label of a fragment or chapter or line',
-    },
-    'language': {
-        'description': 'language of a word or sign, only if it is Greek',
-    },
-    'lexo': {
-        'description': 'representation (original source Abegg) of a lexeme',
-    },
-    'lexe': {
-        'description': 'representation (ETCBC transliteration) of a lexeme',
-    },
-    'lex': {
-        'description': 'representation (Unicode) of a lexeme',
-    },
-    'number': {
-        'description': 'number of line or verse',
-    },
-    'occ': {
-        'description': 'edge feature from a lexeme to its occurrences',
-    },
-    'punco': {
-        'description': 'trailing punctuation (original source Abegg) of a word',
-    },
-    'punce': {
-        'description': 'trailing punctuation (ETCBC transliteration) of a word',
-    },
-    'punc': {
-        'description': 'trailing punctuation (Unicode) of a word',
-    },
-    REMOVED: {
-        'description': 'removed by an ancient or modern editor',
-        'values': '1 = modern, 2 = ancient',
-    },
-    RECONSTRUCTION: {
-        'description': 'reconstructed by a modern editor',
-        'values': '1',
+    DET_FT: {
+        'description': 'determined (morphology tag)',
+        'values': ' '.join(f'{x[0]}={x[1]}' for x in DET.values()),
     },
     'fullo': {
         'description': (
@@ -656,6 +1034,86 @@ featureMeta = {
             ' including flags and brackets'
         ),
     },
+    'glypho': {
+        'description': 'representation (original source Abegg) of a word or sign',
+    },
+    'glyphe': {
+        'description': 'representation (ETCBC transliteration) of a word or sign',
+    },
+    'glyph': {
+        'description': 'representation (Unicode) of a word or sign',
+    },
+    GN_FT: {
+        'description': 'gender (morphology tag)',
+        'values': ' '.join(f'{x[0]}={x[1]}' for x in GN.values()),
+    },
+    'label': {
+        'description': 'label of a fragment or chapter or line',
+    },
+    'language': {
+        'description': 'language of a word or sign, only if it is Greek or an Aramaic verb',
+    },
+    'lexo': {
+        'description': 'representation (original source Abegg) of a lexeme',
+    },
+    'lexe': {
+        'description': 'representation (ETCBC transliteration) of a lexeme',
+    },
+    'lex': {
+        'description': 'representation (Unicode) of a lexeme',
+    },
+    LS_FT: {
+        'description': 'subpart of speech, aka lexical set (morphology tag)',
+        'values': '; '.join(
+            f'{SP[sp]}:'
+            +
+            ' '.join(f'{x[0]}={x[1]}' for x in lsCats.values())
+            for (sp, lsCats) in sorted(LS.items())
+        ),
+    },
+    MD_FT: {
+        'description': 'mood (morphology tag)',
+        'values': ' '.join(f'{x[0]}={x[1]}' for x in MD.values()),
+    },
+    NU_FT: {
+        'description': 'number (morphology tag)',
+        'values': ' '.join(f'{x[0]}={x[1]}' for x in NU.values()),
+    },
+    'number': {
+        'description': 'number of line or verse',
+    },
+    'occ': {
+        'description': 'edge feature from a lexeme to its occurrences',
+    },
+    PS_FT: {
+        'description': 'person (morphology tag)',
+        'values': ' '.join(f'{x[0]}={x[1]}' for x in PS.values()),
+    },
+    'punco': {
+        'description': 'trailing punctuation (original source Abegg) of a word',
+    },
+    'punce': {
+        'description': 'trailing punctuation (ETCBC transliteration) of a word',
+    },
+    'punc': {
+        'description': 'trailing punctuation (Unicode) of a word',
+    },
+    REMOVED: {
+        'description': 'removed by an ancient or modern editor',
+        'values': '1 = modern, 2 = ancient',
+    },
+    RECONSTRUCTION: {
+        'description': 'reconstructed by a modern editor',
+        'values': '1',
+    },
+    SP_FT: {
+        'description': 'part of speech (morphology tag)',
+        'values': ' '.join(f'{x[0]}={x[1]}' for x in SP.values()),
+    },
+    ST_FT: {
+        'description': 'state (morphology tag)',
+        'values': ' '.join(f'{x[0]}={x[1]}' for x in ST.values()),
+    },
     'type': {
         'description': 'type of sign or cluster',
     },
@@ -663,9 +1121,29 @@ featureMeta = {
         'description': 'uncertain material in various degrees: higher degree is less certain',
         'values': '1 2 3 4',
     },
+    UVF_FT: {
+        'description': 'univalent final letter (he or nun) (morphology tag)',
+        'values': ' '.join(f'{x[0]}={x[1]}' for x in UVF.values()),
+    },
     VACAT: {
         'description': 'empty, unwritten space',
         'values': '1',
+    },
+    VS_FT: {
+        'description': 'verbal stem (morphology tag)',
+        'values': (
+            f'{HEBREW}:'
+            +
+            ' '.join(f'{x[0]}={x[1]}' for x in VS[HEBREW].values())
+            +
+            f'; {ARAMAIC}:'
+            +
+            ' '.join(f'{x[0]}={x[1]}' for x in VS[ARAMAIC].values())
+        ),
+    },
+    VT_FT: {
+        'description': 'verbal tense/aspect (morphology tag)',
+        'values': ' '.join(f'{x[0]}={x[1]}' for x in VT.values()),
     },
 }
 
@@ -678,6 +1156,7 @@ dataToken = {}
 etcbcFromTrans = {}
 charGroups = {}
 acroFromCode = {}
+morphParsed = {}
 logh = None
 
 
@@ -1237,48 +1716,6 @@ def finalize():
   logh = None
 
 
-# SET UP CONVERSION
-
-def getConverter():
-  if os.path.exists(OUT_DIR):
-    rmtree(OUT_DIR)
-  if not os.path.exists(LOG_DIR):
-    os.makedirs(LOG_DIR, exist_ok=True)
-  TF = Fabric(locations=[OUT_DIR])
-  return CV(TF)
-
-
-def convert():
-  prepare()
-  readBooks()
-  # readData(start=5310, end=5310)
-  readData()
-  if checkSource:
-    checkChars()
-  tokenizeData()
-  if checkSource:
-    checkBrackets()
-    checkBooks()
-
-  if checkOnly:
-    return True
-
-  cv = getConverter()
-
-  result = cv.walk(
-      director,
-      slotType,
-      otext=otext,
-      generic=generic,
-      intFeatures=intFeatures,
-      featureMeta=featureMeta,
-      generateTf=generateTf,
-      force=force,
-  )
-  finalize()
-  return result
-
-
 def verseNum(text):
   if text.isdigit():
     return (text, None)
@@ -1445,17 +1882,20 @@ def director(cv):
       after = ' ' if fields[BOUND] == B else None
       fullo = fields[TRANS]
       lexo = fields[LEX]
+      morpho = fields[MORPH]
       glypho = nonGlyphRe.sub('', fullo)
       punco = nonPunctRe.sub('', fullo)
       if punco and glypho:
         error('punctuation and glyphs on same line', fullo)
-      if not glypho and lexo:
-        error('lexeme information for empty word', lexo)
 
       if lexo == 'B':
         error('Unknown lexeme', lexo)
         lexo = ''
       isNumLex = False
+
+      if morpho == 'B':
+        error('Unknown morph tag', morpho)
+        morpho = ''
 
       if lexo:
         (lexoB, lexN) = (lexo, '')
@@ -1467,9 +1907,13 @@ def director(cv):
         else:
           (lexoB, lexN) = (lexo, '')
         lexPure = nonGlyphLexRe.sub('', lexoB)
-        isNumLex = lexPure and lexPure != '0' and digitRe.match(lexPure)
+        isNoLex = lexPure == '0'
+        isNumLex = lexPure and not isNoLex and digitRe.match(lexPure)
 
-        if isNumLex:
+        if isNoLex:
+          lex = EM
+          lexe = EM
+        elif isNumLex:
           lexoB = lexoB[::-1]
           lex = lexoB
           lexe = lexoB
@@ -1486,9 +1930,10 @@ def director(cv):
           lexIndex[lex] = thisLex
         cv.feature(thisLex, lexo=lexo, lexe=lexe, lex=lex)
 
-      if punco or glypho:
+      if punco or glypho or lexo:
         curWord = cv.node(WORD)
-        cv.feature(curWord, fullo=unesc(fullo))
+        if fullo:
+          cv.feature(curWord, fullo=unesc(fullo))
         if after:
           cv.feature(curWord, after=after)
         if glypho:
@@ -1500,6 +1945,10 @@ def director(cv):
               punc=asUni(punco),
               punce=asRep(punco),
           )
+        if not glypho:
+          typ = EMPTY
+          c = ''
+          addSlot()
       if glypho and lexo:
         cv.feature(curWord, lexo=lexo, lexe=lexe, lex=lex)
         cv.edge(thisLex, curWord, occ=None)
@@ -1511,7 +1960,7 @@ def director(cv):
       typ = (
           PUNCT if punco else
           NUMERAL if isNum else
-          GLYPH if glypho else
+          GLYPH if glypho or lexo else
           EMPTY if not fullo else
           OTHER
       )
@@ -1599,6 +2048,51 @@ def director(cv):
   return not errors
 
 
+# SET UP CONVERSION
+
+def getConverter():
+  if os.path.exists(OUT_DIR):
+    rmtree(OUT_DIR)
+  if not os.path.exists(LOG_DIR):
+    os.makedirs(LOG_DIR, exist_ok=True)
+  TF = Fabric(locations=[OUT_DIR])
+  return CV(TF)
+
+
+def convert():
+  prepare()
+  readBooks()
+  # readData(start=5310, end=5310)
+  readData()
+  if checkSource or checkMorphOnly:
+    checkMorph()
+    if checkMorphOnly:
+      return True
+    checkChars()
+    checkBooks()
+  tokenizeData()
+  if checkSource:
+    checkBrackets()
+
+  if checkOnly:
+    return True
+
+  cv = getConverter()
+
+  result = cv.walk(
+      director,
+      slotType,
+      otext=otext,
+      generic=generic,
+      intFeatures=intFeatures,
+      featureMeta=featureMeta,
+      generateTf=generateTf,
+      force=force,
+  )
+  finalize()
+  return result
+
+
 # TF LOADING (to test the generated TF)
 
 def loadTf():
@@ -1613,6 +2107,11 @@ def loadTf():
 
 
 # MAIN
+
+if debug:
+  import readline  # noqa
+  checkMorph()
+  sys.exit()
 
 report(f'This is tfFromAbegg converting {REPO} transcriptions to TF:')
 report(f'\tsource version = {VERSION_SRC}')

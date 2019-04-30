@@ -74,6 +74,14 @@ in order to fine-tune the position of those points with respect to their
 consonants.
 We reduce them to single Hebrew unicodes per vowel.
 
+There are bracketing constructs in the transcription, such as `<< >>`, `« »`, `[ ]`.
+It turns out that in the files as we see them, they are consistently written as if in the right to left writing
+direction. So they appear as `>> <<`, `» «`, `] [`.
+When we reproduce the orginal transcription, we put them allback into the left-to-right orientation, because
+this is the intended direction. The cause that we encounter them in the opposite orientation might be that
+we have stripped all unicode orientation characters (202A-202E)
+in our sanitizing preprocessing step.
+
 We also supply the ETCBC transcription for Hebrew material.
 For the full details see the extensive
 [Hebrew transcription table](https://annotation.github.io/text-fabric/Writing/Hebrew.html).
@@ -99,9 +107,13 @@ The type of sign is stored in the feature `type`.
 type | source | etcbc | unicode | description
 ------- | ------ | ------ | --- | ---
 `cons` | `m` `M` | `M` `m`| `מ` `ם` | normal consonantal letter
-`vowel` | `I` | `I`| ` ִ ` | normal consonantal letter
-`punct` | ` ` `-` `.` `±` `/`| `_` `&` `00` `0000` `'`| ` ` `־` `׃` `׃׃` `׳`| non-breaking space, maqaf, sof pasuq, paleo divider, morpheme break 
-`numeral` | `A` `D` | `>'` `k'` | `א׳` `ך׳` | a numeral 
+`vowel` | `I` | `I`| ` ִ ` | vowel point
+`sep` | ` ` | `_` | ` ` | non-breaking space
+`sep` | `-` | `&` | `־` | maqaf
+`sep` | `/`| `'`| `׳` | morpheme break 
+`punct` | `.` | `00` | `׃` | sof pasuq
+`punct` | `±` | `0000` | `׃׃` | paleo divider
+`numeral` | `A` `D` | `>'` `k'` | `א֜` `ך֜` | a numeral 
 `missing` | `--` | ` 0 ` | `ε` | representation of a missing sign
 `uncertain` | `?` | ` ? ` | ` ? ` | representation of an uncertain sign (degree 1)
 `uncertain` | ``\`` | ` # ` | ` # ` | representation of a uncertain sign (degree 2)
@@ -121,7 +133,7 @@ feature | values | Abegg | ETCBC | Unicode | description
 **glyph[eo]** | | `m` | `M` | `מ` | transliteration of an individual sign
 **type** | | | | | type of sign, see table above
 **uncertain** | `1` | `b«NØ` | `B#n?` | | indicates *uncertainty of degree=1* by flag `|`
-**uncertain** | `2` | `at«` `aj«y»/K` | `>T#` `>X#J#?) ? k` | | indicates *uncertainty of degree=2* by flag `«` or brackets `« »`
+**uncertain** | `2` | `at«` `aj«y»/K` | `>T#` `>X#J#?) ? k` | | indicates *uncertainty of degree=2* by flag `«` or brackets `« »`, in this example the `« »` are not brackets but individual tokens
 **uncertain** | `3` | `]p[n»y` | `[P]N#?Y` | | indicates *uncertainty of degree=3* by flag `»`
 **uncertain** | `4` | `a\|hrwN` | `>#?HRWn` | | indicates *uncertainty of degree=4* by flag `\|`
 **vacat** | `1` | `≥ ≤` | `(- -)` | | indicates an empty, unwritten space by brackets `≤ ≥`
@@ -144,6 +156,11 @@ type | description
 `numeral` | a numeral
 `punc` | punctuation
 `other` | nothing of the above
+
+If a transcription field is empty, but there is lexeme information,
+we insert a word node with type `glyph`
+and all of its textual features (*full[eo], glyph[eo], punc[eo]*) absent.
+We add a slot of type `empty` to this word.
 
 feature | Abegg | ETCBC | Unicode | description
 ------- | ------ | ------ | --- | --------
@@ -323,13 +340,13 @@ Numerals are ancient signs for denoting quantities.
 
 source | etcbc | unicode | value
 --- | --- | --- | ---
-`A` | `>'` | `א׳` | 1
+`A` | `>'` | `א֜` | 1
 `å` | `>52` | `אׄ` | 1
 `B` | `>53` | `אׅ` | 1
 `∫` | `>35` | `אֽ` | 1
-`C` | `J'` | `י׳` | 10
-`D` | `k'` | `ך׳` | 20
-`F` | `Q'` | `ק׳` | 100
+`C` | `J'` | `י֜` | 10
+`D` | `k'` | `ך֜` | 20
+`F` | `Q'` | `ק֜` | 100
 
 #### Miscellaneous
 

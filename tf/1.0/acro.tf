@@ -9,9 +9,9 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-04-27T20:12:56Z
+@dateWritten=2019-04-29T06:42:09Z
 
-1338165	Gen
+1430360	Gen
 1Q1
 Ex
 1Q2
@@ -358,7 +358,7 @@ Josh
 Judg
 XJudges
 X4
-1516434	1Q1
+1608629	1Q1
 1Q2
 1Q3
 1Q4
