@@ -165,11 +165,53 @@ We add a slot of type `empty` to this word.
 feature | Abegg | ETCBC | Unicode | description
 ------- | ------ | ------ | --- | --------
 **after** | ` ` | | | whether there is a space after a word and before the next word
+**biblical** | `1` | | | | whether this word is in a biblical scroll or not
 **full[eo]** | `mm/nw[` | `MM61NW]` | `ממ׳נו]` | full transcription of a word, including flags and clustering characters
 **glyph[eo]** | `mmnw` | `MMNW]` | `ממנו` | letters of a word excluding flags and brackets
 **lex[eo]** | `mIN` | `MIn` | `מִן` | lexeme of a word
 **punc[eo]** | `.` | `00` | `׃` | punctuation at the end of a word
+**morpho** | `vHi1cpX3mp` | | | original morphological tag for this word; all information in this has been decomposed into the morphological features below
 **type** | | | | | type of word, see table above
+**srcLn** | `424242` | | | | line number of this word in its source data file
+
+A word has several morphology features.
+If a word is divided into morphemes, each of the morphemes can carry morphology.
+If we have gender masculine on the main word,
+and gender feminine on the suffix,
+and gender common on the second suffix, it will be represented by
+
+```
+  gn=m
+  gn2=f
+  gn3=c
+```  
+
+Below is a summary table.
+For all values, look at the morphology
+[configuration file](https://github.com/ETCBC/dss/blob/master/yaml/morph.yaml).
+There you see also the connection with the original Abegg encoding of morphological tags.
+We have switched to slightly more verbose feature values, and to feature names that are
+in line with those of the 
+[BHSA](https://etcbc.github.io/bhsa/).
+The original tag as a whole is also available in the feature **morpho**.
+
+We only describe the plain features here, but keep in mind that they may be accompanied
+by their numbered brothers.
+
+Al these features may contain the value `unknown`.
+
+feature | examples | description
+------- | ------ | ------ | --- | --------
+**sp** | `subs` `verb` `numr` `ptcl` | part-of-speech
+**cl** | `card` `proper` `prep` | class, i.e. a sub category within its part-of-speech
+**ps** | `1` `2` `3` | person
+**gn** | `m` `f` `c` `b` | gender, also with *common* and *both*
+**nu** | `s` `p` `d` | number, also with *dual*
+**st** | `a` `c` `d` | state, also with *determined*
+**cs** | `nom` `acc` `gen` | case
+**vs** | `qal` `passive` `piel` `hithpolel` | verbal stem, also with *passive*, some are Hebrew, some are Aramaic
+**vt** | `perf` `impf` `wayy` `impv` `infc` `infa` `ptca` `ptcp` | verbal tense or aspect, also with *wayyiqtol*
+**md** | `juss` `coho` `cons` | mood 
 
 ## Node type [*cluster*](#cluster)
 
@@ -201,6 +243,12 @@ In order to anchor it into the text sequence, we have generated an empty slot in
 
 We have done the same for other clusters that happened to be without other slots.
 
+Other features:
+
+feature | Abegg | ETCBC | Unicode | description
+------- | ------ | ------ | --- | --------
+**biblical** | `1` | | | | whether this cluster is in a biblical scroll or not
+
 ## Node type [*line*](#line)
 
 Section level 3.
@@ -210,6 +258,7 @@ Corresponds to a set of source data lines with the same value in the *line* colu
 
 feature | values | description
 ------- | ------ | ------
+**biblical** | `1` | | | | whether this line is in a biblical scroll or not
 **label** | `3` | number of a physical line (not necessarily integer valued)
 
 There are lines in the source data with number `0` and with a subdivision by means of an
@@ -228,6 +277,7 @@ For non-biblical scrolls, the fragment is usually called *column*.
 
 feature | values | description
 ------- | ------ | ------
+**biblical** | `1` | | | | whether this fragment is in a biblical scroll or not
 **label** | `f3` | label of a physical fragment or column
 
 ## Node type [*scroll*](#scroll)
@@ -238,6 +288,7 @@ Corresponds to a set of source data lines with the same value in the *scroll* co
 
 feature | values | description
 ------- | ------ | ------
+**biblical** | `1` | | | | whether this scroll is in a biblical scroll or not
 **acro** | `1Q1` | short name of a physical scroll
 
 ## Node type [*halfverse*](#halfverse)

@@ -9,9 +9,9 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-04-29T06:42:09Z
+@dateWritten=2019-05-01T18:49:09Z
 
-1430360	Gen
+1430361	Gen
 1Q1
 Ex
 1Q2

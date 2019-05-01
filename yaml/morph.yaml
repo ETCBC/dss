@@ -1,0 +1,337 @@
+posFt: sp
+classFt: cl
+
+escapes:
+  - [ii, ï]
+  - ['{2}', ç]
+  - ['[2]', ç]
+  - ['(2)', ç]
+  - [Pp+Pa, På]
+
+features:
+  sp: part of speech
+  cl: class
+  ps: person
+  gn: gender
+  nu: number
+  st: state
+  cs: case
+  vs: verbal stem
+  vt: verbal tense/aspect
+  md: mood
+
+values:
+  sp:
+    adjv: [a, adjective]
+    numr: [u, numeral]
+    subs: [n, noun]
+    ptcl: [P, particle]
+    pron: [p, pronoun]
+    verb: [v, verb]
+    suff: [X, suffix]
+    unknown: [0, unknown]
+  cl:
+    adjv:
+      card: [c, cardinal]
+      ord: [o, ordinal]
+      gent: [g, gentilic]
+    numr:
+      card: [c, cardinal]
+      ord: [o, ordinal]
+    subs:
+      cmn: [c, common]
+      prp: [p, proper]
+      gent: [g, gentilic]
+      mult: [m, multitude]
+    ptcl:
+      conj: [c, conjunction]
+      prep: [p, preposition]
+      art: [a, article]
+      artp: [å, article + preposition]
+      objm: [o, object marker]
+      intj: [i, interjection]
+      intr: [g, interrogative]
+      nega: [n, negative]
+      rela: [r, relative]
+      advb: [d, adverb]
+    pron:
+      indp: [i, independent]
+      intr: [ï, interrogative]
+    suff:
+      h: [h, paragogic heh]
+      d: [d, directional heh]
+      n: [n, paragogic nun]
+    unknown:
+      unknown: [0, unknown]
+  ps:
+    '1': ['1', 1st person]
+    '2': ['2', 2nd person]
+    '3': ['3', 3rd person]
+  gn:
+    m: [m, masculine]
+    f: [f, feminine]
+    c: [c, common]
+    b: [b, both]
+  nu:
+    p: [p, plural]
+    s: [s, singular]
+    d: [d, dual]
+  st:
+    a: [a, absolute]
+    c: [c, construct]
+    d: [d, determined]
+  cs:
+    nom: [n, nominative]
+    acc: [a, accusative]
+    gen: [g, genitive]
+  vs:
+    qal: [q, qal]
+    passive: [Q, passive qal]
+    hifil: [h, hifil]
+    nifal: [n, nifal]
+    piel: [p, piel]
+    pual: [P, pual]
+    hitpael: [t, hitpael]
+    hofal: [H, hofal]
+    palel: [a, palel]
+    hpealal: [b, hpealal]
+    pilpel: [d, pilpel]
+    polel: [e, polel]
+    polal: [f, polal]
+    pulal: [i, pulal]
+    poel: [k, poel]
+    poal: [l, poal]
+    tifil: [m, tifil]
+    hishtafel: [s, hishtafel]
+    hotpaal: [u, hotpaal]
+    hitopel: [v, hit-opel]
+    hitpalpel: [w, hitpalpel]
+    nitpael: [x, nitpael]
+    aphel: [A, aphel]
+    haphel: [B, haphel]
+    hophal: [D, hophal]
+    hithaphel: [E, hithaphel]
+    hithpeel: [F, hithpeel]
+    hithpolel: [G, hithpolel]
+    hishtaphel: [Ḧ, hishtaphel]
+    ishtaphel: [I, ishtaphel]
+    ithpaal: [K, ithpaal]
+    ithpeel: [L, ithpeel]
+    pael: [M, pael]
+    peal: [N, peal]
+    peil: [O, peil]
+    shaphel: [R, shaphel]
+    hithpaal: [S, hithpaal]
+    ithpoel: [V, ithpoel]
+    apoel: ['1', apoel]
+    hitpoel: ['9', hitpoel]
+  vt:
+    perf: [p, perfect]
+    impf: [i, imperfect]
+    wayy: [w, wayyiqtol aka preterite]
+    impv: [v, imperative]
+    infc: [c, infinitive construct]
+    infa: [a, infinitive absolute]
+    ptca: [P, participle]
+    ptcp: [s, passive participle]
+  md:
+    juss: [j, jussive]
+    coho: [h, cohortative]
+    cons: [ç, consecutive]
+
+tags:
+  adjv:
+    - gn:
+      - m
+      - f
+      - c
+      - b
+    - nu:
+      - p
+      - s
+      - d
+    - st:
+      - a
+      - c
+      - d
+    - cl:
+      - card
+      - ord
+      - gent
+    - cs:
+      - nom
+      - acc
+      - gen
+  numr:
+    - cl:
+      - card
+      - ord
+    - gn:
+      - m
+      - f
+      - c
+      - b
+    - nu:
+      - p
+      - s
+      - d
+    - st:
+      - a
+      - c
+      - d
+  subs:
+    - cl:
+      - cmn
+      - prp
+      - gent
+      - mult
+    - gn:
+      - m
+      - f
+      - b
+    - nu:
+      - p
+      - s
+      - d
+    - st:
+      - a
+      - c
+      - d
+    - cs:
+      - nom
+      - acc
+      - gen
+  ptcl:
+    - cl:
+      - conj
+      - prep
+      - art
+      - artp
+      - objm
+      - intj
+      - intr
+      - nega
+      - rela
+      - advb
+  pron:
+    - cl:
+      - indp
+      - intr
+    - ps:
+      - '1'
+      - '2'
+      - '3'
+    - gn:
+      - m
+      - f
+      - c
+    - nu:
+      - p
+      - s
+    - cs:
+      - nom
+      - acc
+      - gen
+  verb:
+    - vs:
+      - qal
+      - passive
+      - hifil
+      - nifal
+      - piel
+      - pual
+      - hitpael
+      - hofal
+      - palel
+      - hpealal
+      - pilpel
+      - polel
+      - polal
+      - pulal
+      - poel
+      - poal
+      - tifil
+      - hishtafel
+      - hotpaal
+      - hitopel
+      - hitpalpel
+      - nitpael
+      - aphel
+      - haphel
+      - hophal
+      - hithaphel
+      - hithpeel
+      - hithpolel
+      - hishtaphel
+      - ishtaphel
+      - ithpaal
+      - ithpeel
+      - pael
+      - peal
+      - peil
+      - shaphel
+      - hithpaal
+      - ithpoel
+      - apoel
+      - hitpoel
+    - vt:
+      - perf
+      - impf
+      - wayy
+      - impv
+      - infc
+      - infa
+      - ptca
+      - ptcp
+    - ps:
+      - '1'
+      - '2'
+      - '3'
+    - gn:
+      - m
+      - f
+      - c
+    - nu:
+      - p
+      - s
+      - d
+    - md:
+      - juss
+      - coho
+      - cons
+    - st:
+      - a
+      - c
+      - d
+  suff:
+    - cl:
+      - h
+      - d
+      - n
+    - ps:
+      - '1'
+      - '2'
+      - '3'
+    - gn:
+      - m
+      - f
+      - c
+    - nu:
+      - p
+      - s
+      - d
+  unknown:
+    - cl:
+      - unknown
+    - ps:
+      - '1'
+      - '2'
+      - '3'
+    - gn:
+      - m
+      - f
+      - c
+    - nu:
+      - p
+      - s
+      - d

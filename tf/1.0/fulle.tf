@@ -9,7 +9,7 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-04-29T06:42:10Z
+@dateWritten=2019-05-01T18:49:14Z
 
 1623093	[ W
 JR>
@@ -268197,7 +268197,8 @@ QR ]JT[
  ]
 [ 
  0 
-(-  -)
+ ] # WH##
+ 0000
 B
 JD#
 0000
