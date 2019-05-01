@@ -10,7 +10,7 @@
 @valueType=str
 @values=aphel, apoel, haphel, hifil, hishtafel, hithaphel, hithpaal, hithpeel, hithpolel, hitopel, hitpael, hitpalpel, hitpoel, hofal, hophal, hotpaal, hpealal, ishtaphel, ithpaal, ithpeel, ithpoel, nifal, nitpael, pael, palel, passive, peal, peil, piel, pilpel, poal, poel, polal, polel, pual, pulal, qal, shaphel, tifil, unknown
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-01T18:49:33Z
+@dateWritten=2019-05-01T20:46:41Z
 
 1623094	qal
 1623100	qal

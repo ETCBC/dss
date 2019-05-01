@@ -9,7 +9,7 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-01T18:49:09Z
+@dateWritten=2019-05-01T20:46:21Z
 
 1430361	Gen
 1Q1

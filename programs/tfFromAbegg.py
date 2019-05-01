@@ -146,6 +146,26 @@ for (src, fields) in COLUMNS.items():
     CLEN[src] = len(CINDEX[src])
 
 
+# script
+
+PH = 'PH'
+GC = 'F0'
+
+SCRIPT_MAP = {
+    PH: ('ph', 'paleohebrew'),
+    GC: ('gc', 'greekcapital'),
+}
+
+# interlinear
+
+S1 = 's1'
+S2 = 's2'
+
+INTERLINEAR_MAP = {
+    S1: (1, 'first interlinear line'),
+    S2: (2, 'second interlinear line'),
+}
+
 # characters
 
 NB = '\u00a0'  # non-breaking space
@@ -532,6 +552,7 @@ otext = {
 
 intFeatures = set('''
     biblical
+    interlinear
     number
     srcLn
 '''.strip().split())
@@ -584,6 +605,13 @@ featureMeta = {
     'glyph': {
         'description': 'representation (Unicode) of a word or sign',
     },
+    'interlinear': {
+        'description': (
+            'interlinear material,'
+            ' the value indicates the sequence number of the interlinear line'
+        ),
+        'values': ' '.join(f'{acro}={full}' for (acro, full) in INTERLINEAR_MAP.values())
+    },
     'label': {
         'description': 'label of a fragment or chapter or line',
     },
@@ -627,6 +655,10 @@ featureMeta = {
     RECONSTRUCTION: {
         'description': 'reconstructed by a modern editor',
         'values': '1',
+    },
+    'script': {
+        'description': 'script in which the word is written if it is not Hebrew',
+        'values': ' '.join(f'{acro}={full}' for (acro, full) in SCRIPT_MAP.values())
     },
     'srcLn': {
         'description': 'the line number of the word in the source data file',
@@ -929,6 +961,10 @@ def checkBooks():
 
 def checkChars():
   charsFound = collections.Counter()
+  scriptFound = collections.Counter()
+  scriptError = {}
+  interlinearFound = collections.Counter()
+  interlinearError = {}
   charsMapped = set()
   charsUnmapped = {}
   exampleLimit = 3
@@ -1002,6 +1038,34 @@ def checkChars():
           report(f'\t\t\t{i + 1:>6} in {scroll} {fragment}:{line} "{word}"', only=True)
     report('', only=True)
 
+  def showScript():
+    nF = sum(scriptFound.values())
+    nE = sum(len(x) for x in scriptError.values())
+    report(f'SCRIPT: {len(scriptFound)} scripts in {nF} occurrences')
+    for (script, amount) in sorted(scriptFound.items()):
+      report(f'\t{amount:>4}x {script:<3} = {SCRIPT_MAP[script][1]:<12}', only=True)
+    if scriptError:
+      report(f'SCRIPT: {len(scriptError)} unrecognized scripts in {nE} occurrences')
+      for (script, occs) in sorted(scriptError.items()):
+        report(f'\t"{script}": {len(occs)} occurrences', only=True)
+        for (src, i) in occs:
+          report(f'\t\t{src}:{i + 1:>6}', only=True)
+    report('', only=True)
+
+  def showInterlinear():
+    nF = sum(interlinearFound.values())
+    nE = sum(len(x) for x in interlinearError.values())
+    report(f'INTERLINEAR: {len(interlinearFound)} interlinears in {nF} occurrences')
+    for (interlinear, amount) in sorted(interlinearFound.items()):
+      report(f'\t{amount:>4}x {interlinear:<3} = {INTERLINEAR_MAP[interlinear][1]:>3}', only=True)
+    if interlinearError:
+      report(f'INTERLINEAR: {len(interlinearError)} unrecognized interlinears in {nE} occurrences')
+      for (interlinear, occs) in sorted(interlinearError.items()):
+        report(f'\t"{interlinear}": {len(occs)} occurrences', only=True)
+        for (src, i) in occs:
+          report(f'\t\t{src}:{i + 1:>6}', only=True)
+    report('', only=True)
+
   def showLastOfLine():
     report(f'LINES: {nLines} lines')
     nInner = sum(len(x) for x in slashInner.values())
@@ -1022,9 +1086,12 @@ def checkChars():
   prevScroll = None
 
   for src in dataRaw:
+    biblical = src == BIB
     for (i, fields) in dataRaw[src]:
       word = fields[TRANS]
       lex = fields[LEX]
+      script = fields[SCRIPT]
+      interlinear = None if biblical else fields[INTERLINEAR]
       thisLine = fields[LINE]
       thisFragment = fields[FRAGMENT]
       thisScroll = fields[SCROLL]
@@ -1035,6 +1102,15 @@ def checkChars():
       else:
         if prevTrans == '/':
           slashInner.setdefault(src, []).append((i, prevScroll, prevFragment, prevLine))
+
+      if script:
+        scriptFound[script] += 1
+        if script not in SCRIPT_MAP:
+          scriptError.setdefault(script, []).append((src, i))
+      if interlinear:
+        interlinearFound[interlinear] += 1
+        if interlinear not in INTERLINEAR_MAP:
+          interlinearError.setdefault(interlinear, []).append((src, i))
 
       lexBare = lexDisXRe.sub('', lex)
       lexPure = nonGlyphLexRe.sub('', lexBare)
@@ -1124,6 +1200,8 @@ def checkChars():
         f' {unmappedStr} ({len(charsUnmapped)} distinct chars in {totalUnmapped} occurrences)'
     )
     report('', only=True)
+  showScript()
+  showInterlinear()
   showChars()
   showNumerals()
   showForeign()
@@ -1512,14 +1590,19 @@ def director(cv):
         cv.terminate(curScroll)
         nScroll += 1
         curScroll = cv.node(SCROLL)
-        cv.feature(curScroll, biblical=biblical, acro=thisScroll)
+        cv.feature(curScroll, acro=thisScroll)
+        if biblical:
+          cv.feature(curScroll, biblical=1)
       if changeFragment or changeScroll:
         curFragment = cv.node(FRAGMENT)
-        cv.feature(curFragment, biblical=biblical, label=thisFragment)
-        # progress(f'scroll {nScroll:<5} {thisScroll:<20} {thisFragment:<20}', newline=False)
+        cv.feature(curFragment, label=thisFragment)
+        if biblical:
+          cv.feature(curFragment, biblical=1)
       if changeLine or changeFragment or changeScroll:
         curLine = cv.node(LINE)
-        cv.feature(curLine, biblical=biblical, label=thisLine)
+        cv.feature(curLine, label=thisLine)
+        if biblical:
+          cv.feature(curLine, biblical=1)
 
       if biblical:
         thisBook = fields[BOOK]
@@ -1557,6 +1640,8 @@ def director(cv):
       fullo = fields[TRANS]
       lexo = fields[LEX]
       morpho = fields[MORPH]
+      script = fields[SCRIPT]
+      interlinear = None if biblical else fields[INTERLINEAR]
       glypho = nonGlyphRe.sub('', fullo)
       punco = nonPunctRe.sub('', fullo)
       if punco and glypho:
@@ -1602,7 +1687,17 @@ def director(cv):
 
       if punco or glypho or lexo:
         curWord = cv.node(WORD)
-        cv.feature(curWord, biblical=biblical, srcLn=i + 1)
+        cv.feature(curWord, srcLn=i + 1)
+        if biblical:
+          cv.feature(curWord, biblical=1)
+        if script:
+          scriptValue = SCRIPT_MAP.get(script, None)
+          scriptValue = script if scriptValue is None else scriptValue[0]
+          cv.feature(curWord, script=scriptValue)
+        if interlinear:
+          interlinearValue = INTERLINEAR_MAP.get(interlinear, None)
+          interlinearValue = interlinear if interlinearValue is None else interlinearValue[0]
+          cv.feature(curWord, interlinear=interlinearValue)
         if fullo:
           cv.feature(curWord, fullo=unesc(fullo))
         if after:
@@ -1688,7 +1783,9 @@ def director(cv):
           if isOpen:
             cn = cv.node(CLUSTER)
             curBrackets[key] = cn
-            cv.feature(cn, biblical=biblical, type=f'{name}{valRep}')
+            cv.feature(cn, type=f'{name}{valRep}')
+            if biblical:
+              cv.feature(cn, biblical=1)
           else:
             cn = curBrackets[key]
             if not cv.linked(cn):

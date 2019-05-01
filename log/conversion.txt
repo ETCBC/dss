@@ -2138,6 +2138,14 @@ MORPH: GOOD: 2008 distinct tags in 582739 occurrences
 	vww3ms                 1 x {'sp': 'verb', 'vs': 'hitpalpel', 'vt': 'wayy', 'ps': '3', 'gn': 'm', 'nu': 's'}
 	vxp3ms                 2 x {'sp': 'verb', 'vs': 'nitpael', 'vt': 'perf', 'ps': '3', 'gn': 'm', 'nu': 's'}
 
+SCRIPT: 2 scripts in 796 occurrences
+	F0  = greekcapital    7 x
+	PH  = paleohebrew   789 x
+
+INTERLINEAR: 2 interlinears in 593 occurrences
+	s1  = first interlinear line  576 x
+	s2  = second interlinear line   17 x
+
 CHARACTERS: MAPPED: ()+-./0123456789;<>?ABCDEFGHIJKMNOPRSTUVX[\]^abcdfghjklmnopqrstvwxyz{|} ¥¨«®±´»ÅÊÎÏØÚåéîøüƒˆΘΧΩ…‰∂√∫≤≥◊�
 CHARACTERS: 145 used
 	in lex field:
