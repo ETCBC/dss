@@ -171,8 +171,8 @@ feature | Abegg | ETCBC | Unicode | description
 **lex[eo]** | `mIN` | `MIn` | `מִן` | lexeme of a word
 **punc[eo]** | `.` | `00` | `׃` | punctuation at the end of a word
 **morpho** | `vHi1cpX3mp` | | | original morphological tag for this word; all information in this has been decomposed into the morphological features below
-**type** | | | | | type of word, see table above
-**srcLn** | `424242` | | | | line number of this word in its source data file
+**type** | | | | type of word, see table above
+**srcLn** | `424242` | | | line number of this word in its source data file
 
 A word has several morphology features.
 If a word is divided into morphemes, each of the morphemes can carry morphology.
