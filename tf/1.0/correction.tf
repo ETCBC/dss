@@ -10,7 +10,7 @@
 @valueType=str
 @values=1 = modern, 2 = ancient, 3 = ancient supralinear
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-01T20:46:22Z
+@dateWritten=2019-05-02T00:59:20Z
 
 12795	3
 13914	3

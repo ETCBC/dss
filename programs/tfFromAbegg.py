@@ -55,6 +55,7 @@ VERSION_TF = '1.0'
 LOCAL_BASE = os.path.expanduser('~/local')
 GH_BASE = os.path.expanduser('~/github')
 
+PROTO_DIR = f'{LOCAL_BASE}/{REPO}/sanitized'
 SOURCE_DIR = f'{LOCAL_BASE}/{REPO}/prepared/{VERSION_SRC}'
 
 BASE = f'{GH_BASE}/{ORG}/{REPO}'
@@ -104,6 +105,8 @@ MORPH = 'morph'
 BOUND = 'bound'
 INTERLINEAR = 'interlinear'
 SCRIPT = 'script'
+
+LANG = 'language'
 
 B = 'B'
 NOLEX = '0'
@@ -314,7 +317,8 @@ NUMERALS_SET = {x[1] for x in NUMERALS}
 NUMERALS_UNI = {x[1]: x[0] for x in NUMERALS}
 NUMERALS_REP = {x[1]: TR.from_hebrew(x[0]) for x in NUMERALS}
 
-GREEK = 'Greek'
+ARAMAIC = 'aramaic'
+GREEK = 'greek'
 
 ALPHA = '\u0391'
 GAMMA = '\u0393'
@@ -518,9 +522,6 @@ MORPH_ESC = (
     ('Pp+Pa', 'På'),
 )
 
-HEBREW = 'hebrew'
-ARAMAIC = 'aramaic'
-
 # TF CONFIGURATION
 
 slotType = SIGN
@@ -616,7 +617,8 @@ featureMeta = {
         'description': 'label of a fragment or chapter or line',
     },
     'language': {
-        'description': 'language of a word or sign, only if it is Greek or an Aramaic verb',
+        'description': 'language of a word or sign, only if it is not Hebrew',
+        'values': f'{ARAMAIC} {GREEK}'
     },
     'lexo': {
         'description': 'representation (original source Abegg) of a lexeme',
@@ -680,6 +682,8 @@ featureMeta = {
 
 LIMIT = 10
 
+lDataProto = {}
+dataProto = {}
 dataRaw = {}
 dataToken = {}
 etcbcFromTrans = {}
@@ -724,7 +728,42 @@ def readBooks():
   report('', only=True)
 
 
-def readData(start=None, end=None):
+def readProto():
+  skipChar = '\u001b'
+
+  for src in SOURCES:
+    biblical = src == BIB
+    splitChar = '\t' if biblical else ' '
+    report(f'Reading proto {src:>6} ...', newline=False)
+    i = 0
+    j = 0
+    with open(f'{PROTO_DIR}/dss_{src}.txt') as fh:
+      for line in fh:
+        if line.startswith('>') or skipChar in line:
+          continue
+        line = line.rstrip('\n')
+        fields = line.split(splitChar)
+        if not biblical:
+          if len(fields) == 3:
+            text = fields[2]
+            if text.startswith(']') and text.endswith('['):
+              if text[1:-1].isdigit():
+                continue
+        j += 1
+        aramaic = len(fields) > 3 and '%' in fields[3]
+        if aramaic:
+          dataProto.setdefault(src, set()).add(i)
+        i += 1
+    lDataProto[src] = j
+    report(f'{lDataProto[src]:<6} lines')
+  report('', only=True)
+  nA = sum(len(x) for x in dataProto.values())
+  report(f'ARAMAIC: {nA} word occurrences')
+  for (src, occs) in sorted(dataProto.items()):
+    report(f'\t{src:<6}: {len(occs)} x', only=True)
+
+
+def readData():
   diags = []
   fixes = {}
   foreignFixes = {}
@@ -752,7 +791,9 @@ def readData(start=None, end=None):
       ))
       return
 
-    result = {name: V(name, fields[i]) for (name, i) in CINDEX[src].items()}
+    result = {name: V(name, fields[f]) for (name, f) in CINDEX[src].items()}
+    if i in dataProto[src]:
+      result[LANG] = ARAMAIC
 
     if lineFixes:
       for (name, (text, correction, reason)) in lineFixes.items():
@@ -809,24 +850,25 @@ def readData(start=None, end=None):
       match = scrollRe.match(scroll)
       prevX = match.group(1) if match else None
 
+  lDataRaw = {}
   for src in SOURCES:
-    startRep = 'beginning' if start is None else start
-    endRep = 'end' if end is None else end
-    report(f'Reading {src:>6} {startRep}-{endRep} ...', newline=False)
+    report(f'Reading {src:>6} ...', newline=False)
     theseFixes = fixesDecl[src]
     with open(f'{SOURCE_DIR}/dss_{src}.txt') as fh:
       prevX = None
       for (i, line) in enumerate(fh):
-        if start is not None and i < start - 1:
-          continue
-        if end is not None and i > end - 1:
-          break
         lineFixes = theseFixes.get(i + 1, None)
         result = None
         parseLine()
         if doIt:
           dataRaw.setdefault(src, []).append((i, result))
+    lDataRaw[src] = len(dataRaw[src])
     report(f'{len(dataRaw[src]):<6} lines')
+  for src in SOURCES:
+    if lDataProto[src] != lDataRaw[src]:
+      report(f'PROTO {src:<6}: ERROR: different number of lines!')
+      report(f'\tproto: {lDataProto[src]:>6}', only=True)
+      report(f'\traw  : {lDataRaw[src]:>6}', only=True)
   report('', only=True)
 
   if checkSource:
@@ -1328,6 +1370,7 @@ def readMorph():
 def parseMorph():
   posFt = morphDecl['posFt']
   mEsc = morphDecl['escapes']
+  mRepl = morphDecl['aramaicReplace']
 
   def mesc(tag):
     for x in mEsc:
@@ -1422,7 +1465,11 @@ def parseMorph():
 
   for (src, lines) in dataRaw.items():
     for (i, fields) in lines:
+      lang = fields.get(LANG, None)
       morpho = fields[MORPH]
+      if lang == ARAMAIC:
+        morpho = morpho.replace(*mRepl)  # vs code H means something different in Aramaic
+
       tagFound[morpho] += 1
       if morpho in morphParsed:
         parsed = morphParsed[morpho]
@@ -1460,6 +1507,8 @@ def verseNum(text):
 # DIRECTOR
 
 def director(cv):
+  mRepl = morphDecl['aramaicReplace']
+
   report('Compiling feature data from tokens')
 
   prevBook = None
@@ -1554,8 +1603,8 @@ def director(cv):
     glyph = asUni(c, asNum=isNum, asForeign=isForeign)
     glyphe = asRep(c, asNum=isNum, asForeign=isForeign)
     cv.feature(curSlot, glyph=glyph, glyphe=glyphe, glypho=unesc(c), type=typ)
-    if isForeign:
-      cv.feature(curSlot, language=GREEK)
+    if lang:
+      cv.feature(curSlot, language=lang)
     for (name, value) in curBrackets:
       cv.feature(curSlot, **{name: value})
 
@@ -1639,6 +1688,7 @@ def director(cv):
       after = ' ' if fields[BOUND] == B else None
       fullo = fields[TRANS]
       lexo = fields[LEX]
+      lang = fields.get(LANG, None)
       morpho = fields[MORPH]
       script = fields[SCRIPT]
       interlinear = None if biblical else fields[INTERLINEAR]
@@ -1719,9 +1769,6 @@ def director(cv):
         cv.feature(curWord, lexo=lexo, lexe=lexe, lex=lex)
         cv.edge(thisLex, curWord, occ=None)
 
-      if morpho:
-        cv.feature(curWord, morpho=morpho, **morphParsed[morpho])
-
       isNumTrans = glypho and numeralRe.match(glypho)
       isNum = isNumTrans and isNumLex
       isForeign = glypho and lexo == NOLEX and foreignRe.match(glypho)
@@ -1747,7 +1794,14 @@ def director(cv):
             glyphe=asRep(glypho, asNum=isNum, asForeign=isForeign),
         )
       if isForeign:
-        cv.feature(curWord, language=GREEK)
+        lang = GREEK
+      if lang:
+        cv.feature(curWord, language=lang)
+
+      if morpho:
+        morph = morpho.replace(*mRepl) if lang == ARAMAIC else morpho
+        # vs code H means something different in Aramaic
+        cv.feature(curWord, morpho=morpho, **morphParsed[morph])
 
       typ = None
       for c in fullo:
@@ -1840,6 +1894,7 @@ def convert():
   if argValue['morphdecl']:
     return True
 
+  readProto()
   readData()
   parseMorph()
   if argValue['morphonly']:
@@ -1879,9 +1934,14 @@ def loadTf():
   loadableFeatures = allFeatures['nodes'] + allFeatures['edges']
   api = TF.load(loadableFeatures, silent=False)
   if api:
+    F = api.F
     report(f'max node = {api.F.otype.maxNode}')
-    for (word, freq) in api.F.glyph.freqList(nodeTypes={WORD})[0:20]:
+    for (word, freq) in F.glyph.freqList(nodeTypes={WORD})[0:20]:
       report(f'{freq:>6} x {word}')
+    report(f'first {ARAMAIC} word:')
+    aramaicWords = [w for w in F.otype.s(WORD) if F.language.v(w) == ARAMAIC]
+    for w in aramaicWords[0:10]:
+      report(f'{ARAMAIC:} {w:>7} = {F.fullo.v(w)} = {F.full.v(w)}')
   return 0 if api else 1
 
 

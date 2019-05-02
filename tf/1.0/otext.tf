@@ -19,5 +19,5 @@
 @sectionTypes=scroll,fragment,line
 @source=Martin Abegg, personal communication
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-01T20:46:44Z
+@dateWritten=2019-05-02T00:59:42Z
 

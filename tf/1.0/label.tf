@@ -9,7 +9,7 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-01T20:46:32Z
+@dateWritten=2019-05-02T00:59:30Z
 
 1430708	1
 3

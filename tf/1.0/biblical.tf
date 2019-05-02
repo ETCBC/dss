@@ -11,7 +11,7 @@
 @valueType=int
 @values=1 (means: biblical)
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-01T20:46:21Z
+@dateWritten=2019-05-02T00:59:19Z
 
 1432849	1
 1

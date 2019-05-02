@@ -9,7 +9,7 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-01T20:46:33Z
+@dateWritten=2019-05-02T00:59:31Z
 
 1545194	W:
 R>H

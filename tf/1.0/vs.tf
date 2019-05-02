@@ -8,9 +8,9 @@
 @licenseUrl=http://creativecommons.org/licenses/by-nc/4.0/
 @source=Martin Abegg, personal communication
 @valueType=str
-@values=aphel, apoel, haphel, hifil, hishtafel, hithaphel, hithpaal, hithpeel, hithpolel, hitopel, hitpael, hitpalpel, hitpoel, hofal, hophal, hotpaal, hpealal, ishtaphel, ithpaal, ithpeel, ithpoel, nifal, nitpael, pael, palel, passive, peal, peil, piel, pilpel, poal, poel, polal, polel, pual, pulal, qal, shaphel, tifil, unknown
+@values=aphel, apoel, haphel, hifil, hishtafel, hishtaphel, hithaphel, hithpaal, hithpeel, hithpolel, hitopel, hitpael, hitpalpel, hitpoel, hofal, hophal, hotpaal, hpealal, ishtaphel, ithpaal, ithpeel, ithpoel, nifal, nitpael, pael, palel, passive, peal, peil, piel, pilpel, poal, poel, polal, polel, pual, pulal, qal, shaphel, tifil, unknown
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-01T20:46:41Z
+@dateWritten=2019-05-02T00:59:39Z
 
 1623094	qal
 1623100	qal
@@ -29310,7 +29310,7 @@ peal
 1792300	peal
 1792305	hithpeel
 1792309	peal
-1792312	hofal
+1792312	hishtaphel
 1792317	hophal
 1792321	peal
 1792325	peal
@@ -46094,7 +46094,7 @@ ithpeel
 1911639	peal
 1911672	peal
 peal
-1911691	hofal
+1911691	hishtaphel
 1911697	aphel
 1911708	peal
 1911713	peal
@@ -62796,7 +62796,7 @@ peal
 2085301	peal
 2085306	ithpaal
 2085341	peal
-2085348	hofal
+2085348	hishtaphel
 2085371	unknown
 2085382	peal
 2085499	peal

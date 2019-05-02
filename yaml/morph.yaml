@@ -1,6 +1,8 @@
 posFt: sp
 classFt: cl
 
+aramaicReplace: [H, Ḧ] 
+
 escapes:
   - [ii, ï]
   - ['{2}', ç]

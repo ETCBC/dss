@@ -10,7 +10,7 @@
 @valueType=str
 @values=ph=paleohebrew gc=greekcapital
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-01T20:46:37Z
+@dateWritten=2019-05-02T00:59:35Z
 
 1661418	ph
 1664002	ph

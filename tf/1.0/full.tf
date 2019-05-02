@@ -9,7 +9,7 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-01T20:46:22Z
+@dateWritten=2019-05-02T00:59:20Z
 
 1623093	[ ו
 ירא

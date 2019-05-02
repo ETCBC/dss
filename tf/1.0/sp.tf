@@ -10,7 +10,7 @@
 @valueType=str
 @values=adjv, numr, pron, ptcl, subs, suff, unknown, verb
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-01T20:46:37Z
+@dateWritten=2019-05-02T00:59:35Z
 
 1623093	ptcl
 verb
