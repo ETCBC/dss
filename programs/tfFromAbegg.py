@@ -14,6 +14,7 @@ HELP = 'help'
 
 ARGS = {
     HELP: 'print this help',
+    'normwrite': 'write out normalized files',
     'morphdecl': 'only read morphology declaration, nothing else',
     'morphonly': 'only perform morphology checks, do not generate TF',
     'checkonly': 'only perform checks, do not generate TF',
@@ -55,8 +56,9 @@ VERSION_TF = '1.0'
 LOCAL_BASE = os.path.expanduser('~/local')
 GH_BASE = os.path.expanduser('~/github')
 
-PROTO_DIR = f'{LOCAL_BASE}/{REPO}/sanitized'
-SOURCE_DIR = f'{LOCAL_BASE}/{REPO}/prepared/{VERSION_SRC}'
+SOURCE_DIR = f'{LOCAL_BASE}/{REPO}/sanitized'
+NORM_DIR = f'{LOCAL_BASE}/{REPO}/normalized'
+COMPARE_DIR = f'{LOCAL_BASE}/{REPO}/prepared/{VERSION_SRC}'
 
 BASE = f'{GH_BASE}/{ORG}/{REPO}'
 PROG_PATH = f'{BASE}/programs'
@@ -67,6 +69,7 @@ OUT_DIR = f'{TF_PATH}/{VERSION_TF}'
 META_DIR = f'{BASE}/sources/meta'
 SCROLL_TABLE = f'{META_DIR}/mans.txt'
 
+SCROLL_DECL = f'{DECL_PATH}/scroll.yaml'
 FIXES_DECL = f'{DECL_PATH}/fixes.yaml'
 MORPH_DECL = f'{DECL_PATH}/morph.yaml'
 
@@ -113,61 +116,72 @@ NOLEX = '0'
 
 # fields
 
-COLUMNS = {
-    BIB: (
-        BOOK,
-        CHAPTER,
-        VERSE,
-        SCROLL,
-        FRAGMENT,
-        LINE,
-        TRANS,
-        LEX,
-        MORPH,
-        BOUND,
-        SCRIPT,
+iBIBINFO = 'bibinfo'
+iSCROLLINFO = 'scrollinfo'
+iSCROLLNAME = 'scrollname'
+iSCROLLREF = 'scrollref'
+iTRANS = 'trans'
+iANALYSIS = 'analysis'
+iNUM = 'num'
+
+iCOLS = {
+    True: (
+        iBIBINFO,
+        iSCROLLINFO,
+        iTRANS,
+        iANALYSIS,
+        iNUM,
     ),
-    NONBIB: (
-        SCROLL,
-        FRAGMENT,
-        LINE,
-        TRANS,
-        LEX,
-        MORPH,
-        BOUND,
-        INTERLINEAR,
-        SCRIPT,
+    False: (
+        iSCROLLNAME,
+        iSCROLLREF,
+        iTRANS,
+        iANALYSIS,
     ),
 }
 
-CINDEX = {}
-CLEN = {}
+oSRCLN = 'srcln'
+oSCROLL = 'scroll'
+xSCROLL = 'scrollx'
+oFRAGMENT = 'fragment'
+oLINE = 'line'
+oINTER = 'inter'
+oSUB = 'sub'
+oTRANS = 'trans'
+xTRANS = 'transx'
+oBOUND = 'bound'
+oLANG = 'lang'
+oSCRIPT = 'script'
+oLEX = 'lex'
+oMORPH = 'morph'
+oBOOK = 'book'
+oCHAPTER = 'chapter'
+oVERSE = 'verse'
 
-for (src, fields) in COLUMNS.items():
-  for (i, field) in enumerate(fields):
-    CINDEX.setdefault(src, {})[field] = i
-    CLEN[src] = len(CINDEX[src])
+oCOLS = (
+    oSRCLN,
+    oSCROLL,
+    oFRAGMENT,
+    oLINE,
+    oSUB,
+    oINTER,
+    oTRANS,
+    oBOUND,
+    oLEX,
+    oLANG,
+    oSCRIPT,
+    oMORPH,
+    oBOOK,
+    oCHAPTER,
+    oVERSE,
+)
 
 
 # script
 
-PH = 'PH'
-GC = 'F0'
-
-SCRIPT_MAP = {
-    PH: ('ph', 'paleohebrew'),
-    GC: ('gc', 'greekcapital'),
-}
-
-# interlinear
-
-S1 = 's1'
-S2 = 's2'
-
-INTERLINEAR_MAP = {
-    S1: (1, 'first interlinear line'),
-    S2: (2, 'second interlinear line'),
-}
+PH_VAL = 'paleohebrew'
+GC_VAL = 'greekcapital'
+SCRIPT_VALS = (PH_VAL, GC_VAL)
 
 # characters
 
@@ -363,7 +377,6 @@ TOKENS = (
     (MISSING, '--', '░', ' 0 ', EM),
     (UNCERTAIN, '?', None, ' ? ', ' ? '),
     (UNCERTAIN, '\\', None, ' # ', ' # '),
-    (UNCERTAIN, '�', None, ' #? ', ' #? '),
     (ADD, '+', None, ' + ', '+'),
     (TERM, '╱', None, '╱', '╱'),
 )
@@ -510,6 +523,14 @@ nonGlyphRe = re.compile(f'[^{re.escape("".join(GLYPHS_SET))}]+')
 nonGlyphLexRe = re.compile(f'[^{re.escape("".join(GLYPHS_LEX))}]+')
 
 
+# CONFIG READING
+
+def readYaml(fileName):
+  with open(fileName) as y:
+    y = yaml.load(y)
+  return y
+
+
 # MORPHOLOGY
 
 MERR = 'merr'
@@ -611,7 +632,6 @@ featureMeta = {
             'interlinear material,'
             ' the value indicates the sequence number of the interlinear line'
         ),
-        'values': ' '.join(f'{acro}={full}' for (acro, full) in INTERLINEAR_MAP.values())
     },
     'label': {
         'description': 'label of a fragment or chapter or line',
@@ -660,7 +680,7 @@ featureMeta = {
     },
     'script': {
         'description': 'script in which the word is written if it is not Hebrew',
-        'values': ' '.join(f'{acro}={full}' for (acro, full) in SCRIPT_MAP.values())
+        'values': ' '.join(SCRIPT_VALS)
     },
     'srcLn': {
         'description': 'the line number of the word in the source data file',
@@ -682,13 +702,10 @@ featureMeta = {
 
 LIMIT = 10
 
-lDataProto = {}
-dataProto = {}
-dataRaw = {}
-dataToken = {}
+data = []
+
 etcbcFromTrans = {}
 charGroups = {}
-acroFromCode = {}
 morphParsed = {}
 
 morphDecl = {}
@@ -697,6 +714,10 @@ valueDict = {}
 valuesFound = collections.defaultdict(set)
 
 logh = None
+
+diags = {}
+biblical = None
+ln = None
 
 
 def report(msg, newline=True, only=False):
@@ -715,235 +736,243 @@ def progress(msg, newline=True):
   sys.stdout.write(msg)
 
 
-scrollRe = re.compile(r'^([0-9]+)[^0-9]')
-scrollMinRe = re.compile(r'^-([0-9]*)[^0-9]')
+def bib():
+  return 'B' if biblical else 'N'
 
 
-def readBooks():
-  with open(SCROLL_TABLE) as fh:
-    for line in fh:
-      (code, book) = line.rstrip().split('\t')
-      acroFromCode[code] = book
-  report(f'SCROLL acronym mapping: {len(acroFromCode)} names mapped', only=True)
-  report('', only=True)
+def resetDiag():
+  global diags
+  diags = {}
 
 
-def readProto():
-  skipChar = '\u001b'
+def diag(label, rep, status):
+  diags[(label, biblical, ln, rep)] = status
+
+
+def showDiag():
+  n = collections.defaultDict(collections.Counter)
+
+  good = True
+
+  for ((kind, biblical, ln, rep), st) in sorted(diags.items()):
+    n[kind][''] += 1
+    st = None if st is None else bool(st)
+    n[kind][st] += 1
+
+    statusRep = '--' if st is None else 'OK' if st else 'XX'
+    locRep = f'{bib()}:{ln:>6}'
+    report(f'{kind}: {statusRep} {locRep} {rep}', only=True)
+    if st is False:
+      good = False
+  for (kind, r) in n.items():
+    if r[None]:
+      report(f'{kind}: {r[None]} undetected')
+    if r[False]:
+      report(f'{kind}: {r[False]} errors')
+    if r[True] == r['']:
+      report(f'{kind}: all {r[""]} cases ok')
+    report('', only=True)
+  return good
+
+
+def readSource():
+  global biblical
+  global ln
+
+  XC = '\u001b'
+
+  scrollDecl = readYaml(SCROLL_DECL)
+  fixesDecl = readYaml(FIXES_DECL)
+
+  lineFixes = fixesDecl['lineFixes']
+  fieldFixes = fixesDecl['fieldFixes']
+
+  fixL = 'FIX (LINE)'
+  fixF = 'FIX (FIELD)'
+
+  for (biblical, lns) in lineFixes.items():
+    for (ln, (fr, to, expl)) in lns.items():
+      taskRep = f'{fr:>6} => {to:<6} {expl}'
+      diag(fixL, taskRep, None)
+
+  for (biblical, lns) in fieldFixes.items():
+    for (ln, fields) in lns.items():
+      for (field, (fr, to, expl)) in fields.items():
+        taskRep = f'{field:<8} {fr:>6} => {to:<6} {expl}'
+        diag(fixF, taskRep, None)
 
   for src in SOURCES:
     biblical = src == BIB
+    ln = 0
+
     splitChar = '\t' if biblical else ' '
-    report(f'Reading proto {src:>6} ...', newline=False)
-    i = 0
-    j = 0
-    with open(f'{PROTO_DIR}/dss_{src}.txt') as fh:
+    nCols = iCOLS[biblical]
+    nCol = len(nCols)
+    lineFix = lineFixes[biblical]
+    fieldFix = fieldFixes[biblical]
+
+    report(f'Reading proto {bib()} ...', newline=False)
+    theseData = []
+    prevWord = None
+    prevLine = None
+    subNum = None
+    xLine = None
+    interlinear = None
+    script = None
+
+    scrollso = set()
+    scrollsx = set()
+
+    # fl fy: paleo
+    # f0 fy: greek
+
+    with open(f'{SOURCE_DIR}/dss_{src}.txt') as fh:
       for line in fh:
-        if line.startswith('>') or skipChar in line:
+        ln += 1
+        if XC in line:
+          xLine = line
+          if '(a)' in xLine:
+            interlinear = 1
+          elif '(b)' in xLine:
+            interlinear = 2
+          elif xLine.startswith(f'{XC}r'):
+            interlinear = None
+
+          if '(fl)' in xLine:
+            script = PH_VAL
+          elif '(f0)' in xLine:
+            script = GC_VAL
+          elif '(fy)' in xLine:
+            script = None
+
           continue
         line = line.rstrip('\n')
-        fields = line.split(splitChar)
-        if not biblical:
-          if len(fields) == 3:
-            text = fields[2]
-            if text.startswith(']') and text.endswith('['):
-              if text[1:-1].isdigit():
-                continue
-        j += 1
-        aramaic = len(fields) > 3 and '%' in fields[3]
-        if aramaic:
-          dataProto.setdefault(src, set()).add(i)
-        i += 1
-    lDataProto[src] = j
-    report(f'{lDataProto[src]:<6} lines')
-  report('', only=True)
-  nA = sum(len(x) for x in dataProto.values())
-  report(f'ARAMAIC: {nA} word occurrences')
-  for (src, occs) in sorted(dataProto.items()):
-    report(f'\t{src:<6}: {len(occs)} x', only=True)
 
-
-def readData():
-  diags = []
-  fixes = {}
-  foreignFixes = {}
-  subNumbers = {}
-  subLabel = None
-  doIt = True
-
-  fixesDecl = readYaml(FIXES_DECL)
-
-  def V(name, x):
-    if name == SCROLL:
-      return acroFromCode.get(x, x)
-    return '' if x == NOFIELD else x
-
-  def parseLine():
-    nonlocal prevX
-    nonlocal result
-    nonlocal subLabel
-    nonlocal doIt
-
-    fields = line.strip().split('\t')
-    if len(fields) != CLEN[src]:
-      diags.append((
-          src, i, f'ERROR: wrong number of columns: {len(fields)} instead of {CLEN[src]}'
-      ))
-      return
-
-    result = {name: V(name, fields[f]) for (name, f) in CINDEX[src].items()}
-    if i in dataProto[src]:
-      result[LANG] = ARAMAIC
-
-    if lineFixes:
-      for (name, (text, correction, reason)) in lineFixes.items():
-        fixed = False
-        value = result[name]
-        if value == text:
-          fixed = True
-          result[name] = correction
-        else:
-          fixed = text
-        fixes.\
-            setdefault(src, {}).\
-            setdefault(i + 1, {})[name] = (text, correction, reason, fixed)
-
-    for (t, tx) in FOREIGNS_ESC.items():
-      text = result[TRANS]
-      if t in text:
-        newText = text.replace(t, tx)
-        result[TRANS] = newText
-        foreignFixes.\
-            setdefault((t, tx), {}).\
-            setdefault((text, newText), []).\
-            append((src, i + 1))
-
-    doIt = True
-    text = result[TRANS]
-    if result[LINE] != '0':
-      subLabel = None
-    else:
-      if text.startswith(']') and text.endswith('['):
-        num = text[1:-1]
-        if len(num) > 1:
-          num = num[::-1]
-        subLabel = num
-        doIt = False
-        subNumbers.\
-            setdefault(num, {}).\
-            setdefault(src, []).\
-            append(i + 1)
-      if subLabel is not None:
-        result[LINE] = f'0.{subLabel}'
-
-    scroll = result[SCROLL]
-    match = scrollMinRe.match(scroll)
-    if match:
-      if prevX is None:
-        diags.append((src, i, f'SCROLL WARNING {scroll:<10} => ?? (NO PREVIOUS EXAMPLE'))
-      else:
-        snumber = match.group(1)
-        newScroll = (prevX[0] if len(snumber) else prevX) + scroll[1:]
-        result[SCROLL] = newScroll
-        diags.append((src, i, f'SCROLL {scroll:<10} => {newScroll}'))
-    else:
-      match = scrollRe.match(scroll)
-      prevX = match.group(1) if match else None
-
-  lDataRaw = {}
-  for src in SOURCES:
-    report(f'Reading {src:>6} ...', newline=False)
-    theseFixes = fixesDecl[src]
-    with open(f'{SOURCE_DIR}/dss_{src}.txt') as fh:
-      prevX = None
-      for (i, line) in enumerate(fh):
-        lineFixes = theseFixes.get(i + 1, None)
-        result = None
-        parseLine()
-        if doIt:
-          dataRaw.setdefault(src, []).append((i, result))
-    lDataRaw[src] = len(dataRaw[src])
-    report(f'{len(dataRaw[src]):<6} lines')
-  for src in SOURCES:
-    if lDataProto[src] != lDataRaw[src]:
-      report(f'PROTO {src:<6}: ERROR: different number of lines!')
-      report(f'\tproto: {lDataProto[src]:>6}', only=True)
-      report(f'\traw  : {lDataRaw[src]:>6}', only=True)
-  report('', only=True)
-
-  if checkSource:
-    nDeclared = sum(sum(len(x) for x in srcs.values()) for srcs in fixesDecl.values())
-    report(f'FIXES: DECLARED', only=True)
-    nApplied = 0
-    for (src, lines) in sorted(fixesDecl.items()):
-      for (line, corrections) in sorted(lines.items()):
-        for (name, correction) in sorted(corrections.items()):
-          seen = src in fixes and line in fixes[src] and name in fixes[src][line]
-          if seen:
-            (text, correction, reason, applied) = fixes[src][line][name]
+        if ln in lineFix:
+          (fr, to, rep) = lineFix[ln]
+          if fr in line:
+            line = line.replace(fr, to)
+            diag(fixL, rep, True)
           else:
-            (text, correction, reason) = fixesDecl[src][line][name]
-            applied = None
-          if applied is True:
-            nApplied += 1
-          statusRep = (
-              'incorrect location'
-              if applied is None else
-              'applied'
-              if applied is True else
-              f'not applicable to "{applied}'
-          )
-          fixRep = f'{src:<6}:{line:>6} "{text:>10}" => "{correction:<10}" {reason}'
-          report(f'\t{statusRep}: {fixRep}', only=True)
-    statusRep = (
-        f'all {nDeclared} applied'
-        if nDeclared == nApplied else
-        f'ERROR: {nDeclared - nApplied} not applied'
-    )
-    report(f'FIXES: {nDeclared} declared: {statusRep}')
-    report('', only=True)
+            diags(fixL, rep, False)
 
-    report(f'FIXES: SUBNUMBERS', only=True)
-    nOccs = 0
-    for (num, srcs) in sorted(subNumbers.items()):
-      report(f'{num} ({sum(len(x) for x in srcs.values())} x)', only=True)
-      for (src, lines) in srcs.items():
-        nOccs += len(lines)
-        linesRep = ' '.join(str(i + 1) for i in lines[0:LIMIT])
-        report(f'\t{src:<6} {len(lines)} x: {linesRep}', only=True)
-    report(f"FIXES: SUBNUMBERS {len(subNumbers)} in {nOccs} occurrences")
-    report('', only=True)
+        fields = line.split(splitChar)
+        nFields = len(fields)
+        if nFields > nCol:
+          diag('FIELDS', 'too many: {nFields}', False)
+          continue
+        elif nFields < nCol:
+          fields += [None] * (nCol - nFields)
+        iData = {f: c for (f, c) in zip(nCols, fields)}
 
-    report(f'FIXES: FOREIGNS', only=True)
-    totalRules = len(foreignFixes)
-    totalCases = 0
-    totalOccs = 0
-    for ((t, tx), cases) in sorted(foreignFixes.items()):
-      nCases = len(cases)
-      totalCases += nCases
-      report(f'\t{t} => {tx} ({nCases} distinct cases)', only=True)
-      for ((fr, to), occs) in cases.items():
-        nOccs = len(occs)
-        totalOccs += nOccs
-        report(f'\t\t{fr} => {to} ({nOccs} occurrences)', only=True)
-        for (src, i) in occs:
-          report(f'\t\t\t{src:<6}:{i}', only=True)
-    report(f'FIXES: FOREIGNS {totalRules} rules; {totalCases} cases; {totalOccs} occurrences')
-    report('', only=True)
+        if ln in fieldFix:
+          for (field, (fr, to, rep)) in fieldFix[ln].items():
+            iVal = iData[field]
+            if iVal == fr:
+              iData[field] = to
+              diag(fixF, rep, True)
+            else:
+              diag(fixF, rep, False)
 
-    report(f'FIXES: SCROLLS: {len(diags)} scroll name completions')
-    for (src, i, diag) in diags:
-      report(f'{src:<6}:{i:>6} \t{diag}', only=True)
-    report('', only=True)
+        oData = collections.defaultdict(lambda: '')
+        oData[oSRCLN] = ln
+        trans = iData[iTRANS]
+        if biblical:
+          (scroll, rest) = iData[iSCROLLINFO].split(' ')
+          (fragment, line) = rest.split(':')
+          oData[oFRAGMENT] = fragment
+          oData[oLINE] = line
+          (book, rest) = iData[iBIBINFO].split(' ', 1)
+          (chapter, verse) = rest.split(':', 1)
+          oData[oBOOK] = book
+          oData[oCHAPTER] = chapter
+          oData[oVERSE] = verse
+          word = iData[iNUM]
+          if '.' in word:
+            oData[oBOUND] = '&'
+        else:
+          if line.startswith('>'):
+            line = line[1:]
+            scroll = iData[iSCROLLNAME]
+            (fragment, line) = iData[iSCROLLREF].split(':', 1)
+            if line != prevLine:
+              interlinear = None
+            prevLine = line
+            continue
+          if trans.startswith(']') and trans.endswith('['):
+            text = trans[1:-1]
+            if text.isdigit():
+              subNum = text[::-1]
+              continue
+
+          (fragment, rest) = iData[iSCROLLREF].split(':', 1)
+          (line, word) = rest.split(',', 1)
+          if line != prevLine:
+            interlinear = None
+          oData[oFRAGMENT] = fragment
+          oData[oLINE] = line
+          if line == '0':
+            if subNum:
+              oData[oSUB] = subNum
+          (word, sub) = word.split('.', 1)
+          if word == prevWord:
+            theseData[-1][oBOUND] = '&'
+          prevWord = word
+
+        scrollx = scrollDecl.get(scroll, x)
+        scrollso.add(scroll)
+        scrollsx.add(scrollx)
+        oData[oSCROLL] = scroll
+        oData[xSCROLL] = scrollDecl.get(scroll, x)
+
+        if interlinear:
+          oData[oINTER] = interlinear
+        if script:
+          oData[oSCRIPT] = script
+
+        analysis = iData[iANALYSIS] or ''
+        (lang, lex, morph) = (None, None, None)
+        if '%' in analysis:
+          lang = ARAMAIC
+          (lex, morph) = analysis.split('%', 1)
+        elif '@' in analysis:
+          (lex, morph) = analysis.split('@', 1)
+        oData[oTRANS] = trans
+        oData[oLANG] = lang
+        oData[oLEX] = lex
+        oData[oMORPH] = morph
+
+        prevLine = line
+
+        theseData.append(oData)
+    report(f'{len(theseData):<6} lines out of {ln:<6} source lines')
+    data.extend(theseData)
+  report('', only=True)
+  report(f'DATANORM: {len(data)} lines')
+  report(f'SCROLLS: {len(scrollso):>4} names (original)')
+  report(f'SCROLLS: {len(scrollsx):>4} names (after renaming some')
+
+
+def writeProto():
+  if not os.path.exists(NORM_DIR):
+    os.makedirs(NORM_DIR, exist_ok=True)
+  with open(f'{NORM_DIR}/dss.tsv', 'w') as fh:
+    for fields in data:
+      line = '\t'.join(str(fields[col]) for col in oCOLS)
+      fh.write(f'{line}\n')
 
 
 def tokenizeData():
+  global biblical
+  global ln
 
-  nonBreakingRe = re.compile(f'{NB}+')
+  prevS = None
 
-  def esc(text):
-    nonlocal prevS
+  for fields in data:
+    text = fields[oTRANS]
 
+    for (t, tx) in FOREIGNS_ESC.items():
+      text = text.replace(t, tx)
     for (t, tx) in TOKENS_FIX:
       if text == t:
         text = tx
@@ -962,62 +991,18 @@ def tokenizeData():
         text = text.replace(b, r)
     for x in BRACKETS_ESCPURE:
       text = text.replace(x[3], x[5]).replace(x[4], x[6])
-    return text
 
-  def V(name, x):
-    if name == TRANS or name == LEX:
-      x = nonBreakingRe.sub(NB, x)
-    if name == TRANS:
-      xEsc = esc(x)
-      return xEsc
-    return x
-
-  def parseLine():
-    nonlocal result
-    result = {name: V(name, value) for (name, value) in fields.items()}
-
-  for (src, lines) in dataRaw.items():
-    report(f'Tokenizing {src:>6} ...', newline=False)
-    prevS = None
-    for (i, fields) in lines:
-      result = None
-      parseLine()
-      dataToken.setdefault(src, []).append((i, result))
-    report(f'{len(dataToken[src]):<6} entries')
-  report('', only=True)
-
-
-def checkBooks():
-  scrollsFound = set()
-
-  for (src, lines) in dataRaw.items():
-    for (i, fields) in lines:
-      book = fields[SCROLL]
-      scrollsFound.add(book)
-
-  report(f'SCROLLS: {len(scrollsFound)} ACRONYMS in the data')
-  for book in sorted(scrollsFound):
-    report(f'\t{book}', only=True)
-  report('', only=True)
+    fields[xTRANS] = text
 
 
 def checkChars():
+  global biblical
+  global ln
+
   charsFound = collections.Counter()
-  scriptFound = collections.Counter()
-  scriptError = {}
-  interlinearFound = collections.Counter()
-  interlinearError = {}
   charsMapped = set()
-  charsUnmapped = {}
-  exampleLimit = 3
   charsLetter = {}
-  numerals = collections.Counter()
-  numeralCand = {}
-  numeralLexTF = {}
-  numeralLexFT = {}
-  foreign = {}
   lastOfLine = collections.Counter()
-  slashInner = {}
   nLines = 0
 
   def showChars():
@@ -1040,300 +1025,154 @@ def checkChars():
         report(f'\t\t{label:<5} {c} {freq:>6} x', only=True)
     report('', only=True)
 
-  def showNumerals():
-    report(f'NUMERALS: {len(numerals)} distinct numerals in {sum(numerals.values())} occurrences')
-    report(f'\t{"LEX":>7} = {"WORD":<17} (freq x)', only=True)
-    for ((word, lex), freq) in sorted(numerals.items()):
-      lexRep = f'"{lex}"'
-      wordRep = f'"{word}"'
-      report(f'\t{lexRep:>7} = {wordRep:<17} : {freq:>5} x', only=True)
-    report('', only=True)
-
-    for (dest, msg) in (
-        (numeralCand, f'NUMERALS: {len(numeralCand)} unrecognized potential numerals'),
-        (numeralLexTF, f'NUMERALS: TRANS-yes LEX-no:  {len(numeralLexTF):>2} conflicts'),
-        (numeralLexFT, f'NUMERALS: TRANS-no  LEX-yes: {len(numeralLexFT):>2} conflicts'),
-    ):
-      report(msg, only=not len(dest))
-      if len(dest):
-        report(f'\t{"LEX":>7} = {"WORD":<15} (freq x)', only=True)
-      for ((word, lex), srcs) in sorted(dest.items()):
-        nF = sum(len(x) for x in srcs.values())
-        lexRep = f'"{lex}"'
-        wordRep = f'"{word}"'
-        report(f'\t{lexRep:>7} = {wordRep:<17} ({nF} x)', only=True)
-        for (src, lines) in srcs.items():
-          report(f'\t{"":>7}{src} ({len(lines)} x)', only=True)
-          for (i, scroll, fragment, line) in lines[0:10]:
-            report(f'\t{"":>7}\t{i + 1:>6} in {scroll} {fragment}:{line} "{word}"', only=True)
-      report('', only=True)
-
-  def showForeign():
-    nForeign = sum(sum(len(x) for x in srcs.values()) for srcs in foreign.values())
-    report(f'FOREIGNS: {len(foreign)} distinct words in {nForeign} occurrences')
-    for (word, srcs) in sorted(foreign.items()):
-      nF = sum(len(x) for x in srcs.values())
-      report(f'\t"{word}": {nF} occurrences', only=True)
-      for (src, lines) in srcs.items():
-        report(f'\t\t{src} ({len(lines)} x)', only=True)
-        for (i, scroll, fragment, line) in lines[0:10]:
-          report(f'\t\t\t{i + 1:>6} in {scroll} {fragment}:{line} "{word}"', only=True)
-    report('', only=True)
-
-  def showScript():
-    nF = sum(scriptFound.values())
-    nE = sum(len(x) for x in scriptError.values())
-    report(f'SCRIPT: {len(scriptFound)} scripts in {nF} occurrences')
-    for (script, amount) in sorted(scriptFound.items()):
-      report(f'\t{amount:>4}x {script:<3} = {SCRIPT_MAP[script][1]:<12}', only=True)
-    if scriptError:
-      report(f'SCRIPT: {len(scriptError)} unrecognized scripts in {nE} occurrences')
-      for (script, occs) in sorted(scriptError.items()):
-        report(f'\t"{script}": {len(occs)} occurrences', only=True)
-        for (src, i) in occs:
-          report(f'\t\t{src}:{i + 1:>6}', only=True)
-    report('', only=True)
-
-  def showInterlinear():
-    nF = sum(interlinearFound.values())
-    nE = sum(len(x) for x in interlinearError.values())
-    report(f'INTERLINEAR: {len(interlinearFound)} interlinears in {nF} occurrences')
-    for (interlinear, amount) in sorted(interlinearFound.items()):
-      report(f'\t{amount:>4}x {interlinear:<3} = {INTERLINEAR_MAP[interlinear][1]:>3}', only=True)
-    if interlinearError:
-      report(f'INTERLINEAR: {len(interlinearError)} unrecognized interlinears in {nE} occurrences')
-      for (interlinear, occs) in sorted(interlinearError.items()):
-        report(f'\t"{interlinear}": {len(occs)} occurrences', only=True)
-        for (src, i) in occs:
-          report(f'\t\t{src}:{i + 1:>6}', only=True)
-    report('', only=True)
-
-  def showLastOfLine():
-    report(f'LINES: {nLines} lines')
-    nInner = sum(len(x) for x in slashInner.values())
-    report(f'\tNumber of times word "/" does not end a line: {nInner}', only=True)
-    for (src, lines) in slashInner.items():
-      for (i, scroll, fragment, line) in lines[0:10]:
-        report(f'\t\t{src:<6} : {i:>6} in {scroll} {fragment}:{line}', only=True)
-    report('', only=True)
-
-    report(f'\tNumber of ways to end a line: {len(lastOfLine)} ways to end a line', only=True)
-    for (word, amount) in sorted(lastOfLine.items(), key=lambda x: (-x[1], x[0]))[0:20]:
-      report(f'\t\t{word:<10} {amount:>6} x', only=True)
-    report('', only=True)
-
   prevTrans = None
   prevLine = None
   prevFragment = None
   prevScroll = None
 
-  for src in dataRaw:
-    biblical = src == BIB
-    for (i, fields) in dataRaw[src]:
-      word = fields[TRANS]
-      lex = fields[LEX]
-      script = fields[SCRIPT]
-      interlinear = None if biblical else fields[INTERLINEAR]
-      thisLine = fields[LINE]
-      thisFragment = fields[FRAGMENT]
-      thisScroll = fields[SCROLL]
-      if (prevScroll, prevFragment, prevLine) != (thisScroll, thisFragment, thisLine):
-        nLines += 1
-        if prevTrans is not None:
-          lastOfLine[prevTrans] += 1
-      else:
-        if prevTrans == '/':
-          slashInner.setdefault(src, []).append((i, prevScroll, prevFragment, prevLine))
+  for fields in data:
+    biblical = oBOOK in fields
+    ln = fields[oSRCLN]
 
-      if script:
-        scriptFound[script] += 1
-        if script not in SCRIPT_MAP:
-          scriptError.setdefault(script, []).append((src, i))
-      if interlinear:
-        interlinearFound[interlinear] += 1
-        if interlinear not in INTERLINEAR_MAP:
-          interlinearError.setdefault(interlinear, []).append((src, i))
+    word = fields[xTRANS]
+    lex = fields[oLEX]
+    script = fields[oSCRIPT]
+    thisLine = fields[oLINE]
+    thisFragment = fields[oFRAGMENT]
+    thisScroll = fields[xSCROLL]
 
-      lexBare = lexDisXRe.sub('', lex)
-      lexPure = nonGlyphLexRe.sub('', lexBare)
-      isNumLex = lexPure and lexPure != '0' and digitRe.match(lexPure)
-      if isNumLex:
-        lex = lex[::-1]
-        lexPure = lexPure[::-1]
+    if (prevScroll, prevFragment, prevLine) != (thisScroll, thisFragment, thisLine):
+      nLines += 1
+      if prevTrans is not None:
+        lastOfLine[prevTrans] += 1
+    else:
+      if prevTrans == '/':
+        diag('CHAR', 'inner /', True)
 
-      wordPure = nonGlyphRe.sub('', word)
-      isNumTrans = wordPure and numeralRe.match(wordPure)
-      isAmbi = wordPure and ambiRe.match(wordPure)
+    if script:
+      diag('SCRIPT', script, script in SCRIPT_VALS)
 
-      isNumCand = capitalNumRe.match(wordPure)
+    lexBare = lexDisXRe.sub('', lex)
+    lexPure = nonGlyphLexRe.sub('', lexBare)
+    isNumLex = lexPure and lexPure != '0' and digitRe.match(lexPure)
+    if isNumLex:
+      lex = lex[::-1]
+      lexPure = lexPure[::-1]
 
-      if isNumCand and not isNumTrans and (isNumLex or not lexPure):
-        numeralCand.\
-            setdefault((wordPure, lexPure), {}).\
-            setdefault(src, []).\
-            append((i, thisScroll, thisFragment, thisLine))
+    wordPure = nonGlyphRe.sub('', word)
+    isNumTrans = wordPure and numeralRe.match(wordPure)
+    isAmbi = wordPure and ambiRe.match(wordPure)
 
-      if isNumTrans and isNumLex:
-        numerals[(wordPure, lexPure)] += 1
+    isNumCand = capitalNumRe.match(wordPure)
 
-      if not isAmbi:
-        dest = (
-            numeralLexTF
-            if isNumTrans and not isNumLex else
-            numeralLexFT
-            if not isNumTrans and isNumLex else
-            None
-        )
-        if dest is not None:
-          dest.\
-              setdefault((wordPure, lexPure), {}).\
-              setdefault(src, []).\
-              append((i, thisScroll, thisFragment, thisLine))
+    if isNumCand and not isNumTrans and (isNumLex or not lexPure):
+      diag('NUMERAL', f'candidate "{wordPure}"', None)
 
-      isForeign = wordPure and lex == NOLEX and foreignRe.match(wordPure)
-      if isForeign:
-        foreign.\
-            setdefault(wordPure, {}).\
-            setdefault(src, []).\
-            append((i, thisScroll, thisFragment, thisLine))
+    if isNumTrans and isNumLex:
+      diag('NUMERAL', f'found "{wordPure}"', True)
 
-      digital = DIGITS_SET
+    if not isAmbi:
+      label = (
+          'trans:yes lex:no'
+          if isNumTrans and not isNumLex else
+          'trans:no lex:yes'
+          if not isNumTrans and isNumLex else
+          None
+      )
+      if label is not None:
+        diag('NUMERAL', f'{label} trans="{wordPure}" lex="{lexPure}"', False)
 
-      for (name, legal, text) in (
-          (TRANS, CHARS | FOREIGNS_SET, word),
-          (LEX, CHARS_LEX, lexBare),
-      ):
-        for c in text:
-          charsFound[c] += 1
-          if (
-              c in legal
-              or
-              (c in digital and name == LEX and isNumLex)
-          ):
-            charsMapped.add(c)
-          else:
-            if c in charsUnmapped:
-              if len(charsUnmapped[c]) < exampleLimit:
-                charsUnmapped[c].append((src, i, fields))
-            else:
-              charsUnmapped[c] = [(src, i, fields)]
-          charsLetter.setdefault(name, collections.Counter())[c] += 1
-      prevLine = thisLine
-      prevFragment = thisFragment
-      prevScroll = thisScroll
-      prevTrans = word
+    isForeign = wordPure and lex == NOLEX and foreignRe.match(wordPure)
+    if isForeign:
+      diag('FOREIGN', wordPure, True)
+
+    digital = DIGITS_SET
+
+    for (name, legal, text) in (
+        (TRANS, CHARS | FOREIGNS_SET, word),
+        (LEX, CHARS_LEX, lexBare),
+    ):
+      for c in text:
+        charsFound[c] += 1
+        if (
+            c in legal
+            or
+            (c in digital and name == LEX and isNumLex)
+        ):
+          charsMapped.add(c)
+        else:
+          diag('CHAR', f'unmapped "{c}" = {ord(c)}', False)
+        charsLetter.setdefault(name, collections.Counter())[c] += 1
+
+    prevLine = thisLine
+    prevFragment = thisFragment
+    prevScroll = thisScroll
+    prevTrans = word
 
   unused = (CHARS | CHARS_LEX) - charsMapped - TOKENS_FIXED
   if unused:
     unusedStr = ''.join(sorted(unused))
     report(f'CHARACTERS: WARNING: UNUSED: {unusedStr} ({len(unused)} chars)')
-  totalUnmapped = 0
-  if charsUnmapped:
-    unmappedStr = ''.join(sorted(charsUnmapped))
-    for (c, examples) in sorted(charsUnmapped.items()):
-      freq = charsFound[c]
-      totalUnmapped += freq
-      report(f'{c:<6} occurs {freq:>6} x', only=True)
-      for (src, i, fields) in examples:
-        report(f'\t{src}:{i + 1} trans="{unesc(fields[TRANS])}" lex="{fields[LEX]}"', only=True)
-      report('', only=True)
-    report(
-        f'CHARACTERS: WARNING: UNMAPPED:'
-        f' {unmappedStr} ({len(charsUnmapped)} distinct chars in {totalUnmapped} occurrences)'
-    )
-    report('', only=True)
-  showScript()
-  showInterlinear()
+
+  report(
+      f'\tNumber of ways to end a line: {len(lastOfLine)} ways to end a line',
+      only=True
+  )
+  for (word, amount) in sorted(lastOfLine.items(), key=lambda x: (-x[1], x[0]))[0:20]:
+    report(f'\t\t{word:<10} {amount:>6} x', only=True)
+  report('', only=True)
+
   showChars()
-  showNumerals()
-  showForeign()
-  showLastOfLine()
 
 
 def checkBracketPair(b, e):
-  limitErrors = 10
-  limitContext = 5
+  global biblical
+  global ln
 
   (bOrig, eOrig) = (bunesc(b), bunesc(e))
   report(f'BRACKETS {bOrig} {eOrig} ...', only=True)
 
   last = None
-  errors = {}
   nOccs = collections.Counter()
 
-  for (src, lines) in dataToken.items():
-    last = None
-    for (i, fields) in lines:
-      nLines = len(lines)
-      word = fields[TRANS]
-      for c in word:
-        isB = c == b
-        isE = c == e
-        if (
-            isB and last == b
-            or
-            isE and (last == e or last is None)
-        ):
-            errors.setdefault(src, []).append((i, c))
-        if isB or isE:
-          nOccs[src] += 1
-          last = c
+  def closeBracket():
     if last is not None and last != e:
-      errors.setdefault(src, []).append((i + 1, f'last={last}'))
+      diag('BRACKET', f'{bOrig}{eOrig} not closed after last {last}')
 
-  for (src, lines) in dataToken.items():
-    nLines = len(lines)
-    theseErrors = errors.get(src, [])
-    nErrors = len(theseErrors)
-    if nErrors:
-      report(f'\t{src:>6}:          {nOccs[src]} occurrences', only=True)
-      report(f'\t{src:>6}: WARNING: {nErrors} imbalances', only=True)
-      for (i, c) in theseErrors[0:limitErrors]:
-        start = max((0, i - limitContext))
-        end = min((nLines, i + limitContext + 1))
-        report('', only=True)
-        for (j, fields) in lines:
-          if start <= j < end:
-            trans = fields[TRANS]
-            prefix = '==>' if i == j else '   '
-            report(f'\t\t{src:>6}:{j + 1:>6} {bunesc(c):>6} {prefix} {unesc(trans)}', only=True)
-      msg = f'... and {nErrors -limitErrors} more' if nErrors > limitErrors else ''
-      report(f'\t\t{msg}', only=True)
-    else:
-      report(f'\t{src:>6}: OK       {nOccs[src]} balanced occurrences', only=True)
-    report('', only=True)
+  biblical = None
 
-  totalErrs = sum(len(x) for x in errors.values())
-  totalOccs = sum(x for x in nOccs.values())
+  for fields in data:
+    prevBiblical = biblical
+    biblical = oBOOK in fields
+    if prevBiblical is not None and prevBiblical != biblical:
+      last = None
+      closeBracket()
 
-  report(f'\tIMBALANCES:  {totalErrs}', only=True)
-  report(f'\tOCCURRENCES: {totalOccs}', only=True)
+    ln = fields[oSRCLN]
+
+    word = fields[xTRANS]
+    for c in word:
+      isB = c == b
+      isE = c == e
+      if isB and last == b:
+        diag('BRACKET', f'extra {bOrig}')
+      if isE and (last == e or last is None):
+        diag('BRACKET', f'extra {eOrig}')
+      if isB or isE:
+        nOccs[biblical] += 1
+        last = c
+
+  closeBracket()
   report('', only=True)
-
-  return (totalErrs, totalOccs)
 
 
 def checkBrackets():
-  totalErrs = 0
-  totalOccs = 0
   for (name, value, kind, b, e, bEsc, eEsc, *x) in BRACKETS:
     if bEsc is None:
       bEsc = b
     if eEsc is None:
       eEsc = e
-    (errs, occs) = checkBracketPair(bEsc, eEsc)
-    totalErrs += errs
-    totalOccs += occs
-
-  status = f'ERROR: {totalErrs} imbalances' if totalErrs else 'all balanced'
-  report(f'BRACKETS: {status} ({totalOccs} bracket occurrences)')
-  report('', only=True)
-
-
-def readYaml(fileName):
-  with open(fileName) as y:
-    data = yaml.load(y)
-  return data
+    checkBracketPair(bEsc, eEsc)
 
 
 def readMorph():
@@ -1368,6 +1207,9 @@ def readMorph():
 
 
 def parseMorph():
+  global biblical
+  global ln
+
   posFt = morphDecl['posFt']
   mEsc = morphDecl['escapes']
   mRepl = morphDecl['aramaicReplace']
@@ -1426,17 +1268,6 @@ def parseMorph():
         tag = tag[1:]
     return parsed
 
-  if debug:
-    src = 'xxx'
-    i = 0
-    tag = None
-    while tag is None or tag:
-      tago = input('tag [ENTER to stop]> ')
-      tag = mesc(tago)
-      tagRep = tago if tago == tag else f'{tago} => {tag}'
-      print(f'{tagRep} => {parseTag(tag)}')
-    return
-
   tagFound = collections.Counter()
   tagError = collections.Counter()
   tagGood = collections.Counter()
@@ -1463,19 +1294,32 @@ def parseMorph():
       report(f'\t{tagRep:<18} {amount:>5} x {parsed}', only=True)
     report('', only=True)
 
-  for (src, lines) in dataRaw.items():
-    for (i, fields) in lines:
-      lang = fields.get(LANG, None)
-      morpho = fields[MORPH]
-      if lang == ARAMAIC:
-        morpho = morpho.replace(*mRepl)  # vs code H means something different in Aramaic
+  for fields in data:
+    biblical = oBOOK in fields
+    ln = fields[oSRCLN]
 
-      tagFound[morpho] += 1
-      if morpho in morphParsed:
-        parsed = morphParsed[morpho]
-      else:
-        parsed = parseTag(morpho)
-        morphParsed[morpho] = parsed
+    lang = fields[oLANG]
+    morpho = fields[MORPH]
+    if lang == ARAMAIC:
+      morpho = morpho.replace(*mRepl)  # vs code H means something different in Aramaic
+
+    tagFound[morpho] += 1
+    if morpho in morphParsed:
+      parsed = morphParsed[morpho]
+    else:
+      parsed = parseTag(morpho)
+      morphParsed[morpho] = parsed
+
+  if debug:
+    biblical = None
+    ln = 0
+    tag = None
+    while tag is None or tag:
+      tago = input('tag [ENTER to stop]> ')
+      tag = mesc(tago)
+      tagRep = tago if tago == tag else f'{tago} => {tag}'
+      print(f'{tagRep} => {parseTag(tag)}')
+    return
 
   for (tag, amount) in tagFound.items():
     parsed = morphParsed[tag]
@@ -1507,6 +1351,9 @@ def verseNum(text):
 # DIRECTOR
 
 def director(cv):
+  global biblical
+  global ln
+
   mRepl = morphDecl['aramaicReplace']
 
   report('Compiling feature data from tokens')
@@ -1538,20 +1385,6 @@ def director(cv):
 
   errors = {}
 
-  def error(kind, instance):
-    errors.setdefault(kind, []).append((src, i, instance))
-
-  def showErrors():
-    progress('')
-    if not errors:
-      report('NO ERRORS')
-    else:
-      for (kind, instances) in sorted(errors.items()):
-        report(f'ERROR: {kind} ({len(instances)} x)')
-        for (e, (src, i, instance)) in enumerate(instances):
-          report(f'\t{src:<6} : {i + 1:>6} = {instance}', only=e >= LIMIT)
-      report('END OF ERRORS')
-
   def asUni(text, asNum=False, asForeign=False):
     result = ''
     try:
@@ -1563,7 +1396,7 @@ def director(cv):
           ''.join(CHARS_UNI[c] for c in text)
       )
     except KeyError:
-      error('unknown character uni', text)
+      diag('unknown character uni', text, False)
     return result
 
   def asRep(text, asNum=False, asForeign=False):
@@ -1577,7 +1410,7 @@ def director(cv):
           ''.join(CHARS_REP[c] for c in text)
       )
     except KeyError:
-      error('unknown character rep', text)
+      diag('unknown character rep', False)
     return result
 
   def morphMeta():
@@ -1616,249 +1449,7 @@ def director(cv):
   k = 0
   j = 0
 
-  for (src, lines) in dataToken.items():
-    curSlot = None
-    biblical = src == BIB
-    for (i, fields) in lines:
-      if j == chunk:
-        j = 0
-        progress(f'{src:<6}:{k:>6} lines', newline=False)
-      j += 1
-      k += 1
-      thisScroll = fields[SCROLL]
-      thisFragment = fields[FRAGMENT]
-      thisLine = fields[LINE]
-      changeScroll = thisScroll != prevScroll
-      changeFragment = thisFragment != prevFragment
-      changeLine = thisLine != prevLine
-      if changeLine or changeFragment or changeScroll:
-        cv.terminate(curLine)
-      if changeFragment or changeScroll:
-        cv.terminate(curFragment)
-      if changeScroll:
-        cv.terminate(curScroll)
-        nScroll += 1
-        curScroll = cv.node(SCROLL)
-        cv.feature(curScroll, acro=thisScroll)
-        if biblical:
-          cv.feature(curScroll, biblical=1)
-      if changeFragment or changeScroll:
-        curFragment = cv.node(FRAGMENT)
-        cv.feature(curFragment, label=thisFragment)
-        if biblical:
-          cv.feature(curFragment, biblical=1)
-      if changeLine or changeFragment or changeScroll:
-        curLine = cv.node(LINE)
-        cv.feature(curLine, label=thisLine)
-        if biblical:
-          cv.feature(curLine, biblical=1)
-
-      if biblical:
-        thisBook = fields[BOOK]
-        thisChapter = fields[CHAPTER]
-        thisVerse = fields[VERSE]
-        (thisVerse, thisHalfVerse) = verseNum(thisVerse)
-        changeBook = thisBook != prevBook
-        changeChapter = thisChapter != prevChapter
-        changeVerse = thisVerse != prevVerse
-        changeHalfVerse = thisHalfVerse != prevHalfVerse
-        if changeHalfVerse or changeVerse or changeChapter or changeBook:
-          cv.terminate(curHalfVerse)
-        if changeVerse or changeChapter or changeBook:
-          cv.terminate(curVerse)
-        if changeChapter or changeBook:
-          cv.terminate(curChapter)
-        if changeBook:
-          cv.terminate(curBook)
-        if changeBook:
-          curBook = cv.node(BOOK)
-          cv.feature(curBook, acro=thisBook)
-          nBook += 1
-        if changeChapter or changeBook:
-          curChapter = cv.node(CHAPTER)
-          cv.feature(curChapter, label=thisChapter)
-        if changeVerse or changeChapter or changeBook:
-          curVerse = cv.node(VERSE)
-          cv.feature(curVerse, number=thisVerse)
-        if changeHalfVerse or changeVerse or changeChapter or changeBook:
-          if thisHalfVerse:
-            curHalfVerse = cv.node(HALFVERSE)
-            cv.feature(curHalfVerse, number=thisVerse, label=thisHalfVerse)
-
-      after = ' ' if fields[BOUND] == B else None
-      fullo = fields[TRANS]
-      lexo = fields[LEX]
-      lang = fields.get(LANG, None)
-      morpho = fields[MORPH]
-      script = fields[SCRIPT]
-      interlinear = None if biblical else fields[INTERLINEAR]
-      glypho = nonGlyphRe.sub('', fullo)
-      punco = nonPunctRe.sub('', fullo)
-      if punco and glypho:
-        error('punctuation and glyphs on same line', fullo)
-
-      if lexo == 'B':
-        error('Unknown lexeme', lexo)
-        lexo = ''
-      isNumLex = False
-
-      if lexo:
-        (lexoB, lexN) = (lexo, '')
-        lexoDis = lexDisRe.findall(lexo)
-        if lexoDis:
-          (lexoB, lexN) = lexoDis[0]
-          lexN = f'_{lexN}' if lexN else ''
-          lexo = f'{lexoB}{lexN}'
-        else:
-          (lexoB, lexN) = (lexo, '')
-        lexPure = nonGlyphLexRe.sub('', lexoB)
-        isNoLex = lexPure == '0'
-        isNumLex = lexPure and not isNoLex and digitRe.match(lexPure)
-
-        if isNoLex:
-          lex = EM
-          lexe = EM
-        elif isNumLex:
-          lexoB = lexoB[::-1]
-          lex = lexoB
-          lexe = lexoB
-        else:
-          lex = asUni(lexoB)
-          lexe = asRep(lexoB)
-        lex += lexN
-        lexe += lexN
-        thisLex = lexIndex.get(lex, None)
-        if thisLex:
-          cv.resume(thisLex)
-        else:
-          thisLex = cv.node(LEX)
-          lexIndex[lex] = thisLex
-        cv.feature(thisLex, lexo=lexo, lexe=lexe, lex=lex)
-
-      if punco or glypho or lexo:
-        curWord = cv.node(WORD)
-        cv.feature(curWord, srcLn=i + 1)
-        if biblical:
-          cv.feature(curWord, biblical=1)
-        if script:
-          scriptValue = SCRIPT_MAP.get(script, None)
-          scriptValue = script if scriptValue is None else scriptValue[0]
-          cv.feature(curWord, script=scriptValue)
-        if interlinear:
-          interlinearValue = INTERLINEAR_MAP.get(interlinear, None)
-          interlinearValue = interlinear if interlinearValue is None else interlinearValue[0]
-          cv.feature(curWord, interlinear=interlinearValue)
-        if fullo:
-          cv.feature(curWord, fullo=unesc(fullo))
-        if after:
-          cv.feature(curWord, after=after)
-        if glypho:
-          cv.feature(curWord, glypho=glypho)
-        if punco:
-          cv.feature(
-              curWord,
-              punco=punco,
-              punc=asUni(punco),
-              punce=asRep(punco),
-          )
-        if not glypho:
-          typ = EMPTY
-          c = ''
-          addSlot()
-      if glypho and lexo:
-        cv.feature(curWord, lexo=lexo, lexe=lexe, lex=lex)
-        cv.edge(thisLex, curWord, occ=None)
-
-      isNumTrans = glypho and numeralRe.match(glypho)
-      isNum = isNumTrans and isNumLex
-      isForeign = glypho and lexo == NOLEX and foreignRe.match(glypho)
-
-      typ = (
-          PUNCT if punco else
-          NUMERAL if isNum else
-          GLYPH if glypho or lexo else
-          EMPTY if not fullo else
-          OTHER
-      )
-
-      cv.feature(
-          curWord,
-          type=typ,
-          full=asUni(fullo, asNum=isNum, asForeign=isForeign),
-          fulle=asRep(fullo, asNum=isNum, asForeign=isForeign),
-      )
-      if glypho:
-        cv.feature(
-            curWord,
-            glyph=asUni(glypho, asNum=isNum, asForeign=isForeign),
-            glyphe=asRep(glypho, asNum=isNum, asForeign=isForeign),
-        )
-      if isForeign:
-        lang = GREEK
-      if lang:
-        cv.feature(curWord, language=lang)
-
-      if morpho:
-        morph = morpho.replace(*mRepl) if lang == ARAMAIC else morpho
-        # vs code H means something different in Aramaic
-        cv.feature(curWord, morpho=morpho, **morphParsed[morph])
-
-      typ = None
-      for c in fullo:
-        if isForeign:
-          typ = FOREIGN
-          addSlot()
-        elif isNum and c in NUMERALS_SET:
-          typ = NUMERAL
-          addSlot()
-        elif c in TOKENS_SET:
-          typ = TOKENS_INV[c]
-          addSlot()
-        elif c in CONSONANTS_SET:
-          typ = CONS
-          addSlot()
-        elif c in VOWELS_SET:
-          typ = VOWEL
-          addSlot()
-        elif c in SEPS_SET:
-          typ = SEP
-          addSlot()
-        elif c in PUNCTS_SET:
-          typ = PUNCT
-          addSlot()
-        elif c in FLAGS_INV:
-          name = FLAGS_INV[c]
-          value = FLAGS_VALUE[name]
-          cv.feature(curSlot, **{name: value})
-        elif c in BRACKETS_INV:
-          (name, value, isOpen) = BRACKETS_INV[c]
-          key = (name, value)
-          valRep = '' if value == 1 else value
-          if isOpen:
-            cn = cv.node(CLUSTER)
-            curBrackets[key] = cn
-            cv.feature(cn, type=f'{name}{valRep}')
-            if biblical:
-              cv.feature(cn, biblical=1)
-          else:
-            cn = curBrackets[key]
-            if not cv.linked(cn):
-              em = cv.slot()
-              cv.feature(em, type=EMPTY)
-            cv.terminate(cn)
-            del curBrackets[key]
-      cv.terminate(curWord)
-      cv.terminate(thisLex)
-
-      prevScroll = thisScroll
-      prevFragment = thisFragment
-      prevLine = thisLine
-      if biblical:
-        prevBook = thisBook
-        prevChapter = thisChapter
-        prevVerse = thisVerse
-        prevHalfVerse = thisHalfVerse
-
+  def closeVolume():
     cv.terminate(curLine)
     cv.terminate(curFragment)
     cv.terminate(curScroll)
@@ -1868,11 +1459,260 @@ def director(cv):
       cv.terminate(curChapter)
       cv.terminate(curBook)
 
-    progress(f'{src:<6}:{k:>6} lines')
+  biblical = None
+
+  for fields in data:
+    prevBiblical = biblical
+    biblical = oBOOK in fields
+    if prevBiblical is not None and prevBiblical != biblical:
+      closeVolume()
+      pass
+
+    ln = fields[oSRCLN]
+
+    curSlot = None
+
+    if j == chunk:
+      j = 0
+      progress(f'{bib()}:{k:>6} lines', newline=False)
+    j += 1
+    k += 1
+    thisScroll = fields[xSCROLL]
+    thisFragment = fields[oFRAGMENT]
+    thisLine = fields[oLINE]
+    changeScroll = thisScroll != prevScroll
+    changeFragment = thisFragment != prevFragment
+    changeLine = thisLine != prevLine
+    if changeLine or changeFragment or changeScroll:
+      cv.terminate(curLine)
+    if changeFragment or changeScroll:
+      cv.terminate(curFragment)
+    if changeScroll:
+      cv.terminate(curScroll)
+      nScroll += 1
+      curScroll = cv.node(SCROLL)
+      cv.feature(curScroll, acro=thisScroll)
+      if biblical:
+        cv.feature(curScroll, biblical=1)
+    if changeFragment or changeScroll:
+      curFragment = cv.node(FRAGMENT)
+      cv.feature(curFragment, label=thisFragment)
+      if biblical:
+        cv.feature(curFragment, biblical=1)
+    if changeLine or changeFragment or changeScroll:
+      curLine = cv.node(LINE)
+      cv.feature(curLine, label=thisLine)
+      if biblical:
+        cv.feature(curLine, biblical=1)
+
+    if biblical:
+      thisBook = fields[oBOOK]
+      thisChapter = fields[oCHAPTER]
+      thisVerse = fields[oVERSE]
+      (thisVerse, thisHalfVerse) = verseNum(thisVerse)
+      changeBook = thisBook != prevBook
+      changeChapter = thisChapter != prevChapter
+      changeVerse = thisVerse != prevVerse
+      changeHalfVerse = thisHalfVerse != prevHalfVerse
+      if changeHalfVerse or changeVerse or changeChapter or changeBook:
+        cv.terminate(curHalfVerse)
+      if changeVerse or changeChapter or changeBook:
+        cv.terminate(curVerse)
+      if changeChapter or changeBook:
+        cv.terminate(curChapter)
+      if changeBook:
+        cv.terminate(curBook)
+      if changeBook:
+        curBook = cv.node(BOOK)
+        cv.feature(curBook, acro=thisBook)
+        nBook += 1
+      if changeChapter or changeBook:
+        curChapter = cv.node(CHAPTER)
+        cv.feature(curChapter, label=thisChapter)
+      if changeVerse or changeChapter or changeBook:
+        curVerse = cv.node(VERSE)
+        cv.feature(curVerse, number=thisVerse)
+      if changeHalfVerse or changeVerse or changeChapter or changeBook:
+        if thisHalfVerse:
+          curHalfVerse = cv.node(HALFVERSE)
+          cv.feature(curHalfVerse, number=thisVerse, label=thisHalfVerse)
+
+    after = ' ' if fields[oBOUND] == B else None
+    fullo = fields[oTRANS]
+    lexo = fields[oLEX]
+    lang = fields[oLANG]
+    morpho = fields[oMORPH]
+    script = fields[oSCRIPT]
+    interlinear = None if biblical else fields[oINTER]
+    glypho = nonGlyphRe.sub('', fullo)
+    punco = nonPunctRe.sub('', fullo)
+    if punco and glypho:
+      diag('punctuation and glyphs on same line', fullo, False)
+
+    if lexo == 'B':
+      diag('Unknown lexeme', lexo, False)
+      lexo = ''
+    isNumLex = False
+
+    if lexo:
+      (lexoB, lexN) = (lexo, '')
+      lexoDis = lexDisRe.findall(lexo)
+      if lexoDis:
+        (lexoB, lexN) = lexoDis[0]
+        lexN = f'_{lexN}' if lexN else ''
+        lexo = f'{lexoB}{lexN}'
+      else:
+        (lexoB, lexN) = (lexo, '')
+      lexPure = nonGlyphLexRe.sub('', lexoB)
+      isNoLex = lexPure == '0'
+      isNumLex = lexPure and not isNoLex and digitRe.match(lexPure)
+
+      if isNoLex:
+        lex = EM
+        lexe = EM
+      elif isNumLex:
+        lexoB = lexoB[::-1]
+        lex = lexoB
+        lexe = lexoB
+      else:
+        lex = asUni(lexoB)
+        lexe = asRep(lexoB)
+      lex += lexN
+      lexe += lexN
+      thisLex = lexIndex.get(lex, None)
+      if thisLex:
+        cv.resume(thisLex)
+      else:
+        thisLex = cv.node(LEX)
+        lexIndex[lex] = thisLex
+      cv.feature(thisLex, lexo=lexo, lexe=lexe, lex=lex)
+
+    if punco or glypho or lexo:
+      curWord = cv.node(WORD)
+      cv.feature(curWord, srcLn=ln + 1)
+      if biblical:
+        cv.feature(curWord, biblical=1)
+      if script:
+        cv.feature(curWord, script=script)
+      if interlinear:
+        cv.feature(curWord, interlinear=interlinear)
+      if fullo:
+        cv.feature(curWord, fullo=unesc(fullo))
+      if after:
+        cv.feature(curWord, after=after)
+      if glypho:
+        cv.feature(curWord, glypho=glypho)
+      if punco:
+        cv.feature(
+            curWord,
+            punco=punco,
+            punc=asUni(punco),
+            punce=asRep(punco),
+        )
+      if not glypho:
+        typ = EMPTY
+        c = ''
+        addSlot()
+    if glypho and lexo:
+      cv.feature(curWord, lexo=lexo, lexe=lexe, lex=lex)
+      cv.edge(thisLex, curWord, occ=None)
+
+    isNumTrans = glypho and numeralRe.match(glypho)
+    isNum = isNumTrans and isNumLex
+    isForeign = glypho and lexo == NOLEX and foreignRe.match(glypho)
+
+    typ = (
+        PUNCT if punco else
+        NUMERAL if isNum else
+        GLYPH if glypho or lexo else
+        EMPTY if not fullo else
+        OTHER
+    )
+
+    cv.feature(
+        curWord,
+        type=typ,
+        full=asUni(fullo, asNum=isNum, asForeign=isForeign),
+        fulle=asRep(fullo, asNum=isNum, asForeign=isForeign),
+    )
+    if glypho:
+      cv.feature(
+          curWord,
+          glyph=asUni(glypho, asNum=isNum, asForeign=isForeign),
+          glyphe=asRep(glypho, asNum=isNum, asForeign=isForeign),
+      )
+    if isForeign:
+      lang = GREEK
+    if lang:
+      cv.feature(curWord, language=lang)
+
+    if morpho:
+      morph = morpho.replace(*mRepl) if lang == ARAMAIC else morpho
+      # vs code H means something different in Aramaic
+      cv.feature(curWord, morpho=morpho, **morphParsed[morph])
+
+    typ = None
+    for c in fullo:
+      if isForeign:
+        typ = FOREIGN
+        addSlot()
+      elif isNum and c in NUMERALS_SET:
+        typ = NUMERAL
+        addSlot()
+      elif c in TOKENS_SET:
+        typ = TOKENS_INV[c]
+        addSlot()
+      elif c in CONSONANTS_SET:
+        typ = CONS
+        addSlot()
+      elif c in VOWELS_SET:
+        typ = VOWEL
+        addSlot()
+      elif c in SEPS_SET:
+        typ = SEP
+        addSlot()
+      elif c in PUNCTS_SET:
+        typ = PUNCT
+        addSlot()
+      elif c in FLAGS_INV:
+        name = FLAGS_INV[c]
+        value = FLAGS_VALUE[name]
+        cv.feature(curSlot, **{name: value})
+      elif c in BRACKETS_INV:
+        (name, value, isOpen) = BRACKETS_INV[c]
+        key = (name, value)
+        valRep = '' if value == 1 else value
+        if isOpen:
+          cn = cv.node(CLUSTER)
+          curBrackets[key] = cn
+          cv.feature(cn, type=f'{name}{valRep}')
+          if biblical:
+            cv.feature(cn, biblical=1)
+        else:
+          cn = curBrackets[key]
+          if not cv.linked(cn):
+            em = cv.slot()
+            cv.feature(em, type=EMPTY)
+          cv.terminate(cn)
+          del curBrackets[key]
+    cv.terminate(curWord)
+    cv.terminate(thisLex)
+
+    prevScroll = thisScroll
+    prevFragment = thisFragment
+    prevLine = thisLine
+    if biblical:
+      prevBook = thisBook
+      prevChapter = thisChapter
+      prevVerse = thisVerse
+      prevHalfVerse = thisHalfVerse
+
+  closeVolume()
+
+  progress(f'{bib():<6}:{k:>6} lines')
 
   morphMeta()
-
-  showErrors()
+  showDiag()
   return not errors
 
 
@@ -1889,26 +1729,32 @@ def getConverter():
 
 def convert():
   prepare()
-  readBooks()
+  readSource()
+  if argValue['normwrite']:
+    writeProto()
+
   readMorph()
   if argValue['morphdecl']:
+    showDiag()
     return True
 
-  readProto()
-  readData()
   parseMorph()
   if argValue['morphonly']:
+    showDiag()
     return True
 
   if checkSource:
     checkChars()
-    checkBooks()
   tokenizeData()
   if checkSource:
     checkBrackets()
 
   if argValue['checkonly']:
+    showDiag()
     return True
+
+  showDiag()
+  resetDiag()
 
   cv = getConverter()
 

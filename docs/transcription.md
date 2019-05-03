@@ -117,7 +117,6 @@ type | source | etcbc | unicode | description
 `missing` | `--` | ` 0 ` | `ε` | representation of a missing sign
 `uncertain` | `?` | ` ? ` | ` ? ` | representation of an uncertain sign (degree 1)
 `uncertain` | ``\`` | ` # ` | ` # ` | representation of a uncertain sign (degree 2)
-`uncertain` | `�` | ` #? ` | ` #? `| representation of an uncertain sign (degree 3)
 `add` | `+` | ` + ` | `+` | representation of an addition between numerals
 `term` | `/` | `╱` | `╱` | representation of an end of line
 
@@ -411,7 +410,6 @@ source | etcbc | unicode | description
 `--` | ` 0 ` | `ε` | missing sign
 `?` | ` ? ` | ` ? ` | uncertain sign, degree 1
 ``\`` | ` # ` | `#` | uncertain sign, degree 2
-`�` | ` #? ` | `#?` | uncertain sign, degree 3
 `+` | ` + ` | `+` | addition symbol between numerals
 `/` | `╱` | `╱` | end of line token
 

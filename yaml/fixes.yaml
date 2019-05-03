@@ -1,74 +1,67 @@
-nonbib:
-  36148:
-      trans: ['≤]', '≥≤', 'spurious ] bracket, missing ≥ bracket']
-  44992:
-      morph: ['vhp3cpX3mp{2}', 'vhp3cp{2}X3mp', 'jussive from suffix to verb']
-  55019:
-      trans: [f' ±', '≥≤', 'spurious non-breaking space before paleodivider']
-  117126:
-      morph: ['vhp3cpX3ms{2}', 'vhp3cp{2}X3ms', 'jussive from suffix to verb']
-  140504:
-      trans: ['b]', 'b', 'spurious ] bracket']
-  140582:
-      trans: ['b]', 'b', 'spurious ] bracket']
-  140616:
-      trans: ['b]', 'b', 'spurious ] bracket']
-  157910:
-      trans: ['^b', '^b^', 'imbalance in ^ brackets']
-  191862:
-      trans: ['y»tkwØ_nw', 'y»tkwØnw', '_ removed (1 of 3)']
-  225327:
-      trans: ['t_onh]', 'tonh]', '_ removed (1 of 3)']
-  259060:
-      trans: ['oyN_', 'oyN', '_ removed (1 of 3)']
-  261956:
-      trans: ['a', 'A', 'a is numeral A']
-  263103:
-      trans: ['a', 'A', 'a is numeral A']
-  291988:
-      trans: ['[˝w»b|a|]', '[w»b|a|]', 'strange, unique character removed']
-  301907:
-      trans: ['3', '', 'removed a stray digit']
-  313324:
-      lex: ['\0', '\', 'distribute "\\0" over two fields']
-      morph: ['', '0', 'distribute "\\0" over two fields']
-  313632:
-      line: ['13,3,1', '13', 'strange numbering replaced by plain number']
+lineFixes:
+  true:
+    208179: ['\t\t', '\t'],
+  false:
+    256841: ['  ', ' ', 'replaced double space by single one'],
+    348900: ['3,1', '3.1', 'comma in number should be .'],
+    348565: ['\0', '\@0', 'inserted separator before lex field'],
 
-bib:
-  1779:
-      morph: ['B', 'Pc', 'move B to bound column, insert tag Pc for w']
-      bound: ['', 'B', 'move B from morph column']
-  42410:
-      morph: ['B', 'Pc', 'move B to bound column, insert tag Pc for w']
-      bound: ['', 'B', 'move B from morph column']
-  48754:
-      morph: ['vp12ms', 'vp1ms', 'spurious 2nd person in presence of 1st person']
-  87334:
-      trans: ['≥', '≥≤', 'missing ≤ bracket']
-  109469:
-      morph: ['0ncfp', 'ncfp', 'spurious unknown symbol']
-  115522:
-      morph: ['\', '0', 'morph for -- should be 0']
-  146515:
-      morph: ['0ncfs', 'ncfs', 'spurious unknown symbol']
-  147775:
-      trans: ['[^≥', '[≥', 'imbalance in ^ brackets']
-  154735:
-      trans: ['≥1a≤', '≥a≤', 'spurious character "1"']
-  154751:
-      trans: ['≥2a≤', '≥a≤', 'spurious character "2"']
-  157642:
-      morph: ['2', '0', 'strange digit, should be 0']
-  158173:
-      morph: ['4', '0', 'strange digit, should be 0']
-  158203:
-      morph: ['3', '0', 'strange digit, should be 0']
-  158295:
-      trans: ['[\\]^', '[\\]', 'imbalance in ^ brackets']
-  185452:
-      trans: ['h«\\wØ(', 'h«\\wØ', 'spurious ( bracket']
-  186175:
-      morph: ['Pp@0', 'Pp', 'spurious @0']
-  202008:
-      trans: ['alwhiM', 'alwhyM', 'hireq => yod']
+fieldFixes:
+  true:
+    38512:
+        trans: ['≤]', '≥≤', 'spurious ] bracket, missing ≥ bracket']
+    48129:
+        morph: ['vhp3cpX3mp{2}', 'vhp3cp{2}X3mp', 'jussive from suffix to verb']
+    127763:
+        morph: ['vhp3cpX3ms{2}', 'vhp3cp{2}X3ms', 'jussive from suffix to verb']
+    153845:
+        trans: ['b]', 'b', 'spurious ] bracket']
+    153970:
+        trans: ['b]', 'b', 'spurious ] bracket']
+    154026:
+        trans: ['b]', 'b', 'spurious ] bracket']
+    173512:
+        trans: ['^b', '^b^', 'imbalance in ^ brackets']
+    211343:
+        trans: ['y»tkwØ_nw', 'y»tkwØnw', '_ removed (1 of 3)']
+    284884:
+        trans: ['t_onh]', 'tonh]', '_ removed (1 of 3)']
+    287243:
+        trans: ['oyN_', 'oyN', '_ removed (1 of 3)']
+    290592:
+        trans: ['a', 'A', 'a is numeral A']
+    291886:
+        trans: ['a', 'A', 'a is numeral A']
+    324473:
+        trans: ['[˝w»b|a|]', '[w»b|a|]', 'strange, unique character removed']
+    335846:
+        trans: ['3', '', 'removed a stray digit']
+  false:
+    48768:
+        morph: ['vp12ms', 'vp1ms', 'spurious 2nd person in presence of 1st person']
+    109489:
+        morph: ['0ncfp', 'ncfp', 'spurious unknown symbol']
+    115544:
+        morph: ['\', '0', 'morph for -- should be 0']
+    146637:
+        morph: ['0ncfs', 'ncfs', 'spurious unknown symbol']
+    147953:
+        trans: ['[^≥', '[≥', 'imbalance in ^ brackets']
+    154933:
+        trans: ['≥1a≤', '≥a≤', 'spurious character "1"']
+    154949:
+        trans: ['≥2a≤', '≥a≤', 'spurious character "2"']
+    157840:
+        morph: ['2', '0', 'strange digit, should be 0']
+    158371:
+        morph: ['4', '0', 'strange digit, should be 0']
+    158401:
+        morph: ['3', '0', 'strange digit, should be 0']
+    158493:
+        trans: ['[\\]^', '[\\]', 'imbalance in ^ brackets']
+    185650:
+        trans: ['h«\\wØ(', 'h«\\wØ', 'spurious ( bracket']
+    186373:
+        morph: ['Pp@0', 'Pp', 'spurious @0']
+    202206:
+        trans: ['alwhiM', 'alwhyM', 'hireq => yod']
