@@ -9,6 +9,7 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-02T00:59:32Z
+@dateWritten=2019-05-04T20:27:28Z
 
-1981472	vnPfpa
+1763369	vnPfpa
+2074206	@0

@@ -1,4 +1,66 @@
-Reading proto    bib ...242661 lines out of 243157 source lines
-Reading proto nonbib ...340079 lines out of 378023 source lines
-
+Reading proto N ...340079 lines out of 378023 source lines
+Reading proto B ...242661 lines out of 243157 source lines
 DATANORM: 582740 lines
+SCROLLS: 1003 names
+┌────┬────┬────┬────┬────────────────────────────────────────────────────────────────────────┬────────┐
+│30  │30  │0   │0   │FIX (FIELD)                                                             │        │
+├────┼────┼────┼────┼────────────────────────────────────────────────────────────────────────┼────────┤
+│    │OK  │    │    │lex          82 => kj     strange lexeme                                │N:263123│
+│    │OK  │    │    │morph         2 => 0      strange digit, should be 0                    │B:157840│
+│    │OK  │    │    │morph         3 => 0      strange digit, should be 0                    │B:158401│
+│    │OK  │    │    │morph         4 => 0      strange digit, should be 0                    │B:158371│
+│    │OK  │    │    │morph         \ => 0      morph for -- should be 0                      │B:115544│
+│    │OK  │    │    │morph      Pp@0 => Pp     spurious @0                                   │B:186373│
+│    │OK  │    │    │morph     0ncfp => ncfp   spurious unknown symbol                       │B:109489│
+│    │OK  │    │    │morph     0ncfs => ncfs   spurious unknown symbol                       │B:146637│
+│    │OK  │    │    │morph    vhp3cpX3mp{2} => vhp3cp{2}X3mp move {2}                        │N: 48129│
+│    │OK  │    │    │morph    vhp3cpX3ms{2} => vhp3cp{2}X3ms move {2}                        │N:127763│
+│    │OK  │    │    │morph    vp12ms => vp1ms  spurious 2nd person                           │B: 48768│
+│    │OK  │    │    │trans         3 =>        removed a stray digit                         │N:335846│
+│2   │2   │0   │0   │trans         a => A      a is numeral A                                │        │
+│    │OK  │    │    │trans         a => A      a is numeral A                                │N:290592│
+│    │OK  │    │    │trans         a => A      a is numeral A                                │N:291886│
+│    │OK  │    │    │trans        ^b => ^b^    imbalance in ^ brackets                       │N:173512│
+│3   │3   │0   │0   │trans        b] => b      spurious ] bracket                            │        │
+│    │OK  │    │    │trans        b] => b      spurious ] bracket                            │N:153845│
+│    │OK  │    │    │trans        b] => b      spurious ] bracket                            │N:153970│
+│    │OK  │    │    │trans        b] => b      spurious ] bracket                            │N:154026│
+│    │OK  │    │    │trans        ≤] => ≥≤     spurious ], missing ≥                         │N: 38512│
+│    │OK  │    │    │trans       [^≥ => [≥     imbalance in ^ brackets                       │B:147953│
+│    │OK  │    │    │trans        ±  => ±      space around paleo divider                    │N: 59593│
+│    │OK  │    │    │trans      oyN_ => oyN    _ removed (1 of 3)                            │N:287243│
+│    │OK  │    │    │trans      ≥1a≤ => ≥a≤    spurious character "1"                        │B:154933│
+│    │OK  │    │    │trans      ≥2a≤ => ≥a≤    spurious character "2"                        │B:154949│
+│    │OK  │    │    │trans     [\\]^ => [\\]   imbalance in ^ brackets                       │B:158493│
+│    │OK  │    │    │trans    [˝w»b|a|] => [w»b|a|] unique character removed                 │N:324473│
+│    │OK  │    │    │trans    alwhiM => alwhyM hireq => yod                                  │B:202206│
+│    │OK  │    │    │trans    h«\\wØ( => h«\\wØ spurious ( bracket                           │B:185650│
+│    │OK  │    │    │trans    t_onh] => tonh]  _ removed (1 of 3)                            │N:248844│
+│    │OK  │    │    │trans    y»tkwØ_nw => y»tkwØnw _ removed (1 of 3)                       │N:211343│
+└────┴────┴────┴────┴────────────────────────────────────────────────────────────────────────┴────────┘
+┌────┬────┬────┬────┬────────────────────────────────────────────────────────────────────────┬────────┐
+│5   │5   │0   │0   │FIX (LINE)                                                              │        │
+├────┼────┼────┼────┼────────────────────────────────────────────────────────────────────────┼────────┤
+│    │OK  │    │    │       =>        double space to single                                 │N:256841│
+│    │OK  │    │    │    \0 => \@0    separator before lex field                             │N:348565│
+│    │OK  │    │    │    \t\t => \t      double tab to single                                │B:208179│
+│    │OK  │    │    │   3,1 => 3.1    comma in number to .                                   │N:348900│
+│    │OK  │    │    │[\ \\\@0\t => [\\t\\\@0 tab moved to right                              │B: 36238│
+└────┴────┴────┴────┴────────────────────────────────────────────────────────────────────────┴────────┘
+┌────┬────┬────┬────┬────────────────────────────────────────────────────────────────────────┬────────┐
+│2   │0   │0   │2   │MORPH                                                                   │        │
+├────┼────┼────┼────┼────────────────────────────────────────────────────────────────────────┼────────┤
+│    │    │    │XX  │at char: @0                                                             │B:186962│
+│    │    │    │XX  │at char: vnPfpa                                                         │N:174947│
+└────┴────┴────┴────┴────────────────────────────────────────────────────────────────────────┴────────┘
+┌────┬────┬────┬────┬────────────────────────────────────────────────────────────────────────┬────────┐
+│6   │0   │0   │6   │SCROLL                                                                  │        │
+├────┼────┼────┼────┼────────────────────────────────────────────────────────────────────────┼────────┤
+│    │    │    │XX  │11Q5 is both bib and non-bib                                            │B:214079│
+│    │    │    │XX  │11Q6 is both bib and non-bib                                            │B:219435│
+│    │    │    │XX  │2Q29 is both bib and non-bib                                            │B: 48758│
+│    │    │    │XX  │4Q249j is both bib and non-bib                                          │B:202051│
+│    │    │    │XX  │4Q483 is both bib and non-bib                                           │B:202117│
+│    │    │    │XX  │4Q88 is both bib and non-bib                                            │B:179901│
+└────┴────┴────┴────┴────────────────────────────────────────────────────────────────────────┴────────┘
+Compiling feature data ...

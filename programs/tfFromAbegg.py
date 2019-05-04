@@ -14,11 +14,9 @@ HELP = 'help'
 
 ARGS = {
     HELP: 'print this help',
+    'nochars': 'suppress character checks (by default, checks are performed)',
     'normwrite': 'write out normalized files',
-    'morphdecl': 'only read morphology declaration, nothing else',
-    'morphonly': 'only perform morphology checks, do not generate TF',
-    'checkonly': 'only perform checks, do not generate TF',
-    'check': 'performs checks, generate TF (by default, checks are not performed)',
+    'sourceonly': 'only read source and apply fixes',
     'load': 'load TF after generation (by default the TF is not loaded)',
     'loadonly': 'only load existing TF',
     'notf': 'do not generate TF',
@@ -43,7 +41,6 @@ for (arg, desc) in ARGS.items():
 # OPTIONS
 
 argValue = {a: None for a in ARGS}
-checkSource = None
 debug = None
 
 # LOCATIONS
@@ -75,6 +72,7 @@ MORPH_DECL = f'{DECL_PATH}/morph.yaml'
 
 LOG_DIR = f'{BASE}/log'
 REPORT = f'{LOG_DIR}/conversion.txt'
+REPORT_MORPH = f'{LOG_DIR}/morpho.txt'
 
 TF_DIR = f'{BASE}/tf'
 
@@ -86,7 +84,7 @@ TR = Transcription()
 BIB = 'bib'
 NONBIB = 'nonbib'
 
-SOURCES = (BIB, NONBIB)
+SOURCES = (NONBIB, BIB)  # import: nonbib before bib
 
 NOFIELD = '-'
 
@@ -111,7 +109,7 @@ SCRIPT = 'script'
 
 LANG = 'language'
 
-B = 'B'
+B = '&'
 NOLEX = '0'
 
 # fields
@@ -298,7 +296,8 @@ GERESH_ACCENT = '\u059c'
 MAQAF = '\u05be'
 
 SEPS = (
-    (NB, NB),  # non breaking space inside a word
+    (NB, NB),  # meaningful space inside or before or after a word
+    (NB, ' '),  # meaningful space inside or before or after a word
     (MAQAF, '-'),  # maqaf
     (GERESH_POINT, '/'),  # morpheme separator
 )
@@ -331,8 +330,15 @@ NUMERALS_SET = {x[1] for x in NUMERALS}
 NUMERALS_UNI = {x[1]: x[0] for x in NUMERALS}
 NUMERALS_REP = {x[1]: TR.from_hebrew(x[0]) for x in NUMERALS}
 
+L_ARAMAIC = 'a'
 ARAMAIC = 'aramaic'
+L_GREEK = 'g'
 GREEK = 'greek'
+
+LANGS = {
+    L_GREEK: GREEK,
+    L_ARAMAIC: ARAMAIC,
+}
 
 ALPHA = '\u0391'
 GAMMA = '\u0393'
@@ -638,7 +644,7 @@ featureMeta = {
     },
     'language': {
         'description': 'language of a word or sign, only if it is not Hebrew',
-        'values': f'{ARAMAIC} {GREEK}'
+        'values': ', '.join(f'{code}={lang}' for (code, lang) in LANGS.items())
     },
     'lexo': {
         'description': 'representation (original source Abegg) of a lexeme',
@@ -715,7 +721,7 @@ valuesFound = collections.defaultdict(set)
 
 logh = None
 
-diags = {}
+diags = collections.defaultdict(lambda: collections.defaultdict(dict))
 biblical = None
 ln = None
 
@@ -741,37 +747,101 @@ def bib():
 
 
 def resetDiag():
-  global diags
-  diags = {}
+  diags.clear()
 
 
 def diag(label, rep, status):
-  diags[(label, biblical, ln, rep)] = status
+  # diags[(label, biblical, ln, rep)] = status
+  diags[label][rep][(biblical, ln)] = status
+
+
+stMap = collections.OrderedDict((
+    ('', 'ALL'),
+    (1, 'OK'),
+    (0, '--'),
+    (-1, 'XX'),
+))
 
 
 def showDiag():
-  n = collections.defaultDict(collections.Counter)
+  global biblical
+  global ln
+
+  cw = 4
+  mw = 72
+  ow = 8
+
+  cl = '─' * cw
+  ml = '─' * mw
+  ol = '─' * ow
+
+  ur = f'┌{cl}┬{cl}┬{cl}┬{cl}┬{ml}┬{ol}┐\n'
+  ir = f'├{cl}┼{cl}┼{cl}┼{cl}┼{ml}┼{ol}┤\n'
+  dr = f'└{cl}┴{cl}┴{cl}┴{cl}┴{ml}┴{ol}┘\n'
+
+  lineFormat = f'│{{:<{cw}}}' * 4 + f'│{{:<{mw}}}│{{:<{ow}}}│\n'
+
+  def line(*x):
+    return lineFormat.format(*x)
+
+  def legend():
+    return ur + line(*stMap.values(), 'case', 'OCC') + ir
+
+  def head(*x):
+    return ur + line(*x) + ir
+
+  def tail():
+    return dr
 
   good = True
 
-  for ((kind, biblical, ln, rep), st) in sorted(diags.items()):
-    n[kind][''] += 1
-    st = None if st is None else bool(st)
-    n[kind][st] += 1
-
-    statusRep = '--' if st is None else 'OK' if st else 'XX'
-    locRep = f'{bib()}:{ln:>6}'
-    report(f'{kind}: {statusRep} {locRep} {rep}', only=True)
-    if st is False:
+  for (kind, reps) in sorted(diags.items()):
+    nK = {
+        stat: sum(sum(1 for oc in occs if occs[oc] == stat) for occs in reps.values())
+        for stat in {-1, 0, 1}
+    }
+    nK[''] = sum(len(occs) for occs in reps.values())
+    okK = nK[-1] == 0 and nK[0] == 0
+    if not okK:
       good = False
-  for (kind, r) in n.items():
-    if r[None]:
-      report(f'{kind}: {r[None]} undetected')
-    if r[False]:
-      report(f'{kind}: {r[False]} errors')
-    if r[True] == r['']:
-      report(f'{kind}: all {r[""]} cases ok')
-    report('', only=True)
+
+    report(
+        head(nK[''], nK[1], nK[0], nK[-1], kind, '', ''),
+        newline=False,
+        only=okK,
+    )
+
+    for (rep, occs) in sorted(reps.items()):
+      if len(occs) == 1:
+        ((biblical, ln), st) = list(occs.items())[0]
+        stat = [stMap[s] if s == st else '' for s in stMap.keys()]
+        report(
+            line(*stat, rep, f'{bib()}:{ln:>6}'),
+            newline=False,
+            only=st == 1,
+        )
+        continue
+
+      nR = {
+          stat: sum(1 for oc in occs if occs[oc] == stat)
+          for stat in {-1, 0, 1}
+      }
+      nR[''] = len(occs)
+      okR = nR[-1] == 0 and nR[0] == 0
+      report(
+          line(nR[''], nR[1], nR[0], nR[-1], rep, ''),
+          newline=False,
+          only=okR,
+      )
+      for ((biblical, ln), st) in sorted(occs.items(), key=lambda x: (-x[1], x[0])):
+        stat = [stMap[s] if s == st else '' for s in stMap.keys()]
+        report(
+            line(*stat, rep, f'{bib()}:{ln:>6}'),
+            newline=False,
+            only=st == 1,
+        )
+    report(tail(), newline=False, only=okK)
+
   return good
 
 
@@ -793,13 +863,17 @@ def readSource():
   for (biblical, lns) in lineFixes.items():
     for (ln, (fr, to, expl)) in lns.items():
       taskRep = f'{fr:>6} => {to:<6} {expl}'
-      diag(fixL, taskRep, None)
+      diag(fixL, taskRep.replace('\t', '\\t'), 0)
 
   for (biblical, lns) in fieldFixes.items():
     for (ln, fields) in lns.items():
       for (field, (fr, to, expl)) in fields.items():
         taskRep = f'{field:<8} {fr:>6} => {to:<6} {expl}'
-        diag(fixF, taskRep, None)
+        diag(fixF, taskRep, 0)
+
+  scrollso = collections.defaultdict(set)
+  scrollsx = collections.defaultdict(set)
+  scrollsDiag = set()
 
   for src in SOURCES:
     biblical = src == BIB
@@ -820,9 +894,6 @@ def readSource():
     interlinear = None
     script = None
 
-    scrollso = set()
-    scrollsx = set()
-
     # fl fy: paleo
     # f0 fy: greek
 
@@ -836,43 +907,49 @@ def readSource():
           elif '(b)' in xLine:
             interlinear = 2
           elif xLine.startswith(f'{XC}r'):
-            interlinear = None
+            interlinear = ''
 
           if '(fl)' in xLine:
             script = PH_VAL
           elif '(f0)' in xLine:
             script = GC_VAL
           elif '(fy)' in xLine:
-            script = None
+            script = ''
 
           continue
         line = line.rstrip('\n')
 
         if ln in lineFix:
-          (fr, to, rep) = lineFix[ln]
+          (fr, to, expl) = lineFix[ln]
+          rep = f'{fr:>6} => {to:<6} {expl}'
           if fr in line:
             line = line.replace(fr, to)
-            diag(fixL, rep, True)
+            diag(fixL, rep.replace('\t', '\\t'), 1)
           else:
-            diags(fixL, rep, False)
+            diag(fixL, rep.replace('\t', '\\t'), -1)
+
+        if not biblical:
+          if line.startswith('>'):
+            line = line[1:]
+            fields = line.split(splitChar)
+            scroll = fields[0]
+            (fragment, line) = fields[1].split(':', 1)
+            if line != prevLine:
+              interlinear = ''
+            prevLine = line
+            continue
 
         fields = line.split(splitChar)
         nFields = len(fields)
         if nFields > nCol:
-          diag('FIELDS', 'too many: {nFields}', False)
+          diag('FIELDS', f'too many: {nFields}', -1)
           continue
         elif nFields < nCol:
-          fields += [None] * (nCol - nFields)
-        iData = {f: c for (f, c) in zip(nCols, fields)}
-
-        if ln in fieldFix:
-          for (field, (fr, to, rep)) in fieldFix[ln].items():
-            iVal = iData[field]
-            if iVal == fr:
-              iData[field] = to
-              diag(fixF, rep, True)
-            else:
-              diag(fixF, rep, False)
+          fields += [''] * (nCol - nFields)
+        iData = collections.defaultdict(
+            lambda: '',
+            ((f, c) for (f, c) in zip(nCols, fields)),
+        )
 
         oData = collections.defaultdict(lambda: '')
         oData[oSRCLN] = ln
@@ -891,14 +968,6 @@ def readSource():
           if '.' in word:
             oData[oBOUND] = '&'
         else:
-          if line.startswith('>'):
-            line = line[1:]
-            scroll = iData[iSCROLLNAME]
-            (fragment, line) = iData[iSCROLLREF].split(':', 1)
-            if line != prevLine:
-              interlinear = None
-            prevLine = line
-            continue
           if trans.startswith(']') and trans.endswith('['):
             text = trans[1:-1]
             if text.isdigit():
@@ -908,7 +977,7 @@ def readSource():
           (fragment, rest) = iData[iSCROLLREF].split(':', 1)
           (line, word) = rest.split(',', 1)
           if line != prevLine:
-            interlinear = None
+            interlinear = ''
           oData[oFRAGMENT] = fragment
           oData[oLINE] = line
           if line == '0':
@@ -919,11 +988,15 @@ def readSource():
             theseData[-1][oBOUND] = '&'
           prevWord = word
 
-        scrollx = scrollDecl.get(scroll, x)
-        scrollso.add(scroll)
-        scrollsx.add(scrollx)
+        scrollx = f'{bib()}-{scrollDecl.get(scroll, scroll)}'
+        scrollso[biblical].add(scroll)
+        scrollsx[biblical].add(scrollx)
+        if scroll in scrollso[not biblical]:
+          if scroll not in scrollsDiag:
+            diag('SCROLL', f'{scroll} is both bib and non-bib', -1)
+            scrollsDiag.add(scroll)
         oData[oSCROLL] = scroll
-        oData[xSCROLL] = scrollDecl.get(scroll, x)
+        oData[xSCROLL] = scrollx
 
         if interlinear:
           oData[oINTER] = interlinear
@@ -931,9 +1004,9 @@ def readSource():
           oData[oSCRIPT] = script
 
         analysis = iData[iANALYSIS] or ''
-        (lang, lex, morph) = (None, None, None)
+        (lang, lex, morph) = ('', '', '')
         if '%' in analysis:
-          lang = ARAMAIC
+          lang = L_ARAMAIC
           (lex, morph) = analysis.split('%', 1)
         elif '@' in analysis:
           (lex, morph) = analysis.split('@', 1)
@@ -942,15 +1015,30 @@ def readSource():
         oData[oLEX] = lex
         oData[oMORPH] = morph
 
+        if ln in fieldFix:
+          for (field, (fr, to, expl)) in fieldFix[ln].items():
+            rep = f'{field:<8} {fr:>6} => {to:<6} {expl}'
+            iVal = oData[field]
+            if iVal == fr:
+              oData[field] = to
+              diag(fixF, rep, 1)
+            else:
+              diag(fixF, rep, -1)
+
         prevLine = line
 
         theseData.append(oData)
     report(f'{len(theseData):<6} lines out of {ln:<6} source lines')
     data.extend(theseData)
-  report('', only=True)
   report(f'DATANORM: {len(data)} lines')
-  report(f'SCROLLS: {len(scrollso):>4} names (original)')
-  report(f'SCROLLS: {len(scrollsx):>4} names (after renaming some')
+  nScrollso = sum(len(x) for x in scrollso.values())
+  nScrollsx = sum(len(x) for x in scrollsx.values())
+  scrollsRep = (
+      f'{nScrollsx} '
+      +
+      'names' if nScrollsx == nScrollso else f'({nScrollso} originally) names'
+  )
+  report(f'SCROLLS: {scrollsRep}')
 
 
 def writeProto():
@@ -1023,7 +1111,6 @@ def checkChars():
       report(f'\tin {name} field:', only=True)
       for (label, c, freq) in sorted(items):
         report(f'\t\t{label:<5} {c} {freq:>6} x', only=True)
-    report('', only=True)
 
   prevTrans = None
   prevLine = None
@@ -1034,7 +1121,7 @@ def checkChars():
     biblical = oBOOK in fields
     ln = fields[oSRCLN]
 
-    word = fields[xTRANS]
+    word = fields[oTRANS]
     lex = fields[oLEX]
     script = fields[oSCRIPT]
     thisLine = fields[oLINE]
@@ -1045,12 +1132,9 @@ def checkChars():
       nLines += 1
       if prevTrans is not None:
         lastOfLine[prevTrans] += 1
-    else:
-      if prevTrans == '/':
-        diag('CHAR', 'inner /', True)
 
     if script:
-      diag('SCRIPT', script, script in SCRIPT_VALS)
+      diag('SCRIPT', script, 1 if script in SCRIPT_VALS else -1)
 
     lexBare = lexDisXRe.sub('', lex)
     lexPure = nonGlyphLexRe.sub('', lexBare)
@@ -1066,10 +1150,10 @@ def checkChars():
     isNumCand = capitalNumRe.match(wordPure)
 
     if isNumCand and not isNumTrans and (isNumLex or not lexPure):
-      diag('NUMERAL', f'candidate "{wordPure}"', None)
+      diag('NUMERAL', f'candidate "{wordPure}"', 1)
 
     if isNumTrans and isNumLex:
-      diag('NUMERAL', f'found "{wordPure}"', True)
+      diag('NUMERAL', f'found "{wordPure}"', 1)
 
     if not isAmbi:
       label = (
@@ -1080,11 +1164,11 @@ def checkChars():
           None
       )
       if label is not None:
-        diag('NUMERAL', f'{label} trans="{wordPure}" lex="{lexPure}"', False)
+        diag('NUMERAL', f'{label} trans="{wordPure}" lex="{lexPure}"', -1)
 
     isForeign = wordPure and lex == NOLEX and foreignRe.match(wordPure)
     if isForeign:
-      diag('FOREIGN', wordPure, True)
+      diag('FOREIGN', wordPure, 1)
 
     digital = DIGITS_SET
 
@@ -1101,7 +1185,7 @@ def checkChars():
         ):
           charsMapped.add(c)
         else:
-          diag('CHAR', f'unmapped "{c}" = {ord(c)}', False)
+          diag('CHAR', f'unmapped "{c}" = {ord(c)}', -1)
         charsLetter.setdefault(name, collections.Counter())[c] += 1
 
     prevLine = thisLine
@@ -1120,7 +1204,6 @@ def checkChars():
   )
   for (word, amount) in sorted(lastOfLine.items(), key=lambda x: (-x[1], x[0]))[0:20]:
     report(f'\t\t{word:<10} {amount:>6} x', only=True)
-  report('', only=True)
 
   showChars()
 
@@ -1137,7 +1220,7 @@ def checkBracketPair(b, e):
 
   def closeBracket():
     if last is not None and last != e:
-      diag('BRACKET', f'{bOrig}{eOrig} not closed after last {last}')
+      diag('BRACKET', f'{bOrig}{eOrig} not closed after last {last}', -1)
 
   biblical = None
 
@@ -1155,15 +1238,14 @@ def checkBracketPair(b, e):
       isB = c == b
       isE = c == e
       if isB and last == b:
-        diag('BRACKET', f'extra {bOrig}')
+        diag('BRACKET', f'extra {bOrig}', -1)
       if isE and (last == e or last is None):
-        diag('BRACKET', f'extra {eOrig}')
+        diag('BRACKET', f'extra {eOrig}', -1)
       if isB or isE:
         nOccs[biblical] += 1
         last = c
 
   closeBracket()
-  report('', only=True)
 
 
 def checkBrackets():
@@ -1268,47 +1350,12 @@ def parseMorph():
         tag = tag[1:]
     return parsed
 
-  tagFound = collections.Counter()
-  tagError = collections.Counter()
-  tagGood = collections.Counter()
-
-  def showMorph():
-    totalTag = sum(tagFound.values())
-    totalGood = sum(tagGood.values())
-    totalError = sum(tagError.values())
-    report(f'MORPH: {len(tagFound)} distinct tags in {totalTag} occurrences')
-    if tagError:
-      report(f'MORPH: ERROR: {len(tagError)} distinct tags in {totalError} occurrences')
-      for (tago, amount) in sorted(tagError.items()):
-        parsed = morphParsed[tago]
-        tag = mesc(tago)
-        tagRep = tago if tago == tag else f'{tago} => {tag}'
-        report(f'\t{tagRep:<18} {amount:>5} x {parsed}', only=True)
-      report('', only=True)
-
-    report(f'MORPH: GOOD: {len(tagGood)} distinct tags in {totalGood} occurrences')
-    for (tago, amount) in sorted(tagGood.items()):
-      parsed = morphParsed[tago]
-      tag = mesc(tago)
-      tagRep = tago if tago == tag else f'{tago} => {tag}'
-      report(f'\t{tagRep:<18} {amount:>5} x {parsed}', only=True)
-    report('', only=True)
-
-  for fields in data:
-    biblical = oBOOK in fields
-    ln = fields[oSRCLN]
-
-    lang = fields[oLANG]
-    morpho = fields[MORPH]
-    if lang == ARAMAIC:
-      morpho = morpho.replace(*mRepl)  # vs code H means something different in Aramaic
-
-    tagFound[morpho] += 1
-    if morpho in morphParsed:
-      parsed = morphParsed[morpho]
-    else:
-      parsed = parseTag(morpho)
-      morphParsed[morpho] = parsed
+  def showMorpho():
+    with open(REPORT_MORPH, 'w') as fh:
+      for (morph, analysis) in sorted(morphParsed.items()):
+        analysisRep = f'ERROR: {analysis[MERR]} ' if MERR in analysis else ''
+        analysisRep += ' '.join(f'{k}={v}' for (k, v) in analysis.items() if k != MERR)
+        fh.write(f'{morph:<20} => {analysisRep}\n')
 
   if debug:
     biblical = None
@@ -1321,14 +1368,24 @@ def parseMorph():
       print(f'{tagRep} => {parseTag(tag)}')
     return
 
-  for (tag, amount) in tagFound.items():
-    parsed = morphParsed[tag]
-    if MERR in parsed:
-      tagError[tag] += amount
-    else:
-      tagGood[tag] += amount
+  for fields in data:
+    biblical = oBOOK in fields
+    ln = fields[oSRCLN]
 
-  showMorph()
+    lang = fields[oLANG]
+    morpho = fields[oMORPH]
+    if lang == L_ARAMAIC:
+      morpho = morpho.replace(*mRepl)  # vs code H means something different in Aramaic
+
+    if morpho in morphParsed:
+      parsed = morphParsed[morpho]
+    else:
+      parsed = parseTag(morpho)
+      morphParsed[morpho] = parsed
+    if MERR in parsed:
+      diag('MORPH', f'at char: {parsed[MERR]}', -1)
+
+  showMorpho()
 
 
 def prepare():
@@ -1356,7 +1413,7 @@ def director(cv):
 
   mRepl = morphDecl['aramaicReplace']
 
-  report('Compiling feature data from tokens')
+  report('Compiling feature data ...')
 
   prevBook = None
   prevChapter = None
@@ -1396,7 +1453,7 @@ def director(cv):
           ''.join(CHARS_UNI[c] for c in text)
       )
     except KeyError:
-      diag('unknown character uni', text, False)
+      diag('CHAR', f'unknown character uni "{text}"', -1)
     return result
 
   def asRep(text, asNum=False, asForeign=False):
@@ -1410,7 +1467,7 @@ def director(cv):
           ''.join(CHARS_REP[c] for c in text)
       )
     except KeyError:
-      diag('unknown character rep', False)
+      diag('CHAR', f'unknown character rep "{text}"', -1)
     return result
 
   def morphMeta():
@@ -1446,37 +1503,20 @@ def director(cv):
   thisLex = None
 
   chunk = 1000
-  k = 0
   j = 0
-
-  def closeVolume():
-    cv.terminate(curLine)
-    cv.terminate(curFragment)
-    cv.terminate(curScroll)
-    if biblical:
-      cv.terminate(curHalfVerse)
-      cv.terminate(curVerse)
-      cv.terminate(curChapter)
-      cv.terminate(curBook)
 
   biblical = None
 
   for fields in data:
-    prevBiblical = biblical
     biblical = oBOOK in fields
-    if prevBiblical is not None and prevBiblical != biblical:
-      closeVolume()
-      pass
-
     ln = fields[oSRCLN]
 
     curSlot = None
 
     if j == chunk:
       j = 0
-      progress(f'{bib()}:{k:>6} lines', newline=False)
+      progress(f' {bib()}:{ln:>6} lines', newline=False)
     j += 1
-    k += 1
     thisScroll = fields[xSCROLL]
     thisFragment = fields[oFRAGMENT]
     thisLine = fields[oLINE]
@@ -1538,7 +1578,7 @@ def director(cv):
           cv.feature(curHalfVerse, number=thisVerse, label=thisHalfVerse)
 
     after = ' ' if fields[oBOUND] == B else None
-    fullo = fields[oTRANS]
+    fullo = fields[xTRANS]
     lexo = fields[oLEX]
     lang = fields[oLANG]
     morpho = fields[oMORPH]
@@ -1547,11 +1587,8 @@ def director(cv):
     glypho = nonGlyphRe.sub('', fullo)
     punco = nonPunctRe.sub('', fullo)
     if punco and glypho:
-      diag('punctuation and glyphs on same line', fullo, False)
+      diag('CHAR', f'punct and glyphs on same line "{fullo}"', -1)
 
-    if lexo == 'B':
-      diag('Unknown lexeme', lexo, False)
-      lexo = ''
     isNumLex = False
 
     if lexo:
@@ -1597,7 +1634,7 @@ def director(cv):
       if interlinear:
         cv.feature(curWord, interlinear=interlinear)
       if fullo:
-        cv.feature(curWord, fullo=unesc(fullo))
+        cv.feature(curWord, fullo=fields[oTRANS])
       if after:
         cv.feature(curWord, after=after)
       if glypho:
@@ -1629,12 +1666,14 @@ def director(cv):
         OTHER
     )
 
-    cv.feature(
-        curWord,
-        type=typ,
-        full=asUni(fullo, asNum=isNum, asForeign=isForeign),
-        fulle=asRep(fullo, asNum=isNum, asForeign=isForeign),
-    )
+    if punco or glypho or lexo:
+      cv.feature(
+          curWord,
+          type=typ,
+          full=asUni(fullo, asNum=isNum, asForeign=isForeign),
+          fulle=asRep(fullo, asNum=isNum, asForeign=isForeign),
+      )
+
     if glypho:
       cv.feature(
           curWord,
@@ -1642,12 +1681,12 @@ def director(cv):
           glyphe=asRep(glypho, asNum=isNum, asForeign=isForeign),
       )
     if isForeign:
-      lang = GREEK
+      lang = L_GREEK
     if lang:
       cv.feature(curWord, language=lang)
 
     if morpho:
-      morph = morpho.replace(*mRepl) if lang == ARAMAIC else morpho
+      morph = morpho.replace(*mRepl) if lang == L_ARAMAIC else morpho
       # vs code H means something different in Aramaic
       cv.feature(curWord, morpho=morpho, **morphParsed[morph])
 
@@ -1707,12 +1746,18 @@ def director(cv):
       prevVerse = thisVerse
       prevHalfVerse = thisHalfVerse
 
-  closeVolume()
+  cv.terminate(curLine)
+  cv.terminate(curFragment)
+  cv.terminate(curScroll)
+  if biblical:
+    cv.terminate(curHalfVerse)
+    cv.terminate(curVerse)
+    cv.terminate(curChapter)
+    cv.terminate(curBook)
 
-  progress(f'{bib():<6}:{k:>6} lines')
+  progress(f' {bib()}:{ln:>6} lines')
 
   morphMeta()
-  showDiag()
   return not errors
 
 
@@ -1730,31 +1775,24 @@ def getConverter():
 def convert():
   prepare()
   readSource()
-  if argValue['normwrite']:
-    writeProto()
-
-  readMorph()
-  if argValue['morphdecl']:
-    showDiag()
-    return True
-
-  parseMorph()
-  if argValue['morphonly']:
-    showDiag()
-    return True
-
-  if checkSource:
+  if not argValue['nochars']:
     checkChars()
   tokenizeData()
-  if checkSource:
+  if not argValue['nochars']:
     checkBrackets()
-
-  if argValue['checkonly']:
+  if argValue['normwrite']:
+    writeProto()
+  if argValue['sourceonly']:
     showDiag()
     return True
 
+  readMorph()
+  parseMorph()
   showDiag()
   resetDiag()
+
+  if argValue['notf']:
+    return True
 
   cv = getConverter()
 
@@ -1768,6 +1806,7 @@ def convert():
       generateTf=not argValue['notf'],
       force=argValue['force'],
   )
+  showDiag()
   finalize()
   return result
 
@@ -1785,7 +1824,7 @@ def loadTf():
     for (word, freq) in F.glyph.freqList(nodeTypes={WORD})[0:20]:
       report(f'{freq:>6} x {word}')
     report(f'first {ARAMAIC} word:')
-    aramaicWords = [w for w in F.otype.s(WORD) if F.language.v(w) == ARAMAIC]
+    aramaicWords = [w for w in F.otype.s(WORD) if F.language.v(w) == L_ARAMAIC]
     for w in aramaicWords[0:10]:
       report(f'{ARAMAIC:} {w:>7} = {F.fullo.v(w)} = {F.full.v(w)}')
   return 0 if api else 1
@@ -1794,7 +1833,6 @@ def loadTf():
 # MAIN
 
 def main():
-  global checkSource
   global debug
 
   report(f'This is tfFromAbegg converting {REPO} transcriptions to TF:')
@@ -1820,7 +1858,6 @@ def main():
     print(helpText)
     return 0
 
-  checkSource = argValue['check'] or argValue['checkonly']
   debug = argValue['debug']
 
   if argValue['loadonly']:
@@ -1837,11 +1874,7 @@ def main():
   if not good:
     return 1
 
-  if (
-      not argValue['checkonly'] and
-      argValue['load'] and
-      not argValue['notf']
-  ):
+  if argValue['load']:
     return loadTf()
 
     return 0
