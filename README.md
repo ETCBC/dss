@@ -72,4 +72,7 @@ Click the badges to be taken to the archives. There you find ways to cite this w
 Status
 ------
 
-2019-04-27 This is **work in progress!**
+This is **work in progress**.
+We will collect feedback for quite some time before we bump the version to 1.0 or higher.
+
+*   2019-05-05 Release 0.2.

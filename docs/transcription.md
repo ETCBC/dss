@@ -21,6 +21,17 @@ biblical scrolls.
 In both files, the material is subdivided into *scroll*, *fragment*, *line*.
 In the biblical file, *book*, *chapter* and *verse* are also marked.
 
+Some scrolls contain biblical as well as non-biblical materials.
+In the source data files those scrolls are split between the files.
+During conversion, we have reunited the scrolls.
+There are a 14 lines that occur in both source files.
+Here we have given precedence to the biblical versions, because they are either identical,
+or contain a reconstruction (marked as reconstruction!) that is absent in the
+non-biblical file.
+
+The feature `biblical` below contains all the information to see whether the material
+originates from the biblical or non-biblical source file or both.
+
 Every line in both files has fields for
 
 * transcription
@@ -69,16 +80,17 @@ but they are not configured as TF-sections.
 We map the transcriptions and lexemes to Hebrew unicode.
 The transcriptions are consonant only, the lexemes are pointed.
 The vowels we encounter in those lexemes have
-been transcribed by one or more special characters, probably
-in order to fine-tune the position of those points with respect to their
-consonants.
+been transcribed by one or more special characters,
+probably in order to fine-tune the position of those points
+with respect to their consonants.
 We reduce them to single Hebrew unicodes per vowel.
 
 There are bracketing constructs in the transcription, such as `<< >>`, `« »`, `[ ]`.
 It turns out that in the files as we see them, they are consistently written as if in the right to left writing
 direction. So they appear as `>> <<`, `» «`, `] [`.
-When we reproduce the orginal transcription, we put them allback into the left-to-right orientation, because
-this is the intended direction. The cause that we encounter them in the opposite orientation might be that
+When we reproduce the orginal transcription, we put them all back into the left-to-right orientation,
+because this is the intended direction.
+The cause for encountering them in the opposite orientation might be that
 we have stripped all unicode orientation characters (202A-202E)
 in our sanitizing preprocessing step.
 
@@ -108,7 +120,7 @@ type | source | etcbc | unicode | description
 ------- | ------ | ------ | --- | ---
 `cons` | `m` `M` | `M` `m`| `מ` `ם` | normal consonantal letter
 `vowel` | `I` | `I`| ` ִ ` | vowel point
-`sep` | ` ` | `_` | ` ` | non-breaking space
+`sep` | ` ` | `_` | ` ` | space
 `sep` | `-` | `&` | `־` | maqaf
 `sep` | `/`| `'`| `׳` | morpheme break 
 `punct` | `.` | `00` | `׃` | sof pasuq
@@ -126,10 +138,11 @@ feature | values | Abegg | ETCBC | Unicode | description
 **correction** | `1` | `yqw>mw<N` | `JQW(< MW >)n` | | material is corrected by a modern editor, marked by being within single angle brackets  `< >`
 **correction** | `2` | `>>zwnh«<<` | `(<< ZWNH# >>)` | | material is corrected by an ancient editor, marked by being within double angle brackets  `<< >>`
 **correction** | `3` | `^dbr/y^` | `(^ DBR ? J ^)` | | material is corrected by an ancient editor, marked by being within double angle brackets  `<< >>`
+**glyph[eo]** | | `m` | `M` | `מ` | transliteration of an individual sign
+**language** | `a` `g` | | | language, `a` is Aramaic, `g` is Greek, absent means Hebrew
 **reconstruction** | `1` | `]p[n»y` | `[P]N#?Y` | | material is reconstructed by a modern editor, marked by being within square brackets  `[ ]`
 **removed** | `1` | `}m«x«r«yØM«{` | `{M#Y#R#J?m#}` | | material is removed by a modern editor, marked by being within single braces  `{ }`
 **removed** | `2` | `twlo}}t{{` | `TWL<{{t}}` | | material is removed by an ancient editor, marked by being within double braces  `{{ }}`
-**glyph[eo]** | | `m` | `M` | `מ` | transliteration of an individual sign
 **type** | | | | | type of sign, see table above
 **uncertain** | `1` | `b«NØ` | `B#n?` | | indicates *uncertainty of degree=1* by flag `|`
 **uncertain** | `2` | `at«` `aj«y»/K` | `>T#` `>X#J#?) ? k` | | indicates *uncertainty of degree=2* by flag `«` or brackets `« »`, in this example the `« »` are not brackets but individual tokens
@@ -137,11 +150,32 @@ feature | values | Abegg | ETCBC | Unicode | description
 **uncertain** | `4` | `a\|hrwN` | `>#?HRWn` | | indicates *uncertainty of degree=4* by flag `\|`
 **vacat** | `1` | `≥ ≤` | `(- -)` | | indicates an empty, unwritten space by brackets `≤ ≥`
 
+## Biblical or not biblical
+
+The feature `biblical` is defined for *scrolls*, *fragments*, *lines*, *clusters*, and *words*.
+
+value | node type | description
+--- | --- | ---
+*absent* | `scroll` `fragment` `line` `word` `cluster` | material is completely non-biblical 
+`1` |  `scroll` `fragment` `line` `word` `cluster` | material is completely biblical
+`2` | `scroll` `fragment` | material is partly biblical, partly non-biblical
+`2` | `line` | material is biblical, but the line also occurs in the non-biblical file, see remark below
+`2` | `cluster` `word` | material occurs in a line with `biblical=2`
+
+**Remark**
+
+For lines with `biblical=2` we have included the material according to the biblical source file
+and we have discarded the material according to the nonbiblical source file.
+
+There are only 14 of such lines, 6 of them are identical in both source files, and the rest has a
+reconstruction in the biblical source file (marked as such by `[ ]` brackets and hardly any definite material
+in the non-biblical source file.
+
 ## Node type [*word*](#word)
 
 Sequence of signs separated corresponding to a single line in the Abegg data files.
-If a word is adjacent to a next word, the Abegg data file has `B` in a certain column,
-and we leave the *after* feature without value.
+Whether a word is adjacent to a next word can be gleaned from the numbering of the word in the source file.
+If so, we leave the *after* feature without value.
 
 There are several types of things that can occupy a word:
 a string of consonants, a numeral, punctuation, nothing, ...
@@ -164,14 +198,40 @@ We add a slot of type `empty` to this word.
 feature | Abegg | ETCBC | Unicode | description
 ------- | ------ | ------ | --- | --------
 **after** | ` ` | | | whether there is a space after a word and before the next word
-**biblical** | `1` | | | whether this word is in a biblical scroll or not
+**biblical** | `1` `2` | | | 1 or 2 if this word is biblical material, otherwise absent, see section on biblical
 **full[eo]** | `mm/nw[` | `MM61NW]` | `ממ׳נו]` | full transcription of a word, including flags and clustering characters
 **glyph[eo]** | `mmnw` | `MMNW]` | `ממנו` | letters of a word excluding flags and brackets
+**interlinear** | `1` `2` | | | if the physical word is on an interlinear line, this is `1`, if there are two interlinear lines at that point, the words on the first line get `1` and words on the second line gets `2`
+**language** | `a` `g` | | | language, `a` is Aramaic, `g` is Greek, absent means Hebrew
 **lex[eo]** | `mIN` | `MIn` | `מִן` | lexeme of a word
 **punc[eo]** | `.` | `00` | `׃` | punctuation at the end of a word
 **morpho** | `vHi1cpX3mp` | | | original morphological tag for this word; all information in this has been decomposed into the morphological features below
+**script** | `paleohebrew` `greekcapital` | | | indicates the script in which the word is written
+**srcLn** | `424242` | | | line number of this word in its source data file; use `biblical` to find out whether it is the bib or the nonbib file
 **type** | | | | type of word, see table above
-**srcLn** | `424242` | | | line number of this word in its source data file
+
+## Node type [*lex*](#lex)
+
+The type of lexemes, as found in the lexeme field of the source data files.
+
+feature | Abegg | ETCBC | Unicode | description
+------- | ------ | ------ | --- | --------
+**lex[eo]** | `mIN` | `MIn` | `מִן` | lexeme of a word
+
+Lexemes are connected to their occurrence words by means of an edge feature:
+
+feature | description
+--- | ---
+`occ` | edges from lexeme nodes to each of their word occurrences
+
+**N.B.** Note that you can use this feature in both directions:
+
+```python
+words = E.occ.f(lex)
+lex = E.occ.t(word)[0]
+```
+
+### Morphological features
 
 A word has several morphology features.
 If a word is divided into morphemes, each of the morphemes can carry morphology.
@@ -212,6 +272,12 @@ feature | examples | description
 **vt** | `perf` `impf` `wayy` `impv` `infc` `infa` `ptca` `ptcp` | verbal tense or aspect, also with *wayyiqtol*
 **md** | `juss` `coho` `cons` | mood 
 
+If the parsing of the morphology tag has been inconclusive, there will be an error feature present on that word:
+
+feature | examples | description
+------- | ------ | ------
+**merr** | `vnPfpa` `@0` | the characters are those that are not recognized by the parser at that point
+
 ## Node type [*cluster*](#cluster)
 
 Grouped sequence of [*signs*](#sign). There are different
@@ -246,7 +312,7 @@ Other features:
 
 feature | examples | description
 ------- | ------ | ------
-**biblical** | `1` | whether this cluster is in a biblical scroll or not
+**biblical** | `1` `2` | 1 or 2 if this cluster is biblical material, otherwise absent, see section on biblical
 
 ## Node type [*line*](#line)
 
@@ -257,7 +323,7 @@ Corresponds to a set of source data lines with the same value in the *line* colu
 
 feature | values | description
 ------- | ------ | ------
-**biblical** | `1` | whether this line is in a biblical scroll or not
+**biblical** | `1` `2` | 1 or 2 if this line is biblical material, otherwise absent, see section on biblical
 **label** | `3` | number of a physical line (not necessarily integer valued)
 
 There are lines in the source data with number `0` and with a subdivision by means of an
@@ -276,7 +342,7 @@ For non-biblical scrolls, the fragment is usually called *column*.
 
 feature | values | description
 ------- | ------ | ------
-**biblical** | `1` | whether this fragment is in a biblical scroll or not
+**biblical** | `1` `2` | 1 or 2 if this fragment contains biblical material, otherwise absent, see section on biblical
 **label** | `f3` | label of a physical fragment or column
 
 ## Node type [*scroll*](#scroll)
@@ -287,7 +353,7 @@ Corresponds to a set of source data lines with the same value in the *scroll* co
 
 feature | values | description
 ------- | ------ | ------
-**biblical** | `1` | whether this scroll is in a biblical scroll or not
+**biblical** | `1` `2` | 1 or 2 if this scroll contains biblical material, otherwise absent, see section on biblical
 **acro** | `1Q1` | short name of a physical scroll
 
 ## Node type [*halfverse*](#halfverse)

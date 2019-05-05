@@ -1,4 +1,4 @@
-<img src="images/dss-logo.png" align="right" width="200"/>
+﻿<img src="images/dss-logo.png" align="right" width="200"/>
 <img src="images/tf.png" align="right" width="200"/>
 
 # The Dead Sea Scrolls (DSS)
@@ -19,34 +19,56 @@ a project that broke the lengthy publication monopoly held on the scrolls.
 
 # Provenance
 
-The contents of this repo is created during the project ?? url ??
-carried out by Jarod Jacobs, Martijn Naaijer and Robert Rezetko.
+The contents of this repo is created during the
+[*Creating Annotated Corpora of Classical Hebrew Texts (CACCHT) project*](https://github.com/ETCBC/CACCHT)
+carried out by Jarod Jacobs, Martijn Naaijer, Dirk Roorda, Robert Rezetko, Oliver Glanz, and Wido van Peursen.
 
-Martin Abegg has given permission to Jarod Jacobs to use his data files for this
-project and to distribute the results under a CC-BY-NC license.
+The DSS texts and morphological data connected with them were generously provided by Martin Abegg, which consist 
+of two foundational sets of data: transcriptions and morphological tagging. The transcriptions come from various 
+sources, but primarily reflect what is found in the Discoveries in the Judean Desert series (Oxford:Clarendon Press, 1955-). 
+For full details see:
 
-**to fill in: more info about the provenance of Abegg's data files**
+[DSSB-Read me first](assets/readme-dssb.pdf) and
+[QUMRAN - Read me first](assets/readme-qumran.pdf).
+
+Abegg started morphologically tagging the Qumran texts in the mid-90s
+with the assistance of several people that he mentions in the above read me first files.
+Over the following decades, Abegg completed full morphological tagging 
+of nearly every Hebrew and Aramaic scroll found in the Judaean Desert between 1947 and today.
+For more information about the development and particularities of Abegg’s data,
+we will once again point you to the DSSB and QUMRAN read me first files.
+
+The tagging scheme itself is also 
+[documented](assets/morph.pdf).
+
+After conversion to Text-Fabric, the these tags have been normalized into seperate features,
+such as *sp (part-of-speech)*, *ps (person)*, *nu (number)*, *gn (gender)*, etc.
+
+See [morhpological features in TF](transcription.md#morphological-features).
+
+Upon learning of the current project, Martin Abegg graciously gave permission to Jarod Jacobs to use his data and 
+to distribute the results under a CC-BY-NC license.
 
 The corpus consists of two files, one for the non-biblical scrolls and one for the 
 biblical scrolls.
 
-Jarod Jacobs took the files, straightened out the columns and handed them
-as tab-separated text files to Dirk Roorda, who
-converted the data into Text-Fabric format by means of a special purpose
+Jarod Jacobs has made preliminary analysis of these source files and has communicated his observations
+to Dirk Roorda,
+who converted them into Text-Fabric format by means of a special purpose
 Python program [tfFromAbegg.py](../programs/tfFromAbegg.py).
 
-This program performs numerous checks, and as a results several corrections have been made.
+This program performs numerous checks, and as a result several corrections have been made.
 
 The result of the conversion are the files in the `.tf` subdirectory.
-They afre plain text files that roughly correspond with the columns in the files by Abegg.
+They are plain text files that roughly correspond to the columns in the files by Abegg.
 A single `.tf` file is called a feature. It maps nodes to values.
 
 However, we have separated out all text-critical and morphological information into
-additional features, thereby greatly uncluttering the mass of information in these files.
+additional features, thereby greatly uncluttering the wealth of information in these files.
 
 # Acknowledgements
 
-We are indebted to Martin Abegg for making his data files available and for 
+We are indebted to Martin Abegg for making his data available and for 
 guidance during the conversion stage.
  
 # License
@@ -74,13 +96,15 @@ provided:
     that legally restrict others from doing anything the license permits.
 
 **N.B.**
-[Accordance](https://www.accordancebible.com), maker of top-notch commerical Bible software,
-also uses the data files of Martin Abegg.
-Accordance has candidly made clear that our use of his files does not infringe on
-rights held by Accordance.
-
 If you have any questions about how you can use this material,
-please contact [Jarod Jacobs](https://warnerpacific.academia.edu/JarodJacobs)
+or suggestions for improvements, 
+or other feedback, consider these options:
+
+*   look through the
+    [issues](https://github.com/ETCBC/dss/issues) on this repository and/or file a new one;
+*   send an email to [Martijn Naaijer](mailto:martijn.naayer@upcmail.nl)
+*   via both means you can request an invite to join our
+    **ETCBC/DSS slack channel** and the community there will attempt to assist you.
 
 # Links
 

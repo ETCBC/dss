@@ -14,7 +14,7 @@ fieldFixes:
     48129:
         morph: ['vhp3cpX3mp{2}', 'vhp3cp{2}X3mp', 'move {2}']
     59593:
-        trans: [' ± ', '±', 'space around paleo divider']
+        trans: [' ± ', '±', 'space around divider']
     127763:
         morph: ['vhp3cpX3ms{2}', 'vhp3cp{2}X3ms', 'move {2}']
     153845:
@@ -24,7 +24,7 @@ fieldFixes:
     154026:
         trans: ['b]', 'b', 'spurious ] bracket']
     173512:
-        trans: ['^b', '^b^', 'imbalance in ^ brackets']
+        trans: ['^b', '^b^', 'imbalanced ^ bracket']
     211343:
         trans: ['y»tkwØ_nw', 'y»tkwØnw', '_ removed (1 of 3)']
     248844:
@@ -38,7 +38,7 @@ fieldFixes:
     291886:
         trans: ['a', 'A', 'a is numeral A']
     324473:
-        trans: ['[˝w»b|a|]', '[w»b|a|]', 'unique character removed']
+        trans: ['[˝w»b|a|]', '[w»b|a|]', 'character removed']
     335846:
         trans: ['3', '', 'removed a stray digit']
   true:
@@ -47,23 +47,23 @@ fieldFixes:
     109489:
         morph: ['0ncfp', 'ncfp', 'spurious unknown symbol']
     115544:
-        morph: ['\', '0', 'morph for -- should be 0']
+        morph: ['\', '0', 'morph for -- => 0']
     146637:
         morph: ['0ncfs', 'ncfs', 'spurious unknown symbol']
     147953:
-        trans: ['[^≥', '[≥', 'imbalance in ^ brackets']
+        trans: ['[^≥', '[≥', 'imbalanced ^ bracket']
     154933:
         trans: ['≥1a≤', '≥a≤', 'spurious character "1"']
     154949:
         trans: ['≥2a≤', '≥a≤', 'spurious character "2"']
     157840:
-        morph: ['2', '0', 'strange digit, should be 0']
+        morph: ['2', '0', 'digit should be 0']
     158371:
-        morph: ['4', '0', 'strange digit, should be 0']
+        morph: ['4', '0', 'digit should be 0']
     158401:
-        morph: ['3', '0', 'strange digit, should be 0']
+        morph: ['3', '0', 'digit should be 0']
     158493:
-        trans: ['[\\]^', '[\\]', 'imbalance in ^ brackets']
+        trans: ['[\\]^', '[\\]', 'imbalanced ^ bracket']
     185650:
         trans: ['h«\\wØ(', 'h«\\wØ', 'spurious ( bracket']
     186373:

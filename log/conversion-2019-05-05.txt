@@ -1,0 +1,1838 @@
+Reading proto N ...340079 rows out of 378023 sourcelines
+Reading proto B ...242661 rows out of 243157 sourcelines
+DATANORM: 582740 rows
+LINES: 14 with bib and nonbib material
+SCROLLS: 1001 names
+SCROLLS: 4 with bib and nonbib material
+FRAGMENTS: 7 with bib and nonbib material
+	Number of ways to end a line: 6113 ways to end a line
+		[           16612 x
+		/           15410 x
+		.           10151 x
+		≤             390 x
+		kwl           114 x
+		a             111 x
+		[\             93 x
+		aCr            90 x
+		a[             85 x
+		at             65 x
+		kwl[           55 x
+		at[            54 x
+		lwa            52 x
+		≤[             47 x
+		al             45 x
+		aCr[           41 x
+		lwa[           37 x
+		ol             37 x
+		al[            34 x
+		ayC            33 x
+CHARACTERS: MAPPED:  ()+-./0123456789;<>?ABCDEFGHIJKMNOPRSTUVX[\]^abcdfghjklmnopqrstvwxyz{|} ¥¨«®±´»ÅÊÎÏØÚåéîøüƒˆΩ…‰∂√∫≤≥◊
+CHARACTERS: 142 used
+	in lex field:
+		both         8 x
+		both  /      1 x
+		both  A  62523 x
+		both  C    171 x
+		both  D  49506 x
+		both  E  28584 x
+		both  F    315 x
+		both  I  37452 x
+		both  K   6532 x
+		both  M  25933 x
+		both  N  26995 x
+		both  P   3537 x
+		both  R  33720 x
+		both  S  13119 x
+		both  T   3530 x
+		both  X   4433 x
+		both  \ 114742 x
+		both  a  81949 x
+		both  b  64375 x
+		both  d  33017 x
+		both  f   7045 x
+		both  g   9371 x
+		both  h  89700 x
+		both  j  26305 x
+		both  k  29392 x
+		both  l  86737 x
+		both  m  45480 x
+		both  n  23284 x
+		both  o  43991 x
+		both  p  14556 x
+		both  q  17056 x
+		both  r  64984 x
+		both  s   7225 x
+		both  t  29244 x
+		both  w  91711 x
+		both  x  10078 x
+		both  y  65541 x
+		both  z   8508 x
+		both         1 x
+		both  å   4465 x
+		only  0     94 x
+		only  1    162 x
+		only  2    151 x
+		only  3     86 x
+		only  4     71 x
+		only  5     64 x
+		only  6     36 x
+		only  7     35 x
+		only  8     20 x
+		only  9     36 x
+		only  ;  69356 x
+		only  J   3483 x
+		only  O  18209 x
+		only  U   1114 x
+		only  V  66607 x
+		only  c  10777 x
+		only  v  44560 x
+		only  ¥   1238 x
+		only  ¨     39 x
+		only  ®   9559 x
+		only  ´   2179 x
+		only  Å   4441 x
+		only  Ê    279 x
+		only  Î  10415 x
+		only  Ï      4 x
+		only  Ú   9042 x
+		only  é   2656 x
+		only  î   4682 x
+		only  ø  28135 x
+		only  ü    110 x
+		only  ƒ    165 x
+		only  ˆ  12625 x
+		only  Ω    129 x
+		only  …  14889 x
+		only  ‰   7677 x
+		only  ∂  13231 x
+		only  √   3908 x
+		only  ◊  50394 x
+	in trans field:
+		both         3 x
+		both  /  61582 x
+		both  A   1231 x
+		both  C  55778 x
+		both  D    249 x
+		both  E      2 x
+		both  F      9 x
+		both  I      1 x
+		both  K   9761 x
+		both  M  35405 x
+		both  N  16926 x
+		both  P   1975 x
+		both  R      1 x
+		both  S      1 x
+		both  T      2 x
+		both  X   3095 x
+		both  \  26558 x
+		both  a  86532 x
+		both  b  64380 x
+		both  d  32842 x
+		both  f   7070 x
+		both  g   9351 x
+		both  h  94354 x
+		both  j  26285 x
+		both  k  38637 x
+		both  l  86311 x
+		both  m  57477 x
+		both  n  35038 x
+		both  o  43915 x
+		both  p  16136 x
+		both  q  17037 x
+		both  r  64638 x
+		both  s   7250 x
+		both  t  58565 x
+		both  w 143466 x
+		both  x  11417 x
+		both  y 124813 x
+		both  z   8481 x
+		both       399 x
+		both  å    145 x
+		only  (    333 x
+		only  )    333 x
+		only  +     65 x
+		only  - 107729 x
+		only  .  29909 x
+		only  <    389 x
+		only  >    389 x
+		only  ?    610 x
+		only  B    234 x
+		only  G      1 x
+		only  H      3 x
+		only  [  93733 x
+		only  ]  93733 x
+		only  ^   3164 x
+		only  {   1487 x
+		only  |  40182 x
+		only  }   1487 x
+		only  «  26873 x
+		only  ±     18 x
+		only  »  15538 x
+		only  Ø  10325 x
+		only  ∫     13 x
+		only  ≤   3522 x
+		only  ≥   3522 x
+BRACKETS ^ ^ ...
+BRACKETS << >> ...
+BRACKETS « » ...
+BRACKETS {{ }} ...
+BRACKETS { } ...
+BRACKETS ≤ ≥ ...
+BRACKETS ( ) ...
+BRACKETS [ ] ...
+BRACKETS « » ...
+┌────┬────┬────┬────┬─────────────────────────────────────────────────┬────────┐
+│30  │30  │0   │0   │FIX (FIELD)                                      │        │
+├────┼────┼────┼────┼─────────────────────────────────────────────────┼────────┤
+│    │OK  │    │    │lex          82 => kj     strange lexeme         │N:263123│
+│    │OK  │    │    │morph         2 => 0      digit should be 0      │B:157840│
+│    │OK  │    │    │morph         3 => 0      digit should be 0      │B:158401│
+│    │OK  │    │    │morph         4 => 0      digit should be 0      │B:158371│
+│    │OK  │    │    │morph         \ => 0      morph for -- => 0      │B:115544│
+│    │OK  │    │    │morph      Pp@0 => Pp     spurious @0            │B:186373│
+│    │OK  │    │    │morph     0ncfp => ncfp   spurious unknown symbol│B:109489│
+│    │OK  │    │    │morph     0ncfs => ncfs   spurious unknown symbol│B:146637│
+│    │OK  │    │    │morph    vhp3cpX3mp{2} => vhp3cp{2}X3mp move {2} │N: 48129│
+│    │OK  │    │    │morph    vhp3cpX3ms{2} => vhp3cp{2}X3ms move {2} │N:127763│
+│    │OK  │    │    │morph    vp12ms => vp1ms  spurious 2nd person    │B: 48768│
+│    │OK  │    │    │trans         3 =>        removed a stray digit  │N:335846│
+│2   │2   │0   │0   │trans         a => A      a is numeral A         │        │
+│    │OK  │    │    │trans         a => A      a is numeral A         │N:290592│
+│    │OK  │    │    │trans         a => A      a is numeral A         │N:291886│
+│    │OK  │    │    │trans        ^b => ^b^    imbalanced ^ bracket   │N:173512│
+│3   │3   │0   │0   │trans        b] => b      spurious ] bracket     │        │
+│    │OK  │    │    │trans        b] => b      spurious ] bracket     │N:153845│
+│    │OK  │    │    │trans        b] => b      spurious ] bracket     │N:153970│
+│    │OK  │    │    │trans        b] => b      spurious ] bracket     │N:154026│
+│    │OK  │    │    │trans        ≤] => ≥≤     spurious ], missing ≥  │N: 38512│
+│    │OK  │    │    │trans       [^≥ => [≥     imbalanced ^ bracket   │B:147953│
+│    │OK  │    │    │trans        ±  => ±      space around divider   │N: 59593│
+│    │OK  │    │    │trans      oyN_ => oyN    _ removed (1 of 3)     │N:287243│
+│    │OK  │    │    │trans      ≥1a≤ => ≥a≤    spurious character "1" │B:154933│
+│    │OK  │    │    │trans      ≥2a≤ => ≥a≤    spurious character "2" │B:154949│
+│    │OK  │    │    │trans     [\\]^ => [\\]   imbalanced ^ bracket   │B:158493│
+│    │OK  │    │    │trans    [˝w»b|a|] => [w»b|a|] character removed │N:324473│
+│    │OK  │    │    │trans    alwhiM => alwhyM hireq => yod           │B:202206│
+│    │OK  │    │    │trans    h«\\wØ( => h«\\wØ spurious ( bracket    │B:185650│
+│    │OK  │    │    │trans    t_onh] => tonh]  _ removed (1 of 3)     │N:248844│
+│    │OK  │    │    │trans    y»tkwØ_nw => y»tkwØnw _ removed (1 of 3)│N:211343│
+└────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
+┌────┬────┬────┬────┬─────────────────────────────────────────────────┬────────┐
+│5   │5   │0   │0   │FIX (LINE)                                       │        │
+├────┼────┼────┼────┼─────────────────────────────────────────────────┼────────┤
+│    │OK  │    │    │       =>        double space to single          │N:256841│
+│    │OK  │    │    │    \0 => \@0    separator before lex field      │N:348565│
+│    │OK  │    │    │    \t\t => \t      double tab to single         │B:208179│
+│    │OK  │    │    │   3,1 => 3.1    comma in number to .            │N:348900│
+│    │OK  │    │    │[\ \\\@0\t => [\\t\\\@0 tab moved to right       │B: 36238│
+└────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
+┌────┬────┬────┬────┬─────────────────────────────────────────────────┬────────┐
+│6   │6   │0   │0   │FOREIGN                                          │        │
+├────┼────┼────┼────┼─────────────────────────────────────────────────┼────────┤
+│    │OK  │    │    │DI                                               │N: 57920│
+│    │OK  │    │    │HN                                               │N: 57850│
+│    │OK  │    │    │KEN                                              │N: 57714│
+│    │OK  │    │    │SK                                               │N: 58098│
+│    │OK  │    │    │THE                                              │N: 57872│
+│    │OK  │    │    │TR                                               │N: 58032│
+└────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
+┌────┬────┬────┬────┬─────────────────────────────────────────────────┬────────┐
+│28  │28  │0   │0   │LINE (biblical and nonbiblical)                  │        │
+├────┼────┼────┼────┼─────────────────────────────────────────────────┼────────┤
+│2   │2   │0   │0   │2Q29                    f1:    1                 │        │
+│    │OK  │    │    │2Q29                    f1:    1                 │N: 56262│
+│    │OK  │    │    │2Q29                    f1:    1                 │B: 48758│
+│2   │2   │0   │0   │2Q29                    f1:    2                 │        │
+│    │OK  │    │    │2Q29                    f1:    2                 │N: 56270│
+│    │OK  │    │    │2Q29                    f1:    2                 │B: 48783│
+│2   │2   │0   │0   │2Q29                    f1:    3                 │        │
+│    │OK  │    │    │2Q29                    f1:    3                 │N: 56279│
+│    │OK  │    │    │2Q29                    f1:    3                 │B: 48806│
+│2   │2   │0   │0   │4Q249j                  f1:    1                 │        │
+│    │OK  │    │    │4Q249j                  f1:    1                 │N:109365│
+│    │OK  │    │    │4Q249j                  f1:    1                 │B:202051│
+│2   │2   │0   │0   │4Q249j                  f1:    2                 │        │
+│    │OK  │    │    │4Q249j                  f1:    2                 │N:109381│
+│    │OK  │    │    │4Q249j                  f1:    2                 │B:202067│
+│2   │2   │0   │0   │4Q249j                  f1:    3                 │        │
+│    │OK  │    │    │4Q249j                  f1:    3                 │N:109391│
+│    │OK  │    │    │4Q249j                  f1:    3                 │B:202077│
+│2   │2   │0   │0   │4Q249j                  f1:    4                 │        │
+│    │OK  │    │    │4Q249j                  f1:    4                 │N:109402│
+│    │OK  │    │    │4Q249j                  f1:    4                 │B:202088│
+│2   │2   │0   │0   │4Q249j                  f1:    5                 │        │
+│    │OK  │    │    │4Q249j                  f1:    5                 │N:109415│
+│    │OK  │    │    │4Q249j                  f1:    5                 │B:202101│
+│2   │2   │0   │0   │4Q249j                  f1:    6                 │        │
+│    │OK  │    │    │4Q249j                  f1:    6                 │N:109428│
+│    │OK  │    │    │4Q249j                  f1:    6                 │B:202114│
+│2   │2   │0   │0   │4Q483                   f1:    1                 │        │
+│    │OK  │    │    │4Q483                   f1:    1                 │N:251891│
+│    │OK  │    │    │4Q483                   f1:    1                 │B:202151│
+│2   │2   │0   │0   │4Q483                   f1:    2                 │        │
+│    │OK  │    │    │4Q483                   f1:    2                 │N:251898│
+│    │OK  │    │    │4Q483                   f1:    2                 │B:202166│
+│2   │2   │0   │0   │4Q483                   f1:    3                 │        │
+│    │OK  │    │    │4Q483                   f1:    3                 │N:251906│
+│    │OK  │    │    │4Q483                   f1:    3                 │B:202182│
+│2   │2   │0   │0   │4Q483                   f2:    1                 │        │
+│    │OK  │    │    │4Q483                   f2:    1                 │N:251914│
+│    │OK  │    │    │4Q483                   f2:    1                 │B:202117│
+│2   │2   │0   │0   │4Q483                   f2:    2                 │        │
+│    │OK  │    │    │4Q483                   f2:    2                 │N:251921│
+│    │OK  │    │    │4Q483                   f2:    2                 │B:202135│
+└────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
+┌────┬────┬────┬────┬─────────────────────────────────────────────────┬────────┐
+│2   │0   │0   │2   │MORPH                                            │        │
+├────┼────┼────┼────┼─────────────────────────────────────────────────┼────────┤
+│    │    │    │XX  │at char: @0                                      │B:186962│
+│    │    │    │XX  │at char: vnPfpa                                  │N:174947│
+└────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
+┌────┬────┬────┬────┬─────────────────────────────────────────────────┬────────┐
+│612 │612 │0   │0   │NUMERAL                                          │        │
+├────┼────┼────┼────┼─────────────────────────────────────────────────┼────────┤
+│    │OK  │    │    │candidate "CM"                                   │N: 24676│
+│4   │4   │0   │0   │candidate "K"                                    │        │
+│    │OK  │    │    │candidate "K"                                    │N: 25048│
+│    │OK  │    │    │candidate "K"                                    │N: 26213│
+│    │OK  │    │    │candidate "K"                                    │N: 26883│
+│    │OK  │    │    │candidate "K"                                    │N:216306│
+│139 │139 │0   │0   │candidate "M"                                    │        │
+│    │OK  │    │    │candidate "M"                                    │N: 14182│
+│    │OK  │    │    │candidate "M"                                    │N: 24607│
+│    │OK  │    │    │candidate "M"                                    │N: 24684│
+│    │OK  │    │    │candidate "M"                                    │N: 24730│
+│    │OK  │    │    │candidate "M"                                    │N: 25434│
+│    │OK  │    │    │candidate "M"                                    │N: 26277│
+│    │OK  │    │    │candidate "M"                                    │N: 26845│
+│    │OK  │    │    │candidate "M"                                    │N: 27581│
+│    │OK  │    │    │candidate "M"                                    │N: 28724│
+│    │OK  │    │    │candidate "M"                                    │N: 28732│
+│    │OK  │    │    │candidate "M"                                    │N: 31681│
+│    │OK  │    │    │candidate "M"                                    │N: 33396│
+│    │OK  │    │    │candidate "M"                                    │N: 37217│
+│    │OK  │    │    │candidate "M"                                    │N: 37271│
+│    │OK  │    │    │candidate "M"                                    │N: 37497│
+│    │OK  │    │    │candidate "M"                                    │N: 37549│
+│    │OK  │    │    │candidate "M"                                    │N: 38800│
+│    │OK  │    │    │candidate "M"                                    │N: 40302│
+│    │OK  │    │    │candidate "M"                                    │N: 56887│
+│    │OK  │    │    │candidate "M"                                    │N: 63589│
+│    │OK  │    │    │candidate "M"                                    │N: 76252│
+│    │OK  │    │    │candidate "M"                                    │N: 76743│
+│    │OK  │    │    │candidate "M"                                    │N: 77375│
+│    │OK  │    │    │candidate "M"                                    │N: 77424│
+│    │OK  │    │    │candidate "M"                                    │N: 96436│
+│    │OK  │    │    │candidate "M"                                    │N: 96440│
+│    │OK  │    │    │candidate "M"                                    │N:103860│
+│    │OK  │    │    │candidate "M"                                    │N:115864│
+│    │OK  │    │    │candidate "M"                                    │N:118059│
+│    │OK  │    │    │candidate "M"                                    │N:121354│
+│    │OK  │    │    │candidate "M"                                    │N:121453│
+│    │OK  │    │    │candidate "M"                                    │N:121969│
+│    │OK  │    │    │candidate "M"                                    │N:122254│
+│    │OK  │    │    │candidate "M"                                    │N:122417│
+│    │OK  │    │    │candidate "M"                                    │N:122988│
+│    │OK  │    │    │candidate "M"                                    │N:122996│
+│    │OK  │    │    │candidate "M"                                    │N:123319│
+│    │OK  │    │    │candidate "M"                                    │N:124945│
+│    │OK  │    │    │candidate "M"                                    │N:124984│
+│    │OK  │    │    │candidate "M"                                    │N:125150│
+│    │OK  │    │    │candidate "M"                                    │N:126013│
+│    │OK  │    │    │candidate "M"                                    │N:126016│
+│    │OK  │    │    │candidate "M"                                    │N:126183│
+│    │OK  │    │    │candidate "M"                                    │N:126313│
+│    │OK  │    │    │candidate "M"                                    │N:126574│
+│    │OK  │    │    │candidate "M"                                    │N:128465│
+│    │OK  │    │    │candidate "M"                                    │N:128490│
+│    │OK  │    │    │candidate "M"                                    │N:128765│
+│    │OK  │    │    │candidate "M"                                    │N:129100│
+│    │OK  │    │    │candidate "M"                                    │N:132562│
+│    │OK  │    │    │candidate "M"                                    │N:133288│
+│    │OK  │    │    │candidate "M"                                    │N:133392│
+│    │OK  │    │    │candidate "M"                                    │N:133751│
+│    │OK  │    │    │candidate "M"                                    │N:137546│
+│    │OK  │    │    │candidate "M"                                    │N:137632│
+│    │OK  │    │    │candidate "M"                                    │N:140449│
+│    │OK  │    │    │candidate "M"                                    │N:140464│
+│    │OK  │    │    │candidate "M"                                    │N:140477│
+│    │OK  │    │    │candidate "M"                                    │N:140489│
+│    │OK  │    │    │candidate "M"                                    │N:140583│
+│    │OK  │    │    │candidate "M"                                    │N:140745│
+│    │OK  │    │    │candidate "M"                                    │N:140862│
+│    │OK  │    │    │candidate "M"                                    │N:140870│
+│    │OK  │    │    │candidate "M"                                    │N:141786│
+│    │OK  │    │    │candidate "M"                                    │N:142078│
+│    │OK  │    │    │candidate "M"                                    │N:142898│
+│    │OK  │    │    │candidate "M"                                    │N:147811│
+│    │OK  │    │    │candidate "M"                                    │N:182026│
+│    │OK  │    │    │candidate "M"                                    │N:182234│
+│    │OK  │    │    │candidate "M"                                    │N:237958│
+│    │OK  │    │    │candidate "M"                                    │N:238083│
+│    │OK  │    │    │candidate "M"                                    │N:238123│
+│    │OK  │    │    │candidate "M"                                    │N:238445│
+│    │OK  │    │    │candidate "M"                                    │N:247004│
+│    │OK  │    │    │candidate "M"                                    │N:249908│
+│    │OK  │    │    │candidate "M"                                    │N:249936│
+│    │OK  │    │    │candidate "M"                                    │N:251375│
+│    │OK  │    │    │candidate "M"                                    │N:254371│
+│    │OK  │    │    │candidate "M"                                    │N:255407│
+│    │OK  │    │    │candidate "M"                                    │N:256553│
+│    │OK  │    │    │candidate "M"                                    │N:268964│
+│    │OK  │    │    │candidate "M"                                    │N:269281│
+│    │OK  │    │    │candidate "M"                                    │N:269990│
+│    │OK  │    │    │candidate "M"                                    │N:270151│
+│    │OK  │    │    │candidate "M"                                    │N:270233│
+│    │OK  │    │    │candidate "M"                                    │N:270403│
+│    │OK  │    │    │candidate "M"                                    │N:270920│
+│    │OK  │    │    │candidate "M"                                    │N:271177│
+│    │OK  │    │    │candidate "M"                                    │N:271627│
+│    │OK  │    │    │candidate "M"                                    │N:271694│
+│    │OK  │    │    │candidate "M"                                    │N:271850│
+│    │OK  │    │    │candidate "M"                                    │N:272144│
+│    │OK  │    │    │candidate "M"                                    │N:272265│
+│    │OK  │    │    │candidate "M"                                    │N:272297│
+│    │OK  │    │    │candidate "M"                                    │N:272341│
+│    │OK  │    │    │candidate "M"                                    │N:272364│
+│    │OK  │    │    │candidate "M"                                    │N:272640│
+│    │OK  │    │    │candidate "M"                                    │N:279234│
+│    │OK  │    │    │candidate "M"                                    │N:280381│
+│    │OK  │    │    │candidate "M"                                    │N:280620│
+│    │OK  │    │    │candidate "M"                                    │N:280644│
+│    │OK  │    │    │candidate "M"                                    │N:280878│
+│    │OK  │    │    │candidate "M"                                    │N:281168│
+│    │OK  │    │    │candidate "M"                                    │N:281189│
+│    │OK  │    │    │candidate "M"                                    │N:281527│
+│    │OK  │    │    │candidate "M"                                    │N:281637│
+│    │OK  │    │    │candidate "M"                                    │N:281961│
+│    │OK  │    │    │candidate "M"                                    │N:282322│
+│    │OK  │    │    │candidate "M"                                    │N:282400│
+│    │OK  │    │    │candidate "M"                                    │N:283505│
+│    │OK  │    │    │candidate "M"                                    │N:284122│
+│    │OK  │    │    │candidate "M"                                    │N:284400│
+│    │OK  │    │    │candidate "M"                                    │N:284658│
+│    │OK  │    │    │candidate "M"                                    │N:284691│
+│    │OK  │    │    │candidate "M"                                    │N:287001│
+│    │OK  │    │    │candidate "M"                                    │N:287310│
+│    │OK  │    │    │candidate "M"                                    │N:287329│
+│    │OK  │    │    │candidate "M"                                    │N:287339│
+│    │OK  │    │    │candidate "M"                                    │N:287367│
+│    │OK  │    │    │candidate "M"                                    │N:287620│
+│    │OK  │    │    │candidate "M"                                    │N:287989│
+│    │OK  │    │    │candidate "M"                                    │N:288167│
+│    │OK  │    │    │candidate "M"                                    │N:288434│
+│    │OK  │    │    │candidate "M"                                    │N:288786│
+│    │OK  │    │    │candidate "M"                                    │N:288790│
+│    │OK  │    │    │candidate "M"                                    │N:288831│
+│    │OK  │    │    │candidate "M"                                    │N:288931│
+│    │OK  │    │    │candidate "M"                                    │N:289329│
+│    │OK  │    │    │candidate "M"                                    │N:289379│
+│    │OK  │    │    │candidate "M"                                    │N:289752│
+│    │OK  │    │    │candidate "M"                                    │N:290081│
+│    │OK  │    │    │candidate "M"                                    │N:290199│
+│    │OK  │    │    │candidate "M"                                    │N:290331│
+│    │OK  │    │    │candidate "M"                                    │N:344118│
+│    │OK  │    │    │candidate "M"                                    │B:116059│
+│    │OK  │    │    │candidate "M"                                    │B:146631│
+│    │OK  │    │    │candidate "M"                                    │B:158489│
+│    │OK  │    │    │candidate "M"                                    │B:169430│
+│    │OK  │    │    │candidate "M"                                    │B:171987│
+│3   │3   │0   │0   │candidate "N"                                    │        │
+│    │OK  │    │    │candidate "N"                                    │N: 37544│
+│    │OK  │    │    │candidate "N"                                    │N:189113│
+│    │OK  │    │    │candidate "N"                                    │N:325773│
+│    │OK  │    │    │candidate "NK"                                   │N:324317│
+│    │OK  │    │    │candidate "X"                                    │N:188401│
+│20  │20  │0   │0   │found "A"                                        │        │
+│    │OK  │    │    │found "A"                                        │N:151297│
+│    │OK  │    │    │found "A"                                        │N:153899│
+│    │OK  │    │    │found "A"                                        │N:154050│
+│    │OK  │    │    │found "A"                                        │N:154221│
+│    │OK  │    │    │found "A"                                        │N:155506│
+│    │OK  │    │    │found "A"                                        │N:155528│
+│    │OK  │    │    │found "A"                                        │N:155573│
+│    │OK  │    │    │found "A"                                        │N:155628│
+│    │OK  │    │    │found "A"                                        │N:155650│
+│    │OK  │    │    │found "A"                                        │N:156253│
+│    │OK  │    │    │found "A"                                        │N:156612│
+│    │OK  │    │    │found "A"                                        │N:164385│
+│    │OK  │    │    │found "A"                                        │N:164394│
+│    │OK  │    │    │found "A"                                        │N:290592│
+│    │OK  │    │    │found "A"                                        │N:291886│
+│    │OK  │    │    │found "A"                                        │N:318618│
+│    │OK  │    │    │found "A"                                        │N:323467│
+│    │OK  │    │    │found "A"                                        │N:335567│
+│    │OK  │    │    │found "A"                                        │N:335579│
+│    │OK  │    │    │found "A"                                        │N:335592│
+│14  │14  │0   │0   │found "AA"                                       │        │
+│    │OK  │    │    │found "AA"                                       │N:151316│
+│    │OK  │    │    │found "AA"                                       │N:153904│
+│    │OK  │    │    │found "AA"                                       │N:154055│
+│    │OK  │    │    │found "AA"                                       │N:154226│
+│    │OK  │    │    │found "AA"                                       │N:154471│
+│    │OK  │    │    │found "AA"                                       │N:154516│
+│    │OK  │    │    │found "AA"                                       │N:154795│
+│    │OK  │    │    │found "AA"                                       │N:155293│
+│    │OK  │    │    │found "AA"                                       │N:156699│
+│    │OK  │    │    │found "AA"                                       │N:156957│
+│    │OK  │    │    │found "AA"                                       │N:157065│
+│    │OK  │    │    │found "AA"                                       │N:164286│
+│    │OK  │    │    │found "AA"                                       │N:319406│
+│    │OK  │    │    │found "AA"                                       │N:319495│
+│16  │16  │0   │0   │found "AAA"                                      │        │
+│    │OK  │    │    │found "AAA"                                      │N:153910│
+│    │OK  │    │    │found "AAA"                                      │N:154061│
+│    │OK  │    │    │found "AAA"                                      │N:154232│
+│    │OK  │    │    │found "AAA"                                      │N:154476│
+│    │OK  │    │    │found "AAA"                                      │N:154670│
+│    │OK  │    │    │found "AAA"                                      │N:155038│
+│    │OK  │    │    │found "AAA"                                      │N:156630│
+│    │OK  │    │    │found "AAA"                                      │N:156717│
+│    │OK  │    │    │found "AAA"                                      │N:157253│
+│    │OK  │    │    │found "AAA"                                      │N:157349│
+│    │OK  │    │    │found "AAA"                                      │N:157435│
+│    │OK  │    │    │found "AAA"                                      │N:157519│
+│    │OK  │    │    │found "AAA"                                      │N:157607│
+│    │OK  │    │    │found "AAA"                                      │N:322039│
+│    │OK  │    │    │found "AAA"                                      │N:323595│
+│    │OK  │    │    │found "AAA"                                      │N:335571│
+│2   │2   │0   │0   │found "AAAA"                                     │        │
+│    │OK  │    │    │found "AAAA"                                     │N:151382│
+│    │OK  │    │    │found "AAAA"                                     │N:156116│
+│3   │3   │0   │0   │found "AAAAA"                                    │        │
+│    │OK  │    │    │found "AAAAA"                                    │N:153922│
+│    │OK  │    │    │found "AAAAA"                                    │N:154073│
+│    │OK  │    │    │found "AAAAA"                                    │N:154243│
+│3   │3   │0   │0   │found "AAAAAA"                                   │        │
+│    │OK  │    │    │found "AAAAAA"                                   │N:153927│
+│    │OK  │    │    │found "AAAAAA"                                   │N:154078│
+│    │OK  │    │    │found "AAAAAA"                                   │N:154248│
+│2   │2   │0   │0   │found "AAAAAAA"                                  │        │
+│    │OK  │    │    │found "AAAAAAA"                                  │N: 58589│
+│    │OK  │    │    │found "AAAAAAA"                                  │N:153932│
+│2   │2   │0   │0   │found "AAAAAAAAA"                                │        │
+│    │OK  │    │    │found "AAAAAAAAA"                                │N:154458│
+│    │OK  │    │    │found "AAAAAAAAA"                                │N:318347│
+│16  │16  │0   │0   │found "AAAAAAAAAD"                               │        │
+│    │OK  │    │    │found "AAAAAAAAAD"                               │N:156586│
+│    │OK  │    │    │found "AAAAAAAAAD"                               │N:156618│
+│    │OK  │    │    │found "AAAAAAAAAD"                               │N:156622│
+│    │OK  │    │    │found "AAAAAAAAAD"                               │N:156640│
+│    │OK  │    │    │found "AAAAAAAAAD"                               │N:156654│
+│    │OK  │    │    │found "AAAAAAAAAD"                               │N:156687│
+│    │OK  │    │    │found "AAAAAAAAAD"                               │N:156723│
+│    │OK  │    │    │found "AAAAAAAAAD"                               │N:156759│
+│    │OK  │    │    │found "AAAAAAAAAD"                               │N:156807│
+│    │OK  │    │    │found "AAAAAAAAAD"                               │N:156843│
+│    │OK  │    │    │found "AAAAAAAAAD"                               │N:156876│
+│    │OK  │    │    │found "AAAAAAAAAD"                               │N:156912│
+│    │OK  │    │    │found "AAAAAAAAAD"                               │N:156945│
+│    │OK  │    │    │found "AAAAAAAAAD"                               │N:156981│
+│    │OK  │    │    │found "AAAAAAAAAD"                               │N:157017│
+│    │OK  │    │    │found "AAAAAAAAAD"                               │N:157050│
+│    │OK  │    │    │found "AAAAAAAAå"                                │N: 58813│
+│    │OK  │    │    │found "AAAAAAAD"                                 │N: 58392│
+│3   │3   │0   │0   │found "AAAAAAAå"                                 │        │
+│    │OK  │    │    │found "AAAAAAAå"                                 │N:154089│
+│    │OK  │    │    │found "AAAAAAAå"                                 │N:154260│
+│    │OK  │    │    │found "AAAAAAAå"                                 │N:323435│
+│    │OK  │    │    │found "AAAAAAAåå"                                │N: 58758│
+│4   │4   │0   │0   │found "AAAAAAB"                                  │        │
+│    │OK  │    │    │found "AAAAAAB"                                  │N:154490│
+│    │OK  │    │    │found "AAAAAAB"                                  │N:318234│
+│    │OK  │    │    │found "AAAAAAB"                                  │N:318464│
+│    │OK  │    │    │found "AAAAAAB"                                  │N:318711│
+│2   │2   │0   │0   │found "AAAAAABD"                                 │        │
+│    │OK  │    │    │found "AAAAAABD"                                 │N:156658│
+│    │OK  │    │    │found "AAAAAABD"                                 │N:156676│
+│3   │3   │0   │0   │found "AAAAAAå"                                  │        │
+│    │OK  │    │    │found "AAAAAAå"                                  │N: 58232│
+│    │OK  │    │    │found "AAAAAAå"                                  │N:154083│
+│    │OK  │    │    │found "AAAAAAå"                                  │N:154253│
+│4   │4   │0   │0   │found "AAAAAå"                                   │        │
+│    │OK  │    │    │found "AAAAAå"                                   │N:156666│
+│    │OK  │    │    │found "AAAAAå"                                   │N:156753│
+│    │OK  │    │    │found "AAAAAå"                                   │N:156924│
+│    │OK  │    │    │found "AAAAAå"                                   │N:157029│
+│    │OK  │    │    │found "AAAAå"                                    │N: 59090│
+│2   │2   │0   │0   │found "AAAA∫"                                    │        │
+│    │OK  │    │    │found "AAAA∫"                                    │N:323377│
+│    │OK  │    │    │found "AAAA∫"                                    │N:323407│
+│    │OK  │    │    │found "AAAA∫FDCAAAAA∫"                           │N:323342│
+│23  │23  │0   │0   │found "AAAB"                                     │        │
+│    │OK  │    │    │found "AAAB"                                     │N:155538│
+│    │OK  │    │    │found "AAAB"                                     │N:155604│
+│    │OK  │    │    │found "AAAB"                                     │N:155661│
+│    │OK  │    │    │found "AAAB"                                     │N:156559│
+│    │OK  │    │    │found "AAAB"                                     │N:156648│
+│    │OK  │    │    │found "AAAB"                                     │N:156819│
+│    │OK  │    │    │found "AAAB"                                     │N:156906│
+│    │OK  │    │    │found "AAAB"                                     │N:157011│
+│    │OK  │    │    │found "AAAB"                                     │N:157021│
+│    │OK  │    │    │found "AAAB"                                     │N:157235│
+│    │OK  │    │    │found "AAAB"                                     │N:157329│
+│    │OK  │    │    │found "AAAB"                                     │N:157394│
+│    │OK  │    │    │found "AAAB"                                     │N:157416│
+│    │OK  │    │    │found "AAAB"                                     │N:157481│
+│    │OK  │    │    │found "AAAB"                                     │N:157503│
+│    │OK  │    │    │found "AAAB"                                     │N:157565│
+│    │OK  │    │    │found "AAAB"                                     │N:157587│
+│    │OK  │    │    │found "AAAB"                                     │N:157651│
+│    │OK  │    │    │found "AAAB"                                     │N:157673│
+│    │OK  │    │    │found "AAAB"                                     │N:157739│
+│    │OK  │    │    │found "AAAB"                                     │N:164276│
+│    │OK  │    │    │found "AAAB"                                     │N:164304│
+│    │OK  │    │    │found "AAAB"                                     │N:318353│
+│14  │14  │0   │0   │found "AAABB"                                    │        │
+│    │OK  │    │    │found "AAABB"                                    │N:155516│
+│    │OK  │    │    │found "AAABB"                                    │N:155562│
+│    │OK  │    │    │found "AAABB"                                    │N:156580│
+│    │OK  │    │    │found "AAABB"                                    │N:156735│
+│    │OK  │    │    │found "AAABB"                                    │N:156837│
+│    │OK  │    │    │found "AAABB"                                    │N:156985│
+│    │OK  │    │    │found "AAABB"                                    │N:157003│
+│    │OK  │    │    │found "AAABB"                                    │N:157276│
+│    │OK  │    │    │found "AAABB"                                    │N:157371│
+│    │OK  │    │    │found "AAABB"                                    │N:157456│
+│    │OK  │    │    │found "AAABB"                                    │N:157542│
+│    │OK  │    │    │found "AAABB"                                    │N:157628│
+│    │OK  │    │    │found "AAABB"                                    │N:157716│
+│    │OK  │    │    │found "AAABB"                                    │N:318562│
+│9   │9   │0   │0   │found "AAABBB"                                   │        │
+│    │OK  │    │    │found "AAABBB"                                   │N:155548│
+│    │OK  │    │    │found "AAABBB"                                   │N:155594│
+│    │OK  │    │    │found "AAABBB"                                   │N:155671│
+│    │OK  │    │    │found "AAABBB"                                   │N:157310│
+│    │OK  │    │    │found "AAABBB"                                   │N:157405│
+│    │OK  │    │    │found "AAABBB"                                   │N:157492│
+│    │OK  │    │    │found "AAABBB"                                   │N:157576│
+│    │OK  │    │    │found "AAABBB"                                   │N:157662│
+│    │OK  │    │    │found "AAABBB"                                   │N:157750│
+│2   │2   │0   │0   │found "AAABBD"                                   │        │
+│    │OK  │    │    │found "AAABBD"                                   │N:156691│
+│    │OK  │    │    │found "AAABBD"                                   │N:156709│
+│    │OK  │    │    │found "AAABD"                                    │N:156727│
+│    │OK  │    │    │found "AAAFDDC"                                  │N:318230│
+│5   │5   │0   │0   │found "AAAå"                                     │        │
+│    │OK  │    │    │found "AAAå"                                     │N:153915│
+│    │OK  │    │    │found "AAAå"                                     │N:154066│
+│    │OK  │    │    │found "AAAå"                                     │N:154237│
+│    │OK  │    │    │found "AAAå"                                     │N:157299│
+│    │OK  │    │    │found "AAAå"                                     │N:157761│
+│    │OK  │    │    │found "AAAåAAAå"                                 │N:153938│
+│    │OK  │    │    │found "AAA∫"                                     │N:155583│
+│2   │2   │0   │0   │found "AAB"                                      │        │
+│    │OK  │    │    │found "AAB"                                      │N:164470│
+│    │OK  │    │    │found "AAB"                                      │N:164534│
+│2   │2   │0   │0   │found "AABAå"                                    │        │
+│    │OK  │    │    │found "AABAå"                                    │N:164439│
+│    │OK  │    │    │found "AABAå"                                    │N:164486│
+│4   │4   │0   │0   │found "AABB"                                     │        │
+│    │OK  │    │    │found "AABB"                                     │N:157100│
+│    │OK  │    │    │found "AABB"                                     │N:164447│
+│    │OK  │    │    │found "AABB"                                     │N:164459│
+│    │OK  │    │    │found "AABB"                                     │N:164498│
+│    │OK  │    │    │found "AABBB"                                    │N:155639│
+│    │OK  │    │    │found "AABF"                                     │N:164567│
+│3   │3   │0   │0   │found "AAå"                                      │        │
+│    │OK  │    │    │found "AAå"                                      │N:156888│
+│    │OK  │    │    │found "AAå"                                      │N:156993│
+│    │OK  │    │    │found "AAå"                                      │N:157039│
+│2   │2   │0   │0   │found "AAåAAåAAå"                                │        │
+│    │OK  │    │    │found "AAåAAåAAå"                                │N:154094│
+│    │OK  │    │    │found "AAåAAåAAå"                                │N:154264│
+│    │OK  │    │    │found "AB"                                       │N:155857│
+│    │OK  │    │    │found "AF"                                       │N: 57728│
+│    │OK  │    │    │found "AFDAAAAAA"                                │N:318327│
+│    │OK  │    │    │found "AFDC"                                     │N:323192│
+│    │OK  │    │    │found "AFDDC"                                    │N:157793│
+│7   │7   │0   │0   │found "Aå"                                       │        │
+│    │OK  │    │    │found "Aå"                                       │N:164313│
+│    │OK  │    │    │found "Aå"                                       │N:164322│
+│    │OK  │    │    │found "Aå"                                       │N:164333│
+│    │OK  │    │    │found "Aå"                                       │N:164343│
+│    │OK  │    │    │found "Aå"                                       │N:164353│
+│    │OK  │    │    │found "Aå"                                       │N:164363│
+│    │OK  │    │    │found "Aå"                                       │N:164373│
+│23  │23  │0   │0   │found "B"                                        │        │
+│    │OK  │    │    │found "B"                                        │N:156772│
+│    │OK  │    │    │found "B"                                        │N:156870│
+│    │OK  │    │    │found "B"                                        │N:156975│
+│    │OK  │    │    │found "B"                                        │N:157265│
+│    │OK  │    │    │found "B"                                        │N:157288│
+│    │OK  │    │    │found "B"                                        │N:157359│
+│    │OK  │    │    │found "B"                                        │N:157383│
+│    │OK  │    │    │found "B"                                        │N:157445│
+│    │OK  │    │    │found "B"                                        │N:157470│
+│    │OK  │    │    │found "B"                                        │N:157531│
+│    │OK  │    │    │found "B"                                        │N:157554│
+│    │OK  │    │    │found "B"                                        │N:157617│
+│    │OK  │    │    │found "B"                                        │N:157640│
+│    │OK  │    │    │found "B"                                        │N:157705│
+│    │OK  │    │    │found "B"                                        │N:157728│
+│    │OK  │    │    │found "B"                                        │N:164327│
+│    │OK  │    │    │found "B"                                        │N:164337│
+│    │OK  │    │    │found "B"                                        │N:164347│
+│    │OK  │    │    │found "B"                                        │N:164357│
+│    │OK  │    │    │found "B"                                        │N:164367│
+│    │OK  │    │    │found "B"                                        │N:164378│
+│    │OK  │    │    │found "B"                                        │N:164398│
+│    │OK  │    │    │found "B"                                        │N:164406│
+│6   │6   │0   │0   │found "BB"                                       │        │
+│    │OK  │    │    │found "BB"                                       │N:154918│
+│    │OK  │    │    │found "BB"                                       │N:155157│
+│    │OK  │    │    │found "BB"                                       │N:156040│
+│    │OK  │    │    │found "BB"                                       │N:156801│
+│    │OK  │    │    │found "BB"                                       │N:157054│
+│    │OK  │    │    │found "BB"                                       │N:318304│
+│2   │2   │0   │0   │found "BBB"                                      │        │
+│    │OK  │    │    │found "BBB"                                      │N:155619│
+│    │OK  │    │    │found "BBB"                                      │N:157695│
+│    │OK  │    │    │found "BBBD"                                     │N:156745│
+│2   │2   │0   │0   │found "BBD"                                      │        │
+│    │OK  │    │    │found "BBD"                                      │N:156763│
+│    │OK  │    │    │found "BBD"                                      │N:156782│
+│14  │14  │0   │0   │found "C"                                        │        │
+│    │OK  │    │    │found "C"                                        │N: 58540│
+│    │OK  │    │    │found "C"                                        │N:154100│
+│    │OK  │    │    │found "C"                                        │N:154270│
+│    │OK  │    │    │found "C"                                        │N:154463│
+│    │OK  │    │    │found "C"                                        │N:155945│
+│    │OK  │    │    │found "C"                                        │N:156122│
+│    │OK  │    │    │found "C"                                        │N:164096│
+│    │OK  │    │    │found "C"                                        │N:164153│
+│    │OK  │    │    │found "C"                                        │N:164420│
+│    │OK  │    │    │found "C"                                        │N:164429│
+│    │OK  │    │    │found "C"                                        │N:260860│
+│    │OK  │    │    │found "C"                                        │N:318502│
+│    │OK  │    │    │found "C"                                        │N:335583│
+│    │OK  │    │    │found "C"                                        │N:335643│
+│5   │5   │0   │0   │found "CA"                                       │        │
+│    │OK  │    │    │found "CA"                                       │N: 58835│
+│    │OK  │    │    │found "CA"                                       │N:154106│
+│    │OK  │    │    │found "CA"                                       │N:154275│
+│    │OK  │    │    │found "CA"                                       │N:162349│
+│    │OK  │    │    │found "CA"                                       │N:323338│
+│5   │5   │0   │0   │found "CAA"                                      │        │
+│    │OK  │    │    │found "CAA"                                      │N: 58197│
+│    │OK  │    │    │found "CAA"                                      │N:154112│
+│    │OK  │    │    │found "CAA"                                      │N:164296│
+│    │OK  │    │    │found "CAA"                                      │N:319448│
+│    │OK  │    │    │found "CAA"                                      │N:319517│
+│    │OK  │    │    │found "CAAA"                                     │N:318665│
+│    │OK  │    │    │found "CAAAAAAAAå"                               │N:156847│
+│2   │2   │0   │0   │found "CAAAAAAAB"                                │        │
+│    │OK  │    │    │found "CAAAAAAAB"                                │N:156880│
+│    │OK  │    │    │found "CAAAAAAAB"                                │N:162378│
+│2   │2   │0   │0   │found "CAAAAAAB"                                 │        │
+│    │OK  │    │    │found "CAAAAAAB"                                 │N:154909│
+│    │OK  │    │    │found "CAAAAAAB"                                 │N:156898│
+│3   │3   │0   │0   │found "CAAAAAABB"                                │        │
+│    │OK  │    │    │found "CAAAAAABB"                                │N:156862│
+│    │OK  │    │    │found "CAAAAAABB"                                │N:318322│
+│    │OK  │    │    │found "CAAAAAABB"                                │N:323450│
+│    │OK  │    │    │found "CAAAAAAå"                                 │N: 58936│
+│    │OK  │    │    │found "CAAAAAA∫"                                 │N:154662│
+│    │OK  │    │    │found "CAAAAAB"                                  │N:162426│
+│    │OK  │    │    │found "CAAAAAB∫"                                 │N:154785│
+│2   │2   │0   │0   │found "CAAAAAå"                                  │        │
+│    │OK  │    │    │found "CAAAAAå"                                  │N:155029│
+│    │OK  │    │    │found "CAAAAAå"                                  │N:155284│
+│    │OK  │    │    │found "CAAAAAåB"                                 │N: 58571│
+│    │OK  │    │    │found "CAAAAB"                                   │N:162366│
+│3   │3   │0   │0   │found "CAAAAå"                                   │        │
+│    │OK  │    │    │found "CAAAAå"                                   │N:153956│
+│    │OK  │    │    │found "CAAAAå"                                   │N:154128│
+│    │OK  │    │    │found "CAAAAå"                                   │N:154298│
+│11  │11  │0   │0   │found "CAAAB"                                    │        │
+│    │OK  │    │    │found "CAAAB"                                    │N:156949│
+│    │OK  │    │    │found "CAAAB"                                    │N:162356│
+│    │OK  │    │    │found "CAAAB"                                    │N:318441│
+│    │OK  │    │    │found "CAAAB"                                    │N:318601│
+│    │OK  │    │    │found "CAAAB"                                    │N:318634│
+│    │OK  │    │    │found "CAAAB"                                    │N:318738│
+│    │OK  │    │    │found "CAAAB"                                    │N:318746│
+│    │OK  │    │    │found "CAAAB"                                    │N:318931│
+│    │OK  │    │    │found "CAAAB"                                    │N:319382│
+│    │OK  │    │    │found "CAAAB"                                    │N:319395│
+│    │OK  │    │    │found "CAAAB"                                    │N:319410│
+│2   │2   │0   │0   │found "CAAABB"                                   │        │
+│    │OK  │    │    │found "CAAABB"                                   │N:156916│
+│    │OK  │    │    │found "CAAABB"                                   │N:156934│
+│    │OK  │    │    │found "CAAABBBB"                                 │N:157124│
+│5   │5   │0   │0   │found "CAAAå"                                    │        │
+│    │OK  │    │    │found "CAAAå"                                    │N: 58096│
+│    │OK  │    │    │found "CAAAå"                                    │N:153847│
+│    │OK  │    │    │found "CAAAå"                                    │N:153950│
+│    │OK  │    │    │found "CAAAå"                                    │N:154122│
+│    │OK  │    │    │found "CAAAå"                                    │N:154291│
+│3   │3   │0   │0   │found "CAAAåAAAå"                                │        │
+│    │OK  │    │    │found "CAAAåAAAå"                                │N:153972│
+│    │OK  │    │    │found "CAAAåAAAå"                                │N:154145│
+│    │OK  │    │    │found "CAAAåAAAå"                                │N:154313│
+│    │OK  │    │    │found "CAAB"                                     │N:164523│
+│    │OK  │    │    │found "CAABAABAå"                                │N:164707│
+│    │OK  │    │    │found "CAABAABB"                                 │N:164506│
+│5   │5   │0   │0   │found "CAAå"                                     │        │
+│    │OK  │    │    │found "CAAå"                                     │N:153842│
+│    │OK  │    │    │found "CAAå"                                     │N:153945│
+│    │OK  │    │    │found "CAAå"                                     │N:154117│
+│    │OK  │    │    │found "CAAå"                                     │N:154286│
+│    │OK  │    │    │found "CAAå"                                     │N:156967│
+│3   │3   │0   │0   │found "CAAåAAAå"                                 │        │
+│    │OK  │    │    │found "CAAåAAAå"                                 │N:153967│
+│    │OK  │    │    │found "CAAåAAAå"                                 │N:154140│
+│    │OK  │    │    │found "CAAåAAAå"                                 │N:154309│
+│3   │3   │0   │0   │found "CAAåAAå"                                  │        │
+│    │OK  │    │    │found "CAAåAAå"                                  │N:153961│
+│    │OK  │    │    │found "CAAåAAå"                                  │N:154133│
+│    │OK  │    │    │found "CAAåAAå"                                  │N:154303│
+│5   │5   │0   │0   │found "CAAåAAåAAå"                               │        │
+│    │OK  │    │    │found "CAAåAAåAAå"                               │N:153854│
+│    │OK  │    │    │found "CAAåAAåAAå"                               │N:153979│
+│    │OK  │    │    │found "CAAåAAåAAå"                               │N:154151│
+│    │OK  │    │    │found "CAAåAAåAAå"                               │N:154320│
+│    │OK  │    │    │found "CAAåAAåAAå"                               │N:319441│
+│    │OK  │    │    │found "CAå"                                      │N:154281│
+│    │OK  │    │    │found "CAåB"                                     │N: 58076│
+│    │OK  │    │    │found "CAååBBå"                                  │N:155149│
+│    │OK  │    │    │found "CBB"                                      │N:157835│
+│15  │15  │0   │0   │found "D"                                        │        │
+│    │OK  │    │    │found "D"                                        │N:108647│
+│    │OK  │    │    │found "D"                                        │N:151277│
+│    │OK  │    │    │found "D"                                        │N:153859│
+│    │OK  │    │    │found "D"                                        │N:153984│
+│    │OK  │    │    │found "D"                                        │N:154155│
+│    │OK  │    │    │found "D"                                        │N:154325│
+│    │OK  │    │    │found "D"                                        │N:154499│
+│    │OK  │    │    │found "D"                                        │N:156811│
+│    │OK  │    │    │found "D"                                        │N:156829│
+│    │OK  │    │    │found "D"                                        │N:164080│
+│    │OK  │    │    │found "D"                                        │N:323417│
+│    │OK  │    │    │found "D"                                        │N:323474│
+│    │OK  │    │    │found "D"                                        │N:323531│
+│    │OK  │    │    │found "D"                                        │N:323585│
+│    │OK  │    │    │found "D"                                        │N:323644│
+│9   │9   │0   │0   │found "DA"                                       │        │
+│    │OK  │    │    │found "DA"                                       │N: 58372│
+│    │OK  │    │    │found "DA"                                       │N:153864│
+│    │OK  │    │    │found "DA"                                       │N:153989│
+│    │OK  │    │    │found "DA"                                       │N:154160│
+│    │OK  │    │    │found "DA"                                       │N:154330│
+│    │OK  │    │    │found "DA"                                       │N:269640│
+│    │OK  │    │    │found "DA"                                       │N:318255│
+│    │OK  │    │    │found "DA"                                       │N:318481│
+│    │OK  │    │    │found "DA"                                       │N:319373│
+│3   │3   │0   │0   │found "DAA"                                      │        │
+│    │OK  │    │    │found "DAA"                                      │N: 57972│
+│    │OK  │    │    │found "DAA"                                      │N: 58489│
+│    │OK  │    │    │found "DAA"                                      │N:323511│
+│    │OK  │    │    │found "DAAA"                                     │N:154508│
+│    │OK  │    │    │found "DAAAAA"                                   │N:162385│
+│    │OK  │    │    │found "DAAAAAAAA"                                │N:154370│
+│3   │3   │0   │0   │found "DAAAAAAAå"                                │        │
+│    │OK  │    │    │found "DAAAAAAAå"                                │N:153876│
+│    │OK  │    │    │found "DAAAAAAAå"                                │N:154028│
+│    │OK  │    │    │found "DAAAAAAAå"                                │N:154198│
+│    │OK  │    │    │found "DAAAAAAAåå"                               │N:323310│
+│4   │4   │0   │0   │found "DAAAAAAå"                                 │        │
+│    │OK  │    │    │found "DAAAAAAå"                                 │N:153871│
+│    │OK  │    │    │found "DAAAAAAå"                                 │N:154193│
+│    │OK  │    │    │found "DAAAAAAå"                                 │N:154365│
+│    │OK  │    │    │found "DAAAAAAå"                                 │N:321249│
+│    │OK  │    │    │found "DAAAAAB"                                  │N:162393│
+│3   │3   │0   │0   │found "DAAAAå"                                   │        │
+│    │OK  │    │    │found "DAAAAå"                                   │N:154012│
+│    │OK  │    │    │found "DAAAAå"                                   │N:154183│
+│    │OK  │    │    │found "DAAAAå"                                   │N:154353│
+│8   │8   │0   │0   │found "DAAABB"                                   │        │
+│    │OK  │    │    │found "DAAABB"                                   │N:317916│
+│    │OK  │    │    │found "DAAABB"                                   │N:317942│
+│    │OK  │    │    │found "DAAABB"                                   │N:317970│
+│    │OK  │    │    │found "DAAABB"                                   │N:317997│
+│    │OK  │    │    │found "DAAABB"                                   │N:318107│
+│    │OK  │    │    │found "DAAABB"                                   │N:318135│
+│    │OK  │    │    │found "DAAABB"                                   │N:318162│
+│    │OK  │    │    │found "DAAABB"                                   │N:318192│
+│3   │3   │0   │0   │found "DAAAå"                                    │        │
+│    │OK  │    │    │found "DAAAå"                                    │N:154006│
+│    │OK  │    │    │found "DAAAå"                                    │N:154178│
+│    │OK  │    │    │found "DAAAå"                                    │N:154348│
+│    │OK  │    │    │found "DAAAåAAå"                                 │N:154023│
+│6   │6   │0   │0   │found "DAAå"                                     │        │
+│    │OK  │    │    │found "DAAå"                                     │N: 58281│
+│    │OK  │    │    │found "DAAå"                                     │N: 58697│
+│    │OK  │    │    │found "DAAå"                                     │N:154000│
+│    │OK  │    │    │found "DAAå"                                     │N:154172│
+│    │OK  │    │    │found "DAAå"                                     │N:154342│
+│    │OK  │    │    │found "DAAå"                                     │N:323503│
+│3   │3   │0   │0   │found "DAAåAAå"                                  │        │
+│    │OK  │    │    │found "DAAåAAå"                                  │N:154018│
+│    │OK  │    │    │found "DAAåAAå"                                  │N:154189│
+│    │OK  │    │    │found "DAAåAAå"                                  │N:154360│
+│4   │4   │0   │0   │found "DAAåAAåAAå"                               │        │
+│    │OK  │    │    │found "DAAåAAåAAå"                               │N:153883│
+│    │OK  │    │    │found "DAAåAAåAAå"                               │N:154034│
+│    │OK  │    │    │found "DAAåAAåAAå"                               │N:154205│
+│    │OK  │    │    │found "DAAåAAåAAå"                               │N:154376│
+│6   │6   │0   │0   │found "DAå"                                      │        │
+│    │OK  │    │    │found "DAå"                                      │N: 58412│
+│    │OK  │    │    │found "DAå"                                      │N: 58723│
+│    │OK  │    │    │found "DAå"                                      │N:153995│
+│    │OK  │    │    │found "DAå"                                      │N:154166│
+│    │OK  │    │    │found "DAå"                                      │N:154337│
+│    │OK  │    │    │found "DAå"                                      │N:154521│
+│30  │30  │0   │0   │found "DC"                                       │        │
+│    │OK  │    │    │found "DC"                                       │N:153888│
+│    │OK  │    │    │found "DC"                                       │N:154040│
+│    │OK  │    │    │found "DC"                                       │N:154210│
+│    │OK  │    │    │found "DC"                                       │N:154381│
+│    │OK  │    │    │found "DC"                                       │N:156490│
+│    │OK  │    │    │found "DC"                                       │N:156590│
+│    │OK  │    │    │found "DC"                                       │N:156600│
+│    │OK  │    │    │found "DC"                                       │N:156604│
+│    │OK  │    │    │found "DC"                                       │N:156636│
+│    │OK  │    │    │found "DC"                                       │N:156672│
+│    │OK  │    │    │found "DC"                                       │N:156705│
+│    │OK  │    │    │found "DC"                                       │N:156741│
+│    │OK  │    │    │found "DC"                                       │N:156778│
+│    │OK  │    │    │found "DC"                                       │N:156825│
+│    │OK  │    │    │found "DC"                                       │N:156858│
+│    │OK  │    │    │found "DC"                                       │N:156894│
+│    │OK  │    │    │found "DC"                                       │N:156930│
+│    │OK  │    │    │found "DC"                                       │N:156963│
+│    │OK  │    │    │found "DC"                                       │N:156999│
+│    │OK  │    │    │found "DC"                                       │N:157035│
+│    │OK  │    │    │found "DC"                                       │N:157071│
+│    │OK  │    │    │found "DC"                                       │N:157149│
+│    │OK  │    │    │found "DC"                                       │N:157157│
+│    │OK  │    │    │found "DC"                                       │N:157174│
+│    │OK  │    │    │found "DC"                                       │N:157190│
+│    │OK  │    │    │found "DC"                                       │N:157199│
+│    │OK  │    │    │found "DC"                                       │N:162409│
+│    │OK  │    │    │found "DC"                                       │N:163838│
+│    │OK  │    │    │found "DC"                                       │N:323180│
+│    │OK  │    │    │found "DC"                                       │N:334724│
+│3   │3   │0   │0   │found "DCA"                                      │        │
+│    │OK  │    │    │found "DCA"                                      │N:157165│
+│    │OK  │    │    │found "DCA"                                      │N:157182│
+│    │OK  │    │    │found "DCA"                                      │N:157208│
+│6   │6   │0   │0   │found "DCAAABB"                                  │        │
+│    │OK  │    │    │found "DCAAABB"                                  │N:318015│
+│    │OK  │    │    │found "DCAAABB"                                  │N:318041│
+│    │OK  │    │    │found "DCAAABB"                                  │N:318066│
+│    │OK  │    │    │found "DCAAABB"                                  │N:318090│
+│    │OK  │    │    │found "DCAAABB"                                  │N:318537│
+│    │OK  │    │    │found "DCAAABB"                                  │N:318909│
+│    │OK  │    │    │found "DCAAAB∫"                                  │N:323400│
+│    │OK  │    │    │found "DCAå"                                     │N: 58307│
+│10  │10  │0   │0   │found "DD"                                       │        │
+│    │OK  │    │    │found "DD"                                       │N: 57828│
+│    │OK  │    │    │found "DD"                                       │N: 58027│
+│    │OK  │    │    │found "DD"                                       │N:157777│
+│    │OK  │    │    │found "DD"                                       │N:318581│
+│    │OK  │    │    │found "DD"                                       │N:323443│
+│    │OK  │    │    │found "DD"                                       │N:323488│
+│    │OK  │    │    │found "DD"                                       │N:323496│
+│    │OK  │    │    │found "DD"                                       │N:323523│
+│    │OK  │    │    │found "DD"                                       │N:323538│
+│    │OK  │    │    │found "DD"                                       │N:323575│
+│2   │2   │0   │0   │found "DDA"                                      │        │
+│    │OK  │    │    │found "DDA"                                      │N: 57845│
+│    │OK  │    │    │found "DDA"                                      │N: 59016│
+│3   │3   │0   │0   │found "DDAA"                                     │        │
+│    │OK  │    │    │found "DDAA"                                     │N: 58344│
+│    │OK  │    │    │found "DDAA"                                     │N: 59115│
+│    │OK  │    │    │found "DDAA"                                     │N:318277│
+│    │OK  │    │    │found "DDC"                                      │N:164544│
+│    │OK  │    │    │found "DDCAA"                                    │N:309716│
+│    │OK  │    │    │found "DDCAAAAB"                                 │N:323163│
+│    │OK  │    │    │found "DDCAAA∫"                                  │N:323299│
+│    │OK  │    │    │found "DDCAAA∫A"                                 │N: 58122│
+│2   │2   │0   │0   │found "DDCB"                                     │        │
+│    │OK  │    │    │found "DDCB"                                     │N:318218│
+│    │OK  │    │    │found "DDCB"                                     │N:318222│
+│2   │2   │0   │0   │found "DDD"                                      │        │
+│    │OK  │    │    │found "DDD"                                      │N:323238│
+│    │OK  │    │    │found "DDD"                                      │N:323558│
+│    │OK  │    │    │found "DDDA"                                     │N: 59140│
+│    │OK  │    │    │found "DDDAAAAAB"                                │N:318361│
+│2   │2   │0   │0   │found "DDDAAAA∫"                                 │        │
+│    │OK  │    │    │found "DDDAAAA∫"                                 │N: 58618│
+│    │OK  │    │    │found "DDDAAAA∫"                                 │N:323249│
+│4   │4   │0   │0   │found "DDDC"                                     │        │
+│    │OK  │    │    │found "DDDC"                                     │N: 58644│
+│    │OK  │    │    │found "DDDC"                                     │N:318303│
+│    │OK  │    │    │found "DDDC"                                     │N:318919│
+│    │OK  │    │    │found "DDDC"                                     │N:323212│
+│    │OK  │    │    │found "DDDCA"                                    │N: 59186│
+│3   │3   │0   │0   │found "DDDD"                                     │        │
+│    │OK  │    │    │found "DDDD"                                     │N: 58514│
+│    │OK  │    │    │found "DDDD"                                     │N: 58916│
+│    │OK  │    │    │found "DDDD"                                     │N:323458│
+│    │OK  │    │    │found "DDDDAAA"                                  │N:323354│
+│    │OK  │    │    │found "DDDDCAAAAAAAAå"                           │N:323225│
+│    │OK  │    │    │found "DDDDCBB"                                  │N:318383│
+│    │OK  │    │    │found "FCAAAA∫"                                  │N:323321│
+│    │OK  │    │    │found "FDC"                                      │N:157875│
+└────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
+┌────┬────┬────┬────┬─────────────────────────────────────────────────┬────────┐
+│796 │796 │0   │0   │SCRIPT                                           │        │
+├────┼────┼────┼────┼─────────────────────────────────────────────────┼────────┤
+│7   │7   │0   │0   │greekcapital                                     │        │
+│    │OK  │    │    │greekcapital                                     │N: 57714│
+│    │OK  │    │    │greekcapital                                     │N: 57800│
+│    │OK  │    │    │greekcapital                                     │N: 57850│
+│    │OK  │    │    │greekcapital                                     │N: 57872│
+│    │OK  │    │    │greekcapital                                     │N: 57920│
+│    │OK  │    │    │greekcapital                                     │N: 58032│
+│    │OK  │    │    │greekcapital                                     │N: 58098│
+│789 │789 │0   │0   │paleohebrew                                      │        │
+│    │OK  │    │    │paleohebrew                                      │N: 15052│
+│    │OK  │    │    │paleohebrew                                      │N: 15800│
+│    │OK  │    │    │paleohebrew                                      │N: 15808│
+│    │OK  │    │    │paleohebrew                                      │N: 16154│
+│    │OK  │    │    │paleohebrew                                      │N: 16844│
+│    │OK  │    │    │paleohebrew                                      │N: 16933│
+│    │OK  │    │    │paleohebrew                                      │N: 17057│
+│    │OK  │    │    │paleohebrew                                      │N: 17322│
+│    │OK  │    │    │paleohebrew                                      │N: 26789│
+│    │OK  │    │    │paleohebrew                                      │N: 27863│
+│    │OK  │    │    │paleohebrew                                      │N: 28643│
+│    │OK  │    │    │paleohebrew                                      │N: 38698│
+│    │OK  │    │    │paleohebrew                                      │N: 38716│
+│    │OK  │    │    │paleohebrew                                      │N: 39052│
+│    │OK  │    │    │paleohebrew                                      │N: 39307│
+│    │OK  │    │    │paleohebrew                                      │N: 39318│
+│    │OK  │    │    │paleohebrew                                      │N: 50843│
+│    │OK  │    │    │paleohebrew                                      │N: 52435│
+│    │OK  │    │    │paleohebrew                                      │N: 57630│
+│    │OK  │    │    │paleohebrew                                      │N: 57728│
+│    │OK  │    │    │paleohebrew                                      │N: 57828│
+│    │OK  │    │    │paleohebrew                                      │N: 57845│
+│    │OK  │    │    │paleohebrew                                      │N: 57972│
+│    │OK  │    │    │paleohebrew                                      │N: 58027│
+│    │OK  │    │    │paleohebrew                                      │N: 58076│
+│    │OK  │    │    │paleohebrew                                      │N: 58096│
+│    │OK  │    │    │paleohebrew                                      │N: 58122│
+│    │OK  │    │    │paleohebrew                                      │N: 58197│
+│    │OK  │    │    │paleohebrew                                      │N: 58232│
+│    │OK  │    │    │paleohebrew                                      │N: 58281│
+│    │OK  │    │    │paleohebrew                                      │N: 58307│
+│    │OK  │    │    │paleohebrew                                      │N: 58344│
+│    │OK  │    │    │paleohebrew                                      │N: 58372│
+│    │OK  │    │    │paleohebrew                                      │N: 58392│
+│    │OK  │    │    │paleohebrew                                      │N: 58412│
+│    │OK  │    │    │paleohebrew                                      │N: 58489│
+│    │OK  │    │    │paleohebrew                                      │N: 58514│
+│    │OK  │    │    │paleohebrew                                      │N: 58540│
+│    │OK  │    │    │paleohebrew                                      │N: 58571│
+│    │OK  │    │    │paleohebrew                                      │N: 58589│
+│    │OK  │    │    │paleohebrew                                      │N: 58618│
+│    │OK  │    │    │paleohebrew                                      │N: 58644│
+│    │OK  │    │    │paleohebrew                                      │N: 58697│
+│    │OK  │    │    │paleohebrew                                      │N: 58723│
+│    │OK  │    │    │paleohebrew                                      │N: 58758│
+│    │OK  │    │    │paleohebrew                                      │N: 58813│
+│    │OK  │    │    │paleohebrew                                      │N: 58835│
+│    │OK  │    │    │paleohebrew                                      │N: 58916│
+│    │OK  │    │    │paleohebrew                                      │N: 58936│
+│    │OK  │    │    │paleohebrew                                      │N: 59016│
+│    │OK  │    │    │paleohebrew                                      │N: 59090│
+│    │OK  │    │    │paleohebrew                                      │N: 59115│
+│    │OK  │    │    │paleohebrew                                      │N: 59140│
+│    │OK  │    │    │paleohebrew                                      │N: 59186│
+│    │OK  │    │    │paleohebrew                                      │N: 63021│
+│    │OK  │    │    │paleohebrew                                      │N: 68673│
+│    │OK  │    │    │paleohebrew                                      │N: 68782│
+│    │OK  │    │    │paleohebrew                                      │N: 68933│
+│    │OK  │    │    │paleohebrew                                      │N: 69148│
+│    │OK  │    │    │paleohebrew                                      │N: 69165│
+│    │OK  │    │    │paleohebrew                                      │N: 69328│
+│    │OK  │    │    │paleohebrew                                      │N: 69393│
+│    │OK  │    │    │paleohebrew                                      │N: 70179│
+│    │OK  │    │    │paleohebrew                                      │N: 70180│
+│    │OK  │    │    │paleohebrew                                      │N: 75691│
+│    │OK  │    │    │paleohebrew                                      │N: 76276│
+│    │OK  │    │    │paleohebrew                                      │N: 76350│
+│    │OK  │    │    │paleohebrew                                      │N: 76373│
+│    │OK  │    │    │paleohebrew                                      │N:105972│
+│    │OK  │    │    │paleohebrew                                      │N:108647│
+│    │OK  │    │    │paleohebrew                                      │N:119141│
+│    │OK  │    │    │paleohebrew                                      │N:119321│
+│    │OK  │    │    │paleohebrew                                      │N:129599│
+│    │OK  │    │    │paleohebrew                                      │N:130159│
+│    │OK  │    │    │paleohebrew                                      │N:130423│
+│    │OK  │    │    │paleohebrew                                      │N:130588│
+│    │OK  │    │    │paleohebrew                                      │N:131054│
+│    │OK  │    │    │paleohebrew                                      │N:151277│
+│    │OK  │    │    │paleohebrew                                      │N:151297│
+│    │OK  │    │    │paleohebrew                                      │N:151316│
+│    │OK  │    │    │paleohebrew                                      │N:151382│
+│    │OK  │    │    │paleohebrew                                      │N:153842│
+│    │OK  │    │    │paleohebrew                                      │N:153847│
+│    │OK  │    │    │paleohebrew                                      │N:153854│
+│    │OK  │    │    │paleohebrew                                      │N:153859│
+│    │OK  │    │    │paleohebrew                                      │N:153864│
+│    │OK  │    │    │paleohebrew                                      │N:153871│
+│    │OK  │    │    │paleohebrew                                      │N:153876│
+│    │OK  │    │    │paleohebrew                                      │N:153883│
+│    │OK  │    │    │paleohebrew                                      │N:153888│
+│    │OK  │    │    │paleohebrew                                      │N:153899│
+│    │OK  │    │    │paleohebrew                                      │N:153904│
+│    │OK  │    │    │paleohebrew                                      │N:153910│
+│    │OK  │    │    │paleohebrew                                      │N:153915│
+│    │OK  │    │    │paleohebrew                                      │N:153922│
+│    │OK  │    │    │paleohebrew                                      │N:153927│
+│    │OK  │    │    │paleohebrew                                      │N:153932│
+│    │OK  │    │    │paleohebrew                                      │N:153938│
+│    │OK  │    │    │paleohebrew                                      │N:153945│
+│    │OK  │    │    │paleohebrew                                      │N:153950│
+│    │OK  │    │    │paleohebrew                                      │N:153956│
+│    │OK  │    │    │paleohebrew                                      │N:153961│
+│    │OK  │    │    │paleohebrew                                      │N:153967│
+│    │OK  │    │    │paleohebrew                                      │N:153972│
+│    │OK  │    │    │paleohebrew                                      │N:153979│
+│    │OK  │    │    │paleohebrew                                      │N:153984│
+│    │OK  │    │    │paleohebrew                                      │N:153989│
+│    │OK  │    │    │paleohebrew                                      │N:153995│
+│    │OK  │    │    │paleohebrew                                      │N:154000│
+│    │OK  │    │    │paleohebrew                                      │N:154006│
+│    │OK  │    │    │paleohebrew                                      │N:154012│
+│    │OK  │    │    │paleohebrew                                      │N:154018│
+│    │OK  │    │    │paleohebrew                                      │N:154023│
+│    │OK  │    │    │paleohebrew                                      │N:154028│
+│    │OK  │    │    │paleohebrew                                      │N:154034│
+│    │OK  │    │    │paleohebrew                                      │N:154040│
+│    │OK  │    │    │paleohebrew                                      │N:154050│
+│    │OK  │    │    │paleohebrew                                      │N:154055│
+│    │OK  │    │    │paleohebrew                                      │N:154061│
+│    │OK  │    │    │paleohebrew                                      │N:154066│
+│    │OK  │    │    │paleohebrew                                      │N:154073│
+│    │OK  │    │    │paleohebrew                                      │N:154078│
+│    │OK  │    │    │paleohebrew                                      │N:154083│
+│    │OK  │    │    │paleohebrew                                      │N:154089│
+│    │OK  │    │    │paleohebrew                                      │N:154094│
+│    │OK  │    │    │paleohebrew                                      │N:154100│
+│    │OK  │    │    │paleohebrew                                      │N:154106│
+│    │OK  │    │    │paleohebrew                                      │N:154112│
+│    │OK  │    │    │paleohebrew                                      │N:154117│
+│    │OK  │    │    │paleohebrew                                      │N:154122│
+│    │OK  │    │    │paleohebrew                                      │N:154128│
+│    │OK  │    │    │paleohebrew                                      │N:154133│
+│    │OK  │    │    │paleohebrew                                      │N:154140│
+│    │OK  │    │    │paleohebrew                                      │N:154145│
+│    │OK  │    │    │paleohebrew                                      │N:154151│
+│    │OK  │    │    │paleohebrew                                      │N:154155│
+│    │OK  │    │    │paleohebrew                                      │N:154160│
+│    │OK  │    │    │paleohebrew                                      │N:154166│
+│    │OK  │    │    │paleohebrew                                      │N:154172│
+│    │OK  │    │    │paleohebrew                                      │N:154178│
+│    │OK  │    │    │paleohebrew                                      │N:154183│
+│    │OK  │    │    │paleohebrew                                      │N:154189│
+│    │OK  │    │    │paleohebrew                                      │N:154193│
+│    │OK  │    │    │paleohebrew                                      │N:154198│
+│    │OK  │    │    │paleohebrew                                      │N:154205│
+│    │OK  │    │    │paleohebrew                                      │N:154210│
+│    │OK  │    │    │paleohebrew                                      │N:154221│
+│    │OK  │    │    │paleohebrew                                      │N:154226│
+│    │OK  │    │    │paleohebrew                                      │N:154232│
+│    │OK  │    │    │paleohebrew                                      │N:154237│
+│    │OK  │    │    │paleohebrew                                      │N:154243│
+│    │OK  │    │    │paleohebrew                                      │N:154248│
+│    │OK  │    │    │paleohebrew                                      │N:154253│
+│    │OK  │    │    │paleohebrew                                      │N:154260│
+│    │OK  │    │    │paleohebrew                                      │N:154264│
+│    │OK  │    │    │paleohebrew                                      │N:154270│
+│    │OK  │    │    │paleohebrew                                      │N:154275│
+│    │OK  │    │    │paleohebrew                                      │N:154281│
+│    │OK  │    │    │paleohebrew                                      │N:154286│
+│    │OK  │    │    │paleohebrew                                      │N:154291│
+│    │OK  │    │    │paleohebrew                                      │N:154298│
+│    │OK  │    │    │paleohebrew                                      │N:154303│
+│    │OK  │    │    │paleohebrew                                      │N:154309│
+│    │OK  │    │    │paleohebrew                                      │N:154313│
+│    │OK  │    │    │paleohebrew                                      │N:154320│
+│    │OK  │    │    │paleohebrew                                      │N:154325│
+│    │OK  │    │    │paleohebrew                                      │N:154330│
+│    │OK  │    │    │paleohebrew                                      │N:154337│
+│    │OK  │    │    │paleohebrew                                      │N:154342│
+│    │OK  │    │    │paleohebrew                                      │N:154348│
+│    │OK  │    │    │paleohebrew                                      │N:154353│
+│    │OK  │    │    │paleohebrew                                      │N:154360│
+│    │OK  │    │    │paleohebrew                                      │N:154365│
+│    │OK  │    │    │paleohebrew                                      │N:154370│
+│    │OK  │    │    │paleohebrew                                      │N:154376│
+│    │OK  │    │    │paleohebrew                                      │N:154381│
+│    │OK  │    │    │paleohebrew                                      │N:154458│
+│    │OK  │    │    │paleohebrew                                      │N:154463│
+│    │OK  │    │    │paleohebrew                                      │N:154471│
+│    │OK  │    │    │paleohebrew                                      │N:154476│
+│    │OK  │    │    │paleohebrew                                      │N:154490│
+│    │OK  │    │    │paleohebrew                                      │N:154499│
+│    │OK  │    │    │paleohebrew                                      │N:154508│
+│    │OK  │    │    │paleohebrew                                      │N:154516│
+│    │OK  │    │    │paleohebrew                                      │N:154521│
+│    │OK  │    │    │paleohebrew                                      │N:154662│
+│    │OK  │    │    │paleohebrew                                      │N:154670│
+│    │OK  │    │    │paleohebrew                                      │N:154785│
+│    │OK  │    │    │paleohebrew                                      │N:154795│
+│    │OK  │    │    │paleohebrew                                      │N:154909│
+│    │OK  │    │    │paleohebrew                                      │N:154918│
+│    │OK  │    │    │paleohebrew                                      │N:155029│
+│    │OK  │    │    │paleohebrew                                      │N:155038│
+│    │OK  │    │    │paleohebrew                                      │N:155149│
+│    │OK  │    │    │paleohebrew                                      │N:155157│
+│    │OK  │    │    │paleohebrew                                      │N:155284│
+│    │OK  │    │    │paleohebrew                                      │N:155293│
+│    │OK  │    │    │paleohebrew                                      │N:155506│
+│    │OK  │    │    │paleohebrew                                      │N:155516│
+│    │OK  │    │    │paleohebrew                                      │N:155528│
+│    │OK  │    │    │paleohebrew                                      │N:155538│
+│    │OK  │    │    │paleohebrew                                      │N:155548│
+│    │OK  │    │    │paleohebrew                                      │N:155562│
+│    │OK  │    │    │paleohebrew                                      │N:155573│
+│    │OK  │    │    │paleohebrew                                      │N:155583│
+│    │OK  │    │    │paleohebrew                                      │N:155594│
+│    │OK  │    │    │paleohebrew                                      │N:155604│
+│    │OK  │    │    │paleohebrew                                      │N:155619│
+│    │OK  │    │    │paleohebrew                                      │N:155628│
+│    │OK  │    │    │paleohebrew                                      │N:155639│
+│    │OK  │    │    │paleohebrew                                      │N:155650│
+│    │OK  │    │    │paleohebrew                                      │N:155661│
+│    │OK  │    │    │paleohebrew                                      │N:155671│
+│    │OK  │    │    │paleohebrew                                      │N:155857│
+│    │OK  │    │    │paleohebrew                                      │N:155945│
+│    │OK  │    │    │paleohebrew                                      │N:156040│
+│    │OK  │    │    │paleohebrew                                      │N:156116│
+│    │OK  │    │    │paleohebrew                                      │N:156122│
+│    │OK  │    │    │paleohebrew                                      │N:156253│
+│    │OK  │    │    │paleohebrew                                      │N:156490│
+│    │OK  │    │    │paleohebrew                                      │N:156559│
+│    │OK  │    │    │paleohebrew                                      │N:156580│
+│    │OK  │    │    │paleohebrew                                      │N:156586│
+│    │OK  │    │    │paleohebrew                                      │N:156590│
+│    │OK  │    │    │paleohebrew                                      │N:156600│
+│    │OK  │    │    │paleohebrew                                      │N:156604│
+│    │OK  │    │    │paleohebrew                                      │N:156612│
+│    │OK  │    │    │paleohebrew                                      │N:156618│
+│    │OK  │    │    │paleohebrew                                      │N:156622│
+│    │OK  │    │    │paleohebrew                                      │N:156630│
+│    │OK  │    │    │paleohebrew                                      │N:156636│
+│    │OK  │    │    │paleohebrew                                      │N:156640│
+│    │OK  │    │    │paleohebrew                                      │N:156648│
+│    │OK  │    │    │paleohebrew                                      │N:156654│
+│    │OK  │    │    │paleohebrew                                      │N:156658│
+│    │OK  │    │    │paleohebrew                                      │N:156666│
+│    │OK  │    │    │paleohebrew                                      │N:156672│
+│    │OK  │    │    │paleohebrew                                      │N:156676│
+│    │OK  │    │    │paleohebrew                                      │N:156687│
+│    │OK  │    │    │paleohebrew                                      │N:156691│
+│    │OK  │    │    │paleohebrew                                      │N:156699│
+│    │OK  │    │    │paleohebrew                                      │N:156705│
+│    │OK  │    │    │paleohebrew                                      │N:156709│
+│    │OK  │    │    │paleohebrew                                      │N:156717│
+│    │OK  │    │    │paleohebrew                                      │N:156723│
+│    │OK  │    │    │paleohebrew                                      │N:156727│
+│    │OK  │    │    │paleohebrew                                      │N:156735│
+│    │OK  │    │    │paleohebrew                                      │N:156741│
+│    │OK  │    │    │paleohebrew                                      │N:156745│
+│    │OK  │    │    │paleohebrew                                      │N:156753│
+│    │OK  │    │    │paleohebrew                                      │N:156759│
+│    │OK  │    │    │paleohebrew                                      │N:156763│
+│    │OK  │    │    │paleohebrew                                      │N:156772│
+│    │OK  │    │    │paleohebrew                                      │N:156778│
+│    │OK  │    │    │paleohebrew                                      │N:156782│
+│    │OK  │    │    │paleohebrew                                      │N:156801│
+│    │OK  │    │    │paleohebrew                                      │N:156807│
+│    │OK  │    │    │paleohebrew                                      │N:156811│
+│    │OK  │    │    │paleohebrew                                      │N:156819│
+│    │OK  │    │    │paleohebrew                                      │N:156825│
+│    │OK  │    │    │paleohebrew                                      │N:156829│
+│    │OK  │    │    │paleohebrew                                      │N:156837│
+│    │OK  │    │    │paleohebrew                                      │N:156843│
+│    │OK  │    │    │paleohebrew                                      │N:156847│
+│    │OK  │    │    │paleohebrew                                      │N:156858│
+│    │OK  │    │    │paleohebrew                                      │N:156862│
+│    │OK  │    │    │paleohebrew                                      │N:156870│
+│    │OK  │    │    │paleohebrew                                      │N:156876│
+│    │OK  │    │    │paleohebrew                                      │N:156880│
+│    │OK  │    │    │paleohebrew                                      │N:156888│
+│    │OK  │    │    │paleohebrew                                      │N:156894│
+│    │OK  │    │    │paleohebrew                                      │N:156898│
+│    │OK  │    │    │paleohebrew                                      │N:156906│
+│    │OK  │    │    │paleohebrew                                      │N:156912│
+│    │OK  │    │    │paleohebrew                                      │N:156916│
+│    │OK  │    │    │paleohebrew                                      │N:156924│
+│    │OK  │    │    │paleohebrew                                      │N:156930│
+│    │OK  │    │    │paleohebrew                                      │N:156934│
+│    │OK  │    │    │paleohebrew                                      │N:156945│
+│    │OK  │    │    │paleohebrew                                      │N:156949│
+│    │OK  │    │    │paleohebrew                                      │N:156957│
+│    │OK  │    │    │paleohebrew                                      │N:156963│
+│    │OK  │    │    │paleohebrew                                      │N:156967│
+│    │OK  │    │    │paleohebrew                                      │N:156975│
+│    │OK  │    │    │paleohebrew                                      │N:156981│
+│    │OK  │    │    │paleohebrew                                      │N:156985│
+│    │OK  │    │    │paleohebrew                                      │N:156993│
+│    │OK  │    │    │paleohebrew                                      │N:156999│
+│    │OK  │    │    │paleohebrew                                      │N:157003│
+│    │OK  │    │    │paleohebrew                                      │N:157011│
+│    │OK  │    │    │paleohebrew                                      │N:157017│
+│    │OK  │    │    │paleohebrew                                      │N:157021│
+│    │OK  │    │    │paleohebrew                                      │N:157029│
+│    │OK  │    │    │paleohebrew                                      │N:157035│
+│    │OK  │    │    │paleohebrew                                      │N:157039│
+│    │OK  │    │    │paleohebrew                                      │N:157050│
+│    │OK  │    │    │paleohebrew                                      │N:157054│
+│    │OK  │    │    │paleohebrew                                      │N:157065│
+│    │OK  │    │    │paleohebrew                                      │N:157071│
+│    │OK  │    │    │paleohebrew                                      │N:157100│
+│    │OK  │    │    │paleohebrew                                      │N:157124│
+│    │OK  │    │    │paleohebrew                                      │N:157149│
+│    │OK  │    │    │paleohebrew                                      │N:157157│
+│    │OK  │    │    │paleohebrew                                      │N:157165│
+│    │OK  │    │    │paleohebrew                                      │N:157174│
+│    │OK  │    │    │paleohebrew                                      │N:157182│
+│    │OK  │    │    │paleohebrew                                      │N:157190│
+│    │OK  │    │    │paleohebrew                                      │N:157199│
+│    │OK  │    │    │paleohebrew                                      │N:157208│
+│    │OK  │    │    │paleohebrew                                      │N:157235│
+│    │OK  │    │    │paleohebrew                                      │N:157253│
+│    │OK  │    │    │paleohebrew                                      │N:157265│
+│    │OK  │    │    │paleohebrew                                      │N:157276│
+│    │OK  │    │    │paleohebrew                                      │N:157288│
+│    │OK  │    │    │paleohebrew                                      │N:157299│
+│    │OK  │    │    │paleohebrew                                      │N:157310│
+│    │OK  │    │    │paleohebrew                                      │N:157329│
+│    │OK  │    │    │paleohebrew                                      │N:157349│
+│    │OK  │    │    │paleohebrew                                      │N:157359│
+│    │OK  │    │    │paleohebrew                                      │N:157371│
+│    │OK  │    │    │paleohebrew                                      │N:157383│
+│    │OK  │    │    │paleohebrew                                      │N:157394│
+│    │OK  │    │    │paleohebrew                                      │N:157405│
+│    │OK  │    │    │paleohebrew                                      │N:157416│
+│    │OK  │    │    │paleohebrew                                      │N:157435│
+│    │OK  │    │    │paleohebrew                                      │N:157445│
+│    │OK  │    │    │paleohebrew                                      │N:157456│
+│    │OK  │    │    │paleohebrew                                      │N:157470│
+│    │OK  │    │    │paleohebrew                                      │N:157481│
+│    │OK  │    │    │paleohebrew                                      │N:157492│
+│    │OK  │    │    │paleohebrew                                      │N:157503│
+│    │OK  │    │    │paleohebrew                                      │N:157519│
+│    │OK  │    │    │paleohebrew                                      │N:157531│
+│    │OK  │    │    │paleohebrew                                      │N:157542│
+│    │OK  │    │    │paleohebrew                                      │N:157554│
+│    │OK  │    │    │paleohebrew                                      │N:157565│
+│    │OK  │    │    │paleohebrew                                      │N:157576│
+│    │OK  │    │    │paleohebrew                                      │N:157587│
+│    │OK  │    │    │paleohebrew                                      │N:157607│
+│    │OK  │    │    │paleohebrew                                      │N:157617│
+│    │OK  │    │    │paleohebrew                                      │N:157628│
+│    │OK  │    │    │paleohebrew                                      │N:157640│
+│    │OK  │    │    │paleohebrew                                      │N:157651│
+│    │OK  │    │    │paleohebrew                                      │N:157662│
+│    │OK  │    │    │paleohebrew                                      │N:157673│
+│    │OK  │    │    │paleohebrew                                      │N:157695│
+│    │OK  │    │    │paleohebrew                                      │N:157705│
+│    │OK  │    │    │paleohebrew                                      │N:157716│
+│    │OK  │    │    │paleohebrew                                      │N:157728│
+│    │OK  │    │    │paleohebrew                                      │N:157739│
+│    │OK  │    │    │paleohebrew                                      │N:157750│
+│    │OK  │    │    │paleohebrew                                      │N:157761│
+│    │OK  │    │    │paleohebrew                                      │N:157777│
+│    │OK  │    │    │paleohebrew                                      │N:157793│
+│    │OK  │    │    │paleohebrew                                      │N:157835│
+│    │OK  │    │    │paleohebrew                                      │N:157875│
+│    │OK  │    │    │paleohebrew                                      │N:162349│
+│    │OK  │    │    │paleohebrew                                      │N:162356│
+│    │OK  │    │    │paleohebrew                                      │N:162366│
+│    │OK  │    │    │paleohebrew                                      │N:162378│
+│    │OK  │    │    │paleohebrew                                      │N:162385│
+│    │OK  │    │    │paleohebrew                                      │N:162393│
+│    │OK  │    │    │paleohebrew                                      │N:162409│
+│    │OK  │    │    │paleohebrew                                      │N:162426│
+│    │OK  │    │    │paleohebrew                                      │N:163838│
+│    │OK  │    │    │paleohebrew                                      │N:164080│
+│    │OK  │    │    │paleohebrew                                      │N:164096│
+│    │OK  │    │    │paleohebrew                                      │N:164153│
+│    │OK  │    │    │paleohebrew                                      │N:164276│
+│    │OK  │    │    │paleohebrew                                      │N:164286│
+│    │OK  │    │    │paleohebrew                                      │N:164296│
+│    │OK  │    │    │paleohebrew                                      │N:164304│
+│    │OK  │    │    │paleohebrew                                      │N:164313│
+│    │OK  │    │    │paleohebrew                                      │N:164322│
+│    │OK  │    │    │paleohebrew                                      │N:164327│
+│    │OK  │    │    │paleohebrew                                      │N:164333│
+│    │OK  │    │    │paleohebrew                                      │N:164337│
+│    │OK  │    │    │paleohebrew                                      │N:164343│
+│    │OK  │    │    │paleohebrew                                      │N:164347│
+│    │OK  │    │    │paleohebrew                                      │N:164353│
+│    │OK  │    │    │paleohebrew                                      │N:164357│
+│    │OK  │    │    │paleohebrew                                      │N:164363│
+│    │OK  │    │    │paleohebrew                                      │N:164367│
+│    │OK  │    │    │paleohebrew                                      │N:164373│
+│    │OK  │    │    │paleohebrew                                      │N:164378│
+│    │OK  │    │    │paleohebrew                                      │N:164385│
+│    │OK  │    │    │paleohebrew                                      │N:164394│
+│    │OK  │    │    │paleohebrew                                      │N:164398│
+│    │OK  │    │    │paleohebrew                                      │N:164406│
+│    │OK  │    │    │paleohebrew                                      │N:164420│
+│    │OK  │    │    │paleohebrew                                      │N:164429│
+│    │OK  │    │    │paleohebrew                                      │N:164439│
+│    │OK  │    │    │paleohebrew                                      │N:164447│
+│    │OK  │    │    │paleohebrew                                      │N:164459│
+│    │OK  │    │    │paleohebrew                                      │N:164470│
+│    │OK  │    │    │paleohebrew                                      │N:164486│
+│    │OK  │    │    │paleohebrew                                      │N:164498│
+│    │OK  │    │    │paleohebrew                                      │N:164506│
+│    │OK  │    │    │paleohebrew                                      │N:164523│
+│    │OK  │    │    │paleohebrew                                      │N:164534│
+│    │OK  │    │    │paleohebrew                                      │N:164544│
+│    │OK  │    │    │paleohebrew                                      │N:164567│
+│    │OK  │    │    │paleohebrew                                      │N:164707│
+│    │OK  │    │    │paleohebrew                                      │N:212884│
+│    │OK  │    │    │paleohebrew                                      │N:214394│
+│    │OK  │    │    │paleohebrew                                      │N:214442│
+│    │OK  │    │    │paleohebrew                                      │N:260860│
+│    │OK  │    │    │paleohebrew                                      │N:269640│
+│    │OK  │    │    │paleohebrew                                      │N:309716│
+│    │OK  │    │    │paleohebrew                                      │N:317916│
+│    │OK  │    │    │paleohebrew                                      │N:317942│
+│    │OK  │    │    │paleohebrew                                      │N:317970│
+│    │OK  │    │    │paleohebrew                                      │N:317997│
+│    │OK  │    │    │paleohebrew                                      │N:318015│
+│    │OK  │    │    │paleohebrew                                      │N:318041│
+│    │OK  │    │    │paleohebrew                                      │N:318066│
+│    │OK  │    │    │paleohebrew                                      │N:318090│
+│    │OK  │    │    │paleohebrew                                      │N:318107│
+│    │OK  │    │    │paleohebrew                                      │N:318135│
+│    │OK  │    │    │paleohebrew                                      │N:318162│
+│    │OK  │    │    │paleohebrew                                      │N:318192│
+│    │OK  │    │    │paleohebrew                                      │N:318218│
+│    │OK  │    │    │paleohebrew                                      │N:318222│
+│    │OK  │    │    │paleohebrew                                      │N:318230│
+│    │OK  │    │    │paleohebrew                                      │N:318234│
+│    │OK  │    │    │paleohebrew                                      │N:318255│
+│    │OK  │    │    │paleohebrew                                      │N:318277│
+│    │OK  │    │    │paleohebrew                                      │N:318303│
+│    │OK  │    │    │paleohebrew                                      │N:318304│
+│    │OK  │    │    │paleohebrew                                      │N:318322│
+│    │OK  │    │    │paleohebrew                                      │N:318327│
+│    │OK  │    │    │paleohebrew                                      │N:318347│
+│    │OK  │    │    │paleohebrew                                      │N:318353│
+│    │OK  │    │    │paleohebrew                                      │N:318361│
+│    │OK  │    │    │paleohebrew                                      │N:318383│
+│    │OK  │    │    │paleohebrew                                      │N:318441│
+│    │OK  │    │    │paleohebrew                                      │N:318464│
+│    │OK  │    │    │paleohebrew                                      │N:318481│
+│    │OK  │    │    │paleohebrew                                      │N:318502│
+│    │OK  │    │    │paleohebrew                                      │N:318537│
+│    │OK  │    │    │paleohebrew                                      │N:318562│
+│    │OK  │    │    │paleohebrew                                      │N:318581│
+│    │OK  │    │    │paleohebrew                                      │N:318601│
+│    │OK  │    │    │paleohebrew                                      │N:318618│
+│    │OK  │    │    │paleohebrew                                      │N:318634│
+│    │OK  │    │    │paleohebrew                                      │N:318665│
+│    │OK  │    │    │paleohebrew                                      │N:318711│
+│    │OK  │    │    │paleohebrew                                      │N:318738│
+│    │OK  │    │    │paleohebrew                                      │N:318746│
+│    │OK  │    │    │paleohebrew                                      │N:318909│
+│    │OK  │    │    │paleohebrew                                      │N:318919│
+│    │OK  │    │    │paleohebrew                                      │N:318931│
+│    │OK  │    │    │paleohebrew                                      │N:319373│
+│    │OK  │    │    │paleohebrew                                      │N:319382│
+│    │OK  │    │    │paleohebrew                                      │N:319395│
+│    │OK  │    │    │paleohebrew                                      │N:319406│
+│    │OK  │    │    │paleohebrew                                      │N:319410│
+│    │OK  │    │    │paleohebrew                                      │N:319441│
+│    │OK  │    │    │paleohebrew                                      │N:319448│
+│    │OK  │    │    │paleohebrew                                      │N:319495│
+│    │OK  │    │    │paleohebrew                                      │N:319517│
+│    │OK  │    │    │paleohebrew                                      │N:321249│
+│    │OK  │    │    │paleohebrew                                      │N:322039│
+│    │OK  │    │    │paleohebrew                                      │N:323163│
+│    │OK  │    │    │paleohebrew                                      │N:323180│
+│    │OK  │    │    │paleohebrew                                      │N:323192│
+│    │OK  │    │    │paleohebrew                                      │N:323212│
+│    │OK  │    │    │paleohebrew                                      │N:323225│
+│    │OK  │    │    │paleohebrew                                      │N:323238│
+│    │OK  │    │    │paleohebrew                                      │N:323249│
+│    │OK  │    │    │paleohebrew                                      │N:323299│
+│    │OK  │    │    │paleohebrew                                      │N:323310│
+│    │OK  │    │    │paleohebrew                                      │N:323321│
+│    │OK  │    │    │paleohebrew                                      │N:323338│
+│    │OK  │    │    │paleohebrew                                      │N:323342│
+│    │OK  │    │    │paleohebrew                                      │N:323354│
+│    │OK  │    │    │paleohebrew                                      │N:323377│
+│    │OK  │    │    │paleohebrew                                      │N:323400│
+│    │OK  │    │    │paleohebrew                                      │N:323407│
+│    │OK  │    │    │paleohebrew                                      │N:323417│
+│    │OK  │    │    │paleohebrew                                      │N:323435│
+│    │OK  │    │    │paleohebrew                                      │N:323443│
+│    │OK  │    │    │paleohebrew                                      │N:323450│
+│    │OK  │    │    │paleohebrew                                      │N:323458│
+│    │OK  │    │    │paleohebrew                                      │N:323467│
+│    │OK  │    │    │paleohebrew                                      │N:323474│
+│    │OK  │    │    │paleohebrew                                      │N:323488│
+│    │OK  │    │    │paleohebrew                                      │N:323496│
+│    │OK  │    │    │paleohebrew                                      │N:323503│
+│    │OK  │    │    │paleohebrew                                      │N:323511│
+│    │OK  │    │    │paleohebrew                                      │N:323523│
+│    │OK  │    │    │paleohebrew                                      │N:323531│
+│    │OK  │    │    │paleohebrew                                      │N:323538│
+│    │OK  │    │    │paleohebrew                                      │N:323558│
+│    │OK  │    │    │paleohebrew                                      │N:323575│
+│    │OK  │    │    │paleohebrew                                      │N:323585│
+│    │OK  │    │    │paleohebrew                                      │N:323595│
+│    │OK  │    │    │paleohebrew                                      │N:323644│
+│    │OK  │    │    │paleohebrew                                      │N:334499│
+│    │OK  │    │    │paleohebrew                                      │N:334505│
+│    │OK  │    │    │paleohebrew                                      │N:334724│
+│    │OK  │    │    │paleohebrew                                      │N:334960│
+│    │OK  │    │    │paleohebrew                                      │N:335003│
+│    │OK  │    │    │paleohebrew                                      │N:335065│
+│    │OK  │    │    │paleohebrew                                      │N:335567│
+│    │OK  │    │    │paleohebrew                                      │N:335571│
+│    │OK  │    │    │paleohebrew                                      │N:335579│
+│    │OK  │    │    │paleohebrew                                      │N:335583│
+│    │OK  │    │    │paleohebrew                                      │N:335592│
+│    │OK  │    │    │paleohebrew                                      │N:335643│
+│    │OK  │    │    │paleohebrew                                      │N:336245│
+│    │OK  │    │    │paleohebrew                                      │N:336374│
+│    │OK  │    │    │paleohebrew                                      │N:336395│
+│    │OK  │    │    │paleohebrew                                      │N:336463│
+│    │OK  │    │    │paleohebrew                                      │N:336479│
+│    │OK  │    │    │paleohebrew                                      │N:336494│
+│    │OK  │    │    │paleohebrew                                      │N:336540│
+│    │OK  │    │    │paleohebrew                                      │N:336575│
+│    │OK  │    │    │paleohebrew                                      │N:336616│
+│    │OK  │    │    │paleohebrew                                      │N:336943│
+│    │OK  │    │    │paleohebrew                                      │N:336994│
+│    │OK  │    │    │paleohebrew                                      │N:337012│
+│    │OK  │    │    │paleohebrew                                      │N:337057│
+│    │OK  │    │    │paleohebrew                                      │N:337082│
+│    │OK  │    │    │paleohebrew                                      │N:337110│
+│    │OK  │    │    │paleohebrew                                      │N:337117│
+│    │OK  │    │    │paleohebrew                                      │N:337137│
+│    │OK  │    │    │paleohebrew                                      │N:337144│
+│    │OK  │    │    │paleohebrew                                      │N:337152│
+│    │OK  │    │    │paleohebrew                                      │N:337295│
+│    │OK  │    │    │paleohebrew                                      │N:337457│
+│    │OK  │    │    │paleohebrew                                      │N:337549│
+│    │OK  │    │    │paleohebrew                                      │B: 42274│
+│    │OK  │    │    │paleohebrew                                      │B: 45254│
+│    │OK  │    │    │paleohebrew                                      │B: 45295│
+│    │OK  │    │    │paleohebrew                                      │B: 45574│
+│    │OK  │    │    │paleohebrew                                      │B: 45620│
+│    │OK  │    │    │paleohebrew                                      │B: 45633│
+│    │OK  │    │    │paleohebrew                                      │B: 45673│
+│    │OK  │    │    │paleohebrew                                      │B: 48935│
+│    │OK  │    │    │paleohebrew                                      │B: 69194│
+│    │OK  │    │    │paleohebrew                                      │B: 90008│
+│    │OK  │    │    │paleohebrew                                      │B:110847│
+│    │OK  │    │    │paleohebrew                                      │B:144179│
+│    │OK  │    │    │paleohebrew                                      │B:144234│
+│    │OK  │    │    │paleohebrew                                      │B:144284│
+│    │OK  │    │    │paleohebrew                                      │B:144294│
+│    │OK  │    │    │paleohebrew                                      │B:144314│
+│    │OK  │    │    │paleohebrew                                      │B:144353│
+│    │OK  │    │    │paleohebrew                                      │B:144459│
+│    │OK  │    │    │paleohebrew                                      │B:144464│
+│    │OK  │    │    │paleohebrew                                      │B:144594│
+│    │OK  │    │    │paleohebrew                                      │B:144671│
+│    │OK  │    │    │paleohebrew                                      │B:144730│
+│    │OK  │    │    │paleohebrew                                      │B:144755│
+│    │OK  │    │    │paleohebrew                                      │B:144796│
+│    │OK  │    │    │paleohebrew                                      │B:144820│
+│    │OK  │    │    │paleohebrew                                      │B:144859│
+│    │OK  │    │    │paleohebrew                                      │B:144949│
+│    │OK  │    │    │paleohebrew                                      │B:144953│
+│    │OK  │    │    │paleohebrew                                      │B:145003│
+│    │OK  │    │    │paleohebrew                                      │B:145020│
+│    │OK  │    │    │paleohebrew                                      │B:145066│
+│    │OK  │    │    │paleohebrew                                      │B:145105│
+│    │OK  │    │    │paleohebrew                                      │B:145224│
+│    │OK  │    │    │paleohebrew                                      │B:145252│
+│    │OK  │    │    │paleohebrew                                      │B:145253│
+│    │OK  │    │    │paleohebrew                                      │B:145267│
+│    │OK  │    │    │paleohebrew                                      │B:145339│
+│    │OK  │    │    │paleohebrew                                      │B:145499│
+│    │OK  │    │    │paleohebrew                                      │B:145555│
+│    │OK  │    │    │paleohebrew                                      │B:145602│
+│    │OK  │    │    │paleohebrew                                      │B:145621│
+│    │OK  │    │    │paleohebrew                                      │B:145662│
+│    │OK  │    │    │paleohebrew                                      │B:145683│
+│    │OK  │    │    │paleohebrew                                      │B:145698│
+│    │OK  │    │    │paleohebrew                                      │B:145803│
+│    │OK  │    │    │paleohebrew                                      │B:145804│
+│    │OK  │    │    │paleohebrew                                      │B:145813│
+│    │OK  │    │    │paleohebrew                                      │B:145855│
+│    │OK  │    │    │paleohebrew                                      │B:146020│
+│    │OK  │    │    │paleohebrew                                      │B:146100│
+│    │OK  │    │    │paleohebrew                                      │B:146225│
+│    │OK  │    │    │paleohebrew                                      │B:146226│
+│    │OK  │    │    │paleohebrew                                      │B:146276│
+│    │OK  │    │    │paleohebrew                                      │B:146318│
+│    │OK  │    │    │paleohebrew                                      │B:146341│
+│    │OK  │    │    │paleohebrew                                      │B:146454│
+│    │OK  │    │    │paleohebrew                                      │B:146476│
+│    │OK  │    │    │paleohebrew                                      │B:146481│
+│    │OK  │    │    │paleohebrew                                      │B:146482│
+│    │OK  │    │    │paleohebrew                                      │B:146486│
+│    │OK  │    │    │paleohebrew                                      │B:146552│
+│    │OK  │    │    │paleohebrew                                      │B:146553│
+│    │OK  │    │    │paleohebrew                                      │B:146568│
+│    │OK  │    │    │paleohebrew                                      │B:146569│
+│    │OK  │    │    │paleohebrew                                      │B:146580│
+│    │OK  │    │    │paleohebrew                                      │B:146588│
+│    │OK  │    │    │paleohebrew                                      │B:146589│
+│    │OK  │    │    │paleohebrew                                      │B:146602│
+│    │OK  │    │    │paleohebrew                                      │B:146645│
+│    │OK  │    │    │paleohebrew                                      │B:146660│
+│    │OK  │    │    │paleohebrew                                      │B:146721│
+│    │OK  │    │    │paleohebrew                                      │B:146749│
+│    │OK  │    │    │paleohebrew                                      │B:146777│
+│    │OK  │    │    │paleohebrew                                      │B:146796│
+│    │OK  │    │    │paleohebrew                                      │B:146822│
+│    │OK  │    │    │paleohebrew                                      │B:147001│
+│    │OK  │    │    │paleohebrew                                      │B:147030│
+│    │OK  │    │    │paleohebrew                                      │B:147037│
+│    │OK  │    │    │paleohebrew                                      │B:147140│
+│    │OK  │    │    │paleohebrew                                      │B:147184│
+│    │OK  │    │    │paleohebrew                                      │B:147233│
+│    │OK  │    │    │paleohebrew                                      │B:147283│
+│    │OK  │    │    │paleohebrew                                      │B:147293│
+│    │OK  │    │    │paleohebrew                                      │B:147343│
+│    │OK  │    │    │paleohebrew                                      │B:147362│
+│    │OK  │    │    │paleohebrew                                      │B:147381│
+│    │OK  │    │    │paleohebrew                                      │B:147400│
+│    │OK  │    │    │paleohebrew                                      │B:147464│
+│    │OK  │    │    │paleohebrew                                      │B:147517│
+│    │OK  │    │    │paleohebrew                                      │B:147518│
+│    │OK  │    │    │paleohebrew                                      │B:147606│
+│    │OK  │    │    │paleohebrew                                      │B:147645│
+│    │OK  │    │    │paleohebrew                                      │B:147707│
+│    │OK  │    │    │paleohebrew                                      │B:147749│
+│    │OK  │    │    │paleohebrew                                      │B:147827│
+│    │OK  │    │    │paleohebrew                                      │B:147836│
+│    │OK  │    │    │paleohebrew                                      │B:147940│
+│    │OK  │    │    │paleohebrew                                      │B:147960│
+│    │OK  │    │    │paleohebrew                                      │B:147981│
+│    │OK  │    │    │paleohebrew                                      │B:148024│
+│    │OK  │    │    │paleohebrew                                      │B:148041│
+│    │OK  │    │    │paleohebrew                                      │B:148054│
+│    │OK  │    │    │paleohebrew                                      │B:148079│
+│    │OK  │    │    │paleohebrew                                      │B:148111│
+│    │OK  │    │    │paleohebrew                                      │B:148227│
+│    │OK  │    │    │paleohebrew                                      │B:148228│
+│    │OK  │    │    │paleohebrew                                      │B:148235│
+│    │OK  │    │    │paleohebrew                                      │B:148248│
+│    │OK  │    │    │paleohebrew                                      │B:213204│
+│    │OK  │    │    │paleohebrew                                      │B:213219│
+│    │OK  │    │    │paleohebrew                                      │B:213274│
+│    │OK  │    │    │paleohebrew                                      │B:213283│
+│    │OK  │    │    │paleohebrew                                      │B:213294│
+│    │OK  │    │    │paleohebrew                                      │B:213305│
+│    │OK  │    │    │paleohebrew                                      │B:213387│
+│    │OK  │    │    │paleohebrew                                      │B:214088│
+│    │OK  │    │    │paleohebrew                                      │B:214195│
+│    │OK  │    │    │paleohebrew                                      │B:214214│
+│    │OK  │    │    │paleohebrew                                      │B:214222│
+│    │OK  │    │    │paleohebrew                                      │B:214261│
+│    │OK  │    │    │paleohebrew                                      │B:214286│
+│    │OK  │    │    │paleohebrew                                      │B:214305│
+│    │OK  │    │    │paleohebrew                                      │B:214389│
+│    │OK  │    │    │paleohebrew                                      │B:214402│
+│    │OK  │    │    │paleohebrew                                      │B:214459│
+│    │OK  │    │    │paleohebrew                                      │B:214473│
+│    │OK  │    │    │paleohebrew                                      │B:214504│
+│    │OK  │    │    │paleohebrew                                      │B:214523│
+│    │OK  │    │    │paleohebrew                                      │B:214529│
+│    │OK  │    │    │paleohebrew                                      │B:214541│
+│    │OK  │    │    │paleohebrew                                      │B:214550│
+│    │OK  │    │    │paleohebrew                                      │B:214555│
+│    │OK  │    │    │paleohebrew                                      │B:214581│
+│    │OK  │    │    │paleohebrew                                      │B:214603│
+│    │OK  │    │    │paleohebrew                                      │B:214606│
+│    │OK  │    │    │paleohebrew                                      │B:214704│
+│    │OK  │    │    │paleohebrew                                      │B:214791│
+│    │OK  │    │    │paleohebrew                                      │B:214797│
+│    │OK  │    │    │paleohebrew                                      │B:214820│
+│    │OK  │    │    │paleohebrew                                      │B:214840│
+│    │OK  │    │    │paleohebrew                                      │B:214861│
+│    │OK  │    │    │paleohebrew                                      │B:214925│
+│    │OK  │    │    │paleohebrew                                      │B:214936│
+│    │OK  │    │    │paleohebrew                                      │B:214969│
+│    │OK  │    │    │paleohebrew                                      │B:214999│
+│    │OK  │    │    │paleohebrew                                      │B:215300│
+│    │OK  │    │    │paleohebrew                                      │B:215322│
+│    │OK  │    │    │paleohebrew                                      │B:215343│
+│    │OK  │    │    │paleohebrew                                      │B:215387│
+│    │OK  │    │    │paleohebrew                                      │B:215412│
+│    │OK  │    │    │paleohebrew                                      │B:215482│
+│    │OK  │    │    │paleohebrew                                      │B:215511│
+│    │OK  │    │    │paleohebrew                                      │B:215542│
+│    │OK  │    │    │paleohebrew                                      │B:215563│
+│    │OK  │    │    │paleohebrew                                      │B:215602│
+│    │OK  │    │    │paleohebrew                                      │B:215640│
+│    │OK  │    │    │paleohebrew                                      │B:215684│
+│    │OK  │    │    │paleohebrew                                      │B:215738│
+│    │OK  │    │    │paleohebrew                                      │B:215756│
+│    │OK  │    │    │paleohebrew                                      │B:215774│
+│    │OK  │    │    │paleohebrew                                      │B:215809│
+│    │OK  │    │    │paleohebrew                                      │B:215823│
+│    │OK  │    │    │paleohebrew                                      │B:215843│
+│    │OK  │    │    │paleohebrew                                      │B:215867│
+│    │OK  │    │    │paleohebrew                                      │B:215877│
+│    │OK  │    │    │paleohebrew                                      │B:215888│
+│    │OK  │    │    │paleohebrew                                      │B:215932│
+│    │OK  │    │    │paleohebrew                                      │B:215950│
+│    │OK  │    │    │paleohebrew                                      │B:216054│
+│    │OK  │    │    │paleohebrew                                      │B:216063│
+│    │OK  │    │    │paleohebrew                                      │B:216111│
+│    │OK  │    │    │paleohebrew                                      │B:216137│
+│    │OK  │    │    │paleohebrew                                      │B:216142│
+│    │OK  │    │    │paleohebrew                                      │B:216169│
+│    │OK  │    │    │paleohebrew                                      │B:216208│
+│    │OK  │    │    │paleohebrew                                      │B:216248│
+│    │OK  │    │    │paleohebrew                                      │B:216316│
+│    │OK  │    │    │paleohebrew                                      │B:216534│
+│    │OK  │    │    │paleohebrew                                      │B:216675│
+│    │OK  │    │    │paleohebrew                                      │B:216689│
+│    │OK  │    │    │paleohebrew                                      │B:216850│
+│    │OK  │    │    │paleohebrew                                      │B:216948│
+│    │OK  │    │    │paleohebrew                                      │B:216959│
+│    │OK  │    │    │paleohebrew                                      │B:217175│
+│    │OK  │    │    │paleohebrew                                      │B:217234│
+│    │OK  │    │    │paleohebrew                                      │B:217283│
+│    │OK  │    │    │paleohebrew                                      │B:217318│
+│    │OK  │    │    │paleohebrew                                      │B:217407│
+│    │OK  │    │    │paleohebrew                                      │B:217437│
+│    │OK  │    │    │paleohebrew                                      │B:217443│
+│    │OK  │    │    │paleohebrew                                      │B:217462│
+│    │OK  │    │    │paleohebrew                                      │B:217477│
+│    │OK  │    │    │paleohebrew                                      │B:217502│
+│    │OK  │    │    │paleohebrew                                      │B:217514│
+│    │OK  │    │    │paleohebrew                                      │B:217531│
+│    │OK  │    │    │paleohebrew                                      │B:217612│
+│    │OK  │    │    │paleohebrew                                      │B:217620│
+│    │OK  │    │    │paleohebrew                                      │B:217629│
+│    │OK  │    │    │paleohebrew                                      │B:217634│
+│    │OK  │    │    │paleohebrew                                      │B:217639│
+│    │OK  │    │    │paleohebrew                                      │B:217644│
+│    │OK  │    │    │paleohebrew                                      │B:217660│
+│    │OK  │    │    │paleohebrew                                      │B:217862│
+│    │OK  │    │    │paleohebrew                                      │B:217881│
+│    │OK  │    │    │paleohebrew                                      │B:217889│
+│    │OK  │    │    │paleohebrew                                      │B:217894│
+│    │OK  │    │    │paleohebrew                                      │B:217905│
+│    │OK  │    │    │paleohebrew                                      │B:217917│
+│    │OK  │    │    │paleohebrew                                      │B:217930│
+│    │OK  │    │    │paleohebrew                                      │B:217942│
+│    │OK  │    │    │paleohebrew                                      │B:217961│
+│    │OK  │    │    │paleohebrew                                      │B:217976│
+│    │OK  │    │    │paleohebrew                                      │B:218000│
+│    │OK  │    │    │paleohebrew                                      │B:218012│
+│    │OK  │    │    │paleohebrew                                      │B:218024│
+│    │OK  │    │    │paleohebrew                                      │B:218045│
+│    │OK  │    │    │paleohebrew                                      │B:218066│
+│    │OK  │    │    │paleohebrew                                      │B:218086│
+│    │OK  │    │    │paleohebrew                                      │B:218128│
+│    │OK  │    │    │paleohebrew                                      │B:218150│
+│    │OK  │    │    │paleohebrew                                      │B:218163│
+│    │OK  │    │    │paleohebrew                                      │B:218178│
+│    │OK  │    │    │paleohebrew                                      │B:218204│
+│    │OK  │    │    │paleohebrew                                      │B:218227│
+│    │OK  │    │    │paleohebrew                                      │B:218240│
+│    │OK  │    │    │paleohebrew                                      │B:218253│
+│    │OK  │    │    │paleohebrew                                      │B:218265│
+│    │OK  │    │    │paleohebrew                                      │B:218280│
+│    │OK  │    │    │paleohebrew                                      │B:218303│
+│    │OK  │    │    │paleohebrew                                      │B:218316│
+│    │OK  │    │    │paleohebrew                                      │B:218330│
+│    │OK  │    │    │paleohebrew                                      │B:218343│
+│    │OK  │    │    │paleohebrew                                      │B:218357│
+│    │OK  │    │    │paleohebrew                                      │B:218534│
+│    │OK  │    │    │paleohebrew                                      │B:218608│
+│    │OK  │    │    │paleohebrew                                      │B:218615│
+│    │OK  │    │    │paleohebrew                                      │B:218655│
+│    │OK  │    │    │paleohebrew                                      │B:218671│
+│    │OK  │    │    │paleohebrew                                      │B:218677│
+│    │OK  │    │    │paleohebrew                                      │B:218684│
+│    │OK  │    │    │paleohebrew                                      │B:218713│
+│    │OK  │    │    │paleohebrew                                      │B:218718│
+│    │OK  │    │    │paleohebrew                                      │B:218735│
+│    │OK  │    │    │paleohebrew                                      │B:218742│
+│    │OK  │    │    │paleohebrew                                      │B:218810│
+│    │OK  │    │    │paleohebrew                                      │B:218899│
+│    │OK  │    │    │paleohebrew                                      │B:218916│
+│    │OK  │    │    │paleohebrew                                      │B:219011│
+│    │OK  │    │    │paleohebrew                                      │B:219041│
+│    │OK  │    │    │paleohebrew                                      │B:219093│
+│    │OK  │    │    │paleohebrew                                      │B:219180│
+│    │OK  │    │    │paleohebrew                                      │B:219351│
+│    │OK  │    │    │paleohebrew                                      │B:219387│
+│    │OK  │    │    │paleohebrew                                      │B:219399│
+│    │OK  │    │    │paleohebrew                                      │B:219406│
+│    │OK  │    │    │paleohebrew                                      │B:219420│
+│    │OK  │    │    │paleohebrew                                      │B:219425│
+└────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
+Compiling feature data ...
+┌────┬────┬────┬────┬─────────────────────────────────────────────────┬────────┐
+│53  │53  │0   │0   │(NON)-BIBLICAL                                   │        │
+├────┼────┼────┼────┼─────────────────────────────────────────────────┼────────┤
+│    │OK  │    │    │11Q5 21 fragment                                 │B:218593│
+│    │OK  │    │    │11Q5 22 fragment                                 │B:218732│
+│    │OK  │    │    │11Q5 24 fragment                                 │B:219000│
+│    │OK  │    │    │11Q5 26 fragment                                 │B:219213│
+│    │OK  │    │    │11Q5 27 fragment                                 │B:219327│
+│    │OK  │    │    │11Q5 28 fragment                                 │B:219399│
+│    │OK  │    │    │11Q5 scroll                                      │B:214079│
+│    │OK  │    │    │11Q6 scroll                                      │B:219435│
+│    │OK  │    │    │2Q29 f1:1 cluster reconstruction                 │B: 48758│
+│    │OK  │    │    │2Q29 f1:1 line                                   │B: 48758│
+│    │OK  │    │    │2Q29 f1:1 word ]b                                │B: 48758│
+│    │OK  │    │    │2Q29 f1:2 cluster reconstruction                 │B: 48783│
+│    │OK  │    │    │2Q29 f1:2 line                                   │B: 48783│
+│    │OK  │    │    │2Q29 f1:2 word ]mwab                             │B: 48783│
+│    │OK  │    │    │2Q29 f1:3 cluster reconstruction                 │B: 48806│
+│    │OK  │    │    │2Q29 f1:3 line                                   │B: 48806│
+│    │OK  │    │    │2Q29 f1:3 word ]zom/h                            │B: 48806│
+│    │OK  │    │    │2Q29 scroll                                      │B: 48758│
+│    │OK  │    │    │4Q249j f1:1 cluster reconstruction               │B:202051│
+│    │OK  │    │    │4Q249j f1:1 line                                 │B:202051│
+│    │OK  │    │    │4Q249j f1:1 word ]toCw                           │B:202051│
+│    │OK  │    │    │4Q249j f1:2 cluster reconstruction               │B:202067│
+│    │OK  │    │    │4Q249j f1:2 line                                 │B:202067│
+│    │OK  │    │    │4Q249j f1:2 word ]at                             │B:202067│
+│    │OK  │    │    │4Q249j f1:3 cluster reconstruction               │B:202077│
+│    │OK  │    │    │4Q249j f1:3 line                                 │B:202077│
+│    │OK  │    │    │4Q249j f1:3 word ]mxwt/y[                        │B:202077│
+│    │OK  │    │    │4Q249j f1:4 cluster reconstruction               │B:202088│
+│    │OK  │    │    │4Q249j f1:4 line                                 │B:202088│
+│    │OK  │    │    │4Q249j f1:4 word ]l/kM                           │B:202088│
+│    │OK  │    │    │4Q249j f1:5 cluster reconstruction               │B:202101│
+│    │OK  │    │    │4Q249j f1:5 line                                 │B:202101│
+│    │OK  │    │    │4Q249j f1:5 word ]mklwt                          │B:202101│
+│    │OK  │    │    │4Q249j f1:6 cluster reconstruction               │B:202114│
+│    │OK  │    │    │4Q249j f1:6 line                                 │B:202114│
+│    │OK  │    │    │4Q249j f1:6 word ]ayby/kM[                       │B:202114│
+│    │OK  │    │    │4Q483 f1:1 cluster reconstruction                │B:202151│
+│    │OK  │    │    │4Q483 f1:1 line                                  │B:202151│
+│    │OK  │    │    │4Q483 f1:1 word ]b                               │B:202151│
+│    │OK  │    │    │4Q483 f1:2 cluster reconstruction                │B:202166│
+│    │OK  │    │    │4Q483 f1:2 line                                  │B:202166│
+│    │OK  │    │    │4Q483 f1:2 word ]alwhyM                          │B:202166│
+│    │OK  │    │    │4Q483 f1:3 cluster reconstruction                │B:202182│
+│    │OK  │    │    │4Q483 f1:3 line                                  │B:202182│
+│    │OK  │    │    │4Q483 f1:3 word ]w                               │B:202182│
+│    │OK  │    │    │4Q483 f2:1 cluster reconstruction                │B:202117│
+│    │OK  │    │    │4Q483 f2:1 line                                  │B:202117│
+│    │OK  │    │    │4Q483 f2:1 word ]m                               │B:202117│
+│    │OK  │    │    │4Q483 f2:2 cluster reconstruction                │B:202135│
+│    │OK  │    │    │4Q483 f2:2 line                                  │B:202135│
+│    │OK  │    │    │4Q483 f2:2 word ]alwhyM                          │B:202135│
+│    │OK  │    │    │4Q88 7 fragment                                  │B:180395│
+│    │OK  │    │    │4Q88 scroll                                      │B:179901│
+└────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
