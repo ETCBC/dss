@@ -9,9 +9,9 @@
 @source=Martin Abegg, personal communication
 @valueType=int
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-06T06:53:14Z
+@dateWritten=2019-05-06T21:02:42Z
 
-1622853	5
+1606865	5
 6
 7
 8

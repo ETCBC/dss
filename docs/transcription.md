@@ -13,13 +13,12 @@ See also
 
 *   [about](about.md) for the provenance of the data;
 *   [TF docs](https://annotation.github.io/text-fabric/) for documentation on Text-Fabric.
-*   [DSS API](https://annotation.github.io/app-dss/blob/master/api.md) on how to use the
-    TF-app DSS.
 
 The corpus consists of two files, one for the non-biblical scrolls and one for the 
 biblical scrolls.
 In both files, the material is subdivided into *scroll*, *fragment*, *line*.
-In the biblical file, *book*, *chapter* and *verse* are also marked.
+In the biblical file, references to *book*, *chapter* and *verse* are marked
+at the word level.
 
 Some scrolls contain biblical as well as non-biblical materials.
 In the source data files those scrolls are split between the files.
@@ -53,10 +52,6 @@ this corpus we have node types for:
 [*line*](#line),
 [*fragment*](#fragment),
 [*scroll*](#scroll),
-[*halfverse*](#halfverse),
-[*verse*](#verse),
-[*chapter*](#chapter),
-[*book*](#book).
 
 The type of every node is given by the feature
 [**otype**](https://annotation.github.io/text-fabric/Api/Features/#node-features).
@@ -70,10 +65,6 @@ See the table below.
 Text-Fabric supports up to three customizable section levels.
 In this corpus we use:
 [*scroll*](#scroll) and [*fragment*](#fragment) and [*line*](#line).
-
-Note that we do have node types corresponding to *book*, *chapter*, *verse*,
-and *halfverse*,
-but they are not configured as TF-sections.
 
 ## Transcription
 
@@ -134,12 +125,13 @@ type | source | etcbc | unicode | description
 
 feature | values | Abegg | ETCBC | Unicode | description
 ------- | ------ | ------ | ----------- | --- | ---
+**after** | ` ` | | | whether there is a space after the last sign of a word and before the next word
 **alternative** | `1` | `lwz/)h(` | `LWZ61(H)` | | indicates an alternative material, marked by being within brackets `( )`
 **correction** | `1` | `yqw>mw<N` | `JQW(< MW >)n` | | material is corrected by a modern editor, marked by being within single angle brackets  `< >`
 **correction** | `2` | `>>zwnh«<<` | `(<< ZWNH# >>)` | | material is corrected by an ancient editor, marked by being within double angle brackets  `<< >>`
-**correction** | `3` | `^dbr/y^` | `(^ DBR ? J ^)` | | material is corrected by an ancient editor, marked by being within double angle brackets  `<< >>`
+**correction** | `3` | `^dbr/y^` | `(^ DBR ? J ^)` | | material is corrected by an ancient editor, supralinear, marked by being within carets `^ ^`
 **glyph[eo]** | | `m` | `M` | `מ` | transliteration of an individual sign
-**language** | `a` `g` | | | language, `a` is Aramaic, `g` is Greek, absent means Hebrew
+**lang** | `a` `g` | | | language, `a` is Aramaic, `g` is Greek, absent means Hebrew
 **reconstruction** | `1` | `]p[n»y` | `[P]N#?Y` | | material is reconstructed by a modern editor, marked by being within square brackets  `[ ]`
 **removed** | `1` | `}m«x«r«yØM«{` | `{M#Y#R#J?m#}` | | material is removed by a modern editor, marked by being within single braces  `{ }`
 **removed** | `2` | `twlo}}t{{` | `TWL<{{t}}` | | material is removed by an ancient editor, marked by being within double braces  `{{ }}`
@@ -198,11 +190,10 @@ We add a slot of type `empty` to this word.
 feature | Abegg | ETCBC | Unicode | description
 ------- | ------ | ------ | --- | --------
 **after** | ` ` | | | whether there is a space after a word and before the next word
-**biblical** | `1` `2` | | | 1 or 2 if this word is biblical material, otherwise absent, see section on biblical
 **full[eo]** | `mm/nw[` | `MM61NW]` | `ממ׳נו]` | full transcription of a word, including flags and clustering characters
 **glyph[eo]** | `mmnw` | `MMNW]` | `ממנו` | letters of a word excluding flags and brackets
 **interlinear** | `1` `2` | | | if the physical word is on an interlinear line, this is `1`, if there are two interlinear lines at that point, the words on the first line get `1` and words on the second line gets `2`
-**language** | `a` `g` | | | language, `a` is Aramaic, `g` is Greek, absent means Hebrew
+**lang** | `a` `g` | | | language, `a` is Aramaic, `g` is Greek, absent means Hebrew
 **lex[eo]** | `mIN` | `MIn` | `מִן` | lexeme of a word
 **punc[eo]** | `.` | `00` | `׃` | punctuation at the end of a word
 **morpho** | `vHi1cpX3mp` | | | original morphological tag for this word; all information in this has been decomposed into the morphological features below
@@ -210,26 +201,22 @@ feature | Abegg | ETCBC | Unicode | description
 **srcLn** | `424242` | | | line number of this word in its source data file; use `biblical` to find out whether it is the bib or the nonbib file
 **type** | | | | type of word, see table above
 
-## Node type [*lex*](#lex)
+### Biblical reference
 
-The type of lexemes, as found in the lexeme field of the source data files.
+Words coming from the biblical source file have references to a passage in the Bible.
 
-feature | Abegg | ETCBC | Unicode | description
-------- | ------ | ------ | --- | --------
-**lex[eo]** | `mIN` | `MIn` | `מִן` | lexeme of a word
+feature | examples | description
+--- | --- | ---
+**biblical** | `1` `2` | 1 or 2 if this word is biblical material, otherwise absent, see section on biblical
+**book** | `Gen` `1Q1` | the book of the corresponding passage
+**chapter** | `3` `f6` | the chapter of the corresponding passage
+**verse** | `1` `2` | the verse of the corresponding passage
+**halfverse** | `a` `b` (the only values)| the halfverse of the corresponding passage
 
-Lexemes are connected to their occurrence words by means of an edge feature:
-
-feature | description
---- | ---
-`occ` | edges from lexeme nodes to each of their word occurrences
-
-**N.B.** Note that you can use this feature in both directions:
-
-```python
-words = E.occ.f(lex)
-lex = E.occ.t(word)[0]
-```
+**N.B** Many times chapters are not really chapter numbers of books,
+but fragments of scrolls.
+Likewise, verses are not always verse numbers in chapters,
+but many times they are line numbers in fragments.
 
 ### Morphological features
 
@@ -278,6 +265,33 @@ feature | examples | description
 ------- | ------ | ------
 **merr** | `vnPfpa` `@0` | the characters are those that are not recognized by the parser at that point
 
+## Node type [*lex*](#lex)
+
+The type of lexemes, as found in the lexeme field of the source data files.
+
+feature | Abegg | ETCBC | Unicode | description
+------- | ------ | ------ | --- | --------
+**lex[eo]** | `mIN` | `MIn` | `מִן` | lexeme of a word
+**complete** | 1 | | | 1 if the lexeme is complete, i.e. without uncertain characters
+
+**N.B.**
+
+Lexemes may contain characters with an uncertainty level, such as `#` and `?`.
+See the under [*sign*](#node-type-sign) above.
+
+Lexemes are connected to their occurrence words by means of an edge feature:
+
+feature | description
+--- | ---
+`occ` | edges from lexeme nodes to each of their word occurrences
+
+**N.B.** Note that you can use this feature in both directions:
+
+```python
+words = E.occ.f(lex)
+lex = E.occ.t(word)[0]
+```
+
 ## Node type [*cluster*](#cluster)
 
 Grouped sequence of [*signs*](#sign). There are different
@@ -324,7 +338,9 @@ Corresponds to a set of source data lines with the same value in the *line* colu
 feature | values | description
 ------- | ------ | ------
 **biblical** | `1` `2` | 1 or 2 if this line is biblical material, otherwise absent, see section on biblical
-**label** | `3` | number of a physical line (not necessarily integer valued)
+**line** | `3` | number of a line of a fragment (not necessarily integer valued)
+**fragment** | `f3` | label of a fragment or column of a scroll
+**scroll** | `1Q1` | short name of a scroll
 
 There are lines in the source data with number `0` and with a subdivision by means of an
 other number. We have converted this situation to a sequence of lines numbered as
@@ -343,7 +359,8 @@ For non-biblical scrolls, the fragment is usually called *column*.
 feature | values | description
 ------- | ------ | ------
 **biblical** | `1` `2` | 1 or 2 if this fragment contains biblical material, otherwise absent, see section on biblical
-**label** | `f3` | label of a physical fragment or column
+**fragment** | `f3` | label of a fragment or column of a scroll
+**scroll** | `1Q1` | short name of a scroll
 
 ## Node type [*scroll*](#scroll)
 
@@ -354,59 +371,7 @@ Corresponds to a set of source data lines with the same value in the *scroll* co
 feature | values | description
 ------- | ------ | ------
 **biblical** | `1` `2` | 1 or 2 if this scroll contains biblical material, otherwise absent, see section on biblical
-**acro** | `1Q1` | short name of a physical scroll
-
-## Node type [*halfverse*](#halfverse)
-
-Only for biblical scrolls. Not a section type.
-
-Subdivision of a containing [*verse*](#verse).
-Corresponds to a set of source data lines with the same non-numerical part in the *verse* column.
-
-Not every verse is divided in half verses.
-
-feature | values | description
-------- | ------ | ------
-**number** | `3` | number of its containing part
-**label** | `a` | the non-numerical part of the verse number
-
-## Node type [*verse*](#verse)
-
-Only for biblical scrolls. Not a section type.
-
-Subdivision of a containing [*chapter*](#chapter).
-Corresponds to a set of source data lines with the same numerical part in the *verse* column.
-
-The division in verses may or may not coincide with the division in lines.
-
-feature | values | description
-------- | ------ | ------
-**number** | `3` | number of a verse line (integer valued), without the non-integer part
-
-## Node type [*chapter*](#chapter)
-
-Only for biblical scrolls. Not a section type.
-
-Subdivision of a containing [*book*](#book).
-Corresponds to a set of source data lines with the same value in the *chapter* column.
-
-The division in chapters may or may not coincide with the division in fragments.
-
-feature | values | description
-------- | ------ | ------
-**label** | `6` `f6` | label of a chapter
-
-## Node type [*book*](#book)
-
-Only for biblical scrolls. Not a section type.
-
-Corresponds to a set of source data lines with the same value in the *book* column.
-
-The division in books may or may not coincide with the division in scrolls.
-
-feature | values | description
-------- | ------ | ------
-**acro** | `Gen` `1Q1` | short name of a book
+**scroll** | `1Q1` | short name of a scroll
 
 # More about the node types
 

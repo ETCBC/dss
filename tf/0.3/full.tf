@@ -9,9 +9,9 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-06T06:52:59Z
+@dateWritten=2019-05-06T21:02:26Z
 
-1622853	ו
+1606865	ו
 עתה
 שׁמעו
 כל

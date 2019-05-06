@@ -4,9 +4,10 @@
 @createdBy=Martin G. Abegg, Jr., James E. Bowley, and Edward M. Cook
 @createdDate=2015
 @description=Dead Sea Scrolls: biblical and non-biblical scrolls
-@fmt:lex-etcbc-full={lexo}{punco}{after}
-@fmt:lex-orig-full={lex}{punc}{after}
-@fmt:lex-trans-full={lexe}{punce}{after}
+@fmt:lex-orig-full={glex}{punc}{after}
+@fmt:lex-source-full={glexo}{punco}{after}
+@fmt:lex-trans-full={glexe}{punce}{after}
+@fmt:morph-source-full={morpho}{punco}{after}
 @fmt:text-orig-extra={full}{after}
 @fmt:text-orig-full={glyph}{punc}{after}
 @fmt:text-source-extra={fullo}{after}
@@ -15,9 +16,9 @@
 @fmt:text-trans-full={glyphe}{punce}{after}
 @license=Creative Commons Attribution-NonCommercial 4.0 International License
 @licenseUrl=http://creativecommons.org/licenses/by-nc/4.0/
-@sectionFeatures=acro,label,label
+@sectionFeatures=scroll,fragment,line
 @sectionTypes=scroll,fragment,line
 @source=Martin Abegg, personal communication
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-06T06:53:21Z
+@dateWritten=2019-05-06T21:02:49Z
 

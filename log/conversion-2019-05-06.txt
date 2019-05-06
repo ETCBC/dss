@@ -1,3 +1,8 @@
+This is tfFromAbegg converting dss transcriptions to TF:
+source version = 1.0
+target version = 0.3
+Run started: 2019-05-06T23:01:15.918533
+
 Reading proto N ...340079 rows out of 378023 sourcelines
 Reading proto B ...242661 rows out of 243157 sourcelines
 DATANORM: 582740 rows
@@ -476,3 +481,7 @@ Compiling feature data ...
 │    │  OK│    │    │4Q88 7 fragment                                  │B:180395│
 │    │  OK│    │    │4Q88 scroll                                      │B:179901│
 └────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
+
+
+Run ended: 2019-05-06T23:02:50.165808
+Duration:  1m 34s

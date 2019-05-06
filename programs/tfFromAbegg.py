@@ -2,7 +2,8 @@ import sys
 import os
 import collections
 import re
-from datetime import date
+import time
+from datetime import date, datetime
 from shutil import rmtree
 from functools import reduce
 
@@ -76,10 +77,27 @@ LOG_DIR = f'{BASE}/log'
 
 RUNDATE = date.today().isoformat()
 
-REPORT = f'{LOG_DIR}/conversion-{RUNDATE}.txt'
-REPORT_LINES_O = f'{LOG_DIR}/linesOrig-{RUNDATE}.txt'
-REPORT_LINES_S = f'{LOG_DIR}/linesSort-{RUNDATE}.txt'
-REPORT_MORPH = f'{LOG_DIR}/morpho-{RUNDATE}.txt'
+MAIN_R = 'main_r'
+LINESO_R = 'lineso_r'
+LINESS_R = 'liness_r'
+ALIGN_R = 'align_r'
+MORPH_R = 'morph_r'
+
+REPORT_FILES = {
+    MAIN_R: 'conversion',
+    LINESO_R: 'linesOrig',
+    LINESS_R: 'linesSort',
+    ALIGN_R: 'align',
+    MORPH_R: 'morpho',
+}
+REPORT_HANDLES = {
+    MAIN_R: None,
+    LINESO_R: None,
+    LINESS_R: None,
+    ALIGN_R: None,
+    MORPH_R: None,
+}
+
 
 TF_DIR = f'{BASE}/tf'
 
@@ -114,7 +132,7 @@ BOUND = 'bound'
 INTERLINEAR = 'interlinear'
 SCRIPT = 'script'
 
-LANG = 'language'
+LANG = 'lang'
 
 B = '&'
 NOLEX = '0'
@@ -163,6 +181,7 @@ oMORPH = 'morph'
 oBOOK = 'book'
 oCHAPTER = 'chapter'
 oVERSE = 'verse'
+oHVERSE = 'verse'
 
 oCOLS = (
     oSRCLN,
@@ -180,6 +199,7 @@ oCOLS = (
     oBOOK,
     oCHAPTER,
     oVERSE,
+    oHVERSE,
 )
 
 
@@ -206,7 +226,7 @@ UNCERTAIN = 'uncertain'
 ADD = 'add'
 TERM = 'term'
 
-GLYPH = 'empty'
+GLYPH = 'glyph'
 EMPTY = 'empty'
 FOREIGN = 'foreign'
 OTHER = 'other'
@@ -575,7 +595,7 @@ generic = dict(
 )
 
 otext = {
-    'sectionFeatures': 'acro,label,label',
+    'sectionFeatures': 'scroll,fragment,line',
     'sectionTypes': 'scroll,fragment,line',
     'fmt:text-orig-full': f'{{glyph}}{{punc}}{{after}}',
     'fmt:text-trans-full': f'{{glyphe}}{{punce}}{{after}}',
@@ -583,22 +603,19 @@ otext = {
     'fmt:text-orig-extra': f'{{full}}{{after}}',
     'fmt:text-trans-extra': f'{{fulle}}{{after}}',
     'fmt:text-source-extra': f'{{fullo}}{{after}}',
-    'fmt:lex-orig-full': f'{{lex}}{{punc}}{{after}}',
-    'fmt:lex-trans-full': f'{{lexe}}{{punce}}{{after}}',
-    'fmt:lex-etcbc-full': f'{{lexo}}{{punco}}{{after}}',
+    'fmt:lex-orig-full': f'{{glex}}{{punc}}{{after}}',
+    'fmt:lex-trans-full': f'{{glexe}}{{punce}}{{after}}',
+    'fmt:lex-source-full': f'{{glexo}}{{punco}}{{after}}',
+    'fmt:morph-source-full': f'{{morpho}}{{punco}}{{after}}',
 }
 
 intFeatures = set('''
     biblical
     interlinear
-    number
     srcLn
 '''.strip().split())
 
 featureMeta = {
-    'acro': {
-        'description': 'acronym of a scroll or book',
-    },
     'after': {
         'description': 'space behind the word, if any',
         'values': ' (space)',
@@ -618,9 +635,18 @@ featureMeta = {
             ' in which case the bib material is a reconstruction and marked as such.'
         ),
     },
+    BOOK: {
+        'description': 'acronym of the book in which the word occurs',
+    },
+    CHAPTER: {
+        'description': 'label of the chapter in which the word occurs',
+    },
     CORRECTION: {
         'description': 'correction made by an ancient or modern editor',
         'values': '1 = modern, 2 = ancient, 3 = ancient supralinear',
+    },
+    FRAGMENT: {
+        'description': 'label of a fragment of a scroll',
     },
     'fullo': {
         'description': (
@@ -649,16 +675,16 @@ featureMeta = {
     'glyph': {
         'description': 'representation (Unicode) of a word or sign',
     },
+    HALFVERSE: {
+        'description': 'label of the half-verse in which the word occurs',
+    },
     'interlinear': {
         'description': (
             'interlinear material,'
             ' the value indicates the sequence number of the interlinear line'
         ),
     },
-    'label': {
-        'description': 'label of a fragment or chapter or line',
-    },
-    'language': {
+    LANG: {
         'description': 'language of a word or sign, only if it is not Hebrew',
         'values': ', '.join(f'{code}={lang}' for (code, lang) in LANGS.items())
     },
@@ -671,14 +697,32 @@ featureMeta = {
     'lex': {
         'description': 'representation (Unicode) of a lexeme',
     },
+    'glexo': {
+        'description': (
+            'representation (original source Abegg) of a lexeme'
+            ' leaving out non-letters'
+        ),
+    },
+    'glexe': {
+        'description': (
+            'representation (ETCBC transliteration) of a lexeme'
+            ' leaving out non-letters'
+        ),
+    },
+    'glex': {
+        'description': (
+            'representation (Unicode) of a lexeme'
+            ' leaving out non-letters'
+        ),
+    },
+    LINE: {
+        'description': 'label of a line of a fragment of a scroll',
+    },
     MERR: {
         'description': 'errors in parsing the morphology tag',
     },
     'morpho': {
         'description': 'morphological tag (original source Abegg)',
-    },
-    'number': {
-        'description': 'number of verse',
     },
     'occ': {
         'description': 'edge feature from a lexeme to its occurrences',
@@ -704,6 +748,9 @@ featureMeta = {
         'description': 'script in which the word is written if it is not Hebrew',
         'values': ' '.join(SCRIPT_VALS)
     },
+    SCROLL: {
+        'description': 'acronym of a scroll',
+    },
     'srcLn': {
         'description': 'the line number of the word in the source data file',
     },
@@ -717,6 +764,9 @@ featureMeta = {
     VACAT: {
         'description': 'empty, unwritten space',
         'values': '1',
+    },
+    VERSE: {
+        'description': 'label of the verse in which the word occurs',
     },
 }
 
@@ -744,22 +794,6 @@ logh = None
 diags = collections.defaultdict(lambda: collections.defaultdict(dict))
 biblical = None
 ln = None
-
-
-def report(msg, newline=True, only=False):
-  nl = '\n' if newline else ''
-  msg = f'{msg}{nl}'
-  if not only:
-    sys.stdout.write(msg)
-    sys.stdout.flush()
-  if logh:
-    logh.write(msg)
-
-
-def progress(msg, newline=True):
-  nl = '' if newline is None else '\n' if newline else '\r'
-  msg = f'{msg}{nl}'
-  sys.stdout.write(msg)
 
 
 def bib():
@@ -845,7 +879,7 @@ def showDiag():
         continue
 
       nR = {
-          s: sum(1 for oc in occs if occs[oc] == stat)
+          s: sum(1 for oc in occs if occs[oc] == s)
           for s in ('c', *stMap)
       }
       nR[''] = nOccs
@@ -997,7 +1031,9 @@ def readSource():
           (chapter, verse) = rest.split(':', 1)
           oData[oBOOK] = book
           oData[oCHAPTER] = chapter
+          (verse, halfVerse) = verseNum(verse)
           oData[oVERSE] = verse
+          oData[oHVERSE] = halfVerse
           word = iData[iNUM]
           if '.' in word:
             oData[oBOUND] = B
@@ -1069,6 +1105,7 @@ def readSource():
 def tweakBiblical():
   tweakBiblicalLines()
   tweakBiblicalRest()
+  alignBiblical()
 
 
 def tweakBiblicalLines():
@@ -1084,37 +1121,37 @@ def tweakBiblicalLines():
   line = None
 
   newData = []
-  with open(REPORT_LINES_O, 'w') as fh:
-    for fields in data:
-      biblical = oBOOK in fields
-      ln = fields[oSRCLN]
+  lineoh = REPORT_HANDLES[LINESO_R]
+  for fields in data:
+    biblical = oBOOK in fields
+    ln = fields[oSRCLN]
 
-      prevScrollx = scrollx
-      prevFragment = fragment
-      prevLine = line
+    prevScrollx = scrollx
+    prevFragment = fragment
+    prevLine = line
 
-      scrollx = fields[xSCROLL]
-      fragment = fields[oFRAGMENT]
-      line = fields[oLINE]
+    scrollx = fields[xSCROLL]
+    fragment = fields[oFRAGMENT]
+    line = fields[oLINE]
 
-      key = (scrollx, fragment, line)
-      fh.write(f'{"▪".join(key)}\n')
+    key = (scrollx, fragment, line)
+    lineoh.write(f'{"▪".join(key)}\n')
 
-      if key in linesSeen:
-        n = linesSeen[key]
-      else:
-        nLine += 1
-        n = nLine
-        linesSeen[key] = n
+    if key in linesSeen:
+      n = linesSeen[key]
+    else:
+      nLine += 1
+      n = nLine
+      linesSeen[key] = n
 
-      fields[oKEY] = (n, scrollx, fragment, line, biblical)
+    fields[oKEY] = (n, scrollx, fragment, line, biblical)
 
-      if key in linesBoth:
-        if scrollx != prevScrollx or fragment != prevFragment or line != prevLine:
-          diag('LINE (biblical and nonbiblical)', f'{scrollx:<15} {fragment:>10}:{line:>5}', 1)
+    if key in linesBoth:
+      if scrollx != prevScrollx or fragment != prevFragment or line != prevLine:
+        diag('LINE (biblical and nonbiblical)', f'{scrollx:<15} {fragment:>10}:{line:>5}', 1)
 
-      if key not in linesBoth or biblical:
-        newData.append(fields)
+    if key not in linesBoth or biblical:
+      newData.append(fields)
 
   data = sorted(newData, key=lambda fields: fields[oKEY])
 
@@ -1130,24 +1167,24 @@ def tweakBiblicalRest():
   scrollso = collections.defaultdict(set)
   fragments = collections.defaultdict(set)
 
-  with open(REPORT_LINES_S, 'w') as fh:
-    for fields in data:
-      biblical = oBOOK in fields
-      ln = fields[oSRCLN]
+  linesh = REPORT_HANDLES[LINESS_R]
+  for fields in data:
+    biblical = oBOOK in fields
+    ln = fields[oSRCLN]
 
-      scroll = fields[oSCROLL]
-      scrollx = fields[xSCROLL]
-      fragment = fields[oFRAGMENT]
-      line = fields[oLINE]
-      key = (scrollx, fragment, line)
-      keyRep = f'{"▪".join(key)}\n'
-      if key in linesBoth and not biblical:
-        diag('LINES (AFTER TWEAK', f'{keyRep} not removed', -1)
-      fh.write(keyRep)
+    scroll = fields[oSCROLL]
+    scrollx = fields[xSCROLL]
+    fragment = fields[oFRAGMENT]
+    line = fields[oLINE]
+    key = (scrollx, fragment, line)
+    keyRep = f'{"▪".join(key)}\n'
+    if key in linesBoth and not biblical:
+      diag('LINES (AFTER TWEAK', f'{keyRep} not removed', -1)
+    linesh.write(keyRep)
 
-      scrollso[biblical].add(scroll)
-      scrollsx[biblical].add(scrollx)
-      fragments[biblical].add((scrollx, fragment))
+    scrollso[biblical].add(scroll)
+    scrollsx[biblical].add(scrollx)
+    fragments[biblical].add((scrollx, fragment))
 
   nScrollso = sum(len(x) for x in scrollso.values())
   nScrollsx = sum(len(x) for x in scrollsx.values())
@@ -1163,6 +1200,70 @@ def tweakBiblicalRest():
 
   fragmentsBoth = fragments[True] & fragments[False]
   report(f'FRAGMENTS: {len(fragmentsBoth)} with bib and nonbib material')
+
+
+def alignBiblical():
+  global biblical
+  global ln
+
+  align = collections.defaultdict(lambda: collections.defaultdict(set))
+
+  scroll = None
+  fragment = None
+  line = None
+  book = None
+  chapter = None
+  verse = None
+
+  for fields in data:
+    biblical = oBOOK in fields
+    if not biblical:
+      continue
+
+    ln = fields[oSRCLN]
+
+    prevScroll = scroll
+    prevFragment = fragment
+    prevLine = line
+    prevBook = book
+    prevChapter = chapter
+    prevVerse = verse
+
+    scroll = fields[xSCROLL]
+    fragment = fields[oFRAGMENT]
+    line = fields[oLINE]
+    book = fields[oBOOK]
+    chapter = fields[oCHAPTER]
+    verse = fields[oVERSE]
+
+    changeScroll = scroll != prevScroll
+    changeFragment = fragment != prevFragment
+    changeLine = line != prevLine
+    changeBook = book != prevBook
+    changeChapter = chapter != prevChapter
+    changeVerse = verse != prevVerse
+
+    if changeScroll or changeBook:
+      align['SB'][scroll].add(book)
+      align['BS'][book].add(scroll)
+      align['FC'][(scroll, fragment)].add((book, chapter))
+      align['CF'][(book, chapter)].add((scroll, fragment))
+      align['LV'][(scroll, fragment, line)].add((book, chapter, verse))
+      align['VL'][(book, chapter, verse)].add((scroll, fragment, line))
+    elif changeFragment or changeChapter:
+      align['FC'][(scroll, fragment)].add((book, chapter))
+      align['CF'][(book, chapter)].add((scroll, fragment))
+      align['LV'][(scroll, fragment, line)].add((book, chapter, verse))
+      align['VL'][(book, chapter, verse)].add((scroll, fragment, line))
+    elif changeLine or changeVerse:
+      align['LV'][(scroll, fragment, line)].add((book, chapter, verse))
+      align['VL'][(book, chapter, verse)].add((scroll, fragment, line))
+
+  alignh = REPORT_HANDLES[ALIGN_R]
+  for (kind, corr) in align.items():
+    alignh.write(f'ALIGNMENT: {kind}: {len(corr)} items\n')
+    for (s, cs) in corr.items():
+      alignh.write(f'\t{str(s)} => {", ".join(str(c) for c in cs)}\n')
 
 
 def writeProto():
@@ -1258,11 +1359,11 @@ def checkChars():
       diag('SCRIPT', script, 'c' if script == PH_VAL else 1 if script in SCRIPT_VALS else -1)
 
     lexBare = lexDisXRe.sub('', lex)
-    lexPure = nonGlyphLexRe.sub('', lexBare)
-    isNumLex = lexPure and lexPure != '0' and digitRe.match(lexPure)
+    glexo = nonGlyphLexRe.sub('', lexBare)
+    isNumLex = glexo and glexo != '0' and digitRe.match(glexo)
     if isNumLex:
       lex = lex[::-1]
-      lexPure = lexPure[::-1]
+      glexo = glexo[::-1]
 
     wordPure = nonGlyphRe.sub('', word)
     isNumTrans = wordPure and numeralRe.match(wordPure)
@@ -1270,7 +1371,7 @@ def checkChars():
 
     isNumCand = capitalNumRe.match(wordPure)
 
-    if isNumCand and not isNumTrans and (isNumLex or not lexPure):
+    if isNumCand and not isNumTrans and (isNumLex or not glexo):
       diag('NUMERAL', f'candidate "{wordPure}"', 'c')
 
     if isNumTrans and isNumLex:
@@ -1285,7 +1386,7 @@ def checkChars():
           None
       )
       if kind is not None:
-        diag('NUMERAL inconsistent LEX', f'{kind} trans="{wordPure}" lex="{lexPure}"', -1)
+        diag('NUMERAL inconsistent LEX', f'{kind} trans="{wordPure}" lex="{glexo}"', -1)
 
     isForeign = wordPure and lex == NOLEX and foreignoRe.match(wordPure)
     if isForeign:
@@ -1472,11 +1573,11 @@ def parseMorph():
     return parsed
 
   def showMorpho():
-    with open(REPORT_MORPH, 'w') as fh:
-      for (morph, analysis) in sorted(morphParsed.items()):
-        analysisRep = f'ERROR: {analysis[MERR]} ' if MERR in analysis else ''
-        analysisRep += ' '.join(f'{k}={v}' for (k, v) in analysis.items() if k != MERR)
-        fh.write(f'{morph:<20} => {analysisRep}\n')
+    morphh = REPORT_HANDLES[MORPH_R]
+    for (morph, analysis) in sorted(morphParsed.items()):
+      analysisRep = f'ERROR: {analysis[MERR]} ' if MERR in analysis else ''
+      analysisRep += ' '.join(f'{k}={v}' for (k, v) in analysis.items() if k != MERR)
+      morphh.write(f'{morph:<20} => {analysisRep}\n')
 
   if debug:
     biblical = None
@@ -1509,17 +1610,6 @@ def parseMorph():
   showMorpho()
 
 
-def prepare():
-  global logh
-  logh = open(REPORT, 'w')
-
-
-def finalize():
-  global logh
-  logh.close()
-  logh = None
-
-
 def verseNum(text):
   if text.isdigit():
     return (text, None)
@@ -1536,19 +1626,9 @@ def director(cv):
 
   report('Compiling feature data ...')
 
-  prevBook = None
-  prevChapter = None
-  prevVerse = None
-  prevHalfVerse = None
-
   prevScroll = None
   prevFragment = None
   prevLine = None
-
-  curBook = None
-  curChapter = None
-  curVerse = None
-  curHalfVerse = None
 
   curScroll = None
   curFragment = None
@@ -1615,12 +1695,13 @@ def director(cv):
     glyphe = asRep(c, asNum=isNum, asForeign=isForeign)
     cv.feature(curSlot, glyph=glyph, glyphe=glyphe, glypho=unesc(c), type=typ)
     if lang:
-      cv.feature(curSlot, language=lang)
+      cv.feature(curSlot, lang=lang)
+    if interlinear:
+      cv.feature(curSlot, interlinear=interlinear)
     for (name, value) in curBrackets:
       cv.feature(curSlot, **{name: value})
 
   nScroll = 0
-  nBook = 0
   thisLex = None
 
   chunk = 1000
@@ -1656,7 +1737,7 @@ def director(cv):
       cv.terminate(curScroll)
       nScroll += 1
       curScroll = cv.node(SCROLL)
-      cv.feature(curScroll, acro=thisScroll)
+      cv.feature(curScroll, scroll=thisScroll)
       if biblical:
         biblicalFt = 2 if thisScroll in scrollsBoth else 1
         if biblicalFt == 2:
@@ -1664,7 +1745,7 @@ def director(cv):
         cv.feature(curScroll, biblical=biblicalFt)
     if changeFragment or changeScroll:
       curFragment = cv.node(FRAGMENT)
-      cv.feature(curFragment, label=thisFragment)
+      cv.feature(curFragment, scroll=thisScroll, fragment=thisFragment)
       if biblical:
         biblicalFt = 2 if (thisScroll, thisFragment) in fragmentsBoth else 1
         if biblicalFt == 2:
@@ -1672,7 +1753,7 @@ def director(cv):
         cv.feature(curFragment, biblical=biblicalFt)
     if changeLine or changeFragment or changeScroll:
       curLine = cv.node(LINE)
-      cv.feature(curLine, label=thisLine)
+      cv.feature(curLine, scroll=thisScroll, fragment=thisFragment, line=thisLine)
       if biblical:
         biblicalLine = 2 if (thisScroll, thisFragment, thisLine) in linesBoth else 1
         if biblicalLine == 2:
@@ -1681,39 +1762,7 @@ def director(cv):
       else:
         biblicalLine = 0
 
-    if biblical:
-      thisBook = fields[oBOOK]
-      thisChapter = fields[oCHAPTER]
-      thisVerse = fields[oVERSE]
-      (thisVerse, thisHalfVerse) = verseNum(thisVerse)
-      changeBook = thisBook != prevBook
-      changeChapter = thisChapter != prevChapter
-      changeVerse = thisVerse != prevVerse
-      changeHalfVerse = thisHalfVerse != prevHalfVerse
-      if changeHalfVerse or changeVerse or changeChapter or changeBook:
-        cv.terminate(curHalfVerse)
-      if changeVerse or changeChapter or changeBook:
-        cv.terminate(curVerse)
-      if changeChapter or changeBook:
-        cv.terminate(curChapter)
-      if changeBook:
-        cv.terminate(curBook)
-      if changeBook:
-        curBook = cv.node(BOOK)
-        cv.feature(curBook, acro=thisBook)
-        nBook += 1
-      if changeChapter or changeBook:
-        curChapter = cv.node(CHAPTER)
-        cv.feature(curChapter, label=thisChapter)
-      if changeVerse or changeChapter or changeBook:
-        curVerse = cv.node(VERSE)
-        cv.feature(curVerse, number=thisVerse)
-      if changeHalfVerse or changeVerse or changeChapter or changeBook:
-        if thisHalfVerse:
-          curHalfVerse = cv.node(HALFVERSE)
-          cv.feature(curHalfVerse, number=thisVerse, label=thisHalfVerse)
-
-    after = ' ' if fields[oBOUND] == B else None
+    after = None if fields[oBOUND] == B else ' '
     fullo = fields[oTRANS]
     fullx = fields[xTRANS]
     lexo = fields[oLEX]
@@ -1737,9 +1786,9 @@ def director(cv):
         lexo = f'{lexoB}{lexN}'
       else:
         (lexoB, lexN) = (lexo, '')
-      lexPure = nonGlyphLexRe.sub('', lexoB)
-      isNoLex = lexPure == '0'
-      isNumLex = lexPure and not isNoLex and digitRe.match(lexPure)
+      glexo = nonGlyphLexRe.sub('', lexoB)
+      isNoLex = glexo == '0'
+      isNumLex = glexo and not isNoLex and digitRe.match(glexo)
 
       if isNoLex:
         lex = EM
@@ -1760,9 +1809,26 @@ def director(cv):
         thisLex = cv.node(LEX)
         lexIndex[lex] = thisLex
       cv.feature(thisLex, lexo=lexo, lexe=lexe, lex=lex)
+      if glexo and not isNoLex:
+        if isNumLex:
+          glexo = glexo[::-1]
+          glex = glexo
+          glexe = glexo
+        else:
+          glex = asUni(glexo)
+          glexe = asRep(glexo)
+        cv.feature(thisLex, glexo=lexo, glexe=glexe, glex=glex)
+
+    curWord = None
 
     if punco or glypho or lexo:
       curWord = cv.node(WORD)
+      if biblical:
+        cv.feature(curWord, book=fields[oBOOK])
+        cv.feature(curWord, chapter=fields[oCHAPTER])
+        cv.feature(curWord, verse=fields[oVERSE])
+        cv.feature(curWord, halfverse=fields[oHVERSE])
+
       cv.feature(curWord, srcLn=ln + 1)
       if biblical:
         if biblicalLine == 2:
@@ -1789,26 +1855,29 @@ def director(cv):
         typ = EMPTY
         c = ''
         addSlot()
-    if glypho and lexo:
+    if lexo:
       cv.feature(curWord, lexo=lexo, lexe=lexe, lex=lex)
       cv.edge(thisLex, curWord, occ=None)
+      if lexo:
+        cv.feature(curWord, glexo=glexo, glexe=glexe, glex=glex)
 
     isNumTrans = glypho and numeralRe.match(glypho)
     isNum = isNumTrans and isNumLex
     isForeign = glypho and lexo == NOLEX and foreignRe.match(glypho)
 
-    typ = (
+    wTyp = (
         PUNCT if punco else
         NUMERAL if isNum else
         GLYPH if glypho or lexo else
         EMPTY if not fullx else
         OTHER
     )
+    if curWord:
+      cv.feature(curWord, type=wTyp)
 
     if punco or glypho or lexo:
       cv.feature(
           curWord,
-          type=typ,
           full=asUni(fullx, asNum=isNum, asForeign=isForeign),
           fulle=asRep(fullx, asNum=isNum, asForeign=isForeign),
       )
@@ -1822,7 +1891,7 @@ def director(cv):
     if isForeign:
       lang = L_GREEK
     if lang:
-      cv.feature(curWord, language=lang)
+      cv.feature(curWord, lang=lang)
 
     if morpho:
       morph = morpho.replace(*mRepl) if lang == L_ARAMAIC else morpho
@@ -1875,26 +1944,18 @@ def director(cv):
             cv.feature(em, type=EMPTY)
           cv.terminate(cn)
           del curBrackets[key]
+    if after and curSlot:
+      cv.feature(curSlot, after=after)
     cv.terminate(curWord)
     cv.terminate(thisLex)
 
     prevScroll = thisScroll
     prevFragment = thisFragment
     prevLine = thisLine
-    if biblical:
-      prevBook = thisBook
-      prevChapter = thisChapter
-      prevVerse = thisVerse
-      prevHalfVerse = thisHalfVerse
 
   cv.terminate(curLine)
   cv.terminate(curFragment)
   cv.terminate(curScroll)
-  if biblical:
-    cv.terminate(curHalfVerse)
-    cv.terminate(curVerse)
-    cv.terminate(curChapter)
-    cv.terminate(curBook)
 
   progress(f' {bib()}:{ln:>6} rows')
 
@@ -1914,7 +1975,6 @@ def getConverter():
 
 
 def convert():
-  prepare()
   readSource()
   tweakBiblical()
   if not argValue['nochars']:
@@ -1949,7 +2009,6 @@ def convert():
       force=argValue['force'],
   )
   showDiag()
-  finalize()
   return result
 
 
@@ -1962,24 +2021,77 @@ def loadTf():
   api = TF.load(loadableFeatures, silent=False)
   if api:
     F = api.F
-    report(f'max node = {api.F.otype.maxNode}')
+    info = api.info
+    info(f'max node = {api.F.otype.maxNode}')
     for (word, freq) in F.glyph.freqList(nodeTypes={WORD})[0:20]:
-      report(f'{freq:>6} x {word}')
-    report(f'first {ARAMAIC} word:')
-    aramaicWords = [w for w in F.otype.s(WORD) if F.language.v(w) == L_ARAMAIC]
+      info(f'{freq:>6} x {word}', tm=False)
+    info(f'first {ARAMAIC} word:')
+    aramaicWords = [w for w in F.otype.s(WORD) if F.lang.v(w) == L_ARAMAIC]
     for w in aramaicWords[0:10]:
-      report(f'{ARAMAIC:} {w:>7} = {F.fullo.v(w)} = {F.full.v(w)}')
+      info(f'{ARAMAIC:} {w:>7} = {F.fullo.v(w)} = {F.full.v(w)}', tm=False)
   return 0 if api else 1
 
 
 # MAIN
 
+def prepare():
+  global stamp
+
+  now = datetime.now().isoformat()
+  stamp = time.time()
+
+  banner = f'''This is tfFromAbegg converting {REPO} transcriptions to TF:
+source version = {VERSION_SRC}
+target version = {VERSION_TF}
+Run started: {now}
+
+'''
+  for (r, rName) in REPORT_FILES.items():
+    fh = open(f'{LOG_DIR}/{rName}-{RUNDATE}.txt', 'w')
+    REPORT_HANDLES[r] = fh
+    fh.write(banner)
+
+
+def finalize():
+  def elapsed():
+    interval = time.time() - stamp
+    if interval < 10:
+      return f'{interval: 2.2f}s'
+    interval = int(round(interval))
+    if interval < 60:
+      return f'{interval:>2d}s'
+    if interval < 3600:
+      return f'{interval // 60:>2d}m {interval % 60:>02d}s'
+    return f'{interval // 3600:>2d}h {(interval % 3600) // 60:>02d}m {interval % 60:>02d}s'
+
+  now = datetime.now().isoformat()
+  trailer = f'''
+
+Run ended: {now}
+Duration: {elapsed()}
+'''
+  for (r, rH) in REPORT_HANDLES.items():
+    rH.write(trailer)
+    rH.close()
+
+
+def report(msg, newline=True, only=False):
+  nl = '\n' if newline else ''
+  msg = f'{msg}{nl}'
+  if not only:
+    sys.stdout.write(msg)
+    sys.stdout.flush()
+  REPORT_HANDLES[MAIN_R].write(msg)
+
+
+def progress(msg, newline=True):
+  nl = '' if newline is None else '\n' if newline else '\r'
+  msg = f'{msg}{nl}'
+  sys.stdout.write(msg)
+
+
 def main():
   global debug
-
-  report(f'This is tfFromAbegg converting {REPO} transcriptions to TF:')
-  report(f'\tsource version = {VERSION_SRC}')
-  report(f'\ttarget version = {VERSION_TF}')
 
   for arg in ARGS:
     argValue[arg] = len(sys.argv) > 1 and arg in sys.argv[1:]
@@ -2011,7 +2123,9 @@ def main():
     parseMorph()
     return 0
 
+  prepare()
   good = convert()
+  finalize()
 
   if not good:
     return 1
