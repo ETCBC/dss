@@ -12,7 +12,7 @@
 @valueType=int
 @values=1=biblical, 2=biblical but also with nonbiblical material
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-05T13:03:46Z
+@dateWritten=2019-05-06T06:52:58Z
 
 1438907	2
 0

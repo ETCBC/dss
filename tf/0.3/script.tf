@@ -10,7 +10,7 @@
 @valueType=str
 @values=paleohebrew greekcapital
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-05T13:04:02Z
+@dateWritten=2019-05-06T06:53:14Z
 
 1636565	paleohebrew
 1637210	paleohebrew

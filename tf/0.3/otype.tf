@@ -9,7 +9,7 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-05T13:04:00Z
+@dateWritten=2019-05-06T06:53:12Z
 
 1-1430238	sign
 1430239-1430591	book

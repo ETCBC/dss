@@ -52,12 +52,19 @@ to distribute the results under a CC-BY-NC license.
 The corpus consists of two files, one for the non-biblical scrolls and one for the 
 biblical scrolls.
 
-Jarod Jacobs has made preliminary analysis of these source files and has communicated his observations
-to Dirk Roorda,
-who converted them into Text-Fabric format by means of a special purpose
-Python program [tfFromAbegg.py](../programs/tfFromAbegg.py).
+Jarod Jacobs has made preliminary analysis of these source files
+and has communicated his observations to Dirk Roorda,
+who subsequently converted the source data files to Text-Fabric format
+by means of a special purpose Python program
+[tfFromAbegg.py](../programs/tfFromAbegg.py).
 
 This program performs numerous checks, and as a result several corrections have been made.
+
+The conversion logs have been
+[preserved](https://github.com/ETCBC/dss/tree/master/log).
+The files there contain several diagnostics, an account of the morphology tag parsing,
+and lists of all (scroll, fragment, line) entries in the source data,
+before and after conversion.
 
 The result of the conversion are the files in the `.tf` subdirectory.
 They are plain text files that roughly correspond to the columns in the files by Abegg.
@@ -65,6 +72,9 @@ A single `.tf` file is called a feature. It maps nodes to values.
 
 However, we have separated out all text-critical and morphological information into
 additional features, thereby greatly uncluttering the wealth of information in these files.
+
+The full documentation of the way the DSS have been encoded into TF,
+see [transcription](transcription.md).
 
 # Acknowledgements
 

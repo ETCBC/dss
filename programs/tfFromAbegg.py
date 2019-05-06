@@ -380,6 +380,7 @@ FOREIGNS = (
 FOREIGNS_ESC = {x[1]: x[2] for x in FOREIGNS if x[2]}
 FOREIGNS_UNESC = {x[2]: x[1] for x in FOREIGNS if x[2]}
 FOREIGNS_SET = {x[2] or x[1] for x in FOREIGNS}
+FOREIGNS_SETO = {x[1] for x in FOREIGNS}
 FOREIGNS_UNI = {x[2] or x[1]: x[0] for x in FOREIGNS}
 FOREIGNS_REP = FOREIGNS_UNI
 
@@ -528,6 +529,7 @@ def unesc(text):
 lexDisRe = re.compile(r'^(.*?)(?:[_-])([0-9]+)$')
 lexDisXRe = re.compile(r'[_-][0-9]+$')
 foreignRe = re.compile(f'^[{"".join(FOREIGNS_SET)}]+$')
+foreignoRe = re.compile(f'^[{"".join(FOREIGNS_SETO)}]+$')
 capitalNumRe = re.compile(f'^[A-Z{N1A}{N1F}]+$')
 numeralRe = re.compile(f'^[{"".join(NUMERALS_SET)}]+$')
 digitRe = re.compile(f'^[0-9]+$')
@@ -797,13 +799,10 @@ def showDiag():
   ir = f'├{cl}┼{cl}┼{cl}┼{cl}┼{ml}┼{ol}┤\n'
   dr = f'└{cl}┴{cl}┴{cl}┴{cl}┴{ml}┴{ol}┘\n'
 
-  lineFormat = f'│{{:<{cw}}}' * 4 + f'│{{:<{mw}}}│{{:<{ow}}}│\n'
+  lineFormat = f'│{{:>{cw}}}' * 4 + f'│{{:<{mw}}}│{{:<{ow}}}│\n'
 
   def line(*x):
     return lineFormat.format(*x)
-
-  def legend():
-    return ur + line(*stMap.values(), 'case', 'OCC') + ir
 
   def head(*x):
     return ur + line(*x) + ir
@@ -815,8 +814,8 @@ def showDiag():
 
   for (kind, reps) in sorted(diags.items()):
     nK = {
-        stat: sum(sum(1 for oc in occs if occs[oc] == stat) for occs in reps.values())
-        for stat in {-1, 0, 1}
+        s: sum(sum(1 for oc in occs if occs[oc] == s) for occs in reps.values())
+        for s in ('c', *stMap)
     }
     nK[''] = sum(len(occs) for occs in reps.values())
     okK = nK[-1] == 0 and nK[0] == 0
@@ -824,40 +823,57 @@ def showDiag():
       good = False
 
     report(
-        head(nK[''], nK[1], nK[0], nK[-1], kind, '', ''),
+        head(nK[''], nK[1] + nK['c'], nK[0], nK[-1], kind, '', ''),
         newline=False,
         only=okK,
     )
 
     for (rep, occs) in sorted(reps.items()):
-      if len(occs) == 1:
+      cats = set(occs.values())
+      nOccs = len(occs)
+      if nOccs == 1 or len(cats) == 1 and list(cats)[0] == 'c':
         ((biblical, ln), st) = list(occs.items())[0]
-        stat = [stMap[s] if s == st else '' for s in stMap.keys()]
+        stat = [stMap[s] if s == st else '' for s in stMap]
+        if st == 'c':
+          stat[0] = nOccs
+          stat[1] = stMap[1]
         report(
             line(*stat, rep, f'{bib()}:{ln:>6}'),
             newline=False,
-            only=st == 1,
+            only=st == 1 or st == 'c',
         )
         continue
 
       nR = {
-          stat: sum(1 for oc in occs if occs[oc] == stat)
-          for stat in {-1, 0, 1}
+          s: sum(1 for oc in occs if occs[oc] == stat)
+          for s in ('c', *stMap)
       }
-      nR[''] = len(occs)
+      nR[''] = nOccs
       okR = nR[-1] == 0 and nR[0] == 0
-      report(
-          line(nR[''], nR[1], nR[0], nR[-1], rep, ''),
-          newline=False,
-          only=okR,
-      )
-      for ((biblical, ln), st) in sorted(occs.items(), key=lambda x: (-x[1], x[0])):
+      if len(cats) > 1:
+        report(
+            line(nR[''], nR[1] + nR['c'], nR[0], nR[-1], rep, ''),
+            newline=False,
+            only=okR,
+        )
+      cDone = False
+      for ((biblical, ln), st) in sorted(
+          occs.items(),
+          key=lambda x: (-2 if x[1] == 'c' else -x[1], x[0]),
+      ):
         stat = [stMap[s] if s == st else '' for s in stMap.keys()]
+        if st == 'c':
+          stat[0] = nR['c']
+          stat[1] = stMap[1]
+          if cDone:
+            continue
         report(
             line(*stat, rep, f'{bib()}:{ln:>6}'),
             newline=False,
-            only=st == 1,
+            only=st == 1 or st == 'c',
         )
+        if st == 'c':
+          cDone = True
     report(tail(), newline=False, only=okK)
 
   return good
@@ -1239,7 +1255,7 @@ def checkChars():
         lastOfLine[prevTrans] += 1
 
     if script:
-      diag('SCRIPT', script, 1 if script in SCRIPT_VALS else -1)
+      diag('SCRIPT', script, 'c' if script == PH_VAL else 1 if script in SCRIPT_VALS else -1)
 
     lexBare = lexDisXRe.sub('', lex)
     lexPure = nonGlyphLexRe.sub('', lexBare)
@@ -1255,10 +1271,10 @@ def checkChars():
     isNumCand = capitalNumRe.match(wordPure)
 
     if isNumCand and not isNumTrans and (isNumLex or not lexPure):
-      diag('NUMERAL', f'candidate "{wordPure}"', 1)
+      diag('NUMERAL', f'candidate "{wordPure}"', 'c')
 
     if isNumTrans and isNumLex:
-      diag('NUMERAL', f'found "{wordPure}"', 1)
+      diag('NUMERAL', f'found "{wordPure}"', 'c')
 
     if not isAmbi:
       kind = (
@@ -1269,9 +1285,9 @@ def checkChars():
           None
       )
       if kind is not None:
-        diag('NUMERAL', f'{kind} trans="{wordPure}" lex="{lexPure}"', -1)
+        diag('NUMERAL inconsistent LEX', f'{kind} trans="{wordPure}" lex="{lexPure}"', -1)
 
-    isForeign = wordPure and lex == NOLEX and foreignRe.match(wordPure)
+    isForeign = wordPure and lex == NOLEX and foreignoRe.match(wordPure)
     if isForeign:
       diag('FOREIGN', wordPure, 1)
 

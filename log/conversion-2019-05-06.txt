@@ -1,0 +1,478 @@
+Reading proto N ...340079 rows out of 378023 sourcelines
+Reading proto B ...242661 rows out of 243157 sourcelines
+DATANORM: 582740 rows
+LINES: 14 with bib and nonbib material
+SCROLLS: 1001 names
+SCROLLS: 4 with bib and nonbib material
+FRAGMENTS: 7 with bib and nonbib material
+	Number of ways to end a line: 6113 ways to end a line
+		[           16612 x
+		/           15410 x
+		.           10151 x
+		≤             390 x
+		kwl           114 x
+		a             111 x
+		[\             93 x
+		aCr            90 x
+		a[             85 x
+		at             65 x
+		kwl[           55 x
+		at[            54 x
+		lwa            52 x
+		≤[             47 x
+		al             45 x
+		aCr[           41 x
+		lwa[           37 x
+		ol             37 x
+		al[            34 x
+		ayC            33 x
+CHARACTERS: MAPPED:  ()+-./0123456789;<>?ABCDEFGHIJKMNOPRSTUVX[\]^abcdfghjklmnopqrstvwxyz{|} ¥¨«®±´»ÅÊÎÏØÚåéîøüƒˆΩ…‰∂√∫≤≥◊
+CHARACTERS: 142 used
+	in lex field:
+		both         8 x
+		both  /      1 x
+		both  A  62523 x
+		both  C    171 x
+		both  D  49506 x
+		both  E  28584 x
+		both  F    315 x
+		both  I  37452 x
+		both  K   6532 x
+		both  M  25933 x
+		both  N  26995 x
+		both  P   3537 x
+		both  R  33720 x
+		both  S  13119 x
+		both  T   3530 x
+		both  X   4433 x
+		both  \ 114742 x
+		both  a  81949 x
+		both  b  64375 x
+		both  d  33017 x
+		both  f   7045 x
+		both  g   9371 x
+		both  h  89700 x
+		both  j  26305 x
+		both  k  29392 x
+		both  l  86737 x
+		both  m  45480 x
+		both  n  23284 x
+		both  o  43991 x
+		both  p  14556 x
+		both  q  17056 x
+		both  r  64984 x
+		both  s   7225 x
+		both  t  29244 x
+		both  w  91711 x
+		both  x  10078 x
+		both  y  65541 x
+		both  z   8508 x
+		both         1 x
+		both  å   4465 x
+		only  0     94 x
+		only  1    162 x
+		only  2    151 x
+		only  3     86 x
+		only  4     71 x
+		only  5     64 x
+		only  6     36 x
+		only  7     35 x
+		only  8     20 x
+		only  9     36 x
+		only  ;  69356 x
+		only  J   3483 x
+		only  O  18209 x
+		only  U   1114 x
+		only  V  66607 x
+		only  c  10777 x
+		only  v  44560 x
+		only  ¥   1238 x
+		only  ¨     39 x
+		only  ®   9559 x
+		only  ´   2179 x
+		only  Å   4441 x
+		only  Ê    279 x
+		only  Î  10415 x
+		only  Ï      4 x
+		only  Ú   9042 x
+		only  é   2656 x
+		only  î   4682 x
+		only  ø  28135 x
+		only  ü    110 x
+		only  ƒ    165 x
+		only  ˆ  12625 x
+		only  Ω    129 x
+		only  …  14889 x
+		only  ‰   7677 x
+		only  ∂  13231 x
+		only  √   3908 x
+		only  ◊  50394 x
+	in trans field:
+		both         3 x
+		both  /  61582 x
+		both  A   1231 x
+		both  C  55778 x
+		both  D    249 x
+		both  E      2 x
+		both  F      9 x
+		both  I      1 x
+		both  K   9761 x
+		both  M  35405 x
+		both  N  16926 x
+		both  P   1975 x
+		both  R      1 x
+		both  S      1 x
+		both  T      2 x
+		both  X   3095 x
+		both  \  26558 x
+		both  a  86532 x
+		both  b  64380 x
+		both  d  32842 x
+		both  f   7070 x
+		both  g   9351 x
+		both  h  94354 x
+		both  j  26285 x
+		both  k  38637 x
+		both  l  86311 x
+		both  m  57477 x
+		both  n  35038 x
+		both  o  43915 x
+		both  p  16136 x
+		both  q  17037 x
+		both  r  64638 x
+		both  s   7250 x
+		both  t  58565 x
+		both  w 143466 x
+		both  x  11417 x
+		both  y 124813 x
+		both  z   8481 x
+		both       399 x
+		both  å    145 x
+		only  (    333 x
+		only  )    333 x
+		only  +     65 x
+		only  - 107729 x
+		only  .  29909 x
+		only  <    389 x
+		only  >    389 x
+		only  ?    610 x
+		only  B    234 x
+		only  G      1 x
+		only  H      3 x
+		only  [  93733 x
+		only  ]  93733 x
+		only  ^   3164 x
+		only  {   1487 x
+		only  |  40182 x
+		only  }   1487 x
+		only  «  26873 x
+		only  ±     18 x
+		only  »  15538 x
+		only  Ø  10325 x
+		only  ∫     13 x
+		only  ≤   3522 x
+		only  ≥   3522 x
+BRACKETS ^ ^ ...
+BRACKETS << >> ...
+BRACKETS « » ...
+BRACKETS {{ }} ...
+BRACKETS { } ...
+BRACKETS ≤ ≥ ...
+BRACKETS ( ) ...
+BRACKETS [ ] ...
+BRACKETS « » ...
+┌────┬────┬────┬────┬─────────────────────────────────────────────────┬────────┐
+│  30│  30│   0│   0│FIX (FIELD)                                      │        │
+├────┼────┼────┼────┼─────────────────────────────────────────────────┼────────┤
+│    │  OK│    │    │lex          82 => kj     strange lexeme         │N:263123│
+│    │  OK│    │    │morph         2 => 0      digit should be 0      │B:157840│
+│    │  OK│    │    │morph         3 => 0      digit should be 0      │B:158401│
+│    │  OK│    │    │morph         4 => 0      digit should be 0      │B:158371│
+│    │  OK│    │    │morph         \ => 0      morph for -- => 0      │B:115544│
+│    │  OK│    │    │morph      Pp@0 => Pp     spurious @0            │B:186373│
+│    │  OK│    │    │morph     0ncfp => ncfp   spurious unknown symbol│B:109489│
+│    │  OK│    │    │morph     0ncfs => ncfs   spurious unknown symbol│B:146637│
+│    │  OK│    │    │morph    vhp3cpX3mp{2} => vhp3cp{2}X3mp move {2} │N: 48129│
+│    │  OK│    │    │morph    vhp3cpX3ms{2} => vhp3cp{2}X3ms move {2} │N:127763│
+│    │  OK│    │    │morph    vp12ms => vp1ms  spurious 2nd person    │B: 48768│
+│    │  OK│    │    │trans         3 =>        removed a stray digit  │N:335846│
+│    │  OK│    │    │trans         a => A      a is numeral A         │N:290592│
+│    │  OK│    │    │trans         a => A      a is numeral A         │N:291886│
+│    │  OK│    │    │trans        ^b => ^b^    imbalanced ^ bracket   │N:173512│
+│    │  OK│    │    │trans        b] => b      spurious ] bracket     │N:153845│
+│    │  OK│    │    │trans        b] => b      spurious ] bracket     │N:153970│
+│    │  OK│    │    │trans        b] => b      spurious ] bracket     │N:154026│
+│    │  OK│    │    │trans        ≤] => ≥≤     spurious ], missing ≥  │N: 38512│
+│    │  OK│    │    │trans       [^≥ => [≥     imbalanced ^ bracket   │B:147953│
+│    │  OK│    │    │trans        ±  => ±      space around divider   │N: 59593│
+│    │  OK│    │    │trans      oyN_ => oyN    _ removed (1 of 3)     │N:287243│
+│    │  OK│    │    │trans      ≥1a≤ => ≥a≤    spurious character "1" │B:154933│
+│    │  OK│    │    │trans      ≥2a≤ => ≥a≤    spurious character "2" │B:154949│
+│    │  OK│    │    │trans     [\\]^ => [\\]   imbalanced ^ bracket   │B:158493│
+│    │  OK│    │    │trans    [˝w»b|a|] => [w»b|a|] character removed │N:324473│
+│    │  OK│    │    │trans    alwhiM => alwhyM hireq => yod           │B:202206│
+│    │  OK│    │    │trans    h«\\wØ( => h«\\wØ spurious ( bracket    │B:185650│
+│    │  OK│    │    │trans    t_onh] => tonh]  _ removed (1 of 3)     │N:248844│
+│    │  OK│    │    │trans    y»tkwØ_nw => y»tkwØnw _ removed (1 of 3)│N:211343│
+└────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
+┌────┬────┬────┬────┬─────────────────────────────────────────────────┬────────┐
+│   5│   5│   0│   0│FIX (LINE)                                       │        │
+├────┼────┼────┼────┼─────────────────────────────────────────────────┼────────┤
+│    │  OK│    │    │       =>        double space to single          │N:256841│
+│    │  OK│    │    │    \0 => \@0    separator before lex field      │N:348565│
+│    │  OK│    │    │    \t\t => \t      double tab to single         │B:208179│
+│    │  OK│    │    │   3,1 => 3.1    comma in number to .            │N:348900│
+│    │  OK│    │    │[\ \\\@0\t => [\\t\\\@0 tab moved to right       │B: 36238│
+└────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
+┌────┬────┬────┬────┬─────────────────────────────────────────────────┬────────┐
+│   7│   7│   0│   0│FOREIGN                                          │        │
+├────┼────┼────┼────┼─────────────────────────────────────────────────┼────────┤
+│    │  OK│    │    │CHAG                                             │N: 57800│
+│    │  OK│    │    │DI                                               │N: 57920│
+│    │  OK│    │    │HN                                               │N: 57850│
+│    │  OK│    │    │KEN                                              │N: 57714│
+│    │  OK│    │    │SK                                               │N: 58098│
+│    │  OK│    │    │THE                                              │N: 57872│
+│    │  OK│    │    │TR                                               │N: 58032│
+└────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
+┌────┬────┬────┬────┬─────────────────────────────────────────────────┬────────┐
+│  28│  28│   0│   0│LINE (biblical and nonbiblical)                  │        │
+├────┼────┼────┼────┼─────────────────────────────────────────────────┼────────┤
+│    │  OK│    │    │2Q29                    f1:    1                 │N: 56262│
+│    │  OK│    │    │2Q29                    f1:    1                 │B: 48758│
+│    │  OK│    │    │2Q29                    f1:    2                 │N: 56270│
+│    │  OK│    │    │2Q29                    f1:    2                 │B: 48783│
+│    │  OK│    │    │2Q29                    f1:    3                 │N: 56279│
+│    │  OK│    │    │2Q29                    f1:    3                 │B: 48806│
+│    │  OK│    │    │4Q249j                  f1:    1                 │N:109365│
+│    │  OK│    │    │4Q249j                  f1:    1                 │B:202051│
+│    │  OK│    │    │4Q249j                  f1:    2                 │N:109381│
+│    │  OK│    │    │4Q249j                  f1:    2                 │B:202067│
+│    │  OK│    │    │4Q249j                  f1:    3                 │N:109391│
+│    │  OK│    │    │4Q249j                  f1:    3                 │B:202077│
+│    │  OK│    │    │4Q249j                  f1:    4                 │N:109402│
+│    │  OK│    │    │4Q249j                  f1:    4                 │B:202088│
+│    │  OK│    │    │4Q249j                  f1:    5                 │N:109415│
+│    │  OK│    │    │4Q249j                  f1:    5                 │B:202101│
+│    │  OK│    │    │4Q249j                  f1:    6                 │N:109428│
+│    │  OK│    │    │4Q249j                  f1:    6                 │B:202114│
+│    │  OK│    │    │4Q483                   f1:    1                 │N:251891│
+│    │  OK│    │    │4Q483                   f1:    1                 │B:202151│
+│    │  OK│    │    │4Q483                   f1:    2                 │N:251898│
+│    │  OK│    │    │4Q483                   f1:    2                 │B:202166│
+│    │  OK│    │    │4Q483                   f1:    3                 │N:251906│
+│    │  OK│    │    │4Q483                   f1:    3                 │B:202182│
+│    │  OK│    │    │4Q483                   f2:    1                 │N:251914│
+│    │  OK│    │    │4Q483                   f2:    1                 │B:202117│
+│    │  OK│    │    │4Q483                   f2:    2                 │N:251921│
+│    │  OK│    │    │4Q483                   f2:    2                 │B:202135│
+└────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
+┌────┬────┬────┬────┬─────────────────────────────────────────────────┬────────┐
+│   2│   0│   0│   2│MORPH                                            │        │
+├────┼────┼────┼────┼─────────────────────────────────────────────────┼────────┤
+│    │    │    │  XX│at char: @0                                      │B:186962│
+│    │    │    │  XX│at char: vnPfpa                                  │N:174947│
+└────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
+┌────┬────┬────┬────┬─────────────────────────────────────────────────┬────────┐
+│ 612│ 612│   0│   0│NUMERAL                                          │        │
+├────┼────┼────┼────┼─────────────────────────────────────────────────┼────────┤
+│   1│  OK│    │    │candidate "CM"                                   │N: 24676│
+│   4│  OK│    │    │candidate "K"                                    │N: 25048│
+│ 139│  OK│    │    │candidate "M"                                    │N: 14182│
+│   3│  OK│    │    │candidate "N"                                    │N: 37544│
+│   1│  OK│    │    │candidate "NK"                                   │N:324317│
+│   1│  OK│    │    │candidate "X"                                    │N:188401│
+│  20│  OK│    │    │found "A"                                        │N:151297│
+│  14│  OK│    │    │found "AA"                                       │N:151316│
+│  16│  OK│    │    │found "AAA"                                      │N:153910│
+│   2│  OK│    │    │found "AAAA"                                     │N:151382│
+│   3│  OK│    │    │found "AAAAA"                                    │N:153922│
+│   3│  OK│    │    │found "AAAAAA"                                   │N:153927│
+│   2│  OK│    │    │found "AAAAAAA"                                  │N: 58589│
+│   2│  OK│    │    │found "AAAAAAAAA"                                │N:154458│
+│  16│  OK│    │    │found "AAAAAAAAAD"                               │N:156586│
+│   1│  OK│    │    │found "AAAAAAAAå"                                │N: 58813│
+│   1│  OK│    │    │found "AAAAAAAD"                                 │N: 58392│
+│   3│  OK│    │    │found "AAAAAAAå"                                 │N:154089│
+│   1│  OK│    │    │found "AAAAAAAåå"                                │N: 58758│
+│   4│  OK│    │    │found "AAAAAAB"                                  │N:154490│
+│   2│  OK│    │    │found "AAAAAABD"                                 │N:156658│
+│   3│  OK│    │    │found "AAAAAAå"                                  │N: 58232│
+│   4│  OK│    │    │found "AAAAAå"                                   │N:156666│
+│   1│  OK│    │    │found "AAAAå"                                    │N: 59090│
+│   2│  OK│    │    │found "AAAA∫"                                    │N:323377│
+│   1│  OK│    │    │found "AAAA∫FDCAAAAA∫"                           │N:323342│
+│  23│  OK│    │    │found "AAAB"                                     │N:155538│
+│  14│  OK│    │    │found "AAABB"                                    │N:155516│
+│   9│  OK│    │    │found "AAABBB"                                   │N:155548│
+│   2│  OK│    │    │found "AAABBD"                                   │N:156691│
+│   1│  OK│    │    │found "AAABD"                                    │N:156727│
+│   1│  OK│    │    │found "AAAFDDC"                                  │N:318230│
+│   5│  OK│    │    │found "AAAå"                                     │N:153915│
+│   1│  OK│    │    │found "AAAåAAAå"                                 │N:153938│
+│   1│  OK│    │    │found "AAA∫"                                     │N:155583│
+│   2│  OK│    │    │found "AAB"                                      │N:164470│
+│   2│  OK│    │    │found "AABAå"                                    │N:164439│
+│   4│  OK│    │    │found "AABB"                                     │N:157100│
+│   1│  OK│    │    │found "AABBB"                                    │N:155639│
+│   1│  OK│    │    │found "AABF"                                     │N:164567│
+│   3│  OK│    │    │found "AAå"                                      │N:156888│
+│   2│  OK│    │    │found "AAåAAåAAå"                                │N:154094│
+│   1│  OK│    │    │found "AB"                                       │N:155857│
+│   1│  OK│    │    │found "AF"                                       │N: 57728│
+│   1│  OK│    │    │found "AFDAAAAAA"                                │N:318327│
+│   1│  OK│    │    │found "AFDC"                                     │N:323192│
+│   1│  OK│    │    │found "AFDDC"                                    │N:157793│
+│   7│  OK│    │    │found "Aå"                                       │N:164313│
+│  23│  OK│    │    │found "B"                                        │N:156772│
+│   6│  OK│    │    │found "BB"                                       │N:154918│
+│   2│  OK│    │    │found "BBB"                                      │N:155619│
+│   1│  OK│    │    │found "BBBD"                                     │N:156745│
+│   2│  OK│    │    │found "BBD"                                      │N:156763│
+│  14│  OK│    │    │found "C"                                        │N: 58540│
+│   5│  OK│    │    │found "CA"                                       │N: 58835│
+│   5│  OK│    │    │found "CAA"                                      │N: 58197│
+│   1│  OK│    │    │found "CAAA"                                     │N:318665│
+│   1│  OK│    │    │found "CAAAAAAAAå"                               │N:156847│
+│   2│  OK│    │    │found "CAAAAAAAB"                                │N:156880│
+│   2│  OK│    │    │found "CAAAAAAB"                                 │N:154909│
+│   3│  OK│    │    │found "CAAAAAABB"                                │N:156862│
+│   1│  OK│    │    │found "CAAAAAAå"                                 │N: 58936│
+│   1│  OK│    │    │found "CAAAAAA∫"                                 │N:154662│
+│   1│  OK│    │    │found "CAAAAAB"                                  │N:162426│
+│   1│  OK│    │    │found "CAAAAAB∫"                                 │N:154785│
+│   2│  OK│    │    │found "CAAAAAå"                                  │N:155029│
+│   1│  OK│    │    │found "CAAAAAåB"                                 │N: 58571│
+│   1│  OK│    │    │found "CAAAAB"                                   │N:162366│
+│   3│  OK│    │    │found "CAAAAå"                                   │N:153956│
+│  11│  OK│    │    │found "CAAAB"                                    │N:156949│
+│   2│  OK│    │    │found "CAAABB"                                   │N:156916│
+│   1│  OK│    │    │found "CAAABBBB"                                 │N:157124│
+│   5│  OK│    │    │found "CAAAå"                                    │N: 58096│
+│   3│  OK│    │    │found "CAAAåAAAå"                                │N:153972│
+│   1│  OK│    │    │found "CAAB"                                     │N:164523│
+│   1│  OK│    │    │found "CAABAABAå"                                │N:164707│
+│   1│  OK│    │    │found "CAABAABB"                                 │N:164506│
+│   5│  OK│    │    │found "CAAå"                                     │N:153842│
+│   3│  OK│    │    │found "CAAåAAAå"                                 │N:153967│
+│   3│  OK│    │    │found "CAAåAAå"                                  │N:153961│
+│   5│  OK│    │    │found "CAAåAAåAAå"                               │N:153854│
+│   1│  OK│    │    │found "CAå"                                      │N:154281│
+│   1│  OK│    │    │found "CAåB"                                     │N: 58076│
+│   1│  OK│    │    │found "CAååBBå"                                  │N:155149│
+│   1│  OK│    │    │found "CBB"                                      │N:157835│
+│  15│  OK│    │    │found "D"                                        │N:108647│
+│   9│  OK│    │    │found "DA"                                       │N: 58372│
+│   3│  OK│    │    │found "DAA"                                      │N: 57972│
+│   1│  OK│    │    │found "DAAA"                                     │N:154508│
+│   1│  OK│    │    │found "DAAAAA"                                   │N:162385│
+│   1│  OK│    │    │found "DAAAAAAAA"                                │N:154370│
+│   3│  OK│    │    │found "DAAAAAAAå"                                │N:153876│
+│   1│  OK│    │    │found "DAAAAAAAåå"                               │N:323310│
+│   4│  OK│    │    │found "DAAAAAAå"                                 │N:153871│
+│   1│  OK│    │    │found "DAAAAAB"                                  │N:162393│
+│   3│  OK│    │    │found "DAAAAå"                                   │N:154012│
+│   8│  OK│    │    │found "DAAABB"                                   │N:317916│
+│   3│  OK│    │    │found "DAAAå"                                    │N:154006│
+│   1│  OK│    │    │found "DAAAåAAå"                                 │N:154023│
+│   6│  OK│    │    │found "DAAå"                                     │N: 58281│
+│   3│  OK│    │    │found "DAAåAAå"                                  │N:154018│
+│   4│  OK│    │    │found "DAAåAAåAAå"                               │N:153883│
+│   6│  OK│    │    │found "DAå"                                      │N: 58412│
+│  30│  OK│    │    │found "DC"                                       │N:153888│
+│   3│  OK│    │    │found "DCA"                                      │N:157165│
+│   6│  OK│    │    │found "DCAAABB"                                  │N:318015│
+│   1│  OK│    │    │found "DCAAAB∫"                                  │N:323400│
+│   1│  OK│    │    │found "DCAå"                                     │N: 58307│
+│  10│  OK│    │    │found "DD"                                       │N: 57828│
+│   2│  OK│    │    │found "DDA"                                      │N: 57845│
+│   3│  OK│    │    │found "DDAA"                                     │N: 58344│
+│   1│  OK│    │    │found "DDC"                                      │N:164544│
+│   1│  OK│    │    │found "DDCAA"                                    │N:309716│
+│   1│  OK│    │    │found "DDCAAAAB"                                 │N:323163│
+│   1│  OK│    │    │found "DDCAAA∫"                                  │N:323299│
+│   1│  OK│    │    │found "DDCAAA∫A"                                 │N: 58122│
+│   2│  OK│    │    │found "DDCB"                                     │N:318218│
+│   2│  OK│    │    │found "DDD"                                      │N:323238│
+│   1│  OK│    │    │found "DDDA"                                     │N: 59140│
+│   1│  OK│    │    │found "DDDAAAAAB"                                │N:318361│
+│   2│  OK│    │    │found "DDDAAAA∫"                                 │N: 58618│
+│   4│  OK│    │    │found "DDDC"                                     │N: 58644│
+│   1│  OK│    │    │found "DDDCA"                                    │N: 59186│
+│   3│  OK│    │    │found "DDDD"                                     │N: 58514│
+│   1│  OK│    │    │found "DDDDAAA"                                  │N:323354│
+│   1│  OK│    │    │found "DDDDCAAAAAAAAå"                           │N:323225│
+│   1│  OK│    │    │found "DDDDCBB"                                  │N:318383│
+│   1│  OK│    │    │found "FCAAAA∫"                                  │N:323321│
+│   1│  OK│    │    │found "FDC"                                      │N:157875│
+└────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
+┌────┬────┬────┬────┬─────────────────────────────────────────────────┬────────┐
+│ 796│ 796│   0│   0│SCRIPT                                           │        │
+├────┼────┼────┼────┼─────────────────────────────────────────────────┼────────┤
+│    │  OK│    │    │greekcapital                                     │N: 57714│
+│    │  OK│    │    │greekcapital                                     │N: 57800│
+│    │  OK│    │    │greekcapital                                     │N: 57850│
+│    │  OK│    │    │greekcapital                                     │N: 57872│
+│    │  OK│    │    │greekcapital                                     │N: 57920│
+│    │  OK│    │    │greekcapital                                     │N: 58032│
+│    │  OK│    │    │greekcapital                                     │N: 58098│
+│ 789│  OK│    │    │paleohebrew                                      │N: 15052│
+└────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
+Compiling feature data ...
+┌────┬────┬────┬────┬─────────────────────────────────────────────────┬────────┐
+│  53│  53│   0│   0│(NON)-BIBLICAL                                   │        │
+├────┼────┼────┼────┼─────────────────────────────────────────────────┼────────┤
+│    │  OK│    │    │11Q5 21 fragment                                 │B:218593│
+│    │  OK│    │    │11Q5 22 fragment                                 │B:218732│
+│    │  OK│    │    │11Q5 24 fragment                                 │B:219000│
+│    │  OK│    │    │11Q5 26 fragment                                 │B:219213│
+│    │  OK│    │    │11Q5 27 fragment                                 │B:219327│
+│    │  OK│    │    │11Q5 28 fragment                                 │B:219399│
+│    │  OK│    │    │11Q5 scroll                                      │B:214079│
+│    │  OK│    │    │11Q6 scroll                                      │B:219435│
+│    │  OK│    │    │2Q29 f1:1 cluster reconstruction                 │B: 48758│
+│    │  OK│    │    │2Q29 f1:1 line                                   │B: 48758│
+│    │  OK│    │    │2Q29 f1:1 word ]b                                │B: 48758│
+│    │  OK│    │    │2Q29 f1:2 cluster reconstruction                 │B: 48783│
+│    │  OK│    │    │2Q29 f1:2 line                                   │B: 48783│
+│    │  OK│    │    │2Q29 f1:2 word ]mwab                             │B: 48783│
+│    │  OK│    │    │2Q29 f1:3 cluster reconstruction                 │B: 48806│
+│    │  OK│    │    │2Q29 f1:3 line                                   │B: 48806│
+│    │  OK│    │    │2Q29 f1:3 word ]zom/h                            │B: 48806│
+│    │  OK│    │    │2Q29 scroll                                      │B: 48758│
+│    │  OK│    │    │4Q249j f1:1 cluster reconstruction               │B:202051│
+│    │  OK│    │    │4Q249j f1:1 line                                 │B:202051│
+│    │  OK│    │    │4Q249j f1:1 word ]toCw                           │B:202051│
+│    │  OK│    │    │4Q249j f1:2 cluster reconstruction               │B:202067│
+│    │  OK│    │    │4Q249j f1:2 line                                 │B:202067│
+│    │  OK│    │    │4Q249j f1:2 word ]at                             │B:202067│
+│    │  OK│    │    │4Q249j f1:3 cluster reconstruction               │B:202077│
+│    │  OK│    │    │4Q249j f1:3 line                                 │B:202077│
+│    │  OK│    │    │4Q249j f1:3 word ]mxwt/y[                        │B:202077│
+│    │  OK│    │    │4Q249j f1:4 cluster reconstruction               │B:202088│
+│    │  OK│    │    │4Q249j f1:4 line                                 │B:202088│
+│    │  OK│    │    │4Q249j f1:4 word ]l/kM                           │B:202088│
+│    │  OK│    │    │4Q249j f1:5 cluster reconstruction               │B:202101│
+│    │  OK│    │    │4Q249j f1:5 line                                 │B:202101│
+│    │  OK│    │    │4Q249j f1:5 word ]mklwt                          │B:202101│
+│    │  OK│    │    │4Q249j f1:6 cluster reconstruction               │B:202114│
+│    │  OK│    │    │4Q249j f1:6 line                                 │B:202114│
+│    │  OK│    │    │4Q249j f1:6 word ]ayby/kM[                       │B:202114│
+│    │  OK│    │    │4Q483 f1:1 cluster reconstruction                │B:202151│
+│    │  OK│    │    │4Q483 f1:1 line                                  │B:202151│
+│    │  OK│    │    │4Q483 f1:1 word ]b                               │B:202151│
+│    │  OK│    │    │4Q483 f1:2 cluster reconstruction                │B:202166│
+│    │  OK│    │    │4Q483 f1:2 line                                  │B:202166│
+│    │  OK│    │    │4Q483 f1:2 word ]alwhyM                          │B:202166│
+│    │  OK│    │    │4Q483 f1:3 cluster reconstruction                │B:202182│
+│    │  OK│    │    │4Q483 f1:3 line                                  │B:202182│
+│    │  OK│    │    │4Q483 f1:3 word ]w                               │B:202182│
+│    │  OK│    │    │4Q483 f2:1 cluster reconstruction                │B:202117│
+│    │  OK│    │    │4Q483 f2:1 line                                  │B:202117│
+│    │  OK│    │    │4Q483 f2:1 word ]m                               │B:202117│
+│    │  OK│    │    │4Q483 f2:2 cluster reconstruction                │B:202135│
+│    │  OK│    │    │4Q483 f2:2 line                                  │B:202135│
+│    │  OK│    │    │4Q483 f2:2 word ]alwhyM                          │B:202135│
+│    │  OK│    │    │4Q88 7 fragment                                  │B:180395│
+│    │  OK│    │    │4Q88 scroll                                      │B:179901│
+└────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘

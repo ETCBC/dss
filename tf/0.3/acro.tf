@@ -9,7 +9,7 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-05T13:03:46Z
+@dateWritten=2019-05-06T06:52:58Z
 
 1430239	Num
 Lev

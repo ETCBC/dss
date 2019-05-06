@@ -10,7 +10,7 @@
 @valueType=str
 @values=g=greek, a=aramaic
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-05T13:03:57Z
+@dateWritten=2019-05-06T06:53:09Z
 
 105432	a
 a

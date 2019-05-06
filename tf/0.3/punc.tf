@@ -9,7 +9,7 @@
 @source=Martin Abegg, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-05T13:04:01Z
+@dateWritten=2019-05-06T06:53:13Z
 
 1622864	׃
 1622877	׃

@@ -10,7 +10,7 @@
 @valueType=str
 @values=a, c, d, unknown
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-05T13:04:03Z
+@dateWritten=2019-05-06T06:53:15Z
 
 1622856	c
 c
