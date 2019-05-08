@@ -129,8 +129,10 @@ TRANS = 'trans'
 
 MORPH = 'morph'
 BOUND = 'bound'
-INTERLINEAR = 'interlinear'
+INTERLINEAR = 'intl'
 SCRIPT = 'script'
+SRCLN = 'srcLn'
+BIBLICAL = 'biblical'
 
 LANG = 'lang'
 
@@ -222,7 +224,7 @@ SEP = 'sep'
 PUNCT = 'punct'
 NUMERAL = 'numeral'
 MISSING = 'missing'
-UNCERTAIN = 'uncertain'
+UNCERTAIN = 'unc'
 ADD = 'add'
 TERM = 'term'
 
@@ -231,11 +233,11 @@ EMPTY = 'empty'
 FOREIGN = 'foreign'
 OTHER = 'other'
 
-CORRECTION = 'correction'
-REMOVED = 'removed'
-VACAT = 'vacat'
-ALTERNATIVE = 'alternative'
-RECONSTRUCTION = 'reconstruction'
+CORRECTION = 'cor'
+REMOVED = 'rem'
+VACAT = 'vac'
+ALTERNATIVE = 'alt'
+RECONSTRUCTION = 'rec'
 
 ALEF = 'א'
 YOD = 'י'
@@ -409,6 +411,7 @@ FOREIGNS_REAL = (NUMERALS_SET - CONSONANTS_SET) | VOWELS_SET | FOREIGNS_SET
 EM = 'ε'
 
 TOKENS = (
+    (VACAT, '□', None, NB, NB),
     (MISSING, '--', '░', ' 0 ', EM),
     (UNCERTAIN, '?', None, ' ? ', ' ? '),
     (UNCERTAIN, '\\', None, ' # ', ' # '),
@@ -438,8 +441,9 @@ FLAGS = (
 )
 
 FLAGS_SET = {x[2] for x in FLAGS}
-FLAGS_INV = {a: name for (name, v, a, k) in FLAGS}
-FLAGS_VALUE = {name: v for (name, v, a, k) in FLAGS}
+FLAGS_INV = {x[2]: x[0] for x in FLAGS}
+FLAGS_VALUE = {x[2]: x[1] for x in FLAGS}
+FLAGS_NAME = {x[0] for x in FLAGS}
 
 BRACKETS = (
     (CORRECTION, 3, True, '^', '^', '◀', '▶', '(^ ', ' ^)'),  # PL PR
@@ -450,7 +454,7 @@ BRACKETS = (
     (VACAT, 1, False, '≥', '≤', '┐', '┌', '(- ', ' -)'),  # dl dr
     (ALTERNATIVE, 1, False, ')', '(', '◐', '◑', '( ', ' )'),  # 0L 0R
     (RECONSTRUCTION, 1, False, ']', '[', '┑', '┍', '[ ', ' ]'),  # dL dR
-    (UNCERTAIN, 2, True, '»', '«', '┘', '└', '(# ', ' #)'),  # ul ur
+    (UNCERTAIN, 2, True, '»', '«', '┙', '┕', '(# ', ' #)'),  # uL uR
 )
 
 BRACKETS_INV = {}
@@ -460,6 +464,7 @@ BRACKETS_INV.update({x[6] or x[4]: (x[0], x[1], False) for x in BRACKETS})
 BRACKETS_ESC = tuple(x for x in BRACKETS if x[5] or x[6])
 BRACKETS_ESCPURE = tuple(x for x in BRACKETS if (x[5] or x[6]) and not x[2])
 BRACKETS_SPECIAL = tuple(x for x in BRACKETS if x[2])
+BRACKETS_NAME = {x[0] for x in BRACKETS}
 
 DIGITS_SET = set('0123456789')
 
@@ -588,7 +593,7 @@ generic = dict(
     createdBy='Martin G. Abegg, Jr., James E. Bowley, and Edward M. Cook',
     createdDate='2015',
     convertedBy='Jarod Jacobs, Martijn Naaijer and Dirk Roorda',
-    source='Martin Abegg, personal communication',
+    source="Martin Abegg's data files, personal communication",
     license='Creative Commons Attribution-NonCommercial 4.0 International License',
     licenseUrl='http://creativecommons.org/licenses/by-nc/4.0/',
     description='Dead Sea Scrolls: biblical and non-biblical scrolls',
@@ -597,23 +602,24 @@ generic = dict(
 otext = {
     'sectionFeatures': 'scroll,fragment,line',
     'sectionTypes': 'scroll,fragment,line',
-    'fmt:text-orig-full': f'{{glyph}}{{punc}}{{after}}',
-    'fmt:text-trans-full': f'{{glyphe}}{{punce}}{{after}}',
-    'fmt:text-source-full': f'{{glypho}}{{punco}}{{after}}',
-    'fmt:text-orig-extra': f'{{full}}{{after}}',
-    'fmt:text-trans-extra': f'{{fulle}}{{after}}',
-    'fmt:text-source-extra': f'{{fullo}}{{after}}',
-    'fmt:lex-orig-full': f'{{glex}}{{punc}}{{after}}',
-    'fmt:lex-trans-full': f'{{glexe}}{{punce}}{{after}}',
-    'fmt:lex-source-full': f'{{glexo}}{{punco}}{{after}}',
-    'fmt:morph-source-full': f'{{morpho}}{{punco}}{{after}}',
+    'fmt:text-orig-full': '{glyph}{punc}{after}',
+    'fmt:text-trans-full': '{glyphe}{punce}{after}',
+    'fmt:text-source-full': '{glypho}{punco}{after}',
+    'fmt:text-orig-extra': 'word#{full}{after}',
+    'fmt:text-trans-extra': 'word#{fulle}{after}',
+    'fmt:text-source-extra': 'word#{fullo}{after}',
+    'fmt:lex-orig-full': 'word#{lang:h}-{glex}{punc}{after}',
+    'fmt:lex-trans-full': 'word#{lang:h}-{glexe}{punce}{after}',
+    'fmt:lex-source-full': 'word#{lang:h}-{glexo}{punco}{after}',
+    'fmt:morph-source-full': 'word#{morpho}{punco}{after}',
+    'fmt:lex-default': 'word#{lang:h}-{lex}-{lexe}-{lexo} ',
 }
 
-intFeatures = set('''
-    biblical
-    interlinear
-    srcLn
-'''.strip().split())
+intFeatures = {
+    BIBLICAL,
+    SRCLN,
+    INTERLINEAR,
+} | FLAGS_NAME | BRACKETS_NAME
 
 featureMeta = {
     'after': {
@@ -624,7 +630,7 @@ featureMeta = {
         'description': 'alternative reading',
         'values': '1',
     },
-    'biblical': {
+    BIBLICAL: {
         'description': 'whether we are in biblical material or not',
         'values': '1=biblical, 2=biblical but also with nonbiblical material',
         'applies': f'scroll fragment line cluster word',
@@ -678,7 +684,7 @@ featureMeta = {
     HALFVERSE: {
         'description': 'label of the half-verse in which the word occurs',
     },
-    'interlinear': {
+    INTERLINEAR: {
         'description': (
             'interlinear material,'
             ' the value indicates the sequence number of the interlinear line'
@@ -751,7 +757,7 @@ featureMeta = {
     SCROLL: {
         'description': 'acronym of a scroll',
     },
-    'srcLn': {
+    SRCLN: {
         'description': 'the line number of the word in the source data file',
     },
     'type': {
@@ -1697,7 +1703,7 @@ def director(cv):
     if lang:
       cv.feature(curSlot, lang=lang)
     if interlinear:
-      cv.feature(curSlot, interlinear=interlinear)
+      cv.feature(curSlot, intl=interlinear)
     for (name, value) in curBrackets:
       cv.feature(curSlot, **{name: value})
 
@@ -1837,7 +1843,7 @@ def director(cv):
       if script:
         cv.feature(curWord, script=script)
       if interlinear:
-        cv.feature(curWord, interlinear=interlinear)
+        cv.feature(curWord, intl=interlinear)
       if fullx:
         cv.feature(curWord, fullo=fullo)
       if after:
@@ -1923,7 +1929,7 @@ def director(cv):
         addSlot()
       elif c in FLAGS_INV:
         name = FLAGS_INV[c]
-        value = FLAGS_VALUE[name]
+        value = FLAGS_VALUE[c]
         cv.feature(curSlot, **{name: value})
       elif c in BRACKETS_INV:
         (name, value, isOpen) = BRACKETS_INV[c]
@@ -1940,8 +1946,12 @@ def director(cv):
         else:
           cn = curBrackets[key]
           if not cv.linked(cn):
-            em = cv.slot()
-            cv.feature(em, type=EMPTY)
+            ew = cv.node(WORD)
+            cv.feature(ew, type=EMPTY)
+            typ = EMPTY
+            c = '□'
+            addSlot()
+            cv.terminate(ew)
           cv.terminate(cn)
           del curBrackets[key]
     if after and curSlot:

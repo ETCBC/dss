@@ -6,10 +6,10 @@
 @description=errors in parsing the morphology tag
 @license=Creative Commons Attribution-NonCommercial 4.0 International License
 @licenseUrl=http://creativecommons.org/licenses/by-nc/4.0/
-@source=Martin Abegg, personal communication
+@source=Martin Abegg's data files, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-06T21:02:39Z
+@dateWritten=2019-05-08T18:54:00Z
 
-1747111	vnPfpa
-2057948	@0
+1748618	vnPfpa
+2063024	@0

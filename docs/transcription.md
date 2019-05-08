@@ -118,29 +118,29 @@ type | source | etcbc | unicode | description
 `punct` | `±` | `0000` | `׃׃` | paleo divider
 `numeral` | `A` `D` | `>'` `k'` | `א֜` `ך֜` | a numeral 
 `missing` | `--` | ` 0 ` | `ε` | representation of a missing sign
-`uncertain` | `?` | ` ? ` | ` ? ` | representation of an uncertain sign (degree 1)
-`uncertain` | ``\`` | ` # ` | ` # ` | representation of a uncertain sign (degree 2)
+`unc` | `?` | ` ? ` | ` ? ` | representation of an uncertain sign (degree 1)
+`unc` | ``\`` | ` # ` | ` # ` | representation of a uncertain sign (degree 2)
 `add` | `+` | ` + ` | `+` | representation of an addition between numerals
 `term` | `/` | `╱` | `╱` | representation of an end of line
 
 feature | values | Abegg | ETCBC | Unicode | description
 ------- | ------ | ------ | ----------- | --- | ---
 **after** | ` ` | | | whether there is a space after the last sign of a word and before the next word
-**alternative** | `1` | `lwz/)h(` | `LWZ61(H)` | | indicates an alternative material, marked by being within brackets `( )`
-**correction** | `1` | `yqw>mw<N` | `JQW(< MW >)n` | | material is corrected by a modern editor, marked by being within single angle brackets  `< >`
-**correction** | `2` | `>>zwnh«<<` | `(<< ZWNH# >>)` | | material is corrected by an ancient editor, marked by being within double angle brackets  `<< >>`
-**correction** | `3` | `^dbr/y^` | `(^ DBR ? J ^)` | | material is corrected by an ancient editor, supralinear, marked by being within carets `^ ^`
+**alt** | `1` | `lwz/)h(` | `LWZ61(H)` | | indicates an alternative material, marked by being within brackets `( )`
+**cor** | `1` | `yqw>mw<N` | `JQW(< MW >)n` | | material is corrected by a modern editor, marked by being within single angle brackets  `< >`
+**cor** | `2` | `>>zwnh«<<` | `(<< ZWNH# >>)` | | material is corrected by an ancient editor, marked by being within double angle brackets  `<< >>`
+**cor** | `3` | `^dbr/y^` | `(^ DBR ? J ^)` | | material is corrected by an ancient editor, supralinear, marked by being within carets `^ ^`
 **glyph[eo]** | | `m` | `M` | `מ` | transliteration of an individual sign
 **lang** | `a` `g` | | | language, `a` is Aramaic, `g` is Greek, absent means Hebrew
-**reconstruction** | `1` | `]p[n»y` | `[P]N#?Y` | | material is reconstructed by a modern editor, marked by being within square brackets  `[ ]`
-**removed** | `1` | `}m«x«r«yØM«{` | `{M#Y#R#J?m#}` | | material is removed by a modern editor, marked by being within single braces  `{ }`
-**removed** | `2` | `twlo}}t{{` | `TWL<{{t}}` | | material is removed by an ancient editor, marked by being within double braces  `{{ }}`
+**rec** | `1` | `]p[n»y` | `[P]N#?Y` | | material is reconstructed by a modern editor, marked by being within square brackets  `[ ]`
+**rem** | `1` | `}m«x«r«yØM«{` | `{M#Y#R#J?m#}` | | material is removed by a modern editor, marked by being within single braces  `{ }`
+**rem** | `2` | `twlo}}t{{` | `TWL<{{t}}` | | material is removed by an ancient editor, marked by being within double braces  `{{ }}`
 **type** | | | | | type of sign, see table above
-**uncertain** | `1` | `b«NØ` | `B#n?` | | indicates *uncertainty of degree=1* by flag `|`
-**uncertain** | `2` | `at«` `aj«y»/K` | `>T#` `>X#J#?) ? k` | | indicates *uncertainty of degree=2* by flag `«` or brackets `« »`, in this example the `« »` are not brackets but individual tokens
-**uncertain** | `3` | `]p[n»y` | `[P]N#?Y` | | indicates *uncertainty of degree=3* by flag `»`
-**uncertain** | `4` | `a\|hrwN` | `>#?HRWn` | | indicates *uncertainty of degree=4* by flag `\|`
-**vacat** | `1` | `≥ ≤` | `(- -)` | | indicates an empty, unwritten space by brackets `≤ ≥`
+**unc** | `1` | `b«NØ` | `B#n?` | | indicates *uncertainty of degree=1* by flag `|`
+**unc** | `2` | `at«` `aj«y»/K` | `>T#` `>X#J#?) ? k` | | indicates *uncertainty of degree=2* by flag `«` or brackets `« »`, in this example the `« »` are not brackets but individual tokens
+**unc** | `3` | `]p[n»y` | `[P]N#?Y` | | indicates *uncertainty of degree=3* by flag `»`
+**unc** | `4` | `a\|hrwN` | `>#?HRWn` | | indicates *uncertainty of degree=4* by flag `\|`
+**vac** | `1` | `≥ ≤` | `(- -)` | | indicates an empty, unwritten space by brackets `≤ ≥`
 
 ## Biblical or not biblical
 
@@ -192,7 +192,7 @@ feature | Abegg | ETCBC | Unicode | description
 **after** | ` ` | | | whether there is a space after a word and before the next word
 **full[eo]** | `mm/nw[` | `MM61NW]` | `ממ׳נו]` | full transcription of a word, including flags and clustering characters
 **glyph[eo]** | `mmnw` | `MMNW]` | `ממנו` | letters of a word excluding flags and brackets
-**interlinear** | `1` `2` | | | if the physical word is on an interlinear line, this is `1`, if there are two interlinear lines at that point, the words on the first line get `1` and words on the second line gets `2`
+**intl** | `1` `2` | | | if the physical word is on an interlinear line, this is `1`, if there are two interlinear lines at that point, the words on the first line get `1` and words on the second line gets `2`
 **lang** | `a` `g` | | | language, `a` is Aramaic, `g` is Greek, absent means Hebrew
 **lex[eo]** | `mIN` | `MIn` | `מִן` | lexeme of a word
 **punc[eo]** | `.` | `00` | `׃` | punctuation at the end of a word
@@ -304,21 +304,22 @@ This is a summary of the source encoding, see also the features at the sign leve
 
 type | value | examples | description
 ------- | ------ | ------ | ---
-`correction` | `1` | `< >` | correction made by a modern editor
-`correction` | `2` | `<<  >>` | correction made by an ancient editor
-`correction` | `3` | `^ ^` | supralinear (ancient) correction
-`removed` | `1` | `{ }` | removed by a modern editor
-`removed` | `2` | `{{  }}` | removed by an ancient editor
-`reconstruction` | `1` | `[ ]` | reconstructed by a modern editor
-`vacat` | `1` | `≤ ≥` | empty space
-`alternative` | `1` | `( )` | alternative
-`uncertain` | `2` | `« »` | uncertain, with level of uncertainty 2
+`cor` | `1` | `< >` | correction made by a modern editor
+`cor` | `2` | `<<  >>` | correction made by an ancient editor
+`cor` | `3` | `^ ^` | supralinear (ancient) correction
+`rem` | `1` | `{ }` | removed by a modern editor
+`rem` | `2` | `{{  }}` | removed by an ancient editor
+`rec` | `1` | `[ ]` | reconstructed by a modern editor
+`vac` | `1` | `≤ ≥` | empty space
+`alt` | `1` | `( )` | alternative
+`unc` | `2` | `« »` | uncertain, with level of uncertainty 2
 
 Each cluster induces a sign feature with the same name as the type of the cluster,
 which gets a numeric value, as indicated in the table.
 
-Note the *vacat* cluster: by definition, it contains no signs.
-In order to anchor it into the text sequence, we have generated an empty slot in each vacat cluster.
+Note the *vac* cluster: by definition, it contains no signs.
+In order to anchor it into the text sequence, we have generated
+a word with an empty slot in each vacat cluster.
 
 We have done the same for other clusters that happened to be without other slots.
 
@@ -448,7 +449,7 @@ source | etcbc | unicode | description
 
 Signs also have features corresponding to flags and brackets, that store under which flag
 or inside which brackets the sign occurs:
-**uncertain** **correction** **remove** **vacat** **alternative** **reconstruction**.
+**unc** **cor** **rem** **vac** **alt** **rec**.
 
 #### Flags
 
@@ -519,15 +520,15 @@ signs within that type of brackets under the given description.
 
 source / unicode | etcbc | value | type | description
 --- | --- | --- | --- | ---
-`^ ^` | `(^ ^)` | 3 | `correction3` | correction by ancient editor, supralinear
-`<< >>` | `(<< >>)` | 2 | `correction2` | correction by ancient editor
-`< >` | `(< >)` | 1 | `correction` | correction by modern editor
-`{{ }}` | `({{ }})` | 2 | `removed2` | removed by ancient editor
-`} {` | `({ })` | 1 | `removed` | removed by modern editor
-`≤ ≥` | `(- -)` | 1 | `vacat` | vacat: an empty, unwritten space in the manuscript
-`( )` | `( )` | 1 | `alternative` | alternative reading
-`[ ]` | `[ ]` | 1 | `reconstruction` | modern reconstruction
-`« »` | `(# #)` | 2 | `uncertain2` | uncertainty of degree 2
+`^ ^` | `(^ ^)` | 3 | `cor3` | correction by ancient editor, supralinear
+`<< >>` | `(<< >>)` | 2 | `cor2` | correction by ancient editor
+`< >` | `(< >)` | 1 | `cor` | correction by modern editor
+`{{ }}` | `({{ }})` | 2 | `rem2` | removed by ancient editor
+`} {` | `({ })` | 1 | `rem` | removed by modern editor
+`≤ ≥` | `(- -)` | 1 | `vac` | vacat: an empty, unwritten space in the manuscript
+`( )` | `( )` | 1 | `alt` | alternative reading
+`[ ]` | `[ ]` | 1 | `rec` | modern reconstruction
+`« »` | `(# #)` | 2 | `unc2` | uncertainty of degree 2
 
 ## Word
 

@@ -6,10 +6,10 @@
 @description=acronym of a scroll
 @license=Creative Commons Attribution-NonCommercial 4.0 International License
 @licenseUrl=http://creativecommons.org/licenses/by-nc/4.0/
-@source=Martin Abegg, personal communication
+@source=Martin Abegg's data files, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-06T21:02:42Z
+@dateWritten=2019-05-08T18:54:02Z
 
 1531338	CD
 CD

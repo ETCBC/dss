@@ -6,12 +6,12 @@
 @description=label of the half-verse in which the word occurs
 @license=Creative Commons Attribution-NonCommercial 4.0 International License
 @licenseUrl=http://creativecommons.org/licenses/by-nc/4.0/
-@source=Martin Abegg, personal communication
+@source=Martin Abegg's data files, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-06T21:02:37Z
+@dateWritten=2019-05-08T18:53:57Z
 
-1952221	a
+1956305	a
 a
 a
 a
@@ -43,6 +43,7 @@ a
 a
 a
 a
+1956338	b
 b
 b
 b
@@ -58,8 +59,7 @@ b
 b
 b
 b
-b
-1952778	a
+1956865	a
 a
 a
 a
@@ -82,7 +82,7 @@ a
 a
 a
 a
-b
+1956889	b
 b
 b
 b
@@ -165,7 +165,7 @@ b
 b
 b
 b
-1952922	b
+1957011	b
 b
 b
 b
@@ -210,7 +210,7 @@ b
 b
 b
 b
-1953170	a
+1957260	a
 a
 a
 a
@@ -322,7 +322,7 @@ b
 b
 b
 b
-1953355	b
+1957446	b
 b
 b
 b
@@ -366,7 +366,7 @@ b
 b
 b
 b
-1953655	b
+1957749	b
 b
 b
 b
@@ -447,7 +447,7 @@ b
 b
 b
 b
-1953815	a
+1957910	a
 a
 a
 a
@@ -526,7 +526,7 @@ b
 b
 b
 b
-1958805	a
+1962918	a
 a
 a
 a
@@ -556,7 +556,7 @@ b
 b
 b
 b
-1972703	a
+1976917	a
 a
 a
 a
@@ -629,6 +629,7 @@ b
 b
 b
 b
+1976991	b
 b
 b
 b
@@ -656,8 +657,7 @@ b
 b
 b
 b
-b
-1973111	a
+1977331	a
 a
 a
 a
@@ -695,8 +695,7 @@ b
 b
 b
 b
-a
-a
+1977370	a
 a
 a
 a
@@ -710,6 +709,7 @@ a
 a
 a
 a
+1977385	a
 a
 a
 a
@@ -729,7 +729,7 @@ a
 a
 a
 a
-1973194	a
+1977417	a
 a
 a
 a
@@ -781,7 +781,7 @@ a
 a
 a
 a
-1975300	a
+1979557	a
 a
 a
 a
@@ -816,12 +816,12 @@ b
 b
 b
 b
-1975990	b
+1980258	b
 b
 b
 b
 b
-1977961	a
+1982260	a
 a
 a
 a
@@ -899,7 +899,7 @@ b
 b
 b
 b
-2032581	a
+2037334	a
 a
 a
 a
@@ -907,7 +907,7 @@ a
 a
 a
 a
-2032609	b
+2037362	b
 b
 b
 b
@@ -924,7 +924,7 @@ b
 b
 b
 b
-2085617	b
+2090844	b
 b
 b
 b

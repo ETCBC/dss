@@ -6,10 +6,10 @@
 @description=Dead Sea Scrolls: biblical and non-biblical scrolls
 @license=Creative Commons Attribution-NonCommercial 4.0 International License
 @licenseUrl=http://creativecommons.org/licenses/by-nc/4.0/
-@source=Martin Abegg, personal communication
+@source=Martin Abegg's data files, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-06T21:02:40Z
+@dateWritten=2019-05-08T18:54:01Z
 
 1-1430238	sign
 1430239-1531337	cluster
@@ -17,4 +17,4 @@
 1542520-1552968	lex
 1552969-1605863	line
 1605864-1606864	scroll
-1606865-2107856	word
+1606865-2113393	word

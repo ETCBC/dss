@@ -6,23 +6,23 @@
 @description=gender (for part 3) (morphology tag)
 @license=Creative Commons Attribution-NonCommercial 4.0 International License
 @licenseUrl=http://creativecommons.org/licenses/by-nc/4.0/
-@source=Martin Abegg, personal communication
+@source=Martin Abegg's data files, personal communication
 @valueType=str
 @values=c, f, m
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-06T21:02:37Z
+@dateWritten=2019-05-08T18:53:57Z
 
-1662245	c
-1862892	m
-1916563	f
-1916622	f
-1925914	f
-1925970	f
-1994337	m
-1994339	m
-2018873	c
-2048062	m
-2048464	m
-2055192	c
-2055196	c
-2055199	c
+1662888	c
+1866019	m
+1920302	f
+1920361	f
+1929757	f
+1929813	f
+1998721	m
+1998723	m
+2023454	c
+2053000	m
+2053409	m
+2060207	c
+2060211	c
+2060214	c
