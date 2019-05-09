@@ -21,5 +21,5 @@
 @sectionTypes=scroll,fragment,line
 @source=Martin Abegg's data files, personal communication
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-09T05:27:25Z
+@dateWritten=2019-05-09T09:31:25Z
 

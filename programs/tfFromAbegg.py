@@ -217,12 +217,12 @@ NB = '\u00a0'  # non-breaking space
 
 # various types (of characters, flags, brackets/clusters)
 
-CONS = 'consonant'
-VOWEL = 'vowel'
+CONS = 'cons'
+VOWEL = 'vwl'
 POINT = 'point'
 SEP = 'sep'
 PUNCT = 'punct'
-NUMERAL = 'numeral'
+NUMERAL = 'numr'
 MISSING = 'missing'
 UNCERTAIN = 'unc'
 ADD = 'add'

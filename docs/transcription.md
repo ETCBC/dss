@@ -110,13 +110,13 @@ The type of sign is stored in the feature `type`.
 type | source | etcbc | unicode | description
 ------- | ------ | ------ | --- | ---
 `cons` | `m` `M` | `M` `m`| `מ` `ם` | normal consonantal letter
-`vowel` | `I` | `I`| ` ִ ` | vowel point
+`vwl` | `I` | `I`| ` ִ ` | vowel point
 `sep` | ` ` | `_` | ` ` | space
 `sep` | `-` | `&` | `־` | maqaf
 `sep` | `/`| `'`| `׳` | morpheme break 
 `punct` | `.` | `00` | `׃` | sof pasuq
 `punct` | `±` | `0000` | `׃׃` | paleo divider
-`numeral` | `A` `D` | `>'` `k'` | `א֜` `ך֜` | a numeral 
+`numr` | `A` `D` | `>'` `k'` | `א֜` `ך֜` | a numeral 
 `missing` | `--` | ` 0 ` | `ε` | representation of a missing sign
 `unc` | `?` | ` ? ` | ` ? ` | representation of an uncertain sign (degree 1)
 `unc` | ``\`` | ` # ` | ` # ` | representation of a uncertain sign (degree 2)
@@ -178,7 +178,7 @@ type | description
 ------- | ------
 `empty` | nothing
 `glyph` | a sequence of consonants or uncertain tokens
-`numeral` | a numeral
+`numr` | a numeral
 `punc` | punctuation
 `other` | nothing of the above
 

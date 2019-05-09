@@ -10,7 +10,7 @@
 @valueType=str
 @values=coho, cons, juss, unknown
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-09T05:27:15Z
+@dateWritten=2019-05-09T09:31:14Z
 
 1606943	juss
 1606985	juss

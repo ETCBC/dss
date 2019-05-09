@@ -10,7 +10,7 @@
 @valueType=str
 @values=1, 2, 3
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-09T05:27:17Z
+@dateWritten=2019-05-09T09:31:16Z
 
 1606880	3
 1606889	3
