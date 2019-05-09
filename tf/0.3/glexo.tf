@@ -9,7 +9,7 @@
 @source=Martin Abegg's data files, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-08T18:53:49Z
+@dateWritten=2019-05-09T05:27:04Z
 
 1542520	w◊
 oAt;Dh

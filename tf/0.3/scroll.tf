@@ -9,7 +9,7 @@
 @source=Martin Abegg's data files, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-08T18:54:02Z
+@dateWritten=2019-05-09T05:27:18Z
 
 1531338	CD
 CD

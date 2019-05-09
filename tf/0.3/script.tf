@@ -3,15 +3,3329 @@
 @convertedBy=Jarod Jacobs, Martijn Naaijer and Dirk Roorda
 @createdBy=Martin G. Abegg, Jr., James E. Bowley, and Edward M. Cook
 @createdDate=2015
-@description=script in which the word is written if it is not Hebrew
+@description=script in which the word or sign is written if it is not Hebrew
 @license=Creative Commons Attribution-NonCommercial 4.0 International License
 @licenseUrl=http://creativecommons.org/licenses/by-nc/4.0/
 @source=Martin Abegg's data files, personal communication
 @valueType=str
 @values=paleohebrew greekcapital
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-08T18:54:02Z
+@dateWritten=2019-05-09T05:27:18Z
 
+39203	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+41066	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+41090	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+42018	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+43820	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+44041	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+44337	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+45034	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+70791	paleohebrew
+paleohebrew
+73676	paleohebrew
+paleohebrew
+75917	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+102483	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+102525	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+103244	paleohebrew
+paleohebrew
+103720	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+103745	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+129991	paleohebrew
+paleohebrew
+132630	paleohebrew
+paleohebrew
+140776	paleohebrew
+paleohebrew
+140917	greekcapital
+greekcapital
+greekcapital
+140944	paleohebrew
+paleohebrew
+141116	greekcapital
+greekcapital
+greekcapital
+141175	paleohebrew
+paleohebrew
+141203	paleohebrew
+paleohebrew
+paleohebrew
+141207	greekcapital
+greekcapital
+141254	greekcapital
+greekcapital
+141368	greekcapital
+greekcapital
+141475	paleohebrew
+paleohebrew
+paleohebrew
+141603	paleohebrew
+paleohebrew
+141606	greekcapital
+greekcapital
+141705	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+141741	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+greekcapital
+greekcapital
+141790	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+141953	paleohebrew
+paleohebrew
+paleohebrew
+142017	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+142125	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+142173	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+142253	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+142303	paleohebrew
+paleohebrew
+142343	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+142386	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+142546	paleohebrew
+paleohebrew
+paleohebrew
+142593	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+142655	paleohebrew
+142712	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+142753	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+142820	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+142875	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+143002	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+143054	paleohebrew
+paleohebrew
+paleohebrew
+143124	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+143236	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+143282	paleohebrew
+paleohebrew
+143466	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+143500	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+143705	paleohebrew
+paleohebrew
+paleohebrew
+143872	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+143934	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+143991	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+144088	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+151764	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+164043	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+164347	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+164756	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+165330	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+165379	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+165795	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+165980	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+167592	paleohebrew
+paleohebrew
+paleohebrew
+179250	paleohebrew
+paleohebrew
+180451	paleohebrew
+paleohebrew
+180587	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+180615	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+248754	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+253239	paleohebrew
+273351	paleohebrew
+paleohebrew
+273877	paleohebrew
+paleohebrew
+296765	paleohebrew
+paleohebrew
+297795	paleohebrew
+paleohebrew
+298419	paleohebrew
+paleohebrew
+298854	paleohebrew
+paleohebrew
+299870	paleohebrew
+paleohebrew
+340294	paleohebrew
+340333	paleohebrew
+340367	paleohebrew
+paleohebrew
+340508	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344334	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344340	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344348	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344360	paleohebrew
+344363	paleohebrew
+paleohebrew
+344368	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344378	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344394	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344406	paleohebrew
+paleohebrew
+344422	paleohebrew
+344425	paleohebrew
+paleohebrew
+344433	paleohebrew
+paleohebrew
+paleohebrew
+344438	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344448	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344455	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344463	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344475	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344487	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344493	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344504	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344512	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344524	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344534	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344550	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344562	paleohebrew
+344565	paleohebrew
+paleohebrew
+344574	paleohebrew
+paleohebrew
+paleohebrew
+344579	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344589	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344596	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344607	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344616	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344626	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344640	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344652	paleohebrew
+paleohebrew
+344665	paleohebrew
+344668	paleohebrew
+paleohebrew
+344676	paleohebrew
+paleohebrew
+paleohebrew
+344681	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344690	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344697	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344705	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344717	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344727	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344743	paleohebrew
+344746	paleohebrew
+paleohebrew
+344754	paleohebrew
+paleohebrew
+paleohebrew
+344759	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344765	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344775	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344783	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344797	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344807	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344823	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344834	paleohebrew
+344837	paleohebrew
+paleohebrew
+344845	paleohebrew
+paleohebrew
+paleohebrew
+344850	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344859	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344866	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344877	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344885	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344895	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344909	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344921	paleohebrew
+paleohebrew
+344935	paleohebrew
+344938	paleohebrew
+paleohebrew
+344945	paleohebrew
+paleohebrew
+paleohebrew
+344950	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344959	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344966	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344974	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344988	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+344997	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345012	paleohebrew
+345015	paleohebrew
+paleohebrew
+345022	paleohebrew
+paleohebrew
+paleohebrew
+345027	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345033	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345045	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345053	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345067	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345076	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345091	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345103	paleohebrew
+345106	paleohebrew
+paleohebrew
+345113	paleohebrew
+paleohebrew
+paleohebrew
+345118	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345127	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345134	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345145	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345154	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345164	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345179	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345191	paleohebrew
+paleohebrew
+345328	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345339	paleohebrew
+345344	paleohebrew
+paleohebrew
+345348	paleohebrew
+paleohebrew
+paleohebrew
+345360	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345372	paleohebrew
+345378	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345386	paleohebrew
+paleohebrew
+345390	paleohebrew
+paleohebrew
+paleohebrew
+345734	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+345754	paleohebrew
+paleohebrew
+paleohebrew
+346064	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+346088	paleohebrew
+paleohebrew
+346396	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+346417	paleohebrew
+paleohebrew
+346723	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+346742	paleohebrew
+paleohebrew
+paleohebrew
+347034	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+347053	paleohebrew
+paleohebrew
+347362	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+347381	paleohebrew
+paleohebrew
+347902	paleohebrew
+347919	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+347942	paleohebrew
+347960	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+347983	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+348011	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+348034	paleohebrew
+348054	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+348074	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+348098	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+348130	paleohebrew
+paleohebrew
+paleohebrew
+348147	paleohebrew
+348163	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+348186	paleohebrew
+348205	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+348228	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+348503	paleohebrew
+paleohebrew
+paleohebrew
+348605	paleohebrew
+348727	paleohebrew
+paleohebrew
+348818	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+348824	paleohebrew
+348983	paleohebrew
+349284	paleohebrew
+paleohebrew
+349395	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349433	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349445	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349456	paleohebrew
+paleohebrew
+349471	paleohebrew
+paleohebrew
+349474	paleohebrew
+paleohebrew
+349483	paleohebrew
+349492	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349503	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349521	paleohebrew
+paleohebrew
+paleohebrew
+349530	paleohebrew
+paleohebrew
+349533	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349552	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349563	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349574	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349590	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349602	paleohebrew
+paleohebrew
+349605	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349630	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349641	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349656	paleohebrew
+paleohebrew
+349664	paleohebrew
+paleohebrew
+349667	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349682	paleohebrew
+paleohebrew
+paleohebrew
+349691	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349702	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349716	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349726	paleohebrew
+paleohebrew
+349729	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349742	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349756	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349767	paleohebrew
+paleohebrew
+paleohebrew
+349781	paleohebrew
+349789	paleohebrew
+paleohebrew
+349792	paleohebrew
+paleohebrew
+paleohebrew
+349822	paleohebrew
+paleohebrew
+349831	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349842	paleohebrew
+349852	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349862	paleohebrew
+paleohebrew
+349865	paleohebrew
+349873	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349884	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349895	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349920	paleohebrew
+paleohebrew
+349923	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349941	paleohebrew
+349949	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349960	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+349977	paleohebrew
+paleohebrew
+paleohebrew
+349987	paleohebrew
+paleohebrew
+349990	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350005	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350015	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350026	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350041	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350054	paleohebrew
+paleohebrew
+350057	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350080	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350091	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350105	paleohebrew
+paleohebrew
+350114	paleohebrew
+paleohebrew
+350117	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350130	paleohebrew
+350137	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350148	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350162	paleohebrew
+paleohebrew
+paleohebrew
+350171	paleohebrew
+paleohebrew
+350174	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350188	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350198	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350209	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350222	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350234	paleohebrew
+paleohebrew
+350237	paleohebrew
+paleohebrew
+paleohebrew
+350258	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350269	paleohebrew
+paleohebrew
+350286	paleohebrew
+paleohebrew
+350294	paleohebrew
+paleohebrew
+350343	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350384	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350427	paleohebrew
+paleohebrew
+350439	paleohebrew
+paleohebrew
+350453	paleohebrew
+paleohebrew
+paleohebrew
+350467	paleohebrew
+paleohebrew
+350483	paleohebrew
+paleohebrew
+paleohebrew
+350499	paleohebrew
+paleohebrew
+350516	paleohebrew
+paleohebrew
+350532	paleohebrew
+paleohebrew
+paleohebrew
+350583	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350621	paleohebrew
+paleohebrew
+paleohebrew
+350644	paleohebrew
+350661	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350683	paleohebrew
+350701	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350724	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350763	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350798	paleohebrew
+paleohebrew
+paleohebrew
+350814	paleohebrew
+350830	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350851	paleohebrew
+350868	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350890	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350915	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+350951	paleohebrew
+paleohebrew
+paleohebrew
+350966	paleohebrew
+350983	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351005	paleohebrew
+351023	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351044	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351068	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351104	paleohebrew
+paleohebrew
+paleohebrew
+351125	paleohebrew
+351142	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351162	paleohebrew
+351180	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351201	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351224	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351260	paleohebrew
+paleohebrew
+paleohebrew
+351274	paleohebrew
+351289	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351312	paleohebrew
+351331	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351351	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351375	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351409	paleohebrew
+paleohebrew
+paleohebrew
+351426	paleohebrew
+351442	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351464	paleohebrew
+351483	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351506	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351530	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351560	paleohebrew
+paleohebrew
+351577	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+351644	paleohebrew
+paleohebrew
+paleohebrew
+351692	paleohebrew
+paleohebrew
+paleohebrew
+361545	paleohebrew
+paleohebrew
+361556	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+361579	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+361606	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+361624	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+361639	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+361681	paleohebrew
+paleohebrew
+361715	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+364618	paleohebrew
+paleohebrew
+365045	paleohebrew
+365078	paleohebrew
+365217	paleohebrew
+365474	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+365485	paleohebrew
+paleohebrew
+365493	paleohebrew
+paleohebrew
+paleohebrew
+365500	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+365509	paleohebrew
+paleohebrew
+365516	paleohebrew
+paleohebrew
+365519	paleohebrew
+365522	paleohebrew
+paleohebrew
+365525	paleohebrew
+365528	paleohebrew
+paleohebrew
+365531	paleohebrew
+365534	paleohebrew
+paleohebrew
+365537	paleohebrew
+365540	paleohebrew
+paleohebrew
+365543	paleohebrew
+365546	paleohebrew
+paleohebrew
+365549	paleohebrew
+365554	paleohebrew
+365560	paleohebrew
+365562	paleohebrew
+365566	paleohebrew
+365579	paleohebrew
+365584	paleohebrew
+365593	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+365604	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+365618	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+365630	paleohebrew
+paleohebrew
+paleohebrew
+365645	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+365659	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+365667	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+365698	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+365710	paleohebrew
+paleohebrew
+paleohebrew
+365721	paleohebrew
+paleohebrew
+paleohebrew
+365746	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+365938	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+464880	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+467509	paleohebrew
+paleohebrew
+467628	paleohebrew
+paleohebrew
+555822	paleohebrew
+568106	paleohebrew
+paleohebrew
+634633	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+651668	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+651728	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+651790	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+651852	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+651889	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+651950	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652006	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652059	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652095	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652153	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652214	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652275	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652328	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652333	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652352	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652411	paleohebrew
+paleohebrew
+652472	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652531	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652575	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652593	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652647	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652661	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652676	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652736	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652890	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652940	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+652995	paleohebrew
+paleohebrew
+653040	paleohebrew
+653126	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+653185	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+653230	paleohebrew
+paleohebrew
+653284	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+653316	paleohebrew
+paleohebrew
+paleohebrew
+653352	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+653421	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+653528	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+653603	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+653623	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+654053	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+654083	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+654117	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+655025	paleohebrew
+paleohebrew
+655047	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+655083	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+655109	paleohebrew
+paleohebrew
+655112	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+655191	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+655220	paleohebrew
+paleohebrew
+paleohebrew
+655346	paleohebrew
+paleohebrew
+655407	paleohebrew
+paleohebrew
+paleohebrew
+657972	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+659095	paleohebrew
+paleohebrew
+paleohebrew
+660499	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+660542	paleohebrew
+paleohebrew
+660571	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+660611	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+660645	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+660685	paleohebrew
+paleohebrew
+paleohebrew
+660711	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+660834	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+660860	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+660891	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+660938	paleohebrew
+paleohebrew
+660942	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+660969	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+661030	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+661081	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+661098	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+661117	paleohebrew
+661163	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+661186	paleohebrew
+paleohebrew
+661204	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+661226	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+661244	paleohebrew
+661260	paleohebrew
+661298	paleohebrew
+paleohebrew
+661315	paleohebrew
+paleohebrew
+661331	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+661349	paleohebrew
+paleohebrew
+paleohebrew
+661368	paleohebrew
+paleohebrew
+661385	paleohebrew
+661397	paleohebrew
+paleohebrew
+661431	paleohebrew
+paleohebrew
+paleohebrew
+661452	paleohebrew
+paleohebrew
+661464	paleohebrew
+661475	paleohebrew
+paleohebrew
+paleohebrew
+661526	paleohebrew
+678651	paleohebrew
+paleohebrew
+678661	paleohebrew
+paleohebrew
+679041	paleohebrew
+paleohebrew
+679393	paleohebrew
+paleohebrew
+679433	paleohebrew
+paleohebrew
+679514	paleohebrew
+paleohebrew
+680136	paleohebrew
+680138	paleohebrew
+paleohebrew
+paleohebrew
+680145	paleohebrew
+680147	paleohebrew
+680154	paleohebrew
+680220	paleohebrew
+681058	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+681451	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+681510	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+681715	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+681756	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+681796	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+681941	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+682050	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+682159	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+683198	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+683353	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+683403	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+683552	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+683618	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+683689	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+683706	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+683766	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+683783	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+683798	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+684169	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+684597	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+684845	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+892320	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+900026	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+900132	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+900865	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+900984	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+901001	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+901107	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+909662	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+961843	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1015709	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1072035	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1161074	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1161218	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1161344	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1161364	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1161405	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1161517	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1161820	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1161825	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1162185	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1162378	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1162534	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1162586	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1162708	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1162768	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1162862	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1163060	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1163067	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1163183	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1163225	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1163329	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1163427	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1163774	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1163846	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1163881	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1164063	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1164518	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1164665	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1164775	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1164818	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1164928	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1164981	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1165023	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1165311	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1165329	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1165475	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1165908	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1166099	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1166436	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1166580	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1166705	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1166772	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1167135	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1167201	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1167213	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1167225	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1167395	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1167429	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1167454	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1167473	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1167511	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1167610	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1167641	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1167829	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1167913	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1167996	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1168043	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1168116	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1168656	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1168742	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1168765	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1169021	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1169139	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1169278	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1169400	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1169426	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1169537	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1169587	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1169642	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1169692	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1169888	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1170030	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1170290	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1170411	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1170568	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1170697	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1170930	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1170950	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1171254	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1171297	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1171357	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1171466	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1171507	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1171537	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1171594	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1171673	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1171854	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1171867	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1171883	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1347318	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1347344	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1347488	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1347507	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1347529	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1347555	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1347731	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1349591	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1349914	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1349953	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1349969	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1350080	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1350139	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1350188	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1350423	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1350452	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1350631	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1350671	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1350762	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1350804	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1350820	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1350846	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1350866	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1350874	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1350951	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1350995	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1351298	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1351573	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1351586	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1351639	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1351693	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1351744	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1351930	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1351956	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1352065	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1352170	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1353011	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1353069	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1353119	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1353256	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1353317	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1353511	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1353569	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1353654	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1353721	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1353823	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1353928	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1354067	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1354219	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1354257	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1354305	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1354404	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1354442	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1354488	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1354562	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1354584	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1354616	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1354737	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1354787	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1355107	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1355138	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1355285	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1355366	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1355374	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1355437	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1355565	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1355687	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1355900	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1356663	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1357142	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1357185	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1357728	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1358064	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1358096	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1358828	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1359041	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1359208	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1359325	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1359625	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1359733	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1359745	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1359780	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1359824	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1359894	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1359926	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1359963	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1360194	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1360213	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1360232	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1360241	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1360251	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1360264	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1360300	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1360846	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1360897	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1360914	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1360927	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1360952	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1360976	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361002	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361025	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361073	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361111	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361173	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361200	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361235	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361297	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361359	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361423	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361545	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361605	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361633	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361669	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361743	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361801	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361829	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361863	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361890	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361930	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1361995	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1362023	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1362060	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1362088	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1362125	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1362666	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1362874	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1362889	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1363026	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1363069	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1363083	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1363094	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1363178	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1363192	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1363233	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1363250	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1363449	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1363688	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1363725	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1364004	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1364089	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1364249	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1364537	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1365066	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1365175	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1365205	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1365220	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1365255	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
+1365268	paleohebrew
+paleohebrew
+paleohebrew
+paleohebrew
 1620746	paleohebrew
 1621403	paleohebrew
 1621409	paleohebrew

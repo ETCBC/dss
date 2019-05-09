@@ -9,7 +9,7 @@
 @source=Martin Abegg's data files, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-08T18:54:01Z
+@dateWritten=2019-05-09T05:27:16Z
 
 1-1430238	sign
 1430239-1531337	cluster

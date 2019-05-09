@@ -750,8 +750,8 @@ featureMeta = {
         'description': 'reconstructed by a modern editor',
         'values': '1',
     },
-    'script': {
-        'description': 'script in which the word is written if it is not Hebrew',
+    SCRIPT: {
+        'description': 'script in which the word or sign is written if it is not Hebrew',
         'values': ' '.join(SCRIPT_VALS)
     },
     SCROLL: {
@@ -1702,6 +1702,8 @@ def director(cv):
     cv.feature(curSlot, glyph=glyph, glyphe=glyphe, glypho=unesc(c), type=typ)
     if lang:
       cv.feature(curSlot, lang=lang)
+    if script:
+      cv.feature(curSlot, script=script)
     if interlinear:
       cv.feature(curSlot, intl=interlinear)
     for (name, value) in curBrackets:

@@ -10,7 +10,7 @@
 @valueType=str
 @values=impf, impv, infa, infc, perf, ptca, ptcp, unknown, wayy
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-08T18:54:07Z
+@dateWritten=2019-05-09T05:27:22Z
 
 1606868	impv
 1606870	ptca

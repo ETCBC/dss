@@ -10,7 +10,7 @@
 @valueType=str
 @values=advb, art, artp, card, cmn, conj, gent, indp, intj, intr, mult, nega, objm, ord, prep, prp, rela, unknown
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-08T18:53:45Z
+@dateWritten=2019-05-09T05:27:01Z
 
 1606866	conj
 advb
