@@ -51,7 +51,7 @@ debug = None
 ORG = 'etcbc'
 REPO = 'dss'
 VERSION_SRC = '1.0'
-VERSION_TF = '0.3'
+VERSION_TF = '0.4'
 
 LOCAL_BASE = os.path.expanduser('~/local')
 GH_BASE = os.path.expanduser('~/github')

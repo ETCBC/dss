@@ -1,7 +1,7 @@
 This is tfFromAbegg converting dss transcriptions to TF:
 source version = 1.0
-target version = 0.3
-Run started: 2019-05-09T11:29:45.688150
+target version = 0.4
+Run started: 2019-05-09T19:15:51.437118
 
                      => 
 0                    => sp=unknown
@@ -2017,5 +2017,5 @@ vḦi3ms               => sp=verb vs=hishtaphel vt=impf ps=3 gn=m nu=s
 vḦp3mp               => sp=verb vs=hishtaphel vt=perf ps=3 gn=m nu=p
 
 
-Run ended: 2019-05-09T11:31:25.947549
-Duration:  1m 40s
+Run ended: 2019-05-09T19:17:32.531481
+Duration:  1m 41s

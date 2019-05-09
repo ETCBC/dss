@@ -1,7 +1,7 @@
 This is tfFromAbegg converting dss transcriptions to TF:
 source version = 1.0
-target version = 0.3
-Run started: 2019-05-09T11:29:45.688150
+target version = 0.4
+Run started: 2019-05-09T19:15:51.437118
 
 Reading proto N ...340079 rows out of 378023 sourcelines
 Reading proto B ...242661 rows out of 243157 sourcelines
@@ -484,5 +484,5 @@ Compiling feature data ...
 └────┴────┴────┴────┴─────────────────────────────────────────────────┴────────┘
 
 
-Run ended: 2019-05-09T11:31:25.947549
-Duration:  1m 40s
+Run ended: 2019-05-09T19:17:32.531481
+Duration:  1m 41s
