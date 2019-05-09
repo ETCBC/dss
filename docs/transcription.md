@@ -249,7 +249,7 @@ Al these features may contain the value `unknown`.
 feature | examples | description
 ------- | ------ | ------
 **sp** | `subs` `verb` `numr` `ptcl` | part-of-speech
-**cl** | `card` `proper` `prep` | class, i.e. a sub category within its part-of-speech
+**cl** | `card` `prp` `prep` | class, i.e. a sub category within its part-of-speech
 **ps** | `1` `2` `3` | person
 **gn** | `m` `f` `c` `b` | gender, also with *common* and *both*
 **nu** | `s` `p` `d` | number, also with *dual*
