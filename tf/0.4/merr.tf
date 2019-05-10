@@ -9,7 +9,7 @@
 @source=Martin Abegg's data files, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-09T17:17:21Z
+@dateWritten=2019-05-10T08:33:17Z
 
-1748618	vnPfpa
-2063024	@0
+1747111	vnPfpa
+2057948	@0

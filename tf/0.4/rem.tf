@@ -10,7 +10,7 @@
 @valueType=int
 @values=1 = modern, 2 = ancient
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-09T17:17:24Z
+@dateWritten=2019-05-10T08:33:20Z
 
 1331	1
 1355	1

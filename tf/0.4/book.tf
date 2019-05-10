@@ -9,9 +9,9 @@
 @source=Martin Abegg's data files, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-09T17:17:06Z
+@dateWritten=2019-05-10T08:33:02Z
 
-1655101	Num
+1654582	Num
 Num
 Num
 Num
@@ -72,7 +72,7 @@ Num
 Num
 Num
 Num
-1697717	Lev
+1696761	Lev
 Lev
 Lev
 Lev
@@ -132,7 +132,7 @@ Lev
 Lev
 Lev
 Lev
-1804614	Gen
+1802281	Gen
 Gen
 Gen
 Gen
@@ -214,7 +214,7 @@ Gen
 Gen
 Gen
 Gen
-1893326	Gen
+1889874	Gen
 Gen
 Gen
 Gen
@@ -753,7 +753,6 @@ Ex
 Ex
 Ex
 Ex
-1893867	Ex
 Ex
 Ex
 Ex
@@ -827,7 +826,8 @@ Ex
 Ex
 Ex
 Ex
-1893945	Ex
+Ex
+Ex
 Ex
 Ex
 Ex
@@ -936,7 +936,6 @@ Lev
 Lev
 Lev
 Lev
-1894055	Lev
 Lev
 Lev
 Lev
@@ -1078,7 +1077,6 @@ Lev
 Lev
 Lev
 Lev
-1894198	Lev
 Lev
 Lev
 Lev
@@ -1138,7 +1136,6 @@ Lev
 Lev
 Lev
 Lev
-1894260	Lev
 Lev
 Lev
 Lev
@@ -1176,7 +1173,6 @@ Lev
 Lev
 Lev
 Lev
-1894299	Lev
 Lev
 Lev
 Lev
@@ -1343,6 +1339,10 @@ Lev
 Lev
 Lev
 Lev
+Lev
+Lev
+Lev
+Lev
 Num
 Num
 Num
@@ -1510,6 +1510,7 @@ Num
 1Q3
 1Q3
 1Q3
+Deut
 Deut
 Deut
 Deut
@@ -1787,7 +1788,6 @@ Deut
 Deut
 Deut
 Deut
-1894911	Deut
 Deut
 Deut
 Deut
@@ -2011,7 +2011,6 @@ Deut
 Deut
 Deut
 Deut
-1895136	Deut
 Deut
 Deut
 Deut
@@ -2223,6 +2222,7 @@ Deut
 Deut
 Deut
 Deut
+Deut
 1Q4
 1Q4
 1Q4
@@ -2465,6 +2465,7 @@ Deut
 1Q4
 1Q4
 1Q4
+Deut
 Deut
 Deut
 Deut
@@ -2750,7 +2751,6 @@ Deut
 Deut
 Deut
 Deut
-1895876	Deut
 Deut
 Deut
 Deut
@@ -3428,7 +3428,7 @@ Deut
 Deut
 Deut
 Deut
-1896555	Deut
+Deut
 Deut
 Deut
 Deut
@@ -4995,7 +4995,6 @@ Judg
 2Sam
 2Sam
 2Sam
-1898123	2Sam
 2Sam
 2Sam
 2Sam
@@ -5068,7 +5067,6 @@ Judg
 2Sam
 2Sam
 2Sam
-1898197	2Sam
 2Sam
 2Sam
 2Sam
@@ -5197,6 +5195,299 @@ Judg
 2Sam
 2Sam
 2Sam
+2Sam
+2Sam
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
 Is
 Is
 Is
@@ -5360,7 +5651,6 @@ Is
 Is
 Is
 Is
-1898490	Is
 Is
 Is
 Is
@@ -5485,7 +5775,6 @@ Is
 Is
 Is
 Is
-1898616	Is
 Is
 Is
 Is
@@ -5529,7 +5818,6 @@ Is
 Is
 Is
 Is
-1898661	Is
 Is
 Is
 Is
@@ -5693,7 +5981,6 @@ Is
 Is
 Is
 Is
-1898826	Is
 Is
 Is
 Is
@@ -6007,7 +6294,6 @@ Is
 Is
 Is
 Is
-1899141	Is
 Is
 Is
 Is
@@ -6073,7 +6359,6 @@ Is
 Is
 Is
 Is
-1899208	Is
 Is
 Is
 Is
@@ -6269,7 +6554,6 @@ Is
 Is
 Is
 Is
-1899405	Is
 Is
 Is
 Is
@@ -6311,7 +6595,6 @@ Is
 Is
 Is
 Is
-1899448	Is
 Is
 Is
 Is
@@ -6347,7 +6630,6 @@ Is
 Is
 Is
 Is
-1899485	Is
 Is
 Is
 Is
@@ -6591,7 +6873,6 @@ Is
 Is
 Is
 Is
-1899730	Is
 Is
 Is
 Is
@@ -6738,7 +7019,6 @@ Is
 Is
 Is
 Is
-1899878	Is
 Is
 Is
 Is
@@ -6789,7 +7069,6 @@ Is
 Is
 Is
 Is
-1899930	Is
 Is
 Is
 Is
@@ -6852,7 +7131,6 @@ Is
 Is
 Is
 Is
-1899994	Is
 Is
 Is
 Is
@@ -6897,7 +7175,6 @@ Is
 Is
 Is
 Is
-1900040	Is
 Is
 Is
 Is
@@ -7156,7 +7433,6 @@ Is
 Is
 Is
 Is
-1900300	Is
 Is
 Is
 Is
@@ -7247,7 +7523,6 @@ Is
 Is
 Is
 Is
-1900392	Is
 Is
 Is
 Is
@@ -7291,7 +7566,6 @@ Is
 Is
 Is
 Is
-1900437	Is
 Is
 Is
 Is
@@ -7427,7 +7701,6 @@ Is
 Is
 Is
 Is
-1900574	Is
 Is
 Is
 Is
@@ -7484,7 +7757,6 @@ Is
 Is
 Is
 Is
-1900632	Is
 Is
 Is
 Is
@@ -7574,7 +7846,6 @@ Is
 Is
 Is
 Is
-1900723	Is
 Is
 Is
 Is
@@ -7620,7 +7891,6 @@ Is
 Is
 Is
 Is
-1900770	Is
 Is
 Is
 Is
@@ -7834,7 +8104,6 @@ Is
 Is
 Is
 Is
-1900985	Is
 Is
 Is
 Is
@@ -7869,7 +8138,6 @@ Is
 Is
 Is
 Is
-1901021	Is
 Is
 Is
 Is
@@ -7934,7 +8202,6 @@ Is
 Is
 Is
 Is
-1901087	Is
 Is
 Is
 Is
@@ -7979,7 +8246,6 @@ Is
 Is
 Is
 Is
-1901133	Is
 Is
 Is
 Is
@@ -8014,7 +8280,6 @@ Is
 Is
 Is
 Is
-1901169	Is
 Is
 Is
 Is
@@ -8060,7 +8325,6 @@ Is
 Is
 Is
 Is
-1901216	Is
 Is
 Is
 Is
@@ -8074,7 +8338,6 @@ Is
 Is
 Is
 Is
-1901231	Is
 Is
 Is
 Is
@@ -8088,7 +8351,6 @@ Is
 Is
 Is
 Is
-1901246	Is
 Is
 Is
 Is
@@ -8103,7 +8365,6 @@ Is
 Is
 Is
 Is
-1901262	Is
 Is
 Is
 Is
@@ -8130,7 +8391,6 @@ Is
 Is
 Is
 Is
-1901290	Is
 Is
 Is
 Is
@@ -8174,7 +8434,6 @@ Is
 Is
 Is
 Is
-1901335	Is
 Is
 Is
 Is
@@ -8221,7 +8480,6 @@ Is
 Is
 Is
 Is
-1901383	Is
 Is
 Is
 Is
@@ -8270,7 +8528,6 @@ Is
 Is
 Is
 Is
-1901433	Is
 Is
 Is
 Is
@@ -8405,7 +8662,6 @@ Is
 Is
 Is
 Is
-1901569	Is
 Is
 Is
 Is
@@ -8426,7 +8682,6 @@ Is
 Is
 Is
 Is
-1901591	Is
 Is
 Is
 Is
@@ -8444,7 +8699,6 @@ Is
 Is
 Is
 Is
-1901610	Is
 Is
 Is
 Is
@@ -8462,7 +8716,6 @@ Is
 Is
 Is
 Is
-1901629	Is
 Is
 Is
 Is
@@ -8617,7 +8870,6 @@ Is
 Is
 Is
 Is
-1901785	Is
 Is
 Is
 Is
@@ -8778,7 +9030,6 @@ Is
 Is
 Is
 Is
-1901947	Is
 Is
 Is
 Is
@@ -8849,7 +9100,6 @@ Is
 Is
 Is
 Is
-1902019	Is
 Is
 Is
 Is
@@ -9067,7 +9317,6 @@ Is
 Is
 Is
 Is
-1902238	Is
 Is
 Is
 Is
@@ -9134,7 +9383,6 @@ Is
 Is
 Is
 Is
-1902306	Is
 Is
 Is
 Is
@@ -9201,7 +9449,6 @@ Is
 Is
 Is
 Is
-1902374	Is
 Is
 Is
 Is
@@ -9372,7 +9619,6 @@ Is
 Is
 Is
 Is
-1902546	Is
 Is
 Is
 Is
@@ -9533,7 +9779,6 @@ Is
 Is
 Is
 Is
-1902708	Is
 Is
 Is
 Is
@@ -9554,7 +9799,6 @@ Is
 Is
 Is
 Is
-1902730	Is
 Is
 Is
 Is
@@ -9657,7 +9901,6 @@ Is
 Is
 Is
 Is
-1902834	Is
 Is
 Is
 Is
@@ -9705,7 +9948,6 @@ Is
 Is
 Is
 Is
-1902883	Is
 Is
 Is
 Is
@@ -9798,7 +10040,6 @@ Is
 Is
 Is
 Is
-1902977	Is
 Is
 Is
 Is
@@ -10041,7 +10282,6 @@ Is
 Is
 Is
 Is
-1903221	Is
 Is
 Is
 Is
@@ -10150,7 +10390,6 @@ Is
 Is
 Is
 Is
-1903331	Is
 Is
 Is
 Is
@@ -10208,7 +10447,6 @@ Is
 Is
 Is
 Is
-1903390	Is
 Is
 Is
 Is
@@ -10598,7 +10836,6 @@ Is
 Is
 Is
 Is
-1903781	Is
 Is
 Is
 Is
@@ -10681,7 +10918,6 @@ Is
 Is
 Is
 Is
-1903865	Is
 Is
 Is
 Is
@@ -10926,7 +11162,6 @@ Is
 Is
 Is
 Is
-1904111	Is
 Is
 Is
 Is
@@ -11039,7 +11274,6 @@ Is
 Is
 Is
 Is
-1904225	Is
 Is
 Is
 Is
@@ -11080,7 +11314,6 @@ Is
 Is
 Is
 Is
-1904267	Is
 Is
 Is
 Is
@@ -11125,7 +11358,6 @@ Is
 Is
 Is
 Is
-1904313	Is
 Is
 Is
 Is
@@ -11182,7 +11414,6 @@ Is
 Is
 Is
 Is
-1904371	Is
 Is
 Is
 Is
@@ -11278,7 +11509,6 @@ Is
 Is
 Is
 Is
-1904468	Is
 Is
 Is
 Is
@@ -11343,7 +11573,6 @@ Is
 Is
 Is
 Is
-1904534	Is
 Is
 Is
 Is
@@ -11515,7 +11744,6 @@ Is
 Is
 Is
 Is
-1904707	Is
 Is
 Is
 Is
@@ -11770,7 +11998,6 @@ Is
 Is
 Is
 Is
-1904963	Is
 Is
 Is
 Is
@@ -11994,7 +12221,6 @@ Is
 Is
 Is
 Is
-1905188	Is
 Is
 Is
 Is
@@ -12134,7 +12360,6 @@ Is
 Is
 Is
 Is
-1905329	Is
 Is
 Is
 Is
@@ -12302,7 +12527,6 @@ Is
 Is
 Is
 Is
-1905498	Is
 Is
 Is
 Is
@@ -12330,7 +12554,6 @@ Is
 Is
 Is
 Is
-1905527	Is
 Is
 Is
 Is
@@ -12404,7 +12627,6 @@ Is
 Is
 Is
 Is
-1905602	Is
 Is
 Is
 Is
@@ -12584,7 +12806,6 @@ Is
 Is
 Is
 Is
-1905783	Is
 Is
 Is
 Is
@@ -12649,7 +12870,6 @@ Is
 Is
 Is
 Is
-1905849	Is
 Is
 Is
 Is
@@ -12726,7 +12946,6 @@ Is
 Is
 Is
 Is
-1905927	Is
 Is
 Is
 Is
@@ -12853,7 +13072,6 @@ Is
 Is
 Is
 Is
-1906055	Is
 Is
 Is
 Is
@@ -13022,7 +13240,6 @@ Is
 Is
 Is
 Is
-1906225	Is
 Is
 Is
 Is
@@ -13129,7 +13346,6 @@ Is
 Is
 Is
 Is
-1906333	Is
 Is
 Is
 Is
@@ -13343,7 +13559,6 @@ Is
 Is
 Is
 Is
-1906548	Is
 Is
 Is
 Is
@@ -13442,7 +13657,6 @@ Is
 Is
 Is
 Is
-1906648	Is
 Is
 Is
 Is
@@ -13479,7 +13693,6 @@ Is
 Is
 Is
 Is
-1906686	Is
 Is
 Is
 Is
@@ -13502,7 +13715,6 @@ Is
 Is
 Is
 Is
-1906710	Is
 Is
 Is
 Is
@@ -13586,7 +13798,6 @@ Is
 Is
 Is
 Is
-1906795	Is
 Is
 Is
 Is
@@ -13659,7 +13870,6 @@ Is
 Is
 Is
 Is
-1906869	Is
 Is
 Is
 Is
@@ -13733,7 +13943,6 @@ Is
 Is
 Is
 Is
-1906944	Is
 Is
 Is
 Is
@@ -13814,7 +14023,6 @@ Is
 Is
 Is
 Is
-1907026	Is
 Is
 Is
 Is
@@ -13859,7 +14067,6 @@ Is
 Is
 Is
 Is
-1907072	Is
 Is
 Is
 Is
@@ -13887,7 +14094,6 @@ Is
 Is
 Is
 Is
-1907101	Is
 Is
 Is
 Is
@@ -13929,7 +14135,6 @@ Is
 Is
 Is
 Is
-1907144	Is
 Is
 Is
 Is
@@ -13986,7 +14191,6 @@ Is
 Is
 Is
 Is
-1907202	Is
 Is
 Is
 Is
@@ -14028,7 +14232,6 @@ Is
 Is
 Is
 Is
-1907245	Is
 Is
 Is
 Is
@@ -14062,7 +14265,6 @@ Is
 Is
 Is
 Is
-1907280	Is
 Is
 Is
 Is
@@ -14112,7 +14314,6 @@ Is
 Is
 Is
 Is
-1907331	Is
 Is
 Is
 Is
@@ -14152,7 +14353,6 @@ Is
 Is
 Is
 Is
-1907372	Is
 Is
 Is
 Is
@@ -14180,7 +14380,6 @@ Is
 Is
 Is
 Is
-1907401	Is
 Is
 Is
 Is
@@ -14224,7 +14423,6 @@ Is
 Is
 Is
 Is
-1907446	Is
 Is
 Is
 Is
@@ -14248,7 +14446,6 @@ Is
 Is
 Is
 Is
-1907471	Is
 Is
 Is
 Is
@@ -14282,7 +14479,6 @@ Is
 Is
 Is
 Is
-1907506	Is
 Is
 Is
 Is
@@ -14360,7 +14556,6 @@ Is
 Is
 Is
 Is
-1907585	Is
 Is
 Is
 Is
@@ -14394,7 +14589,6 @@ Is
 Is
 Is
 Is
-1907620	Is
 Is
 Is
 Is
@@ -14432,7 +14626,6 @@ Is
 Is
 Is
 Is
-1907659	Is
 Is
 Is
 Is
@@ -14533,7 +14726,6 @@ Is
 Is
 Is
 Is
-1907761	Is
 Is
 Is
 Is
@@ -14575,7 +14767,6 @@ Is
 Is
 Is
 Is
-1907804	Is
 Is
 Is
 Is
@@ -14673,7 +14864,6 @@ Is
 Is
 Is
 Is
-1907903	Is
 Is
 Is
 Is
@@ -14717,7 +14907,6 @@ Is
 Is
 Is
 Is
-1907948	Is
 Is
 Is
 Is
@@ -14823,7 +15012,6 @@ Is
 Is
 Is
 Is
-1908055	Is
 Is
 Is
 Is
@@ -14952,7 +15140,6 @@ Is
 Is
 Is
 Is
-1908185	Is
 Is
 Is
 Is
@@ -14996,7 +15183,6 @@ Is
 Is
 Is
 Is
-1908230	Is
 Is
 Is
 Is
@@ -15085,7 +15271,6 @@ Is
 Is
 Is
 Is
-1908320	Is
 Is
 Is
 Is
@@ -15138,7 +15323,6 @@ Is
 Is
 Is
 Is
-1908374	Is
 Is
 Is
 Is
@@ -15199,7 +15383,6 @@ Is
 Is
 Is
 Is
-1908436	Is
 Is
 Is
 Is
@@ -15261,7 +15444,6 @@ Is
 Is
 Is
 Is
-1908499	Is
 Is
 Is
 Is
@@ -15314,7 +15496,6 @@ Is
 Is
 Is
 Is
-1908553	Is
 Is
 Is
 Is
@@ -15405,7 +15586,6 @@ Is
 Is
 Is
 Is
-1908645	Is
 Is
 Is
 Is
@@ -15521,7 +15701,6 @@ Is
 Is
 Is
 Is
-1908762	Is
 Is
 Is
 Is
@@ -15592,7 +15771,6 @@ Is
 Is
 Is
 Is
-1908834	Is
 Is
 Is
 Is
@@ -15682,7 +15860,6 @@ Is
 Is
 Is
 Is
-1908925	Is
 Is
 Is
 Is
@@ -15761,7 +15938,6 @@ Is
 Is
 Is
 Is
-1909005	Is
 Is
 Is
 Is
@@ -15808,7 +15984,6 @@ Is
 Is
 Is
 Is
-1909053	Is
 Is
 Is
 Is
@@ -15863,7 +16038,6 @@ Is
 Is
 Is
 Is
-1909109	Is
 Is
 Is
 Is
@@ -15930,7 +16104,6 @@ Is
 Is
 Is
 Is
-1909177	Is
 Is
 Is
 Is
@@ -16013,7 +16186,6 @@ Is
 Is
 Is
 Is
-1909261	Is
 Is
 Is
 Is
@@ -16167,7 +16339,6 @@ Is
 Is
 Is
 Is
-1909416	Is
 Is
 Is
 Is
@@ -16232,7 +16403,6 @@ Is
 Is
 Is
 Is
-1909482	Is
 Is
 Is
 Is
@@ -16290,7 +16460,6 @@ Is
 Is
 Is
 Is
-1909541	Is
 Is
 Is
 Is
@@ -16359,7 +16528,6 @@ Is
 Is
 Is
 Is
-1909611	Is
 Is
 Is
 Is
@@ -16513,7 +16681,6 @@ Is
 Is
 Is
 Is
-1909766	Is
 Is
 Is
 Is
@@ -16550,7 +16717,6 @@ Is
 Is
 Is
 Is
-1909804	Is
 Is
 Is
 Is
@@ -16651,7 +16817,6 @@ Is
 Is
 Is
 Is
-1909906	Is
 Is
 Is
 Is
@@ -16779,7 +16944,6 @@ Is
 Is
 Is
 Is
-1910035	Is
 Is
 Is
 Is
@@ -16802,7 +16966,6 @@ Is
 Is
 Is
 Is
-1910059	Is
 Is
 Is
 Is
@@ -16868,7 +17031,6 @@ Is
 Is
 Is
 Is
-1910129	Is
 Is
 Is
 Is
@@ -17158,7 +17320,6 @@ Is
 Is
 Is
 Is
-1910420	Is
 Is
 Is
 Is
@@ -17383,7 +17544,6 @@ Is
 Is
 Is
 Is
-1910646	Is
 Is
 Is
 Is
@@ -17405,7 +17565,6 @@ Is
 Is
 Is
 Is
-1910669	Is
 Is
 Is
 Is
@@ -17716,7 +17875,6 @@ Is
 Is
 Is
 Is
-1910981	Is
 Is
 Is
 Is
@@ -17827,7 +17985,6 @@ Is
 Is
 Is
 Is
-1911093	Is
 Is
 Is
 Is
@@ -17903,7 +18060,6 @@ Is
 Is
 Is
 Is
-1911170	Is
 Is
 Is
 Is
@@ -18231,7 +18387,6 @@ Is
 Is
 Is
 Is
-1911499	Is
 Is
 Is
 Is
@@ -18254,7 +18409,6 @@ Is
 Is
 Is
 Is
-1911523	Is
 Is
 Is
 Is
@@ -18344,7 +18498,6 @@ Is
 Is
 Is
 Is
-1911614	Is
 Is
 Is
 Is
@@ -18364,7 +18517,6 @@ Is
 Is
 Is
 Is
-1911635	Is
 Is
 Is
 Is
@@ -18669,7 +18821,6 @@ Is
 Is
 Is
 Is
-1911941	Is
 Is
 Is
 Is
@@ -18736,7 +18887,6 @@ Is
 Is
 Is
 Is
-1912009	Is
 Is
 Is
 Is
@@ -18809,7 +18959,6 @@ Is
 Is
 Is
 Is
-1912083	Is
 Is
 Is
 Is
@@ -18917,7 +19066,6 @@ Is
 Is
 Is
 Is
-1912192	Is
 Is
 Is
 Is
@@ -19221,7 +19369,6 @@ Is
 Is
 Is
 Is
-1912497	Is
 Is
 Is
 Is
@@ -19279,7 +19426,6 @@ Is
 Is
 Is
 Is
-1912556	Is
 Is
 Is
 Is
@@ -19354,7 +19500,6 @@ Is
 Is
 Is
 Is
-1912632	Is
 Is
 Is
 Is
@@ -19383,7 +19528,6 @@ Is
 Is
 Is
 Is
-1912662	Is
 Is
 Is
 Is
@@ -19433,7 +19577,6 @@ Is
 Is
 Is
 Is
-1912713	Is
 Is
 Is
 Is
@@ -19536,7 +19679,6 @@ Is
 Is
 Is
 Is
-1912817	Is
 Is
 Is
 Is
@@ -19621,7 +19763,6 @@ Is
 Is
 Is
 Is
-1912903	Is
 Is
 Is
 Is
@@ -19756,7 +19897,6 @@ Is
 Is
 Is
 Is
-1913039	Is
 Is
 Is
 Is
@@ -19793,7 +19933,6 @@ Is
 Is
 Is
 Is
-1913077	Is
 Is
 Is
 Is
@@ -19874,7 +20013,6 @@ Is
 Is
 Is
 Is
-1913159	Is
 Is
 Is
 Is
@@ -19889,7 +20027,6 @@ Is
 Is
 Is
 Is
-1913175	Is
 Is
 Is
 Is
@@ -19945,7 +20082,6 @@ Is
 Is
 Is
 Is
-1913232	Is
 Is
 Is
 Is
@@ -19966,7 +20102,6 @@ Is
 Is
 Is
 Is
-1913254	Is
 Is
 Is
 Is
@@ -19988,7 +20123,6 @@ Is
 Is
 Is
 Is
-1913277	Is
 Is
 Is
 Is
@@ -20051,7 +20185,6 @@ Is
 Is
 Is
 Is
-1913342	Is
 Is
 Is
 Is
@@ -20077,7 +20210,6 @@ Is
 Is
 Is
 Is
-1913369	Is
 Is
 Is
 Is
@@ -20213,7 +20345,6 @@ Is
 Is
 Is
 Is
-1913506	Is
 Is
 Is
 Is
@@ -20324,7 +20455,6 @@ Is
 Is
 Is
 Is
-1913618	Is
 Is
 Is
 Is
@@ -20362,7 +20492,6 @@ Is
 Is
 Is
 Is
-1913657	Is
 Is
 Is
 Is
@@ -20421,7 +20550,6 @@ Is
 Is
 Is
 Is
-1913717	Is
 Is
 Is
 Is
@@ -20515,7 +20643,6 @@ Is
 Is
 Is
 Is
-1913812	Is
 Is
 Is
 Is
@@ -20561,7 +20688,6 @@ Is
 Is
 Is
 Is
-1913859	Is
 Is
 Is
 Is
@@ -20655,7 +20781,6 @@ Is
 Is
 Is
 Is
-1913954	Is
 Is
 Is
 Is
@@ -20696,7 +20821,6 @@ Is
 Is
 Is
 Is
-1913996	Is
 Is
 Is
 Is
@@ -20798,7 +20922,6 @@ Is
 Is
 Is
 Is
-1914099	Is
 Is
 Is
 Is
@@ -20841,7 +20964,6 @@ Is
 Is
 Is
 Is
-1914143	Is
 Is
 Is
 Is
@@ -20932,7 +21054,6 @@ Is
 Is
 Is
 Is
-1914235	Is
 Is
 Is
 Is
@@ -20985,7 +21106,6 @@ Is
 Is
 Is
 Is
-1914289	Is
 Is
 Is
 Is
@@ -21027,7 +21147,6 @@ Is
 Is
 Is
 Is
-1914332	Is
 Is
 Is
 Is
@@ -21054,7 +21173,6 @@ Is
 Is
 Is
 Is
-1914360	Is
 Is
 Is
 Is
@@ -21142,7 +21260,6 @@ Is
 Is
 Is
 Is
-1914449	Is
 Is
 Is
 Is
@@ -21193,7 +21310,6 @@ Is
 Is
 Is
 Is
-1914501	Is
 Is
 Is
 Is
@@ -21205,7 +21321,6 @@ Is
 Is
 Is
 Is
-1914514	Is
 Is
 Is
 Is
@@ -21236,7 +21351,6 @@ Is
 Is
 Is
 Is
-1914546	Is
 Is
 Is
 Is
@@ -21246,7 +21360,6 @@ Is
 Is
 Is
 Is
-1914557	Is
 Is
 Is
 Is
@@ -21256,7 +21369,6 @@ Is
 Is
 Is
 Is
-1914568	Is
 Is
 Is
 Is
@@ -21317,7 +21429,6 @@ Is
 Is
 Is
 Is
-1914630	Is
 Is
 Is
 Is
@@ -21385,7 +21496,6 @@ Is
 Is
 Is
 Is
-1914699	Is
 Is
 Is
 Is
@@ -21432,7 +21542,6 @@ Is
 Is
 Is
 Is
-1914747	Is
 Is
 Is
 Is
@@ -21461,7 +21570,6 @@ Is
 Is
 Is
 Is
-1914777	Is
 Is
 Is
 Is
@@ -21652,7 +21760,6 @@ Is
 Is
 Is
 Is
-1914969	Is
 Is
 Is
 Is
@@ -21680,7 +21787,6 @@ Is
 Is
 Is
 Is
-1914998	Is
 Is
 Is
 Is
@@ -21706,7 +21812,6 @@ Is
 Is
 Is
 Is
-1915025	Is
 Is
 Is
 Is
@@ -21791,7 +21896,6 @@ Is
 Is
 Is
 Is
-1915111	Is
 Is
 Is
 Is
@@ -21919,7 +22023,6 @@ Is
 Is
 Is
 Is
-1915240	Is
 Is
 Is
 Is
@@ -21938,7 +22041,6 @@ Is
 Is
 Is
 Is
-1915260	Is
 Is
 Is
 Is
@@ -21951,7 +22053,6 @@ Is
 Is
 Is
 Is
-1915274	Is
 Is
 Is
 Is
@@ -21973,7 +22074,6 @@ Is
 Is
 Is
 Is
-1915297	Is
 Is
 Is
 Is
@@ -22031,7 +22131,6 @@ Is
 Is
 Is
 Is
-1915356	Is
 Is
 Is
 Is
@@ -22088,7 +22187,6 @@ Is
 Is
 Is
 Is
-1915414	Is
 Is
 Is
 Is
@@ -22103,7 +22201,6 @@ Is
 Is
 Is
 Is
-1915430	Is
 Is
 Is
 Is
@@ -22271,7 +22368,6 @@ Is
 Is
 Is
 Is
-1915599	Is
 Is
 Is
 Is
@@ -22299,7 +22395,6 @@ Is
 Is
 Is
 Is
-1915628	Is
 Is
 Is
 Is
@@ -22336,7 +22431,6 @@ Is
 Is
 Is
 Is
-1915666	Is
 Is
 Is
 Is
@@ -22391,7 +22485,6 @@ Is
 Is
 Is
 Is
-1915722	Is
 Is
 Is
 Is
@@ -22450,7 +22543,6 @@ Is
 Is
 Is
 Is
-1915782	Is
 Is
 Is
 Is
@@ -22478,7 +22570,6 @@ Is
 Is
 Is
 Is
-1915811	Is
 Is
 Is
 Is
@@ -22530,7 +22621,6 @@ Is
 Is
 Is
 Is
-1915864	Is
 Is
 Is
 Is
@@ -22763,7 +22853,6 @@ Is
 Is
 Is
 Is
-1916098	Is
 Is
 Is
 Is
@@ -22810,7 +22899,6 @@ Is
 Is
 Is
 Is
-1916146	Is
 Is
 Is
 Is
@@ -22929,7 +23017,6 @@ Is
 Is
 Is
 Is
-1916266	Is
 Is
 Is
 Is
@@ -22953,7 +23040,6 @@ Is
 Is
 Is
 Is
-1916291	Is
 Is
 Is
 Is
@@ -23038,7 +23124,6 @@ Is
 Is
 Is
 Is
-1916377	Is
 Is
 Is
 Is
@@ -23093,7 +23178,6 @@ Is
 Is
 Is
 Is
-1916433	Is
 Is
 Is
 Is
@@ -23143,7 +23227,6 @@ Is
 Is
 Is
 Is
-1916484	Is
 Is
 Is
 Is
@@ -23193,7 +23276,6 @@ Is
 Is
 Is
 Is
-1916535	Is
 Is
 Is
 Is
@@ -23214,7 +23296,6 @@ Is
 Is
 Is
 Is
-1916557	Is
 Is
 Is
 Is
@@ -23272,7 +23353,6 @@ Is
 Is
 Is
 Is
-1916616	Is
 Is
 Is
 Is
@@ -23303,7 +23383,6 @@ Is
 Is
 Is
 Is
-1916648	Is
 Is
 Is
 Is
@@ -23402,7 +23481,6 @@ Is
 Is
 Is
 Is
-1916748	Is
 Is
 Is
 Is
@@ -23418,7 +23496,6 @@ Is
 Is
 Is
 Is
-1916765	Is
 Is
 Is
 Is
@@ -23546,7 +23623,6 @@ Is
 Is
 Is
 Is
-1916894	Is
 Is
 Is
 Is
@@ -23597,7 +23673,6 @@ Is
 Is
 Is
 Is
-1916946	Is
 Is
 Is
 Is
@@ -23607,7 +23682,6 @@ Is
 Is
 Is
 Is
-1916957	Is
 Is
 Is
 Is
@@ -23619,7 +23693,6 @@ Is
 Is
 Is
 Is
-1916970	Is
 Is
 Is
 Is
@@ -23654,7 +23727,6 @@ Is
 Is
 Is
 Is
-1917006	Is
 Is
 Is
 Is
@@ -23691,7 +23763,6 @@ Is
 Is
 Is
 Is
-1917044	Is
 Is
 Is
 Is
@@ -23703,7 +23774,6 @@ Is
 Is
 Is
 Is
-1917057	Is
 Is
 Is
 Is
@@ -23729,7 +23799,6 @@ Is
 Is
 Is
 Is
-1917084	Is
 Is
 Is
 Is
@@ -23883,7 +23952,6 @@ Is
 Is
 Is
 Is
-1917239	Is
 Is
 Is
 Is
@@ -23946,7 +24014,6 @@ Is
 Is
 Is
 Is
-1917303	Is
 Is
 Is
 Is
@@ -23997,7 +24064,6 @@ Is
 Is
 Is
 Is
-1917355	Is
 Is
 Is
 Is
@@ -24012,7 +24078,6 @@ Is
 Is
 Is
 Is
-1917371	Is
 Is
 Is
 Is
@@ -24051,7 +24116,6 @@ Is
 Is
 Is
 Is
-1917411	Is
 Is
 Is
 Is
@@ -24119,7 +24183,6 @@ Is
 Is
 Is
 Is
-1917480	Is
 Is
 Is
 Is
@@ -24170,7 +24233,6 @@ Is
 Is
 Is
 Is
-1917532	Is
 Is
 Is
 Is
@@ -24184,7 +24246,6 @@ Is
 Is
 Is
 Is
-1917547	Is
 Is
 Is
 Is
@@ -24221,7 +24282,6 @@ Is
 Is
 Is
 Is
-1917585	Is
 Is
 Is
 Is
@@ -24295,7 +24355,6 @@ Is
 Is
 Is
 Is
-1917660	Is
 Is
 Is
 Is
@@ -24357,7 +24416,6 @@ Is
 Is
 Is
 Is
-1917723	Is
 Is
 Is
 Is
@@ -24394,7 +24452,6 @@ Is
 Is
 Is
 Is
-1917761	Is
 Is
 Is
 Is
@@ -24463,7 +24520,6 @@ Is
 Is
 Is
 Is
-1917831	Is
 Is
 Is
 Is
@@ -24534,7 +24590,6 @@ Is
 Is
 Is
 Is
-1917903	Is
 Is
 Is
 Is
@@ -24576,7 +24631,6 @@ Is
 Is
 Is
 Is
-1917946	Is
 Is
 Is
 Is
@@ -24627,7 +24681,6 @@ Is
 Is
 Is
 Is
-1917998	Is
 Is
 Is
 Is
@@ -24730,7 +24783,6 @@ Is
 Is
 Is
 Is
-1918102	Is
 Is
 Is
 Is
@@ -24784,7 +24836,6 @@ Is
 Is
 Is
 Is
-1918158	Is
 Is
 Is
 Is
@@ -24809,7 +24860,6 @@ Is
 Is
 Is
 Is
-1918184	Is
 Is
 Is
 Is
@@ -24876,7 +24926,6 @@ Is
 Is
 Is
 Is
-1918252	Is
 Is
 Is
 Is
@@ -25059,7 +25108,6 @@ Is
 Is
 Is
 Is
-1918436	Is
 Is
 Is
 Is
@@ -25117,7 +25165,6 @@ Is
 Is
 Is
 Is
-1918495	Is
 Is
 Is
 Is
@@ -25154,7 +25201,6 @@ Is
 Is
 Is
 Is
-1918533	Is
 Is
 Is
 Is
@@ -25165,7 +25211,6 @@ Is
 Is
 Is
 Is
-1918545	Is
 Is
 Is
 Is
@@ -25262,7 +25307,6 @@ Is
 Is
 Is
 Is
-1918643	Is
 Is
 Is
 Is
@@ -25319,7 +25363,6 @@ Is
 Is
 Is
 Is
-1918701	Is
 Is
 Is
 Is
@@ -25379,7 +25422,6 @@ Is
 Is
 Is
 Is
-1918762	Is
 Is
 Is
 Is
@@ -25468,7 +25510,6 @@ Is
 Is
 Is
 Is
-1918852	Is
 Is
 Is
 Is
@@ -25485,7 +25526,6 @@ Is
 Is
 Is
 Is
-1918870	Is
 Is
 Is
 Is
@@ -25540,7 +25580,6 @@ Is
 Is
 Is
 Is
-1918926	Is
 Is
 Is
 Is
@@ -25623,7 +25662,6 @@ Is
 Is
 Is
 Is
-1919010	Is
 Is
 Is
 Is
@@ -25723,7 +25761,6 @@ Is
 Is
 Is
 Is
-1919111	Is
 Is
 Is
 Is
@@ -25916,7 +25953,6 @@ Is
 Is
 Is
 Is
-1919305	Is
 Is
 Is
 Is
@@ -25926,7 +25962,6 @@ Is
 Is
 Is
 Is
-1919316	Is
 Is
 Is
 Is
@@ -25940,7 +25975,6 @@ Is
 Is
 Is
 Is
-1919331	Is
 Is
 Is
 Is
@@ -26065,7 +26099,6 @@ Is
 Is
 Is
 Is
-1919457	Is
 Is
 Is
 Is
@@ -26155,7 +26188,6 @@ Is
 Is
 Is
 Is
-1919548	Is
 Is
 Is
 Is
@@ -26175,7 +26207,6 @@ Is
 Is
 Is
 Is
-1919569	Is
 Is
 Is
 Is
@@ -26259,7 +26290,6 @@ Is
 Is
 Is
 Is
-1919654	Is
 Is
 Is
 Is
@@ -26336,7 +26366,6 @@ Is
 Is
 Is
 Is
-1919732	Is
 Is
 Is
 Is
@@ -26660,7 +26689,6 @@ Is
 Is
 Is
 Is
-1920057	Is
 Is
 Is
 Is
@@ -26765,7 +26793,6 @@ Is
 Is
 Is
 Is
-1920163	Is
 Is
 Is
 Is
@@ -26801,7 +26828,6 @@ Is
 Is
 Is
 Is
-1920200	Is
 Is
 Is
 Is
@@ -27207,7 +27233,6 @@ Is
 Is
 Is
 Is
-1920607	Is
 Is
 Is
 Is
@@ -27218,7 +27243,6 @@ Is
 Is
 Is
 Is
-1920619	Is
 Is
 Is
 Is
@@ -27404,7 +27428,6 @@ Is
 Is
 Is
 Is
-1920806	Is
 Is
 Is
 Is
@@ -27634,7 +27657,6 @@ Is
 Is
 Is
 Is
-1921037	Is
 Is
 Is
 Is
@@ -27692,7 +27714,6 @@ Is
 Is
 Is
 Is
-1921096	Is
 Is
 Is
 Is
@@ -28201,7 +28222,6 @@ Is
 Is
 Is
 Is
-1921606	Is
 Is
 Is
 Is
@@ -28282,7 +28302,6 @@ Is
 Is
 Is
 Is
-1921688	Is
 Is
 Is
 Is
@@ -28329,7 +28348,6 @@ Is
 Is
 Is
 Is
-1921736	Is
 Is
 Is
 Is
@@ -28374,7 +28392,6 @@ Is
 Is
 Is
 Is
-1921782	Is
 Is
 Is
 Is
@@ -28392,7 +28409,6 @@ Is
 Is
 Is
 Is
-1921801	Is
 Is
 Is
 Is
@@ -28444,7 +28460,6 @@ Is
 Is
 Is
 Is
-1921854	Is
 Is
 Is
 Is
@@ -28500,7 +28515,6 @@ Is
 Is
 Is
 Is
-1921911	Is
 Is
 Is
 Is
@@ -28557,7 +28571,6 @@ Is
 Is
 Is
 Is
-1921969	Is
 Is
 Is
 Is
@@ -28711,7 +28724,6 @@ Is
 Is
 Is
 Is
-1922124	Is
 Is
 Is
 Is
@@ -28824,7 +28836,6 @@ Is
 Is
 Is
 Is
-1922238	Is
 Is
 Is
 Is
@@ -28846,7 +28857,6 @@ Is
 Is
 Is
 Is
-1922261	Is
 Is
 Is
 Is
@@ -28917,7 +28927,6 @@ Is
 Is
 Is
 Is
-1922333	Is
 Is
 Is
 Is
@@ -28948,7 +28957,6 @@ Is
 Is
 Is
 Is
-1922365	Is
 Is
 Is
 Is
@@ -29008,7 +29016,6 @@ Is
 Is
 Is
 Is
-1922426	Is
 Is
 Is
 Is
@@ -29113,7 +29120,6 @@ Is
 Is
 Is
 Is
-1922532	Is
 Is
 Is
 Is
@@ -29161,7 +29167,6 @@ Is
 Is
 Is
 Is
-1922581	Is
 Is
 Is
 Is
@@ -29173,7 +29178,6 @@ Is
 Is
 Is
 Is
-1922594	Is
 Is
 Is
 Is
@@ -29199,7 +29203,6 @@ Is
 Is
 Is
 Is
-1922621	Is
 Is
 Is
 Is
@@ -29275,7 +29278,6 @@ Is
 Is
 Is
 Is
-1922698	Is
 Is
 Is
 Is
@@ -29289,7 +29291,6 @@ Is
 Is
 Is
 Is
-1922714	Is
 Is
 Is
 Is
@@ -29389,7 +29390,6 @@ Is
 Is
 Is
 Is
-1922815	Is
 Is
 Is
 Is
@@ -29515,7 +29515,6 @@ Is
 Is
 Is
 Is
-1922942	Is
 Is
 Is
 Is
@@ -29572,7 +29571,6 @@ Is
 Is
 Is
 Is
-1923002	Is
 Is
 Is
 Is
@@ -29658,7 +29656,6 @@ Is
 Is
 Is
 Is
-1923089	Is
 Is
 Is
 Is
@@ -29941,7 +29938,6 @@ Is
 Is
 Is
 Is
-1923373	Is
 Is
 Is
 Is
@@ -30015,7 +30011,6 @@ Is
 Is
 Is
 Is
-1923448	Is
 Is
 Is
 Is
@@ -30025,7 +30020,6 @@ Is
 Is
 Is
 Is
-1923459	Is
 Is
 Is
 Is
@@ -30188,7 +30182,6 @@ Is
 Is
 Is
 Is
-1923623	Is
 Is
 Is
 Is
@@ -30379,7 +30372,6 @@ Is
 Is
 Is
 Is
-1923815	Is
 Is
 Is
 Is
@@ -30521,7 +30513,6 @@ Is
 Is
 Is
 Is
-1923959	Is
 Is
 Is
 Is
@@ -30667,7 +30658,6 @@ Is
 Is
 Is
 Is
-1924107	Is
 Is
 Is
 Is
@@ -30796,7 +30786,6 @@ Is
 Is
 Is
 Is
-1924237	Is
 Is
 Is
 Is
@@ -30858,7 +30847,6 @@ Is
 Is
 Is
 Is
-1924300	Is
 Is
 Is
 Is
@@ -31081,7 +31069,6 @@ Is
 Is
 Is
 Is
-1924524	Is
 Is
 Is
 Is
@@ -31223,7 +31210,6 @@ Is
 Is
 Is
 Is
-1924667	Is
 Is
 Is
 Is
@@ -31396,7 +31382,6 @@ Is
 Is
 Is
 Is
-1924841	Is
 Is
 Is
 Is
@@ -31467,7 +31452,6 @@ Is
 Is
 Is
 Is
-1924913	Is
 Is
 Is
 Is
@@ -31653,7 +31637,6 @@ Is
 Is
 Is
 Is
-1925100	Is
 Is
 Is
 Is
@@ -31788,7 +31771,6 @@ Is
 Is
 Is
 Is
-1925236	Is
 Is
 Is
 Is
@@ -31888,7 +31870,6 @@ Is
 Is
 Is
 Is
-1925337	Is
 Is
 Is
 Is
@@ -32034,8 +32015,6 @@ Is
 Is
 Is
 Is
-1925484	Is
-1925486	Is
 Is
 Is
 Is
@@ -32110,7 +32089,6 @@ Is
 Is
 Is
 Is
-1925563	Is
 Is
 Is
 Is
@@ -32240,7 +32218,6 @@ Is
 Is
 Is
 Is
-1925694	Is
 Is
 Is
 Is
@@ -32317,7 +32294,6 @@ Is
 Is
 Is
 Is
-1925772	Is
 Is
 Is
 Is
@@ -32539,7 +32515,6 @@ Is
 Is
 Is
 Is
-1925995	Is
 Is
 Is
 Is
@@ -32562,7 +32537,6 @@ Is
 Is
 Is
 Is
-1926019	Is
 Is
 Is
 Is
@@ -32619,7 +32593,6 @@ Is
 Is
 Is
 Is
-1926077	Is
 Is
 Is
 Is
@@ -32707,7 +32680,6 @@ Is
 Is
 Is
 Is
-1926166	Is
 Is
 Is
 Is
@@ -32883,7 +32855,6 @@ Is
 Is
 Is
 Is
-1926343	Is
 Is
 Is
 Is
@@ -32921,13 +32892,11 @@ Is
 Is
 Is
 Is
-1926382	Is
 Is
 Is
 Is
 Is
 Is
-1926389	Is
 Is
 Is
 Is
@@ -32955,7 +32924,6 @@ Is
 Is
 Is
 Is
-1926419	Is
 Is
 Is
 Is
@@ -33045,7 +33013,6 @@ Is
 Is
 Is
 Is
-1926511	Is
 Is
 Is
 Is
@@ -33182,7 +33149,6 @@ Is
 Is
 Is
 Is
-1926649	Is
 Is
 Is
 Is
@@ -33220,7 +33186,6 @@ Is
 Is
 Is
 Is
-1926688	Is
 Is
 Is
 Is
@@ -33300,7 +33265,6 @@ Is
 Is
 Is
 Is
-1926769	Is
 Is
 Is
 Is
@@ -33310,7 +33274,6 @@ Is
 Is
 Is
 Is
-1926781	Is
 Is
 Is
 Is
@@ -33389,7 +33352,6 @@ Is
 Is
 Is
 Is
-1926861	Is
 Is
 Is
 Is
@@ -33424,7 +33386,6 @@ Is
 Is
 Is
 Is
-1926897	Is
 Is
 Is
 Is
@@ -33569,7 +33530,6 @@ Is
 Is
 Is
 Is
-1927045	Is
 Is
 Is
 Is
@@ -33599,7 +33559,6 @@ Is
 Is
 Is
 Is
-1927076	Is
 Is
 Is
 Is
@@ -33773,7 +33732,6 @@ Is
 Is
 Is
 Is
-1927251	Is
 Is
 Is
 Is
@@ -33788,7 +33746,6 @@ Is
 Is
 Is
 Is
-1927268	Is
 Is
 Is
 Is
@@ -33869,7 +33826,6 @@ Is
 Is
 Is
 Is
-1927350	Is
 Is
 Is
 Is
@@ -33923,7 +33879,6 @@ Is
 Is
 Is
 Is
-1927405	Is
 Is
 Is
 Is
@@ -33971,7 +33926,6 @@ Is
 Is
 Is
 Is
-1927454	Is
 Is
 Is
 Is
@@ -34098,7 +34052,6 @@ Is
 Is
 Is
 Is
-1927583	Is
 Is
 Is
 Is
@@ -34129,7 +34082,6 @@ Is
 Is
 Is
 Is
-1927615	Is
 Is
 Is
 Is
@@ -34224,7 +34176,6 @@ Is
 Is
 Is
 Is
-1927712	Is
 Is
 Is
 Is
@@ -34243,7 +34194,6 @@ Is
 Is
 Is
 Is
-1927732	Is
 Is
 Is
 Is
@@ -34288,7 +34238,6 @@ Is
 Is
 Is
 Is
-1927778	Is
 Is
 Is
 Is
@@ -34360,7 +34309,6 @@ Is
 Is
 Is
 Is
-1927851	Is
 Is
 Is
 Is
@@ -34419,7 +34367,6 @@ Is
 Is
 Is
 Is
-1927911	Is
 Is
 Is
 Is
@@ -34530,7 +34477,6 @@ Is
 Is
 Is
 Is
-1928023	Is
 Is
 Is
 Is
@@ -34614,7 +34560,6 @@ Is
 Is
 Is
 Is
-1928108	Is
 Is
 Is
 Is
@@ -34636,7 +34581,6 @@ Is
 Is
 Is
 Is
-1928131	Is
 Is
 Is
 Is
@@ -34957,7 +34901,6 @@ Is
 Is
 Is
 Is
-1928453	Is
 Is
 Is
 Is
@@ -35042,7 +34985,6 @@ Is
 Is
 Is
 Is
-1928539	Is
 Is
 Is
 Is
@@ -35125,7 +35067,6 @@ Is
 Is
 Is
 Is
-1928623	Is
 Is
 Is
 Is
@@ -35289,7 +35230,6 @@ Is
 Is
 Is
 Is
-1928788	Is
 Is
 Is
 Is
@@ -35664,7 +35604,6 @@ Is
 Is
 Is
 Is
-1929164	Is
 Is
 Is
 Is
@@ -36129,7 +36068,6 @@ Is
 Is
 Is
 Is
-1929630	Is
 Is
 Is
 Is
@@ -36148,7 +36086,6 @@ Is
 Is
 Is
 Is
-1929650	Is
 Is
 Is
 Is
@@ -36200,7 +36137,6 @@ Is
 Is
 Is
 Is
-1929703	Is
 Is
 Is
 Is
@@ -36542,7 +36478,6 @@ Is
 Is
 Is
 Is
-1930046	Is
 Is
 Is
 Is
@@ -37496,7 +37431,6 @@ Is
 Is
 Is
 Is
-1931002	Is
 Is
 Is
 Is
@@ -37603,10 +37537,8 @@ Is
 Is
 Is
 Is
-1931110	Is
 Is
 Is
-1931114	Is
 Is
 Is
 Is
@@ -37621,7 +37553,6 @@ Is
 Is
 Is
 Is
-1931130	Is
 Is
 Is
 Is
@@ -37641,7 +37572,6 @@ Is
 Is
 Is
 Is
-1931151	Is
 Is
 Is
 Is
@@ -37700,7 +37630,6 @@ Is
 Is
 Is
 Is
-1931211	Is
 Is
 Is
 Is
@@ -37791,7 +37720,6 @@ Is
 Is
 Is
 Is
-1931305	Is
 Is
 Is
 Is
@@ -37950,7 +37878,79 @@ Is
 Is
 Is
 Is
-1931465	Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
 Is
 Is
 Is
@@ -38226,7 +38226,6 @@ Ps
 Ps
 Ps
 Ps
-1931742	Ps
 Ps
 Ps
 Ps
@@ -38346,7 +38345,6 @@ Ps
 Ps
 Ps
 Ps
-1931863	Ps
 Ps
 Ps
 Ps
@@ -38406,8 +38404,6 @@ Ps
 Ps
 Ps
 Ps
-1931924	Ps
-1931926	Ps
 Ps
 Ps
 Ps
@@ -38416,7 +38412,6 @@ Ps
 Ps
 Ps
 Ps
-1931936	Ps
 Ps
 Ps
 Ps
@@ -38429,14 +38424,11 @@ Ps
 Ps
 Ps
 Ps
-1Q10
-1Q10
-1Q10
-1931954	1Q10
-1Q10
-1Q10
-1Q10
-1931959	1Q10
+Ps
+Ps
+Ps
+Ps
+Ps
 1Q10
 1Q10
 1Q10
@@ -38490,6 +38482,14 @@ Ps
 1Q10
 1Q10
 1Q10
+1Q10
+1Q10
+1Q10
+1Q10
+1Q10
+1Q10
+1Q10
+1Q10
 Ps
 Ps
 Ps
@@ -38690,7 +38690,7 @@ Ps
 Ps
 Ps
 Ps
-1932214	Ps
+Ps
 Ps
 Ps
 Ps
@@ -39883,7 +39883,6 @@ Dan
 Dan
 Dan
 Dan
-1933408	Dan
 Dan
 Dan
 Dan
@@ -39971,7 +39970,6 @@ Dan
 Dan
 Dan
 Dan
-1933497	Dan
 Dan
 Dan
 Dan
@@ -40005,7 +40003,6 @@ Dan
 Dan
 Dan
 Dan
-1933532	Dan
 Dan
 Dan
 Dan
@@ -40116,7 +40113,6 @@ Dan
 Dan
 Dan
 Dan
-1933645	Dan
 Dan
 Dan
 Dan
@@ -40216,6 +40212,10 @@ Dan
 Dan
 Dan
 Dan
+Dan
+Dan
+Dan
+Dan
 Gen
 Gen
 Gen
@@ -40322,6 +40322,10 @@ Gen
 Gen
 Gen
 Gen
+Ex
+Ex
+Ex
+Ex
 Ex
 Ex
 Ex
@@ -40409,10 +40413,8 @@ Ex
 Ex
 Ex
 Ex
-1933939	Ex
 Ex
 Ex
-1933943	Ex
 Ex
 Ex
 Ex
@@ -40576,7 +40578,6 @@ Ex
 Ex
 Ex
 Ex
-1934108	Ex
 Ex
 Ex
 Ex
@@ -40750,7 +40751,6 @@ Ex
 Ex
 Ex
 Ex
-1934283	Ex
 Ex
 Ex
 Ex
@@ -41110,11 +41110,11 @@ Ex
 2Q2
 2Q2
 2Q2
-1934644	2Q2
 2Q2
 2Q2
 2Q2
 2Q2
+2Q2
 Ex
 Ex
 Ex
@@ -41351,7 +41351,6 @@ Ex
 Ex
 Ex
 Ex
-1934886	Ex
 Ex
 Ex
 Ex
@@ -41372,7 +41371,6 @@ Ex
 Ex
 Ex
 Ex
-1934908	Ex
 Ex
 Ex
 Ex
@@ -41440,7 +41438,9 @@ Ex
 Ex
 Ex
 Ex
-1934977	Ex
+Ex
+Ex
+Ex
 Ex
 Ex
 Ex
@@ -41704,7 +41704,6 @@ Lev
 Lev
 Lev
 Lev
-1935242	Lev
 Lev
 Lev
 Lev
@@ -41726,6 +41725,7 @@ Lev
 Lev
 Lev
 Lev
+Lev
 Num
 Num
 Num
@@ -41773,7 +41773,6 @@ Num
 Num
 Num
 Num
-1935312	Num
 Num
 Num
 Num
@@ -41844,7 +41843,6 @@ Num
 Num
 Num
 Num
-1935384	Num
 Num
 Num
 Num
@@ -41935,7 +41933,6 @@ Num
 Num
 Num
 Num
-1935478	Num
 Num
 Num
 Num
@@ -42065,6 +42062,10 @@ Num
 Num
 Num
 Num
+Num
+Num
+Num
+Deut
 Deut
 Deut
 Deut
@@ -42177,7 +42178,6 @@ Deut
 Deut
 Deut
 Deut
-1935722	Deut
 Deut
 Deut
 Deut
@@ -42310,7 +42310,6 @@ Deut
 Deut
 Deut
 Deut
-1935856	Deut
 Deut
 Deut
 Deut
@@ -42337,7 +42336,6 @@ Deut
 Deut
 Deut
 Deut
-1935884	Deut
 Deut
 Deut
 Deut
@@ -42376,6 +42374,10 @@ Deut
 Deut
 Deut
 Deut
+Deut
+Deut
+Jer
+Jer
 Jer
 Jer
 Jer
@@ -42390,7 +42392,6 @@ Jer
 Jer
 Jer
 Jer
-1935938	Jer
 Jer
 Jer
 Jer
@@ -42845,7 +42846,6 @@ Jer
 Jer
 Jer
 Jer
-1936394	Jer
 Jer
 Jer
 Jer
@@ -44208,12 +44208,12 @@ Ruth
 2Q17
 2Q17
 2Q17
-1937758	2Q17
 2Q17
 2Q17
 2Q17
 2Q17
 2Q17
+2Q17
 Ezek
 Ezek
 Ezek
@@ -44351,7 +44351,6 @@ Lam
 Lam
 Lam
 Lam
-1937902	Lam
 Lam
 Lam
 Lam
@@ -44360,7 +44359,6 @@ Lam
 Lam
 Lam
 Lam
-1937912	Lam
 Lam
 Lam
 Lam
@@ -44374,7 +44372,6 @@ Lam
 Lam
 Lam
 Lam
-1937927	Lam
 Lam
 Lam
 Lam
@@ -44384,7 +44381,6 @@ Lam
 Lam
 Lam
 Lam
-1937938	Lam
 Lam
 Lam
 Lam
@@ -44399,13 +44395,11 @@ Lam
 Lam
 Lam
 Lam
-1937954	Lam
 Lam
 Lam
 Lam
 Lam
 Lam
-1937961	Lam
 Lam
 Lam
 Lam
@@ -44419,7 +44413,6 @@ Lam
 Lam
 Lam
 Lam
-1937976	Lam
 Lam
 Lam
 Lam
@@ -44428,7 +44421,16 @@ Lam
 Lam
 Lam
 Lam
-1937986	Lam
+Lam
+Lam
+Lam
+Lam
+Lam
+Lam
+Lam
+Lam
+Gen
+Gen
 Gen
 Gen
 Gen
@@ -44503,7 +44505,6 @@ Gen
 Gen
 Gen
 Gen
-1938062	Gen
 Gen
 Gen
 Gen
@@ -44720,7 +44721,6 @@ Gen
 Gen
 Gen
 Gen
-1938280	Gen
 Gen
 Gen
 Gen
@@ -44823,7 +44823,6 @@ Gen
 Gen
 Gen
 Gen
-1938386	Gen
 Gen
 Gen
 Gen
@@ -45586,7 +45585,6 @@ Gen
 Gen
 Gen
 Gen
-1939151	Gen
 Gen
 Gen
 Gen
@@ -45947,6 +45945,11 @@ Gen
 Gen
 Gen
 Gen
+Gen
+Gen
+Ex
+Ex
+Ex
 Ex
 Ex
 Ex
@@ -46011,7 +46014,6 @@ Ex
 Ex
 Ex
 Ex
-1939577	Ex
 Ex
 Ex
 Ex
@@ -46740,7 +46742,6 @@ Ex
 Ex
 Ex
 Ex
-1940307	Ex
 Ex
 Ex
 Ex
@@ -47343,7 +47344,6 @@ Ex
 Ex
 Ex
 Ex
-1940912	Ex
 Ex
 Ex
 Ex
@@ -48072,6 +48072,11 @@ Ex
 4Q1
 4Q1
 4Q1
+Gen
+Gen
+Gen
+Gen
+Gen
 Gen
 Gen
 Gen
@@ -48153,7 +48158,6 @@ Gen
 Gen
 Gen
 Gen
-1941724	Gen
 Gen
 Gen
 Gen
@@ -48214,7 +48218,6 @@ Gen
 Gen
 Gen
 Gen
-1941787	Gen
 Gen
 Gen
 Gen
@@ -48314,7 +48317,6 @@ Gen
 Gen
 Gen
 Gen
-1941888	Gen
 Gen
 Gen
 Gen
@@ -48442,7 +48444,6 @@ Gen
 Gen
 Gen
 Gen
-1942017	Gen
 Gen
 Gen
 Gen
@@ -48530,7 +48531,6 @@ Gen
 Gen
 Gen
 Gen
-1942107	Gen
 Gen
 Gen
 Gen
@@ -49171,7 +49171,6 @@ Gen
 Gen
 Gen
 Gen
-1942749	Gen
 Gen
 Gen
 Gen
@@ -49187,7 +49186,6 @@ Gen
 Gen
 Gen
 Gen
-1942766	Gen
 Gen
 Gen
 Gen
@@ -49206,7 +49204,6 @@ Gen
 Gen
 Gen
 Gen
-1942786	Gen
 Gen
 Gen
 Gen
@@ -49324,7 +49321,6 @@ Gen
 Gen
 Gen
 Gen
-1942905	Gen
 Gen
 Gen
 Gen
@@ -49352,7 +49348,6 @@ Gen
 Gen
 Gen
 Gen
-1942934	Gen
 Gen
 Gen
 Gen
@@ -49491,7 +49486,6 @@ Gen
 Gen
 Gen
 Gen
-1943074	Gen
 Gen
 Gen
 Gen
@@ -49554,8 +49548,6 @@ Gen
 Gen
 Gen
 Gen
-1943138	Gen
-1943140	Gen
 Gen
 Gen
 Gen
@@ -49635,7 +49627,6 @@ Gen
 Gen
 Gen
 Gen
-1943221	Gen
 Gen
 Gen
 Gen
@@ -49752,7 +49743,6 @@ Gen
 Gen
 Gen
 Gen
-1943339	Gen
 Gen
 Gen
 Gen
@@ -49793,7 +49783,6 @@ Gen
 Gen
 Gen
 Gen
-1943382	Gen
 Gen
 Gen
 Gen
@@ -50214,7 +50203,18 @@ Gen
 Gen
 Gen
 Gen
-1943805	Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
 Gen
 Gen
 Gen
@@ -50678,7 +50678,6 @@ Gen
 Gen
 Gen
 Gen
-1944270	Gen
 Gen
 Gen
 Gen
@@ -50696,7 +50695,6 @@ Gen
 Gen
 Gen
 Gen
-1944290	Gen
 Gen
 Gen
 Gen
@@ -50757,7 +50755,6 @@ Gen
 Gen
 Gen
 Gen
-1944353	Gen
 Gen
 Gen
 Gen
@@ -50797,7 +50794,6 @@ Gen
 Gen
 Gen
 Gen
-1944394	Gen
 Gen
 Gen
 Gen
@@ -50940,7 +50936,6 @@ Gen
 Gen
 Gen
 Gen
-1944539	Gen
 Gen
 Gen
 Gen
@@ -51419,7 +51414,6 @@ Gen
 Gen
 Gen
 Gen
-1945019	Gen
 Gen
 Gen
 Gen
@@ -51812,7 +51806,6 @@ Gen
 Gen
 Gen
 Gen
-1945414	Gen
 Gen
 Gen
 Gen
@@ -51840,7 +51833,14 @@ Gen
 Gen
 Gen
 Gen
-1945443	Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
 Gen
 Gen
 Gen
@@ -52064,7 +52064,6 @@ Gen
 4Q9
 4Q9
 4Q9
-1945668	4Q9
 4Q9
 4Q9
 4Q9
@@ -52099,6 +52098,7 @@ Gen
 4Q9
 4Q9
 4Q9
+4Q9
 Gen
 Gen
 Gen
@@ -52114,8 +52114,6 @@ Gen
 Gen
 Gen
 Gen
-1945719	Gen
-1945722	Gen
 Gen
 Gen
 Gen
@@ -52167,7 +52165,6 @@ Gen
 Gen
 Gen
 Gen
-1945775	Gen
 Gen
 Gen
 Gen
@@ -52315,7 +52312,28 @@ Gen
 Gen
 Gen
 Gen
-1945930	Gen
+Gen
+Gen
+Gen
+Gen
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
 Ex
 Ex
 Ex
@@ -52398,7 +52416,6 @@ Ex
 Ex
 Ex
 Ex
-1946014	Ex
 Ex
 Ex
 Ex
@@ -52415,7 +52432,6 @@ Ex
 Ex
 Ex
 Ex
-1946032	Ex
 Ex
 Ex
 Ex
@@ -52475,8 +52491,6 @@ Ex
 Ex
 Ex
 Ex
-1946093	Ex
-1946095	Ex
 Ex
 Ex
 Ex
@@ -52730,10 +52744,8 @@ Ex
 Ex
 Ex
 Ex
-1946350	Ex
 Ex
 Ex
-1946354	Ex
 Ex
 Ex
 Ex
@@ -52960,7 +52972,6 @@ Ex
 Ex
 Ex
 Ex
-1946584	Ex
 Ex
 Ex
 Ex
@@ -53188,7 +53199,6 @@ Ex
 Ex
 Ex
 Ex
-1946814	Ex
 Ex
 Ex
 Ex
@@ -53233,7 +53243,6 @@ Ex
 Ex
 Ex
 Ex
-1946863	Ex
 Ex
 Ex
 Ex
@@ -53254,7 +53263,6 @@ Ex
 Ex
 Ex
 Ex
-1946885	Ex
 Ex
 Ex
 Ex
@@ -53492,7 +53500,6 @@ Ex
 Ex
 Ex
 Ex
-1947124	Ex
 Ex
 Ex
 Ex
@@ -53514,7 +53521,6 @@ Ex
 Ex
 Ex
 Ex
-1947149	Ex
 Ex
 Ex
 Ex
@@ -53648,7 +53654,6 @@ Ex
 Ex
 Ex
 Ex
-1947284	Ex
 Ex
 Ex
 Ex
@@ -53804,7 +53809,6 @@ Ex
 Ex
 Ex
 Ex
-1947441	Ex
 Ex
 Ex
 Ex
@@ -53859,7 +53863,6 @@ Ex
 Ex
 Ex
 Ex
-1947498	Ex
 Ex
 Ex
 Ex
@@ -54155,8 +54158,6 @@ Ex
 Ex
 Ex
 Ex
-1947795	Ex
-1947797	Ex
 Ex
 Ex
 Ex
@@ -54297,7 +54298,6 @@ Ex
 Ex
 Ex
 Ex
-1947939	Ex
 Ex
 Ex
 Ex
@@ -54305,7 +54305,6 @@ Ex
 Ex
 Ex
 Ex
-1947948	Ex
 Ex
 Ex
 Ex
@@ -54453,8 +54452,6 @@ Ex
 Ex
 Ex
 Ex
-1948097	Ex
-1948099	Ex
 Ex
 Ex
 Ex
@@ -54559,7 +54556,6 @@ Ex
 Ex
 Ex
 Ex
-1948205	Ex
 Ex
 Ex
 Ex
@@ -54587,7 +54583,6 @@ Ex
 Ex
 Ex
 Ex
-1948234	Ex
 Ex
 Ex
 Ex
@@ -54599,7 +54594,6 @@ Ex
 Ex
 Ex
 Ex
-1948247	Ex
 Ex
 Ex
 Ex
@@ -54763,7 +54757,6 @@ Ex
 Ex
 Ex
 Ex
-1948413	Ex
 Ex
 Ex
 Ex
@@ -54808,7 +54801,6 @@ Ex
 Ex
 Ex
 Ex
-1948459	Ex
 Ex
 Ex
 Ex
@@ -54846,7 +54838,6 @@ Ex
 Ex
 Ex
 Ex
-1948499	Ex
 Ex
 Ex
 Ex
@@ -54975,7 +54966,6 @@ Ex
 Ex
 Ex
 Ex
-1948631	Ex
 Ex
 Ex
 Ex
@@ -55164,7 +55154,6 @@ Ex
 Ex
 Ex
 Ex
-1948822	Ex
 Ex
 Ex
 Ex
@@ -55281,7 +55270,6 @@ Ex
 Ex
 Ex
 Ex
-1948944	Ex
 Ex
 Ex
 Ex
@@ -55348,7 +55336,6 @@ Ex
 Ex
 Ex
 Ex
-1949014	Ex
 Ex
 Ex
 Ex
@@ -55391,7 +55378,6 @@ Ex
 Ex
 Ex
 Ex
-1949059	Ex
 Ex
 Ex
 Ex
@@ -55430,7 +55416,6 @@ Ex
 Ex
 Ex
 Ex
-1949100	Ex
 Ex
 Ex
 Ex
@@ -55495,7 +55480,6 @@ Ex
 Ex
 Ex
 Ex
-1949168	Ex
 Ex
 Ex
 Ex
@@ -55618,7 +55602,6 @@ Ex
 Ex
 Ex
 Ex
-1949292	Ex
 Ex
 Ex
 Ex
@@ -55657,7 +55640,6 @@ Ex
 Ex
 Ex
 Ex
-1949333	Ex
 Ex
 Ex
 Ex
@@ -55666,7 +55648,6 @@ Ex
 Ex
 Ex
 Ex
-1949343	Ex
 Ex
 Ex
 Ex
@@ -55787,7 +55768,6 @@ Ex
 Ex
 Ex
 Ex
-1949467	Ex
 Ex
 Ex
 Ex
@@ -55827,6 +55807,26 @@ Ex
 Ex
 Ex
 Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
 4Q11
 4Q11
 4Q11
@@ -55935,11 +55935,13 @@ Ex
 4Q11
 4Q11
 4Q11
-1949616	4Q11
 4Q11
 4Q11
 4Q11
 4Q11
+4Q11
+Gen
+Gen
 Gen
 Gen
 Gen
@@ -55988,7 +55990,6 @@ Gen
 Gen
 Gen
 Gen
-1949670	Gen
 Gen
 Gen
 Gen
@@ -56006,7 +56007,6 @@ Gen
 Gen
 Gen
 Gen
-1949689	Gen
 Gen
 Gen
 Gen
@@ -56031,7 +56031,6 @@ Gen
 Gen
 Gen
 Gen
-1949715	Gen
 Gen
 Gen
 Gen
@@ -56051,7 +56050,6 @@ Gen
 Gen
 Gen
 Gen
-1949736	Gen
 Gen
 Gen
 Gen
@@ -56072,7 +56070,6 @@ Gen
 Gen
 Gen
 Gen
-1949758	Gen
 Gen
 Gen
 Gen
@@ -56105,10 +56102,31 @@ Gen
 Gen
 Gen
 Gen
+Gen
+Gen
+Gen
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
 Ex
-1949793	Ex
 Ex
-1949796	Ex
 Ex
 Ex
 Ex
@@ -56487,7 +56505,6 @@ Ex
 Ex
 Ex
 Ex
-1950176	Ex
 Ex
 Ex
 Ex
@@ -56500,8 +56517,6 @@ Ex
 Ex
 Ex
 Ex
-1950190	Ex
-1950192	Ex
 Ex
 Ex
 Ex
@@ -56596,7 +56611,6 @@ Ex
 Ex
 Ex
 Ex
-1950288	Ex
 Ex
 Ex
 Ex
@@ -56623,7 +56637,6 @@ Ex
 Ex
 Ex
 Ex
-1950316	Ex
 Ex
 Ex
 Ex
@@ -56732,7 +56745,6 @@ Ex
 Ex
 Ex
 Ex
-1950426	Ex
 Ex
 Ex
 Ex
@@ -57425,7 +57437,6 @@ Ex
 Ex
 Ex
 Ex
-1951120	Ex
 Ex
 Ex
 Ex
@@ -57724,7 +57735,6 @@ Ex
 Ex
 Ex
 Ex
-1951420	Ex
 Ex
 Ex
 Ex
@@ -57805,7 +57815,6 @@ Ex
 Ex
 Ex
 Ex
-1951503	Ex
 Ex
 Ex
 Ex
@@ -57964,7 +57973,6 @@ Ex
 Ex
 Ex
 Ex
-1951663	Ex
 Ex
 Ex
 Ex
@@ -58075,7 +58083,6 @@ Ex
 Ex
 Ex
 Ex
-1951775	Ex
 Ex
 Ex
 Ex
@@ -58240,7 +58247,6 @@ Ex
 Ex
 Ex
 Ex
-1951941	Ex
 Ex
 Ex
 Ex
@@ -58371,7 +58377,6 @@ Ex
 Ex
 Ex
 Ex
-1952073	Ex
 Ex
 Ex
 Ex
@@ -58433,7 +58438,6 @@ Ex
 Ex
 Ex
 Ex
-1952136	Ex
 Ex
 Ex
 Ex
@@ -58752,7 +58756,6 @@ Ex
 Ex
 Ex
 Ex
-1952456	Ex
 Ex
 Ex
 Ex
@@ -58786,7 +58789,6 @@ Ex
 Ex
 Ex
 Ex
-1952491	Ex
 Ex
 Ex
 Ex
@@ -58916,7 +58918,6 @@ Ex
 Ex
 Ex
 Ex
-1952622	Ex
 Ex
 Ex
 Ex
@@ -59034,7 +59035,6 @@ Ex
 Ex
 Ex
 Ex
-1952743	Ex
 Ex
 Ex
 Ex
@@ -59264,7 +59264,6 @@ Ex
 Ex
 Ex
 Ex
-1952975	Ex
 Ex
 Ex
 Ex
@@ -59474,8 +59473,6 @@ Ex
 Ex
 Ex
 Ex
-1953186	Ex
-1953188	Ex
 Ex
 Ex
 Ex
@@ -59577,7 +59574,6 @@ Ex
 Ex
 Ex
 Ex
-1953291	Ex
 Ex
 Ex
 Ex
@@ -59620,7 +59616,6 @@ Ex
 Ex
 Ex
 Ex
-1953335	Ex
 Ex
 Ex
 Ex
@@ -59684,7 +59679,6 @@ Ex
 Ex
 Ex
 Ex
-1953400	Ex
 Ex
 Ex
 Ex
@@ -59872,7 +59866,6 @@ Ex
 Ex
 Ex
 Ex
-1953589	Ex
 Ex
 Ex
 Ex
@@ -59949,7 +59942,6 @@ Ex
 Ex
 Ex
 Ex
-1953667	Ex
 Ex
 Ex
 Ex
@@ -60279,7 +60271,6 @@ Ex
 Ex
 Ex
 Ex
-1953998	Ex
 Ex
 Ex
 Ex
@@ -60324,7 +60315,6 @@ Ex
 Ex
 Ex
 Ex
-1954044	Ex
 Ex
 Ex
 Ex
@@ -60530,7 +60520,6 @@ Ex
 Ex
 Ex
 Ex
-1954251	Ex
 Ex
 Ex
 Ex
@@ -60617,7 +60606,6 @@ Ex
 Ex
 Ex
 Ex
-1954342	Ex
 Ex
 Ex
 Ex
@@ -60743,7 +60731,6 @@ Ex
 Ex
 Ex
 Ex
-1954471	Ex
 Ex
 Ex
 Ex
@@ -60795,7 +60782,6 @@ Ex
 Ex
 Ex
 Ex
-1954524	Ex
 Ex
 Ex
 Ex
@@ -61044,6 +61030,20 @@ Ex
 Ex
 Ex
 Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
 4Q14
 4Q14
 4Q14
@@ -61101,7 +61101,6 @@ Ex
 4Q14
 4Q14
 4Q14
-1954831	4Q14
 4Q14
 4Q14
 4Q14
@@ -61146,6 +61145,9 @@ Ex
 4Q14
 4Q14
 4Q14
+4Q14
+Ex
+Ex
 Ex
 Ex
 Ex
@@ -61203,7 +61205,6 @@ Ex
 Ex
 Ex
 Ex
-1954934	Ex
 Ex
 Ex
 Ex
@@ -61749,7 +61750,6 @@ Ex
 Ex
 Ex
 Ex
-1955481	Ex
 Ex
 Ex
 Ex
@@ -61826,7 +61826,6 @@ Ex
 Ex
 Ex
 Ex
-1955559	Ex
 Ex
 Ex
 Ex
@@ -61965,7 +61964,6 @@ Ex
 Ex
 Ex
 Ex
-1955700	Ex
 Ex
 Ex
 Ex
@@ -62033,7 +62031,6 @@ Ex
 Ex
 Ex
 Ex
-1955769	Ex
 Ex
 Ex
 Ex
@@ -62085,7 +62082,6 @@ Ex
 Ex
 Ex
 Ex
-1955822	Ex
 Ex
 Ex
 Ex
@@ -62154,7 +62150,6 @@ Ex
 Ex
 Ex
 Ex
-1955893	Ex
 Ex
 Ex
 Ex
@@ -62183,6 +62178,12 @@ Ex
 Ex
 Ex
 Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Lev
 Lev
 Lev
 Lev
@@ -62276,7 +62277,6 @@ Lev
 Lev
 Lev
 Lev
-1956017	Lev
 Lev
 Lev
 Lev
@@ -62306,7 +62306,6 @@ Lev
 4Q17
 4Q17
 4Q17
-1956048	4Q17
 4Q17
 4Q17
 4Q17
@@ -62318,6 +62317,7 @@ Lev
 4Q17
 4Q17
 4Q17
+4Q17
 Ex
 Ex
 Ex
@@ -62436,7 +62436,6 @@ Ex
 Ex
 Ex
 Ex
-1956179	Ex
 Ex
 Ex
 Ex
@@ -62561,7 +62560,6 @@ Ex
 Ex
 Ex
 Ex
-1956305	Ex
 Ex
 Ex
 Ex
@@ -62593,7 +62591,9 @@ Ex
 Ex
 Ex
 Ex
-1956338	Ex
+Ex
+Ex
+Ex
 Ex
 Ex
 Ex
@@ -62924,7 +62924,6 @@ Ex
 Ex
 Ex
 Ex
-1956670	Ex
 Ex
 Ex
 Ex
@@ -63024,7 +63023,6 @@ Ex
 Ex
 Ex
 Ex
-1956771	Ex
 Ex
 Ex
 Ex
@@ -63141,7 +63139,6 @@ Ex
 Ex
 Ex
 Ex
-1956889	Ex
 Ex
 Ex
 Ex
@@ -63224,7 +63221,6 @@ Ex
 Ex
 Ex
 Ex
-1956973	Ex
 Ex
 Ex
 Ex
@@ -63432,7 +63428,6 @@ Ex
 Ex
 Ex
 Ex
-1957182	Ex
 Ex
 Ex
 Ex
@@ -63694,7 +63689,6 @@ Ex
 Ex
 Ex
 Ex
-1957445	Ex
 Ex
 Ex
 Ex
@@ -63787,8 +63781,6 @@ Ex
 Ex
 Ex
 Ex
-1957539	Ex
-1957542	Ex
 Ex
 Ex
 Ex
@@ -64132,7 +64124,6 @@ Ex
 Ex
 Ex
 Ex
-1957887	Ex
 Ex
 Ex
 Ex
@@ -64529,9 +64520,7 @@ Ex
 Ex
 Ex
 Ex
-1958285	Ex
 Ex
-1958288	Ex
 Ex
 Ex
 Ex
@@ -64581,7 +64570,6 @@ Ex
 Ex
 Ex
 Ex
-1958339	Ex
 Ex
 Ex
 Ex
@@ -65186,7 +65174,6 @@ Ex
 Ex
 Ex
 Ex
-1958945	Ex
 Ex
 Ex
 Ex
@@ -65538,7 +65525,6 @@ Ex
 Ex
 Ex
 Ex
-1959298	Ex
 Ex
 Ex
 Ex
@@ -65853,7 +65839,6 @@ Ex
 Ex
 Ex
 Ex
-1959614	Ex
 Ex
 Ex
 Ex
@@ -65911,7 +65896,6 @@ Ex
 Ex
 Ex
 Ex
-1959673	Ex
 Ex
 Ex
 Ex
@@ -66068,7 +66052,6 @@ Ex
 Ex
 Ex
 Ex
-1959831	Ex
 Ex
 Ex
 Ex
@@ -66535,7 +66518,6 @@ Ex
 Ex
 Ex
 Ex
-1960299	Ex
 Ex
 Ex
 Ex
@@ -66624,7 +66606,6 @@ Ex
 Ex
 Ex
 Ex
-1960389	Ex
 Ex
 Ex
 Ex
@@ -66967,7 +66948,6 @@ Ex
 Ex
 Ex
 Ex
-1960733	Ex
 Ex
 Ex
 Ex
@@ -67536,7 +67516,6 @@ Ex
 Ex
 Ex
 Ex
-1961304	Ex
 Ex
 Ex
 Ex
@@ -67552,7 +67531,6 @@ Ex
 Ex
 Ex
 Ex
-1961321	Ex
 Ex
 Ex
 Ex
@@ -67821,7 +67799,6 @@ Ex
 Ex
 Ex
 Ex
-1961591	Ex
 Ex
 Ex
 Ex
@@ -67916,7 +67893,6 @@ Ex
 Ex
 Ex
 Ex
-1961687	Ex
 Ex
 Ex
 Ex
@@ -68251,7 +68227,6 @@ Ex
 Ex
 Ex
 Ex
-1962023	Ex
 Ex
 Ex
 Ex
@@ -68695,7 +68670,6 @@ Ex
 Ex
 Ex
 Ex
-1962468	Ex
 Ex
 Ex
 Ex
@@ -69460,7 +69434,6 @@ Ex
 Ex
 Ex
 Ex
-1963234	Ex
 Ex
 Ex
 Ex
@@ -69469,7 +69442,6 @@ Ex
 Ex
 Ex
 Ex
-1963245	Ex
 Ex
 Ex
 Ex
@@ -69484,7 +69456,6 @@ Ex
 Ex
 Ex
 Ex
-1963261	Ex
 Ex
 Ex
 Ex
@@ -69729,7 +69700,6 @@ Ex
 Ex
 Ex
 Ex
-1963507	Ex
 Ex
 Ex
 Ex
@@ -69939,7 +69909,6 @@ Ex
 Ex
 Ex
 Ex
-1963718	Ex
 Ex
 Ex
 Ex
@@ -70289,8 +70258,6 @@ Ex
 Ex
 Ex
 Ex
-1964069	Ex
-1964071	Ex
 Ex
 Ex
 Ex
@@ -70364,7 +70331,6 @@ Ex
 Ex
 Ex
 Ex
-1964146	Ex
 Ex
 Ex
 Ex
@@ -70448,7 +70414,6 @@ Ex
 Ex
 Ex
 Ex
-1964231	Ex
 Ex
 Ex
 Ex
@@ -70709,7 +70674,6 @@ Ex
 Ex
 Ex
 Ex
-1964493	Ex
 Ex
 Ex
 Ex
@@ -70750,8 +70714,6 @@ Ex
 Ex
 Ex
 Ex
-1964535	Ex
-1964537	Ex
 Ex
 Ex
 Ex
@@ -70844,8 +70806,6 @@ Ex
 Ex
 Ex
 Ex
-1964631	Ex
-1964634	Ex
 Ex
 Ex
 Ex
@@ -70945,7 +70905,6 @@ Ex
 Ex
 Ex
 Ex
-1964735	Ex
 Ex
 Ex
 Ex
@@ -71279,7 +71238,6 @@ Ex
 Ex
 Ex
 Ex
-1965070	Ex
 Ex
 Ex
 Ex
@@ -71926,6 +71884,48 @@ Ex
 Ex
 Ex
 Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
+Ex
 Lev
 Lev
 Lev
@@ -73114,7 +73114,6 @@ Lev
 Lev
 Lev
 Lev
-1966906	Lev
 Lev
 Lev
 Lev
@@ -73250,7 +73249,6 @@ Lev
 Lev
 Lev
 Lev
-1967043	Lev
 Lev
 Lev
 Lev
@@ -73355,7 +73353,6 @@ Lev
 Lev
 Lev
 Lev
-1967149	Lev
 Lev
 Lev
 Lev
@@ -73459,7 +73456,6 @@ Lev
 Lev
 Lev
 Lev
-1967254	Lev
 Lev
 Lev
 Lev
@@ -73523,7 +73519,6 @@ Lev
 Lev
 Lev
 Lev
-1967319	Lev
 Lev
 Lev
 Lev
@@ -73774,6 +73769,16 @@ Lev
 Lev
 Lev
 Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Num
+Num
+Num
+Num
+Num
 Num
 Num
 Num
@@ -73911,7 +73916,6 @@ Num
 Num
 Num
 Num
-1967708	Num
 Num
 Num
 Num
@@ -73945,7 +73949,6 @@ Num
 Num
 Num
 Num
-1967743	Num
 Num
 Num
 Num
@@ -74071,7 +74074,6 @@ Num
 Num
 Num
 Num
-1967870	Num
 Num
 Num
 Num
@@ -74172,7 +74174,6 @@ Num
 Num
 Num
 Num
-1967972	Num
 Num
 Num
 Num
@@ -74325,7 +74326,6 @@ Num
 Num
 Num
 Num
-1968127	Num
 Num
 Num
 Num
@@ -74559,7 +74559,6 @@ Num
 Num
 Num
 Num
-1968362	Num
 Num
 Num
 Num
@@ -74734,7 +74733,6 @@ Num
 Num
 Num
 Num
-1968539	Num
 Num
 Num
 Num
@@ -74809,7 +74807,6 @@ Num
 Num
 Num
 Num
-1968615	Num
 Num
 Num
 Num
@@ -74873,7 +74870,6 @@ Num
 Num
 Num
 Num
-1968680	Num
 Num
 Num
 Num
@@ -75204,7 +75200,6 @@ Num
 Num
 Num
 Num
-1969012	Num
 Num
 Num
 Num
@@ -75652,7 +75647,6 @@ Num
 Num
 Num
 Num
-1969461	Num
 Num
 Num
 Num
@@ -75926,7 +75920,6 @@ Num
 Num
 Num
 Num
-1969736	Num
 Num
 Num
 Num
@@ -76146,7 +76139,6 @@ Num
 Num
 Num
 Num
-1969958	Num
 Num
 Num
 Num
@@ -76821,6 +76813,14 @@ Num
 Num
 Num
 Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
 4Q23
 4Q23
 4Q23
@@ -77070,6 +77070,30 @@ Num
 4Q23
 4Q23
 4Q23
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
 Lev
 Lev
 Lev
@@ -77131,7 +77155,6 @@ Lev
 Lev
 Lev
 Lev
-1970944	Lev
 Lev
 Lev
 Lev
@@ -77152,7 +77175,6 @@ Lev
 Lev
 Lev
 Lev
-1970967	Lev
 Lev
 Lev
 Lev
@@ -77244,7 +77266,6 @@ Lev
 Lev
 Lev
 Lev
-1971060	Lev
 Lev
 Lev
 Lev
@@ -77316,7 +77337,6 @@ Lev
 Lev
 Lev
 Lev
-1971133	Lev
 Lev
 Lev
 Lev
@@ -77488,7 +77508,6 @@ Lev
 Lev
 Lev
 Lev
-1971307	Lev
 Lev
 Lev
 Lev
@@ -77535,7 +77554,6 @@ Lev
 Lev
 Lev
 Lev
-1971355	Lev
 Lev
 Lev
 Lev
@@ -77632,7 +77650,6 @@ Lev
 Lev
 Lev
 Lev
-1971453	Lev
 Lev
 Lev
 Lev
@@ -77835,7 +77852,6 @@ Lev
 Lev
 Lev
 Lev
-1971657	Lev
 Lev
 Lev
 Lev
@@ -77950,7 +77966,6 @@ Lev
 Lev
 Lev
 Lev
-1971773	Lev
 Lev
 Lev
 Lev
@@ -77998,7 +78013,6 @@ Lev
 Lev
 Lev
 Lev
-1971822	Lev
 Lev
 Lev
 Lev
@@ -78045,7 +78059,6 @@ Lev
 Lev
 Lev
 Lev
-1971870	Lev
 Lev
 Lev
 Lev
@@ -78146,7 +78159,6 @@ Lev
 Lev
 Lev
 Lev
-1971975	Lev
 Lev
 Lev
 Lev
@@ -78223,7 +78235,6 @@ Lev
 Lev
 Lev
 Lev
-1972053	Lev
 Lev
 Lev
 Lev
@@ -78339,7 +78350,6 @@ Lev
 Lev
 Lev
 Lev
-1972170	Lev
 Lev
 Lev
 Lev
@@ -78359,7 +78369,6 @@ Lev
 Lev
 Lev
 Lev
-1972191	Lev
 Lev
 Lev
 Lev
@@ -78406,7 +78415,6 @@ Lev
 Lev
 Lev
 Lev
-1972239	Lev
 Lev
 Lev
 Lev
@@ -78425,7 +78433,6 @@ Lev
 Lev
 Lev
 Lev
-1972259	Lev
 Lev
 Lev
 Lev
@@ -78444,12 +78451,10 @@ Lev
 Lev
 Lev
 Lev
-1972279	Lev
 Lev
 Lev
 Lev
 Lev
-1972285	Lev
 Lev
 Lev
 Lev
@@ -78688,7 +78693,6 @@ Lev
 Lev
 Lev
 Lev
-1972528	Lev
 Lev
 Lev
 Lev
@@ -78999,7 +79003,6 @@ Lev
 Lev
 Lev
 Lev
-1972840	Lev
 Lev
 Lev
 Lev
@@ -79093,7 +79096,6 @@ Lev
 Lev
 Lev
 Lev
-1972935	Lev
 Lev
 Lev
 Lev
@@ -79158,7 +79160,6 @@ Lev
 Lev
 Lev
 Lev
-1973001	Lev
 Lev
 Lev
 Lev
@@ -79280,7 +79281,6 @@ Lev
 Lev
 Lev
 Lev
-1973124	Lev
 Lev
 Lev
 Lev
@@ -79729,7 +79729,6 @@ Lev
 Lev
 Lev
 Lev
-1973575	Lev
 Lev
 Lev
 Lev
@@ -79880,7 +79879,8 @@ Lev
 Lev
 Lev
 Lev
-1973727	Lev
+Lev
+Lev
 Lev
 Lev
 Lev
@@ -80175,7 +80175,6 @@ Lev
 Lev
 Lev
 Lev
-1974023	Lev
 Lev
 Lev
 Lev
@@ -80579,7 +80578,6 @@ Lev
 Lev
 Lev
 Lev
-1974428	Lev
 Lev
 Lev
 Lev
@@ -80786,7 +80784,6 @@ Lev
 Lev
 Lev
 Lev
-1974636	Lev
 Lev
 Lev
 Lev
@@ -80991,7 +80988,6 @@ Lev
 Lev
 Lev
 Lev
-1974842	Lev
 Lev
 Lev
 Lev
@@ -81192,7 +81188,6 @@ Lev
 Lev
 Lev
 Lev
-1975044	Lev
 Lev
 Lev
 Lev
@@ -81363,7 +81358,6 @@ Lev
 Lev
 Lev
 Lev
-1975217	Lev
 Lev
 Lev
 Lev
@@ -81461,7 +81455,6 @@ Lev
 Lev
 Lev
 Lev
-1975318	Lev
 Lev
 Lev
 Lev
@@ -81536,7 +81529,6 @@ Lev
 Lev
 Lev
 Lev
-1975394	Lev
 Lev
 Lev
 Lev
@@ -81742,6 +81734,65 @@ Lev
 Lev
 Lev
 Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
 Num
 Num
 Num
@@ -81749,7 +81800,6 @@ Num
 Num
 Num
 Num
-1975608	Num
 Num
 Num
 Num
@@ -81844,7 +81894,6 @@ Num
 Num
 Num
 Num
-1975704	Num
 Num
 Num
 Num
@@ -82096,7 +82145,6 @@ Num
 Num
 Num
 Num
-1975957	Num
 Num
 Num
 Num
@@ -82110,7 +82158,6 @@ Num
 Num
 Num
 Num
-1975972	Num
 Num
 Num
 Num
@@ -82206,7 +82253,6 @@ Num
 Num
 Num
 Num
-1976069	Num
 Num
 Num
 Num
@@ -82345,7 +82391,6 @@ Num
 Num
 Num
 Num
-1976209	Num
 Num
 Num
 Num
@@ -82493,7 +82538,6 @@ Num
 Num
 Num
 Num
-1976360	Num
 Num
 Num
 Num
@@ -82605,7 +82649,6 @@ Num
 Num
 Num
 Num
-1976473	Num
 Num
 Num
 Num
@@ -82709,7 +82752,6 @@ Num
 Num
 Num
 Num
-1976579	Num
 Num
 Num
 Num
@@ -82904,7 +82946,6 @@ Num
 Num
 Num
 Num
-1976775	Num
 Num
 Num
 Num
@@ -82963,7 +83004,6 @@ Num
 Num
 Num
 Num
-1976835	Num
 Num
 Num
 Num
@@ -82977,7 +83017,6 @@ Num
 Num
 Num
 Num
-1976850	Num
 Num
 Num
 Num
@@ -82992,7 +83031,6 @@ Num
 Num
 Num
 Num
-1976866	Num
 Num
 Num
 Num
@@ -83116,7 +83154,6 @@ Num
 Num
 Num
 Num
-1976991	Num
 Num
 Num
 Num
@@ -83270,7 +83307,6 @@ Num
 Num
 Num
 Num
-1977146	Num
 Num
 Num
 Num
@@ -83309,7 +83345,6 @@ Num
 Num
 Num
 Num
-1977186	Num
 Num
 Num
 Num
@@ -83378,7 +83413,6 @@ Num
 Num
 Num
 Num
-1977256	Num
 Num
 Num
 Num
@@ -83420,7 +83454,6 @@ Num
 Num
 Num
 Num
-1977299	Num
 Num
 Num
 Num
@@ -83451,7 +83484,6 @@ Num
 Num
 Num
 Num
-1977331	Num
 Num
 Num
 Num
@@ -83489,7 +83521,6 @@ Num
 Num
 Num
 Num
-1977370	Num
 Num
 Num
 Num
@@ -83503,7 +83534,6 @@ Num
 Num
 Num
 Num
-1977385	Num
 Num
 Num
 Num
@@ -83534,7 +83564,6 @@ Num
 Num
 Num
 Num
-1977417	Num
 Num
 Num
 Num
@@ -83607,7 +83636,6 @@ Num
 Num
 Num
 Num
-1977491	Num
 Num
 Num
 Num
@@ -83661,7 +83689,6 @@ Num
 Num
 Num
 Num
-1977546	Num
 Num
 Num
 Num
@@ -83703,7 +83730,6 @@ Num
 Num
 Num
 Num
-1977589	Num
 Num
 Num
 Num
@@ -83789,7 +83815,6 @@ Num
 Num
 Num
 Num
-1977676	Num
 Num
 Num
 Num
@@ -83901,7 +83926,6 @@ Num
 Num
 Num
 Num
-1977789	Num
 Num
 Num
 Num
@@ -83973,7 +83997,6 @@ Num
 Num
 Num
 Num
-1977862	Num
 Num
 Num
 Num
@@ -84360,7 +84383,6 @@ Num
 Num
 Num
 Num
-1978250	Num
 Num
 Num
 Num
@@ -84475,7 +84497,6 @@ Num
 Num
 Num
 Num
-1978366	Num
 Num
 Num
 Num
@@ -84586,7 +84607,6 @@ Num
 Num
 Num
 Num
-1978478	Num
 Num
 Num
 Num
@@ -84667,7 +84687,6 @@ Num
 Num
 Num
 Num
-1978561	Num
 Num
 Num
 Num
@@ -84703,7 +84722,6 @@ Num
 Num
 Num
 Num
-1978598	Num
 Num
 Num
 Num
@@ -84732,9 +84750,7 @@ Num
 Num
 Num
 Num
-1978628	Num
 Num
-1978631	Num
 Num
 Num
 Num
@@ -84829,8 +84845,6 @@ Num
 Num
 Num
 Num
-1978727	Num
-1978729	Num
 Num
 Num
 Num
@@ -84889,7 +84903,6 @@ Num
 Num
 Num
 Num
-1978789	Num
 Num
 Num
 Num
@@ -84964,7 +84977,6 @@ Num
 Num
 Num
 Num
-1978866	Num
 Num
 Num
 Num
@@ -85010,7 +85022,6 @@ Num
 Num
 Num
 Num
-1978914	Num
 Num
 Num
 Num
@@ -85067,7 +85078,6 @@ Num
 Num
 Num
 Num
-1978972	Num
 Num
 Num
 Num
@@ -85131,7 +85141,6 @@ Num
 Num
 Num
 Num
-1979037	Num
 Num
 Num
 Num
@@ -85170,7 +85179,6 @@ Num
 Num
 Num
 Num
-1979077	Num
 Num
 Num
 Num
@@ -85201,7 +85209,6 @@ Num
 Num
 Num
 Num
-1979109	Num
 Num
 Num
 Num
@@ -85309,7 +85316,6 @@ Num
 Num
 Num
 Num
-1979218	Num
 Num
 Num
 Num
@@ -85373,7 +85379,6 @@ Num
 Num
 Num
 Num
-1979283	Num
 Num
 Num
 Num
@@ -85487,7 +85492,6 @@ Num
 Num
 Num
 Num
-1979399	Num
 Num
 Num
 Num
@@ -85515,7 +85519,6 @@ Num
 Num
 Num
 Num
-1979428	Num
 Num
 Num
 Num
@@ -85558,7 +85561,6 @@ Num
 Num
 Num
 Num
-1979472	Num
 Num
 Num
 Num
@@ -85606,14 +85608,11 @@ Num
 Num
 Num
 Num
-1979521	Num
 Num
 Num
 Num
 Num
 Num
-1979528	Num
-1979530	Num
 Num
 Num
 Num
@@ -85727,7 +85726,6 @@ Num
 Num
 Num
 Num
-1979646	Num
 Num
 Num
 Num
@@ -85809,7 +85807,6 @@ Num
 Num
 Num
 Num
-1979729	Num
 Num
 Num
 Num
@@ -85844,7 +85841,6 @@ Num
 Num
 Num
 Num
-1979765	Num
 Num
 Num
 Num
@@ -85903,7 +85899,6 @@ Num
 Num
 Num
 Num
-1979825	Num
 Num
 Num
 Num
@@ -85938,7 +85933,6 @@ Num
 Num
 Num
 Num
-1979861	Num
 Num
 Num
 Num
@@ -85990,7 +85984,6 @@ Num
 Num
 Num
 Num
-1979914	Num
 Num
 Num
 Num
@@ -86027,7 +86020,6 @@ Num
 Num
 Num
 Num
-1979953	Num
 Num
 Num
 Num
@@ -86218,7 +86210,6 @@ Num
 Num
 Num
 Num
-1980146	Num
 Num
 Num
 Num
@@ -86403,7 +86394,6 @@ Num
 Num
 Num
 Num
-1980332	Num
 Num
 Num
 Num
@@ -86438,8 +86428,6 @@ Num
 Num
 Num
 Num
-1980368	Num
-1980370	Num
 Num
 Num
 Num
@@ -86457,7 +86445,6 @@ Num
 Num
 Num
 Num
-1980389	Num
 Num
 Num
 Num
@@ -86550,7 +86537,6 @@ Num
 Num
 Num
 Num
-1980484	Num
 Num
 Num
 Num
@@ -86629,7 +86615,6 @@ Num
 Num
 Num
 Num
-1980567	Num
 Num
 Num
 Num
@@ -86788,7 +86773,6 @@ Num
 Num
 Num
 Num
-1980727	Num
 Num
 Num
 Num
@@ -86840,7 +86824,6 @@ Num
 Num
 Num
 Num
-1980780	Num
 Num
 Num
 Num
@@ -86864,7 +86847,6 @@ Num
 Num
 Num
 Num
-1980805	Num
 Num
 Num
 Num
@@ -86936,7 +86918,6 @@ Num
 Num
 Num
 Num
-1980878	Num
 Num
 Num
 Num
@@ -87015,7 +86996,6 @@ Num
 Num
 Num
 Num
-1980958	Num
 Num
 Num
 Num
@@ -87168,7 +87148,6 @@ Num
 Num
 Num
 Num
-1981115	Num
 Num
 Num
 Num
@@ -87349,7 +87328,6 @@ Num
 Num
 Num
 Num
-1981297	Num
 Num
 Num
 Num
@@ -87432,7 +87410,6 @@ Num
 Num
 Num
 Num
-1981382	Num
 Num
 Num
 Num
@@ -87638,7 +87615,6 @@ Num
 Num
 Num
 Num
-1981589	Num
 Num
 Num
 Num
@@ -88098,7 +88074,6 @@ Num
 Num
 Num
 Num
-1982055	Num
 Num
 Num
 Num
@@ -88261,7 +88236,6 @@ Num
 Num
 Num
 Num
-1982220	Num
 Num
 Num
 Num
@@ -88412,7 +88386,6 @@ Num
 Num
 Num
 Num
-1982372	Num
 Num
 Num
 Num
@@ -88445,7 +88418,35 @@ Num
 Num
 Num
 Num
-1982406	4Q27
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+Num
+4Q27
+4Q27
 4Q27
 4Q27
 4Q27
@@ -88459,7 +88460,6 @@ Num
 4Q27
 4Q27
 4Q27
-1982421	4Q27
 4Q27
 4Q27
 4Q27
@@ -88483,7 +88483,6 @@ Num
 4Q27
 4Q27
 4Q27
-1982446	4Q27
 4Q27
 4Q27
 4Q27
@@ -88577,7 +88576,6 @@ Num
 4Q27
 4Q27
 4Q27
-1982541	4Q27
 4Q27
 4Q27
 4Q27
@@ -88627,7 +88625,6 @@ Num
 4Q27
 4Q27
 4Q27
-1982592	4Q27
 4Q27
 4Q27
 4Q27
@@ -88637,7 +88634,6 @@ Num
 4Q27
 4Q27
 4Q27
-1982603	4Q27
 4Q27
 4Q27
 4Q27
@@ -88665,13 +88661,27 @@ Num
 4Q27
 4Q27
 4Q27
+4Q27
+4Q27
+4Q27
+4Q27
+Deut
+Deut
+Deut
+Deut
+Deut
+Deut
+Deut
+Deut
+Deut
+Deut
+Deut
 Deut
 Deut
 Deut
 Deut
 Deut
 Deut
-1982638	Deut
 Deut
 Deut
 Deut
@@ -88782,7 +88792,6 @@ Deut
 Deut
 Deut
 Deut
-1982750	Deut
 Deut
 Deut
 Deut
@@ -89597,7 +89606,6 @@ Deut
 Deut
 Deut
 Deut
-1983566	Deut
 Deut
 Deut
 Deut
@@ -89627,20 +89635,17 @@ Deut
 Deut
 Deut
 Deut
-1983597	Deut
 Deut
 Deut
 Deut
 Deut
 Deut
-1983604	Deut
 Deut
 Deut
 Deut
 Deut
 Deut
 Deut
-1983612	Deut
 Deut
 Deut
 Deut
@@ -89648,7 +89653,6 @@ Deut
 Deut
 Deut
 Deut
-1983621	Deut
 Deut
 Deut
 Deut
@@ -89658,7 +89662,6 @@ Deut
 Deut
 Deut
 Deut
-1983632	Deut
 Deut
 Deut
 Deut
@@ -89667,7 +89670,6 @@ Deut
 Deut
 Deut
 Deut
-1983642	Deut
 Deut
 Deut
 Deut
@@ -90212,7 +90214,6 @@ Deut
 Deut
 Deut
 Deut
-1984188	Deut
 Deut
 Deut
 Deut
@@ -90374,7 +90375,6 @@ Deut
 Deut
 Deut
 Deut
-1984351	Deut
 Deut
 Deut
 Deut
@@ -90596,11 +90596,17 @@ Deut
 4Q30
 4Q30
 4Q30
-1984574	4Q30
 4Q30
 4Q30
 4Q30
 4Q30
+4Q30
+Deut
+Deut
+Deut
+Deut
+Deut
+Deut
 Deut
 Deut
 Deut
@@ -90613,7 +90619,6 @@ Deut
 Deut
 Deut
 Deut
-1984593	Deut
 Deut
 Deut
 Deut
@@ -90874,7 +90879,6 @@ Deut
 Deut
 Deut
 Deut
-1984855	Deut
 Deut
 Deut
 Deut
@@ -90934,7 +90938,6 @@ Deut
 Deut
 Deut
 Deut
-1984916	Deut
 Deut
 Deut
 Deut
@@ -90995,7 +90998,6 @@ Deut
 Deut
 Deut
 Deut
-1984978	Deut
 Deut
 Deut
 Deut
@@ -91135,7 +91137,6 @@ Deut
 Deut
 Deut
 Deut
-1985120	Deut
 Deut
 Deut
 Deut
@@ -91297,7 +91298,6 @@ Deut
 Deut
 Deut
 Deut
-1985283	Deut
 Deut
 Deut
 Deut
@@ -91341,7 +91341,6 @@ Deut
 Deut
 Deut
 Deut
-1985328	Deut
 Deut
 Deut
 Deut
@@ -91427,7 +91426,6 @@ Deut
 Deut
 Deut
 Deut
-1985415	Deut
 Deut
 Deut
 Deut
@@ -92033,7 +92031,6 @@ Deut
 Deut
 Deut
 Deut
-1986022	Deut
 Deut
 Deut
 Deut
@@ -92104,6 +92101,9 @@ Deut
 Deut
 Deut
 Deut
+Deut
+Deut
+Deut
 4Q30
 4Q30
 4Q30
@@ -92175,6 +92175,11 @@ Deut
 4Q30
 4Q30
 4Q30
+Deut
+Deut
+Deut
+Deut
+Deut
 Deut
 Deut
 Deut
@@ -92795,7 +92800,6 @@ Deut
 Deut
 Deut
 Deut
-1986786	Deut
 Deut
 Deut
 Deut
@@ -92869,7 +92873,6 @@ Deut
 Deut
 Deut
 Deut
-1986861	Deut
 Deut
 Deut
 Deut
@@ -92896,7 +92899,6 @@ Deut
 Deut
 Deut
 Deut
-1986889	Deut
 Deut
 Deut
 Deut
@@ -92935,7 +92937,6 @@ Deut
 Deut
 Deut
 Deut
-1986930	Deut
 Deut
 Deut
 Deut
@@ -92969,7 +92970,6 @@ Deut
 Deut
 Deut
 Deut
-1986965	Deut
 Deut
 Deut
 Deut
@@ -93329,7 +93329,6 @@ Deut
 Deut
 Deut
 Deut
-1987326	Deut
 Deut
 Deut
 Deut
@@ -93586,7 +93585,6 @@ Deut
 Deut
 Deut
 Deut
-1987585	Deut
 Deut
 Deut
 Deut
@@ -94137,7 +94135,6 @@ Deut
 Deut
 Deut
 Deut
-1988138	Deut
 Deut
 Deut
 Deut
@@ -94480,7 +94477,6 @@ Deut
 Deut
 Deut
 Deut
-1988483	Deut
 Deut
 Deut
 Deut
@@ -94687,7 +94683,6 @@ Deut
 Deut
 Deut
 Deut
-1988692	Deut
 Deut
 Deut
 Deut
@@ -95074,7 +95069,12 @@ Deut
 Deut
 Deut
 Deut
-1989080	Deut
+Deut
+Deut
+Deut
+Deut
+Deut
+Deut
 Deut
 Deut
 Deut
@@ -95292,7 +95292,6 @@ Deut
 4Q33
 4Q33
 4Q33
-1989299	4Q33
 4Q33
 4Q33
 4Q33
@@ -95327,6 +95326,7 @@ Deut
 4Q33
 4Q33
 4Q33
+4Q33
 Deut
 Deut
 Deut
@@ -95511,7 +95511,6 @@ Deut
 Deut
 Deut
 Deut
-1989519	Deut
 Deut
 Deut
 Deut
@@ -95526,7 +95525,6 @@ Deut
 Deut
 Deut
 Deut
-1989535	Deut
 Deut
 Deut
 Deut
@@ -95682,7 +95680,6 @@ Deut
 Deut
 Deut
 Deut
-1989692	Deut
 Deut
 Deut
 Deut
@@ -95749,7 +95746,6 @@ Deut
 Deut
 Deut
 Deut
-1989760	Deut
 Deut
 Deut
 Deut
@@ -97205,7 +97201,6 @@ Deut
 Deut
 Deut
 Deut
-1991217	Deut
 Deut
 Deut
 Deut
@@ -97302,7 +97297,6 @@ Deut
 Deut
 Deut
 Deut
-1991315	Deut
 Deut
 Deut
 Deut
@@ -97370,7 +97364,6 @@ Deut
 Deut
 Deut
 Deut
-1991384	Deut
 Deut
 Deut
 Deut
@@ -97388,7 +97381,14 @@ Deut
 Deut
 Deut
 Deut
-1991403	Deut
+Deut
+Deut
+Deut
+Deut
+Deut
+Deut
+Deut
+Deut
 Deut
 Deut
 Deut
@@ -97853,7 +97853,6 @@ Deut
 Deut
 Deut
 Deut
-1991869	Deut
 Deut
 Deut
 Deut
@@ -97888,7 +97887,6 @@ Deut
 Deut
 Deut
 Deut
-1991905	Deut
 Deut
 Deut
 Deut
@@ -98323,7 +98321,6 @@ Deut
 Deut
 Deut
 Deut
-1992341	Deut
 Deut
 Deut
 Deut
@@ -98734,7 +98731,6 @@ Deut
 Deut
 Deut
 Deut
-1992755	Deut
 Deut
 Deut
 Deut
@@ -98958,7 +98954,11 @@ Deut
 Deut
 Deut
 Deut
-1992980	Ex
+Deut
+Deut
+Deut
+Deut
+Ex
 Ex
 Ex
 Ex
@@ -99390,6 +99390,8 @@ Deut
 4Q37
 4Q37
 4Q37
+Deut
+Deut
 Deut
 Deut
 Deut
@@ -99654,7 +99656,6 @@ Deut
 Deut
 Deut
 Deut
-1993677	Deut
 Deut
 Deut
 Deut
@@ -100041,7 +100042,6 @@ Deut
 Deut
 Deut
 Deut
-1994065	Deut
 Deut
 Deut
 Deut
@@ -100686,7 +100686,7 @@ Deut
 Deut
 Deut
 Deut
-1994711	Deut
+Deut
 Deut
 Deut
 Deut
@@ -100766,7 +100766,6 @@ Deut
 Deut
 Deut
 Deut
-1994792	Deut
 Deut
 Deut
 Deut
@@ -100882,7 +100881,8 @@ Deut
 Deut
 Deut
 Deut
-1994909	Deut
+Deut
+Deut
 4Q39
 4Q39
 4Q39
@@ -101100,7 +101100,6 @@ Deut
 Deut
 Deut
 Deut
-1995128	Deut
 Deut
 Deut
 Deut
@@ -101400,7 +101399,6 @@ Deut
 Deut
 Deut
 Deut
-1995429	Deut
 Deut
 Deut
 Deut
@@ -101437,7 +101435,6 @@ Deut
 Deut
 Deut
 Deut
-1995467	Deut
 Deut
 Deut
 Deut
@@ -101460,7 +101457,6 @@ Deut
 Deut
 Deut
 Deut
-1995491	Deut
 Deut
 Deut
 Deut
@@ -101478,7 +101474,11 @@ Deut
 Deut
 Deut
 Deut
-1995510	Deut
+Deut
+Deut
+Deut
+Deut
+Deut
 Deut
 Deut
 Deut
@@ -101889,7 +101889,6 @@ Deut
 Deut
 Deut
 Deut
-1995922	Deut
 Deut
 Deut
 Deut
@@ -102545,7 +102544,6 @@ Deut
 Deut
 Deut
 Deut
-1996579	Deut
 Deut
 Deut
 Deut
@@ -103112,7 +103110,9 @@ Deut
 Deut
 Deut
 Deut
-1997148	Deut
+Deut
+Deut
+Deut
 Deut
 Deut
 Deut
@@ -103237,11 +103237,9 @@ Deut
 Deut
 Deut
 Deut
-1997274	Deut
 Deut
 Deut
 Deut
-1997279	Deut
 Deut
 Deut
 Deut
@@ -103434,7 +103432,6 @@ Deut
 Deut
 Deut
 Deut
-1997473	Deut
 Deut
 Deut
 Deut
@@ -103779,7 +103776,6 @@ Deut
 Deut
 Deut
 Deut
-1997819	Deut
 Deut
 Deut
 Deut
@@ -103917,7 +103913,6 @@ Deut
 Deut
 Deut
 Deut
-1997958	Deut
 Deut
 Deut
 Deut
@@ -104052,7 +104047,6 @@ Deut
 Deut
 Deut
 Deut
-1998094	Deut
 Deut
 Deut
 Deut
@@ -104130,7 +104124,6 @@ Deut
 Deut
 Deut
 Deut
-1998173	Deut
 Deut
 Deut
 Deut
@@ -104512,7 +104505,6 @@ Deut
 Deut
 Deut
 Deut
-1998556	Deut
 Deut
 Deut
 Deut
@@ -104873,7 +104865,6 @@ Deut
 Deut
 Deut
 Deut
-1998918	Deut
 Deut
 Deut
 Deut
@@ -104906,6 +104897,17 @@ Deut
 Deut
 Deut
 Deut
+Deut
+Deut
+Deut
+Deut
+Deut
+Deut
+Deut
+Deut
+Deut
+4Q45
+4Q45
 4Q45
 4Q45
 4Q45
@@ -104939,7 +104941,6 @@ Deut
 4Q45
 4Q45
 4Q45
-1998985	4Q45
 4Q45
 4Q45
 4Q45
@@ -105029,7 +105030,6 @@ Deut
 4Q45
 4Q45
 4Q45
-1999076	4Q45
 4Q45
 4Q45
 4Q45
@@ -105054,7 +105054,6 @@ Deut
 4Q45
 4Q45
 4Q45
-1999102	4Q45
 4Q45
 4Q45
 4Q45
@@ -105080,6 +105079,7 @@ Deut
 4Q45
 4Q45
 4Q45
+4Q45
 Deut
 Deut
 Deut
@@ -105138,7 +105138,16 @@ Deut
 Deut
 Deut
 Deut
-1999187	Josh
+Josh
+Josh
+Josh
+Josh
+Josh
+Josh
+Josh
+Josh
+Josh
+Josh
 Josh
 Josh
 Josh
@@ -105181,7 +105190,6 @@ Josh
 Josh
 Josh
 Josh
-1999231	Josh
 Josh
 Josh
 Josh
@@ -105191,7 +105199,6 @@ Josh
 Josh
 Josh
 Josh
-1999242	Josh
 Josh
 Josh
 Josh
@@ -105241,7 +105248,6 @@ Josh
 Josh
 Josh
 Josh
-1999293	Josh
 Josh
 Josh
 Josh
@@ -105527,7 +105533,6 @@ Josh
 Josh
 Josh
 Josh
-1999580	Josh
 Josh
 Josh
 Josh
@@ -105602,7 +105607,6 @@ Josh
 Josh
 Josh
 Josh
-1999657	Josh
 Josh
 Josh
 Josh
@@ -105986,7 +105990,6 @@ Josh
 Josh
 Josh
 Josh
-2000042	Josh
 Josh
 Josh
 Josh
@@ -106084,7 +106087,6 @@ Josh
 Josh
 Josh
 Josh
-2000141	Josh
 Josh
 Josh
 Josh
@@ -106443,7 +106445,6 @@ Josh
 Josh
 Josh
 Josh
-2000501	Josh
 Josh
 Josh
 Josh
@@ -106514,7 +106515,6 @@ Josh
 Josh
 Josh
 Josh
-2000573	Josh
 Josh
 Josh
 Josh
@@ -107168,7 +107168,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2001230	1Sam
 1Sam
 1Sam
 1Sam
@@ -107372,7 +107371,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2001435	1Sam
 1Sam
 1Sam
 1Sam
@@ -107437,7 +107435,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2001501	1Sam
 1Sam
 1Sam
 1Sam
@@ -107447,7 +107444,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2001514	1Sam
 1Sam
 1Sam
 1Sam
@@ -107663,7 +107659,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2001733	1Sam
 1Sam
 1Sam
 1Sam
@@ -107759,7 +107754,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2001830	1Sam
 1Sam
 1Sam
 1Sam
@@ -107943,7 +107937,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2002015	1Sam
 1Sam
 1Sam
 1Sam
@@ -108211,7 +108204,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2002285	1Sam
 1Sam
 1Sam
 1Sam
@@ -108495,7 +108487,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2002571	1Sam
 1Sam
 1Sam
 1Sam
@@ -108619,7 +108610,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2002696	1Sam
 1Sam
 1Sam
 1Sam
@@ -109098,7 +109088,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2003176	1Sam
 1Sam
 1Sam
 1Sam
@@ -109392,7 +109381,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2003471	1Sam
 1Sam
 1Sam
 1Sam
@@ -109537,7 +109525,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2003618	1Sam
 1Sam
 1Sam
 1Sam
@@ -109663,7 +109650,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2003745	1Sam
 1Sam
 1Sam
 1Sam
@@ -109990,7 +109976,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2004074	1Sam
 1Sam
 1Sam
 1Sam
@@ -110028,7 +110013,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2004113	1Sam
 1Sam
 1Sam
 1Sam
@@ -110078,7 +110062,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2004164	1Sam
 1Sam
 1Sam
 1Sam
@@ -110094,7 +110077,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2004182	1Sam
 1Sam
 1Sam
 1Sam
@@ -110317,7 +110299,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2004406	1Sam
 1Sam
 1Sam
 1Sam
@@ -110540,7 +110521,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2004630	1Sam
 1Sam
 1Sam
 1Sam
@@ -110758,7 +110738,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2004849	1Sam
 1Sam
 1Sam
 1Sam
@@ -110869,7 +110848,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2004962	1Sam
 1Sam
 1Sam
 1Sam
@@ -111092,7 +111070,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2005186	1Sam
 1Sam
 1Sam
 1Sam
@@ -111489,7 +111466,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2005584	1Sam
 1Sam
 1Sam
 1Sam
@@ -111578,7 +111554,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2005674	1Sam
 1Sam
 1Sam
 1Sam
@@ -111611,7 +111586,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2005708	1Sam
 1Sam
 1Sam
 1Sam
@@ -111674,7 +111648,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2005772	1Sam
 1Sam
 1Sam
 1Sam
@@ -111732,7 +111705,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2005831	1Sam
 1Sam
 1Sam
 1Sam
@@ -111920,7 +111892,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2006020	1Sam
 1Sam
 1Sam
 1Sam
@@ -111946,7 +111917,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2006047	1Sam
 1Sam
 1Sam
 1Sam
@@ -112084,7 +112054,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2006187	1Sam
 1Sam
 1Sam
 1Sam
@@ -112130,7 +112099,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2006234	1Sam
 1Sam
 1Sam
 1Sam
@@ -112217,7 +112185,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2006322	1Sam
 1Sam
 1Sam
 1Sam
@@ -112444,7 +112411,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2006551	1Sam
 1Sam
 1Sam
 1Sam
@@ -112501,7 +112467,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2006610	1Sam
 1Sam
 1Sam
 1Sam
@@ -112608,7 +112573,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2006718	1Sam
 1Sam
 1Sam
 1Sam
@@ -112752,12 +112716,10 @@ Judg
 1Sam
 1Sam
 1Sam
-2006863	1Sam
 1Sam
 1Sam
 1Sam
 1Sam
-2006869	1Sam
 1Sam
 1Sam
 1Sam
@@ -112843,7 +112805,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2006956	1Sam
 1Sam
 1Sam
 1Sam
@@ -112907,7 +112868,6 @@ Judg
 1Sam
 1Sam
 1Sam
-2007021	1Sam
 1Sam
 1Sam
 1Sam
@@ -112929,6 +112889,54 @@ Judg
 1Sam
 1Sam
 1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
 2Sam
 2Sam
 2Sam
@@ -113030,7 +113038,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2007145	2Sam
 2Sam
 2Sam
 2Sam
@@ -113127,7 +113134,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2007244	2Sam
 2Sam
 2Sam
 2Sam
@@ -113325,7 +113331,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2007443	2Sam
 2Sam
 2Sam
 2Sam
@@ -113352,7 +113357,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2007471	2Sam
 2Sam
 2Sam
 2Sam
@@ -113476,7 +113480,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2007596	2Sam
 2Sam
 2Sam
 2Sam
@@ -113538,7 +113541,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2007660	2Sam
 2Sam
 2Sam
 2Sam
@@ -113684,7 +113686,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2007807	2Sam
 2Sam
 2Sam
 2Sam
@@ -113744,7 +113745,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2007868	2Sam
 2Sam
 2Sam
 2Sam
@@ -113867,7 +113867,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2007992	2Sam
 2Sam
 2Sam
 2Sam
@@ -113989,7 +113988,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2008115	2Sam
 2Sam
 2Sam
 2Sam
@@ -114020,7 +114018,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2008147	2Sam
 2Sam
 2Sam
 2Sam
@@ -114208,7 +114205,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2008336	2Sam
 2Sam
 2Sam
 2Sam
@@ -114226,7 +114222,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2008355	2Sam
 2Sam
 2Sam
 2Sam
@@ -114414,7 +114409,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2008545	2Sam
 2Sam
 2Sam
 2Sam
@@ -114608,7 +114602,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2008740	2Sam
 2Sam
 2Sam
 2Sam
@@ -114706,7 +114699,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2008839	2Sam
 2Sam
 2Sam
 2Sam
@@ -114943,7 +114935,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2009078	2Sam
 2Sam
 2Sam
 2Sam
@@ -115225,7 +115216,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2009361	2Sam
 2Sam
 2Sam
 2Sam
@@ -115576,7 +115566,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2009713	2Sam
 2Sam
 2Sam
 2Sam
@@ -115839,7 +115828,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2009978	2Sam
 2Sam
 2Sam
 2Sam
@@ -116151,7 +116139,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2010291	2Sam
 2Sam
 2Sam
 2Sam
@@ -116629,7 +116616,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2010770	2Sam
 2Sam
 2Sam
 2Sam
@@ -117027,7 +117013,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2011169	2Sam
 2Sam
 2Sam
 2Sam
@@ -117227,7 +117212,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2011370	2Sam
 2Sam
 2Sam
 2Sam
@@ -117308,7 +117292,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2011452	2Sam
 2Sam
 2Sam
 2Sam
@@ -117805,7 +117788,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2011950	2Sam
 2Sam
 2Sam
 2Sam
@@ -117877,7 +117859,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2012023	2Sam
 2Sam
 2Sam
 2Sam
@@ -117915,7 +117896,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2012062	2Sam
 2Sam
 2Sam
 2Sam
@@ -118056,7 +118036,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2012204	2Sam
 2Sam
 2Sam
 2Sam
@@ -118070,7 +118049,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2012219	2Sam
 2Sam
 2Sam
 2Sam
@@ -118256,7 +118234,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2012406	2Sam
 2Sam
 2Sam
 2Sam
@@ -118390,7 +118367,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2012541	2Sam
 2Sam
 2Sam
 2Sam
@@ -118706,7 +118682,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2012858	2Sam
 2Sam
 2Sam
 2Sam
@@ -118820,7 +118795,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2012973	2Sam
 2Sam
 2Sam
 2Sam
@@ -119028,7 +119002,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2013182	2Sam
 2Sam
 2Sam
 2Sam
@@ -119310,7 +119283,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2013466	2Sam
 2Sam
 2Sam
 2Sam
@@ -119654,7 +119626,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2013811	2Sam
 2Sam
 2Sam
 2Sam
@@ -119665,7 +119636,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2013823	2Sam
 2Sam
 2Sam
 2Sam
@@ -119778,7 +119748,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2013937	2Sam
 2Sam
 2Sam
 2Sam
@@ -119853,7 +119822,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2014014	2Sam
 2Sam
 2Sam
 2Sam
@@ -120279,7 +120247,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2014442	2Sam
 2Sam
 2Sam
 2Sam
@@ -120371,7 +120338,6 @@ Judg
 2Sam
 2Sam
 2Sam
-2014535	2Sam
 2Sam
 2Sam
 2Sam
@@ -120726,6 +120692,40 @@ Judg
 2Sam
 2Sam
 2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
+2Sam
 PAM43113
 PAM43113
 PAM43113
@@ -120946,7 +120946,6 @@ PAM43113
 PAM43113
 PAM43113
 PAM43113
-2015111	PAM43113
 PAM43113
 PAM43113
 PAM43113
@@ -121178,6 +121177,7 @@ PAM43113
 PAM43113
 PAM43113
 PAM43113
+PAM43113
 PAM43124
 PAM43124
 PAM43124
@@ -121294,6 +121294,7 @@ PAM43124
 PAM43124
 PAM43124
 PAM43124
+1Sam
 1Sam
 1Sam
 1Sam
@@ -121382,7 +121383,6 @@ PAM43124
 1Sam
 1Sam
 1Sam
-2015548	1Sam
 1Sam
 1Sam
 1Sam
@@ -121637,7 +121637,6 @@ PAM43124
 1Sam
 1Sam
 1Sam
-2015804	1Sam
 1Sam
 1Sam
 1Sam
@@ -121775,7 +121774,6 @@ PAM43124
 1Sam
 1Sam
 1Sam
-2015943	1Sam
 1Sam
 1Sam
 1Sam
@@ -122194,7 +122192,6 @@ PAM43124
 1Sam
 1Sam
 1Sam
-2016363	1Sam
 1Sam
 1Sam
 1Sam
@@ -122298,13 +122295,11 @@ PAM43124
 1Sam
 1Sam
 1Sam
-2016468	1Sam
 1Sam
 1Sam
 1Sam
 1Sam
 1Sam
-2016475	1Sam
 1Sam
 1Sam
 1Sam
@@ -122435,7 +122430,6 @@ PAM43124
 1Sam
 1Sam
 1Sam
-2016607	1Sam
 1Sam
 1Sam
 1Sam
@@ -122470,7 +122464,6 @@ PAM43124
 1Sam
 1Sam
 1Sam
-2016643	1Sam
 1Sam
 1Sam
 1Sam
@@ -122571,7 +122564,6 @@ PAM43124
 1Sam
 1Sam
 1Sam
-2016745	1Sam
 1Sam
 1Sam
 1Sam
@@ -122689,7 +122681,6 @@ PAM43124
 1Sam
 1Sam
 1Sam
-2016864	1Sam
 1Sam
 1Sam
 1Sam
@@ -122720,7 +122711,6 @@ PAM43124
 1Sam
 1Sam
 1Sam
-2016898	1Sam
 1Sam
 1Sam
 1Sam
@@ -122876,6 +122866,18 @@ PAM43124
 1Sam
 1Sam
 1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+1Sam
+2Sam
+2Sam
 2Sam
 2Sam
 2Sam
@@ -123195,7 +123197,6 @@ PAM43124
 2Sam
 2Sam
 2Sam
-2017374	2Sam
 2Sam
 2Sam
 2Sam
@@ -123209,7 +123210,6 @@ PAM43124
 2Sam
 2Sam
 2Sam
-2017389	2Sam
 2Sam
 2Sam
 2Sam
@@ -123949,7 +123949,6 @@ PAM43124
 2Sam
 2Sam
 4Q53
-2018130	4Q53
 4Q53
 4Q53
 4Q53
@@ -123966,6 +123965,7 @@ PAM43124
 4Q53
 4Q53
 4Q53
+4Q53
 1Kgs
 1Kgs
 1Kgs
@@ -124070,7 +124070,7 @@ PAM43124
 1Kgs
 1Kgs
 1Kgs
-2018252	1Kgs
+1Kgs
 1Kgs
 1Kgs
 1Kgs
@@ -124282,7 +124282,6 @@ PAM43124
 1Kgs
 1Kgs
 1Kgs
-2018465	1Kgs
 1Kgs
 1Kgs
 1Kgs
@@ -124349,7 +124348,6 @@ PAM43124
 1Kgs
 1Kgs
 1Kgs
-2018533	1Kgs
 1Kgs
 1Kgs
 1Kgs
@@ -124444,7 +124442,9 @@ PAM43124
 1Kgs
 1Kgs
 1Kgs
-2018629	1Kgs
+1Kgs
+1Kgs
+1Kgs
 1Kgs
 1Kgs
 1Kgs
@@ -124853,7 +124853,6 @@ Is
 Is
 Is
 Is
-2019042	Is
 Is
 Is
 Is
@@ -125103,7 +125102,6 @@ Is
 Is
 Is
 Is
-2019296	Is
 Is
 Is
 Is
@@ -125350,7 +125348,6 @@ Is
 Is
 Is
 Is
-2019544	Is
 Is
 Is
 Is
@@ -125511,7 +125508,6 @@ Is
 Is
 Is
 Is
-2019710	Is
 Is
 Is
 Is
@@ -125651,7 +125647,6 @@ Is
 Is
 Is
 Is
-2019852	Is
 Is
 Is
 Is
@@ -125817,7 +125812,6 @@ Is
 Is
 Is
 Is
-2020020	Is
 Is
 Is
 Is
@@ -125891,7 +125885,6 @@ Is
 Is
 Is
 Is
-2020095	Is
 Is
 Is
 Is
@@ -125955,7 +125948,6 @@ Is
 Is
 Is
 Is
-2020160	Is
 Is
 Is
 Is
@@ -126159,7 +126151,15 @@ Is
 Is
 Is
 Is
-2020367	Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
 Is
 Is
 Is
@@ -126321,33 +126321,6 @@ Is
 4Q55
 4Q55
 4Q55
-2020530	4Q55
-4Q55
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-Is
-4Q55
-4Q55
 4Q55
 4Q55
 Is
@@ -126373,6 +126346,10 @@ Is
 Is
 Is
 Is
+4Q55
+4Q55
+4Q55
+4Q55
 Is
 Is
 Is
@@ -126495,7 +126472,6 @@ Is
 Is
 Is
 Is
-2020705	Is
 Is
 Is
 Is
@@ -126508,7 +126484,6 @@ Is
 Is
 Is
 Is
-2020719	Is
 Is
 Is
 Is
@@ -126615,7 +126590,6 @@ Is
 Is
 Is
 Is
-2020827	Is
 Is
 Is
 Is
@@ -126692,7 +126666,6 @@ Is
 Is
 Is
 Is
-2020905	Is
 Is
 Is
 Is
@@ -126727,7 +126700,6 @@ Is
 Is
 Is
 Is
-2020941	Is
 Is
 Is
 Is
@@ -126861,7 +126833,6 @@ Is
 Is
 Is
 Is
-2021077	Is
 Is
 Is
 Is
@@ -127495,7 +127466,6 @@ Is
 Is
 Is
 Is
-2021713	Is
 Is
 Is
 Is
@@ -127559,7 +127529,6 @@ Is
 Is
 Is
 Is
-2021778	Is
 Is
 Is
 Is
@@ -127605,7 +127574,6 @@ Is
 Is
 Is
 Is
-2021825	Is
 Is
 Is
 Is
@@ -127641,7 +127609,6 @@ Is
 Is
 Is
 Is
-2021866	Is
 Is
 Is
 Is
@@ -127898,7 +127865,6 @@ Is
 Is
 Is
 Is
-2022124	Is
 Is
 Is
 Is
@@ -127967,7 +127933,6 @@ Is
 Is
 Is
 Is
-2022194	Is
 Is
 Is
 Is
@@ -128061,7 +128026,6 @@ Is
 Is
 Is
 Is
-2022290	Is
 Is
 Is
 Is
@@ -128085,7 +128049,6 @@ Is
 Is
 Is
 Is
-2022316	Is
 Is
 Is
 Is
@@ -128120,7 +128083,6 @@ Is
 Is
 Is
 Is
-2022353	Is
 Is
 Is
 Is
@@ -128165,7 +128127,6 @@ Is
 Is
 Is
 Is
-2022399	Is
 Is
 Is
 Is
@@ -128683,7 +128644,6 @@ Is
 Is
 Is
 Is
-2022918	Is
 Is
 Is
 Is
@@ -128756,7 +128716,6 @@ Is
 Is
 Is
 Is
-2022993	Is
 Is
 Is
 Is
@@ -128893,7 +128852,6 @@ Is
 Is
 Is
 Is
-2023131	Is
 Is
 Is
 Is
@@ -128975,7 +128933,6 @@ Is
 Is
 Is
 Is
-2023214	Is
 Is
 Is
 Is
@@ -129102,7 +129059,6 @@ Is
 Is
 Is
 Is
-2023343	Is
 Is
 Is
 Is
@@ -129359,7 +129315,6 @@ Is
 Is
 Is
 Is
-2023602	Is
 Is
 Is
 Is
@@ -129449,14 +129404,12 @@ Is
 Is
 Is
 Is
-2023694	Is
 Is
 Is
 Is
 Is
 Is
 Is
-2023702	Is
 Is
 Is
 Is
@@ -129529,7 +129482,6 @@ Is
 Is
 Is
 Is
-2023776	Is
 Is
 Is
 Is
@@ -129555,7 +129507,6 @@ Is
 Is
 Is
 Is
-2023803	Is
 Is
 Is
 Is
@@ -129599,7 +129550,6 @@ Is
 Is
 Is
 Is
-2023849	Is
 Is
 Is
 Is
@@ -129654,7 +129604,6 @@ Is
 Is
 Is
 Is
-2023905	Is
 Is
 Is
 Is
@@ -129848,7 +129797,6 @@ Is
 Is
 Is
 Is
-2024100	Is
 Is
 Is
 Is
@@ -129881,7 +129829,6 @@ Is
 Is
 Is
 Is
-2024136	Is
 Is
 Is
 Is
@@ -129939,7 +129886,6 @@ Is
 Is
 Is
 Is
-2024195	Is
 Is
 Is
 Is
@@ -130017,7 +129963,6 @@ Is
 Is
 Is
 Is
-2024274	Is
 Is
 Is
 Is
@@ -130098,7 +130043,6 @@ Is
 Is
 Is
 Is
-2024357	Is
 Is
 Is
 Is
@@ -130176,7 +130120,6 @@ Is
 Is
 Is
 Is
-2024437	Is
 Is
 Is
 Is
@@ -130232,7 +130175,6 @@ Is
 Is
 Is
 Is
-2024494	Is
 Is
 Is
 Is
@@ -130416,7 +130358,6 @@ Is
 Is
 Is
 Is
-2024679	Is
 Is
 Is
 Is
@@ -130461,12 +130402,69 @@ Is
 Is
 Is
 Is
-2024726	4Q56
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
 4Q56
 4Q56
 4Q56
 4Q56
-2024732	4Q56
 4Q56
 4Q56
 4Q56
@@ -130496,6 +130494,8 @@ Is
 4Q56
 4Q56
 4Q56
+4Q56
+4Q56
 Is
 Is
 Is
@@ -130589,7 +130589,6 @@ Is
 Is
 Is
 Is
-2024857	Is
 Is
 Is
 Is
@@ -130691,7 +130690,6 @@ Is
 Is
 Is
 Is
-2024960	Is
 Is
 Is
 Is
@@ -130813,7 +130811,6 @@ Is
 Is
 Is
 Is
-2025083	Is
 Is
 Is
 Is
@@ -130831,7 +130828,6 @@ Is
 Is
 Is
 Is
-2025102	Is
 Is
 Is
 Is
@@ -130840,7 +130836,6 @@ Is
 Is
 Is
 Is
-2025112	Is
 Is
 Is
 Is
@@ -130956,7 +130951,6 @@ Is
 Is
 Is
 Is
-2025230	Is
 Is
 Is
 Is
@@ -131189,7 +131183,6 @@ Is
 Is
 Is
 Is
-2025464	Is
 Is
 Is
 Is
@@ -131297,7 +131290,6 @@ Is
 Is
 Is
 Is
-2025573	Is
 Is
 Is
 Is
@@ -131310,7 +131302,6 @@ Is
 Is
 Is
 Is
-2025587	Is
 Is
 Is
 Is
@@ -131355,7 +131346,6 @@ Is
 Is
 Is
 Is
-2025633	Is
 Is
 Is
 Is
@@ -131428,7 +131418,6 @@ Is
 Is
 Is
 Is
-2025708	Is
 Is
 Is
 Is
@@ -131521,7 +131510,6 @@ Is
 Is
 Is
 Is
-2025802	Is
 Is
 Is
 Is
@@ -131535,7 +131523,6 @@ Is
 Is
 Is
 Is
-2025817	Is
 Is
 Is
 Is
@@ -131612,7 +131599,6 @@ Is
 Is
 Is
 Is
-2025895	Is
 Is
 Is
 Is
@@ -131669,7 +131655,6 @@ Is
 Is
 Is
 Is
-2025953	Is
 Is
 Is
 Is
@@ -131736,7 +131721,6 @@ Is
 Is
 Is
 Is
-2026021	Is
 Is
 Is
 Is
@@ -131828,7 +131812,6 @@ Is
 Is
 Is
 Is
-2026114	Is
 Is
 Is
 Is
@@ -131940,7 +131923,6 @@ Is
 Is
 Is
 Is
-2026229	Is
 Is
 Is
 Is
@@ -131961,7 +131943,6 @@ Is
 Is
 Is
 Is
-2026253	Is
 Is
 Is
 Is
@@ -132041,7 +132022,6 @@ Is
 Is
 Is
 Is
-2026334	Is
 Is
 Is
 Is
@@ -132103,7 +132083,6 @@ Is
 Is
 Is
 Is
-2026397	Is
 Is
 Is
 Is
@@ -132278,7 +132257,6 @@ Is
 Is
 Is
 Is
-2026573	Is
 Is
 Is
 Is
@@ -132349,7 +132327,6 @@ Is
 Is
 Is
 Is
-2026647	Is
 Is
 Is
 Is
@@ -132458,7 +132435,6 @@ Is
 Is
 Is
 Is
-2026758	Is
 Is
 Is
 Is
@@ -132478,7 +132454,6 @@ Is
 Is
 Is
 Is
-2026779	Is
 Is
 Is
 Is
@@ -132708,7 +132683,6 @@ Is
 Is
 Is
 Is
-2027011	Is
 Is
 Is
 Is
@@ -132891,7 +132865,6 @@ Is
 Is
 Is
 Is
-2027195	Is
 Is
 Is
 Is
@@ -132917,7 +132890,6 @@ Is
 Is
 Is
 Is
-2027222	Is
 Is
 Is
 Is
@@ -133117,7 +133089,6 @@ Is
 Is
 Is
 Is
-2027423	Is
 Is
 Is
 Is
@@ -133298,7 +133269,6 @@ Is
 Is
 Is
 Is
-2027605	Is
 Is
 Is
 Is
@@ -133420,7 +133390,6 @@ Is
 Is
 Is
 Is
-2027728	Is
 Is
 Is
 Is
@@ -133819,7 +133788,6 @@ Is
 Is
 Is
 Is
-2028128	Is
 Is
 Is
 Is
@@ -133840,7 +133808,6 @@ Is
 Is
 Is
 Is
-2028150	Is
 Is
 Is
 Is
@@ -134000,6 +133967,40 @@ Is
 Is
 Is
 Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+4Q57
 4Q57
 4Q57
 4Q57
@@ -134016,7 +134017,6 @@ Is
 4Q57
 4Q57
 4Q57
-2028327	4Q57
 4Q57
 4Q57
 4Q57
@@ -134135,7 +134135,6 @@ Is
 4Q57
 4Q57
 4Q57
-2028447	4Q57
 4Q57
 4Q57
 4Q57
@@ -134165,7 +134164,6 @@ Is
 4Q57
 4Q57
 4Q57
-2028478	4Q57
 4Q57
 4Q57
 4Q57
@@ -134203,6 +134201,18 @@ Is
 4Q57
 4Q57
 4Q57
+4Q57
+4Q57
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
 Is
 Is
 Is
@@ -134537,7 +134547,6 @@ Is
 Is
 Is
 Is
-2028851	Is
 Is
 Is
 Is
@@ -134546,7 +134555,6 @@ Is
 Is
 Is
 Is
-2028861	Is
 Is
 Is
 Is
@@ -134640,7 +134648,6 @@ Is
 Is
 Is
 Is
-2028956	Is
 Is
 Is
 Is
@@ -134834,7 +134841,6 @@ Is
 Is
 Is
 Is
-2029151	Is
 Is
 Is
 Is
@@ -134956,7 +134962,6 @@ Is
 Is
 Is
 Is
-2029274	Is
 Is
 Is
 Is
@@ -135010,7 +135015,6 @@ Is
 Is
 Is
 Is
-2029329	Is
 Is
 Is
 Is
@@ -135120,7 +135124,6 @@ Is
 Is
 Is
 Is
-2029440	Is
 Is
 Is
 Is
@@ -135301,7 +135304,6 @@ Is
 Is
 Is
 Is
-2029622	Is
 Is
 Is
 Is
@@ -135483,7 +135485,6 @@ Is
 Is
 Is
 Is
-2029806	Is
 Is
 Is
 Is
@@ -135537,7 +135538,6 @@ Is
 Is
 Is
 Is
-2029861	Is
 Is
 Is
 Is
@@ -136029,7 +136029,7 @@ Is
 Is
 Is
 Is
-2030357	Is
+Is
 Is
 Is
 Is
@@ -136480,7 +136480,6 @@ Is
 Is
 Is
 Is
-2030809	Is
 Is
 Is
 Is
@@ -136558,7 +136557,6 @@ Is
 Is
 Is
 Is
-2030889	Is
 Is
 Is
 Is
@@ -136624,7 +136622,6 @@ Is
 Is
 Is
 Is
-2030956	Is
 Is
 Is
 Is
@@ -137028,7 +137025,6 @@ Is
 Is
 Is
 Is
-2031362	Is
 Is
 Is
 Is
@@ -137195,7 +137191,6 @@ Is
 Is
 Is
 Is
-2031531	Is
 Is
 Is
 Is
@@ -137616,7 +137611,6 @@ Is
 Is
 Is
 Is
-2031953	Is
 Is
 Is
 Is
@@ -137651,7 +137645,6 @@ Is
 Is
 Is
 Is
-2031990	Is
 Is
 Is
 Is
@@ -137737,7 +137730,6 @@ Is
 Is
 Is
 Is
-2032078	Is
 Is
 Is
 Is
@@ -137825,7 +137817,6 @@ Is
 Is
 Is
 Is
-2032168	Is
 Is
 Is
 Is
@@ -137982,7 +137973,16 @@ Is
 Is
 Is
 Is
-2032330	Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
 Is
 Is
 Is
@@ -138624,7 +138624,6 @@ Is
 Is
 Is
 Is
-2032973	Is
 Is
 Is
 Is
@@ -138776,7 +138775,6 @@ Is
 Is
 Is
 Is
-2033128	Is
 Is
 Is
 Is
@@ -138834,7 +138832,6 @@ Is
 Is
 Is
 Is
-2033187	Is
 Is
 Is
 Is
@@ -138924,7 +138921,6 @@ Is
 Is
 Is
 Is
-2033279	Is
 Is
 Is
 Is
@@ -139375,7 +139371,6 @@ Is
 Is
 Is
 Is
-2033731	Is
 Is
 Is
 Is
@@ -139483,7 +139478,6 @@ Is
 Is
 Is
 Is
-2033840	Is
 Is
 Is
 Is
@@ -139524,7 +139518,6 @@ Is
 Is
 Is
 Is
-2033882	Is
 Is
 Is
 Is
@@ -139682,7 +139675,6 @@ Is
 Is
 Is
 Is
-2034041	Is
 Is
 Is
 Is
@@ -139798,7 +139790,15 @@ Is
 Is
 Is
 Is
-2034158	Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
+Is
 Is
 Is
 Is
@@ -139808,8 +139808,8 @@ Is
 4Q68
 4Q68
 4Q68
-2034169	4Q68
-2034171	4Q68
+4Q68
+4Q68
 4Q68
 Is
 Is
@@ -139956,7 +139956,6 @@ Jer
 Jer
 Jer
 Jer
-2034319	Jer
 Jer
 Jer
 Jer
@@ -140018,7 +140017,6 @@ Jer
 Jer
 Jer
 Jer
-2034382	Jer
 Jer
 Jer
 Jer
@@ -140044,7 +140042,6 @@ Jer
 Jer
 Jer
 Jer
-2034409	Jer
 Jer
 Jer
 Jer
@@ -140062,7 +140059,6 @@ Jer
 Jer
 Jer
 Jer
-2034428	Jer
 Jer
 Jer
 Jer
@@ -140085,7 +140081,6 @@ Jer
 Jer
 Jer
 Jer
-2034452	Jer
 Jer
 Jer
 Jer
@@ -140334,7 +140329,6 @@ Jer
 Jer
 Jer
 Jer
-2034702	Jer
 Jer
 Jer
 Jer
@@ -140383,7 +140377,6 @@ Jer
 Jer
 Jer
 Jer
-2034752	Jer
 Jer
 Jer
 Jer
@@ -140415,7 +140408,6 @@ Jer
 Jer
 Jer
 Jer
-2034785	Jer
 Jer
 Jer
 Jer
@@ -140463,7 +140455,6 @@ Jer
 Jer
 Jer
 Jer
-2034834	Jer
 Jer
 Jer
 Jer
@@ -140484,7 +140475,6 @@ Jer
 Jer
 Jer
 Jer
-2034856	Jer
 Jer
 Jer
 Jer
@@ -140587,7 +140577,6 @@ Jer
 Jer
 Jer
 Jer
-2034960	Jer
 Jer
 Jer
 Jer
@@ -140755,7 +140744,6 @@ Jer
 Jer
 Jer
 Jer
-2035129	Jer
 Jer
 Jer
 Jer
@@ -140805,7 +140793,6 @@ Jer
 Jer
 Jer
 Jer
-2035180	Jer
 Jer
 Jer
 Jer
@@ -140868,7 +140855,6 @@ Jer
 Jer
 Jer
 Jer
-2035244	Jer
 Jer
 Jer
 Jer
@@ -140909,7 +140895,6 @@ Jer
 Jer
 Jer
 Jer
-2035286	Jer
 Jer
 Jer
 Jer
@@ -140941,7 +140926,6 @@ Jer
 Jer
 Jer
 Jer
-2035319	Jer
 Jer
 Jer
 Jer
@@ -140966,7 +140950,6 @@ Jer
 Jer
 Jer
 Jer
-2035348	Jer
 Jer
 Jer
 Jer
@@ -141158,7 +141141,6 @@ Jer
 Jer
 Jer
 Jer
-2035541	Jer
 Jer
 Jer
 Jer
@@ -141220,7 +141202,6 @@ Jer
 Jer
 Jer
 Jer
-2035604	Jer
 Jer
 Jer
 Jer
@@ -141299,7 +141280,6 @@ Jer
 Jer
 Jer
 Jer
-2035684	Jer
 Jer
 Jer
 Jer
@@ -141394,7 +141374,6 @@ Jer
 Jer
 Jer
 Jer
-2035780	Jer
 Jer
 Jer
 Jer
@@ -141639,7 +141618,6 @@ Jer
 Jer
 Jer
 Jer
-2036026	Jer
 Jer
 Jer
 Jer
@@ -141667,7 +141645,6 @@ Jer
 Jer
 Jer
 Jer
-2036055	Jer
 Jer
 Jer
 Jer
@@ -141688,7 +141665,6 @@ Jer
 Jer
 Jer
 Jer
-2036077	Jer
 Jer
 Jer
 Jer
@@ -141715,7 +141691,6 @@ Jer
 Jer
 Jer
 Jer
-2036106	Jer
 Jer
 Jer
 Jer
@@ -141752,7 +141727,6 @@ Jer
 Jer
 Jer
 Jer
-2036144	Jer
 Jer
 Jer
 Jer
@@ -141769,7 +141743,6 @@ Jer
 Jer
 Jer
 Jer
-2036162	Jer
 Jer
 Jer
 Jer
@@ -141789,7 +141762,6 @@ Jer
 Jer
 Jer
 Jer
-2036183	Jer
 Jer
 Jer
 Jer
@@ -142047,8 +142019,6 @@ Jer
 Jer
 Jer
 Jer
-2036442	Jer
-2036445	Jer
 Jer
 Jer
 Jer
@@ -142199,7 +142169,6 @@ Jer
 Jer
 Jer
 Jer
-2036598	Jer
 Jer
 Jer
 Jer
@@ -142225,7 +142194,6 @@ Jer
 Jer
 Jer
 Jer
-2036625	Jer
 Jer
 Jer
 Jer
@@ -142311,7 +142279,6 @@ Jer
 Jer
 Jer
 Jer
-2036712	Jer
 Jer
 Jer
 Jer
@@ -142499,7 +142466,6 @@ Jer
 Jer
 Jer
 Jer
-2036904	Jer
 Jer
 Jer
 Jer
@@ -142649,16 +142615,52 @@ Jer
 Jer
 Jer
 Jer
-2037055	Jer
 Jer
 Jer
 Jer
 Jer
 Jer
-2037062	Jer
 Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+4Q70
+4Q70
+4Q70
 4Q70
-2037066	4Q70
 4Q70
 4Q70
 4Q70
@@ -142679,7 +142681,6 @@ Jer
 4Q70
 4Q70
 4Q70
-2037088	4Q70
 4Q70
 4Q70
 4Q70
@@ -142688,7 +142689,6 @@ Jer
 4Q70
 4Q70
 4Q70
-2037098	4Q70
 4Q70
 4Q70
 4Q70
@@ -142714,7 +142714,6 @@ Jer
 4Q70
 4Q70
 4Q70
-2037125	4Q70
 4Q70
 4Q70
 4Q70
@@ -142734,13 +142733,11 @@ Jer
 4Q70
 4Q70
 4Q70
-2037146	4Q70
 4Q70
 4Q70
 4Q70
 4Q70
 4Q70
-2037153	4Q70
 4Q70
 4Q70
 4Q70
@@ -142756,6 +142753,26 @@ Jer
 4Q70
 4Q70
 4Q70
+4Q70
+4Q70
+4Q70
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
 Jer
 Jer
 Jer
@@ -143198,7 +143215,6 @@ Jer
 Jer
 Jer
 Jer
-2037612	Jer
 Jer
 Jer
 Jer
@@ -143259,7 +143275,6 @@ Jer
 Jer
 Jer
 Jer
-2037674	Jer
 Jer
 Jer
 Jer
@@ -143320,7 +143335,6 @@ Jer
 Jer
 Jer
 Jer
-2037737	Jer
 Jer
 Jer
 Jer
@@ -143346,7 +143360,6 @@ Jer
 Jer
 Jer
 Jer
-2037764	Jer
 Jer
 Jer
 Jer
@@ -143411,7 +143424,6 @@ Jer
 Jer
 Jer
 Jer
-2037830	Jer
 Jer
 Jer
 Jer
@@ -143556,7 +143568,6 @@ Jer
 Jer
 Jer
 Jer
-2037976	Jer
 Jer
 Jer
 Jer
@@ -143655,7 +143666,6 @@ Jer
 Jer
 Jer
 Jer
-2038077	Jer
 Jer
 Jer
 Jer
@@ -143777,7 +143787,6 @@ Jer
 Jer
 Jer
 Jer
-2038200	Jer
 Jer
 Jer
 Jer
@@ -143889,7 +143898,6 @@ Jer
 Jer
 Jer
 Jer
-2038313	Jer
 Jer
 Jer
 Jer
@@ -143923,7 +143931,6 @@ Jer
 Jer
 Jer
 Jer
-2038348	Jer
 Jer
 Jer
 Jer
@@ -143968,7 +143975,6 @@ Jer
 Jer
 Jer
 Jer
-2038394	Jer
 Jer
 Jer
 Jer
@@ -144075,7 +144081,6 @@ Jer
 Jer
 Jer
 Jer
-2038502	Jer
 Jer
 Jer
 Jer
@@ -144115,7 +144120,6 @@ Jer
 Jer
 Jer
 Jer
-2038543	Jer
 Jer
 Jer
 Jer
@@ -144331,7 +144335,6 @@ Jer
 Jer
 Jer
 Jer
-2038760	Jer
 Jer
 Jer
 Jer
@@ -144453,7 +144456,6 @@ Jer
 Jer
 Jer
 Jer
-2038883	Jer
 Jer
 Jer
 Jer
@@ -144718,7 +144720,6 @@ Jer
 Jer
 Jer
 Jer
-2039149	Jer
 Jer
 Jer
 Jer
@@ -144766,7 +144767,6 @@ Jer
 Jer
 Jer
 Jer
-2039198	Jer
 Jer
 Jer
 Jer
@@ -144791,7 +144791,6 @@ Jer
 Jer
 Jer
 Jer
-2039224	Jer
 Jer
 Jer
 Jer
@@ -144863,7 +144862,6 @@ Jer
 Jer
 Jer
 Jer
-2039297	Jer
 Jer
 Jer
 Jer
@@ -144914,7 +144912,6 @@ Jer
 Jer
 Jer
 Jer
-2039349	Jer
 Jer
 Jer
 Jer
@@ -144985,7 +144982,6 @@ Jer
 Jer
 Jer
 Jer
-2039421	Jer
 Jer
 Jer
 Jer
@@ -145064,7 +145060,6 @@ Jer
 Jer
 Jer
 Jer
-2039502	Jer
 Jer
 Jer
 Jer
@@ -145085,7 +145080,6 @@ Jer
 Jer
 Jer
 Jer
-2039524	Jer
 Jer
 Jer
 Jer
@@ -145172,7 +145166,6 @@ Jer
 Jer
 Jer
 Jer
-2039613	Jer
 Jer
 Jer
 Jer
@@ -145219,7 +145212,6 @@ Jer
 Jer
 Jer
 Jer
-2039661	Jer
 Jer
 Jer
 Jer
@@ -145256,7 +145248,6 @@ Jer
 Jer
 Jer
 Jer
-2039700	Jer
 Jer
 Jer
 Jer
@@ -145301,7 +145292,6 @@ Jer
 Jer
 Jer
 Jer
-2039746	Jer
 Jer
 Jer
 Jer
@@ -145321,13 +145311,23 @@ Jer
 Jer
 Jer
 Jer
-2039768	4Q72
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
+Jer
 4Q72
 4Q72
+4Q72
+Jer
 Jer
 Jer
 Jer
-2039775	Jer
 Jer
 Jer
 Jer
@@ -145365,7 +145365,6 @@ Jer
 Jer
 Jer
 Jer
-2039814	Jer
 Jer
 Jer
 Jer
@@ -145397,6 +145396,7 @@ Jer
 Jer
 Jer
 Jer
+Jer
 4Q72
 4Q72
 4Q72
@@ -145459,7 +145459,6 @@ Jer
 4Q72
 4Q72
 4Q72
-2039909	4Q72
 4Q72
 4Q72
 4Q72
@@ -145516,6 +145515,8 @@ Jer
 4Q72
 4Q72
 4Q72
+4Q72
+Jer
 Jer
 Jer
 Jer
@@ -145569,7 +145570,6 @@ Jer
 Jer
 Jer
 Jer
-2040020	Jer
 Jer
 Jer
 Jer
@@ -145676,7 +145676,6 @@ Jer
 Jer
 Jer
 Jer
-2040128	Jer
 Jer
 Jer
 Jer
@@ -145752,6 +145751,11 @@ Jer
 Jer
 Jer
 Jer
+Jer
+Ezek
+Ezek
+Ezek
+Ezek
 Ezek
 Ezek
 Ezek
@@ -146163,7 +146167,6 @@ Ezek
 Ezek
 Ezek
 Ezek
-2040616	Ezek
 Ezek
 Ezek
 Ezek
@@ -146421,11 +146424,9 @@ Ezek
 Ezek
 Ezek
 Ezek
-2040875	Ezek
 Ezek
 Ezek
 Ezek
-2040881	Ezek
 Ezek
 Ezek
 Ezek
@@ -146788,7 +146789,6 @@ Ezek
 Ezek
 Ezek
 Ezek
-2041245	Ezek
 Ezek
 Ezek
 Ezek
@@ -147044,7 +147044,6 @@ Mal
 Mal
 Mal
 Mal
-2041502	Mal
 Mal
 Mal
 Mal
@@ -147573,7 +147572,6 @@ Mal
 Mal
 Mal
 Mal
-2042033	Mal
 Mal
 Mal
 Mal
@@ -147593,7 +147591,8 @@ Mal
 Mal
 Mal
 Mal
-2042054	Jonah
+Mal
+Mal
 Jonah
 Jonah
 Jonah
@@ -147611,7 +147610,8 @@ Jonah
 Jonah
 Jonah
 Jonah
-2042073	Jonah
+Jonah
+Jonah
 Jonah
 Jonah
 Jonah
@@ -148074,7 +148074,7 @@ Zeph
 Zeph
 Zeph
 Zeph
-2042540	Hag
+Hag
 Hag
 Hag
 Hag
@@ -148260,7 +148260,7 @@ Hos
 Hos
 Hos
 Hos
-2042728	Hos
+Hos
 Hos
 Hos
 Hos
@@ -148810,7 +148810,6 @@ Hos
 Hos
 Hos
 Hos
-2043280	Hos
 Hos
 Hos
 Hos
@@ -148883,6 +148882,18 @@ Hos
 Hos
 Hos
 Hos
+Hos
+Joel
+Joel
+Joel
+Joel
+Joel
+Joel
+Joel
+Joel
+Joel
+Joel
+Joel
 Joel
 Joel
 Joel
@@ -148932,7 +148943,6 @@ Joel
 Joel
 Joel
 Joel
-2043403	Joel
 Joel
 Joel
 Joel
@@ -148957,7 +148967,6 @@ Joel
 Joel
 Joel
 Joel
-2043429	Joel
 Joel
 Joel
 Joel
@@ -149063,7 +149072,6 @@ Joel
 Joel
 Joel
 Joel
-2043536	Joel
 Joel
 Joel
 Joel
@@ -149134,7 +149142,6 @@ Joel
 Joel
 Joel
 Joel
-2043608	Joel
 Joel
 Joel
 Joel
@@ -149155,7 +149162,6 @@ Joel
 Joel
 Joel
 Joel
-2043630	Joel
 Joel
 Joel
 Joel
@@ -149178,7 +149184,6 @@ Joel
 Joel
 Joel
 Joel
-2043654	Joel
 Joel
 Joel
 Joel
@@ -149199,7 +149204,6 @@ Joel
 Joel
 Joel
 Joel
-2043676	Joel
 Joel
 Joel
 Joel
@@ -149221,10 +149225,8 @@ Joel
 Joel
 Joel
 Joel
-2043699	Joel
 Joel
 Joel
-2043703	Joel
 Joel
 Joel
 Joel
@@ -149234,7 +149236,6 @@ Joel
 Joel
 Joel
 Joel
-2043714	Joel
 Joel
 Joel
 Joel
@@ -149251,7 +149252,6 @@ Joel
 Joel
 Joel
 Joel
-2043732	Joel
 Joel
 Joel
 Joel
@@ -149273,7 +149273,6 @@ Joel
 Joel
 Joel
 Joel
-2043755	Joel
 Joel
 Joel
 Joel
@@ -149291,7 +149290,6 @@ Joel
 Joel
 Joel
 Joel
-2043774	Joel
 Joel
 Joel
 Joel
@@ -149319,7 +149317,6 @@ Joel
 Joel
 Joel
 Joel
-2043803	Joel
 Joel
 Joel
 Joel
@@ -149485,7 +149482,6 @@ Joel
 Joel
 Joel
 Joel
-2043970	Joel
 Joel
 Joel
 Joel
@@ -149539,8 +149535,6 @@ Joel
 Joel
 Joel
 Joel
-2044025	Joel
-2044027	Joel
 Joel
 Joel
 Joel
@@ -149572,7 +149566,6 @@ Joel
 Joel
 Joel
 Joel
-2044060	Joel
 Joel
 Joel
 Joel
@@ -149664,8 +149657,20 @@ Joel
 Joel
 Joel
 Joel
-2044153	Joel
 Joel
+Joel
+Joel
+Joel
+Joel
+Joel
+Joel
+Joel
+Joel
+Amos
+Amos
+Amos
+Amos
+Amos
 Amos
 Amos
 Amos
@@ -149698,7 +149703,6 @@ Amos
 Amos
 Amos
 Amos
-2044188	Amos
 Amos
 Amos
 Amos
@@ -149951,12 +149955,10 @@ Amos
 Amos
 Amos
 Amos
-2044442	Amos
 Amos
 Amos
 Amos
 Amos
-2044448	Amos
 Amos
 Amos
 Amos
@@ -150034,7 +150036,6 @@ Amos
 Amos
 Amos
 Amos
-2044527	Amos
 Amos
 Amos
 Amos
@@ -150193,7 +150194,6 @@ Amos
 Amos
 Amos
 Amos
-2044687	Amos
 Amos
 Amos
 Amos
@@ -150596,7 +150596,6 @@ Mal
 4Q78
 4Q78
 4Q78
-2045091	4Q78
 4Q78
 4Q78
 4Q78
@@ -150609,6 +150608,7 @@ Mal
 4Q78
 4Q78
 4Q78
+4Q78
 Hos
 Hos
 Hos
@@ -150842,7 +150842,6 @@ Hag
 Hag
 Hag
 Hag
-2045339	Zech
 Zech
 Zech
 Zech
@@ -151008,7 +151007,6 @@ Zech
 Zech
 Zech
 Zech
-2045506	Zech
 Zech
 Zech
 Zech
@@ -151021,7 +151019,6 @@ Zech
 Zech
 Zech
 Zech
-2045522	Zech
 Zech
 Zech
 Zech
@@ -151135,7 +151132,6 @@ Zech
 Zech
 Zech
 Zech
-2045637	Zech
 Zech
 Zech
 Zech
@@ -151150,7 +151146,6 @@ Zech
 Zech
 Zech
 Zech
-2045653	Zech
 Zech
 Zech
 Zech
@@ -151286,7 +151281,6 @@ Zech
 Zech
 Zech
 Zech
-2045791	Zech
 Zech
 Zech
 Zech
@@ -151304,7 +151298,6 @@ Zech
 Zech
 Zech
 Zech
-2045810	Zech
 Zech
 Zech
 Zech
@@ -151318,7 +151311,6 @@ Zech
 Zech
 Zech
 Zech
-2045825	Zech
 Zech
 Zech
 Zech
@@ -151367,7 +151359,6 @@ Zech
 Zech
 Zech
 Zech
-2045876	Zech
 Zech
 Zech
 Zech
@@ -151562,7 +151553,6 @@ Zech
 Zech
 Zech
 Zech
-2046072	Zech
 Zech
 Zech
 Zech
@@ -151719,7 +151709,17 @@ Zech
 Zech
 Zech
 Zech
-2046230	Zech
+Zech
+Zech
+Zech
+Zech
+Zech
+Zech
+Zech
+Zech
+Zech
+Zech
+Zech
 Zech
 Zech
 Zech
@@ -151757,30 +151757,6 @@ Zech
 4Q80
 4Q80
 4Q80
-2046269	4Q80
-4Q80
-4Q80
-4Q80
-4Q80
-4Q80
-4Q80
-4Q80
-4Q80
-4Q80
-4Q80
-4Q80
-4Q80
-4Q80
-4Q80
-4Q80
-4Q80
-2046287	4Q80
-4Q80
-4Q80
-4Q80
-4Q80
-4Q80
-2046294	4Q80
 4Q80
 4Q80
 4Q80
@@ -151813,6 +151789,30 @@ Zech
 4Q80
 4Q80
 4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
+4Q80
 Jonah
 Jonah
 Jonah
@@ -151885,7 +151885,6 @@ Jonah
 Jonah
 Jonah
 Jonah
-2046400	Jonah
 Jonah
 Jonah
 Jonah
@@ -152022,7 +152021,6 @@ Jonah
 Jonah
 Jonah
 Jonah
-2046538	Jonah
 Jonah
 Jonah
 Jonah
@@ -152058,7 +152056,9 @@ Jonah
 Jonah
 Jonah
 Jonah
-2046575	Jonah
+Jonah
+Jonah
+Jonah
 Mic
 Mic
 Mic
@@ -152102,8 +152102,16 @@ Mic
 Mic
 Mic
 Mic
+Hos
+Hos
+Hos
+Hos
+Hos
+Hos
+Hos
+Hos
+Hos
 Hos
-2046621	Hos
 Hos
 Hos
 Hos
@@ -152389,7 +152397,6 @@ Hos
 Hos
 Hos
 Hos
-2046909	Hos
 Hos
 Hos
 Hos
@@ -152496,7 +152503,6 @@ Hos
 Hos
 Hos
 Hos
-2047018	Hos
 Hos
 Hos
 Hos
@@ -152606,7 +152612,6 @@ Hos
 Hos
 Hos
 Hos
-2047129	Hos
 Hos
 Hos
 Hos
@@ -152622,7 +152627,6 @@ Hos
 Hos
 Hos
 Hos
-2047146	Hos
 Hos
 Hos
 Hos
@@ -152671,7 +152675,6 @@ Hos
 Hos
 Hos
 Hos
-2047197	Hos
 Hos
 Hos
 Hos
@@ -152904,7 +152907,6 @@ Hos
 Hos
 Hos
 Hos
-2047431	Hos
 Hos
 Hos
 Hos
@@ -152918,9 +152920,7 @@ Hos
 Hos
 Hos
 Hos
-2047446	Hos
 Hos
-2047449	Hos
 Hos
 Hos
 Hos
@@ -152943,7 +152943,6 @@ Hos
 Hos
 Hos
 Hos
-2047473	Hos
 Hos
 Hos
 Hos
@@ -152969,7 +152968,6 @@ Hos
 Hos
 Hos
 Hos
-2047500	Hos
 Hos
 Hos
 Hos
@@ -153009,7 +153007,6 @@ Hos
 Hos
 Hos
 Hos
-2047541	Hos
 Hos
 Hos
 Hos
@@ -153103,7 +153100,6 @@ Hos
 Hos
 Hos
 Hos
-2047636	Hos
 Hos
 Hos
 Hos
@@ -153113,7 +153109,6 @@ Hos
 Hos
 Hos
 Hos
-2047647	Hos
 Hos
 Hos
 Hos
@@ -153172,7 +153167,6 @@ Hos
 Hos
 Hos
 Hos
-2047707	Hos
 Hos
 Hos
 Hos
@@ -153371,7 +153365,6 @@ Hos
 Hos
 Hos
 Hos
-2047908	Hos
 Hos
 Hos
 Hos
@@ -153496,7 +153489,6 @@ Hos
 Hos
 Hos
 Hos
-2048035	Hos
 Hos
 Hos
 Hos
@@ -153729,6 +153721,15 @@ Hos
 Hos
 Hos
 Hos
+Hos
+Hos
+Hos
+Hos
+Hos
+Hos
+Hos
+Hos
+Joel
 Joel
 Joel
 Joel
@@ -153795,7 +153796,6 @@ Joel
 Joel
 Joel
 Joel
-2048336	Joel
 Joel
 Joel
 Joel
@@ -153919,9 +153919,7 @@ Joel
 Joel
 Joel
 Joel
-2048461	Joel
 Joel
-2048464	Joel
 Joel
 Joel
 Joel
@@ -154319,7 +154317,10 @@ Joel
 Joel
 Joel
 Joel
-2048865	Joel
+Joel
+Joel
+Joel
+Amos
 Amos
 Amos
 Amos
@@ -154367,7 +154368,6 @@ Amos
 Amos
 Amos
 Amos
-2048914	Amos
 Amos
 Amos
 Amos
@@ -154378,7 +154378,6 @@ Amos
 Amos
 Amos
 Amos
-2048926	Amos
 Amos
 Amos
 Amos
@@ -154399,7 +154398,6 @@ Amos
 Amos
 Amos
 Amos
-2048948	Amos
 Amos
 Amos
 Amos
@@ -154466,7 +154464,6 @@ Amos
 Amos
 Amos
 Amos
-2049016	Amos
 Amos
 Amos
 Amos
@@ -154522,7 +154519,6 @@ Amos
 Amos
 Amos
 Amos
-2049073	Amos
 Amos
 Amos
 Amos
@@ -154617,7 +154613,6 @@ Amos
 Amos
 Amos
 Amos
-2049171	Amos
 Amos
 Amos
 Amos
@@ -154802,7 +154797,6 @@ Amos
 Amos
 Amos
 Amos
-2049357	Amos
 Amos
 Amos
 Amos
@@ -154831,7 +154825,6 @@ Amos
 Amos
 Amos
 Amos
-2049387	Amos
 Amos
 Amos
 Amos
@@ -154845,7 +154838,6 @@ Amos
 Amos
 Amos
 Amos
-2049402	Amos
 Amos
 Amos
 Amos
@@ -154924,7 +154916,6 @@ Amos
 Amos
 Amos
 Amos
-2049482	Amos
 Amos
 Amos
 Amos
@@ -154966,7 +154957,6 @@ Amos
 Amos
 Amos
 Amos
-2049525	Amos
 Amos
 Amos
 Amos
@@ -154999,7 +154989,6 @@ Amos
 Amos
 Amos
 Amos
-2049559	Amos
 Amos
 Amos
 Amos
@@ -155037,7 +155026,6 @@ Amos
 Amos
 Amos
 Amos
-2049598	Amos
 Amos
 Amos
 Amos
@@ -155093,7 +155081,6 @@ Amos
 Amos
 Amos
 Amos
-2049655	Amos
 Amos
 Amos
 Amos
@@ -155197,8 +155184,6 @@ Amos
 Amos
 Amos
 Amos
-2049760	Amos
-2049762	Amos
 Amos
 Amos
 Amos
@@ -155490,7 +155475,6 @@ Amos
 Amos
 Amos
 Amos
-2050056	Amos
 Amos
 Amos
 Amos
@@ -155609,7 +155593,6 @@ Amos
 Amos
 Amos
 Amos
-2050176	Amos
 Amos
 Amos
 Amos
@@ -155656,7 +155639,6 @@ Amos
 Amos
 Amos
 Amos
-2050224	Amos
 Amos
 Amos
 Amos
@@ -155753,7 +155735,6 @@ Amos
 Amos
 Amos
 Amos
-2050322	Amos
 Amos
 Amos
 Amos
@@ -155783,7 +155764,25 @@ Amos
 Amos
 Amos
 Amos
-2050356	Obad
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
 Obad
 Obad
 Obad
@@ -155949,7 +155948,6 @@ Obad
 Obad
 Obad
 Obad
-2050523	Obad
 Obad
 Obad
 Obad
@@ -156054,7 +156052,9 @@ Obad
 Obad
 Obad
 Obad
-2050631	Jonah
+Obad
+Obad
+Jonah
 Jonah
 Jonah
 Jonah
@@ -156160,7 +156160,6 @@ Jonah
 Jonah
 Jonah
 Jonah
-2050738	Jonah
 Jonah
 Jonah
 Jonah
@@ -156376,7 +156375,6 @@ Jonah
 Jonah
 Jonah
 Jonah
-2050955	Jonah
 Jonah
 Jonah
 Jonah
@@ -156492,7 +156490,6 @@ Jonah
 Jonah
 Jonah
 Jonah
-2051072	Jonah
 Jonah
 Jonah
 Jonah
@@ -156618,6 +156615,10 @@ Jonah
 Jonah
 Jonah
 Jonah
+Jonah
+Jonah
+Jonah
+Mic
 Mic
 Mic
 Mic
@@ -156770,7 +156771,6 @@ Mic
 Mic
 Mic
 Mic
-2051352	Mic
 Mic
 Mic
 Mic
@@ -157162,7 +157162,6 @@ Zech
 Zech
 Zech
 Zech
-2051746	Zech
 Zech
 Zech
 Zech
@@ -157230,6 +157229,13 @@ Zech
 Zech
 Zech
 Zech
+Zech
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
 Ps
 Ps
 Ps
@@ -157294,7 +157300,6 @@ Ps
 Ps
 Ps
 Ps
-2051880	Ps
 Ps
 Ps
 Ps
@@ -157450,7 +157455,6 @@ Ps
 Ps
 Ps
 Ps
-2052037	Ps
 Ps
 Ps
 Ps
@@ -157591,7 +157595,6 @@ Ps
 Ps
 Ps
 Ps
-2052180	Ps
 Ps
 Ps
 Ps
@@ -157675,7 +157678,6 @@ Ps
 Ps
 Ps
 Ps
-2052265	Ps
 Ps
 Ps
 Ps
@@ -157736,7 +157738,6 @@ Ps
 Ps
 Ps
 Ps
-2052327	Ps
 Ps
 Ps
 Ps
@@ -157793,7 +157794,6 @@ Ps
 Ps
 Ps
 Ps
-2052385	Ps
 Ps
 Ps
 Ps
@@ -158269,7 +158269,6 @@ Ps
 Ps
 Ps
 Ps
-2052862	Ps
 Ps
 Ps
 Ps
@@ -158312,7 +158311,6 @@ Ps
 Ps
 Ps
 Ps
-2052906	Ps
 Ps
 Ps
 Ps
@@ -158340,7 +158338,6 @@ Ps
 Ps
 Ps
 Ps
-2052937	Ps
 Ps
 Ps
 Ps
@@ -158358,7 +158355,6 @@ Ps
 Ps
 Ps
 Ps
-2052956	Ps
 Ps
 Ps
 Ps
@@ -158455,7 +158451,6 @@ Ps
 Ps
 Ps
 Ps
-2053056	Ps
 Ps
 Ps
 Ps
@@ -158527,7 +158522,6 @@ Ps
 Ps
 Ps
 Ps
-2053131	Ps
 Ps
 Ps
 Ps
@@ -158677,7 +158671,13 @@ Ps
 Ps
 Ps
 Ps
-2053282	Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
 Ps
 Ps
 Ps
@@ -158851,7 +158851,6 @@ Ps
 Ps
 Ps
 Ps
-2053457	Ps
 Ps
 Ps
 Ps
@@ -158908,7 +158907,6 @@ Ps
 Ps
 Ps
 Ps
-2053515	Ps
 Ps
 Ps
 Ps
@@ -159043,7 +159041,6 @@ Ps
 Ps
 Ps
 Ps
-2053651	Ps
 Ps
 Ps
 Ps
@@ -159408,9 +159405,7 @@ Ps
 Ps
 Ps
 Ps
-2054017	Ps
 Ps
-2054020	Ps
 Ps
 Ps
 Ps
@@ -159573,7 +159568,6 @@ Ps
 Ps
 Ps
 Ps
-2054184	Ps
 Ps
 Ps
 Ps
@@ -159731,7 +159725,6 @@ Ps
 Ps
 Ps
 Ps
-2054343	Ps
 Ps
 Ps
 Ps
@@ -159808,7 +159801,14 @@ Ps
 Ps
 Ps
 Ps
-2054422	Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
 4Q84
 4Q84
 4Q84
@@ -160061,7 +160061,6 @@ Ps
 Ps
 Ps
 Ps
-2054676	Ps
 Ps
 Ps
 Ps
@@ -160231,7 +160230,6 @@ Ps
 Ps
 Ps
 Ps
-2054848	Ps
 Ps
 Ps
 Ps
@@ -160444,7 +160442,6 @@ Ps
 Ps
 Ps
 Ps
-2055063	Ps
 Ps
 Ps
 Ps
@@ -160480,7 +160477,6 @@ Ps
 Ps
 Ps
 Ps
-2055100	Ps
 Ps
 Ps
 Ps
@@ -160696,7 +160692,6 @@ Ps
 Ps
 Ps
 Ps
-2055317	Ps
 Ps
 Ps
 Ps
@@ -160853,7 +160848,6 @@ Ps
 Ps
 Ps
 Ps
-2055475	Ps
 Ps
 Ps
 Ps
@@ -160871,7 +160865,6 @@ Ps
 Ps
 Ps
 Ps
-2055494	Ps
 Ps
 Ps
 Ps
@@ -160879,6 +160872,13 @@ Ps
 Ps
 Ps
 Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
 4Q85
 4Q85
 4Q85
@@ -160957,6 +160957,19 @@ Ps
 4Q85
 4Q85
 4Q85
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
 Ps
 Ps
 Ps
@@ -160965,7 +160978,6 @@ Ps
 Ps
 Ps
 Ps
-2055590	Ps
 Ps
 Ps
 Ps
@@ -161020,7 +161032,6 @@ Ps
 Ps
 Ps
 Ps
-2055646	Ps
 Ps
 Ps
 Ps
@@ -161064,7 +161075,6 @@ Ps
 Ps
 Ps
 Ps
-2055691	Ps
 Ps
 Ps
 Ps
@@ -161104,7 +161114,6 @@ Ps
 Ps
 Ps
 Ps
-2055732	Ps
 Ps
 Ps
 Ps
@@ -161155,7 +161164,6 @@ Ps
 Ps
 Ps
 Ps
-2055784	Ps
 Ps
 Ps
 Ps
@@ -161198,7 +161206,6 @@ Ps
 Ps
 Ps
 Ps
-2055828	Ps
 Ps
 Ps
 Ps
@@ -161294,7 +161301,6 @@ Ps
 Ps
 Ps
 Ps
-2055926	Ps
 Ps
 Ps
 Ps
@@ -161432,7 +161438,6 @@ Ps
 Ps
 Ps
 Ps
-2056065	Ps
 Ps
 Ps
 Ps
@@ -161444,7 +161449,6 @@ Ps
 Ps
 Ps
 Ps
-2056078	Ps
 Ps
 Ps
 Ps
@@ -161541,7 +161545,6 @@ Ps
 Ps
 Ps
 Ps
-2056176	Ps
 Ps
 Ps
 Ps
@@ -161631,7 +161634,6 @@ Ps
 Ps
 Ps
 Ps
-2056267	Ps
 Ps
 Ps
 Ps
@@ -161680,7 +161682,6 @@ Ps
 Ps
 Ps
 Ps
-2056317	Ps
 Ps
 Ps
 Ps
@@ -162067,7 +162068,6 @@ Ps
 Ps
 Ps
 Ps
-2056705	Ps
 Ps
 Ps
 Ps
@@ -162621,7 +162621,6 @@ Ps
 Ps
 Ps
 Ps
-2057260	Ps
 Ps
 Ps
 Ps
@@ -162694,7 +162693,6 @@ Ps
 Ps
 Ps
 Ps
-2057336	Ps
 Ps
 Ps
 Ps
@@ -162713,7 +162711,6 @@ Ps
 Ps
 Ps
 Ps
-2057358	Ps
 Ps
 Ps
 Ps
@@ -162747,7 +162744,6 @@ Ps
 Ps
 Ps
 Ps
-2057393	Ps
 Ps
 Ps
 Ps
@@ -162755,10 +162751,14 @@ Ps
 Ps
 Ps
 Ps
-2057402	Ps
 Ps
 Ps
-2057406	Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
 Ps
 Ps
 Ps
@@ -163422,7 +163422,6 @@ Ps
 Ps
 Ps
 Ps
-2058072	Ps
 Ps
 Ps
 Ps
@@ -163701,12 +163700,10 @@ Ps
 Ps
 Ps
 Ps
-2058352	Ps
 Ps
 Ps
 Ps
 Ps
-2058358	Ps
 Ps
 Ps
 Ps
@@ -163827,7 +163824,6 @@ Ps
 Ps
 Ps
 Ps
-2058480	Ps
 Ps
 Ps
 Ps
@@ -163931,7 +163927,6 @@ Ps
 Ps
 Ps
 Ps
-2058587	Ps
 Ps
 Ps
 Ps
@@ -164001,7 +163996,6 @@ Ps
 Ps
 Ps
 Ps
-2058658	Ps
 Ps
 Ps
 Ps
@@ -164070,7 +164064,6 @@ Ps
 Ps
 Ps
 Ps
-2058728	Ps
 Ps
 Ps
 Ps
@@ -164257,7 +164250,6 @@ Ps
 Ps
 Ps
 Ps
-2058916	Ps
 Ps
 Ps
 Ps
@@ -164513,7 +164505,6 @@ Ps
 Ps
 Ps
 Ps
-2059173	Ps
 Ps
 Ps
 Ps
@@ -164693,7 +164684,6 @@ Ps
 Ps
 Ps
 Ps
-2059354	Ps
 Ps
 Ps
 Ps
@@ -164740,6 +164730,24 @@ Ps
 Ps
 Ps
 Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Job
+Job
+Job
+Job
+Job
+Job
+Job
+Job
 Job
 Job
 Job
@@ -164946,7 +164954,6 @@ Job
 Job
 Job
 Job
-2059608	Job
 Job
 Job
 Job
@@ -164965,7 +164972,6 @@ Job
 Job
 Job
 Job
-2059628	Job
 Job
 Job
 Job
@@ -165011,7 +165017,6 @@ Job
 Job
 Job
 Job
-2059675	Job
 Job
 Job
 Job
@@ -165088,7 +165093,6 @@ Job
 Job
 Job
 Job
-2059755	Job
 Job
 Job
 Job
@@ -165111,7 +165115,6 @@ Job
 Job
 Job
 Job
-2059779	Job
 Job
 Job
 Job
@@ -165128,7 +165131,6 @@ Job
 Job
 Job
 Job
-2059798	Job
 Job
 Job
 Job
@@ -165174,7 +165176,6 @@ Job
 Job
 Job
 Job
-2059845	Job
 Job
 Job
 Job
@@ -165243,7 +165244,6 @@ Job
 Job
 Job
 Job
-2059915	Job
 Job
 Job
 Job
@@ -165282,11 +165282,11 @@ Job
 4Q99
 4Q99
 4Q99
-2059955	4Q99
 4Q99
 4Q99
 4Q99
 4Q99
+4Q99
 Job
 Job
 Job
@@ -165447,7 +165447,6 @@ Job
 Job
 Job
 Job
-2060121	Job
 Job
 Job
 Job
@@ -165524,6 +165523,30 @@ Job
 Job
 Job
 Job
+Job
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
 Prov
 Prov
 Prov
@@ -165531,7 +165554,6 @@ Prov
 Prov
 Prov
 Prov
-2060206	Prov
 Prov
 Prov
 Prov
@@ -165541,7 +165563,6 @@ Prov
 Prov
 Prov
 Prov
-2060217	Prov
 Prov
 Prov
 Prov
@@ -165551,7 +165572,6 @@ Prov
 Prov
 Prov
 Prov
-2060228	Prov
 Prov
 Prov
 Prov
@@ -165559,7 +165579,6 @@ Prov
 Prov
 Prov
 Prov
-2060237	Prov
 Prov
 Prov
 Prov
@@ -165569,7 +165588,6 @@ Prov
 Prov
 Prov
 Prov
-2060248	Prov
 Prov
 Prov
 Prov
@@ -165577,13 +165595,11 @@ Prov
 Prov
 Prov
 Prov
-2060258	Prov
 Prov
 Prov
 Prov
 Prov
 Prov
-2060265	Prov
 Prov
 Prov
 Prov
@@ -165593,7 +165609,6 @@ Prov
 Prov
 Prov
 Prov
-2060276	Prov
 Prov
 Prov
 Prov
@@ -165602,7 +165617,6 @@ Prov
 Prov
 Prov
 Prov
-2060286	Prov
 Prov
 Prov
 Prov
@@ -165612,7 +165626,6 @@ Prov
 Prov
 Prov
 Prov
-2060297	Prov
 Prov
 Prov
 Prov
@@ -165621,7 +165634,6 @@ Prov
 Prov
 Prov
 Prov
-2060307	Prov
 Prov
 Prov
 Prov
@@ -165630,7 +165642,6 @@ Prov
 Prov
 Prov
 Prov
-2060317	Prov
 Prov
 Prov
 Prov
@@ -165643,7 +165654,6 @@ Prov
 Prov
 Prov
 Prov
-2060331	Prov
 Prov
 Prov
 Prov
@@ -165661,7 +165671,6 @@ Prov
 Prov
 Prov
 Prov
-2060350	Prov
 Prov
 Prov
 Prov
@@ -165670,10 +165679,8 @@ Prov
 Prov
 Prov
 Prov
-2060360	Prov
 Prov
 Prov
-2060364	Prov
 Prov
 Prov
 Prov
@@ -165682,7 +165689,6 @@ Prov
 Prov
 Prov
 Prov
-2060374	Prov
 Prov
 Prov
 Prov
@@ -165692,12 +165698,10 @@ Prov
 Prov
 Prov
 Prov
-2060385	Prov
 Prov
 Prov
 Prov
 Prov
-2060391	Prov
 Prov
 Prov
 Prov
@@ -165708,12 +165712,10 @@ Prov
 Prov
 Prov
 Prov
-2060403	Prov
 Prov
 Prov
 Prov
 Prov
-2060409	Prov
 Prov
 Prov
 Prov
@@ -165722,7 +165724,6 @@ Prov
 Prov
 Prov
 Prov
-2060419	Prov
 Prov
 Prov
 Prov
@@ -165731,7 +165732,6 @@ Prov
 Prov
 Prov
 Prov
-2060429	Prov
 Prov
 Prov
 Prov
@@ -165742,7 +165742,6 @@ Prov
 Prov
 Prov
 Prov
-2060441	Prov
 Prov
 Prov
 Prov
@@ -165751,7 +165750,6 @@ Prov
 Prov
 Prov
 Prov
-2060451	Prov
 Prov
 Prov
 Prov
@@ -165761,7 +165759,6 @@ Prov
 Prov
 Prov
 Prov
-2060462	Prov
 Prov
 Prov
 Prov
@@ -165770,7 +165767,6 @@ Prov
 Prov
 Prov
 Prov
-2060472	Prov
 Prov
 Prov
 Prov
@@ -165780,18 +165776,15 @@ Prov
 Prov
 Prov
 Prov
-2060483	Prov
 Prov
 Prov
 Prov
 Prov
 Prov
-2060490	Prov
 Prov
 Prov
 Prov
 Prov
-2060496	Prov
 Prov
 Prov
 Prov
@@ -165800,27 +165793,22 @@ Prov
 Prov
 Prov
 Prov
-2060506	Prov
 Prov
 Prov
 Prov
 Prov
 Prov
 Prov
-2060514	Prov
 Prov
 Prov
 Prov
-2060519	Prov
 Prov
 Prov
 Prov
 Prov
-2060525	Prov
 Prov
 Prov
 Prov
-2060530	Prov
 Prov
 Prov
 Prov
@@ -165830,7 +165818,6 @@ Prov
 Prov
 Prov
 Prov
-2060541	Prov
 Prov
 Prov
 Prov
@@ -165840,14 +165827,12 @@ Prov
 Prov
 Prov
 Prov
-2060552	Prov
 Prov
 Prov
 Prov
 Prov
 Prov
 Prov
-2060560	Prov
 Prov
 Prov
 Prov
@@ -165857,7 +165842,6 @@ Prov
 Prov
 Prov
 Prov
-2060571	Prov
 Prov
 Prov
 Prov
@@ -165868,7 +165852,6 @@ Prov
 Prov
 Prov
 Prov
-2060583	Prov
 Prov
 Prov
 Prov
@@ -165879,26 +165862,22 @@ Prov
 Prov
 Prov
 Prov
-2060595	Prov
 Prov
 Prov
 Prov
 Prov
 Prov
-2060602	Prov
 Prov
 Prov
 Prov
 Prov
 Prov
 Prov
-2060610	Prov
 Prov
 Prov
 Prov
 Prov
 Prov
-2060617	Prov
 Prov
 Prov
 Prov
@@ -165908,7 +165887,6 @@ Prov
 Prov
 Prov
 Prov
-2060628	Prov
 Prov
 Prov
 Prov
@@ -165935,7 +165913,6 @@ Prov
 Prov
 Prov
 Prov
-2060656	Prov
 Prov
 Prov
 Prov
@@ -165945,7 +165922,6 @@ Prov
 Prov
 Prov
 Prov
-2060667	Prov
 Prov
 Prov
 Prov
@@ -166012,6 +165988,30 @@ Prov
 Prov
 Prov
 Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
+Prov
 Ruth
 Ruth
 Ruth
@@ -166425,6 +166425,7 @@ Ruth
 Ruth
 Ruth
 Ruth
+Song
 Song
 Song
 Song
@@ -166530,7 +166531,6 @@ Song
 Song
 Song
 Song
-2061255	Song
 Song
 Song
 Song
@@ -166851,7 +166851,6 @@ Song
 Song
 Song
 Song
-2061577	Song
 Song
 Song
 Song
@@ -166912,7 +166911,6 @@ Song
 Song
 Song
 Song
-2061639	Song
 Song
 Song
 Song
@@ -166966,7 +166964,6 @@ Song
 Song
 Song
 Song
-2061694	Song
 Song
 Song
 Song
@@ -167003,7 +167000,6 @@ Song
 Song
 Song
 Song
-2061733	Song
 Song
 Song
 Song
@@ -167063,7 +167059,6 @@ Song
 Song
 Song
 Song
-2061795	Song
 Song
 Song
 Song
@@ -167191,7 +167186,6 @@ Song
 Song
 Song
 Song
-2061924	Song
 Song
 Song
 Song
@@ -167214,6 +167208,14 @@ Song
 Song
 Song
 Song
+Song
+Song
+Song
+Song
+Song
+Song
+Eccl
+Eccl
 Eccl
 Eccl
 Eccl
@@ -167519,7 +167521,6 @@ Eccl
 Eccl
 Eccl
 Eccl
-2062253	Eccl
 Eccl
 Eccl
 Eccl
@@ -167682,7 +167683,6 @@ Eccl
 Eccl
 Eccl
 Eccl
-2062417	Eccl
 Eccl
 Eccl
 Eccl
@@ -168143,6 +168143,14 @@ Lam
 Lam
 Lam
 Lam
+Dan
+Dan
+Dan
+Dan
+Dan
+Dan
+Dan
+Dan
 Dan
 Dan
 Dan
@@ -168187,7 +168195,6 @@ Dan
 Dan
 Dan
 Dan
-2062923	Dan
 Dan
 Dan
 Dan
@@ -169013,7 +169020,6 @@ Dan
 Dan
 Dan
 Dan
-2063750	Dan
 Dan
 Dan
 Dan
@@ -169080,7 +169086,6 @@ Dan
 Dan
 Dan
 Dan
-2063818	Dan
 Dan
 Dan
 Dan
@@ -169174,7 +169179,6 @@ Dan
 Dan
 Dan
 Dan
-2063914	Dan
 Dan
 Dan
 Dan
@@ -169200,7 +169204,6 @@ Dan
 Dan
 Dan
 Dan
-2063941	Dan
 Dan
 Dan
 Dan
@@ -169222,7 +169225,6 @@ Dan
 Dan
 Dan
 Dan
-2063964	Dan
 Dan
 Dan
 Dan
@@ -169378,7 +169380,6 @@ Dan
 Dan
 Dan
 Dan
-2064121	Dan
 Dan
 Dan
 Dan
@@ -169686,7 +169687,6 @@ Dan
 Dan
 Dan
 Dan
-2064430	Dan
 Dan
 Dan
 Dan
@@ -170506,7 +170506,6 @@ Dan
 Dan
 Dan
 Dan
-2065251	Dan
 Dan
 Dan
 Dan
@@ -170635,7 +170634,6 @@ Dan
 Dan
 Dan
 Dan
-2065384	Dan
 Dan
 Dan
 Dan
@@ -170785,11 +170783,8 @@ Dan
 Dan
 Dan
 Dan
-2065535	Dan
 Dan
 Dan
-2065539	Dan
-2065541	Dan
 Dan
 Dan
 Dan
@@ -170904,7 +170899,6 @@ Dan
 Dan
 Dan
 Dan
-2065657	Dan
 Dan
 Dan
 Dan
@@ -171240,7 +171234,13 @@ Dan
 Dan
 Dan
 Dan
-2065995	Dan
+Dan
+Dan
+Dan
+Dan
+Dan
+Dan
+Dan
 Dan
 Dan
 Dan
@@ -171284,11 +171284,11 @@ Dan
 4Q113
 4Q113
 4Q113
-2066040	4Q113
 4Q113
 4Q113
 4Q113
-2066045	4Q113
+4Q113
+4Q113
 4Q113
 Dan
 Dan
@@ -171684,9 +171684,7 @@ Dan
 Dan
 Dan
 Dan
-2066442	Dan
 Dan
-2066446	Dan
 Dan
 Dan
 Dan
@@ -171710,7 +171708,6 @@ Dan
 Dan
 Dan
 Dan
-2066471	Dan
 Dan
 Dan
 Dan
@@ -171867,6 +171864,9 @@ Dan
 Dan
 Dan
 Dan
+Dan
+Dan
+Dan
 4Q115
 4Q115
 4Q115
@@ -171879,6 +171879,11 @@ Dan
 4Q115
 4Q115
 4Q115
+Dan
+Dan
+Dan
+Dan
+Dan
 Dan
 Dan
 Dan
@@ -171893,7 +171898,6 @@ Dan
 Dan
 Dan
 Dan
-2066655	Dan
 Dan
 Dan
 Dan
@@ -171928,7 +171932,6 @@ Dan
 Dan
 Dan
 Dan
-2066691	Dan
 Dan
 Dan
 Dan
@@ -171992,7 +171995,6 @@ Dan
 Dan
 Dan
 Dan
-2066756	Dan
 Dan
 Dan
 Dan
@@ -172030,7 +172032,6 @@ Dan
 Dan
 Dan
 Dan
-2066795	Dan
 Dan
 Dan
 Dan
@@ -172048,7 +172049,6 @@ Dan
 Dan
 Dan
 Dan
-2066814	Dan
 Dan
 Dan
 Dan
@@ -172077,7 +172077,6 @@ Dan
 Dan
 Dan
 Dan
-2066844	Dan
 Dan
 Dan
 Dan
@@ -172154,7 +172153,6 @@ Dan
 Dan
 Dan
 Dan
-2066922	Dan
 Dan
 Dan
 Dan
@@ -172232,7 +172230,6 @@ Dan
 Dan
 Dan
 Dan
-2067001	Dan
 Dan
 Dan
 Dan
@@ -172293,7 +172290,6 @@ Dan
 Dan
 Dan
 Dan
-2067063	Dan
 Dan
 Dan
 Dan
@@ -172307,7 +172303,6 @@ Dan
 Dan
 Dan
 Dan
-2067078	Dan
 Dan
 Dan
 Dan
@@ -172347,7 +172342,12 @@ Dan
 Dan
 Dan
 Dan
-2067119	Dan
+Dan
+Dan
+Dan
+Dan
+Dan
+Dan
 4Q115
 4Q115
 4Q115
@@ -172369,7 +172369,6 @@ Dan
 4Q115
 4Q115
 4Q115
-2067142	4Q115
 4Q115
 4Q115
 4Q115
@@ -172434,6 +172433,7 @@ Dan
 4Q115
 4Q115
 4Q115
+4Q115
 Dan
 Dan
 Dan
@@ -172495,7 +172495,6 @@ Dan
 Dan
 Dan
 Dan
-2067269	Dan
 Dan
 Dan
 Dan
@@ -172575,6 +172574,8 @@ Dan
 Dan
 Dan
 Dan
+Dan
+Ezra
 Ezra
 Ezra
 Ezra
@@ -172921,7 +172922,6 @@ Ezra
 Ezra
 Ezra
 Ezra
-2067696	Ezra
 Ezra
 Ezra
 4Q118
@@ -173116,7 +173116,6 @@ Deut
 Deut
 Deut
 Deut
-2067892	Deut
 Deut
 Deut
 Deut
@@ -174195,6 +174194,8 @@ Deut
 Deut
 Deut
 Deut
+Deut
+Ex
 Ex
 Ex
 Ex
@@ -174339,7 +174340,6 @@ Ex
 Ex
 Ex
 Ex
-2069116	Ex
 Ex
 Ex
 Ex
@@ -175232,6 +175232,8 @@ Deut
 Deut
 Deut
 Deut
+Ex
+Ex
 Ex
 Ex
 Ex
@@ -175281,7 +175283,6 @@ Ex
 Ex
 Ex
 Ex
-2070059	Ex
 Ex
 Ex
 Ex
@@ -175408,7 +175409,6 @@ Ex
 Ex
 Ex
 Ex
-2070187	Ex
 Ex
 Ex
 Ex
@@ -175616,7 +175616,6 @@ Ex
 Ex
 Ex
 Ex
-2070396	Ex
 Ex
 Ex
 Ex
@@ -175765,7 +175764,8 @@ Ex
 Ex
 Ex
 Ex
-2070546	Deut
+Ex
+Deut
 Deut
 Deut
 Deut
@@ -175848,7 +175848,6 @@ Deut
 Deut
 Deut
 Deut
-2070630	Deut
 Deut
 Deut
 Deut
@@ -176127,6 +176126,7 @@ Deut
 Deut
 Deut
 Deut
+Deut
 Ex
 Ex
 Ex
@@ -176387,6 +176387,7 @@ Ex
 Ex
 Ex
 Ex
+Deut
 Deut
 Deut
 Deut
@@ -176643,7 +176644,6 @@ Deut
 Deut
 Deut
 Deut
-2071426	Deut
 Deut
 Deut
 Deut
@@ -177458,7 +177458,6 @@ Deut
 Deut
 Deut
 Deut
-2072242	Ex
 Ex
 Ex
 Ex
@@ -177598,7 +177597,6 @@ Ex
 Ex
 Ex
 Ex
-2072383	Ex
 Ex
 Ex
 Ex
@@ -177806,6 +177804,8 @@ Ex
 Ex
 Ex
 Ex
+Ex
+Ex
 Deut
 Deut
 Deut
@@ -179566,7 +179566,6 @@ Ex
 Ex
 Ex
 Ex
-2074352	Ex
 Ex
 Ex
 Ex
@@ -179779,6 +179778,7 @@ Ex
 Ex
 Ex
 Ex
+Ex
 Deut
 Deut
 Deut
@@ -180753,6 +180753,7 @@ Deut
 Deut
 Deut
 Deut
+Ex
 Ex
 Ex
 Ex
@@ -181025,7 +181026,6 @@ Ex
 Ex
 Ex
 Ex
-2075813	Ex
 Ex
 Ex
 Ex
@@ -181144,7 +181144,6 @@ Deut
 Deut
 Deut
 Ex
-2075933	Ex
 Ex
 Ex
 Ex
@@ -181261,8 +181260,9 @@ Ex
 Ex
 Ex
 Ex
-2076051	Ex
 Ex
+Ex
+Ex
 Deut
 Deut
 Deut
@@ -182534,7 +182534,6 @@ Deut
 Deut
 Deut
 Deut
-2077325	Deut
 Deut
 Deut
 Deut
@@ -182884,7 +182883,6 @@ Deut
 Deut
 Deut
 Deut
-2077676	Deut
 Deut
 Deut
 Deut
@@ -182930,6 +182928,9 @@ Deut
 Deut
 Deut
 Deut
+Deut
+Deut
+1Kgs
 1Kgs
 1Kgs
 1Kgs
@@ -183096,7 +183097,6 @@ Deut
 1Kgs
 1Kgs
 1Kgs
-2077889	1Kgs
 1Kgs
 1Kgs
 1Kgs
@@ -183670,7 +183670,6 @@ Lam
 Lam
 Lam
 Lam
-2078464	Lam
 Lam
 Lam
 Lam
@@ -183790,7 +183789,6 @@ Lam
 Lam
 Lam
 Lam
-2078586	Lam
 Lam
 Lam
 Lam
@@ -183907,7 +183905,9 @@ Lam
 Lam
 Lam
 Lam
-2078704	Lam
+Lam
+Lam
+Lam
 Lam
 Lam
 Lam
@@ -184079,7 +184079,7 @@ Lam
 Lam
 Lam
 Gen
-2078877	Gen
+Gen
 Gen
 Gen
 Gen
@@ -184296,7 +184296,7 @@ Lev
 Lev
 Lev
 Lev
-2079095	Lev
+Lev
 Lev
 Lev
 Lev
@@ -184529,7 +184529,6 @@ Deut
 1Kgs
 1Kgs
 1Kgs
-2079329	1Kgs
 1Kgs
 1Kgs
 1Kgs
@@ -184560,6 +184559,7 @@ Deut
 1Kgs
 1Kgs
 1Kgs
+1Kgs
 2Kgs
 2Kgs
 2Kgs
@@ -184810,7 +184810,6 @@ Deut
 2Kgs
 2Kgs
 2Kgs
-2079611	2Kgs
 2Kgs
 2Kgs
 2Kgs
@@ -184885,7 +184884,6 @@ Deut
 2Kgs
 2Kgs
 2Kgs
-2079687	2Kgs
 2Kgs
 2Kgs
 2Kgs
@@ -185033,6 +185031,9 @@ Deut
 2Kgs
 2Kgs
 2Kgs
+2Kgs
+2Kgs
+6Q4
 6Q4
 6Q4
 6Q4
@@ -185413,7 +185414,6 @@ Deut
 6Q4
 6Q4
 6Q4
-2080216	6Q4
 6Q4
 6Q4
 6Q4
@@ -185543,7 +185543,7 @@ Song
 Song
 Song
 Song
-2080347	Song
+Song
 Song
 Song
 Song
@@ -186165,7 +186165,7 @@ Gen
 Gen
 Gen
 Gen
-2080970	Gen
+Gen
 Gen
 Gen
 Gen
@@ -186409,7 +186409,7 @@ Ps
 Ps
 Ps
 Ps
-2081215	Ps
+Ps
 Ps
 Ps
 Ps
@@ -187172,7 +187172,6 @@ Deut
 Deut
 Deut
 Deut
-2081979	8Q3
 8Q3
 8Q3
 8Q3
@@ -187225,6 +187224,7 @@ Deut
 8Q3
 8Q3
 8Q3
+8Q3
 Deut
 Deut
 Deut
@@ -187620,7 +187620,7 @@ Ex
 Ex
 Ex
 Ex
-2082428	Deut
+Deut
 Deut
 Deut
 Deut
@@ -187886,10 +187886,10 @@ Ex
 Ex
 Ex
 Ex
-2082695	Ex
 Ex
 Ex
 Ex
+Ex
 8Q3
 8Q3
 8Q3
@@ -188146,7 +188146,8 @@ Deut
 Deut
 Deut
 Deut
-2082957	8Q3
+8Q3
+8Q3
 8Q3
 8Q3
 8Q3
@@ -188291,7 +188292,6 @@ Deut
 8Q3
 8Q3
 8Q3
-2083103	8Q3
 8Q3
 8Q3
 8Q3
@@ -189129,6 +189129,21 @@ Deut
 Deut
 Deut
 Deut
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
 Lev
 Lev
 Lev
@@ -189699,7 +189714,6 @@ Lev
 Lev
 Lev
 Lev
-2084512	Lev
 Lev
 Lev
 Lev
@@ -189711,7 +189725,6 @@ Lev
 Lev
 Lev
 Lev
-2084525	Lev
 Lev
 Lev
 Lev
@@ -189721,7 +189734,6 @@ Lev
 Lev
 Lev
 Lev
-2084536	Lev
 Lev
 Lev
 Lev
@@ -189913,7 +189925,6 @@ Lev
 Lev
 Lev
 Lev
-2084729	Lev
 Lev
 Lev
 Lev
@@ -190125,7 +190136,6 @@ Lev
 Lev
 Lev
 Lev
-2084942	Lev
 Lev
 Lev
 Lev
@@ -190166,7 +190176,6 @@ Lev
 Lev
 Lev
 Lev
-2084984	Lev
 Lev
 Lev
 Lev
@@ -190206,7 +190215,6 @@ Lev
 Lev
 Lev
 Lev
-2085025	Lev
 Lev
 Lev
 Lev
@@ -190301,7 +190309,6 @@ Lev
 Lev
 Lev
 Lev
-2085121	Lev
 Lev
 Lev
 Lev
@@ -190379,7 +190386,6 @@ Lev
 Lev
 Lev
 Lev
-2085200	Lev
 Lev
 Lev
 Lev
@@ -190571,13 +190577,11 @@ Lev
 Lev
 Lev
 Lev
-2085393	Lev
 Lev
 Lev
 Lev
 Lev
 Lev
-2085400	Lev
 Lev
 Lev
 Lev
@@ -190640,7 +190644,6 @@ Lev
 Lev
 Lev
 Lev
-2085464	Lev
 Lev
 Lev
 Lev
@@ -190652,7 +190655,6 @@ Lev
 Lev
 Lev
 Lev
-2085477	Lev
 Lev
 Lev
 Lev
@@ -190719,7 +190721,6 @@ Lev
 Lev
 Lev
 Lev
-2085545	Lev
 Lev
 Lev
 Lev
@@ -190815,8 +190816,6 @@ Lev
 Lev
 Lev
 Lev
-2085642	Lev
-2085645	Lev
 Lev
 Lev
 Lev
@@ -190850,9 +190849,7 @@ Lev
 Lev
 Lev
 Lev
-2085680	Lev
 Lev
-2085683	Lev
 Lev
 Lev
 Lev
@@ -190895,7 +190892,6 @@ Lev
 Lev
 Lev
 Lev
-2085727	Lev
 Lev
 Lev
 Lev
@@ -190924,11 +190920,9 @@ Lev
 Lev
 Lev
 Lev
-2085757	Lev
 Lev
 Lev
 Lev
-2085762	Lev
 Lev
 Lev
 Lev
@@ -190948,7 +190942,6 @@ Lev
 Lev
 Lev
 Lev
-2085783	Lev
 Lev
 Lev
 Lev
@@ -190991,7 +190984,6 @@ Lev
 Lev
 Lev
 Lev
-2085827	Lev
 Lev
 Lev
 Lev
@@ -191062,7 +191054,6 @@ Lev
 Lev
 Lev
 Lev
-2085899	Lev
 Lev
 Lev
 Lev
@@ -191097,7 +191088,6 @@ Lev
 Lev
 Lev
 Lev
-2085935	Lev
 Lev
 Lev
 Lev
@@ -191266,7 +191256,6 @@ Lev
 Lev
 Lev
 Lev
-2086105	Lev
 Lev
 Lev
 Lev
@@ -191275,7 +191264,6 @@ Lev
 Lev
 Lev
 Lev
-2086115	Lev
 Lev
 Lev
 Lev
@@ -191419,20 +191407,13 @@ Lev
 Lev
 Lev
 Lev
-2086260	Lev
 Lev
-2086263	Lev
 Lev
 Lev
 Lev
 Lev
-2086269	Lev
 Lev
-2086272	Lev
-2086274	Lev
 Lev
-2086277	Lev
-2086279	Lev
 Lev
 Lev
 Lev
@@ -191571,12 +191552,31 @@ Lev
 Lev
 Lev
 Lev
-2086419	Lev
 Lev
 Lev
 Lev
 Lev
 Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
 11Q1
 11Q1
 11Q1
@@ -191705,6 +191705,7 @@ Lev
 11Q1
 11Q1
 11Q1
+Lev
 Lev
 Lev
 Lev
@@ -191904,7 +191905,6 @@ Lev
 Lev
 Lev
 Lev
-2086753	Lev
 Lev
 Lev
 Lev
@@ -192634,7 +192634,6 @@ Ps
 Ps
 Ps
 Ps
-2087484	Ps
 Ps
 Ps
 Ps
@@ -192785,7 +192784,6 @@ Ps
 Ps
 Ps
 Ps
-2087637	Ps
 Ps
 Ps
 Ps
@@ -192953,7 +192951,6 @@ Ps
 Ps
 Ps
 Ps
-2087808	Ps
 Ps
 Ps
 Ps
@@ -193152,7 +193149,6 @@ Ps
 Ps
 Ps
 Ps
-2088008	Ps
 Ps
 Ps
 Ps
@@ -193184,7 +193180,6 @@ Ps
 Ps
 Ps
 Ps
-2088041	Ps
 Ps
 Ps
 Ps
@@ -193227,7 +193222,12 @@ Ps
 Ps
 Ps
 Ps
-2088085	Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
 Ps
 Ps
 Ps
@@ -193549,7 +193549,6 @@ Ps
 Ps
 Ps
 Ps
-2088408	Ps
 Ps
 Ps
 Ps
@@ -193587,7 +193586,6 @@ Ps
 Ps
 Ps
 Ps
-2088447	Ps
 Ps
 Ps
 Ps
@@ -193715,7 +193713,6 @@ Ps
 Ps
 Ps
 Ps
-2088577	Ps
 Ps
 Ps
 Ps
@@ -193728,7 +193725,6 @@ Ps
 Ps
 Ps
 Ps
-2088591	Ps
 Ps
 Ps
 Ps
@@ -193795,7 +193791,6 @@ Ps
 Ps
 Ps
 Ps
-2088661	Ps
 Ps
 Ps
 Ps
@@ -193813,7 +193808,6 @@ Ps
 Ps
 Ps
 Ps
-2088680	Ps
 Ps
 Ps
 Ps
@@ -193829,7 +193823,6 @@ Ps
 Ps
 Ps
 Ps
-2088697	Ps
 Ps
 Ps
 Ps
@@ -193880,7 +193873,6 @@ Ps
 Ps
 Ps
 Ps
-2088750	Ps
 Ps
 Ps
 Ps
@@ -193924,7 +193916,6 @@ Ps
 Ps
 Ps
 Ps
-2088795	Ps
 Ps
 Ps
 Ps
@@ -193995,7 +193986,6 @@ Ps
 Ps
 Ps
 Ps
-2088868	Ps
 Ps
 Ps
 Ps
@@ -194066,7 +194056,6 @@ Ps
 Ps
 Ps
 Ps
-2088940	Ps
 Ps
 Ps
 Ps
@@ -194111,7 +194100,6 @@ Ps
 Ps
 Ps
 Ps
-2088986	Ps
 Ps
 Ps
 Ps
@@ -194188,7 +194176,6 @@ Ps
 Ps
 Ps
 Ps
-2089065	Ps
 Ps
 Ps
 Ps
@@ -194266,7 +194253,6 @@ Ps
 Ps
 Ps
 Ps
-2089144	Ps
 Ps
 Ps
 Ps
@@ -194390,7 +194376,6 @@ Ps
 Ps
 Ps
 Ps
-2089271	Ps
 Ps
 Ps
 Ps
@@ -195269,7 +195254,6 @@ Ps
 Ps
 Ps
 Ps
-2090151	Ps
 Ps
 Ps
 Ps
@@ -195387,9 +195371,7 @@ Ps
 Ps
 Ps
 Ps
-2090270	Ps
 Ps
-2090273	Ps
 Ps
 Ps
 Ps
@@ -195545,7 +195527,6 @@ Ps
 Ps
 Ps
 Ps
-2090430	Ps
 Ps
 Ps
 Ps
@@ -195591,7 +195572,6 @@ Ps
 Ps
 Ps
 Ps
-2090477	Ps
 Ps
 Ps
 Ps
@@ -195804,7 +195784,6 @@ Ps
 Ps
 Ps
 Ps
-2090691	Ps
 Ps
 Ps
 Ps
@@ -196237,9 +196216,7 @@ Ps
 Ps
 Ps
 Ps
-2091125	Ps
 Ps
-2091128	Ps
 Ps
 Ps
 Ps
@@ -196327,7 +196304,6 @@ Ps
 Ps
 Ps
 Ps
-2091217	Ps
 Ps
 Ps
 Ps
@@ -196348,7 +196324,6 @@ Ps
 Ps
 Ps
 Ps
-2091239	Ps
 Ps
 Ps
 Ps
@@ -196449,7 +196424,6 @@ Ps
 Ps
 Ps
 Ps
-2091341	Ps
 Ps
 Ps
 Ps
@@ -196546,7 +196520,6 @@ Ps
 Ps
 Ps
 Ps
-2091440	Ps
 Ps
 Ps
 Ps
@@ -196557,7 +196530,6 @@ Ps
 Ps
 Ps
 Ps
-2091452	Ps
 Ps
 Ps
 Ps
@@ -196602,7 +196574,6 @@ Ps
 Ps
 Ps
 Ps
-2091498	Ps
 Ps
 Ps
 Ps
@@ -196693,7 +196664,6 @@ Ps
 Ps
 Ps
 Ps
-2091590	Ps
 Ps
 Ps
 Ps
@@ -196752,7 +196722,6 @@ Ps
 Ps
 Ps
 Ps
-2091651	Ps
 Ps
 Ps
 Ps
@@ -196900,7 +196869,6 @@ Ps
 Ps
 Ps
 Ps
-2091800	Ps
 Ps
 Ps
 Ps
@@ -196955,7 +196923,38 @@ Ps
 Ps
 Ps
 Ps
-2091856	2Sam
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
 2Sam
 2Sam
 2Sam
@@ -196973,7 +196972,7 @@ Ps
 2Sam
 2Sam
 2Sam
-2091876	Ps
+2Sam
 Ps
 Ps
 Ps
@@ -197087,7 +197086,6 @@ Ps
 Ps
 Ps
 Ps
-2091994	Ps
 Ps
 Ps
 Ps
@@ -197102,7 +197100,6 @@ Ps
 Ps
 Ps
 Ps
-2092010	Ps
 Ps
 Ps
 Ps
@@ -197110,7 +197107,6 @@ Ps
 Ps
 Ps
 Ps
-2092019	Ps
 Ps
 Ps
 Ps
@@ -197156,7 +197152,6 @@ Ps
 Ps
 Ps
 Ps
-2092067	Ps
 Ps
 Ps
 Ps
@@ -197212,7 +197207,12 @@ Ps
 Ps
 Ps
 Ps
-2092126	Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
 Ps
 Ps
 Ps
@@ -197500,7 +197500,6 @@ Ps
 Ps
 Ps
 Ps
-2092415	Ps
 Ps
 Ps
 Ps
@@ -197526,7 +197525,6 @@ Ps
 Ps
 Ps
 Ps
-2092442	Ps
 Ps
 Ps
 Ps
@@ -197596,7 +197594,6 @@ Ps
 Ps
 Ps
 Ps
-2092513	Ps
 Ps
 Ps
 Ps
@@ -197756,7 +197753,6 @@ Ps
 Ps
 Ps
 Ps
-2092674	Ps
 Ps
 Ps
 Ps
@@ -197906,7 +197902,6 @@ Ps
 Ps
 Ps
 Ps
-2092825	Ps
 Ps
 Ps
 Ps
@@ -198208,7 +198203,6 @@ Ps
 Ps
 Ps
 Ps
-2093129	Ps
 Ps
 Ps
 Ps
@@ -198278,7 +198272,6 @@ Ps
 Ps
 Ps
 Ps
-2093200	Ps
 Ps
 Ps
 Ps
@@ -198750,7 +198743,14 @@ Ps
 Ps
 Ps
 Ps
-2093675	Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
 Ps
 Ps
 Ps
@@ -200528,7 +200528,6 @@ Gen
 Gen
 Gen
 Gen
-2095455	Gen
 Gen
 Gen
 Gen
@@ -200631,6 +200630,8 @@ Gen
 Gen
 Gen
 Gen
+Gen
+Ex
 Ex
 Ex
 Ex
@@ -200893,7 +200894,6 @@ Ex
 Ex
 Ex
 Ex
-2095822	Ex
 Ex
 Ex
 Ex
@@ -201508,7 +201508,6 @@ Ex
 Ex
 Ex
 Ex
-2096438	Ex
 Ex
 Ex
 Ex
@@ -201652,7 +201651,8 @@ Ex
 Ex
 Ex
 Ex
-2096583	Deut
+Ex
+Deut
 Deut
 Deut
 Deut
@@ -201925,6 +201925,8 @@ Deut
 Deut
 Deut
 Deut
+Joel
+Joel
 Joel
 Joel
 Joel
@@ -202014,7 +202016,6 @@ Joel
 Joel
 Joel
 Joel
-2096948	Joel
 Joel
 Joel
 Joel
@@ -202282,7 +202283,6 @@ Joel
 Joel
 Joel
 Joel
-2097217	Joel
 Joel
 Joel
 Joel
@@ -202391,6 +202391,10 @@ Joel
 Joel
 Joel
 Joel
+Amos
+Amos
+Amos
+Amos
 Amos
 Amos
 Amos
@@ -202406,7 +202410,6 @@ Amos
 Amos
 Amos
 Amos
-2097343	Amos
 Amos
 Amos
 Amos
@@ -202494,7 +202497,6 @@ Amos
 Amos
 Amos
 Amos
-2097432	Amos
 Amos
 Amos
 Amos
@@ -202534,7 +202536,6 @@ Amos
 Amos
 Amos
 Amos
-2097473	Amos
 Amos
 Amos
 Amos
@@ -202589,7 +202590,6 @@ Amos
 Amos
 Amos
 Amos
-2097530	Amos
 Amos
 Amos
 Amos
@@ -202628,7 +202628,6 @@ Amos
 Amos
 Amos
 Amos
-2097571	Amos
 Amos
 Amos
 Amos
@@ -202677,7 +202676,6 @@ Amos
 Amos
 Amos
 Amos
-2097621	Amos
 Amos
 Amos
 Amos
@@ -202732,7 +202730,6 @@ Amos
 Amos
 Amos
 Amos
-2097677	Amos
 Amos
 Amos
 Amos
@@ -202777,7 +202774,6 @@ Amos
 Amos
 Amos
 Amos
-2097724	Amos
 Amos
 Amos
 Amos
@@ -202906,7 +202902,6 @@ Amos
 Amos
 Amos
 Amos
-2097855	Amos
 Amos
 Amos
 Amos
@@ -203112,7 +203107,6 @@ Amos
 Amos
 Amos
 Amos
-2098062	Amos
 Amos
 Amos
 Amos
@@ -203275,7 +203269,6 @@ Amos
 Amos
 Amos
 Amos
-2098226	Amos
 Amos
 Amos
 Amos
@@ -203411,7 +203404,6 @@ Amos
 Amos
 Amos
 Amos
-2098364	Amos
 Amos
 Amos
 Amos
@@ -203484,6 +203476,14 @@ Amos
 Amos
 Amos
 Amos
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
+Amos
 Obad
 Obad
 Obad
@@ -203893,7 +203893,12 @@ Obad
 Obad
 Obad
 Obad
-2098848	Jonah
+Jonah
+Jonah
+Jonah
+Jonah
+Jonah
+Jonah
 Jonah
 Jonah
 Jonah
@@ -204210,7 +204215,6 @@ Jonah
 Jonah
 Jonah
 Jonah
-2099166	Jonah
 Jonah
 Jonah
 Jonah
@@ -204219,7 +204223,6 @@ Jonah
 Jonah
 Jonah
 Jonah
-2099176	Jonah
 Jonah
 Jonah
 Jonah
@@ -204424,7 +204427,6 @@ Jonah
 Jonah
 Jonah
 Jonah
-2099382	Jonah
 Jonah
 Jonah
 Jonah
@@ -204437,7 +204439,6 @@ Jonah
 Jonah
 Jonah
 Jonah
-2099396	Jonah
 Jonah
 Jonah
 Jonah
@@ -204687,7 +204688,6 @@ Jonah
 Jonah
 Jonah
 Jonah
-2099647	Jonah
 Jonah
 Jonah
 Jonah
@@ -204709,7 +204709,6 @@ Jonah
 Jonah
 Jonah
 Jonah
-2099670	Jonah
 Jonah
 Jonah
 Jonah
@@ -204723,7 +204722,6 @@ Jonah
 Jonah
 Jonah
 Jonah
-2099686	Jonah
 Jonah
 Jonah
 Jonah
@@ -204918,7 +204916,20 @@ Jonah
 Jonah
 Jonah
 Jonah
-2099882	Mic
+Jonah
+Jonah
+Mic
+Mic
+Mic
+Mic
+Mic
+Mic
+Mic
+Mic
+Mic
+Mic
+Mic
+Mic
 Mic
 Mic
 Mic
@@ -205206,7 +205217,6 @@ Mic
 Mic
 Mic
 Mic
-2100171	Mic
 Mic
 Mic
 Mic
@@ -205244,7 +205254,6 @@ Mic
 Mic
 Mic
 Mic
-2100210	Mic
 Mic
 Mic
 Mic
@@ -205341,7 +205350,6 @@ Mic
 Mic
 Mic
 Mic
-2100308	Mic
 Mic
 Mic
 Mic
@@ -205455,7 +205463,6 @@ Mic
 Mic
 Mic
 Mic
-2100423	Mic
 Mic
 Mic
 Mic
@@ -205536,7 +205543,6 @@ Mic
 Mic
 Mic
 Mic
-2100506	Mic
 Mic
 Mic
 Mic
@@ -205628,7 +205634,6 @@ Mic
 Mic
 Mic
 Mic
-2100600	Mic
 Mic
 Mic
 Mic
@@ -205706,7 +205711,6 @@ Mic
 Mic
 Mic
 Mic
-2100679	Mic
 Mic
 Mic
 Mic
@@ -205838,7 +205842,6 @@ Mic
 Mic
 Mic
 Mic
-2100812	Mic
 Mic
 Mic
 Mic
@@ -205881,7 +205884,6 @@ Mic
 Mic
 Mic
 Mic
-2100856	Mic
 Mic
 Mic
 Mic
@@ -206081,7 +206083,6 @@ Mic
 Mic
 Mic
 Mic
-2101057	Mic
 Mic
 Mic
 Mic
@@ -206226,7 +206227,6 @@ Mic
 Mic
 Mic
 Mic
-2101204	Mic
 Mic
 Mic
 Mic
@@ -206587,7 +206587,6 @@ Mic
 Mic
 Mic
 Mic
-2101566	Mic
 Mic
 Mic
 Mic
@@ -206680,7 +206679,6 @@ Mic
 Mic
 Mic
 Mic
-2101662	Mic
 Mic
 Mic
 Mic
@@ -206792,7 +206790,13 @@ Mic
 Mic
 Mic
 Mic
-2101780	Nah
+Mic
+Mic
+Nah
+Nah
+Nah
+Nah
+Nah
 Nah
 Nah
 Nah
@@ -206962,7 +206966,6 @@ Nah
 Nah
 Nah
 Nah
-2101951	Nah
 Nah
 Nah
 Nah
@@ -207012,7 +207015,6 @@ Nah
 Nah
 Nah
 Nah
-2102003	Nah
 Nah
 Nah
 Nah
@@ -207251,7 +207253,6 @@ Nah
 Nah
 Nah
 Nah
-2102244	Nah
 Nah
 Nah
 Nah
@@ -207271,7 +207272,6 @@ Nah
 Nah
 Nah
 Nah
-2102265	Nah
 Nah
 Nah
 Nah
@@ -207283,7 +207283,6 @@ Nah
 Nah
 Nah
 Nah
-2102278	Nah
 Nah
 Nah
 Nah
@@ -207338,7 +207337,6 @@ Nah
 Nah
 Nah
 Nah
-2102334	Nah
 Nah
 Nah
 Nah
@@ -207565,7 +207563,13 @@ Nah
 Nah
 Nah
 Nah
-2102570	Hab
+Nah
+Nah
+Hab
+Hab
+Hab
+Hab
+Hab
 Hab
 Hab
 Hab
@@ -207954,7 +207958,6 @@ Hab
 Hab
 Hab
 Hab
-2102960	Hab
 Hab
 Hab
 Hab
@@ -208012,7 +208015,6 @@ Hab
 Hab
 Hab
 Hab
-2103019	Hab
 Hab
 Hab
 Hab
@@ -208048,7 +208050,6 @@ Hab
 Hab
 Hab
 Hab
-2103056	Hab
 Hab
 Hab
 Hab
@@ -208099,7 +208100,6 @@ Hab
 Hab
 Hab
 Hab
-2103108	Hab
 Hab
 Hab
 Hab
@@ -208147,7 +208147,6 @@ Hab
 Hab
 Hab
 Hab
-2103157	Hab
 Hab
 Hab
 Hab
@@ -208232,7 +208231,6 @@ Hab
 Hab
 Hab
 Hab
-2103244	Hab
 Hab
 Hab
 Hab
@@ -208337,7 +208335,13 @@ Hab
 Hab
 Hab
 Hab
-2103355	Hab
+Hab
+Hab
+Hab
+Zeph
+Zeph
+Zeph
+Zeph
 Zeph
 Zeph
 Zeph
@@ -208537,7 +208541,6 @@ Zeph
 Zeph
 Zeph
 Zeph
-2103556	Zeph
 Zeph
 Zeph
 Zeph
@@ -208606,7 +208609,6 @@ Zeph
 Zeph
 Zeph
 Zeph
-2103626	Zeph
 Zeph
 Zeph
 Zeph
@@ -208829,7 +208831,6 @@ Zeph
 Zeph
 Zeph
 Zeph
-2103852	Zeph
 Zeph
 Zeph
 Zeph
@@ -209051,7 +209052,6 @@ Zeph
 Zeph
 Zeph
 Zeph
-2104076	Zeph
 Zeph
 Zeph
 Zeph
@@ -209186,7 +209186,14 @@ Zeph
 Zeph
 Zeph
 Zeph
-2104212	Hag
+Hag
+Hag
+Hag
+Hag
+Hag
+Hag
+Hag
+Hag
 Hag
 Hag
 Hag
@@ -209248,7 +209255,6 @@ Hag
 Hag
 Hag
 Hag
-2104277	Hag
 Hag
 Hag
 Hag
@@ -209316,7 +209322,6 @@ Hag
 Hag
 Hag
 Hag
-2104347	Hag
 Hag
 Hag
 Hag
@@ -209512,10 +209517,8 @@ Hag
 Hag
 Hag
 Hag
-2104544	Hag
 Hag
 Hag
-2104550	Hag
 Hag
 Hag
 Hag
@@ -209652,7 +209655,6 @@ Hag
 Hag
 Hag
 Hag
-2104688	Hag
 Hag
 Hag
 Hag
@@ -209773,7 +209775,6 @@ Hag
 Hag
 Hag
 Hag
-2104811	Hag
 Hag
 Hag
 Hag
@@ -209926,7 +209927,6 @@ Hag
 Hag
 Hag
 Hag
-2104966	Hag
 Hag
 Hag
 Hag
@@ -210220,7 +210220,7 @@ Gen
 Gen
 Gen
 Gen
-2105261	Gen
+Gen
 Gen
 Gen
 Gen
@@ -210660,7 +210660,6 @@ Ps
 Ps
 Ps
 Ps
-2105702	Ps
 Ps
 Ps
 Ps
@@ -210670,7 +210669,6 @@ Ps
 Ps
 Ps
 Ps
-2105713	Ps
 Ps
 Ps
 Ps
@@ -210680,7 +210678,6 @@ Ps
 Ps
 Ps
 Ps
-2105724	Ps
 Ps
 Ps
 Ps
@@ -210690,7 +210687,6 @@ Ps
 Ps
 Ps
 Ps
-2105735	Ps
 Ps
 Ps
 Ps
@@ -210710,12 +210706,10 @@ Ps
 Ps
 Ps
 Ps
-2105758	Ps
 Ps
 Ps
 Ps
 Ps
-2105764	Ps
 Ps
 Ps
 Ps
@@ -210897,7 +210891,6 @@ Ps
 Ps
 Ps
 Ps
-2105953	Ps
 Ps
 Ps
 Ps
@@ -210913,7 +210906,6 @@ Ps
 Ps
 Ps
 Ps
-2105970	Ps
 Ps
 Ps
 Ps
@@ -211022,16 +211014,13 @@ Ps
 Ps
 Ps
 Ps
-2106083	Ps
 Ps
 Ps
 Ps
-2106089	Ps
 Ps
 Ps
 Ps
 Ps
-2106095	Ps
 Ps
 Ps
 Ps
@@ -211122,7 +211111,6 @@ Ps
 Ps
 Ps
 Ps
-2106187	Ps
 Ps
 Ps
 Ps
@@ -211133,20 +211121,17 @@ Ps
 Ps
 Ps
 Ps
-2106199	Ps
 Ps
 Ps
 Ps
 Ps
 Ps
 Ps
-2106208	Ps
 Ps
 Ps
 Ps
 Ps
 Ps
-2106216	Ps
 Ps
 Ps
 Ps
@@ -211279,10 +211264,8 @@ Ps
 Ps
 Ps
 Ps
-2106353	Ps
 Ps
 Ps
-2106357	Ps
 Ps
 Ps
 Ps
@@ -211546,7 +211529,6 @@ Ps
 Ps
 Ps
 Ps
-2106622	Ps
 Ps
 Ps
 Ps
@@ -211636,7 +211618,6 @@ Ps
 Ps
 Ps
 Ps
-2106713	Ps
 Ps
 Ps
 Ps
@@ -211644,7 +211625,6 @@ Ps
 Ps
 Ps
 Ps
-2106722	Ps
 Ps
 Ps
 Ps
@@ -211862,10 +211842,8 @@ Ps
 Ps
 Ps
 Ps
-2106942	Ps
 Ps
 Ps
-2106946	Ps
 Ps
 Ps
 Ps
@@ -212103,7 +212081,29 @@ Ps
 Ps
 Ps
 Ps
-2107185	Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
 Ps
 Ps
 Ps
@@ -212312,7 +212312,6 @@ Num
 Num
 Num
 Num
-2107396	Num
 Num
 Num
 Num
@@ -212421,7 +212420,8 @@ Num
 Num
 Num
 Num
-2107506	Num
+Num
+Num
 Num
 Num
 Num
@@ -213464,7 +213464,6 @@ Ex
 Ex
 Ex
 Ex
-2108550	Ex
 Ex
 Ex
 Ex
@@ -213608,7 +213607,7 @@ Ex
 Ex
 Ex
 Ex
-2108695	Num
+Ex
 Num
 Num
 Num
@@ -213618,18 +213617,7 @@ Num
 Num
 Num
 Num
-Gen
-Gen
-Gen
-Gen
-Gen
-Gen
-Gen
-Gen
-Gen
-Gen
-2108716	Gen
-Gen
+Num
 Gen
 Gen
 Gen
@@ -213676,6 +213664,18 @@ Gen
 Gen
 Gen
 Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
+Gen
 Lev
 Lev
 Lev
@@ -213934,7 +213934,6 @@ Lev
 Lev
 Lev
 Lev
-2109023	Lev
 Lev
 Lev
 Lev
@@ -214422,7 +214421,6 @@ Lev
 Lev
 Lev
 Lev
-2109512	Lev
 Lev
 Lev
 Lev
@@ -214655,7 +214653,6 @@ Lev
 Lev
 Lev
 Lev
-2109746	Lev
 Lev
 Lev
 Lev
@@ -214796,7 +214793,6 @@ Lev
 Lev
 Lev
 Lev
-2109888	Lev
 Lev
 Lev
 Lev
@@ -214877,7 +214873,6 @@ Lev
 Lev
 Lev
 Lev
-2109970	Lev
 Lev
 Lev
 Lev
@@ -214992,7 +214987,6 @@ Lev
 Lev
 Lev
 Lev
-2110086	Lev
 Lev
 Lev
 Lev
@@ -215107,7 +215101,6 @@ Lev
 Lev
 Lev
 Lev
-2110202	Lev
 Lev
 Lev
 Lev
@@ -215302,7 +215295,6 @@ Lev
 Lev
 Lev
 Lev
-2110398	Lev
 Lev
 Lev
 Lev
@@ -215345,6 +215337,18 @@ Lev
 Lev
 Lev
 Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Lev
+Deut
+Deut
+Deut
+Deut
 Deut
 Deut
 Deut
@@ -215378,7 +215382,6 @@ Deut
 Deut
 Deut
 Deut
-2110475	Deut
 Deut
 Deut
 Deut
@@ -215407,7 +215410,6 @@ Deut
 Deut
 Deut
 Deut
-2110505	Deut
 Deut
 Deut
 Deut
@@ -215444,7 +215446,6 @@ Deut
 Deut
 Deut
 Deut
-2110543	Deut
 Deut
 Deut
 Deut
@@ -215456,7 +215457,6 @@ Deut
 Deut
 Deut
 Deut
-2110556	Deut
 Deut
 Deut
 Deut
@@ -215472,7 +215472,6 @@ Deut
 Deut
 Deut
 Deut
-2110573	Deut
 Deut
 Deut
 Deut
@@ -215574,6 +215573,12 @@ Deut
 Deut
 Deut
 Deut
+Deut
+Ezek
+Ezek
+Ezek
+Ezek
+Ezek
 Ezek
 Ezek
 Ezek
@@ -215618,7 +215623,6 @@ Ezek
 Ezek
 Ezek
 Ezek
-2110720	Ezek
 Ezek
 Ezek
 Ezek
@@ -215657,7 +215661,6 @@ Ezek
 Ezek
 Ezek
 Ezek
-2110760	Ezek
 Ezek
 Ezek
 Ezek
@@ -215958,7 +215961,6 @@ Ezek
 Ezek
 Ezek
 Ezek
-2111062	Ezek
 Ezek
 Ezek
 Ezek
@@ -216011,7 +216013,6 @@ Ezek
 Ezek
 Ezek
 Ezek
-2111116	Ezek
 Ezek
 Ezek
 Ezek
@@ -216115,7 +216116,6 @@ Ezek
 Ezek
 Ezek
 Ezek
-2111221	Ezek
 Ezek
 Ezek
 Ezek
@@ -216547,7 +216547,6 @@ Ezek
 Ezek
 Ezek
 Ezek
-2111654	Ezek
 Ezek
 Ezek
 Ezek
@@ -216820,7 +216819,6 @@ Ezek
 Ezek
 Ezek
 Ezek
-2111928	Ezek
 Ezek
 Ezek
 Ezek
@@ -216970,11 +216968,43 @@ Ezek
 Ezek
 Ezek
 Ezek
+Ezek
+Ezek
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
 Ps
 Ps
 Ps
 Ps
-2112083	Ps
 Ps
 Ps
 Ps
@@ -216984,7 +217014,6 @@ Ps
 Ps
 Ps
 Ps
-2112094	Ps
 Ps
 Ps
 Ps
@@ -216993,7 +217022,6 @@ Ps
 Ps
 Ps
 Ps
-2112104	Ps
 Ps
 Ps
 Ps
@@ -217004,7 +217032,6 @@ Ps
 Ps
 Ps
 Ps
-2112116	Ps
 Ps
 Ps
 Ps
@@ -217013,7 +217040,6 @@ Ps
 Ps
 Ps
 Ps
-2112126	Ps
 Ps
 Ps
 Ps
@@ -217023,7 +217049,6 @@ Ps
 Ps
 Ps
 Ps
-2112137	Ps
 Ps
 Ps
 Ps
@@ -217032,7 +217057,6 @@ Ps
 Ps
 Ps
 Ps
-2112147	Ps
 Ps
 Ps
 Ps
@@ -217041,7 +217065,6 @@ Ps
 Ps
 Ps
 Ps
-2112157	Ps
 Ps
 Ps
 Ps
@@ -217052,7 +217075,6 @@ Ps
 Ps
 Ps
 Ps
-2112169	Ps
 Ps
 Ps
 Ps
@@ -217062,7 +217084,6 @@ Ps
 Ps
 Ps
 Ps
-2112180	Ps
 Ps
 Ps
 Ps
@@ -217072,7 +217093,6 @@ Ps
 Ps
 Ps
 Ps
-2112191	Ps
 Ps
 Ps
 Ps
@@ -217082,7 +217102,6 @@ Ps
 Ps
 Ps
 Ps
-2112202	Ps
 Ps
 Ps
 Ps
@@ -217094,7 +217113,6 @@ Ps
 Ps
 Ps
 Ps
-2112215	Ps
 Ps
 Ps
 Ps
@@ -217103,7 +217121,6 @@ Ps
 Ps
 Ps
 Ps
-2112225	Ps
 Ps
 Ps
 Ps
@@ -217112,7 +217129,6 @@ Ps
 Ps
 Ps
 Ps
-2112235	Ps
 Ps
 Ps
 Ps
@@ -217122,7 +217138,6 @@ Ps
 Ps
 Ps
 Ps
-2112246	Ps
 Ps
 Ps
 Ps
@@ -217132,7 +217147,6 @@ Ps
 Ps
 Ps
 Ps
-2112257	Ps
 Ps
 Ps
 Ps
@@ -217143,15 +217157,12 @@ Ps
 Ps
 Ps
 Ps
-2112270	Ps
 Ps
 Ps
-2112274	Ps
 Ps
 Ps
 Ps
 Ps
-2112280	Ps
 Ps
 Ps
 Ps
@@ -217160,7 +217171,6 @@ Ps
 Ps
 Ps
 Ps
-2112290	Ps
 Ps
 Ps
 Ps
@@ -217170,7 +217180,6 @@ Ps
 Ps
 Ps
 Ps
-2112301	Ps
 Ps
 Ps
 Ps
@@ -217179,7 +217188,6 @@ Ps
 Ps
 Ps
 Ps
-2112311	Ps
 Ps
 Ps
 Ps
@@ -217189,7 +217197,6 @@ Ps
 Ps
 Ps
 Ps
-2112322	Ps
 Ps
 Ps
 Ps
@@ -217197,7 +217204,6 @@ Ps
 Ps
 Ps
 Ps
-2112331	Ps
 Ps
 Ps
 Ps
@@ -217206,7 +217212,6 @@ Ps
 Ps
 Ps
 Ps
-2112341	Ps
 Ps
 Ps
 Ps
@@ -217217,7 +217222,6 @@ Ps
 Ps
 Ps
 Ps
-2112353	Ps
 Ps
 Ps
 Ps
@@ -217230,12 +217234,10 @@ Ps
 Ps
 Ps
 Ps
-2112368	Ps
 Ps
 Ps
 Ps
 Ps
-2112374	Ps
 Ps
 Ps
 Ps
@@ -217246,7 +217248,6 @@ Ps
 Ps
 Ps
 Ps
-2112386	Ps
 Ps
 Ps
 Ps
@@ -217255,7 +217256,6 @@ Ps
 Ps
 Ps
 Ps
-2112396	Ps
 Ps
 Ps
 Ps
@@ -217264,7 +217264,6 @@ Ps
 Ps
 Ps
 Ps
-2112406	Ps
 Ps
 Ps
 Ps
@@ -217277,7 +217276,6 @@ Ps
 Ps
 Ps
 Ps
-2112420	Ps
 Ps
 Ps
 Ps
@@ -217285,7 +217283,6 @@ Ps
 Ps
 Ps
 Ps
-2112429	Ps
 Ps
 Ps
 Ps
@@ -217293,7 +217290,6 @@ Ps
 Ps
 Ps
 Ps
-2112438	Ps
 Ps
 Ps
 Ps
@@ -217302,7 +217298,6 @@ Ps
 Ps
 Ps
 Ps
-2112448	Ps
 Ps
 Ps
 Ps
@@ -217313,7 +217308,6 @@ Ps
 Ps
 Ps
 Ps
-2112460	Ps
 Ps
 Ps
 Ps
@@ -217325,7 +217319,6 @@ Ps
 Ps
 Ps
 Ps
-2112473	Ps
 Ps
 Ps
 Ps
@@ -217334,8 +217327,6 @@ Ps
 Ps
 Ps
 Ps
-2112483	Ps
-2112485	Ps
 Ps
 Ps
 Ps
@@ -217350,7 +217341,6 @@ Ps
 Ps
 Ps
 Ps
-2112501	Ps
 Ps
 Ps
 Ps
@@ -217358,7 +217348,6 @@ Ps
 Ps
 Ps
 Ps
-2112510	Ps
 Ps
 Ps
 Ps
@@ -217368,7 +217357,6 @@ Ps
 Ps
 Ps
 Ps
-2112521	Ps
 Ps
 Ps
 Ps
@@ -217378,7 +217366,6 @@ Ps
 Ps
 Ps
 Ps
-2112532	Ps
 Ps
 Ps
 Ps
@@ -217387,7 +217374,6 @@ Ps
 Ps
 Ps
 Ps
-2112542	Ps
 Ps
 Ps
 Ps
@@ -217395,7 +217381,6 @@ Ps
 Ps
 Ps
 Ps
-2112551	Ps
 Ps
 Ps
 Ps
@@ -217407,7 +217392,6 @@ Ps
 Ps
 Ps
 Ps
-2112564	Ps
 Ps
 Ps
 Ps
@@ -217419,7 +217403,6 @@ Ps
 Ps
 Ps
 Ps
-2112579	Ps
 Ps
 Ps
 Ps
@@ -217429,10 +217412,8 @@ Ps
 Ps
 Ps
 Ps
-2112590	Ps
 Ps
 Ps
-2112594	Ps
 Ps
 Ps
 Ps
@@ -217440,14 +217421,12 @@ Ps
 Ps
 Ps
 Ps
-2112603	Ps
 Ps
 Ps
 Ps
 Ps
 Ps
 Ps
-2112611	Ps
 Ps
 Ps
 Ps
@@ -217455,14 +217434,12 @@ Ps
 Ps
 Ps
 Ps
-2112620	Ps
 Ps
 Ps
 Ps
 Ps
 Ps
 Ps
-2112628	Ps
 Ps
 Ps
 Ps
@@ -217470,14 +217447,12 @@ Ps
 Ps
 Ps
 Ps
-2112637	Ps
 Ps
 Ps
 Ps
 Ps
 Ps
 Ps
-2112645	Ps
 Ps
 Ps
 Ps
@@ -217486,14 +217461,12 @@ Ps
 Ps
 Ps
 Ps
-2112655	Ps
 Ps
 Ps
 Ps
 Ps
 Ps
 Ps
-2112663	Ps
 Ps
 Ps
 Ps
@@ -217503,7 +217476,6 @@ Ps
 Ps
 Ps
 Ps
-2112674	Ps
 Ps
 Ps
 Ps
@@ -217512,14 +217484,12 @@ Ps
 Ps
 Ps
 Ps
-2112684	Ps
 Ps
 Ps
 Ps
 Ps
 Ps
 Ps
-2112692	Ps
 Ps
 Ps
 Ps
@@ -217527,7 +217497,6 @@ Ps
 Ps
 Ps
 Ps
-2112701	Ps
 Ps
 Ps
 Ps
@@ -217535,7 +217504,6 @@ Ps
 Ps
 Ps
 Ps
-2112710	Ps
 Ps
 Ps
 Ps
@@ -217545,7 +217513,6 @@ Ps
 Ps
 Ps
 Ps
-2112721	Ps
 Ps
 Ps
 Ps
@@ -217556,7 +217523,6 @@ Ps
 Ps
 Ps
 Ps
-2112733	Ps
 Ps
 Ps
 Ps
@@ -217566,29 +217532,24 @@ Ps
 Ps
 Ps
 Ps
-2112744	Ps
 Ps
 Ps
 Ps
 Ps
-2112751	Ps
 Ps
 Ps
 Ps
 Ps
 Ps
 Ps
-2112759	Ps
 Ps
 Ps
-2112763	Ps
 Ps
 Ps
 Ps
 Ps
 Ps
 Ps
-2112771	Ps
 Ps
 Ps
 Ps
@@ -217596,7 +217557,6 @@ Ps
 Ps
 Ps
 Ps
-2112780	Ps
 Ps
 Ps
 Ps
@@ -217604,7 +217564,6 @@ Ps
 Ps
 Ps
 Ps
-2112789	Ps
 Ps
 Ps
 Ps
@@ -217614,7 +217573,6 @@ Ps
 Ps
 Ps
 Ps
-2112800	Ps
 Ps
 Ps
 Ps
@@ -217645,7 +217603,6 @@ Ps
 Ps
 Ps
 Ps
-2112832	Ps
 Ps
 Ps
 Ps
@@ -217658,32 +217615,26 @@ Ps
 Ps
 Ps
 Ps
-2112846	Ps
 Ps
 Ps
 Ps
-2112851	Ps
 Ps
 Ps
 Ps
 Ps
 Ps
-2112858	Ps
 Ps
 Ps
 Ps
 Ps
-2112864	Ps
 Ps
 Ps
 Ps
 Ps
 Ps
-2112871	Ps
 Ps
 Ps
 Ps
-2112876	Ps
 Ps
 Ps
 Ps
@@ -217696,6 +217647,56 @@ Ps
 Ps
 Ps
 Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Ps
+Lev
 Lev
 Lev
 Lev
@@ -217751,7 +217752,6 @@ Lev
 Lev
 Lev
 Lev
-2112945	Lev
 Lev
 Lev
 Lev
@@ -217840,6 +217840,8 @@ Lev
 Lev
 Lev
 Lev
+Josh
+Josh
 Josh
 Josh
 Josh
@@ -217860,7 +217862,6 @@ Josh
 Josh
 Josh
 Josh
-2113056	Josh
 Josh
 Josh
 Josh
@@ -217912,7 +217913,6 @@ Josh
 Josh
 Josh
 Josh
-2113109	Josh
 Josh
 Josh
 Josh

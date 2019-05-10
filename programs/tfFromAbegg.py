@@ -1948,12 +1948,12 @@ def director(cv):
         else:
           cn = curBrackets[key]
           if not cv.linked(cn):
-            ew = cv.node(WORD)
-            cv.feature(ew, type=EMPTY)
+            # ew = cv.node(WORD)
+            # cv.feature(ew, type=EMPTY)
             typ = EMPTY
             c = '□'
             addSlot()
-            cv.terminate(ew)
+            # cv.terminate(ew)
           cv.terminate(cn)
           del curBrackets[key]
     if after and curSlot:

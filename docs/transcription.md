@@ -319,9 +319,12 @@ which gets a numeric value, as indicated in the table.
 
 Note the *vac* cluster: by definition, it contains no signs.
 In order to anchor it into the text sequence, we have generated
-a word with an empty slot in each vacat cluster.
+an empty slot in each vacat cluster.
 
 We have done the same for other clusters that happened to be without other slots.
+
+**N.B.**: Note that such clusters do not have *words* inside them, only an empty *sign*.
+These are cases of signs that do not belong to words!
 
 Other features:
 

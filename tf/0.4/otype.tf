@@ -9,7 +9,7 @@
 @source=Martin Abegg's data files, personal communication
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2019-05-09T17:17:22Z
+@dateWritten=2019-05-10T08:33:18Z
 
 1-1430238	sign
 1430239-1531337	cluster
@@ -17,4 +17,4 @@
 1542520-1552968	lex
 1552969-1605863	line
 1605864-1606864	scroll
-1606865-2113393	word
+1606865-2107856	word
