@@ -98,7 +98,7 @@ and two variants with the letter *e* of *o* after the feature name.
 
 * *main variant* the unicode value
 * **e** the ETCBC transliteration, or something that extends it
-* **o** the original transcription (Abegg)
+* **o** the original transcription (as in the source files)
 
 ## Node type [*sign*](#sign)
 
@@ -123,7 +123,7 @@ type | source | etcbc | unicode | description
 `add` | `+` | ` + ` | `+` | representation of an addition between numerals
 `term` | `/` | `╱` | `╱` | representation of an end of line
 
-feature | values | Abegg | ETCBC | Unicode | description
+feature | values | source | ETCBC | Unicode | description
 ------- | ------ | ------ | ----------- | --- | ---
 **after** | ` ` | | | whether there is a space after the last sign of a word and before the next word
 **alt** | `1` | `lwz/)h(` | `LWZ61(H)` | | indicates an alternative material, marked by being within brackets `( )`
@@ -165,7 +165,7 @@ in the non-biblical source file.
 
 ## Node type [*word*](#word)
 
-Sequence of signs separated corresponding to a single line in the Abegg data files.
+Sequence of signs separated corresponding to a single line in the source files.
 Whether a word is adjacent to a next word can be gleaned from the numbering of the word in the source file.
 If so, we leave the *after* feature without value.
 
@@ -187,7 +187,7 @@ we insert a word node with type `glyph`
 and all of its textual features (*full[eo], glyph[eo], punc[eo]*) absent.
 We add a slot of type `empty` to this word.
 
-feature | Abegg | ETCBC | Unicode | description
+feature | source | ETCBC | Unicode | description
 ------- | ------ | ------ | --- | --------
 **after** | ` ` | | | whether there is a space after a word and before the next word
 **full[eo]** | `mm/nw[` | `MM61NW]` | `ממ׳נו]` | full transcription of a word, including flags and clustering characters
@@ -269,7 +269,7 @@ feature | examples | description
 
 The type of lexemes, as found in the lexeme field of the source data files.
 
-feature | Abegg | ETCBC | Unicode | description
+feature | source | ETCBC | Unicode | description
 ------- | ------ | ------ | --- | --------
 **lex[eo]** | `mIN` | `MIn` | `מִן` | lexeme of a word
 **complete** | 1 | | | 1 if the lexeme is complete, i.e. without uncertain characters
@@ -397,9 +397,9 @@ All signs have the features **type** and **glyph[eo]**.
 
 The *type* stores the kind of glyph, such as `cons`.
 The *glyph glyphe glypho* features store the transcription of the glyph, without any flags
-and brackets. They store it in Unicode, ETCBC transcription, and original Abegg code.
+and brackets. They store it in Unicode, ETCBC transcription, and source transcription.
 
-These features do not suffice to reconstruct the original Abegg transcription, because the flags
+These features do not suffice to reconstruct the original source transcription, because the flags
 and brackets are not part of them.
 
 #### Punctuation
@@ -480,10 +480,10 @@ Note that there is also a bracket pair for uncertainty level 2.
 We discuss the brackets under the node type [*cluster*](#cluster).
 Each type of bracket corresponds to a feature of the same name at the *sign* level.
 
-With some difficulty, you can reconstruct the Abegg source from this, modulo the order
+With some difficulty, you can reconstruct the source data from this, modulo the order
 of flags and brackets. 
 
-The recommended way to reconstruct the original transcriptions by Abegg is to go to the
+The recommended way to reconstruct the original transcriptions is to go to the
 word level.
 
 ## Cluster
@@ -582,13 +582,13 @@ format | kind | description
 --- | --- | ---
 `text-orig-full`     | plain | the source text, glyphs only, no flags / brackets, in unicode
 `text-trans-full`    | plain | the source text, glyphs only, no flags / brackets, in etcbc transcription
-`text-source-full`   | plain | the source text, glyphs only, no flags / brackets, in Abegg transcription
+`text-source-full`   | plain | the source text, glyphs only, no flags / brackets, in source transcription
 `text-orig-extra`    | plain | the source text with flags and brackets, in unicode
 `text-trans-extra`   | plain | the source text with flags and brackets, in etcbc transcription
-`text-source-extra`  | plain | the source text with flags and brackets, in Abegg transcription
+`text-source-extra`  | plain | the source text with flags and brackets, in source transcription
 `lex-orig-full`      | plain | lexeme of a word in unicode
 `lex-trans-full`     | plain | lexeme of a word in etcbc transcription
-`lex-source-full`    | plain | lexeme of a word in Abegg transcription
+`lex-source-full`    | plain | lexeme of a word in source transcription
 `layout-orig-full`   | layout | as `text-orig-full`   but the flag and cluster information is visible in layout
 `layout-trans-full`  | layout | as `text-trans-full`  but the flag and cluster information is visible in layout
 `layout-source-full` | layout | as `text-source-full` but the flag and cluster information is visible in layout

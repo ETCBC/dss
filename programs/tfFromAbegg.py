@@ -656,7 +656,7 @@ featureMeta = {
     },
     'fullo': {
         'description': (
-            'full transcription (original source Abegg) of a word'
+            'full transcription (original source) of a word'
             ' including flags and brackets'
         ),
     },
@@ -673,7 +673,7 @@ featureMeta = {
         ),
     },
     'glypho': {
-        'description': 'representation (original source Abegg) of a word or sign',
+        'description': 'representation (original source) of a word or sign',
     },
     'glyphe': {
         'description': 'representation (ETCBC transliteration) of a word or sign',
@@ -695,7 +695,7 @@ featureMeta = {
         'values': ', '.join(f'{code}={lang}' for (code, lang) in LANGS.items())
     },
     'lexo': {
-        'description': 'representation (original source Abegg) of a lexeme',
+        'description': 'representation (original source) of a lexeme',
     },
     'lexe': {
         'description': 'representation (ETCBC transliteration) of a lexeme',
@@ -705,7 +705,7 @@ featureMeta = {
     },
     'glexo': {
         'description': (
-            'representation (original source Abegg) of a lexeme'
+            'representation (original source) of a lexeme'
             ' leaving out non-letters'
         ),
     },
@@ -728,13 +728,13 @@ featureMeta = {
         'description': 'errors in parsing the morphology tag',
     },
     'morpho': {
-        'description': 'morphological tag (original source Abegg)',
+        'description': 'morphological tag (by Abegg)',
     },
     'occ': {
         'description': 'edge feature from a lexeme to its occurrences',
     },
     'punco': {
-        'description': 'trailing punctuation (original source Abegg) of a word',
+        'description': 'trailing punctuation (original source) of a word',
     },
     'punce': {
         'description': 'trailing punctuation (ETCBC transliteration) of a word',

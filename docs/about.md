@@ -67,7 +67,7 @@ and lists of all (scroll, fragment, line) entries in the source data,
 before and after conversion.
 
 The result of the conversion are the files in the `.tf` subdirectory.
-They are plain text files that roughly correspond to the columns in the files by Abegg.
+They are plain text files that roughly correspond to the columns in the data files.
 A single `.tf` file is called a feature. It maps nodes to values.
 
 However, we have separated out all text-critical and morphological information into
