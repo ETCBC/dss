@@ -1,0 +1,2020 @@
+This is tfFromAbegg converting dss transcriptions to TF:
+source version = 1.0
+target version = 0.5
+Run started: 2019-05-20T12:54:27.886606
+
+                     => 
+0                    => sp=unknown
+00000X2fs            => sp=suff cl=unknown ps=unknown gn=unknown nu=unknown ps2=2 gn2=f nu2=s
+00fs                 => sp=unknown cl=unknown gn=f nu=s
+00mp                 => sp=unknown cl=unknown gn=m nu=p
+00ms                 => sp=unknown cl=unknown gn=m nu=s
+0X1cp                => sp=suff ps2=1 gn2=c nu2=p
+0X1cs                => sp=suff ps2=1 gn2=c nu2=s
+0X2mp                => sp=suff ps2=2 gn2=m nu2=p
+0X2ms                => sp=suff ps2=2 gn2=m nu2=s
+0X300                => sp=suff ps2=3 gn2=unknown nu2=unknown
+0X30s                => sp=suff ps2=3 gn2=unknown nu2=s
+0X3fp                => sp=suff ps2=3 gn2=f nu2=p
+0X3fs                => sp=suff ps2=3 gn2=f nu2=s
+0X3mp                => sp=suff ps2=3 gn2=m nu2=p
+0X3ms                => sp=suff ps2=3 gn2=m nu2=s
+0d                   => sp=unknown nu=d
+0vnPfpa              => ERROR: vnPfpa sp=unknown
+Pa                   => sp=ptcl cl=art
+PaX3ms               => sp=suff cl=art ps2=3 gn2=m nu2=s
+Pc                   => sp=ptcl cl=conj
+PcX2fs               => sp=suff cl=conj ps2=2 gn2=f nu2=s
+PcX3fs               => sp=suff cl=conj ps2=3 gn2=f nu2=s
+PcX3ms               => sp=suff cl=conj ps2=3 gn2=m nu2=s
+Pd                   => sp=ptcl cl=advb
+PdX0                 => sp=suff cl=advb cl2=unknown
+PdX1cp               => sp=suff cl=advb ps2=1 gn2=c nu2=p
+PdX1cs               => sp=suff cl=advb ps2=1 gn2=c nu2=s
+PdX2fs               => sp=suff cl=advb ps2=2 gn2=f nu2=s
+PdX2mp               => sp=suff cl=advb ps2=2 gn2=m nu2=p
+PdX2ms               => sp=suff cl=advb ps2=2 gn2=m nu2=s
+PdX3fs               => sp=suff cl=advb ps2=3 gn2=f nu2=s
+PdX3mp               => sp=suff cl=advb ps2=3 gn2=m nu2=p
+PdX3ms               => sp=suff cl=advb ps2=3 gn2=m nu2=s
+PdXd                 => sp=suff cl=advb cl2=d
+Pg                   => sp=ptcl cl=intr
+PgX3mp               => sp=suff cl=intr ps2=3 gn2=m nu2=p
+PgX3ms               => sp=suff cl=intr ps2=3 gn2=m nu2=s
+Pi                   => sp=ptcl cl=intj
+PiX1cp               => sp=suff cl=intj ps2=1 gn2=c nu2=p
+PiX1cs               => sp=suff cl=intj ps2=1 gn2=c nu2=s
+PiX2fs               => sp=suff cl=intj ps2=2 gn2=f nu2=s
+PiX2mp               => sp=suff cl=intj ps2=2 gn2=m nu2=p
+PiX2ms               => sp=suff cl=intj ps2=2 gn2=m nu2=s
+PiX3mp               => sp=suff cl=intj ps2=3 gn2=m nu2=p
+PiX3ms               => sp=suff cl=intj ps2=3 gn2=m nu2=s
+PiXd                 => sp=suff cl=intj cl2=d
+Pn                   => sp=ptcl cl=nega
+Po                   => sp=ptcl cl=objm
+PoX1cp               => sp=suff cl=objm ps2=1 gn2=c nu2=p
+PoX1cs               => sp=suff cl=objm ps2=1 gn2=c nu2=s
+PoX2fs               => sp=suff cl=objm ps2=2 gn2=f nu2=s
+PoX2mp               => sp=suff cl=objm ps2=2 gn2=m nu2=p
+PoX2ms               => sp=suff cl=objm ps2=2 gn2=m nu2=s
+PoX3fp               => sp=suff cl=objm ps2=3 gn2=f nu2=p
+PoX3fs               => sp=suff cl=objm ps2=3 gn2=f nu2=s
+PoX3mp               => sp=suff cl=objm ps2=3 gn2=m nu2=p
+PoX3ms               => sp=suff cl=objm ps2=3 gn2=m nu2=s
+Pp                   => sp=ptcl cl=prep
+Pp+Pa                => sp=ptcl cl=artp
+PpX0                 => sp=suff cl=prep cl2=unknown
+PpX1cp               => sp=suff cl=prep ps2=1 gn2=c nu2=p
+PpX1cs               => sp=suff cl=prep ps2=1 gn2=c nu2=s
+PpX200               => sp=suff cl=prep ps2=2 gn2=unknown nu2=unknown
+PpX2fp               => sp=suff cl=prep ps2=2 gn2=f nu2=p
+PpX2fs               => sp=suff cl=prep ps2=2 gn2=f nu2=s
+PpX2mp               => sp=suff cl=prep ps2=2 gn2=m nu2=p
+PpX2ms               => sp=suff cl=prep ps2=2 gn2=m nu2=s
+PpX3                 => sp=suff cl=prep ps2=3
+PpX30                => sp=suff cl=prep ps2=3 gn2=unknown
+PpX300               => sp=suff cl=prep ps2=3 gn2=unknown nu2=unknown
+PpX30s               => sp=suff cl=prep ps2=3 gn2=unknown nu2=s
+PpX3fp               => sp=suff cl=prep ps2=3 gn2=f nu2=p
+PpX3fs               => sp=suff cl=prep ps2=3 gn2=f nu2=s
+PpX3mp               => sp=suff cl=prep ps2=3 gn2=m nu2=p
+PpX3ms               => sp=suff cl=prep ps2=3 gn2=m nu2=s
+PpXd                 => sp=suff cl=prep cl2=d
+Pr                   => sp=ptcl cl=rela
+X3mp                 => sp=suff ps=3 gn=m nu=p
+X3ms                 => sp=suff ps=3 gn=m nu=s
+a00                  => sp=adjv gn=unknown nu=unknown
+a0p                  => sp=adjv gn=unknown nu=p
+a0s                  => sp=adjv gn=unknown nu=s
+abp                  => sp=adjv gn=b nu=p
+abpa                 => sp=adjv gn=b nu=p st=a
+acp                  => sp=adjv gn=c nu=p
+acpa                 => sp=adjv gn=c nu=p st=a
+acs                  => sp=adjv gn=c nu=s
+acsa                 => sp=adjv gn=c nu=s st=a
+afd                  => sp=adjv gn=f nu=d
+afdc                 => sp=adjv gn=f nu=d st=c
+afp                  => sp=adjv gn=f nu=p
+afpa                 => sp=adjv gn=f nu=p st=a
+afpc                 => sp=adjv gn=f nu=p st=c
+afpcX2ms             => sp=suff gn=f nu=p st=c ps2=2 gn2=m nu2=s
+afpcX3fs             => sp=suff gn=f nu=p st=c ps2=3 gn2=f nu2=s
+afpcX3mp             => sp=suff gn=f nu=p st=c ps2=3 gn2=m nu2=p
+afpd                 => sp=adjv gn=f nu=p st=d
+afs                  => sp=adjv gn=f nu=s
+afsa                 => sp=adjv gn=f nu=s st=a
+afsc                 => sp=adjv gn=f nu=s st=c
+afscX1cs             => sp=suff gn=f nu=s st=c ps2=1 gn2=c nu2=s
+afscX3fs             => sp=suff gn=f nu=s st=c ps2=3 gn2=f nu2=s
+afscX3mp             => sp=suff gn=f nu=s st=c ps2=3 gn2=m nu2=p
+afsd                 => sp=adjv gn=f nu=s st=d
+am0                  => sp=adjv gn=m nu=unknown
+amd                  => sp=adjv gn=m nu=d
+amdc                 => sp=adjv gn=m nu=d st=c
+amdcX3mp             => sp=suff gn=m nu=d st=c ps2=3 gn2=m nu2=p
+amp                  => sp=adjv gn=m nu=p
+ampa                 => sp=adjv gn=m nu=p st=a
+ampc                 => sp=adjv gn=m nu=p st=c
+ampcX1cp             => sp=suff gn=m nu=p st=c ps2=1 gn2=c nu2=p
+ampcX1cs             => sp=suff gn=m nu=p st=c ps2=1 gn2=c nu2=s
+ampcX2fs             => sp=suff gn=m nu=p st=c ps2=2 gn2=f nu2=s
+ampcX2mp             => sp=suff gn=m nu=p st=c ps2=2 gn2=m nu2=p
+ampcX2ms             => sp=suff gn=m nu=p st=c ps2=2 gn2=m nu2=s
+ampcX3fp             => sp=suff gn=m nu=p st=c ps2=3 gn2=f nu2=p
+ampcX3fs             => sp=suff gn=m nu=p st=c ps2=3 gn2=f nu2=s
+ampcX3mp             => sp=suff gn=m nu=p st=c ps2=3 gn2=m nu2=p
+ampcX3ms             => sp=suff gn=m nu=p st=c ps2=3 gn2=m nu2=s
+ampd                 => sp=adjv gn=m nu=p st=d
+ampdX3ms             => sp=suff gn=m nu=p st=d ps2=3 gn2=m nu2=s
+ams                  => sp=adjv gn=m nu=s
+amsa                 => sp=adjv gn=m nu=s st=a
+amsc                 => sp=adjv gn=m nu=s st=c
+amscX1cp             => sp=suff gn=m nu=s st=c ps2=1 gn2=c nu2=p
+amscX1cs             => sp=suff gn=m nu=s st=c ps2=1 gn2=c nu2=s
+amscX2fs             => sp=suff gn=m nu=s st=c ps2=2 gn2=f nu2=s
+amscX2mp             => sp=suff gn=m nu=s st=c ps2=2 gn2=m nu2=p
+amscX2ms             => sp=suff gn=m nu=s st=c ps2=2 gn2=m nu2=s
+amscX3fs             => sp=suff gn=m nu=s st=c ps2=3 gn2=f nu2=s
+amscX3mp             => sp=suff gn=m nu=s st=c ps2=3 gn2=m nu2=p
+amscX3ms             => sp=suff gn=m nu=s st=c ps2=3 gn2=m nu2=s
+amsd                 => sp=adjv gn=m nu=s st=d
+n000                 => sp=subs cl=unknown gn=unknown nu=unknown
+nc0                  => sp=subs cl=cmn gn=unknown
+nc00                 => sp=subs cl=cmn gn=unknown nu=unknown
+nc00cX3mp            => sp=suff cl=cmn gn=unknown nu=unknown st=c ps2=3 gn2=m nu2=p
+nc0p                 => sp=subs cl=cmn gn=unknown nu=p
+nc0scX2ms            => sp=suff cl=cmn gn=unknown nu=s st=c ps2=2 gn2=m nu2=s
+nc0scX3mp            => sp=suff cl=cmn gn=unknown nu=s st=c ps2=3 gn2=m nu2=p
+ncb0                 => sp=subs cl=cmn gn=b nu=unknown
+ncb0a                => sp=subs cl=cmn gn=b nu=unknown st=a
+ncbd                 => sp=subs cl=cmn gn=b nu=d
+ncbda                => sp=subs cl=cmn gn=b nu=d st=a
+ncbdc                => sp=subs cl=cmn gn=b nu=d st=c
+ncbdcX1cp            => sp=suff cl=cmn gn=b nu=d st=c ps2=1 gn2=c nu2=p
+ncbdcX1cs            => sp=suff cl=cmn gn=b nu=d st=c ps2=1 gn2=c nu2=s
+ncbdcX2fs            => sp=suff cl=cmn gn=b nu=d st=c ps2=2 gn2=f nu2=s
+ncbdcX2mp            => sp=suff cl=cmn gn=b nu=d st=c ps2=2 gn2=m nu2=p
+ncbdcX2ms            => sp=suff cl=cmn gn=b nu=d st=c ps2=2 gn2=m nu2=s
+ncbdcX3fs            => sp=suff cl=cmn gn=b nu=d st=c ps2=3 gn2=f nu2=s
+ncbdcX3mp            => sp=suff cl=cmn gn=b nu=d st=c ps2=3 gn2=m nu2=p
+ncbdcX3ms            => sp=suff cl=cmn gn=b nu=d st=c ps2=3 gn2=m nu2=s
+ncbp                 => sp=subs cl=cmn gn=b nu=p
+ncbpa                => sp=subs cl=cmn gn=b nu=p st=a
+ncbpc                => sp=subs cl=cmn gn=b nu=p st=c
+ncbpcX1cp            => sp=suff cl=cmn gn=b nu=p st=c ps2=1 gn2=c nu2=p
+ncbpcX1cs            => sp=suff cl=cmn gn=b nu=p st=c ps2=1 gn2=c nu2=s
+ncbpcX2fs            => sp=suff cl=cmn gn=b nu=p st=c ps2=2 gn2=f nu2=s
+ncbpcX2mp            => sp=suff cl=cmn gn=b nu=p st=c ps2=2 gn2=m nu2=p
+ncbpcX2ms            => sp=suff cl=cmn gn=b nu=p st=c ps2=2 gn2=m nu2=s
+ncbpcX3fp            => sp=suff cl=cmn gn=b nu=p st=c ps2=3 gn2=f nu2=p
+ncbpcX3fs            => sp=suff cl=cmn gn=b nu=p st=c ps2=3 gn2=f nu2=s
+ncbpcX3mp            => sp=suff cl=cmn gn=b nu=p st=c ps2=3 gn2=m nu2=p
+ncbpcX3ms            => sp=suff cl=cmn gn=b nu=p st=c ps2=3 gn2=m nu2=s
+ncbpd                => sp=subs cl=cmn gn=b nu=p st=d
+ncbs                 => sp=subs cl=cmn gn=b nu=s
+ncbsXd               => sp=suff cl=cmn gn=b nu=s cl2=d
+ncbsXh               => sp=suff cl=cmn gn=b nu=s cl2=h
+ncbsa                => sp=subs cl=cmn gn=b nu=s st=a
+ncbsc                => sp=subs cl=cmn gn=b nu=s st=c
+ncbscX0              => sp=suff cl=cmn gn=b nu=s st=c cl2=unknown
+ncbscX1cp            => sp=suff cl=cmn gn=b nu=s st=c ps2=1 gn2=c nu2=p
+ncbscX1cs            => sp=suff cl=cmn gn=b nu=s st=c ps2=1 gn2=c nu2=s
+ncbscX2fs            => sp=suff cl=cmn gn=b nu=s st=c ps2=2 gn2=f nu2=s
+ncbscX2mp            => sp=suff cl=cmn gn=b nu=s st=c ps2=2 gn2=m nu2=p
+ncbscX2ms            => sp=suff cl=cmn gn=b nu=s st=c ps2=2 gn2=m nu2=s
+ncbscX3fs            => sp=suff cl=cmn gn=b nu=s st=c ps2=3 gn2=f nu2=s
+ncbscX3mp            => sp=suff cl=cmn gn=b nu=s st=c ps2=3 gn2=m nu2=p
+ncbscX3ms            => sp=suff cl=cmn gn=b nu=s st=c ps2=3 gn2=m nu2=s
+ncbsd                => sp=subs cl=cmn gn=b nu=s st=d
+ncf0                 => sp=subs cl=cmn gn=f nu=unknown
+ncfd                 => sp=subs cl=cmn gn=f nu=d
+ncfd0                => sp=subs cl=cmn gn=f nu=d st=unknown
+ncfda                => sp=subs cl=cmn gn=f nu=d st=a
+ncfdc                => sp=subs cl=cmn gn=f nu=d st=c
+ncfdcX1cp            => sp=suff cl=cmn gn=f nu=d st=c ps2=1 gn2=c nu2=p
+ncfdcX1cs            => sp=suff cl=cmn gn=f nu=d st=c ps2=1 gn2=c nu2=s
+ncfdcX2fs            => sp=suff cl=cmn gn=f nu=d st=c ps2=2 gn2=f nu2=s
+ncfdcX2mp            => sp=suff cl=cmn gn=f nu=d st=c ps2=2 gn2=m nu2=p
+ncfdcX2ms            => sp=suff cl=cmn gn=f nu=d st=c ps2=2 gn2=m nu2=s
+ncfdcX3fp            => sp=suff cl=cmn gn=f nu=d st=c ps2=3 gn2=f nu2=p
+ncfdcX3fs            => sp=suff cl=cmn gn=f nu=d st=c ps2=3 gn2=f nu2=s
+ncfdcX3mp            => sp=suff cl=cmn gn=f nu=d st=c ps2=3 gn2=m nu2=p
+ncfdcX3ms            => sp=suff cl=cmn gn=f nu=d st=c ps2=3 gn2=m nu2=s
+ncfdd                => sp=subs cl=cmn gn=f nu=d st=d
+ncfp                 => sp=subs cl=cmn gn=f nu=p
+ncfpXd               => sp=suff cl=cmn gn=f nu=p cl2=d
+ncfpa                => sp=subs cl=cmn gn=f nu=p st=a
+ncfpc                => sp=subs cl=cmn gn=f nu=p st=c
+ncfpcX0              => sp=suff cl=cmn gn=f nu=p st=c cl2=unknown
+ncfpcX1cp            => sp=suff cl=cmn gn=f nu=p st=c ps2=1 gn2=c nu2=p
+ncfpcX1cs            => sp=suff cl=cmn gn=f nu=p st=c ps2=1 gn2=c nu2=s
+ncfpcX2fs            => sp=suff cl=cmn gn=f nu=p st=c ps2=2 gn2=f nu2=s
+ncfpcX2mp            => sp=suff cl=cmn gn=f nu=p st=c ps2=2 gn2=m nu2=p
+ncfpcX2ms            => sp=suff cl=cmn gn=f nu=p st=c ps2=2 gn2=m nu2=s
+ncfpcX3fp            => sp=suff cl=cmn gn=f nu=p st=c ps2=3 gn2=f nu2=p
+ncfpcX3fs            => sp=suff cl=cmn gn=f nu=p st=c ps2=3 gn2=f nu2=s
+ncfpcX3mp            => sp=suff cl=cmn gn=f nu=p st=c ps2=3 gn2=m nu2=p
+ncfpcX3ms            => sp=suff cl=cmn gn=f nu=p st=c ps2=3 gn2=m nu2=s
+ncfpd                => sp=subs cl=cmn gn=f nu=p st=d
+ncfpdX2ms            => sp=suff cl=cmn gn=f nu=p st=d ps2=2 gn2=m nu2=s
+ncfpdX3fs            => sp=suff cl=cmn gn=f nu=p st=d ps2=3 gn2=f nu2=s
+ncfpdX3ms            => sp=suff cl=cmn gn=f nu=p st=d ps2=3 gn2=m nu2=s
+ncfs                 => sp=subs cl=cmn gn=f nu=s
+ncfsXd               => sp=suff cl=cmn gn=f nu=s cl2=d
+ncfsXh               => sp=suff cl=cmn gn=f nu=s cl2=h
+ncfsa                => sp=subs cl=cmn gn=f nu=s st=a
+ncfsc                => sp=subs cl=cmn gn=f nu=s st=c
+ncfscX0              => sp=suff cl=cmn gn=f nu=s st=c cl2=unknown
+ncfscX1cp            => sp=suff cl=cmn gn=f nu=s st=c ps2=1 gn2=c nu2=p
+ncfscX1cs            => sp=suff cl=cmn gn=f nu=s st=c ps2=1 gn2=c nu2=s
+ncfscX2fp            => sp=suff cl=cmn gn=f nu=s st=c ps2=2 gn2=f nu2=p
+ncfscX2fs            => sp=suff cl=cmn gn=f nu=s st=c ps2=2 gn2=f nu2=s
+ncfscX2mp            => sp=suff cl=cmn gn=f nu=s st=c ps2=2 gn2=m nu2=p
+ncfscX2ms            => sp=suff cl=cmn gn=f nu=s st=c ps2=2 gn2=m nu2=s
+ncfscX30s            => sp=suff cl=cmn gn=f nu=s st=c ps2=3 gn2=unknown nu2=s
+ncfscX3fp            => sp=suff cl=cmn gn=f nu=s st=c ps2=3 gn2=f nu2=p
+ncfscX3fs            => sp=suff cl=cmn gn=f nu=s st=c ps2=3 gn2=f nu2=s
+ncfscX3mp            => sp=suff cl=cmn gn=f nu=s st=c ps2=3 gn2=m nu2=p
+ncfscX3ms            => sp=suff cl=cmn gn=f nu=s st=c ps2=3 gn2=m nu2=s
+ncfscXd              => sp=suff cl=cmn gn=f nu=s st=c cl2=d
+ncfsd                => sp=subs cl=cmn gn=f nu=s st=d
+ncfsdX1cs            => sp=suff cl=cmn gn=f nu=s st=d ps2=1 gn2=c nu2=s
+ncfsdX2ms            => sp=suff cl=cmn gn=f nu=s st=d ps2=2 gn2=m nu2=s
+ncfsdX3ms            => sp=suff cl=cmn gn=f nu=s st=d ps2=3 gn2=m nu2=s
+ncm0                 => sp=subs cl=cmn gn=m nu=unknown
+ncm00                => sp=subs cl=cmn gn=m nu=unknown st=unknown
+ncm00X0              => sp=suff cl=cmn gn=m nu=unknown st=unknown cl2=unknown
+ncm0X3mp             => sp=suff cl=cmn gn=m nu=unknown ps2=3 gn2=m nu2=p
+ncm0a                => sp=subs cl=cmn gn=m nu=unknown st=a
+ncm0c                => sp=subs cl=cmn gn=m nu=unknown st=c
+ncm0cX0              => sp=suff cl=cmn gn=m nu=unknown st=c cl2=unknown
+ncm0cX2ms            => sp=suff cl=cmn gn=m nu=unknown st=c ps2=2 gn2=m nu2=s
+ncm0cX3fp            => sp=suff cl=cmn gn=m nu=unknown st=c ps2=3 gn2=f nu2=p
+ncm0cX3fs            => sp=suff cl=cmn gn=m nu=unknown st=c ps2=3 gn2=f nu2=s
+ncm0cX3ms            => sp=suff cl=cmn gn=m nu=unknown st=c ps2=3 gn2=m nu2=s
+ncmd                 => sp=subs cl=cmn gn=m nu=d
+ncmda                => sp=subs cl=cmn gn=m nu=d st=a
+ncmdc                => sp=subs cl=cmn gn=m nu=d st=c
+ncmdcX1cp            => sp=suff cl=cmn gn=m nu=d st=c ps2=1 gn2=c nu2=p
+ncmdcX1cs            => sp=suff cl=cmn gn=m nu=d st=c ps2=1 gn2=c nu2=s
+ncmdcX2fs            => sp=suff cl=cmn gn=m nu=d st=c ps2=2 gn2=f nu2=s
+ncmdcX2mp            => sp=suff cl=cmn gn=m nu=d st=c ps2=2 gn2=m nu2=p
+ncmdcX2ms            => sp=suff cl=cmn gn=m nu=d st=c ps2=2 gn2=m nu2=s
+ncmdcX3fs            => sp=suff cl=cmn gn=m nu=d st=c ps2=3 gn2=f nu2=s
+ncmdcX3mp            => sp=suff cl=cmn gn=m nu=d st=c ps2=3 gn2=m nu2=p
+ncmdcX3ms            => sp=suff cl=cmn gn=m nu=d st=c ps2=3 gn2=m nu2=s
+ncmp                 => sp=subs cl=cmn gn=m nu=p
+ncmp0                => sp=subs cl=cmn gn=m nu=p st=unknown
+ncmpXd               => sp=suff cl=cmn gn=m nu=p cl2=d
+ncmpXh               => sp=suff cl=cmn gn=m nu=p cl2=h
+ncmpa                => sp=subs cl=cmn gn=m nu=p st=a
+ncmpc                => sp=subs cl=cmn gn=m nu=p st=c
+ncmpcX0              => sp=suff cl=cmn gn=m nu=p st=c cl2=unknown
+ncmpcX1cp            => sp=suff cl=cmn gn=m nu=p st=c ps2=1 gn2=c nu2=p
+ncmpcX1cs            => sp=suff cl=cmn gn=m nu=p st=c ps2=1 gn2=c nu2=s
+ncmpcX2fs            => sp=suff cl=cmn gn=m nu=p st=c ps2=2 gn2=f nu2=s
+ncmpcX2mp            => sp=suff cl=cmn gn=m nu=p st=c ps2=2 gn2=m nu2=p
+ncmpcX2ms            => sp=suff cl=cmn gn=m nu=p st=c ps2=2 gn2=m nu2=s
+ncmpcX30             => sp=suff cl=cmn gn=m nu=p st=c ps2=3 gn2=unknown
+ncmpcX3fp            => sp=suff cl=cmn gn=m nu=p st=c ps2=3 gn2=f nu2=p
+ncmpcX3fs            => sp=suff cl=cmn gn=m nu=p st=c ps2=3 gn2=f nu2=s
+ncmpcX3mp            => sp=suff cl=cmn gn=m nu=p st=c ps2=3 gn2=m nu2=p
+ncmpcX3ms            => sp=suff cl=cmn gn=m nu=p st=c ps2=3 gn2=m nu2=s
+ncmpd                => sp=subs cl=cmn gn=m nu=p st=d
+ncmpdX1cs            => sp=suff cl=cmn gn=m nu=p st=d ps2=1 gn2=c nu2=s
+ncmpdX2mp            => sp=suff cl=cmn gn=m nu=p st=d ps2=2 gn2=m nu2=p
+ncmpdX2ms            => sp=suff cl=cmn gn=m nu=p st=d ps2=2 gn2=m nu2=s
+ncmpdX3fs            => sp=suff cl=cmn gn=m nu=p st=d ps2=3 gn2=f nu2=s
+ncmpdX3mp            => sp=suff cl=cmn gn=m nu=p st=d ps2=3 gn2=m nu2=p
+ncmpdX3ms            => sp=suff cl=cmn gn=m nu=p st=d ps2=3 gn2=m nu2=s
+ncms                 => sp=subs cl=cmn gn=m nu=s
+ncms0                => sp=subs cl=cmn gn=m nu=s st=unknown
+ncmsX0               => sp=suff cl=cmn gn=m nu=s cl2=unknown
+ncmsX1cs             => sp=suff cl=cmn gn=m nu=s ps2=1 gn2=c nu2=s
+ncmsX2mp             => sp=suff cl=cmn gn=m nu=s ps2=2 gn2=m nu2=p
+ncmsX2ms             => sp=suff cl=cmn gn=m nu=s ps2=2 gn2=m nu2=s
+ncmsX3fs             => sp=suff cl=cmn gn=m nu=s ps2=3 gn2=f nu2=s
+ncmsX3mp             => sp=suff cl=cmn gn=m nu=s ps2=3 gn2=m nu2=p
+ncmsX3ms             => sp=suff cl=cmn gn=m nu=s ps2=3 gn2=m nu2=s
+ncmsXd               => sp=suff cl=cmn gn=m nu=s cl2=d
+ncmsa                => sp=subs cl=cmn gn=m nu=s st=a
+ncmsc                => sp=subs cl=cmn gn=m nu=s st=c
+ncmscX0              => sp=suff cl=cmn gn=m nu=s st=c cl2=unknown
+ncmscX1cp            => sp=suff cl=cmn gn=m nu=s st=c ps2=1 gn2=c nu2=p
+ncmscX1cs            => sp=suff cl=cmn gn=m nu=s st=c ps2=1 gn2=c nu2=s
+ncmscX200            => sp=suff cl=cmn gn=m nu=s st=c ps2=2 gn2=unknown nu2=unknown
+ncmscX2fp            => sp=suff cl=cmn gn=m nu=s st=c ps2=2 gn2=f nu2=p
+ncmscX2fs            => sp=suff cl=cmn gn=m nu=s st=c ps2=2 gn2=f nu2=s
+ncmscX2m0            => sp=suff cl=cmn gn=m nu=s st=c ps2=2 gn2=m nu2=unknown
+ncmscX2mp            => sp=suff cl=cmn gn=m nu=s st=c ps2=2 gn2=m nu2=p
+ncmscX2ms            => sp=suff cl=cmn gn=m nu=s st=c ps2=2 gn2=m nu2=s
+ncmscX30s            => sp=suff cl=cmn gn=m nu=s st=c ps2=3 gn2=unknown nu2=s
+ncmscX3fp            => sp=suff cl=cmn gn=m nu=s st=c ps2=3 gn2=f nu2=p
+ncmscX3fs            => sp=suff cl=cmn gn=m nu=s st=c ps2=3 gn2=f nu2=s
+ncmscX3mp            => sp=suff cl=cmn gn=m nu=s st=c ps2=3 gn2=m nu2=p
+ncmscX3ms            => sp=suff cl=cmn gn=m nu=s st=c ps2=3 gn2=m nu2=s
+ncmsd                => sp=subs cl=cmn gn=m nu=s st=d
+ncmsdX1cs            => sp=suff cl=cmn gn=m nu=s st=d ps2=1 gn2=c nu2=s
+ncmsdX2mp            => sp=suff cl=cmn gn=m nu=s st=d ps2=2 gn2=m nu2=p
+ncmsdX2ms            => sp=suff cl=cmn gn=m nu=s st=d ps2=2 gn2=m nu2=s
+ncmsdX3fp            => sp=suff cl=cmn gn=m nu=s st=d ps2=3 gn2=f nu2=p
+ncmsdX3fs            => sp=suff cl=cmn gn=m nu=s st=d ps2=3 gn2=f nu2=s
+ncmsdX3mp            => sp=suff cl=cmn gn=m nu=s st=d ps2=3 gn2=m nu2=p
+ncmsdX3ms            => sp=suff cl=cmn gn=m nu=s st=d ps2=3 gn2=m nu2=s
+ng                   => sp=subs cl=gent
+ng00                 => sp=subs cl=gent gn=unknown nu=unknown
+ngfsa                => sp=subs cl=gent gn=f nu=s st=a
+ngmp                 => sp=subs cl=gent gn=m nu=p
+ngmpa                => sp=subs cl=gent gn=m nu=p st=a
+ngmpc                => sp=subs cl=gent gn=m nu=p st=c
+ngmpd                => sp=subs cl=gent gn=m nu=p st=d
+ngms                 => sp=subs cl=gent gn=m nu=s
+ngmsa                => sp=subs cl=gent gn=m nu=s st=a
+ngmsd                => sp=subs cl=gent gn=m nu=s st=d
+nmpc                 => sp=subs cl=mult nu=p st=c
+nmpcX3fs             => sp=suff cl=mult nu=p st=c ps2=3 gn2=f nu2=s
+np                   => sp=subs cl=prp
+npX0                 => sp=suff cl=prp cl2=unknown
+npX1cp               => sp=suff cl=prp ps2=1 gn2=c nu2=p
+npX2fs               => sp=suff cl=prp ps2=2 gn2=f nu2=s
+npX2mp               => sp=suff cl=prp ps2=2 gn2=m nu2=p
+npXd                 => sp=suff cl=prp cl2=d
+pi1cp                => sp=pron cl=indp ps=1 gn=c nu=p
+pi1cs                => sp=pron cl=indp ps=1 gn=c nu=s
+pi2fs                => sp=pron cl=indp ps=2 gn=f nu=s
+pi2mp                => sp=pron cl=indp ps=2 gn=m nu=p
+pi2ms                => sp=pron cl=indp ps=2 gn=m nu=s
+pi3fp                => sp=pron cl=indp ps=3 gn=f nu=p
+pi3fs                => sp=pron cl=indp ps=3 gn=f nu=s
+pi3mp                => sp=pron cl=indp ps=3 gn=m nu=p
+pi3ms                => sp=pron cl=indp ps=3 gn=m nu=s
+pii                  => sp=pron cl=intr
+piiXd                => sp=suff cl=intr cl2=d
+uc00                 => sp=numr cl=card gn=unknown nu=unknown
+uc000                => sp=numr cl=card gn=unknown nu=unknown st=unknown
+uc0s                 => sp=numr cl=card gn=unknown nu=s
+uc0s0                => sp=numr cl=card gn=unknown nu=s st=unknown
+ucbpa                => sp=numr cl=card gn=b nu=p st=a
+ucbpcX3mp            => sp=suff cl=card gn=b nu=p st=c ps2=3 gn2=m nu2=p
+ucbsa                => sp=numr cl=card gn=b nu=s st=a
+ucbsc                => sp=numr cl=card gn=b nu=s st=c
+uccp                 => sp=numr cl=card gn=c nu=p
+uccpa                => sp=numr cl=card gn=c nu=p st=a
+uccs                 => sp=numr cl=card gn=c nu=s
+uccsa                => sp=numr cl=card gn=c nu=s st=a
+uccsc                => sp=numr cl=card gn=c nu=s st=c
+uccsd                => sp=numr cl=card gn=c nu=s st=d
+ucfda                => sp=numr cl=card gn=f nu=d st=a
+ucfdc                => sp=numr cl=card gn=f nu=d st=c
+ucfdcX3mp            => sp=suff cl=card gn=f nu=d st=c ps2=3 gn2=m nu2=p
+ucfpa                => sp=numr cl=card gn=f nu=p st=a
+ucfpc                => sp=numr cl=card gn=f nu=p st=c
+ucfpcX3ms            => sp=suff cl=card gn=f nu=p st=c ps2=3 gn2=m nu2=s
+ucfs                 => sp=numr cl=card gn=f nu=s
+ucfsa                => sp=numr cl=card gn=f nu=s st=a
+ucfsc                => sp=numr cl=card gn=f nu=s st=c
+ucfscX3mp            => sp=suff cl=card gn=f nu=s st=c ps2=3 gn2=m nu2=p
+ucfsd                => sp=numr cl=card gn=f nu=s st=d
+ucm0                 => sp=numr cl=card gn=m nu=unknown
+ucmda                => sp=numr cl=card gn=m nu=d st=a
+ucmdc                => sp=numr cl=card gn=m nu=d st=c
+ucmdcX1cp            => sp=suff cl=card gn=m nu=d st=c ps2=1 gn2=c nu2=p
+ucmdcX2mp            => sp=suff cl=card gn=m nu=d st=c ps2=2 gn2=m nu2=p
+ucmdcX3fp            => sp=suff cl=card gn=m nu=d st=c ps2=3 gn2=f nu2=p
+ucmdcX3mp            => sp=suff cl=card gn=m nu=d st=c ps2=3 gn2=m nu2=p
+ucmpa                => sp=numr cl=card gn=m nu=p st=a
+ucmpc                => sp=numr cl=card gn=m nu=p st=c
+ucmpcX2ms            => sp=suff cl=card gn=m nu=p st=c ps2=2 gn2=m nu2=s
+ucmpcX3mp            => sp=suff cl=card gn=m nu=p st=c ps2=3 gn2=m nu2=p
+ucmpcX3ms            => sp=suff cl=card gn=m nu=p st=c ps2=3 gn2=m nu2=s
+ucmpd                => sp=numr cl=card gn=m nu=p st=d
+ucms                 => sp=numr cl=card gn=m nu=s
+ucmsa                => sp=numr cl=card gn=m nu=s st=a
+ucmsc                => sp=numr cl=card gn=m nu=s st=c
+ucmscX2mp            => sp=suff cl=card gn=m nu=s st=c ps2=2 gn2=m nu2=p
+ucmscX3fp            => sp=suff cl=card gn=m nu=s st=c ps2=3 gn2=f nu2=p
+ucmscX3mp            => sp=suff cl=card gn=m nu=s st=c ps2=3 gn2=m nu2=p
+ucmsd                => sp=numr cl=card gn=m nu=s st=d
+ucmsdX3mp            => sp=suff cl=card gn=m nu=s st=d ps2=3 gn2=m nu2=p
+uo0s                 => sp=numr cl=ord gn=unknown nu=s
+uofpd                => sp=numr cl=ord gn=f nu=p st=d
+uofs                 => sp=numr cl=ord gn=f nu=s
+uofsa                => sp=numr cl=ord gn=f nu=s st=a
+uofsc                => sp=numr cl=ord gn=f nu=s st=c
+uofscX2fs            => sp=suff cl=ord gn=f nu=s st=c ps2=2 gn2=f nu2=s
+uofscX3ms            => sp=suff cl=ord gn=f nu=s st=c ps2=3 gn2=m nu2=s
+uofsd                => sp=numr cl=ord gn=f nu=s st=d
+uom0                 => sp=numr cl=ord gn=m nu=unknown
+uompa                => sp=numr cl=ord gn=m nu=p st=a
+uompd                => sp=numr cl=ord gn=m nu=p st=d
+uoms                 => sp=numr cl=ord gn=m nu=s
+uomsa                => sp=numr cl=ord gn=m nu=s st=a
+uomsd                => sp=numr cl=ord gn=m nu=s st=d
+v                    => sp=verb
+v0                   => sp=verb vs=unknown
+v0000                => sp=verb vs=unknown vt=unknown ps=unknown gn=unknown
+v00000               => sp=verb vs=unknown vt=unknown ps=unknown gn=unknown nu=unknown
+v00000X1cs           => sp=suff vs=unknown vt=unknown ps=unknown gn=unknown nu=unknown ps2=1 gn2=c nu2=s
+v0000X2ms            => sp=suff vs=unknown vt=unknown ps=unknown gn=unknown ps2=2 gn2=m nu2=s
+v0000p               => sp=verb vs=unknown vt=unknown ps=unknown gn=unknown nu=p
+v0000pX1cs           => sp=suff vs=unknown vt=unknown ps=unknown gn=unknown nu=p ps2=1 gn2=c nu2=s
+v0000s               => sp=verb vs=unknown vt=unknown ps=unknown gn=unknown nu=s
+v000fp               => sp=verb vs=unknown vt=unknown ps=unknown gn=f nu=p
+v000fs               => sp=verb vs=unknown vt=unknown ps=unknown gn=f nu=s
+v000mp               => sp=verb vs=unknown vt=unknown ps=unknown gn=m nu=p
+v000ms               => sp=verb vs=unknown vt=unknown ps=unknown gn=m nu=s
+v002m0               => sp=verb vs=unknown vt=unknown ps=2 gn=m nu=unknown
+v003m0               => sp=verb vs=unknown vt=unknown ps=3 gn=m nu=unknown
+v0P000d              => sp=verb vs=unknown vt=ptca ps=unknown gn=unknown nu=unknown st=d
+v0Pfpa               => sp=verb vs=unknown vt=ptca gn=f nu=p st=a
+v0Pmp                => sp=verb vs=unknown vt=ptca gn=m nu=p
+v0Pmpa               => sp=verb vs=unknown vt=ptca gn=m nu=p st=a
+v0Pms                => sp=verb vs=unknown vt=ptca gn=m nu=s
+v0Pmsa               => sp=verb vs=unknown vt=ptca gn=m nu=s st=a
+v0c                  => sp=verb vs=unknown vt=infc
+v0i0                 => sp=verb vs=unknown vt=impf ps=unknown
+v0i00                => sp=verb vs=unknown vt=impf ps=unknown gn=unknown
+v0i000               => sp=verb vs=unknown vt=impf ps=unknown gn=unknown nu=unknown
+v0i00s               => sp=verb vs=unknown vt=impf ps=unknown gn=unknown nu=s
+v0i1cp               => sp=verb vs=unknown vt=impf ps=1 gn=c nu=p
+v0i1cs               => sp=verb vs=unknown vt=impf ps=1 gn=c nu=s
+v0i1csX2fs           => sp=suff vs=unknown vt=impf ps=1 gn=c nu=s ps2=2 gn2=f nu2=s
+v0i200               => sp=verb vs=unknown vt=impf ps=2 gn=unknown nu=unknown
+v0i2m0               => sp=verb vs=unknown vt=impf ps=2 gn=m nu=unknown
+v0i2mp               => sp=verb vs=unknown vt=impf ps=2 gn=m nu=p
+v0i2ms               => sp=verb vs=unknown vt=impf ps=2 gn=m nu=s
+v0i30                => sp=verb vs=unknown vt=impf ps=3 gn=unknown
+v0i300               => sp=verb vs=unknown vt=impf ps=3 gn=unknown nu=unknown
+v0i3fp               => sp=verb vs=unknown vt=impf ps=3 gn=f nu=p
+v0i3fs               => sp=verb vs=unknown vt=impf ps=3 gn=f nu=s
+v0i3m0               => sp=verb vs=unknown vt=impf ps=3 gn=m nu=unknown
+v0i3mp               => sp=verb vs=unknown vt=impf ps=3 gn=m nu=p
+v0i3ms               => sp=verb vs=unknown vt=impf ps=3 gn=m nu=s
+v0i3msj              => sp=verb vs=unknown vt=impf ps=3 gn=m nu=s md=juss
+v0p000               => sp=verb vs=unknown vt=perf ps=unknown gn=unknown nu=unknown
+v0p00s               => sp=verb vs=unknown vt=perf ps=unknown gn=unknown nu=s
+v0p1cp               => sp=verb vs=unknown vt=perf ps=1 gn=c nu=p
+v0p1cs               => sp=verb vs=unknown vt=perf ps=1 gn=c nu=s
+v0p2ms               => sp=verb vs=unknown vt=perf ps=2 gn=m nu=s
+v0p2msX1cp           => sp=suff vs=unknown vt=perf ps=2 gn=m nu=s ps2=1 gn2=c nu2=p
+v0p2msX1cs           => sp=suff vs=unknown vt=perf ps=2 gn=m nu=s ps2=1 gn2=c nu2=s
+v0p3fs               => sp=verb vs=unknown vt=perf ps=3 gn=f nu=s
+v0p3ms               => sp=verb vs=unknown vt=perf ps=3 gn=m nu=s
+v0vmp                => sp=verb vs=unknown vt=impv gn=m nu=p
+v0w3m0               => sp=verb vs=unknown vt=wayy ps=3 gn=m nu=unknown
+v1smp                => sp=verb vs=apoel vt=ptcp gn=m nu=p
+v9c                  => sp=verb vs=hitpoel vt=infc
+v9i1cs               => sp=verb vs=hitpoel vt=impf ps=1 gn=c nu=s
+v9i2mp               => sp=verb vs=hitpoel vt=impf ps=2 gn=m nu=p
+v9i3mp               => sp=verb vs=hitpoel vt=impf ps=3 gn=m nu=p
+v9p1cs               => sp=verb vs=hitpoel vt=perf ps=1 gn=c nu=s
+v9p3cp               => sp=verb vs=hitpoel vt=perf ps=3 gn=c nu=p
+v9p3fs               => sp=verb vs=hitpoel vt=perf ps=3 gn=f nu=s
+v9p3ms               => sp=verb vs=hitpoel vt=perf ps=3 gn=m nu=s
+v9vmp                => sp=verb vs=hitpoel vt=impv gn=m nu=p
+v9w3mp               => sp=verb vs=hitpoel vt=wayy ps=3 gn=m nu=p
+v9w3ms               => sp=verb vs=hitpoel vt=wayy ps=3 gn=m nu=s
+vA0000               => sp=verb vs=aphel vt=unknown ps=unknown gn=unknown nu=unknown
+vA000s               => sp=verb vs=aphel vt=unknown ps=unknown gn=unknown nu=s
+vA03m0X3fs           => sp=suff vs=aphel vt=unknown ps=3 gn=m nu=unknown ps2=3 gn2=f nu2=s
+vAP00                => sp=verb vs=aphel vt=ptca ps=unknown gn=unknown
+vAPfp                => sp=verb vs=aphel vt=ptca gn=f nu=p
+vAPfpa               => sp=verb vs=aphel vt=ptca gn=f nu=p st=a
+vAPfs                => sp=verb vs=aphel vt=ptca gn=f nu=s
+vAPfsa               => sp=verb vs=aphel vt=ptca gn=f nu=s st=a
+vAPmpa               => sp=verb vs=aphel vt=ptca gn=m nu=p st=a
+vAPms                => sp=verb vs=aphel vt=ptca gn=m nu=s
+vAPmsa               => sp=verb vs=aphel vt=ptca gn=m nu=s st=a
+vAc                  => sp=verb vs=aphel vt=infc
+vAcX1cs              => sp=suff vs=aphel vt=infc ps2=1 gn2=c nu2=s
+vAcX2fs              => sp=suff vs=aphel vt=infc ps2=2 gn2=f nu2=s
+vAcX3fs              => sp=suff vs=aphel vt=infc ps2=3 gn2=f nu2=s
+vAcX3mp              => sp=suff vs=aphel vt=infc ps2=3 gn2=m nu2=p
+vAcX3ms              => sp=suff vs=aphel vt=infc ps2=3 gn2=m nu2=s
+vAi00s               => sp=verb vs=aphel vt=impf ps=unknown gn=unknown nu=s
+vAi1cp               => sp=verb vs=aphel vt=impf ps=1 gn=c nu=p
+vAi1cpX3fs           => sp=suff vs=aphel vt=impf ps=1 gn=c nu=p ps2=3 gn2=f nu2=s
+vAi1cs               => sp=verb vs=aphel vt=impf ps=1 gn=c nu=s
+vAi1csX2ms           => sp=suff vs=aphel vt=impf ps=1 gn=c nu=s ps2=2 gn2=m nu2=s
+vAi2mp               => sp=verb vs=aphel vt=impf ps=2 gn=m nu=p
+vAi2ms               => sp=verb vs=aphel vt=impf ps=2 gn=m nu=s
+vAi2msX3ms           => sp=suff vs=aphel vt=impf ps=2 gn=m nu=s ps2=3 gn2=m nu2=s
+vAi3cpX3fs           => sp=suff vs=aphel vt=impf ps=3 gn=c nu=p ps2=3 gn2=f nu2=s
+vAi3fs               => sp=verb vs=aphel vt=impf ps=3 gn=f nu=s
+vAi3m0               => sp=verb vs=aphel vt=impf ps=3 gn=m nu=unknown
+vAi3mp               => sp=verb vs=aphel vt=impf ps=3 gn=m nu=p
+vAi3mpX1cs           => sp=suff vs=aphel vt=impf ps=3 gn=m nu=p ps2=1 gn2=c nu2=s
+vAi3mpX3ms           => sp=suff vs=aphel vt=impf ps=3 gn=m nu=p ps2=3 gn2=m nu2=s
+vAi3ms               => sp=verb vs=aphel vt=impf ps=3 gn=m nu=s
+vAi3msX2mp           => sp=suff vs=aphel vt=impf ps=3 gn=m nu=s ps2=2 gn2=m nu2=p
+vAi3msX3fs           => sp=suff vs=aphel vt=impf ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vAi3msX3ms           => sp=suff vs=aphel vt=impf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vAims                => sp=verb vs=aphel vt=impf gn=m nu=s
+vAp000               => sp=verb vs=aphel vt=perf ps=unknown gn=unknown nu=unknown
+vAp1cs               => sp=verb vs=aphel vt=perf ps=1 gn=c nu=s
+vAp1csX2ms           => sp=suff vs=aphel vt=perf ps=1 gn=c nu=s ps2=2 gn2=m nu2=s
+vAp1csX3ms           => sp=suff vs=aphel vt=perf ps=1 gn=c nu=s ps2=3 gn2=m nu2=s
+vAp2mp               => sp=verb vs=aphel vt=perf ps=2 gn=m nu=p
+vAp2ms               => sp=verb vs=aphel vt=perf ps=2 gn=m nu=s
+vAp3fs               => sp=verb vs=aphel vt=perf ps=3 gn=f nu=s
+vAp3mp               => sp=verb vs=aphel vt=perf ps=3 gn=m nu=p
+vAp3mpX1cs           => sp=suff vs=aphel vt=perf ps=3 gn=m nu=p ps2=1 gn2=c nu2=s
+vAp3mpX3ms           => sp=suff vs=aphel vt=perf ps=3 gn=m nu=p ps2=3 gn2=m nu2=s
+vAp3ms               => sp=verb vs=aphel vt=perf ps=3 gn=m nu=s
+vAp3msX1cs           => sp=suff vs=aphel vt=perf ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vAp3msX2ms           => sp=suff vs=aphel vt=perf ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vAp3msX3fs           => sp=suff vs=aphel vt=perf ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vAp3msX3ms           => sp=suff vs=aphel vt=perf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vAsfs                => sp=verb vs=aphel vt=ptcp gn=f nu=s
+vAsms                => sp=verb vs=aphel vt=ptcp gn=m nu=s
+vAvfs                => sp=verb vs=aphel vt=impv gn=f nu=s
+vAvmp                => sp=verb vs=aphel vt=impv gn=m nu=p
+vAvmpX3mp            => sp=suff vs=aphel vt=impv gn=m nu=p ps2=3 gn2=m nu2=p
+vAvms                => sp=verb vs=aphel vt=impv gn=m nu=s
+vAvmsX3ms            => sp=suff vs=aphel vt=impv gn=m nu=s ps2=3 gn2=m nu2=s
+vB0000               => sp=verb vs=haphel vt=unknown ps=unknown gn=unknown nu=unknown
+vBPfsa               => sp=verb vs=haphel vt=ptca gn=f nu=s st=a
+vBPmp                => sp=verb vs=haphel vt=ptca gn=m nu=p
+vBPmpa               => sp=verb vs=haphel vt=ptca gn=m nu=p st=a
+vBPms                => sp=verb vs=haphel vt=ptca gn=m nu=s
+vBPmsa               => sp=verb vs=haphel vt=ptca gn=m nu=s st=a
+vBc                  => sp=verb vs=haphel vt=infc
+vBcX1cs              => sp=suff vs=haphel vt=infc ps2=1 gn2=c nu2=s
+vBcX3fs              => sp=suff vs=haphel vt=infc ps2=3 gn2=f nu2=s
+vBcX3ms              => sp=suff vs=haphel vt=infc ps2=3 gn2=m nu2=s
+vBi1cs               => sp=verb vs=haphel vt=impf ps=1 gn=c nu=s
+vBi1csX2ms           => sp=suff vs=haphel vt=impf ps=1 gn=c nu=s ps2=2 gn2=m nu2=s
+vBi1csX3ms           => sp=suff vs=haphel vt=impf ps=1 gn=c nu=s ps2=3 gn2=m nu2=s
+vBi2mp               => sp=verb vs=haphel vt=impf ps=2 gn=m nu=p
+vBi2mpX1cs           => sp=suff vs=haphel vt=impf ps=2 gn=m nu=p ps2=1 gn2=c nu2=s
+vBi2ms               => sp=verb vs=haphel vt=impf ps=2 gn=m nu=s
+vBi2msX3ms           => sp=suff vs=haphel vt=impf ps=2 gn=m nu=s ps2=3 gn2=m nu2=s
+vBi3fp               => sp=verb vs=haphel vt=impf ps=3 gn=f nu=p
+vBi3fs               => sp=verb vs=haphel vt=impf ps=3 gn=f nu=s
+vBi3mp               => sp=verb vs=haphel vt=impf ps=3 gn=m nu=p
+vBi3ms               => sp=verb vs=haphel vt=impf ps=3 gn=m nu=s
+vBi3msX1cs           => sp=suff vs=haphel vt=impf ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vBi3msX3fs           => sp=suff vs=haphel vt=impf ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vBi3msX3ms           => sp=suff vs=haphel vt=impf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vBp1cs               => sp=verb vs=haphel vt=perf ps=1 gn=c nu=s
+vBp2mp               => sp=verb vs=haphel vt=perf ps=2 gn=m nu=p
+vBp2ms               => sp=verb vs=haphel vt=perf ps=2 gn=m nu=s
+vBp2msX1cp           => sp=suff vs=haphel vt=perf ps=2 gn=m nu=s ps2=1 gn2=c nu2=p
+vBp2msX1cs           => sp=suff vs=haphel vt=perf ps=2 gn=m nu=s ps2=1 gn2=c nu2=s
+vBp3cp               => sp=verb vs=haphel vt=perf ps=3 gn=c nu=p
+vBp3fp               => sp=verb vs=haphel vt=perf ps=3 gn=f nu=p
+vBp3fs               => sp=verb vs=haphel vt=perf ps=3 gn=f nu=s
+vBp3mp               => sp=verb vs=haphel vt=perf ps=3 gn=m nu=p
+vBp3ms               => sp=verb vs=haphel vt=perf ps=3 gn=m nu=s
+vBp3msX1cs           => sp=suff vs=haphel vt=perf ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vBp3msX2ms           => sp=suff vs=haphel vt=perf ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vBp3msX3ms           => sp=suff vs=haphel vt=perf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vBsmp                => sp=verb vs=haphel vt=ptcp gn=m nu=p
+vBsms                => sp=verb vs=haphel vt=ptcp gn=m nu=s
+vBvms                => sp=verb vs=haphel vt=impv gn=m nu=s
+vBvmsX1cs            => sp=suff vs=haphel vt=impv gn=m nu=s ps2=1 gn2=c nu2=s
+vBvmsX3ms            => sp=suff vs=haphel vt=impv gn=m nu=s ps2=3 gn2=m nu2=s
+vDi3mp               => sp=verb vs=hophal vt=impf ps=3 gn=m nu=p
+vDp3fs               => sp=verb vs=hophal vt=perf ps=3 gn=f nu=s
+vDp3mp               => sp=verb vs=hophal vt=perf ps=3 gn=m nu=p
+vDp3ms               => sp=verb vs=hophal vt=perf ps=3 gn=m nu=s
+vEi2mp               => sp=verb vs=hithaphel vt=impf ps=2 gn=m nu=p
+vEi3ms               => sp=verb vs=hithaphel vt=impf ps=3 gn=m nu=s
+vEvms                => sp=verb vs=hithaphel vt=impv gn=m nu=s
+vFc                  => sp=verb vs=hithpeel vt=infc
+vFi2mp               => sp=verb vs=hithpeel vt=impf ps=2 gn=m nu=p
+vFi3fs               => sp=verb vs=hithpeel vt=impf ps=3 gn=f nu=s
+vFi3mp               => sp=verb vs=hithpeel vt=impf ps=3 gn=m nu=p
+vFi3ms               => sp=verb vs=hithpeel vt=impf ps=3 gn=m nu=s
+vFi3msj              => sp=verb vs=hithpeel vt=impf ps=3 gn=m nu=s md=juss
+vFp2mp               => sp=verb vs=hithpeel vt=perf ps=2 gn=m nu=p
+vFp3fs               => sp=verb vs=hithpeel vt=perf ps=3 gn=f nu=s
+vFp3mp               => sp=verb vs=hithpeel vt=perf ps=3 gn=m nu=p
+vFp3ms               => sp=verb vs=hithpeel vt=perf ps=3 gn=m nu=s
+vGPmsa               => sp=verb vs=hithpolel vt=ptca gn=m nu=s st=a
+vGi1cs               => sp=verb vs=hithpolel vt=impf ps=1 gn=c nu=s
+vGi3mpX2ms           => sp=suff vs=hithpolel vt=impf ps=3 gn=m nu=p ps2=2 gn2=m nu2=s
+vGp3mp               => sp=verb vs=hithpolel vt=perf ps=3 gn=m nu=p
+vHPfp                => sp=verb vs=hofal vt=ptca gn=f nu=p
+vHPfpa               => sp=verb vs=hofal vt=ptca gn=f nu=p st=a
+vHPfpc               => sp=verb vs=hofal vt=ptca gn=f nu=p st=c
+vHPfs                => sp=verb vs=hofal vt=ptca gn=f nu=s
+vHPmp                => sp=verb vs=hofal vt=ptca gn=m nu=p
+vHPmpa               => sp=verb vs=hofal vt=ptca gn=m nu=p st=a
+vHPmpc               => sp=verb vs=hofal vt=ptca gn=m nu=p st=c
+vHPms                => sp=verb vs=hofal vt=ptca gn=m nu=s
+vHPmsa               => sp=verb vs=hofal vt=ptca gn=m nu=s st=a
+vHPmsc               => sp=verb vs=hofal vt=ptca gn=m nu=s st=c
+vHc                  => sp=verb vs=hofal vt=infc
+vHcX3fs              => sp=suff vs=hofal vt=infc ps2=3 gn2=f nu2=s
+vHcX3ms              => sp=suff vs=hofal vt=infc ps2=3 gn2=m nu2=s
+vHi00s               => sp=verb vs=hofal vt=impf ps=unknown gn=unknown nu=s
+vHi1cpX3mp           => sp=suff vs=hofal vt=impf ps=1 gn=c nu=p ps2=3 gn2=m nu2=p
+vHi2mp               => sp=verb vs=hofal vt=impf ps=2 gn=m nu=p
+vHi2mpXn             => sp=suff vs=hofal vt=impf ps=2 gn=m nu=p cl2=n
+vHi2ms               => sp=verb vs=hofal vt=impf ps=2 gn=m nu=s
+vHi2msX3mp           => sp=suff vs=hofal vt=impf ps=2 gn=m nu=s ps2=3 gn2=m nu2=p
+vHi3fs               => sp=verb vs=hofal vt=impf ps=3 gn=f nu=s
+vHi3mp               => sp=verb vs=hofal vt=impf ps=3 gn=m nu=p
+vHi3ms               => sp=verb vs=hofal vt=impf ps=3 gn=m nu=s
+vHp1cs               => sp=verb vs=hofal vt=perf ps=1 gn=c nu=s
+vHp2ms               => sp=verb vs=hofal vt=perf ps=2 gn=m nu=s
+vHp3cp               => sp=verb vs=hofal vt=perf ps=3 gn=c nu=p
+vHp3fs               => sp=verb vs=hofal vt=perf ps=3 gn=f nu=s
+vHp3ms               => sp=verb vs=hofal vt=perf ps=3 gn=m nu=s
+vHvms                => sp=verb vs=hofal vt=impv gn=m nu=s
+vHw3fs               => sp=verb vs=hofal vt=wayy ps=3 gn=f nu=s
+vHw3mp               => sp=verb vs=hofal vt=wayy ps=3 gn=m nu=p
+vHw3ms               => sp=verb vs=hofal vt=wayy ps=3 gn=m nu=s
+vIp3mp               => sp=verb vs=ishtaphel vt=perf ps=3 gn=m nu=p
+vK000                => sp=verb vs=ithpaal vt=unknown ps=unknown gn=unknown
+vK0000               => sp=verb vs=ithpaal vt=unknown ps=unknown gn=unknown nu=unknown
+vKPfpa               => sp=verb vs=ithpaal vt=ptca gn=f nu=p st=a
+vKPfsa               => sp=verb vs=ithpaal vt=ptca gn=f nu=s st=a
+vKPmp                => sp=verb vs=ithpaal vt=ptca gn=m nu=p
+vKPmpa               => sp=verb vs=ithpaal vt=ptca gn=m nu=p st=a
+vKPmsa               => sp=verb vs=ithpaal vt=ptca gn=m nu=s st=a
+vKc                  => sp=verb vs=ithpaal vt=infc
+vKcX3mp              => sp=suff vs=ithpaal vt=infc ps2=3 gn2=m nu2=p
+vKcX3ms              => sp=suff vs=ithpaal vt=infc ps2=3 gn2=m nu2=s
+vKi00                => sp=verb vs=ithpaal vt=impf ps=unknown gn=unknown
+vKi1cs               => sp=verb vs=ithpaal vt=impf ps=1 gn=c nu=s
+vKi2mp               => sp=verb vs=ithpaal vt=impf ps=2 gn=m nu=p
+vKi2ms               => sp=verb vs=ithpaal vt=impf ps=2 gn=m nu=s
+vKi3fs               => sp=verb vs=ithpaal vt=impf ps=3 gn=f nu=s
+vKi3mp               => sp=verb vs=ithpaal vt=impf ps=3 gn=m nu=p
+vKi3ms               => sp=verb vs=ithpaal vt=impf ps=3 gn=m nu=s
+vKp000               => sp=verb vs=ithpaal vt=perf ps=unknown gn=unknown nu=unknown
+vKp1cp               => sp=verb vs=ithpaal vt=perf ps=1 gn=c nu=p
+vKp1cs               => sp=verb vs=ithpaal vt=perf ps=1 gn=c nu=s
+vKp3fs               => sp=verb vs=ithpaal vt=perf ps=3 gn=f nu=s
+vKp3mp               => sp=verb vs=ithpaal vt=perf ps=3 gn=m nu=p
+vKp3ms               => sp=verb vs=ithpaal vt=perf ps=3 gn=m nu=s
+vKvmp                => sp=verb vs=ithpaal vt=impv gn=m nu=p
+vKvms                => sp=verb vs=ithpaal vt=impv gn=m nu=s
+vLPfsa               => sp=verb vs=ithpeel vt=ptca gn=f nu=s st=a
+vLPmpa               => sp=verb vs=ithpeel vt=ptca gn=m nu=p st=a
+vLPmsa               => sp=verb vs=ithpeel vt=ptca gn=m nu=s st=a
+vLc                  => sp=verb vs=ithpeel vt=infc
+vLi000               => sp=verb vs=ithpeel vt=impf ps=unknown gn=unknown nu=unknown
+vLi1cp               => sp=verb vs=ithpeel vt=impf ps=1 gn=c nu=p
+vLi1cs               => sp=verb vs=ithpeel vt=impf ps=1 gn=c nu=s
+vLi1csX3ms           => sp=suff vs=ithpeel vt=impf ps=1 gn=c nu=s ps2=3 gn2=m nu2=s
+vLi2fs               => sp=verb vs=ithpeel vt=impf ps=2 gn=f nu=s
+vLi2mp               => sp=verb vs=ithpeel vt=impf ps=2 gn=m nu=p
+vLi2ms               => sp=verb vs=ithpeel vt=impf ps=2 gn=m nu=s
+vLi3fp               => sp=verb vs=ithpeel vt=impf ps=3 gn=f nu=p
+vLi3fs               => sp=verb vs=ithpeel vt=impf ps=3 gn=f nu=s
+vLi3m0               => sp=verb vs=ithpeel vt=impf ps=3 gn=m nu=unknown
+vLi3mp               => sp=verb vs=ithpeel vt=impf ps=3 gn=m nu=p
+vLi3ms               => sp=verb vs=ithpeel vt=impf ps=3 gn=m nu=s
+vLp1cs               => sp=verb vs=ithpeel vt=perf ps=1 gn=c nu=s
+vLp2mp               => sp=verb vs=ithpeel vt=perf ps=2 gn=m nu=p
+vLp3fp               => sp=verb vs=ithpeel vt=perf ps=3 gn=f nu=p
+vLp3fs               => sp=verb vs=ithpeel vt=perf ps=3 gn=f nu=s
+vLp3mp               => sp=verb vs=ithpeel vt=perf ps=3 gn=m nu=p
+vLp3ms               => sp=verb vs=ithpeel vt=perf ps=3 gn=m nu=s
+vLvmp                => sp=verb vs=ithpeel vt=impv gn=m nu=p
+vLvms                => sp=verb vs=ithpeel vt=impv gn=m nu=s
+vM000                => sp=verb vs=pael vt=unknown ps=unknown gn=unknown
+vM0000               => sp=verb vs=pael vt=unknown ps=unknown gn=unknown nu=unknown
+vM000s               => sp=verb vs=pael vt=unknown ps=unknown gn=unknown nu=s
+vM00ms               => sp=verb vs=pael vt=unknown ps=unknown gn=m nu=s
+vMP00                => sp=verb vs=pael vt=ptca ps=unknown gn=unknown
+vMPfpa               => sp=verb vs=pael vt=ptca gn=f nu=p st=a
+vMPfsa               => sp=verb vs=pael vt=ptca gn=f nu=s st=a
+vMPfsd               => sp=verb vs=pael vt=ptca gn=f nu=s st=d
+vMPmp                => sp=verb vs=pael vt=ptca gn=m nu=p
+vMPmpa               => sp=verb vs=pael vt=ptca gn=m nu=p st=a
+vMPmpd               => sp=verb vs=pael vt=ptca gn=m nu=p st=d
+vMPms                => sp=verb vs=pael vt=ptca gn=m nu=s
+vMPmsa               => sp=verb vs=pael vt=ptca gn=m nu=s st=a
+vMPmscX1cp           => sp=suff vs=pael vt=ptca gn=m nu=s st=c ps2=1 gn2=c nu2=p
+vMPmscX300           => sp=suff vs=pael vt=ptca gn=m nu=s st=c ps2=3 gn2=unknown nu2=unknown
+vMPmscX3ms           => sp=suff vs=pael vt=ptca gn=m nu=s st=c ps2=3 gn2=m nu2=s
+vMPmsd               => sp=verb vs=pael vt=ptca gn=m nu=s st=d
+vMc                  => sp=verb vs=pael vt=infc
+vMcX1cs              => sp=suff vs=pael vt=infc ps2=1 gn2=c nu2=s
+vMcX3ms              => sp=suff vs=pael vt=infc ps2=3 gn2=m nu2=s
+vMi1cp               => sp=verb vs=pael vt=impf ps=1 gn=c nu=p
+vMi1cs               => sp=verb vs=pael vt=impf ps=1 gn=c nu=s
+vMi1csX2ms           => sp=suff vs=pael vt=impf ps=1 gn=c nu=s ps2=2 gn2=m nu2=s
+vMi2fs               => sp=verb vs=pael vt=impf ps=2 gn=f nu=s
+vMi2fsX1cs           => sp=suff vs=pael vt=impf ps=2 gn=f nu=s ps2=1 gn2=c nu2=s
+vMi2mp               => sp=verb vs=pael vt=impf ps=2 gn=m nu=p
+vMi2ms               => sp=verb vs=pael vt=impf ps=2 gn=m nu=s
+vMi2msX1cs           => sp=suff vs=pael vt=impf ps=2 gn=m nu=s ps2=1 gn2=c nu2=s
+vMi3cp               => sp=verb vs=pael vt=impf ps=3 gn=c nu=p
+vMi3fp               => sp=verb vs=pael vt=impf ps=3 gn=f nu=p
+vMi3fs               => sp=verb vs=pael vt=impf ps=3 gn=f nu=s
+vMi3fsX2ms           => sp=suff vs=pael vt=impf ps=3 gn=f nu=s ps2=2 gn2=m nu2=s
+vMi3mp               => sp=verb vs=pael vt=impf ps=3 gn=m nu=p
+vMi3mpX1cs           => sp=suff vs=pael vt=impf ps=3 gn=m nu=p ps2=1 gn2=c nu2=s
+vMi3mpX3ms           => sp=suff vs=pael vt=impf ps=3 gn=m nu=p ps2=3 gn2=m nu2=s
+vMi3mpjX2ms          => sp=suff vs=pael vt=impf ps=3 gn=m nu=p md=juss ps2=2 gn2=m nu2=s
+vMi3ms               => sp=verb vs=pael vt=impf ps=3 gn=m nu=s
+vMi3msX1cs           => sp=suff vs=pael vt=impf ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vMi3msX2ms           => sp=suff vs=pael vt=impf ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vMi3msX3fs           => sp=suff vs=pael vt=impf ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vMi3msX3mp           => sp=suff vs=pael vt=impf ps=3 gn=m nu=s ps2=3 gn2=m nu2=p
+vMi3msX3ms           => sp=suff vs=pael vt=impf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vMp000               => sp=verb vs=pael vt=perf ps=unknown gn=unknown nu=unknown
+vMp00s               => sp=verb vs=pael vt=perf ps=unknown gn=unknown nu=s
+vMp1cp               => sp=verb vs=pael vt=perf ps=1 gn=c nu=p
+vMp1cs               => sp=verb vs=pael vt=perf ps=1 gn=c nu=s
+vMp1csX1cs           => sp=suff vs=pael vt=perf ps=1 gn=c nu=s ps2=1 gn2=c nu2=s
+vMp1csX2mp           => sp=suff vs=pael vt=perf ps=1 gn=c nu=s ps2=2 gn2=m nu2=p
+vMp1csX3fs           => sp=suff vs=pael vt=perf ps=1 gn=c nu=s ps2=3 gn2=f nu2=s
+vMp2mp               => sp=verb vs=pael vt=perf ps=2 gn=m nu=p
+vMp2ms               => sp=verb vs=pael vt=perf ps=2 gn=m nu=s
+vMp3fs               => sp=verb vs=pael vt=perf ps=3 gn=f nu=s
+vMp3fsX1cs           => sp=suff vs=pael vt=perf ps=3 gn=f nu=s ps2=1 gn2=c nu2=s
+vMp3fsX3ms           => sp=suff vs=pael vt=perf ps=3 gn=f nu=s ps2=3 gn2=m nu2=s
+vMp3mp               => sp=verb vs=pael vt=perf ps=3 gn=m nu=p
+vMp3mpX1cs           => sp=suff vs=pael vt=perf ps=3 gn=m nu=p ps2=1 gn2=c nu2=s
+vMp3mpX2ms           => sp=suff vs=pael vt=perf ps=3 gn=m nu=p ps2=2 gn2=m nu2=s
+vMp3mpX3ms           => sp=suff vs=pael vt=perf ps=3 gn=m nu=p ps2=3 gn2=m nu2=s
+vMp3ms               => sp=verb vs=pael vt=perf ps=3 gn=m nu=s
+vMp3msX1cp           => sp=suff vs=pael vt=perf ps=3 gn=m nu=s ps2=1 gn2=c nu2=p
+vMp3msX1cs           => sp=suff vs=pael vt=perf ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vMp3msX2ms           => sp=suff vs=pael vt=perf ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vMp3msX3mp           => sp=suff vs=pael vt=perf ps=3 gn=m nu=s ps2=3 gn2=m nu2=p
+vMp3msX3ms           => sp=suff vs=pael vt=perf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vMsfp                => sp=verb vs=pael vt=ptcp gn=f nu=p
+vMsfpd               => sp=verb vs=pael vt=ptcp gn=f nu=p st=d
+vMsfs                => sp=verb vs=pael vt=ptcp gn=f nu=s
+vMsfsd               => sp=verb vs=pael vt=ptcp gn=f nu=s st=d
+vMsmp                => sp=verb vs=pael vt=ptcp gn=m nu=p
+vMsmpd               => sp=verb vs=pael vt=ptcp gn=m nu=p st=d
+vMsms                => sp=verb vs=pael vt=ptcp gn=m nu=s
+vMvfs                => sp=verb vs=pael vt=impv gn=f nu=s
+vMvmp                => sp=verb vs=pael vt=impv gn=m nu=p
+vMvms                => sp=verb vs=pael vt=impv gn=m nu=s
+vMvmsX1cs            => sp=suff vs=pael vt=impv gn=m nu=s ps2=1 gn2=c nu2=s
+vMvmsX3ms            => sp=suff vs=pael vt=impv gn=m nu=s ps2=3 gn2=m nu2=s
+vN                   => sp=verb vs=peal
+vN000                => sp=verb vs=peal vt=unknown ps=unknown gn=unknown
+vN0000               => sp=verb vs=peal vt=unknown ps=unknown gn=unknown nu=unknown
+vN000s               => sp=verb vs=peal vt=unknown ps=unknown gn=unknown nu=s
+vN00mp               => sp=verb vs=peal vt=unknown ps=unknown gn=m nu=p
+vN00ms               => sp=verb vs=peal vt=unknown ps=unknown gn=m nu=s
+vN03ms               => sp=verb vs=peal vt=unknown ps=3 gn=m nu=s
+vNP00                => sp=verb vs=peal vt=ptca ps=unknown gn=unknown
+vNP0p                => sp=verb vs=peal vt=ptca ps=unknown nu=p
+vNPfp                => sp=verb vs=peal vt=ptca gn=f nu=p
+vNPfpa               => sp=verb vs=peal vt=ptca gn=f nu=p st=a
+vNPfpd               => sp=verb vs=peal vt=ptca gn=f nu=p st=d
+vNPfs                => sp=verb vs=peal vt=ptca gn=f nu=s
+vNPfsa               => sp=verb vs=peal vt=ptca gn=f nu=s st=a
+vNPfsc               => sp=verb vs=peal vt=ptca gn=f nu=s st=c
+vNPfscX3mp           => sp=suff vs=peal vt=ptca gn=f nu=s st=c ps2=3 gn2=m nu2=p
+vNPfsd               => sp=verb vs=peal vt=ptca gn=f nu=s st=d
+vNPmp                => sp=verb vs=peal vt=ptca gn=m nu=p
+vNPmpa               => sp=verb vs=peal vt=ptca gn=m nu=p st=a
+vNPmpc               => sp=verb vs=peal vt=ptca gn=m nu=p st=c
+vNPmpcX1cs           => sp=suff vs=peal vt=ptca gn=m nu=p st=c ps2=1 gn2=c nu2=s
+vNPmpcX2fs           => sp=suff vs=peal vt=ptca gn=m nu=p st=c ps2=2 gn2=f nu2=s
+vNPmpcX3fs           => sp=suff vs=peal vt=ptca gn=m nu=p st=c ps2=3 gn2=f nu2=s
+vNPmpcX3mp           => sp=suff vs=peal vt=ptca gn=m nu=p st=c ps2=3 gn2=m nu2=p
+vNPmpcX3ms           => sp=suff vs=peal vt=ptca gn=m nu=p st=c ps2=3 gn2=m nu2=s
+vNPmpd               => sp=verb vs=peal vt=ptca gn=m nu=p st=d
+vNPms                => sp=verb vs=peal vt=ptca gn=m nu=s
+vNPmsa               => sp=verb vs=peal vt=ptca gn=m nu=s st=a
+vNPmsc               => sp=verb vs=peal vt=ptca gn=m nu=s st=c
+vNPmscX3fs           => sp=suff vs=peal vt=ptca gn=m nu=s st=c ps2=3 gn2=f nu2=s
+vNPmsd               => sp=verb vs=peal vt=ptca gn=m nu=s st=d
+vNc                  => sp=verb vs=peal vt=infc
+vNcX1cs              => sp=suff vs=peal vt=infc ps2=1 gn2=c nu2=s
+vNcX2mp              => sp=suff vs=peal vt=infc ps2=2 gn2=m nu2=p
+vNcX2ms              => sp=suff vs=peal vt=infc ps2=2 gn2=m nu2=s
+vNcX3fp              => sp=suff vs=peal vt=infc ps2=3 gn2=f nu2=p
+vNcX3fs              => sp=suff vs=peal vt=infc ps2=3 gn2=f nu2=s
+vNcX3mp              => sp=suff vs=peal vt=infc ps2=3 gn2=m nu2=p
+vNcX3ms              => sp=suff vs=peal vt=infc ps2=3 gn2=m nu2=s
+vNi                  => sp=verb vs=peal vt=impf
+vNi000               => sp=verb vs=peal vt=impf ps=unknown gn=unknown nu=unknown
+vNi00s               => sp=verb vs=peal vt=impf ps=unknown gn=unknown nu=s
+vNi0mp               => sp=verb vs=peal vt=impf ps=unknown gn=m nu=p
+vNi0ms               => sp=verb vs=peal vt=impf ps=unknown gn=m nu=s
+vNi1cp               => sp=verb vs=peal vt=impf ps=1 gn=c nu=p
+vNi1cs               => sp=verb vs=peal vt=impf ps=1 gn=c nu=s
+vNi1csX2ms           => sp=suff vs=peal vt=impf ps=1 gn=c nu=s ps2=2 gn2=m nu2=s
+vNi1csX3fs           => sp=suff vs=peal vt=impf ps=1 gn=c nu=s ps2=3 gn2=f nu2=s
+vNi200               => sp=verb vs=peal vt=impf ps=2 gn=unknown nu=unknown
+vNi2fs               => sp=verb vs=peal vt=impf ps=2 gn=f nu=s
+vNi2mp               => sp=verb vs=peal vt=impf ps=2 gn=m nu=p
+vNi2mpX1cs           => sp=suff vs=peal vt=impf ps=2 gn=m nu=p ps2=1 gn2=c nu2=s
+vNi2mpX3ms           => sp=suff vs=peal vt=impf ps=2 gn=m nu=p ps2=3 gn2=m nu2=s
+vNi2ms               => sp=verb vs=peal vt=impf ps=2 gn=m nu=s
+vNi2msX3fs           => sp=suff vs=peal vt=impf ps=2 gn=m nu=s ps2=3 gn2=f nu2=s
+vNi2msX3ms           => sp=suff vs=peal vt=impf ps=2 gn=m nu=s ps2=3 gn2=m nu2=s
+vNi3fp               => sp=verb vs=peal vt=impf ps=3 gn=f nu=p
+vNi3fpX3mp           => sp=suff vs=peal vt=impf ps=3 gn=f nu=p ps2=3 gn2=m nu2=p
+vNi3fs               => sp=verb vs=peal vt=impf ps=3 gn=f nu=s
+vNi3fsX2mp           => sp=suff vs=peal vt=impf ps=3 gn=f nu=s ps2=2 gn2=m nu2=p
+vNi3m0               => sp=verb vs=peal vt=impf ps=3 gn=m nu=unknown
+vNi3mp               => sp=verb vs=peal vt=impf ps=3 gn=m nu=p
+vNi3mpX1cs           => sp=suff vs=peal vt=impf ps=3 gn=m nu=p ps2=1 gn2=c nu2=s
+vNi3mpX2mp           => sp=suff vs=peal vt=impf ps=3 gn=m nu=p ps2=2 gn2=m nu2=p
+vNi3mpX2ms           => sp=suff vs=peal vt=impf ps=3 gn=m nu=p ps2=2 gn2=m nu2=s
+vNi3mpX3fp           => sp=suff vs=peal vt=impf ps=3 gn=m nu=p ps2=3 gn2=f nu2=p
+vNi3mpX3fs           => sp=suff vs=peal vt=impf ps=3 gn=m nu=p ps2=3 gn2=f nu2=s
+vNi3mpX3ms           => sp=suff vs=peal vt=impf ps=3 gn=m nu=p ps2=3 gn2=m nu2=s
+vNi3mpj              => sp=verb vs=peal vt=impf ps=3 gn=m nu=p md=juss
+vNi3ms               => sp=verb vs=peal vt=impf ps=3 gn=m nu=s
+vNi3msX1cs           => sp=suff vs=peal vt=impf ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vNi3msX2fs           => sp=suff vs=peal vt=impf ps=3 gn=m nu=s ps2=2 gn2=f nu2=s
+vNi3msX2ms           => sp=suff vs=peal vt=impf ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vNi3msX3fs           => sp=suff vs=peal vt=impf ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vNi3msX3ms           => sp=suff vs=peal vt=impf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vNp000               => sp=verb vs=peal vt=perf ps=unknown gn=unknown nu=unknown
+vNp00s               => sp=verb vs=peal vt=perf ps=unknown gn=unknown nu=s
+vNp1cp               => sp=verb vs=peal vt=perf ps=1 gn=c nu=p
+vNp1cs               => sp=verb vs=peal vt=perf ps=1 gn=c nu=s
+vNp1csX2ms           => sp=suff vs=peal vt=perf ps=1 gn=c nu=s ps2=2 gn2=m nu2=s
+vNp1csX3fs           => sp=suff vs=peal vt=perf ps=1 gn=c nu=s ps2=3 gn2=f nu2=s
+vNp1csX3ms           => sp=suff vs=peal vt=perf ps=1 gn=c nu=s ps2=3 gn2=m nu2=s
+vNp2mp               => sp=verb vs=peal vt=perf ps=2 gn=m nu=p
+vNp2ms               => sp=verb vs=peal vt=perf ps=2 gn=m nu=s
+vNp300               => sp=verb vs=peal vt=perf ps=3 gn=unknown nu=unknown
+vNp3cp               => sp=verb vs=peal vt=perf ps=3 gn=c nu=p
+vNp3fp               => sp=verb vs=peal vt=perf ps=3 gn=f nu=p
+vNp3fs               => sp=verb vs=peal vt=perf ps=3 gn=f nu=s
+vNp3fsX1cs           => sp=suff vs=peal vt=perf ps=3 gn=f nu=s ps2=1 gn2=c nu2=s
+vNp3fsX2ms           => sp=suff vs=peal vt=perf ps=3 gn=f nu=s ps2=2 gn2=m nu2=s
+vNp3m0               => sp=verb vs=peal vt=perf ps=3 gn=m nu=unknown
+vNp3mp               => sp=verb vs=peal vt=perf ps=3 gn=m nu=p
+vNp3mpX1cp           => sp=suff vs=peal vt=perf ps=3 gn=m nu=p ps2=1 gn2=c nu2=p
+vNp3mpX1cs           => sp=suff vs=peal vt=perf ps=3 gn=m nu=p ps2=1 gn2=c nu2=s
+vNp3mpX3fp           => sp=suff vs=peal vt=perf ps=3 gn=m nu=p ps2=3 gn2=f nu2=p
+vNp3mpX3fs           => sp=suff vs=peal vt=perf ps=3 gn=m nu=p ps2=3 gn2=f nu2=s
+vNp3mpX3ms           => sp=suff vs=peal vt=perf ps=3 gn=m nu=p ps2=3 gn2=m nu2=s
+vNp3ms               => sp=verb vs=peal vt=perf ps=3 gn=m nu=s
+vNp3msX1cp           => sp=suff vs=peal vt=perf ps=3 gn=m nu=s ps2=1 gn2=c nu2=p
+vNp3msX1cs           => sp=suff vs=peal vt=perf ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vNp3msX2ms           => sp=suff vs=peal vt=perf ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vNp3msX3fs           => sp=suff vs=peal vt=perf ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vNp3msX3ms           => sp=suff vs=peal vt=perf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vNpmp                => sp=verb vs=peal vt=perf gn=m nu=p
+vNpms                => sp=verb vs=peal vt=perf gn=m nu=s
+vNsfp                => sp=verb vs=peal vt=ptcp gn=f nu=p
+vNsfs                => sp=verb vs=peal vt=ptcp gn=f nu=s
+vNsmp                => sp=verb vs=peal vt=ptcp gn=m nu=p
+vNsmpc               => sp=verb vs=peal vt=ptcp gn=m nu=p st=c
+vNsms                => sp=verb vs=peal vt=ptcp gn=m nu=s
+vNsmsa               => sp=verb vs=peal vt=ptcp gn=m nu=s st=a
+vNsmsc               => sp=verb vs=peal vt=ptcp gn=m nu=s st=c
+vNsmsd               => sp=verb vs=peal vt=ptcp gn=m nu=s st=d
+vNvfs                => sp=verb vs=peal vt=impv gn=f nu=s
+vNvmp                => sp=verb vs=peal vt=impv gn=m nu=p
+vNvms                => sp=verb vs=peal vt=impv gn=m nu=s
+vNvmsX3fs            => sp=suff vs=peal vt=impv gn=m nu=s ps2=3 gn2=f nu2=s
+vNvmsX3mp            => sp=suff vs=peal vt=impv gn=m nu=s ps2=3 gn2=m nu2=p
+vNvmsX3ms            => sp=suff vs=peal vt=impv gn=m nu=s ps2=3 gn2=m nu2=s
+vOPmpa               => sp=verb vs=peil vt=ptca gn=m nu=p st=a
+vOPmsa               => sp=verb vs=peil vt=ptca gn=m nu=s st=a
+vOPmsc               => sp=verb vs=peil vt=ptca gn=m nu=s st=c
+vOi3m0               => sp=verb vs=peil vt=impf ps=3 gn=m nu=unknown
+vOp1cs               => sp=verb vs=peil vt=perf ps=1 gn=c nu=s
+vOp2ms               => sp=verb vs=peil vt=perf ps=2 gn=m nu=s
+vOp300               => sp=verb vs=peil vt=perf ps=3 gn=unknown nu=unknown
+vOp3fs               => sp=verb vs=peil vt=perf ps=3 gn=f nu=s
+vOp3mp               => sp=verb vs=peil vt=perf ps=3 gn=m nu=p
+vOp3ms               => sp=verb vs=peil vt=perf ps=3 gn=m nu=s
+vPP00                => sp=verb vs=pual vt=ptca ps=unknown gn=unknown
+vPPfp                => sp=verb vs=pual vt=ptca gn=f nu=p
+vPPfpa               => sp=verb vs=pual vt=ptca gn=f nu=p st=a
+vPPfpc               => sp=verb vs=pual vt=ptca gn=f nu=p st=c
+vPPfs                => sp=verb vs=pual vt=ptca gn=f nu=s
+vPPfsa               => sp=verb vs=pual vt=ptca gn=f nu=s st=a
+vPPfsc               => sp=verb vs=pual vt=ptca gn=f nu=s st=c
+vPPmp                => sp=verb vs=pual vt=ptca gn=m nu=p
+vPPmpa               => sp=verb vs=pual vt=ptca gn=m nu=p st=a
+vPPmpc               => sp=verb vs=pual vt=ptca gn=m nu=p st=c
+vPPmpcX1cs           => sp=suff vs=pual vt=ptca gn=m nu=p st=c ps2=1 gn2=c nu2=s
+vPPmpcX3ms           => sp=suff vs=pual vt=ptca gn=m nu=p st=c ps2=3 gn2=m nu2=s
+vPPms                => sp=verb vs=pual vt=ptca gn=m nu=s
+vPPmsa               => sp=verb vs=pual vt=ptca gn=m nu=s st=a
+vPPmsc               => sp=verb vs=pual vt=ptca gn=m nu=s st=c
+vPPmscX1cs           => sp=suff vs=pual vt=ptca gn=m nu=s st=c ps2=1 gn2=c nu2=s
+vPPmscX3ms           => sp=suff vs=pual vt=ptca gn=m nu=s st=c ps2=3 gn2=m nu2=s
+vPi2mp               => sp=verb vs=pual vt=impf ps=2 gn=m nu=p
+vPi3fs               => sp=verb vs=pual vt=impf ps=3 gn=f nu=s
+vPi3mp               => sp=verb vs=pual vt=impf ps=3 gn=m nu=p
+vPi3ms               => sp=verb vs=pual vt=impf ps=3 gn=m nu=s
+vPp1cp               => sp=verb vs=pual vt=perf ps=1 gn=c nu=p
+vPp1cs               => sp=verb vs=pual vt=perf ps=1 gn=c nu=s
+vPp2mp               => sp=verb vs=pual vt=perf ps=2 gn=m nu=p
+vPp2ms               => sp=verb vs=pual vt=perf ps=2 gn=m nu=s
+vPp3cp               => sp=verb vs=pual vt=perf ps=3 gn=c nu=p
+vPp3cpXn             => sp=suff vs=pual vt=perf ps=3 gn=c nu=p cl2=n
+vPp3fs               => sp=verb vs=pual vt=perf ps=3 gn=f nu=s
+vPp3ms               => sp=verb vs=pual vt=perf ps=3 gn=m nu=s
+vPpms                => sp=verb vs=pual vt=perf gn=m nu=s
+vPsfs                => sp=verb vs=pual vt=ptcp gn=f nu=s
+vPvmp                => sp=verb vs=pual vt=impv gn=m nu=p
+vPvms                => sp=verb vs=pual vt=impv gn=m nu=s
+vPw3mp               => sp=verb vs=pual vt=wayy ps=3 gn=m nu=p
+vQPms                => sp=verb vs=passive vt=ptca gn=m nu=s
+vQi2mp               => sp=verb vs=passive vt=impf ps=2 gn=m nu=p
+vQi2ms               => sp=verb vs=passive vt=impf ps=2 gn=m nu=s
+vQi3ms               => sp=verb vs=passive vt=impf ps=3 gn=m nu=s
+vQp1cp               => sp=verb vs=passive vt=perf ps=1 gn=c nu=p
+vQp1cs               => sp=verb vs=passive vt=perf ps=1 gn=c nu=s
+vQp2mp               => sp=verb vs=passive vt=perf ps=2 gn=m nu=p
+vQp3cp               => sp=verb vs=passive vt=perf ps=3 gn=c nu=p
+vQp3fs               => sp=verb vs=passive vt=perf ps=3 gn=f nu=s
+vQp3ms               => sp=verb vs=passive vt=perf ps=3 gn=m nu=s
+vRPmpa               => sp=verb vs=shaphel vt=ptca gn=m nu=p st=a
+vRcX2ms              => sp=suff vs=shaphel vt=infc ps2=2 gn2=m nu2=s
+vRcX3ms              => sp=suff vs=shaphel vt=infc ps2=3 gn2=m nu2=s
+vRi2msX3fs           => sp=suff vs=shaphel vt=impf ps=2 gn=m nu=s ps2=3 gn2=f nu2=s
+vRi3ms               => sp=verb vs=shaphel vt=impf ps=3 gn=m nu=s
+vRi3msX2ms           => sp=suff vs=shaphel vt=impf ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vRp000               => sp=verb vs=shaphel vt=perf ps=unknown gn=unknown nu=unknown
+vRp1cs               => sp=verb vs=shaphel vt=perf ps=1 gn=c nu=s
+vRp3ms               => sp=verb vs=shaphel vt=perf ps=3 gn=m nu=s
+vSPmp                => sp=verb vs=hithpaal vt=ptca gn=m nu=p
+vSPms                => sp=verb vs=hithpaal vt=ptca gn=m nu=s
+vSi2ms               => sp=verb vs=hithpaal vt=impf ps=2 gn=m nu=s
+vSi3fs               => sp=verb vs=hithpaal vt=impf ps=3 gn=f nu=s
+vSi3mp               => sp=verb vs=hithpaal vt=impf ps=3 gn=m nu=p
+vSi3mpj              => sp=verb vs=hithpaal vt=impf ps=3 gn=m nu=p md=juss
+vSi3ms               => sp=verb vs=hithpaal vt=impf ps=3 gn=m nu=s
+vSp2mp               => sp=verb vs=hithpaal vt=perf ps=2 gn=m nu=p
+vSp3ms               => sp=verb vs=hithpaal vt=perf ps=3 gn=m nu=s
+vVp3ms               => sp=verb vs=ithpoel vt=perf ps=3 gn=m nu=s
+vap3ms               => sp=verb vs=palel vt=perf ps=3 gn=m nu=s
+vbp3ms               => sp=verb vs=hpealal vt=perf ps=3 gn=m nu=s
+vdPmp                => sp=verb vs=pilpel vt=ptca gn=m nu=p
+vdPmpa               => sp=verb vs=pilpel vt=ptca gn=m nu=p st=a
+vdPmpc               => sp=verb vs=pilpel vt=ptca gn=m nu=p st=c
+vdPmpcX2ms           => sp=suff vs=pilpel vt=ptca gn=m nu=p st=c ps2=2 gn2=m nu2=s
+vdPms                => sp=verb vs=pilpel vt=ptca gn=m nu=s
+vdPmscX2ms           => sp=suff vs=pilpel vt=ptca gn=m nu=s st=c ps2=2 gn2=m nu2=s
+vdc                  => sp=verb vs=pilpel vt=infc
+vdcX3fs              => sp=suff vs=pilpel vt=infc ps2=3 gn2=f nu2=s
+vdi1cs               => sp=verb vs=pilpel vt=impf ps=1 gn=c nu=s
+vdi2fs               => sp=verb vs=pilpel vt=impf ps=2 gn=f nu=s
+vdi2ms               => sp=verb vs=pilpel vt=impf ps=2 gn=m nu=s
+vdi2msX1cs           => sp=suff vs=pilpel vt=impf ps=2 gn=m nu=s ps2=1 gn2=c nu2=s
+vdi3fs               => sp=verb vs=pilpel vt=impf ps=3 gn=f nu=s
+vdi3mp               => sp=verb vs=pilpel vt=impf ps=3 gn=m nu=p
+vdi3ms               => sp=verb vs=pilpel vt=impf ps=3 gn=m nu=s
+vdi3msX2ms           => sp=suff vs=pilpel vt=impf ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vdi3msX3fs           => sp=suff vs=pilpel vt=impf ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vdi3msX3mp           => sp=suff vs=pilpel vt=impf ps=3 gn=m nu=s ps2=3 gn2=m nu2=p
+vdi3msX3ms           => sp=suff vs=pilpel vt=impf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vdp1cs               => sp=verb vs=pilpel vt=perf ps=1 gn=c nu=s
+vdp1csX3fs           => sp=suff vs=pilpel vt=perf ps=1 gn=c nu=s ps2=3 gn2=f nu2=s
+vdp3cp               => sp=verb vs=pilpel vt=perf ps=3 gn=c nu=p
+vdp3ms               => sp=verb vs=pilpel vt=perf ps=3 gn=m nu=s
+vdp3msX1cp           => sp=suff vs=pilpel vt=perf ps=3 gn=m nu=s ps2=1 gn2=c nu2=p
+vdp3msX3mp           => sp=suff vs=pilpel vt=perf ps=3 gn=m nu=s ps2=3 gn2=m nu2=p
+vdp3ms{2}            => sp=verb vs=pilpel vt=perf ps=3 gn=m nu=s md=cons
+vdw3ms               => sp=verb vs=pilpel vt=wayy ps=3 gn=m nu=s
+vePfp                => sp=verb vs=polel vt=ptca gn=f nu=p
+vePfpa               => sp=verb vs=polel vt=ptca gn=f nu=p st=a
+vePfs                => sp=verb vs=polel vt=ptca gn=f nu=s
+vePmp                => sp=verb vs=polel vt=ptca gn=m nu=p
+vePmpa               => sp=verb vs=polel vt=ptca gn=m nu=p st=a
+vePmpc               => sp=verb vs=polel vt=ptca gn=m nu=p st=c
+vePms                => sp=verb vs=polel vt=ptca gn=m nu=s
+vePmsa               => sp=verb vs=polel vt=ptca gn=m nu=s st=a
+vePmscX1cs           => sp=suff vs=polel vt=ptca gn=m nu=s st=c ps2=1 gn2=c nu2=s
+vePmscX2ms           => sp=suff vs=polel vt=ptca gn=m nu=s st=c ps2=2 gn2=m nu2=s
+vec                  => sp=verb vs=polel vt=infc
+vei1cph              => sp=verb vs=polel vt=impf ps=1 gn=c nu=p md=coho
+vei1cs               => sp=verb vs=polel vt=impf ps=1 gn=c nu=s
+vei1csX2ms           => sp=suff vs=polel vt=impf ps=1 gn=c nu=s ps2=2 gn2=m nu2=s
+vei1csh              => sp=verb vs=polel vt=impf ps=1 gn=c nu=s md=coho
+vei2mp               => sp=verb vs=polel vt=impf ps=2 gn=m nu=p
+vei2ms               => sp=verb vs=polel vt=impf ps=2 gn=m nu=s
+vei2msX1cs           => sp=suff vs=polel vt=impf ps=2 gn=m nu=s ps2=1 gn2=c nu2=s
+vei3fp               => sp=verb vs=polel vt=impf ps=3 gn=f nu=p
+vei3fs               => sp=verb vs=polel vt=impf ps=3 gn=f nu=s
+vei3fsX2mp           => sp=suff vs=polel vt=impf ps=3 gn=f nu=s ps2=2 gn2=m nu2=p
+vei3mp               => sp=verb vs=polel vt=impf ps=3 gn=m nu=p
+vei3mpX3ms           => sp=suff vs=polel vt=impf ps=3 gn=m nu=p ps2=3 gn2=m nu2=s
+vei3ms               => sp=verb vs=polel vt=impf ps=3 gn=m nu=s
+vei3msX2ms           => sp=suff vs=polel vt=impf ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vei3msX3fs           => sp=suff vs=polel vt=impf ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vei3msX3mp           => sp=suff vs=polel vt=impf ps=3 gn=m nu=s ps2=3 gn2=m nu2=p
+vei3msX3ms           => sp=suff vs=polel vt=impf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vep1cp               => sp=verb vs=polel vt=perf ps=1 gn=c nu=p
+vep1cs               => sp=verb vs=polel vt=perf ps=1 gn=c nu=s
+vep1csX2ms           => sp=suff vs=polel vt=perf ps=1 gn=c nu=s ps2=2 gn2=m nu2=s
+vep2mp               => sp=verb vs=polel vt=perf ps=2 gn=m nu=p
+vep2ms               => sp=verb vs=polel vt=perf ps=2 gn=m nu=s
+vep2msX1cs           => sp=suff vs=polel vt=perf ps=2 gn=m nu=s ps2=1 gn2=c nu2=s
+vep2msX3mp           => sp=suff vs=polel vt=perf ps=2 gn=m nu=s ps2=3 gn2=m nu2=p
+vep3cp               => sp=verb vs=polel vt=perf ps=3 gn=c nu=p
+vep3cp{2}            => sp=verb vs=polel vt=perf ps=3 gn=c nu=p md=cons
+vep3fs               => sp=verb vs=polel vt=perf ps=3 gn=f nu=s
+vep3fsX2fs           => sp=suff vs=polel vt=perf ps=3 gn=f nu=s ps2=2 gn2=f nu2=s
+vep3ms               => sp=verb vs=polel vt=perf ps=3 gn=m nu=s
+vep3msX1cs           => sp=suff vs=polel vt=perf ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vep3msX3fs           => sp=suff vs=polel vt=perf ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vevfp                => sp=verb vs=polel vt=impv gn=f nu=p
+vevmp                => sp=verb vs=polel vt=impv gn=m nu=p
+vevmpX3ms            => sp=suff vs=polel vt=impv gn=m nu=p ps2=3 gn2=m nu2=s
+vevms                => sp=verb vs=polel vt=impv gn=m nu=s
+vew2ms               => sp=verb vs=polel vt=wayy ps=2 gn=m nu=s
+vew3fs               => sp=verb vs=polel vt=wayy ps=3 gn=f nu=s
+vew3mp               => sp=verb vs=polel vt=wayy ps=3 gn=m nu=p
+vew3mpX1cs           => sp=suff vs=polel vt=wayy ps=3 gn=m nu=p ps2=1 gn2=c nu2=s
+vew3ms               => sp=verb vs=polel vt=wayy ps=3 gn=m nu=s
+vew3msX1cp           => sp=suff vs=polel vt=wayy ps=3 gn=m nu=s ps2=1 gn2=c nu2=p
+vew3msX2ms           => sp=suff vs=polel vt=wayy ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vew3msX3fs           => sp=suff vs=polel vt=wayy ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vfPms                => sp=verb vs=polal vt=ptca gn=m nu=s
+vfi3mp               => sp=verb vs=polal vt=impf ps=3 gn=m nu=p
+vfi3ms               => sp=verb vs=polal vt=impf ps=3 gn=m nu=s
+vfp1cp               => sp=verb vs=polal vt=perf ps=1 gn=c nu=p
+vfp3cp               => sp=verb vs=polal vt=perf ps=3 gn=c nu=p
+vh000                => sp=verb vs=hifil vt=unknown ps=unknown gn=unknown
+vh0000               => sp=verb vs=hifil vt=unknown ps=unknown gn=unknown nu=unknown
+vh0000X2ms           => sp=suff vs=hifil vt=unknown ps=unknown gn=unknown nu=unknown ps2=2 gn2=m nu2=s
+vh0000X3ms           => sp=suff vs=hifil vt=unknown ps=unknown gn=unknown nu=unknown ps2=3 gn2=m nu2=s
+vh000p               => sp=verb vs=hifil vt=unknown ps=unknown gn=unknown nu=p
+vh000sX3fs           => sp=suff vs=hifil vt=unknown ps=unknown gn=unknown nu=s ps2=3 gn2=f nu2=s
+vh00mp               => sp=verb vs=hifil vt=unknown ps=unknown gn=m nu=p
+vh00ms               => sp=verb vs=hifil vt=unknown ps=unknown gn=m nu=s
+vh00msX1cs           => sp=suff vs=hifil vt=unknown ps=unknown gn=m nu=s ps2=1 gn2=c nu2=s
+vh030p               => sp=verb vs=hifil vt=unknown ps=3 gn=unknown nu=p
+vh03ms               => sp=verb vs=hifil vt=unknown ps=3 gn=m nu=s
+vhP00                => sp=verb vs=hifil vt=ptca ps=unknown gn=unknown
+vhPfp                => sp=verb vs=hifil vt=ptca gn=f nu=p
+vhPfpa               => sp=verb vs=hifil vt=ptca gn=f nu=p st=a
+vhPfpcX2fs           => sp=suff vs=hifil vt=ptca gn=f nu=p st=c ps2=2 gn2=f nu2=s
+vhPfs                => sp=verb vs=hifil vt=ptca gn=f nu=s
+vhPfsa               => sp=verb vs=hifil vt=ptca gn=f nu=s st=a
+vhPfsc               => sp=verb vs=hifil vt=ptca gn=f nu=s st=c
+vhPmp                => sp=verb vs=hifil vt=ptca gn=m nu=p
+vhPmpa               => sp=verb vs=hifil vt=ptca gn=m nu=p st=a
+vhPmpc               => sp=verb vs=hifil vt=ptca gn=m nu=p st=c
+vhPmpcX1cs           => sp=suff vs=hifil vt=ptca gn=m nu=p st=c ps2=1 gn2=c nu2=s
+vhPmpcX2fs           => sp=suff vs=hifil vt=ptca gn=m nu=p st=c ps2=2 gn2=f nu2=s
+vhPmpcX2ms           => sp=suff vs=hifil vt=ptca gn=m nu=p st=c ps2=2 gn2=m nu2=s
+vhPmpcX3fs           => sp=suff vs=hifil vt=ptca gn=m nu=p st=c ps2=3 gn2=f nu2=s
+vhPmpcX3mp           => sp=suff vs=hifil vt=ptca gn=m nu=p st=c ps2=3 gn2=m nu2=p
+vhPmpcX3ms           => sp=suff vs=hifil vt=ptca gn=m nu=p st=c ps2=3 gn2=m nu2=s
+vhPms                => sp=verb vs=hifil vt=ptca gn=m nu=s
+vhPmsX2ms            => sp=suff vs=hifil vt=ptca gn=m nu=s ps2=2 gn2=m nu2=s
+vhPmsa               => sp=verb vs=hifil vt=ptca gn=m nu=s st=a
+vhPmsc               => sp=verb vs=hifil vt=ptca gn=m nu=s st=c
+vhPmscX1cp           => sp=suff vs=hifil vt=ptca gn=m nu=s st=c ps2=1 gn2=c nu2=p
+vhPmscX1cs           => sp=suff vs=hifil vt=ptca gn=m nu=s st=c ps2=1 gn2=c nu2=s
+vhPmscX2fs           => sp=suff vs=hifil vt=ptca gn=m nu=s st=c ps2=2 gn2=f nu2=s
+vhPmscX2mp           => sp=suff vs=hifil vt=ptca gn=m nu=s st=c ps2=2 gn2=m nu2=p
+vhPmscX2ms           => sp=suff vs=hifil vt=ptca gn=m nu=s st=c ps2=2 gn2=m nu2=s
+vhPmscX3fs           => sp=suff vs=hifil vt=ptca gn=m nu=s st=c ps2=3 gn2=f nu2=s
+vhPmscX3mp           => sp=suff vs=hifil vt=ptca gn=m nu=s st=c ps2=3 gn2=m nu2=p
+vhPmscX3ms           => sp=suff vs=hifil vt=ptca gn=m nu=s st=c ps2=3 gn2=m nu2=s
+vha                  => sp=verb vs=hifil vt=infa
+vhc                  => sp=verb vs=hifil vt=infc
+vhcX0                => sp=suff vs=hifil vt=infc cl2=unknown
+vhcX1cp              => sp=suff vs=hifil vt=infc ps2=1 gn2=c nu2=p
+vhcX1cs              => sp=suff vs=hifil vt=infc ps2=1 gn2=c nu2=s
+vhcX2fs              => sp=suff vs=hifil vt=infc ps2=2 gn2=f nu2=s
+vhcX2mp              => sp=suff vs=hifil vt=infc ps2=2 gn2=m nu2=p
+vhcX2ms              => sp=suff vs=hifil vt=infc ps2=2 gn2=m nu2=s
+vhcX3fs              => sp=suff vs=hifil vt=infc ps2=3 gn2=f nu2=s
+vhcX3mp              => sp=suff vs=hifil vt=infc ps2=3 gn2=m nu2=p
+vhcX3ms              => sp=suff vs=hifil vt=infc ps2=3 gn2=m nu2=s
+vhcXh                => sp=suff vs=hifil vt=infc cl2=h
+vhi00s               => sp=verb vs=hifil vt=impf ps=unknown gn=unknown nu=s
+vhi0ms               => sp=verb vs=hifil vt=impf ps=unknown gn=m nu=s
+vhi1cp               => sp=verb vs=hifil vt=impf ps=1 gn=c nu=p
+vhi1cpX2ms           => sp=suff vs=hifil vt=impf ps=1 gn=c nu=p ps2=2 gn2=m nu2=s
+vhi1cpX3fs           => sp=suff vs=hifil vt=impf ps=1 gn=c nu=p ps2=3 gn2=f nu2=s
+vhi1cpX3mp           => sp=suff vs=hifil vt=impf ps=1 gn=c nu=p ps2=3 gn2=m nu2=p
+vhi1cpX3ms           => sp=suff vs=hifil vt=impf ps=1 gn=c nu=p ps2=3 gn2=m nu2=s
+vhi1cph              => sp=verb vs=hifil vt=impf ps=1 gn=c nu=p md=coho
+vhi1cs               => sp=verb vs=hifil vt=impf ps=1 gn=c nu=s
+vhi1csX2fs           => sp=suff vs=hifil vt=impf ps=1 gn=c nu=s ps2=2 gn2=f nu2=s
+vhi1csX2ms           => sp=suff vs=hifil vt=impf ps=1 gn=c nu=s ps2=2 gn2=m nu2=s
+vhi1csX3fs           => sp=suff vs=hifil vt=impf ps=1 gn=c nu=s ps2=3 gn2=f nu2=s
+vhi1csX3mp           => sp=suff vs=hifil vt=impf ps=1 gn=c nu=s ps2=3 gn2=m nu2=p
+vhi1csX3ms           => sp=suff vs=hifil vt=impf ps=1 gn=c nu=s ps2=3 gn2=m nu2=s
+vhi1csh              => sp=verb vs=hifil vt=impf ps=1 gn=c nu=s md=coho
+vhi1csj              => sp=verb vs=hifil vt=impf ps=1 gn=c nu=s md=juss
+vhi1csjX3fs          => sp=suff vs=hifil vt=impf ps=1 gn=c nu=s md=juss ps2=3 gn2=f nu2=s
+vhi2fs               => sp=verb vs=hifil vt=impf ps=2 gn=f nu=s
+vhi2fsj              => sp=verb vs=hifil vt=impf ps=2 gn=f nu=s md=juss
+vhi2mp               => sp=verb vs=hifil vt=impf ps=2 gn=m nu=p
+vhi2mpX1cs           => sp=suff vs=hifil vt=impf ps=2 gn=m nu=p ps2=1 gn2=c nu2=s
+vhi2mpX3fs           => sp=suff vs=hifil vt=impf ps=2 gn=m nu=p ps2=3 gn2=f nu2=s
+vhi2mpX3ms           => sp=suff vs=hifil vt=impf ps=2 gn=m nu=p ps2=3 gn2=m nu2=s
+vhi2mpXn             => sp=suff vs=hifil vt=impf ps=2 gn=m nu=p cl2=n
+vhi2mpjXn            => sp=suff vs=hifil vt=impf ps=2 gn=m nu=p md=juss cl2=n
+vhi2ms               => sp=verb vs=hifil vt=impf ps=2 gn=m nu=s
+vhi2msX1c0           => sp=suff vs=hifil vt=impf ps=2 gn=m nu=s ps2=1 gn2=c nu2=unknown
+vhi2msX1cp           => sp=suff vs=hifil vt=impf ps=2 gn=m nu=s ps2=1 gn2=c nu2=p
+vhi2msX1cs           => sp=suff vs=hifil vt=impf ps=2 gn=m nu=s ps2=1 gn2=c nu2=s
+vhi2msX2ms           => sp=suff vs=hifil vt=impf ps=2 gn=m nu=s ps2=2 gn2=m nu2=s
+vhi2msX3fs           => sp=suff vs=hifil vt=impf ps=2 gn=m nu=s ps2=3 gn2=f nu2=s
+vhi2msX3mp           => sp=suff vs=hifil vt=impf ps=2 gn=m nu=s ps2=3 gn2=m nu2=p
+vhi2msX3ms           => sp=suff vs=hifil vt=impf ps=2 gn=m nu=s ps2=3 gn2=m nu2=s
+vhi2msj              => sp=verb vs=hifil vt=impf ps=2 gn=m nu=s md=juss
+vhi3fp               => sp=verb vs=hifil vt=impf ps=3 gn=f nu=p
+vhi3fs               => sp=verb vs=hifil vt=impf ps=3 gn=f nu=s
+vhi3fsX1cp           => sp=suff vs=hifil vt=impf ps=3 gn=f nu=s ps2=1 gn2=c nu2=p
+vhi3fsX1cs           => sp=suff vs=hifil vt=impf ps=3 gn=f nu=s ps2=1 gn2=c nu2=s
+vhi3fsX2fs           => sp=suff vs=hifil vt=impf ps=3 gn=f nu=s ps2=2 gn2=f nu2=s
+vhi3fsX2ms           => sp=suff vs=hifil vt=impf ps=3 gn=f nu=s ps2=2 gn2=m nu2=s
+vhi3fsX3mp           => sp=suff vs=hifil vt=impf ps=3 gn=f nu=s ps2=3 gn2=m nu2=p
+vhi3fsX3ms           => sp=suff vs=hifil vt=impf ps=3 gn=f nu=s ps2=3 gn2=m nu2=s
+vhi3fsj              => sp=verb vs=hifil vt=impf ps=3 gn=f nu=s md=juss
+vhi3m0               => sp=verb vs=hifil vt=impf ps=3 gn=m nu=unknown
+vhi3mp               => sp=verb vs=hifil vt=impf ps=3 gn=m nu=p
+vhi3mpX1cp           => sp=suff vs=hifil vt=impf ps=3 gn=m nu=p ps2=1 gn2=c nu2=p
+vhi3mpX1cs           => sp=suff vs=hifil vt=impf ps=3 gn=m nu=p ps2=1 gn2=c nu2=s
+vhi3mpX2fs           => sp=suff vs=hifil vt=impf ps=3 gn=m nu=p ps2=2 gn2=f nu2=s
+vhi3mpX2ms           => sp=suff vs=hifil vt=impf ps=3 gn=m nu=p ps2=2 gn2=m nu2=s
+vhi3mpX3fs           => sp=suff vs=hifil vt=impf ps=3 gn=m nu=p ps2=3 gn2=f nu2=s
+vhi3mpX3mp           => sp=suff vs=hifil vt=impf ps=3 gn=m nu=p ps2=3 gn2=m nu2=p
+vhi3mpX3ms           => sp=suff vs=hifil vt=impf ps=3 gn=m nu=p ps2=3 gn2=m nu2=s
+vhi3mpXn             => sp=suff vs=hifil vt=impf ps=3 gn=m nu=p cl2=n
+vhi3mpj              => sp=verb vs=hifil vt=impf ps=3 gn=m nu=p md=juss
+vhi3mpjX3ms          => sp=suff vs=hifil vt=impf ps=3 gn=m nu=p md=juss ps2=3 gn2=m nu2=s
+vhi3ms               => sp=verb vs=hifil vt=impf ps=3 gn=m nu=s
+vhi3msX1cp           => sp=suff vs=hifil vt=impf ps=3 gn=m nu=s ps2=1 gn2=c nu2=p
+vhi3msX1cs           => sp=suff vs=hifil vt=impf ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vhi3msX2fs           => sp=suff vs=hifil vt=impf ps=3 gn=m nu=s ps2=2 gn2=f nu2=s
+vhi3msX2mp           => sp=suff vs=hifil vt=impf ps=3 gn=m nu=s ps2=2 gn2=m nu2=p
+vhi3msX2ms           => sp=suff vs=hifil vt=impf ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vhi3msX3fs           => sp=suff vs=hifil vt=impf ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vhi3msX3mp           => sp=suff vs=hifil vt=impf ps=3 gn=m nu=s ps2=3 gn2=m nu2=p
+vhi3msX3ms           => sp=suff vs=hifil vt=impf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vhi3msXh             => sp=suff vs=hifil vt=impf ps=3 gn=m nu=s cl2=h
+vhi3msj              => sp=verb vs=hifil vt=impf ps=3 gn=m nu=s md=juss
+vhi3msjX1cp          => sp=suff vs=hifil vt=impf ps=3 gn=m nu=s md=juss ps2=1 gn2=c nu2=p
+vhi3msjX1cs          => sp=suff vs=hifil vt=impf ps=3 gn=m nu=s md=juss ps2=1 gn2=c nu2=s
+vhi3msjX2ms          => sp=suff vs=hifil vt=impf ps=3 gn=m nu=s md=juss ps2=2 gn2=m nu2=s
+vhi3msjX3fs          => sp=suff vs=hifil vt=impf ps=3 gn=m nu=s md=juss ps2=3 gn2=f nu2=s
+vhi3msjX3ms          => sp=suff vs=hifil vt=impf ps=3 gn=m nu=s md=juss ps2=3 gn2=m nu2=s
+vhp000               => sp=verb vs=hifil vt=perf ps=unknown gn=unknown nu=unknown
+vhp1cp               => sp=verb vs=hifil vt=perf ps=1 gn=c nu=p
+vhp1cpX3mp           => sp=suff vs=hifil vt=perf ps=1 gn=c nu=p ps2=3 gn2=m nu2=p
+vhp1cs               => sp=verb vs=hifil vt=perf ps=1 gn=c nu=s
+vhp1csX2fs           => sp=suff vs=hifil vt=perf ps=1 gn=c nu=s ps2=2 gn2=f nu2=s
+vhp1csX2ms           => sp=suff vs=hifil vt=perf ps=1 gn=c nu=s ps2=2 gn2=m nu2=s
+vhp1csX3fs           => sp=suff vs=hifil vt=perf ps=1 gn=c nu=s ps2=3 gn2=f nu2=s
+vhp1csX3mp           => sp=suff vs=hifil vt=perf ps=1 gn=c nu=s ps2=3 gn2=m nu2=p
+vhp1csX3ms           => sp=suff vs=hifil vt=perf ps=1 gn=c nu=s ps2=3 gn2=m nu2=s
+vhp1csj              => sp=verb vs=hifil vt=perf ps=1 gn=c nu=s md=juss
+vhp2fp               => sp=verb vs=hifil vt=perf ps=2 gn=f nu=p
+vhp2fs               => sp=verb vs=hifil vt=perf ps=2 gn=f nu=s
+vhp2fsX3ms           => sp=suff vs=hifil vt=perf ps=2 gn=f nu=s ps2=3 gn2=m nu2=s
+vhp2mp               => sp=verb vs=hifil vt=perf ps=2 gn=m nu=p
+vhp2mp{2}            => sp=verb vs=hifil vt=perf ps=2 gn=m nu=p md=cons
+vhp2ms               => sp=verb vs=hifil vt=perf ps=2 gn=m nu=s
+vhp2msX1cp           => sp=suff vs=hifil vt=perf ps=2 gn=m nu=s ps2=1 gn2=c nu2=p
+vhp2msX1cs           => sp=suff vs=hifil vt=perf ps=2 gn=m nu=s ps2=1 gn2=c nu2=s
+vhp2msX3fs           => sp=suff vs=hifil vt=perf ps=2 gn=m nu=s ps2=3 gn2=f nu2=s
+vhp2msX3mp           => sp=suff vs=hifil vt=perf ps=2 gn=m nu=s ps2=3 gn2=m nu2=p
+vhp2msX3ms           => sp=suff vs=hifil vt=perf ps=2 gn=m nu=s ps2=3 gn2=m nu2=s
+vhp2ms{2}            => sp=verb vs=hifil vt=perf ps=2 gn=m nu=s md=cons
+vhp3cp               => sp=verb vs=hifil vt=perf ps=3 gn=c nu=p
+vhp3cpX1cp           => sp=suff vs=hifil vt=perf ps=3 gn=c nu=p ps2=1 gn2=c nu2=p
+vhp3cpX1cs           => sp=suff vs=hifil vt=perf ps=3 gn=c nu=p ps2=1 gn2=c nu2=s
+vhp3cpX2ms           => sp=suff vs=hifil vt=perf ps=3 gn=c nu=p ps2=2 gn2=m nu2=s
+vhp3cpX3fs           => sp=suff vs=hifil vt=perf ps=3 gn=c nu=p ps2=3 gn2=f nu2=s
+vhp3cpX3mp           => sp=suff vs=hifil vt=perf ps=3 gn=c nu=p ps2=3 gn2=m nu2=p
+vhp3cpX3ms           => sp=suff vs=hifil vt=perf ps=3 gn=c nu=p ps2=3 gn2=m nu2=s
+vhp3cp{2}            => sp=verb vs=hifil vt=perf ps=3 gn=c nu=p md=cons
+vhp3cp{2}X3mp        => sp=suff vs=hifil vt=perf ps=3 gn=c nu=p md=cons ps2=3 gn2=m nu2=p
+vhp3cp{2}X3ms        => sp=suff vs=hifil vt=perf ps=3 gn=c nu=p md=cons ps2=3 gn2=m nu2=s
+vhp3fs               => sp=verb vs=hifil vt=perf ps=3 gn=f nu=s
+vhp3fsX1cs           => sp=suff vs=hifil vt=perf ps=3 gn=f nu=s ps2=1 gn2=c nu2=s
+vhp3ms               => sp=verb vs=hifil vt=perf ps=3 gn=m nu=s
+vhp3msX1cp           => sp=suff vs=hifil vt=perf ps=3 gn=m nu=s ps2=1 gn2=c nu2=p
+vhp3msX1cs           => sp=suff vs=hifil vt=perf ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vhp3msX2fs           => sp=suff vs=hifil vt=perf ps=3 gn=m nu=s ps2=2 gn2=f nu2=s
+vhp3msX2mp           => sp=suff vs=hifil vt=perf ps=3 gn=m nu=s ps2=2 gn2=m nu2=p
+vhp3msX2ms           => sp=suff vs=hifil vt=perf ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vhp3msX3fs           => sp=suff vs=hifil vt=perf ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vhp3msX3mp           => sp=suff vs=hifil vt=perf ps=3 gn=m nu=s ps2=3 gn2=m nu2=p
+vhp3msX3ms           => sp=suff vs=hifil vt=perf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vhp3ms[2]            => sp=verb vs=hifil vt=perf ps=3 gn=m nu=s md=cons
+vhp3msj              => sp=verb vs=hifil vt=perf ps=3 gn=m nu=s md=juss
+vhp3ms{2}            => sp=verb vs=hifil vt=perf ps=3 gn=m nu=s md=cons
+vhvfp                => sp=verb vs=hifil vt=impv gn=f nu=p
+vhvfs                => sp=verb vs=hifil vt=impv gn=f nu=s
+vhvfsX1cs            => sp=suff vs=hifil vt=impv gn=f nu=s ps2=1 gn2=c nu2=s
+vhvfsX3ms            => sp=suff vs=hifil vt=impv gn=f nu=s ps2=3 gn2=m nu2=s
+vhvmp                => sp=verb vs=hifil vt=impv gn=m nu=p
+vhvmpX1cp            => sp=suff vs=hifil vt=impv gn=m nu=p ps2=1 gn2=c nu2=p
+vhvmpX1cs            => sp=suff vs=hifil vt=impv gn=m nu=p ps2=1 gn2=c nu2=s
+vhvmpX3fs            => sp=suff vs=hifil vt=impv gn=m nu=p ps2=3 gn2=f nu2=s
+vhvms                => sp=verb vs=hifil vt=impv gn=m nu=s
+vhvmsX1cp            => sp=suff vs=hifil vt=impv gn=m nu=s ps2=1 gn2=c nu2=p
+vhvmsX1cs            => sp=suff vs=hifil vt=impv gn=m nu=s ps2=1 gn2=c nu2=s
+vhvmsX2ms            => sp=suff vs=hifil vt=impv gn=m nu=s ps2=2 gn2=m nu2=s
+vhvmsX3fs            => sp=suff vs=hifil vt=impv gn=m nu=s ps2=3 gn2=f nu2=s
+vhvmsX3mp            => sp=suff vs=hifil vt=impv gn=m nu=s ps2=3 gn2=m nu2=p
+vhvmsX3ms            => sp=suff vs=hifil vt=impv gn=m nu=s ps2=3 gn2=m nu2=s
+vhvmsXh              => sp=suff vs=hifil vt=impv gn=m nu=s cl2=h
+vhw1cp               => sp=verb vs=hifil vt=wayy ps=1 gn=c nu=p
+vhw1cpj              => sp=verb vs=hifil vt=wayy ps=1 gn=c nu=p md=juss
+vhw1cs               => sp=verb vs=hifil vt=wayy ps=1 gn=c nu=s
+vhw1csX3mp           => sp=suff vs=hifil vt=wayy ps=1 gn=c nu=s ps2=3 gn2=m nu2=p
+vhw1csh              => sp=verb vs=hifil vt=wayy ps=1 gn=c nu=s md=coho
+vhw1csj              => sp=verb vs=hifil vt=wayy ps=1 gn=c nu=s md=juss
+vhw2fs               => sp=verb vs=hifil vt=wayy ps=2 gn=f nu=s
+vhw2mp               => sp=verb vs=hifil vt=wayy ps=2 gn=m nu=p
+vhw2mpXn             => sp=suff vs=hifil vt=wayy ps=2 gn=m nu=p cl2=n
+vhw2ms               => sp=verb vs=hifil vt=wayy ps=2 gn=m nu=s
+vhw2msX1cp           => sp=suff vs=hifil vt=wayy ps=2 gn=m nu=s ps2=1 gn2=c nu2=p
+vhw2msX1cs           => sp=suff vs=hifil vt=wayy ps=2 gn=m nu=s ps2=1 gn2=c nu2=s
+vhw2msX3fs           => sp=suff vs=hifil vt=wayy ps=2 gn=m nu=s ps2=3 gn2=f nu2=s
+vhw2msX3mp           => sp=suff vs=hifil vt=wayy ps=2 gn=m nu=s ps2=3 gn2=m nu2=p
+vhw2msX3ms           => sp=suff vs=hifil vt=wayy ps=2 gn=m nu=s ps2=3 gn2=m nu2=s
+vhw2msj              => sp=verb vs=hifil vt=wayy ps=2 gn=m nu=s md=juss
+vhw2msjX3fs          => sp=suff vs=hifil vt=wayy ps=2 gn=m nu=s md=juss ps2=3 gn2=f nu2=s
+vhw3fs               => sp=verb vs=hifil vt=wayy ps=3 gn=f nu=s
+vhw3fsX3ms           => sp=suff vs=hifil vt=wayy ps=3 gn=f nu=s ps2=3 gn2=m nu2=s
+vhw3fsj              => sp=verb vs=hifil vt=wayy ps=3 gn=f nu=s md=juss
+vhw3mp               => sp=verb vs=hifil vt=wayy ps=3 gn=m nu=p
+vhw3mpX1cs           => sp=suff vs=hifil vt=wayy ps=3 gn=m nu=p ps2=1 gn2=c nu2=s
+vhw3mpX2ms           => sp=suff vs=hifil vt=wayy ps=3 gn=m nu=p ps2=2 gn2=m nu2=s
+vhw3mpX3mp           => sp=suff vs=hifil vt=wayy ps=3 gn=m nu=p ps2=3 gn2=m nu2=p
+vhw3mpX3ms           => sp=suff vs=hifil vt=wayy ps=3 gn=m nu=p ps2=3 gn2=m nu2=s
+vhw3mpj              => sp=verb vs=hifil vt=wayy ps=3 gn=m nu=p md=juss
+vhw3mpjX3fs          => sp=suff vs=hifil vt=wayy ps=3 gn=m nu=p md=juss ps2=3 gn2=f nu2=s
+vhw3ms               => sp=verb vs=hifil vt=wayy ps=3 gn=m nu=s
+vhw3msX1cp           => sp=suff vs=hifil vt=wayy ps=3 gn=m nu=s ps2=1 gn2=c nu2=p
+vhw3msX1cs           => sp=suff vs=hifil vt=wayy ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vhw3msX2ms           => sp=suff vs=hifil vt=wayy ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vhw3msX3fp           => sp=suff vs=hifil vt=wayy ps=3 gn=m nu=s ps2=3 gn2=f nu2=p
+vhw3msX3fs           => sp=suff vs=hifil vt=wayy ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vhw3msX3mp           => sp=suff vs=hifil vt=wayy ps=3 gn=m nu=s ps2=3 gn2=m nu2=p
+vhw3msX3ms           => sp=suff vs=hifil vt=wayy ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vhw3msj              => sp=verb vs=hifil vt=wayy ps=3 gn=m nu=s md=juss
+vhw3msjX1cs          => sp=suff vs=hifil vt=wayy ps=3 gn=m nu=s md=juss ps2=1 gn2=c nu2=s
+vhw3msjX2ms          => sp=suff vs=hifil vt=wayy ps=3 gn=m nu=s md=juss ps2=2 gn2=m nu2=s
+vhw3msjX3fs          => sp=suff vs=hifil vt=wayy ps=3 gn=m nu=s md=juss ps2=3 gn2=f nu2=s
+vhw3msjX3mp          => sp=suff vs=hifil vt=wayy ps=3 gn=m nu=s md=juss ps2=3 gn2=m nu2=p
+vhwmsj               => sp=verb vs=hifil vt=wayy gn=m nu=s md=juss
+vi02mp               => sp=verb vs=pulal vt=unknown ps=2 gn=m nu=p
+vip3cp               => sp=verb vs=pulal vt=perf ps=3 gn=c nu=p
+vip3fs               => sp=verb vs=pulal vt=perf ps=3 gn=f nu=s
+vip3ms               => sp=verb vs=pulal vt=perf ps=3 gn=m nu=s
+vkPfp                => sp=verb vs=poel vt=ptca gn=f nu=p
+vkPfs                => sp=verb vs=poel vt=ptca gn=f nu=s
+vkPmp                => sp=verb vs=poel vt=ptca gn=m nu=p
+vkPms                => sp=verb vs=poel vt=ptca gn=m nu=s
+vkPmsa               => sp=verb vs=poel vt=ptca gn=m nu=s st=a
+vkPmsc               => sp=verb vs=poel vt=ptca gn=m nu=s st=c
+vkPmscX1cp           => sp=suff vs=poel vt=ptca gn=m nu=s st=c ps2=1 gn2=c nu2=p
+vka                  => sp=verb vs=poel vt=infa
+vkc                  => sp=verb vs=poel vt=infc
+vkcX2mp              => sp=suff vs=poel vt=infc ps2=2 gn2=m nu2=p
+vki1cs               => sp=verb vs=poel vt=impf ps=1 gn=c nu=s
+vki2mpXn             => sp=suff vs=poel vt=impf ps=2 gn=m nu=p cl2=n
+vki2ms               => sp=verb vs=poel vt=impf ps=2 gn=m nu=s
+vki3fs               => sp=verb vs=poel vt=impf ps=3 gn=f nu=s
+vki3mp               => sp=verb vs=poel vt=impf ps=3 gn=m nu=p
+vki3mpX1cs           => sp=suff vs=poel vt=impf ps=3 gn=m nu=p ps2=1 gn2=c nu2=s
+vki3ms               => sp=verb vs=poel vt=impf ps=3 gn=m nu=s
+vki3msX1cs           => sp=suff vs=poel vt=impf ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vki3msX2ms           => sp=suff vs=poel vt=impf ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vki3msXnX3ms         => sp=suff vs=poel vt=impf ps=3 gn=m nu=s cl2=n ps3=3 gn3=m nu3=s
+vkp1cs               => sp=verb vs=poel vt=perf ps=1 gn=c nu=s
+vkp3cp               => sp=verb vs=poel vt=perf ps=3 gn=c nu=p
+vkp3ms               => sp=verb vs=poel vt=perf ps=3 gn=m nu=s
+vkvmsX1cs            => sp=suff vs=poel vt=impv gn=m nu=s ps2=1 gn2=c nu2=s
+vlPfs                => sp=verb vs=poal vt=ptca gn=f nu=s
+vlPmpa               => sp=verb vs=poal vt=ptca gn=m nu=p st=a
+vlPmpc               => sp=verb vs=poal vt=ptca gn=m nu=p st=c
+vlPmpcX3ms           => sp=suff vs=poal vt=ptca gn=m nu=p st=c ps2=3 gn2=m nu2=s
+vlPmsa               => sp=verb vs=poal vt=ptca gn=m nu=s st=a
+vlPmscX3ms           => sp=suff vs=poal vt=ptca gn=m nu=s st=c ps2=3 gn2=m nu2=s
+vli1cph              => sp=verb vs=poal vt=impf ps=1 gn=c nu=p md=coho
+vlp3cp               => sp=verb vs=poal vt=perf ps=3 gn=c nu=p
+vlp3fs               => sp=verb vs=poal vt=perf ps=3 gn=f nu=s
+vlp3ms               => sp=verb vs=poal vt=perf ps=3 gn=m nu=s
+vmPms                => sp=verb vs=tifil vt=ptca gn=m nu=s
+vmi2ms               => sp=verb vs=tifil vt=impf ps=2 gn=m nu=s
+vmp1cs               => sp=verb vs=tifil vt=perf ps=1 gn=c nu=s
+vn000                => sp=verb vs=nifal vt=unknown ps=unknown gn=unknown
+vn0000               => sp=verb vs=nifal vt=unknown ps=unknown gn=unknown nu=unknown
+vn000s               => sp=verb vs=nifal vt=unknown ps=unknown gn=unknown nu=s
+vn00ms               => sp=verb vs=nifal vt=unknown ps=unknown gn=m nu=s
+vn0ms                => sp=verb vs=nifal vt=unknown gn=m nu=s
+vnP00                => sp=verb vs=nifal vt=ptca ps=unknown gn=unknown
+vnP00a               => sp=verb vs=nifal vt=ptca ps=unknown gn=unknown st=a
+vnP0sa               => sp=verb vs=nifal vt=ptca ps=unknown nu=s st=a
+vnPfp                => sp=verb vs=nifal vt=ptca gn=f nu=p
+vnPfpa               => sp=verb vs=nifal vt=ptca gn=f nu=p st=a
+vnPfpc               => sp=verb vs=nifal vt=ptca gn=f nu=p st=c
+vnPfpcX1cp           => sp=suff vs=nifal vt=ptca gn=f nu=p st=c ps2=1 gn2=c nu2=p
+vnPfpcX1cs           => sp=suff vs=nifal vt=ptca gn=f nu=p st=c ps2=1 gn2=c nu2=s
+vnPfpcX2ms           => sp=suff vs=nifal vt=ptca gn=f nu=p st=c ps2=2 gn2=m nu2=s
+vnPfpcX3fs           => sp=suff vs=nifal vt=ptca gn=f nu=p st=c ps2=3 gn2=f nu2=s
+vnPfpcX3mp           => sp=suff vs=nifal vt=ptca gn=f nu=p st=c ps2=3 gn2=m nu2=p
+vnPfpcX3ms           => sp=suff vs=nifal vt=ptca gn=f nu=p st=c ps2=3 gn2=m nu2=s
+vnPfs                => sp=verb vs=nifal vt=ptca gn=f nu=s
+vnPfsa               => sp=verb vs=nifal vt=ptca gn=f nu=s st=a
+vnPfsc               => sp=verb vs=nifal vt=ptca gn=f nu=s st=c
+vnPmp                => sp=verb vs=nifal vt=ptca gn=m nu=p
+vnPmpa               => sp=verb vs=nifal vt=ptca gn=m nu=p st=a
+vnPmpc               => sp=verb vs=nifal vt=ptca gn=m nu=p st=c
+vnPmpcX1cp           => sp=suff vs=nifal vt=ptca gn=m nu=p st=c ps2=1 gn2=c nu2=p
+vnPmpcX1cs           => sp=suff vs=nifal vt=ptca gn=m nu=p st=c ps2=1 gn2=c nu2=s
+vnPmpcX2fs           => sp=suff vs=nifal vt=ptca gn=m nu=p st=c ps2=2 gn2=f nu2=s
+vnPmpcX3fs           => sp=suff vs=nifal vt=ptca gn=m nu=p st=c ps2=3 gn2=f nu2=s
+vnPmpcX3mp           => sp=suff vs=nifal vt=ptca gn=m nu=p st=c ps2=3 gn2=m nu2=p
+vnPmpcX3ms           => sp=suff vs=nifal vt=ptca gn=m nu=p st=c ps2=3 gn2=m nu2=s
+vnPms                => sp=verb vs=nifal vt=ptca gn=m nu=s
+vnPmsa               => sp=verb vs=nifal vt=ptca gn=m nu=s st=a
+vnPmsc               => sp=verb vs=nifal vt=ptca gn=m nu=s st=c
+vnPmscX2ms           => sp=suff vs=nifal vt=ptca gn=m nu=s st=c ps2=2 gn2=m nu2=s
+vnPmscX3ms           => sp=suff vs=nifal vt=ptca gn=m nu=s st=c ps2=3 gn2=m nu2=s
+vna                  => sp=verb vs=nifal vt=infa
+vnc                  => sp=verb vs=nifal vt=infc
+vncX1cs              => sp=suff vs=nifal vt=infc ps2=1 gn2=c nu2=s
+vncX2ms              => sp=suff vs=nifal vt=infc ps2=2 gn2=m nu2=s
+vncX3fs              => sp=suff vs=nifal vt=infc ps2=3 gn2=f nu2=s
+vncX3mp              => sp=suff vs=nifal vt=infc ps2=3 gn2=m nu2=p
+vncX3ms              => sp=suff vs=nifal vt=infc ps2=3 gn2=m nu2=s
+vni1cp               => sp=verb vs=nifal vt=impf ps=1 gn=c nu=p
+vni1cph              => sp=verb vs=nifal vt=impf ps=1 gn=c nu=p md=coho
+vni1cs               => sp=verb vs=nifal vt=impf ps=1 gn=c nu=s
+vni1csh              => sp=verb vs=nifal vt=impf ps=1 gn=c nu=s md=coho
+vni2fp               => sp=verb vs=nifal vt=impf ps=2 gn=f nu=p
+vni2fs               => sp=verb vs=nifal vt=impf ps=2 gn=f nu=s
+vni2mp               => sp=verb vs=nifal vt=impf ps=2 gn=m nu=p
+vni2mpXn             => sp=suff vs=nifal vt=impf ps=2 gn=m nu=p cl2=n
+vni2ms               => sp=verb vs=nifal vt=impf ps=2 gn=m nu=s
+vni2msX1cs           => sp=suff vs=nifal vt=impf ps=2 gn=m nu=s ps2=1 gn2=c nu2=s
+vni2msj              => sp=verb vs=nifal vt=impf ps=2 gn=m nu=s md=juss
+vni3fp               => sp=verb vs=nifal vt=impf ps=3 gn=f nu=p
+vni3fs               => sp=verb vs=nifal vt=impf ps=3 gn=f nu=s
+vni3fsX2mp           => sp=suff vs=nifal vt=impf ps=3 gn=f nu=s ps2=2 gn2=m nu2=p
+vni3fsj              => sp=verb vs=nifal vt=impf ps=3 gn=f nu=s md=juss
+vni3m0               => sp=verb vs=nifal vt=impf ps=3 gn=m nu=unknown
+vni3mp               => sp=verb vs=nifal vt=impf ps=3 gn=m nu=p
+vni3mpXn             => sp=suff vs=nifal vt=impf ps=3 gn=m nu=p cl2=n
+vni3ms               => sp=verb vs=nifal vt=impf ps=3 gn=m nu=s
+vni3msj              => sp=verb vs=nifal vt=impf ps=3 gn=m nu=s md=juss
+vnp1cp               => sp=verb vs=nifal vt=perf ps=1 gn=c nu=p
+vnp1cs               => sp=verb vs=nifal vt=perf ps=1 gn=c nu=s
+vnp2fs               => sp=verb vs=nifal vt=perf ps=2 gn=f nu=s
+vnp2mp               => sp=verb vs=nifal vt=perf ps=2 gn=m nu=p
+vnp2mp{2}            => sp=verb vs=nifal vt=perf ps=2 gn=m nu=p md=cons
+vnp2ms               => sp=verb vs=nifal vt=perf ps=2 gn=m nu=s
+vnp3cp               => sp=verb vs=nifal vt=perf ps=3 gn=c nu=p
+vnp3cp{2}            => sp=verb vs=nifal vt=perf ps=3 gn=c nu=p md=cons
+vnp3fs               => sp=verb vs=nifal vt=perf ps=3 gn=f nu=s
+vnp3fs(2)            => sp=verb vs=nifal vt=perf ps=3 gn=f nu=s md=cons
+vnp3mp               => sp=verb vs=nifal vt=perf ps=3 gn=m nu=p
+vnp3ms               => sp=verb vs=nifal vt=perf ps=3 gn=m nu=s
+vnp3msa              => sp=verb vs=nifal vt=perf ps=3 gn=m nu=s st=a
+vnp3ms{2}            => sp=verb vs=nifal vt=perf ps=3 gn=m nu=s md=cons
+vnvfs                => sp=verb vs=nifal vt=impv gn=f nu=s
+vnvmp                => sp=verb vs=nifal vt=impv gn=m nu=p
+vnvms                => sp=verb vs=nifal vt=impv gn=m nu=s
+vnvmsXh              => sp=suff vs=nifal vt=impv gn=m nu=s cl2=h
+vnw1csh              => sp=verb vs=nifal vt=wayy ps=1 gn=c nu=s md=coho
+vnw1csj              => sp=verb vs=nifal vt=wayy ps=1 gn=c nu=s md=juss
+vnw2mp               => sp=verb vs=nifal vt=wayy ps=2 gn=m nu=p
+vnw2ms               => sp=verb vs=nifal vt=wayy ps=2 gn=m nu=s
+vnw3fs               => sp=verb vs=nifal vt=wayy ps=3 gn=f nu=s
+vnw3fsj              => sp=verb vs=nifal vt=wayy ps=3 gn=f nu=s md=juss
+vnw3mp               => sp=verb vs=nifal vt=wayy ps=3 gn=m nu=p
+vnw3mpX1cs           => sp=suff vs=nifal vt=wayy ps=3 gn=m nu=p ps2=1 gn2=c nu2=s
+vnw3ms               => sp=verb vs=nifal vt=wayy ps=3 gn=m nu=s
+vnw3msj              => sp=verb vs=nifal vt=wayy ps=3 gn=m nu=s md=juss
+vp000                => sp=verb vs=piel vt=unknown ps=unknown gn=unknown
+vp0000               => sp=verb vs=piel vt=unknown ps=unknown gn=unknown nu=unknown
+vp000p               => sp=verb vs=piel vt=unknown ps=unknown gn=unknown nu=p
+vp000s               => sp=verb vs=piel vt=unknown ps=unknown gn=unknown nu=s
+vp00ms               => sp=verb vs=piel vt=unknown ps=unknown gn=m nu=s
+vp030p               => sp=verb vs=piel vt=unknown ps=3 gn=unknown nu=p
+vp0X3mp              => sp=suff vs=piel vt=unknown ps2=3 gn2=m nu2=p
+vp1ms                => sp=verb vs=piel ps=1 gn=m nu=s
+vpP00                => sp=verb vs=piel vt=ptca ps=unknown gn=unknown
+vpPfp                => sp=verb vs=piel vt=ptca gn=f nu=p
+vpPfpa               => sp=verb vs=piel vt=ptca gn=f nu=p st=a
+vpPfpc               => sp=verb vs=piel vt=ptca gn=f nu=p st=c
+vpPfs                => sp=verb vs=piel vt=ptca gn=f nu=s
+vpPfsa               => sp=verb vs=piel vt=ptca gn=f nu=s st=a
+vpPfsc               => sp=verb vs=piel vt=ptca gn=f nu=s st=c
+vpPm0                => sp=verb vs=piel vt=ptca gn=m nu=unknown
+vpPmp                => sp=verb vs=piel vt=ptca gn=m nu=p
+vpPmpa               => sp=verb vs=piel vt=ptca gn=m nu=p st=a
+vpPmpc               => sp=verb vs=piel vt=ptca gn=m nu=p st=c
+vpPmpcX1cp           => sp=suff vs=piel vt=ptca gn=m nu=p st=c ps2=1 gn2=c nu2=p
+vpPmpcX1cs           => sp=suff vs=piel vt=ptca gn=m nu=p st=c ps2=1 gn2=c nu2=s
+vpPmpcX2fs           => sp=suff vs=piel vt=ptca gn=m nu=p st=c ps2=2 gn2=f nu2=s
+vpPmpcX2mp           => sp=suff vs=piel vt=ptca gn=m nu=p st=c ps2=2 gn2=m nu2=p
+vpPmpcX2ms           => sp=suff vs=piel vt=ptca gn=m nu=p st=c ps2=2 gn2=m nu2=s
+vpPmpcX3fs           => sp=suff vs=piel vt=ptca gn=m nu=p st=c ps2=3 gn2=f nu2=s
+vpPmpcX3mp           => sp=suff vs=piel vt=ptca gn=m nu=p st=c ps2=3 gn2=m nu2=p
+vpPmpcX3ms           => sp=suff vs=piel vt=ptca gn=m nu=p st=c ps2=3 gn2=m nu2=s
+vpPms                => sp=verb vs=piel vt=ptca gn=m nu=s
+vpPmsX2ms            => sp=suff vs=piel vt=ptca gn=m nu=s ps2=2 gn2=m nu2=s
+vpPmsa               => sp=verb vs=piel vt=ptca gn=m nu=s st=a
+vpPmsc               => sp=verb vs=piel vt=ptca gn=m nu=s st=c
+vpPmscX1cp           => sp=suff vs=piel vt=ptca gn=m nu=s st=c ps2=1 gn2=c nu2=p
+vpPmscX1cs           => sp=suff vs=piel vt=ptca gn=m nu=s st=c ps2=1 gn2=c nu2=s
+vpPmscX2fs           => sp=suff vs=piel vt=ptca gn=m nu=s st=c ps2=2 gn2=f nu2=s
+vpPmscX2mp           => sp=suff vs=piel vt=ptca gn=m nu=s st=c ps2=2 gn2=m nu2=p
+vpPmscX2ms           => sp=suff vs=piel vt=ptca gn=m nu=s st=c ps2=2 gn2=m nu2=s
+vpPmscX3fs           => sp=suff vs=piel vt=ptca gn=m nu=s st=c ps2=3 gn2=f nu2=s
+vpPmscX3mp           => sp=suff vs=piel vt=ptca gn=m nu=s st=c ps2=3 gn2=m nu2=p
+vpPmscX3ms           => sp=suff vs=piel vt=ptca gn=m nu=s st=c ps2=3 gn2=m nu2=s
+vpa                  => sp=verb vs=piel vt=infa
+vpc                  => sp=verb vs=piel vt=infc
+vpcX0                => sp=suff vs=piel vt=infc cl2=unknown
+vpcX1cp              => sp=suff vs=piel vt=infc ps2=1 gn2=c nu2=p
+vpcX1cs              => sp=suff vs=piel vt=infc ps2=1 gn2=c nu2=s
+vpcX2fp              => sp=suff vs=piel vt=infc ps2=2 gn2=f nu2=p
+vpcX2mp              => sp=suff vs=piel vt=infc ps2=2 gn2=m nu2=p
+vpcX2ms              => sp=suff vs=piel vt=infc ps2=2 gn2=m nu2=s
+vpcX3fs              => sp=suff vs=piel vt=infc ps2=3 gn2=f nu2=s
+vpcX3mp              => sp=suff vs=piel vt=infc ps2=3 gn2=m nu2=p
+vpcX3ms              => sp=suff vs=piel vt=infc ps2=3 gn2=m nu2=s
+vpcXh                => sp=suff vs=piel vt=infc cl2=h
+vpi1cp               => sp=verb vs=piel vt=impf ps=1 gn=c nu=p
+vpi1cpX2ms           => sp=suff vs=piel vt=impf ps=1 gn=c nu=p ps2=2 gn2=m nu2=s
+vpi1cpX3ms           => sp=suff vs=piel vt=impf ps=1 gn=c nu=p ps2=3 gn2=m nu2=s
+vpi1cph              => sp=verb vs=piel vt=impf ps=1 gn=c nu=p md=coho
+vpi1cs               => sp=verb vs=piel vt=impf ps=1 gn=c nu=s
+vpi1csX2fs           => sp=suff vs=piel vt=impf ps=1 gn=c nu=s ps2=2 gn2=f nu2=s
+vpi1csX2mp           => sp=suff vs=piel vt=impf ps=1 gn=c nu=s ps2=2 gn2=m nu2=p
+vpi1csX2ms           => sp=suff vs=piel vt=impf ps=1 gn=c nu=s ps2=2 gn2=m nu2=s
+vpi1csX3fs           => sp=suff vs=piel vt=impf ps=1 gn=c nu=s ps2=3 gn2=f nu2=s
+vpi1csX3mp           => sp=suff vs=piel vt=impf ps=1 gn=c nu=s ps2=3 gn2=m nu2=p
+vpi1csX3ms           => sp=suff vs=piel vt=impf ps=1 gn=c nu=s ps2=3 gn2=m nu2=s
+vpi1csh              => sp=verb vs=piel vt=impf ps=1 gn=c nu=s md=coho
+vpi2fp               => sp=verb vs=piel vt=impf ps=2 gn=f nu=p
+vpi2fs               => sp=verb vs=piel vt=impf ps=2 gn=f nu=s
+vpi2fsX3mp           => sp=suff vs=piel vt=impf ps=2 gn=f nu=s ps2=3 gn2=m nu2=p
+vpi2mp               => sp=verb vs=piel vt=impf ps=2 gn=m nu=p
+vpi2mpX1cs           => sp=suff vs=piel vt=impf ps=2 gn=m nu=p ps2=1 gn2=c nu2=s
+vpi2mpX3mp           => sp=suff vs=piel vt=impf ps=2 gn=m nu=p ps2=3 gn2=m nu2=p
+vpi2mpXn             => sp=suff vs=piel vt=impf ps=2 gn=m nu=p cl2=n
+vpi2mpXnX1cs         => sp=suff vs=piel vt=impf ps=2 gn=m nu=p cl2=n ps3=1 gn3=c nu3=s
+vpi2ms               => sp=verb vs=piel vt=impf ps=2 gn=m nu=s
+vpi2msX1cp           => sp=suff vs=piel vt=impf ps=2 gn=m nu=s ps2=1 gn2=c nu2=p
+vpi2msX1cs           => sp=suff vs=piel vt=impf ps=2 gn=m nu=s ps2=1 gn2=c nu2=s
+vpi2msX2ms           => sp=suff vs=piel vt=impf ps=2 gn=m nu=s ps2=2 gn2=m nu2=s
+vpi2msX3fs           => sp=suff vs=piel vt=impf ps=2 gn=m nu=s ps2=3 gn2=f nu2=s
+vpi2msX3mp           => sp=suff vs=piel vt=impf ps=2 gn=m nu=s ps2=3 gn2=m nu2=p
+vpi2msX3ms           => sp=suff vs=piel vt=impf ps=2 gn=m nu=s ps2=3 gn2=m nu2=s
+vpi3fp               => sp=verb vs=piel vt=impf ps=3 gn=f nu=p
+vpi3fs               => sp=verb vs=piel vt=impf ps=3 gn=f nu=s
+vpi3fsX1cs           => sp=suff vs=piel vt=impf ps=3 gn=f nu=s ps2=1 gn2=c nu2=s
+vpi3fsX2fs           => sp=suff vs=piel vt=impf ps=3 gn=f nu=s ps2=2 gn2=f nu2=s
+vpi3fsX2mp           => sp=suff vs=piel vt=impf ps=3 gn=f nu=s ps2=2 gn2=m nu2=p
+vpi3fsX2ms           => sp=suff vs=piel vt=impf ps=3 gn=f nu=s ps2=2 gn2=m nu2=s
+vpi3fsX3fs           => sp=suff vs=piel vt=impf ps=3 gn=f nu=s ps2=3 gn2=f nu2=s
+vpi3fsX3mp           => sp=suff vs=piel vt=impf ps=3 gn=f nu=s ps2=3 gn2=m nu2=p
+vpi3fsX3ms           => sp=suff vs=piel vt=impf ps=3 gn=f nu=s ps2=3 gn2=m nu2=s
+vpi3m0               => sp=verb vs=piel vt=impf ps=3 gn=m nu=unknown
+vpi3mp               => sp=verb vs=piel vt=impf ps=3 gn=m nu=p
+vpi3mpX1cs           => sp=suff vs=piel vt=impf ps=3 gn=m nu=p ps2=1 gn2=c nu2=s
+vpi3mpX2fs           => sp=suff vs=piel vt=impf ps=3 gn=m nu=p ps2=2 gn2=f nu2=s
+vpi3mpX2ms           => sp=suff vs=piel vt=impf ps=3 gn=m nu=p ps2=2 gn2=m nu2=s
+vpi3mpX3fs           => sp=suff vs=piel vt=impf ps=3 gn=m nu=p ps2=3 gn2=f nu2=s
+vpi3mpX3mp           => sp=suff vs=piel vt=impf ps=3 gn=m nu=p ps2=3 gn2=m nu2=p
+vpi3mpX3ms           => sp=suff vs=piel vt=impf ps=3 gn=m nu=p ps2=3 gn2=m nu2=s
+vpi3mpXn             => sp=suff vs=piel vt=impf ps=3 gn=m nu=p cl2=n
+vpi3mpXnX1cs         => sp=suff vs=piel vt=impf ps=3 gn=m nu=p cl2=n ps3=1 gn3=c nu3=s
+vpi3mpXnX2fs         => sp=suff vs=piel vt=impf ps=3 gn=m nu=p cl2=n ps3=2 gn3=f nu3=s
+vpi3mpXnX2ms         => sp=suff vs=piel vt=impf ps=3 gn=m nu=p cl2=n ps3=2 gn3=m nu3=s
+vpi3ms               => sp=verb vs=piel vt=impf ps=3 gn=m nu=s
+vpi3msX1cp           => sp=suff vs=piel vt=impf ps=3 gn=m nu=s ps2=1 gn2=c nu2=p
+vpi3msX1cs           => sp=suff vs=piel vt=impf ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vpi3msX2fs           => sp=suff vs=piel vt=impf ps=3 gn=m nu=s ps2=2 gn2=f nu2=s
+vpi3msX2mp           => sp=suff vs=piel vt=impf ps=3 gn=m nu=s ps2=2 gn2=m nu2=p
+vpi3msX2ms           => sp=suff vs=piel vt=impf ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vpi3msX3fs           => sp=suff vs=piel vt=impf ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vpi3msX3mp           => sp=suff vs=piel vt=impf ps=3 gn=m nu=s ps2=3 gn2=m nu2=p
+vpi3msX3ms           => sp=suff vs=piel vt=impf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vpi3msj              => sp=verb vs=piel vt=impf ps=3 gn=m nu=s md=juss
+vpp000               => sp=verb vs=piel vt=perf ps=unknown gn=unknown nu=unknown
+vpp1cp               => sp=verb vs=piel vt=perf ps=1 gn=c nu=p
+vpp1cpX2mp           => sp=suff vs=piel vt=perf ps=1 gn=c nu=p ps2=2 gn2=m nu2=p
+vpp1cpX2ms           => sp=suff vs=piel vt=perf ps=1 gn=c nu=p ps2=2 gn2=m nu2=s
+vpp1cpX3ms           => sp=suff vs=piel vt=perf ps=1 gn=c nu=p ps2=3 gn2=m nu2=s
+vpp1cs               => sp=verb vs=piel vt=perf ps=1 gn=c nu=s
+vpp1csX2fs           => sp=suff vs=piel vt=perf ps=1 gn=c nu=s ps2=2 gn2=f nu2=s
+vpp1csX2ms           => sp=suff vs=piel vt=perf ps=1 gn=c nu=s ps2=2 gn2=m nu2=s
+vpp1csX3fs           => sp=suff vs=piel vt=perf ps=1 gn=c nu=s ps2=3 gn2=f nu2=s
+vpp1csX3mp           => sp=suff vs=piel vt=perf ps=1 gn=c nu=s ps2=3 gn2=m nu2=p
+vpp1csX3ms           => sp=suff vs=piel vt=perf ps=1 gn=c nu=s ps2=3 gn2=m nu2=s
+vpp2fp               => sp=verb vs=piel vt=perf ps=2 gn=f nu=p
+vpp2fpX3fs           => sp=suff vs=piel vt=perf ps=2 gn=f nu=p ps2=3 gn2=f nu2=s
+vpp2fs               => sp=verb vs=piel vt=perf ps=2 gn=f nu=s
+vpp2fsX1cs           => sp=suff vs=piel vt=perf ps=2 gn=f nu=s ps2=1 gn2=c nu2=s
+vpp2mp               => sp=verb vs=piel vt=perf ps=2 gn=m nu=p
+vpp2ms               => sp=verb vs=piel vt=perf ps=2 gn=m nu=s
+vpp2msX1cp           => sp=suff vs=piel vt=perf ps=2 gn=m nu=s ps2=1 gn2=c nu2=p
+vpp2msX1cs           => sp=suff vs=piel vt=perf ps=2 gn=m nu=s ps2=1 gn2=c nu2=s
+vpp2msX3fs           => sp=suff vs=piel vt=perf ps=2 gn=m nu=s ps2=3 gn2=f nu2=s
+vpp2msX3mp           => sp=suff vs=piel vt=perf ps=2 gn=m nu=s ps2=3 gn2=m nu2=p
+vpp2msX3ms           => sp=suff vs=piel vt=perf ps=2 gn=m nu=s ps2=3 gn2=m nu2=s
+vpp2ms{2}            => sp=verb vs=piel vt=perf ps=2 gn=m nu=s md=cons
+vpp300X3ms           => sp=suff vs=piel vt=perf ps=3 gn=unknown nu=unknown ps2=3 gn2=m nu2=s
+vpp3cp               => sp=verb vs=piel vt=perf ps=3 gn=c nu=p
+vpp3cpX1cs           => sp=suff vs=piel vt=perf ps=3 gn=c nu=p ps2=1 gn2=c nu2=s
+vpp3cpX2ms           => sp=suff vs=piel vt=perf ps=3 gn=c nu=p ps2=2 gn2=m nu2=s
+vpp3cpX3fs           => sp=suff vs=piel vt=perf ps=3 gn=c nu=p ps2=3 gn2=f nu2=s
+vpp3cpX3mp           => sp=suff vs=piel vt=perf ps=3 gn=c nu=p ps2=3 gn2=m nu2=p
+vpp3cpX3ms           => sp=suff vs=piel vt=perf ps=3 gn=c nu=p ps2=3 gn2=m nu2=s
+vpp3cp{2}            => sp=verb vs=piel vt=perf ps=3 gn=c nu=p md=cons
+vpp3fs               => sp=verb vs=piel vt=perf ps=3 gn=f nu=s
+vpp3fsX1cs           => sp=suff vs=piel vt=perf ps=3 gn=f nu=s ps2=1 gn2=c nu2=s
+vpp3fsX3fs           => sp=suff vs=piel vt=perf ps=3 gn=f nu=s ps2=3 gn2=f nu2=s
+vpp3mp               => sp=verb vs=piel vt=perf ps=3 gn=m nu=p
+vpp3mp{2}            => sp=verb vs=piel vt=perf ps=3 gn=m nu=p md=cons
+vpp3ms               => sp=verb vs=piel vt=perf ps=3 gn=m nu=s
+vpp3msX1cp           => sp=suff vs=piel vt=perf ps=3 gn=m nu=s ps2=1 gn2=c nu2=p
+vpp3msX1cs           => sp=suff vs=piel vt=perf ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vpp3msX2fs           => sp=suff vs=piel vt=perf ps=3 gn=m nu=s ps2=2 gn2=f nu2=s
+vpp3msX2ms           => sp=suff vs=piel vt=perf ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vpp3msX3fs           => sp=suff vs=piel vt=perf ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vpp3msX3mp           => sp=suff vs=piel vt=perf ps=3 gn=m nu=s ps2=3 gn2=m nu2=p
+vpp3msX3ms           => sp=suff vs=piel vt=perf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vpp3ms{2}            => sp=verb vs=piel vt=perf ps=3 gn=m nu=s md=cons
+vpsms                => sp=verb vs=piel vt=ptcp gn=m nu=s
+vpv                  => sp=verb vs=piel vt=impv
+vpvfs                => sp=verb vs=piel vt=impv gn=f nu=s
+vpvmp                => sp=verb vs=piel vt=impv gn=m nu=p
+vpvmpX1cp            => sp=suff vs=piel vt=impv gn=m nu=p ps2=1 gn2=c nu2=p
+vpvmpX1cs            => sp=suff vs=piel vt=impv gn=m nu=p ps2=1 gn2=c nu2=s
+vpvmpX3ms            => sp=suff vs=piel vt=impv gn=m nu=p ps2=3 gn2=m nu2=s
+vpvms                => sp=verb vs=piel vt=impv gn=m nu=s
+vpvmsX1cp            => sp=suff vs=piel vt=impv gn=m nu=s ps2=1 gn2=c nu2=p
+vpvmsX1cs            => sp=suff vs=piel vt=impv gn=m nu=s ps2=1 gn2=c nu2=s
+vpvmsX3fs            => sp=suff vs=piel vt=impv gn=m nu=s ps2=3 gn2=f nu2=s
+vpvmsX3mp            => sp=suff vs=piel vt=impv gn=m nu=s ps2=3 gn2=m nu2=p
+vpvmsX3ms            => sp=suff vs=piel vt=impv gn=m nu=s ps2=3 gn2=m nu2=s
+vpvmsXh              => sp=suff vs=piel vt=impv gn=m nu=s cl2=h
+vpw1cpX3ms           => sp=suff vs=piel vt=wayy ps=1 gn=c nu=p ps2=3 gn2=m nu2=s
+vpw1cph              => sp=verb vs=piel vt=wayy ps=1 gn=c nu=p md=coho
+vpw1cs               => sp=verb vs=piel vt=wayy ps=1 gn=c nu=s
+vpw1csX2ms           => sp=suff vs=piel vt=wayy ps=1 gn=c nu=s ps2=2 gn2=m nu2=s
+vpw1csX3mp           => sp=suff vs=piel vt=wayy ps=1 gn=c nu=s ps2=3 gn2=m nu2=p
+vpw1csX3ms           => sp=suff vs=piel vt=wayy ps=1 gn=c nu=s ps2=3 gn2=m nu2=s
+vpw1csh              => sp=verb vs=piel vt=wayy ps=1 gn=c nu=s md=coho
+vpw2fp               => sp=verb vs=piel vt=wayy ps=2 gn=f nu=p
+vpw2fs               => sp=verb vs=piel vt=wayy ps=2 gn=f nu=s
+vpw2mp               => sp=verb vs=piel vt=wayy ps=2 gn=m nu=p
+vpw2mpX1cs           => sp=suff vs=piel vt=wayy ps=2 gn=m nu=p ps2=1 gn2=c nu2=s
+vpw2ms               => sp=verb vs=piel vt=wayy ps=2 gn=m nu=s
+vpw2msX1cp           => sp=suff vs=piel vt=wayy ps=2 gn=m nu=s ps2=1 gn2=c nu2=p
+vpw2msX1cs           => sp=suff vs=piel vt=wayy ps=2 gn=m nu=s ps2=1 gn2=c nu2=s
+vpw2msX3fs           => sp=suff vs=piel vt=wayy ps=2 gn=m nu=s ps2=3 gn2=f nu2=s
+vpw2msX3mp           => sp=suff vs=piel vt=wayy ps=2 gn=m nu=s ps2=3 gn2=m nu2=p
+vpw2msX3ms           => sp=suff vs=piel vt=wayy ps=2 gn=m nu=s ps2=3 gn2=m nu2=s
+vpw2msj              => sp=verb vs=piel vt=wayy ps=2 gn=m nu=s md=juss
+vpw3fp               => sp=verb vs=piel vt=wayy ps=3 gn=f nu=p
+vpw3fs               => sp=verb vs=piel vt=wayy ps=3 gn=f nu=s
+vpw3fsX3ms           => sp=suff vs=piel vt=wayy ps=3 gn=f nu=s ps2=3 gn2=m nu2=s
+vpw3fsj              => sp=verb vs=piel vt=wayy ps=3 gn=f nu=s md=juss
+vpw3mp               => sp=verb vs=piel vt=wayy ps=3 gn=m nu=p
+vpw3mpX3fs           => sp=suff vs=piel vt=wayy ps=3 gn=m nu=p ps2=3 gn2=f nu2=s
+vpw3mpX3mp           => sp=suff vs=piel vt=wayy ps=3 gn=m nu=p ps2=3 gn2=m nu2=p
+vpw3mpX3ms           => sp=suff vs=piel vt=wayy ps=3 gn=m nu=p ps2=3 gn2=m nu2=s
+vpw3ms               => sp=verb vs=piel vt=wayy ps=3 gn=m nu=s
+vpw3msX1cp           => sp=suff vs=piel vt=wayy ps=3 gn=m nu=s ps2=1 gn2=c nu2=p
+vpw3msX1cs           => sp=suff vs=piel vt=wayy ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vpw3msX2ms           => sp=suff vs=piel vt=wayy ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vpw3msX3fs           => sp=suff vs=piel vt=wayy ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vpw3msX3mp           => sp=suff vs=piel vt=wayy ps=3 gn=m nu=s ps2=3 gn2=m nu2=p
+vpw3msX3ms           => sp=suff vs=piel vt=wayy ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vpw3msj              => sp=verb vs=piel vt=wayy ps=3 gn=m nu=s md=juss
+vq000                => sp=verb vs=qal vt=unknown ps=unknown gn=unknown
+vq0000               => sp=verb vs=qal vt=unknown ps=unknown gn=unknown nu=unknown
+vq0000X2ms           => sp=suff vs=qal vt=unknown ps=unknown gn=unknown nu=unknown ps2=2 gn2=m nu2=s
+vq000p               => sp=verb vs=qal vt=unknown ps=unknown gn=unknown nu=p
+vq000s               => sp=verb vs=qal vt=unknown ps=unknown gn=unknown nu=s
+vq000sX3mp           => sp=suff vs=qal vt=unknown ps=unknown gn=unknown nu=s ps2=3 gn2=m nu2=p
+vq00mp               => sp=verb vs=qal vt=unknown ps=unknown gn=m nu=p
+vq00ms               => sp=verb vs=qal vt=unknown ps=unknown gn=m nu=s
+vq00msX3ms           => sp=suff vs=qal vt=unknown ps=unknown gn=m nu=s ps2=3 gn2=m nu2=s
+vq00p                => sp=verb vs=qal vt=unknown ps=unknown nu=p
+vq030p               => sp=verb vs=qal vt=unknown ps=3 gn=unknown nu=p
+vq03ms               => sp=verb vs=qal vt=unknown ps=3 gn=m nu=s
+vq03msX2ms           => sp=suff vs=qal vt=unknown ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vq0fs                => sp=verb vs=qal vt=unknown gn=f nu=s
+vq0mpc               => sp=verb vs=qal vt=unknown gn=m nu=p st=c
+vq0ms                => sp=verb vs=qal vt=unknown gn=m nu=s
+vqP0                 => sp=verb vs=qal vt=ptca ps=unknown
+vqP00                => sp=verb vs=qal vt=ptca ps=unknown gn=unknown
+vqP000               => sp=verb vs=qal vt=ptca ps=unknown gn=unknown nu=unknown
+vqPfp                => sp=verb vs=qal vt=ptca gn=f nu=p
+vqPfpa               => sp=verb vs=qal vt=ptca gn=f nu=p st=a
+vqPfpcX2fs           => sp=suff vs=qal vt=ptca gn=f nu=p st=c ps2=2 gn2=f nu2=s
+vqPfpcX3mp           => sp=suff vs=qal vt=ptca gn=f nu=p st=c ps2=3 gn2=m nu2=p
+vqPfs                => sp=verb vs=qal vt=ptca gn=f nu=s
+vqPfsa               => sp=verb vs=qal vt=ptca gn=f nu=s st=a
+vqPfsc               => sp=verb vs=qal vt=ptca gn=f nu=s st=c
+vqPfscX1cs           => sp=suff vs=qal vt=ptca gn=f nu=s st=c ps2=1 gn2=c nu2=s
+vqPfscX3ms           => sp=suff vs=qal vt=ptca gn=f nu=s st=c ps2=3 gn2=m nu2=s
+vqPm0                => sp=verb vs=qal vt=ptca gn=m nu=unknown
+vqPmp                => sp=verb vs=qal vt=ptca gn=m nu=p
+vqPmp0               => sp=verb vs=qal vt=ptca gn=m nu=p md=unknown
+vqPmpa               => sp=verb vs=qal vt=ptca gn=m nu=p st=a
+vqPmpc               => sp=verb vs=qal vt=ptca gn=m nu=p st=c
+vqPmpcX1cp           => sp=suff vs=qal vt=ptca gn=m nu=p st=c ps2=1 gn2=c nu2=p
+vqPmpcX1cs           => sp=suff vs=qal vt=ptca gn=m nu=p st=c ps2=1 gn2=c nu2=s
+vqPmpcX2fs           => sp=suff vs=qal vt=ptca gn=m nu=p st=c ps2=2 gn2=f nu2=s
+vqPmpcX2mp           => sp=suff vs=qal vt=ptca gn=m nu=p st=c ps2=2 gn2=m nu2=p
+vqPmpcX2ms           => sp=suff vs=qal vt=ptca gn=m nu=p st=c ps2=2 gn2=m nu2=s
+vqPmpcX3fp           => sp=suff vs=qal vt=ptca gn=m nu=p st=c ps2=3 gn2=f nu2=p
+vqPmpcX3fs           => sp=suff vs=qal vt=ptca gn=m nu=p st=c ps2=3 gn2=f nu2=s
+vqPmpcX3mp           => sp=suff vs=qal vt=ptca gn=m nu=p st=c ps2=3 gn2=m nu2=p
+vqPmpcX3ms           => sp=suff vs=qal vt=ptca gn=m nu=p st=c ps2=3 gn2=m nu2=s
+vqPms                => sp=verb vs=qal vt=ptca gn=m nu=s
+vqPmsX3ms            => sp=suff vs=qal vt=ptca gn=m nu=s ps2=3 gn2=m nu2=s
+vqPmsa               => sp=verb vs=qal vt=ptca gn=m nu=s st=a
+vqPmsc               => sp=verb vs=qal vt=ptca gn=m nu=s st=c
+vqPmscX1cp           => sp=suff vs=qal vt=ptca gn=m nu=s st=c ps2=1 gn2=c nu2=p
+vqPmscX1cs           => sp=suff vs=qal vt=ptca gn=m nu=s st=c ps2=1 gn2=c nu2=s
+vqPmscX2fs           => sp=suff vs=qal vt=ptca gn=m nu=s st=c ps2=2 gn2=f nu2=s
+vqPmscX2mp           => sp=suff vs=qal vt=ptca gn=m nu=s st=c ps2=2 gn2=m nu2=p
+vqPmscX2ms           => sp=suff vs=qal vt=ptca gn=m nu=s st=c ps2=2 gn2=m nu2=s
+vqPmscX3fs           => sp=suff vs=qal vt=ptca gn=m nu=s st=c ps2=3 gn2=f nu2=s
+vqPmscX3mp           => sp=suff vs=qal vt=ptca gn=m nu=s st=c ps2=3 gn2=m nu2=p
+vqPmscX3ms           => sp=suff vs=qal vt=ptca gn=m nu=s st=c ps2=3 gn2=m nu2=s
+vqa                  => sp=verb vs=qal vt=infa
+vqc                  => sp=verb vs=qal vt=infc
+vqcX0                => sp=suff vs=qal vt=infc cl2=unknown
+vqcX1cp              => sp=suff vs=qal vt=infc ps2=1 gn2=c nu2=p
+vqcX1cs              => sp=suff vs=qal vt=infc ps2=1 gn2=c nu2=s
+vqcX2fs              => sp=suff vs=qal vt=infc ps2=2 gn2=f nu2=s
+vqcX2mp              => sp=suff vs=qal vt=infc ps2=2 gn2=m nu2=p
+vqcX2ms              => sp=suff vs=qal vt=infc ps2=2 gn2=m nu2=s
+vqcX3fp              => sp=suff vs=qal vt=infc ps2=3 gn2=f nu2=p
+vqcX3fs              => sp=suff vs=qal vt=infc ps2=3 gn2=f nu2=s
+vqcX3mp              => sp=suff vs=qal vt=infc ps2=3 gn2=m nu2=p
+vqcX3ms              => sp=suff vs=qal vt=infc ps2=3 gn2=m nu2=s
+vqcXh                => sp=suff vs=qal vt=infc cl2=h
+vqi000               => sp=verb vs=qal vt=impf ps=unknown gn=unknown nu=unknown
+vqi00s               => sp=verb vs=qal vt=impf ps=unknown gn=unknown nu=s
+vqi0mpXn             => sp=suff vs=qal vt=impf ps=unknown gn=m nu=p cl2=n
+vqi1cp               => sp=verb vs=qal vt=impf ps=1 gn=c nu=p
+vqi1cpX2ms           => sp=suff vs=qal vt=impf ps=1 gn=c nu=p ps2=2 gn2=m nu2=s
+vqi1cpX3fs           => sp=suff vs=qal vt=impf ps=1 gn=c nu=p ps2=3 gn2=f nu2=s
+vqi1cpX3ms           => sp=suff vs=qal vt=impf ps=1 gn=c nu=p ps2=3 gn2=m nu2=s
+vqi1cph              => sp=verb vs=qal vt=impf ps=1 gn=c nu=p md=coho
+vqi1cs               => sp=verb vs=qal vt=impf ps=1 gn=c nu=s
+vqi1csX1cp           => sp=suff vs=qal vt=impf ps=1 gn=c nu=s ps2=1 gn2=c nu2=p
+vqi1csX2fs           => sp=suff vs=qal vt=impf ps=1 gn=c nu=s ps2=2 gn2=f nu2=s
+vqi1csX2ms           => sp=suff vs=qal vt=impf ps=1 gn=c nu=s ps2=2 gn2=m nu2=s
+vqi1csX3fs           => sp=suff vs=qal vt=impf ps=1 gn=c nu=s ps2=3 gn2=f nu2=s
+vqi1csX3mp           => sp=suff vs=qal vt=impf ps=1 gn=c nu=s ps2=3 gn2=m nu2=p
+vqi1csX3ms           => sp=suff vs=qal vt=impf ps=1 gn=c nu=s ps2=3 gn2=m nu2=s
+vqi1csc              => sp=verb vs=qal vt=impf ps=1 gn=c nu=s st=c
+vqi1csh              => sp=verb vs=qal vt=impf ps=1 gn=c nu=s md=coho
+vqi200               => sp=verb vs=qal vt=impf ps=2 gn=unknown nu=unknown
+vqi2csh              => sp=verb vs=qal vt=impf ps=2 gn=c nu=s md=coho
+vqi2fp               => sp=verb vs=qal vt=impf ps=2 gn=f nu=p
+vqi2fs               => sp=verb vs=qal vt=impf ps=2 gn=f nu=s
+vqi2fsXn             => sp=suff vs=qal vt=impf ps=2 gn=f nu=s cl2=n
+vqi2fsj              => sp=verb vs=qal vt=impf ps=2 gn=f nu=s md=juss
+vqi2mp               => sp=verb vs=qal vt=impf ps=2 gn=m nu=p
+vqi2mpX1cs           => sp=suff vs=qal vt=impf ps=2 gn=m nu=p ps2=1 gn2=c nu2=s
+vqi2mpX3fs           => sp=suff vs=qal vt=impf ps=2 gn=m nu=p ps2=3 gn2=f nu2=s
+vqi2mpX3mp           => sp=suff vs=qal vt=impf ps=2 gn=m nu=p ps2=3 gn2=m nu2=p
+vqi2mpX3ms           => sp=suff vs=qal vt=impf ps=2 gn=m nu=p ps2=3 gn2=m nu2=s
+vqi2mpXn             => sp=suff vs=qal vt=impf ps=2 gn=m nu=p cl2=n
+vqi2ms               => sp=verb vs=qal vt=impf ps=2 gn=m nu=s
+vqi2msX0             => sp=suff vs=qal vt=impf ps=2 gn=m nu=s cl2=unknown
+vqi2msX1cp           => sp=suff vs=qal vt=impf ps=2 gn=m nu=s ps2=1 gn2=c nu2=p
+vqi2msX1cs           => sp=suff vs=qal vt=impf ps=2 gn=m nu=s ps2=1 gn2=c nu2=s
+vqi2msX2ms           => sp=suff vs=qal vt=impf ps=2 gn=m nu=s ps2=2 gn2=m nu2=s
+vqi2msX3fs           => sp=suff vs=qal vt=impf ps=2 gn=m nu=s ps2=3 gn2=f nu2=s
+vqi2msX3mp           => sp=suff vs=qal vt=impf ps=2 gn=m nu=s ps2=3 gn2=m nu2=p
+vqi2msX3ms           => sp=suff vs=qal vt=impf ps=2 gn=m nu=s ps2=3 gn2=m nu2=s
+vqi2msj              => sp=verb vs=qal vt=impf ps=2 gn=m nu=s md=juss
+vqi3fp               => sp=verb vs=qal vt=impf ps=3 gn=f nu=p
+vqi3fpXn             => sp=suff vs=qal vt=impf ps=3 gn=f nu=p cl2=n
+vqi3fs               => sp=verb vs=qal vt=impf ps=3 gn=f nu=s
+vqi3fsX1cp           => sp=suff vs=qal vt=impf ps=3 gn=f nu=s ps2=1 gn2=c nu2=p
+vqi3fsX1cs           => sp=suff vs=qal vt=impf ps=3 gn=f nu=s ps2=1 gn2=c nu2=s
+vqi3fsX2fs           => sp=suff vs=qal vt=impf ps=3 gn=f nu=s ps2=2 gn2=f nu2=s
+vqi3fsX2mp           => sp=suff vs=qal vt=impf ps=3 gn=f nu=s ps2=2 gn2=m nu2=p
+vqi3fsX2ms           => sp=suff vs=qal vt=impf ps=3 gn=f nu=s ps2=2 gn2=m nu2=s
+vqi3fsX3cp           => sp=suff vs=qal vt=impf ps=3 gn=f nu=s ps2=3 gn2=c nu2=p
+vqi3fsX3fs           => sp=suff vs=qal vt=impf ps=3 gn=f nu=s ps2=3 gn2=f nu2=s
+vqi3fsX3mp           => sp=suff vs=qal vt=impf ps=3 gn=f nu=s ps2=3 gn2=m nu2=p
+vqi3fsX3ms           => sp=suff vs=qal vt=impf ps=3 gn=f nu=s ps2=3 gn2=m nu2=s
+vqi3fsXh             => sp=suff vs=qal vt=impf ps=3 gn=f nu=s cl2=h
+vqi3fsj              => sp=verb vs=qal vt=impf ps=3 gn=f nu=s md=juss
+vqi3m0               => sp=verb vs=qal vt=impf ps=3 gn=m nu=unknown
+vqi3mp               => sp=verb vs=qal vt=impf ps=3 gn=m nu=p
+vqi3mpX0             => sp=suff vs=qal vt=impf ps=3 gn=m nu=p cl2=unknown
+vqi3mpX1cp           => sp=suff vs=qal vt=impf ps=3 gn=m nu=p ps2=1 gn2=c nu2=p
+vqi3mpX1cs           => sp=suff vs=qal vt=impf ps=3 gn=m nu=p ps2=1 gn2=c nu2=s
+vqi3mpX2fs           => sp=suff vs=qal vt=impf ps=3 gn=m nu=p ps2=2 gn2=f nu2=s
+vqi3mpX2mp           => sp=suff vs=qal vt=impf ps=3 gn=m nu=p ps2=2 gn2=m nu2=p
+vqi3mpX2ms           => sp=suff vs=qal vt=impf ps=3 gn=m nu=p ps2=2 gn2=m nu2=s
+vqi3mpX3fs           => sp=suff vs=qal vt=impf ps=3 gn=m nu=p ps2=3 gn2=f nu2=s
+vqi3mpX3mp           => sp=suff vs=qal vt=impf ps=3 gn=m nu=p ps2=3 gn2=m nu2=p
+vqi3mpX3ms           => sp=suff vs=qal vt=impf ps=3 gn=m nu=p ps2=3 gn2=m nu2=s
+vqi3mpXn             => sp=suff vs=qal vt=impf ps=3 gn=m nu=p cl2=n
+vqi3mpXnX1cs         => sp=suff vs=qal vt=impf ps=3 gn=m nu=p cl2=n ps3=1 gn3=c nu3=s
+vqi3mpXnX2ms         => sp=suff vs=qal vt=impf ps=3 gn=m nu=p cl2=n ps3=2 gn3=m nu3=s
+vqi3ms               => sp=verb vs=qal vt=impf ps=3 gn=m nu=s
+vqi3msX1cp           => sp=suff vs=qal vt=impf ps=3 gn=m nu=s ps2=1 gn2=c nu2=p
+vqi3msX1cs           => sp=suff vs=qal vt=impf ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vqi3msX2fs           => sp=suff vs=qal vt=impf ps=3 gn=m nu=s ps2=2 gn2=f nu2=s
+vqi3msX2mp           => sp=suff vs=qal vt=impf ps=3 gn=m nu=s ps2=2 gn2=m nu2=p
+vqi3msX2ms           => sp=suff vs=qal vt=impf ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vqi3msX3fs           => sp=suff vs=qal vt=impf ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vqi3msX3mp           => sp=suff vs=qal vt=impf ps=3 gn=m nu=s ps2=3 gn2=m nu2=p
+vqi3msX3ms           => sp=suff vs=qal vt=impf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vqi3msXnX3ms         => sp=suff vs=qal vt=impf ps=3 gn=m nu=s cl2=n ps3=3 gn3=m nu3=s
+vqi3msj              => sp=verb vs=qal vt=impf ps=3 gn=m nu=s md=juss
+vqp0                 => sp=verb vs=qal vt=perf ps=unknown
+vqp000               => sp=verb vs=qal vt=perf ps=unknown gn=unknown nu=unknown
+vqp1cp               => sp=verb vs=qal vt=perf ps=1 gn=c nu=p
+vqp1cpX2ms           => sp=suff vs=qal vt=perf ps=1 gn=c nu=p ps2=2 gn2=m nu2=s
+vqp1cpX3mp           => sp=suff vs=qal vt=perf ps=1 gn=c nu=p ps2=3 gn2=m nu2=p
+vqp1cpX3ms           => sp=suff vs=qal vt=perf ps=1 gn=c nu=p ps2=3 gn2=m nu2=s
+vqp1cp{2}            => sp=verb vs=qal vt=perf ps=1 gn=c nu=p md=cons
+vqp1cs               => sp=verb vs=qal vt=perf ps=1 gn=c nu=s
+vqp1csX2fs           => sp=suff vs=qal vt=perf ps=1 gn=c nu=s ps2=2 gn2=f nu2=s
+vqp1csX2ms           => sp=suff vs=qal vt=perf ps=1 gn=c nu=s ps2=2 gn2=m nu2=s
+vqp1csX3fp           => sp=suff vs=qal vt=perf ps=1 gn=c nu=s ps2=3 gn2=f nu2=p
+vqp1csX3fs           => sp=suff vs=qal vt=perf ps=1 gn=c nu=s ps2=3 gn2=f nu2=s
+vqp1csX3mp           => sp=suff vs=qal vt=perf ps=1 gn=c nu=s ps2=3 gn2=m nu2=p
+vqp1csX3ms           => sp=suff vs=qal vt=perf ps=1 gn=c nu=s ps2=3 gn2=m nu2=s
+vqp2fp               => sp=verb vs=qal vt=perf ps=2 gn=f nu=p
+vqp2fs               => sp=verb vs=qal vt=perf ps=2 gn=f nu=s
+vqp2mp               => sp=verb vs=qal vt=perf ps=2 gn=m nu=p
+vqp2ms               => sp=verb vs=qal vt=perf ps=2 gn=m nu=s
+vqp2ms(2)            => sp=verb vs=qal vt=perf ps=2 gn=m nu=s md=cons
+vqp2msX1cp           => sp=suff vs=qal vt=perf ps=2 gn=m nu=s ps2=1 gn2=c nu2=p
+vqp2msX1cs           => sp=suff vs=qal vt=perf ps=2 gn=m nu=s ps2=1 gn2=c nu2=s
+vqp2msX3fp           => sp=suff vs=qal vt=perf ps=2 gn=m nu=s ps2=3 gn2=f nu2=p
+vqp2msX3fs           => sp=suff vs=qal vt=perf ps=2 gn=m nu=s ps2=3 gn2=f nu2=s
+vqp2msX3mp           => sp=suff vs=qal vt=perf ps=2 gn=m nu=s ps2=3 gn2=m nu2=p
+vqp2msX3ms           => sp=suff vs=qal vt=perf ps=2 gn=m nu=s ps2=3 gn2=m nu2=s
+vqp2ms{2}            => sp=verb vs=qal vt=perf ps=2 gn=m nu=s md=cons
+vqp3cp               => sp=verb vs=qal vt=perf ps=3 gn=c nu=p
+vqp3cpX1cp           => sp=suff vs=qal vt=perf ps=3 gn=c nu=p ps2=1 gn2=c nu2=p
+vqp3cpX1cs           => sp=suff vs=qal vt=perf ps=3 gn=c nu=p ps2=1 gn2=c nu2=s
+vqp3cpX2ms           => sp=suff vs=qal vt=perf ps=3 gn=c nu=p ps2=2 gn2=m nu2=s
+vqp3cpX3fs           => sp=suff vs=qal vt=perf ps=3 gn=c nu=p ps2=3 gn2=f nu2=s
+vqp3cpX3mp           => sp=suff vs=qal vt=perf ps=3 gn=c nu=p ps2=3 gn2=m nu2=p
+vqp3cpX3ms           => sp=suff vs=qal vt=perf ps=3 gn=c nu=p ps2=3 gn2=m nu2=s
+vqp3cpXn             => sp=suff vs=qal vt=perf ps=3 gn=c nu=p cl2=n
+vqp3cp{2}            => sp=verb vs=qal vt=perf ps=3 gn=c nu=p md=cons
+vqp3fs               => sp=verb vs=qal vt=perf ps=3 gn=f nu=s
+vqp3fsX1cp           => sp=suff vs=qal vt=perf ps=3 gn=f nu=s ps2=1 gn2=c nu2=p
+vqp3fsX1cs           => sp=suff vs=qal vt=perf ps=3 gn=f nu=s ps2=1 gn2=c nu2=s
+vqp3fsX2ms           => sp=suff vs=qal vt=perf ps=3 gn=f nu=s ps2=2 gn2=m nu2=s
+vqp3fsX3mp           => sp=suff vs=qal vt=perf ps=3 gn=f nu=s ps2=3 gn2=m nu2=p
+vqp3fsX3ms           => sp=suff vs=qal vt=perf ps=3 gn=f nu=s ps2=3 gn2=m nu2=s
+vqp3fsj              => sp=verb vs=qal vt=perf ps=3 gn=f nu=s md=juss
+vqp3fs{2}            => sp=verb vs=qal vt=perf ps=3 gn=f nu=s md=cons
+vqp3mp               => sp=verb vs=qal vt=perf ps=3 gn=m nu=p
+vqp3ms               => sp=verb vs=qal vt=perf ps=3 gn=m nu=s
+vqp3ms(2)            => sp=verb vs=qal vt=perf ps=3 gn=m nu=s md=cons
+vqp3msX1cp           => sp=suff vs=qal vt=perf ps=3 gn=m nu=s ps2=1 gn2=c nu2=p
+vqp3msX1cs           => sp=suff vs=qal vt=perf ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vqp3msX2fs           => sp=suff vs=qal vt=perf ps=3 gn=m nu=s ps2=2 gn2=f nu2=s
+vqp3msX2ms           => sp=suff vs=qal vt=perf ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vqp3msX3fp           => sp=suff vs=qal vt=perf ps=3 gn=m nu=s ps2=3 gn2=f nu2=p
+vqp3msX3fs           => sp=suff vs=qal vt=perf ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vqp3msX3mp           => sp=suff vs=qal vt=perf ps=3 gn=m nu=s ps2=3 gn2=m nu2=p
+vqp3msX3ms           => sp=suff vs=qal vt=perf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vqp3msXh             => sp=suff vs=qal vt=perf ps=3 gn=m nu=s cl2=h
+vqp3msj              => sp=verb vs=qal vt=perf ps=3 gn=m nu=s md=juss
+vqp3ms{2}            => sp=verb vs=qal vt=perf ps=3 gn=m nu=s md=cons
+vqpms                => sp=verb vs=qal vt=perf gn=m nu=s
+vqs0                 => sp=verb vs=qal vt=ptcp ps=unknown
+vqs00                => sp=verb vs=qal vt=ptcp ps=unknown gn=unknown
+vqsfp                => sp=verb vs=qal vt=ptcp gn=f nu=p
+vqsfpc               => sp=verb vs=qal vt=ptcp gn=f nu=p st=c
+vqsfpcX2mp           => sp=suff vs=qal vt=ptcp gn=f nu=p st=c ps2=2 gn2=m nu2=p
+vqsfs                => sp=verb vs=qal vt=ptcp gn=f nu=s
+vqsfsc               => sp=verb vs=qal vt=ptcp gn=f nu=s st=c
+vqsm0                => sp=verb vs=qal vt=ptcp gn=m nu=unknown
+vqsmp                => sp=verb vs=qal vt=ptcp gn=m nu=p
+vqsmp0               => sp=verb vs=qal vt=ptcp gn=m nu=p md=unknown
+vqsmpc               => sp=verb vs=qal vt=ptcp gn=m nu=p st=c
+vqsmpcX1cp           => sp=suff vs=qal vt=ptcp gn=m nu=p st=c ps2=1 gn2=c nu2=p
+vqsmpcX1cs           => sp=suff vs=qal vt=ptcp gn=m nu=p st=c ps2=1 gn2=c nu2=s
+vqsmpcX2ms           => sp=suff vs=qal vt=ptcp gn=m nu=p st=c ps2=2 gn2=m nu2=s
+vqsmpcX3fs           => sp=suff vs=qal vt=ptcp gn=m nu=p st=c ps2=3 gn2=f nu2=s
+vqsmpcX3mp           => sp=suff vs=qal vt=ptcp gn=m nu=p st=c ps2=3 gn2=m nu2=p
+vqsmpcX3ms           => sp=suff vs=qal vt=ptcp gn=m nu=p st=c ps2=3 gn2=m nu2=s
+vqsms                => sp=verb vs=qal vt=ptcp gn=m nu=s
+vqsmsc               => sp=verb vs=qal vt=ptcp gn=m nu=s st=c
+vqsmscX2ms           => sp=suff vs=qal vt=ptcp gn=m nu=s st=c ps2=2 gn2=m nu2=s
+vqvfp                => sp=verb vs=qal vt=impv gn=f nu=p
+vqvfs                => sp=verb vs=qal vt=impv gn=f nu=s
+vqvmp                => sp=verb vs=qal vt=impv gn=m nu=p
+vqvmpX1cp            => sp=suff vs=qal vt=impv gn=m nu=p ps2=1 gn2=c nu2=p
+vqvmpX1cs            => sp=suff vs=qal vt=impv gn=m nu=p ps2=1 gn2=c nu2=s
+vqvmpX3fs            => sp=suff vs=qal vt=impv gn=m nu=p ps2=3 gn2=f nu2=s
+vqvmpX3ms            => sp=suff vs=qal vt=impv gn=m nu=p ps2=3 gn2=m nu2=s
+vqvmpXn              => sp=suff vs=qal vt=impv gn=m nu=p cl2=n
+vqvms                => sp=verb vs=qal vt=impv gn=m nu=s
+vqvmsX1cp            => sp=suff vs=qal vt=impv gn=m nu=s ps2=1 gn2=c nu2=p
+vqvmsX1cs            => sp=suff vs=qal vt=impv gn=m nu=s ps2=1 gn2=c nu2=s
+vqvmsX2ms            => sp=suff vs=qal vt=impv gn=m nu=s ps2=2 gn2=m nu2=s
+vqvmsX3fs            => sp=suff vs=qal vt=impv gn=m nu=s ps2=3 gn2=f nu2=s
+vqvmsX3mp            => sp=suff vs=qal vt=impv gn=m nu=s ps2=3 gn2=m nu2=p
+vqvmsX3ms            => sp=suff vs=qal vt=impv gn=m nu=s ps2=3 gn2=m nu2=s
+vqvmsXh              => sp=suff vs=qal vt=impv gn=m nu=s cl2=h
+vqw00s               => sp=verb vs=qal vt=wayy ps=unknown gn=unknown nu=s
+vqw1cp               => sp=verb vs=qal vt=wayy ps=1 gn=c nu=p
+vqw1cpX3ms           => sp=suff vs=qal vt=wayy ps=1 gn=c nu=p ps2=3 gn2=m nu2=s
+vqw1cph              => sp=verb vs=qal vt=wayy ps=1 gn=c nu=p md=coho
+vqw1cpj              => sp=verb vs=qal vt=wayy ps=1 gn=c nu=p md=juss
+vqw1cs               => sp=verb vs=qal vt=wayy ps=1 gn=c nu=s
+vqw1csX2mp           => sp=suff vs=qal vt=wayy ps=1 gn=c nu=s ps2=2 gn2=m nu2=p
+vqw1csX2ms           => sp=suff vs=qal vt=wayy ps=1 gn=c nu=s ps2=2 gn2=m nu2=s
+vqw1csX3fs           => sp=suff vs=qal vt=wayy ps=1 gn=c nu=s ps2=3 gn2=f nu2=s
+vqw1csX3mp           => sp=suff vs=qal vt=wayy ps=1 gn=c nu=s ps2=3 gn2=m nu2=p
+vqw1csX3ms           => sp=suff vs=qal vt=wayy ps=1 gn=c nu=s ps2=3 gn2=m nu2=s
+vqw1csh              => sp=verb vs=qal vt=wayy ps=1 gn=c nu=s md=coho
+vqw1csj              => sp=verb vs=qal vt=wayy ps=1 gn=c nu=s md=juss
+vqw2fs               => sp=verb vs=qal vt=wayy ps=2 gn=f nu=s
+vqw2fsX1cs           => sp=suff vs=qal vt=wayy ps=2 gn=f nu=s ps2=1 gn2=c nu2=s
+vqw2mp               => sp=verb vs=qal vt=wayy ps=2 gn=m nu=p
+vqw2mpXn             => sp=suff vs=qal vt=wayy ps=2 gn=m nu=p cl2=n
+vqw2ms               => sp=verb vs=qal vt=wayy ps=2 gn=m nu=s
+vqw2msX1cp           => sp=suff vs=qal vt=wayy ps=2 gn=m nu=s ps2=1 gn2=c nu2=p
+vqw2msX1cs           => sp=suff vs=qal vt=wayy ps=2 gn=m nu=s ps2=1 gn2=c nu2=s
+vqw2msX3mp           => sp=suff vs=qal vt=wayy ps=2 gn=m nu=s ps2=3 gn2=m nu2=p
+vqw2msX3ms           => sp=suff vs=qal vt=wayy ps=2 gn=m nu=s ps2=3 gn2=m nu2=s
+vqw2msj              => sp=verb vs=qal vt=wayy ps=2 gn=m nu=s md=juss
+vqw3cp               => sp=verb vs=qal vt=wayy ps=3 gn=c nu=p
+vqw3fp               => sp=verb vs=qal vt=wayy ps=3 gn=f nu=p
+vqw3fs               => sp=verb vs=qal vt=wayy ps=3 gn=f nu=s
+vqw3fsX1cs           => sp=suff vs=qal vt=wayy ps=3 gn=f nu=s ps2=1 gn2=c nu2=s
+vqw3fsX3fs           => sp=suff vs=qal vt=wayy ps=3 gn=f nu=s ps2=3 gn2=f nu2=s
+vqw3fsX3mp           => sp=suff vs=qal vt=wayy ps=3 gn=f nu=s ps2=3 gn2=m nu2=p
+vqw3fsX3ms           => sp=suff vs=qal vt=wayy ps=3 gn=f nu=s ps2=3 gn2=m nu2=s
+vqw3fsj              => sp=verb vs=qal vt=wayy ps=3 gn=f nu=s md=juss
+vqw3m0               => sp=verb vs=qal vt=wayy ps=3 gn=m nu=unknown
+vqw3mp               => sp=verb vs=qal vt=wayy ps=3 gn=m nu=p
+vqw3mpX1cs           => sp=suff vs=qal vt=wayy ps=3 gn=m nu=p ps2=1 gn2=c nu2=s
+vqw3mpX2ms           => sp=suff vs=qal vt=wayy ps=3 gn=m nu=p ps2=2 gn2=m nu2=s
+vqw3mpX3fs           => sp=suff vs=qal vt=wayy ps=3 gn=m nu=p ps2=3 gn2=f nu2=s
+vqw3mpX3mp           => sp=suff vs=qal vt=wayy ps=3 gn=m nu=p ps2=3 gn2=m nu2=p
+vqw3mpX3ms           => sp=suff vs=qal vt=wayy ps=3 gn=m nu=p ps2=3 gn2=m nu2=s
+vqw3mpXn             => sp=suff vs=qal vt=wayy ps=3 gn=m nu=p cl2=n
+vqw3mpj              => sp=verb vs=qal vt=wayy ps=3 gn=m nu=p md=juss
+vqw3mpjX3mp          => sp=suff vs=qal vt=wayy ps=3 gn=m nu=p md=juss ps2=3 gn2=m nu2=p
+vqw3ms               => sp=verb vs=qal vt=wayy ps=3 gn=m nu=s
+vqw3msX1cp           => sp=suff vs=qal vt=wayy ps=3 gn=m nu=s ps2=1 gn2=c nu2=p
+vqw3msX1cs           => sp=suff vs=qal vt=wayy ps=3 gn=m nu=s ps2=1 gn2=c nu2=s
+vqw3msX2ms           => sp=suff vs=qal vt=wayy ps=3 gn=m nu=s ps2=2 gn2=m nu2=s
+vqw3msX3fs           => sp=suff vs=qal vt=wayy ps=3 gn=m nu=s ps2=3 gn2=f nu2=s
+vqw3msX3mp           => sp=suff vs=qal vt=wayy ps=3 gn=m nu=s ps2=3 gn2=m nu2=p
+vqw3msX3ms           => sp=suff vs=qal vt=wayy ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vqw3msj              => sp=verb vs=qal vt=wayy ps=3 gn=m nu=s md=juss
+vqw3msjX3mp          => sp=suff vs=qal vt=wayy ps=3 gn=m nu=s md=juss ps2=3 gn2=m nu2=p
+vqw3msjX3ms          => sp=suff vs=qal vt=wayy ps=3 gn=m nu=s md=juss ps2=3 gn2=m nu2=s
+vsPms                => sp=verb vs=hishtafel vt=ptca gn=m nu=s
+vsc                  => sp=verb vs=hishtafel vt=infc
+vsi1cp               => sp=verb vs=hishtafel vt=impf ps=1 gn=c nu=p
+vsi1cs               => sp=verb vs=hishtafel vt=impf ps=1 gn=c nu=s
+vsi2mp               => sp=verb vs=hishtafel vt=impf ps=2 gn=m nu=p
+vsi2ms               => sp=verb vs=hishtafel vt=impf ps=2 gn=m nu=s
+vsi3mp               => sp=verb vs=hishtafel vt=impf ps=3 gn=m nu=p
+vsi3mpj              => sp=verb vs=hishtafel vt=impf ps=3 gn=m nu=p md=juss
+vsi3ms               => sp=verb vs=hishtafel vt=impf ps=3 gn=m nu=s
+vsp1cs               => sp=verb vs=hishtafel vt=perf ps=1 gn=c nu=s
+vsp2mp               => sp=verb vs=hishtafel vt=perf ps=2 gn=m nu=p
+vsp2ms               => sp=verb vs=hishtafel vt=perf ps=2 gn=m nu=s
+vsp3cp               => sp=verb vs=hishtafel vt=perf ps=3 gn=c nu=p
+vsp3cp{2}            => sp=verb vs=hishtafel vt=perf ps=3 gn=c nu=p md=cons
+vsp3ms               => sp=verb vs=hishtafel vt=perf ps=3 gn=m nu=s
+vsvmp                => sp=verb vs=hishtafel vt=impv gn=m nu=p
+vsw3fp               => sp=verb vs=hishtafel vt=wayy ps=3 gn=f nu=p
+vsw3fs               => sp=verb vs=hishtafel vt=wayy ps=3 gn=f nu=s
+vsw3mp               => sp=verb vs=hishtafel vt=wayy ps=3 gn=m nu=p
+vsw3ms               => sp=verb vs=hishtafel vt=wayy ps=3 gn=m nu=s
+vsw3msj              => sp=verb vs=hishtafel vt=wayy ps=3 gn=m nu=s md=juss
+vt0000               => sp=verb vs=hitpael vt=unknown ps=unknown gn=unknown nu=unknown
+vt000p               => sp=verb vs=hitpael vt=unknown ps=unknown gn=unknown nu=p
+vt000s               => sp=verb vs=hitpael vt=unknown ps=unknown gn=unknown nu=s
+vtPfpa               => sp=verb vs=hitpael vt=ptca gn=f nu=p st=a
+vtPfs                => sp=verb vs=hitpael vt=ptca gn=f nu=s
+vtPfsa               => sp=verb vs=hitpael vt=ptca gn=f nu=s st=a
+vtPmp                => sp=verb vs=hitpael vt=ptca gn=m nu=p
+vtPmpa               => sp=verb vs=hitpael vt=ptca gn=m nu=p st=a
+vtPms                => sp=verb vs=hitpael vt=ptca gn=m nu=s
+vtPmsa               => sp=verb vs=hitpael vt=ptca gn=m nu=s st=a
+vta                  => sp=verb vs=hitpael vt=infa
+vtc                  => sp=verb vs=hitpael vt=infc
+vtcX1cs              => sp=suff vs=hitpael vt=infc ps2=1 gn2=c nu2=s
+vtcX2mp              => sp=suff vs=hitpael vt=infc ps2=2 gn2=m nu2=p
+vtcX2ms              => sp=suff vs=hitpael vt=infc ps2=2 gn2=m nu2=s
+vtcX3fs              => sp=suff vs=hitpael vt=infc ps2=3 gn2=f nu2=s
+vtcX3mp              => sp=suff vs=hitpael vt=infc ps2=3 gn2=m nu2=p
+vtcX3ms              => sp=suff vs=hitpael vt=infc ps2=3 gn2=m nu2=s
+vti1cp               => sp=verb vs=hitpael vt=impf ps=1 gn=c nu=p
+vti1cph              => sp=verb vs=hitpael vt=impf ps=1 gn=c nu=p md=coho
+vti1cs               => sp=verb vs=hitpael vt=impf ps=1 gn=c nu=s
+vti1csX3mp           => sp=suff vs=hitpael vt=impf ps=1 gn=c nu=s ps2=3 gn2=m nu2=p
+vti1csh              => sp=verb vs=hitpael vt=impf ps=1 gn=c nu=s md=coho
+vti2fs               => sp=verb vs=hitpael vt=impf ps=2 gn=f nu=s
+vti2mp               => sp=verb vs=hitpael vt=impf ps=2 gn=m nu=p
+vti2ms               => sp=verb vs=hitpael vt=impf ps=2 gn=m nu=s
+vti2msj              => sp=verb vs=hitpael vt=impf ps=2 gn=m nu=s md=juss
+vti3fp               => sp=verb vs=hitpael vt=impf ps=3 gn=f nu=p
+vti3fs               => sp=verb vs=hitpael vt=impf ps=3 gn=f nu=s
+vti3fsX2fs           => sp=suff vs=hitpael vt=impf ps=3 gn=f nu=s ps2=2 gn2=f nu2=s
+vti3fsX2ms           => sp=suff vs=hitpael vt=impf ps=3 gn=f nu=s ps2=2 gn2=m nu2=s
+vti3m0               => sp=verb vs=hitpael vt=impf ps=3 gn=m nu=unknown
+vti3mp               => sp=verb vs=hitpael vt=impf ps=3 gn=m nu=p
+vti3mpXn             => sp=suff vs=hitpael vt=impf ps=3 gn=m nu=p cl2=n
+vti3ms               => sp=verb vs=hitpael vt=impf ps=3 gn=m nu=s
+vtp000               => sp=verb vs=hitpael vt=perf ps=unknown gn=unknown nu=unknown
+vtp1cs               => sp=verb vs=hitpael vt=perf ps=1 gn=c nu=s
+vtp2mp               => sp=verb vs=hitpael vt=perf ps=2 gn=m nu=p
+vtp2ms               => sp=verb vs=hitpael vt=perf ps=2 gn=m nu=s
+vtp2msX3fs           => sp=suff vs=hitpael vt=perf ps=2 gn=m nu=s ps2=3 gn2=f nu2=s
+vtp3cp               => sp=verb vs=hitpael vt=perf ps=3 gn=c nu=p
+vtp3cpX3mp           => sp=suff vs=hitpael vt=perf ps=3 gn=c nu=p ps2=3 gn2=m nu2=p
+vtp3fs               => sp=verb vs=hitpael vt=perf ps=3 gn=f nu=s
+vtp3ms               => sp=verb vs=hitpael vt=perf ps=3 gn=m nu=s
+vtp3ms{2}            => sp=verb vs=hitpael vt=perf ps=3 gn=m nu=s md=cons
+vtvcp                => sp=verb vs=hitpael vt=impv gn=c nu=p
+vtvfs                => sp=verb vs=hitpael vt=impv gn=f nu=s
+vtvmp                => sp=verb vs=hitpael vt=impv gn=m nu=p
+vtvms                => sp=verb vs=hitpael vt=impv gn=m nu=s
+vtvmsX2ms            => sp=suff vs=hitpael vt=impv gn=m nu=s ps2=2 gn2=m nu2=s
+vtw1cs               => sp=verb vs=hitpael vt=wayy ps=1 gn=c nu=s
+vtw1csh              => sp=verb vs=hitpael vt=wayy ps=1 gn=c nu=s md=coho
+vtw2ms               => sp=verb vs=hitpael vt=wayy ps=2 gn=m nu=s
+vtw3fs               => sp=verb vs=hitpael vt=wayy ps=3 gn=f nu=s
+vtw3mp               => sp=verb vs=hitpael vt=wayy ps=3 gn=m nu=p
+vtw3ms               => sp=verb vs=hitpael vt=wayy ps=3 gn=m nu=s
+vtw3msj              => sp=verb vs=hitpael vt=wayy ps=3 gn=m nu=s md=juss
+vup3cp               => sp=verb vs=hotpaal vt=perf ps=3 gn=c nu=p
+vup3fs               => sp=verb vs=hotpaal vt=perf ps=3 gn=f nu=s
+vv000                => sp=verb vs=hitopel vt=unknown ps=unknown gn=unknown
+vv000s               => sp=verb vs=hitopel vt=unknown ps=unknown gn=unknown nu=s
+vvPfsa               => sp=verb vs=hitopel vt=ptca gn=f nu=s st=a
+vvPmp                => sp=verb vs=hitopel vt=ptca gn=m nu=p
+vvPmpc               => sp=verb vs=hitopel vt=ptca gn=m nu=p st=c
+vvPmpcX2ms           => sp=suff vs=hitopel vt=ptca gn=m nu=p st=c ps2=2 gn2=m nu2=s
+vvPms                => sp=verb vs=hitopel vt=ptca gn=m nu=s
+vvPmsa               => sp=verb vs=hitopel vt=ptca gn=m nu=s st=a
+vvc                  => sp=verb vs=hitopel vt=infc
+vvcX3mp              => sp=suff vs=hitopel vt=infc ps2=3 gn2=m nu2=p
+vvi00s               => sp=verb vs=hitopel vt=impf ps=unknown gn=unknown nu=s
+vvi1cs               => sp=verb vs=hitopel vt=impf ps=1 gn=c nu=s
+vvi1csX3ms           => sp=suff vs=hitopel vt=impf ps=1 gn=c nu=s ps2=3 gn2=m nu2=s
+vvi1csh              => sp=verb vs=hitopel vt=impf ps=1 gn=c nu=s md=coho
+vvi2fs               => sp=verb vs=hitopel vt=impf ps=2 gn=f nu=s
+vvi2mp               => sp=verb vs=hitopel vt=impf ps=2 gn=m nu=p
+vvi2ms               => sp=verb vs=hitopel vt=impf ps=2 gn=m nu=s
+vvi3fp               => sp=verb vs=hitopel vt=impf ps=3 gn=f nu=p
+vvi3fs               => sp=verb vs=hitopel vt=impf ps=3 gn=f nu=s
+vvi3m0               => sp=verb vs=hitopel vt=impf ps=3 gn=m nu=unknown
+vvi3mp               => sp=verb vs=hitopel vt=impf ps=3 gn=m nu=p
+vvi3ms               => sp=verb vs=hitopel vt=impf ps=3 gn=m nu=s
+vvp1cs               => sp=verb vs=hitopel vt=perf ps=1 gn=c nu=s
+vvp2ms               => sp=verb vs=hitopel vt=perf ps=2 gn=m nu=s
+vvp3cp               => sp=verb vs=hitopel vt=perf ps=3 gn=c nu=p
+vvp3fs               => sp=verb vs=hitopel vt=perf ps=3 gn=f nu=s
+vvp3mp               => sp=verb vs=hitopel vt=perf ps=3 gn=m nu=p
+vvp3ms               => sp=verb vs=hitopel vt=perf ps=3 gn=m nu=s
+vvvfs                => sp=verb vs=hitopel vt=impv gn=f nu=s
+vvvmp                => sp=verb vs=hitopel vt=impv gn=m nu=p
+vvvms                => sp=verb vs=hitopel vt=impv gn=m nu=s
+vvw1csh              => sp=verb vs=hitopel vt=wayy ps=1 gn=c nu=s md=coho
+vvw2ms               => sp=verb vs=hitopel vt=wayy ps=2 gn=m nu=s
+vvw3mp               => sp=verb vs=hitopel vt=wayy ps=3 gn=m nu=p
+vvw3ms               => sp=verb vs=hitopel vt=wayy ps=3 gn=m nu=s
+vwPms                => sp=verb vs=hitpalpel vt=ptca gn=m nu=s
+vwc                  => sp=verb vs=hitpalpel vt=infc
+vwi1cs               => sp=verb vs=hitpalpel vt=impf ps=1 gn=c nu=s
+vwi1csh              => sp=verb vs=hitpalpel vt=impf ps=1 gn=c nu=s md=coho
+vwi2fs               => sp=verb vs=hitpalpel vt=impf ps=2 gn=f nu=s
+vwi2mp               => sp=verb vs=hitpalpel vt=impf ps=2 gn=m nu=p
+vwi2ms               => sp=verb vs=hitpalpel vt=impf ps=2 gn=m nu=s
+vwi3fs               => sp=verb vs=hitpalpel vt=impf ps=3 gn=f nu=s
+vwi3mp               => sp=verb vs=hitpalpel vt=impf ps=3 gn=m nu=p
+vwi3mpXn             => sp=suff vs=hitpalpel vt=impf ps=3 gn=m nu=p cl2=n
+vwi3ms               => sp=verb vs=hitpalpel vt=impf ps=3 gn=m nu=s
+vwi3msX3ms           => sp=suff vs=hitpalpel vt=impf ps=3 gn=m nu=s ps2=3 gn2=m nu2=s
+vwp1cp               => sp=verb vs=hitpalpel vt=perf ps=1 gn=c nu=p
+vwp1cs               => sp=verb vs=hitpalpel vt=perf ps=1 gn=c nu=s
+vwvmp                => sp=verb vs=hitpalpel vt=impv gn=m nu=p
+vww3mp               => sp=verb vs=hitpalpel vt=wayy ps=3 gn=m nu=p
+vww3ms               => sp=verb vs=hitpalpel vt=wayy ps=3 gn=m nu=s
+vxp3ms               => sp=verb vs=nitpael vt=perf ps=3 gn=m nu=s
+vḦi3mp               => sp=verb vs=hishtaphel vt=impf ps=3 gn=m nu=p
+vḦi3ms               => sp=verb vs=hishtaphel vt=impf ps=3 gn=m nu=s
+vḦp3mp               => sp=verb vs=hishtaphel vt=perf ps=3 gn=m nu=p
+
+
+Run ended: 2019-05-20T12:56:03.647131
+Duration:  1m 36s

@@ -51,7 +51,7 @@ debug = None
 ORG = 'etcbc'
 REPO = 'dss'
 VERSION_SRC = '1.0'
-VERSION_TF = '0.4'
+VERSION_TF = '0.5'
 
 LOCAL_BASE = os.path.expanduser('~/local')
 GH_BASE = os.path.expanduser('~/github')
@@ -183,7 +183,7 @@ oMORPH = 'morph'
 oBOOK = 'book'
 oCHAPTER = 'chapter'
 oVERSE = 'verse'
-oHVERSE = 'verse'
+oHVERSE = 'halfverse'
 
 oCOLS = (
     oSRCLN,
@@ -551,7 +551,7 @@ def unesc(text):
   return text
 
 
-lexDisRe = re.compile(r'^(.*?)(?:[_-])([0-9]+)$')
+lexDisRe = re.compile(r'^(.*?)(?:[_])([0-9]+)$')
 lexDisXRe = re.compile(r'[_-][0-9]+$')
 foreignRe = re.compile(f'^[{"".join(FOREIGNS_SET)}]+$')
 foreignoRe = re.compile(f'^[{"".join(FOREIGNS_SETO)}]+$')
@@ -1082,6 +1082,8 @@ def readSource():
           (lex, morph) = analysis.split('%', 1)
         elif '@' in analysis:
           (lex, morph) = analysis.split('@', 1)
+        else:
+          lex = analysis
         oData[oTRANS] = trans
         oData[oLANG] = lang
         oData[oLEX] = lex
@@ -1128,6 +1130,7 @@ def tweakBiblicalLines():
 
   newData = []
   lineoh = REPORT_HANDLES[LINESO_R]
+
   for fields in data:
     biblical = oBOOK in fields
     ln = fields[oSRCLN]
@@ -1716,12 +1719,16 @@ def director(cv):
   j = 0
 
   biblical = None
+  biblicalLine = None
+
+  thisLine = None
 
   for fields in data:
     biblical = oBOOK in fields
     ln = fields[oSRCLN]
 
     curSlot = None
+    prevLine = thisLine
 
     if j == chunk:
       j = 0
@@ -1734,8 +1741,6 @@ def director(cv):
     changeScroll = thisScroll != prevScroll
     changeFragment = thisFragment != prevFragment
     changeLine = thisLine != prevLine
-
-    biblicalLine = 0
 
     if changeLine or changeFragment or changeScroll:
       cv.terminate(curLine)
@@ -1768,7 +1773,7 @@ def director(cv):
           diag('(NON)-BIBLICAL', f'{thisScroll} {thisFragment}:{thisLine} line', 1)
         cv.feature(curLine, biblical=biblicalLine)
       else:
-        biblicalLine = 0
+        biblicalLine = None
 
     after = None if fields[oBOUND] == B else ' '
     fullo = fields[oTRANS]
@@ -1837,11 +1842,12 @@ def director(cv):
         cv.feature(curWord, verse=fields[oVERSE])
         cv.feature(curWord, halfverse=fields[oHVERSE])
 
-      cv.feature(curWord, srcLn=ln + 1)
+      cv.feature(curWord, srcLn=ln)
       if biblical:
         if biblicalLine == 2:
           diag('(NON)-BIBLICAL', f'{thisScroll} {thisFragment}:{thisLine} word {fullo}', 1)
-        cv.feature(curWord, biblical=biblicalLine)
+        if biblicalLine:
+          cv.feature(curWord, biblical=biblicalLine)
       if script:
         cv.feature(curWord, script=script)
       if interlinear:
@@ -1944,7 +1950,8 @@ def director(cv):
           if biblical:
             if biblicalLine == 2:
               diag('(NON)-BIBLICAL', f'{thisScroll} {thisFragment}:{thisLine} cluster {name}', 1)
-            cv.feature(cn, biblical=biblicalLine)
+            if biblicalLine:
+              cv.feature(cn, biblical=biblicalLine)
         else:
           cn = curBrackets[key]
           if not cv.linked(cn):
@@ -1963,7 +1970,6 @@ def director(cv):
 
     prevScroll = thisScroll
     prevFragment = thisFragment
-    prevLine = thisLine
 
   cv.terminate(curLine)
   cv.terminate(curFragment)

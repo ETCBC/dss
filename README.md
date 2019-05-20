@@ -75,6 +75,9 @@ Status
 This is **work in progress**.
 We will collect feedback for quite some time before we bump the version to 1.0 or higher.
 
+*   2019-05-20 Release 0.5,
+    new
+    [tests](https://nbviewer.jupyter.org/github/etcbc/dss/blob/master/programs/checks.ipynb).
 *   2019-05-09 Release 0.4.
 *   2019-05-08 Release 0.3.
 *   2019-05-05 Release 0.2.

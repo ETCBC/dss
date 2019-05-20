@@ -6,6 +6,10 @@ lineFixes:
   true:
     36238: ["[\\ \\\\\\@0\t", "[\\\t\\\\\\@0", 'tab moved to right']
     208179: ["\t\t", "\t", 'double tab to single']
+    99010: ["--\t\t", "--\t\\@0\t", '0-lexeme for missing']
+    143765: ["--\t\t", "--\t\\@0\t", '0-lexeme for missing']
+    186962: ["%@0", "%0", 'aramaic, not hebrew']
+    217582: ["--\t\t", "--\t\\@0\t", '0-lexeme for missing']
 
 fieldFixes:
   false:
@@ -48,6 +52,8 @@ fieldFixes:
         morph: ['0ncfp', 'ncfp', 'spurious unknown symbol']
     115544:
         morph: ['\', '0', 'morph for -- => 0']
+    124566:
+        lex: ['jll-2', 'jll_2', '-2 => _2']
     146637:
         morph: ['0ncfs', 'ncfs', 'spurious unknown symbol']
     147953:
