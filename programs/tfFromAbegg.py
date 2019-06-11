@@ -51,7 +51,7 @@ debug = None
 ORG = 'etcbc'
 REPO = 'dss'
 VERSION_SRC = '1.0'
-VERSION_TF = '0.5'
+VERSION_TF = '0.6'
 
 LOCAL_BASE = os.path.expanduser('~/local')
 GH_BASE = os.path.expanduser('~/github')
@@ -239,10 +239,11 @@ VACAT = 'vac'
 ALTERNATIVE = 'alt'
 RECONSTRUCTION = 'rec'
 
-ALEF = 'א'
-YOD = 'י'
-KAF_E = 'ך'
-QOF = 'ק'
+ALEF = '\u05d0'
+YOD = '\u05d9'
+KAF_E = '\u05da'
+QOF = '\u05e7'
+SHIN = '\u05e9'
 
 CONSONANTS = (
     (ALEF, 'a'),
@@ -272,7 +273,7 @@ CONSONANTS = (
     ('ר', 'r'),
     ('שׂ', 'c'),  # FB2B sin
     ('שׁ', 'v'),  # FB2A shin
-    ('שׁ', 'C'),  # 05E9 dotless shin
+    (SHIN, 'C'),  # 05E9 dotless shin
     ('ת', 't'),
 )
 CONSONANTS_SET = {x[1] for x in CONSONANTS}
@@ -409,9 +410,10 @@ FOREIGNS_REP = FOREIGNS_UNI
 FOREIGNS_REAL = (NUMERALS_SET - CONSONANTS_SET) | VOWELS_SET | FOREIGNS_SET
 
 EM = 'ε'
+VAC = '□'
 
 TOKENS = (
-    (VACAT, '□', None, NB, NB),
+    (VACAT, VAC, None, NB, NB),
     (MISSING, '--', '░', ' 0 ', EM),
     (UNCERTAIN, '?', None, ' ? ', ' ? '),
     (UNCERTAIN, '\\', None, ' # ', ' # '),
@@ -1424,7 +1426,7 @@ def checkChars():
     prevScroll = thisScroll
     prevTrans = word
 
-  unused = (CHARS | CHARS_LEX) - charsMapped - TOKENS_FIXED
+  unused = (CHARS | CHARS_LEX) - charsMapped - TOKENS_FIXED - {VAC}
   if unused:
     unusedStr = ''.join(sorted(unused))
     report(f'CHARACTERS: WARNING: UNUSED: {unusedStr} ({len(unused)} chars)')
@@ -1958,7 +1960,7 @@ def director(cv):
             # ew = cv.node(WORD)
             # cv.feature(ew, type=EMPTY)
             typ = EMPTY
-            c = '□'
+            c = VAC
             addSlot()
             # cv.terminate(ew)
           cv.terminate(cn)
