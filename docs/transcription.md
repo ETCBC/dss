@@ -100,6 +100,24 @@ and two variants with the letter *e* of *o* after the feature name.
 * **e** the ETCBC transliteration, or something that extends it
 * **o** the original transcription (as in the source files)
 
+## *absent*
+
+When we say that a feature is *absent* for a node, we mean that the node has no value
+for the feature. For example, if the feature `biblical` is absent for node `n`, then
+`F.biblical.v(n)` results in the Python value `None`, not the string `'None'`.
+
+In queries, you can test for absence by means of `#`:
+
+```
+line biblical#
+```
+
+gives all lines where the feature `biblical` is absent.
+
+See also
+[search templates](https://annotation.github.io/text-fabric/Use/Search/#feature-specifications)
+under **Value specifications**.
+
 ## Node type [*sign*](#sign)
 
 Basic unit containing a single symbol, mostly a consonant, but it can also be 
