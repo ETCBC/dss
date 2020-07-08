@@ -87,7 +87,7 @@ in our sanitizing preprocessing step.
 
 We also supply the ETCBC transcription for Hebrew material.
 For the full details see the extensive
-[Hebrew transcription table](https://annotation.github.io/text-fabric/Writing/Hebrew.html).
+[Hebrew transcription table](https://annotation.github.io/text-fabric/writing/hebrew.html).
 
 # Reference table of features
 
