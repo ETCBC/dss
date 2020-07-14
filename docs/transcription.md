@@ -209,9 +209,12 @@ feature | source | ETCBC | Unicode | description
 ------- | ------ | ------ | --- | --------
 **after** | ` ` | | | whether there is a space after a word and before the next word
 **full[eo]** | `mm/nw[` | `MM61NW]` | `ממ׳נו]` | full transcription of a word, including flags and clustering characters
+**g_cons[eo]** | `mmnw` | `MMNW]` | `ממנו` | consonantal letters of a word in ETCBC encoding excluding flags and brackets
+**glex[eo]** | `mIN` | `MIn` | `מִן` | lexeme of a word, without non-textual characters
 **glyph[eo]** | `mmnw` | `MMNW]` | `ממנו` | letters of a word excluding flags and brackets
 **intl** | `1` `2` | | | if the physical word is on an interlinear line, this is `1`, if there are two interlinear lines at that point, the words on the first line get `1` and words on the second line gets `2`
 **lang** | `a` `g` | | | language, `a` is Aramaic, `g` is Greek, absent means Hebrew
+**lex_etcbc** | `mIN` | `MIn` | `מִן` | consonantal lexeme of a word in ETCBC encoding
 **lex[eo]** | `mIN` | `MIn` | `מִן` | lexeme of a word
 **punc[eo]** | `.` | `00` | `׃` | punctuation at the end of a word
 **morpho** | `vHi1cpX3mp` | | | original morphological tag for this word; all information in this has been decomposed into the morphological features below
@@ -267,14 +270,20 @@ Al these features may contain the value `unknown`.
 feature | examples | description
 ------- | ------ | ------
 **sp** | `subs` `verb` `numr` `ptcl` | part-of-speech
+**sp_etcbc** | `subs` `verb` `numr` `ptcl` | idem, but generated from the BHSA by Martijn Naaijer
 **cl** | `card` `prp` `prep` | class, i.e. a sub category within its part-of-speech
 **ps** | `1` `2` `3` | person
+**ps_etcbc** | `p1` `p2` `p3` `NA` | idem, but generated from the BHSA by Martijn Naaijer
 **gn** | `m` `f` `c` `b` | gender, also with *common* and *both*
+**gn_etcbc** | `m` `f` `NA` `unknown` | idem, but generated from the BHSA by Martijn Naaijer
 **nu** | `s` `p` `d` | number, also with *dual*
+**nu_etcbc** | `sg` `pl` `du` `NA` | idem, but generated from the BHSA by Martijn Naaijer
 **st** | `a` `c` `d` | state, also with *determined*
 **cs** | `nom` `acc` `gen` | case
-**vs** | `qal` `passive` `piel` `hithpolel` | verbal stem, also with *passive*, some are Hebrew, some are Aramaic
+**vs** | `qal` `passive` `piel` `hifil` `hithpolel` | verbal stem, also with *passive*, some are Hebrew, some are Aramaic
+**vs_etcbc** | `qal` `passive` `piel` `hif` `htpo` | idem, but generated from the BHSA by Martijn Naaijer
 **vt** | `perf` `impf` `wayy` `impv` `infc` `infa` `ptca` `ptcp` | verbal tense or aspect, also with *wayyiqtol*
+**vt_etcbc** | `perf` `impf` `wayq` `impv` `infc` `infa` `ptca` `ptcp` `NA` | idem, but generated from the BHSA by Martijn Naaijer
 **md** | `juss` `coho` `cons` | mood 
 
 If the parsing of the morphology tag has been inconclusive, there will be an error feature present on that word:

@@ -20,7 +20,7 @@ a project that broke the lengthy publication monopoly held on the scrolls.
 # Provenance
 
 The contents of this repo is created during the
-[*Creating Annotated Corpora of Classical Hebrew Texts (CACCHT) project*](https://github.com/ETCBC/CACCHT)
+[*Creating Annotated Corpora of Classical Hebrew Texts (CACCHT) project*]()
 carried out by Jarod Jacobs, Martijn Naaijer, Dirk Roorda, Robert Rezetko, Oliver Glanz, and Wido van Peursen.
 
 The DSS texts and morphological data connected with them were generously provided by Martin Abegg, which consist 
@@ -72,6 +72,12 @@ A single `.tf` file is called a feature. It maps nodes to values.
 
 However, we have separated out all text-critical and morphological information into
 additional features, thereby greatly uncluttering the wealth of information in these files.
+
+As of data version 0.7, additional features have been added in, mostly adaptions of existing
+features to the ETCBC format, prepared by Martijn Naaijer.
+
+Version 1.0 will contain phrase and clause nodes, result of Martijn Naaijer working
+for the [CACCHT](https://github.com/ETCBC/CACCHT) project.
 
 The full documentation of the way the DSS have been encoded into TF,
 see [transcription](transcription.md).
