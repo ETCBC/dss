@@ -4,7 +4,10 @@ from shutil import rmtree
 from tf.compose import modify
 
 
-BASE_NAAIJER = os.path.expanduser("~/local/dss/additions")
+BASE = os.path.expanduser("~/github/etcbc/dss")
+TF_BASE = f"{BASE}/tf"
+BASE_NAAIJER = os.path.expanduser(f"{BASE}/_local/additions")
+
 FILES_NAAIJER = """
     biblical_scrolls_clause_phrase_boundaries.csv
     lexemes_non_bib_books.csv
@@ -21,7 +24,6 @@ FILE_COLUMNS = {
     4: [3, 5],
 }
 
-BASE = os.path.expanduser("~/github/etcbc/dss/tf")
 SOURCE = "0.7"
 DEST = "0.8"
 
@@ -154,14 +156,14 @@ def produce():
     featureData = readFiles()
     # boundaries = readBoundaries()
 
-    target = f"{BASE}/{DEST}"
+    target = f"{TF_BASE}/{DEST}"
     if os.path.exists(target):
         answer = input(f"{target} exists. Delete it? [yn] ")
         if answer == "y":
             rmtree(target)
 
     modify(
-        f"{BASE}/{SOURCE}",
+        f"{TF_BASE}/{SOURCE}",
         target,
         addFeatures=dict(nodeFeatures=featureData),
         featureMeta=FEATURE_META,
