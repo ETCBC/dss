@@ -5,14 +5,14 @@
 
 Here you find a description of the transcriptions of the Dead Sea Scrolls (DSS),
 the
-[Text-Fabric model](https://annotation.github.io/text-fabric/Model/Data-Model/)
+[Text-Fabric model](https://annotation.github.io/text-fabric/tf/about/datamodel.html)
 in general, and the node types, features of the
 DSS corpus in particular.
 
 See also
 
 *   [about](about.md) for the provenance of the data;
-*   [TF docs](https://annotation.github.io/text-fabric/) for documentation on Text-Fabric.
+*   [TF docs](https://annotation.github.io/text-fabric/tf) for documentation on Text-Fabric.
 
 The corpus consists of two files, one for the non-biblical scrolls and one for the 
 biblical scrolls.
@@ -54,9 +54,9 @@ this corpus we have node types for:
 [*scroll*](#scroll),
 
 The type of every node is given by the feature
-[**otype**](https://annotation.github.io/text-fabric/Api/Features/#node-features).
+[**otype**](https://annotation.github.io/text-fabric/tf/cheatsheet.html#f-node-features).
 Every node is linked to a subset of slots by
-[**oslots**](https://annotation.github.io/text-fabric/Api/Features/#edge-features).
+[**oslots**](https://annotation.github.io/text-fabric/tf/cheatsheet.html#special-edge-feature-oslots).
 
 Nodes can be annotated with features.
 Relations between nodes can be annotated with edge features.
@@ -87,7 +87,7 @@ in our sanitizing preprocessing step.
 
 We also supply the ETCBC transcription for Hebrew material.
 For the full details see the extensive
-[Hebrew transcription table](https://annotation.github.io/text-fabric/writing/hebrew.html).
+[Hebrew transcription table](https://annotation.github.io/text-fabric/tf/writing/hebrew.html).
 
 # Reference table of features
 
@@ -115,7 +115,7 @@ line biblical#
 gives all lines where the feature `biblical` is absent.
 
 See also
-[search templates](https://annotation.github.io/text-fabric/Use/Search/#feature-specifications)
+[search templates](https://annotation.github.io/text-fabric/tf/about/searchusage.html)
 under **Value specifications**.
 
 ## Node type [*sign*](#sign)
