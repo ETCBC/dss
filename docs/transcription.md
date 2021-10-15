@@ -267,23 +267,30 @@ by their numbered brothers.
 
 Al these features may contain the value `unknown`.
 
+The *xxx*`_etcbc` features below are part of the extra features by Martijn Naaijer,
+which have been produced in a different way, not based on the Abegg sources.
+They are the product of a model trained on BHSA data which has been subsequently applied to the DSS.
+We mark them as *derived from BHSA* in the table below.
+
+See [ETCBC/DSS2ETCBC](https://github.com/ETCBC/DSS2ETCBC).
+
 feature | examples | description
 ------- | ------ | ------
 **sp** | `subs` `verb` `numr` `ptcl` | part-of-speech
-**sp_etcbc** | `subs` `verb` `numr` `ptcl` | idem, but generated from the BHSA by Martijn Naaijer
+**sp_etcbc** | `subs` `verb` `numr` `ptcl` | idem, but derived from BHSA
 **cl** | `card` `prp` `prep` | class, i.e. a sub category within its part-of-speech
 **ps** | `1` `2` `3` | person
-**ps_etcbc** | `p1` `p2` `p3` `NA` | idem, but generated from the BHSA by Martijn Naaijer
+**ps_etcbc** | `p1` `p2` `p3` `NA` | idem, but derived from BHSA
 **gn** | `m` `f` `c` `b` | gender, also with *common* and *both*
-**gn_etcbc** | `m` `f` `NA` `unknown` | idem, but generated from the BHSA by Martijn Naaijer
+**gn_etcbc** | `m` `f` `NA` `unknown` | idem, but derived from BHSA
 **nu** | `s` `p` `d` | number, also with *dual*
-**nu_etcbc** | `sg` `pl` `du` `NA` | idem, but generated from the BHSA by Martijn Naaijer
+**nu_etcbc** | `sg` `pl` `du` `NA` | idem, but derived from BHSA
 **st** | `a` `c` `d` | state, also with *determined*
 **cs** | `nom` `acc` `gen` | case
 **vs** | `qal` `passive` `piel` `hifil` `hithpolel` | verbal stem, also with *passive*, some are Hebrew, some are Aramaic
-**vs_etcbc** | `qal` `passive` `piel` `hif` `htpo` | idem, but generated from the BHSA by Martijn Naaijer
+**vs_etcbc** | `qal` `passive` `piel` `hif` `htpo` | idem, but derived from BHSA
 **vt** | `perf` `impf` `wayy` `impv` `infc` `infa` `ptca` `ptcp` | verbal tense or aspect, also with *wayyiqtol*
-**vt_etcbc** | `perf` `impf` `wayq` `impv` `infc` `infa` `ptca` `ptcp` `NA` | idem, but generated from the BHSA by Martijn Naaijer
+**vt_etcbc** | `perf` `impf` `wayq` `impv` `infc` `infa` `ptca` `ptcp` `NA` | idem, but derived from BHSA
 **md** | `juss` `coho` `cons` | mood 
 
 If the parsing of the morphology tag has been inconclusive, there will be an error feature present on that word:
