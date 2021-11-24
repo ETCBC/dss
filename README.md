@@ -8,16 +8,41 @@
 # Dead Sea Scrolls
 
 [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/ETCBC/dss/)](https://archive.softwareheritage.org/browse/origin/https://github.com/ETCBC/dss/)
-
 [![DOI](https://zenodo.org/badge/168822533.svg)](https://zenodo.org/badge/latestdoi/168822533)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 
-# Dead Sea Scrolls corpus in Text-Fabric
+### BHSA Family
+
+* [bhsa](https://github.com/etcbc/bhsa) Core data and feature documentation
+* [phono](https://github.com/etcbc/phono) Phonological representation of Hebrew words
+* [parallels](https://github.com/etcbc/parallels) Links between similar verses
+* [valence](https://github.com/etcbc/valence) Verbal valence for all occurrences
+  of some verbs
+* [trees](https://github.com/etcbc/trees) Tree structures for all sentences
+* [bridging](https://github.com/etcbc/bridging) Open Scriptures morphology
+  ported to the BHSA
+* [pipeline](https://github.com/etcbc/pipeline) Generate the BHSA and SHEBANQ
+  from internal ETCBC data files
+* [shebanq](https://github.com/etcbc/shebanq) Engine of the
+  [shebanq](https://shebanq.ancient-data.org) website
+
+### Extended family
+
+* [dss](https://github.com/etcbc/dss) Dead Sea Scrolls
+* [extrabiblical](https://github.com/etcbc/extrabiblical)
+  Extra-biblical writings from ETCBC-encoded texts
+* [peshitta](https://github.com/etcbc/peshitta)
+  Syriac translation of the Hebrew Bible
+* [syrnt](https://github.com/etcbc/syrnt)
+  Syriac translation of the New Testament
+
+# Dead Sea Scrolls in Text-Fabric
 
 This repo is a research environment for the study of the Dead Sea Scrolls.
 You can run your own programs off-line, and publish your work in online notebooks.
 
-Corpus
-------
+# Corpus
 
 This repo contains transcriptions of biblical and
 non-biblical scrolls based on the data files of
@@ -28,8 +53,7 @@ See also
 and
 [transcription](docs/transcription.md).
 
-Software
---------
+# Software
 
 The main processing tool is [Text-Fabric](https://github.com/annotation/text-fabric/).
 It is instrumental to
@@ -37,16 +61,12 @@ turn the analysis of ancient data into computing narratives.
 
 The ecosystem is Python and Jupyter notebooks.
 
-Getting started
-===============
+# Getting started
 
 Start with the
 [tutorial](https://nbviewer.jupyter.org/github/annotation/tutorials/blob/master/dss/start.ipynb).
 
-Authors
-=======
-
-This repo is joint work of
+# Authors
 
 *   [Jarod Jacobs](https://warnerpacific.academia.edu/JarodJacobs)
     at 
@@ -54,7 +74,7 @@ This repo is joint work of
 *   [Martijn Naaijer](https://vu-nl.academia.edu/MartijnNaaijer)
     at 
     [Eep Talstra Center for Bible and Computer](http://etcbc.nl)
-*   [Dirk Roorda](https://www.linkedin.com/in/dirkroorda/) at
+*   [Dirk Roorda](https://github.com/dirkroorda) at
     [DANS](https://www.dans.knaw.nl)
 
 ### Acknowledgements
@@ -69,10 +89,8 @@ and
 [Zenodo](https://zenodo.org).
 Click the badges to be taken to the archives. There you find ways to cite this work.
 
-Status
-------
+# Status
 
-This is **work in progress**.
 We will collect feedback for quite some time before we bump the version to 1.0 or higher.
 
 *   2019-06-11 Release 0.6, fixed the fact that the dotless shin was represented as sin, spotted by Oliver Glanz
