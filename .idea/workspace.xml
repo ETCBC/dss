@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ac7399d-3ee8-4c96-a469-fd52950d2123" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/programs/boundariesFromNaaijer.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/programs/boundariesFromNaaijer.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programs/checks.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/programs/checks.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programs/checks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/programs/fromNaaijer.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/programs/fromNaaijer.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programs/parallels.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/programs/parallels.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programs/stacking.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/programs/stacking.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +21,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="advanced.settings" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

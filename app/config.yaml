@@ -1,0 +1,63 @@
+apiVersion: 3
+dataDisplay:
+  noneValues:
+  - unknown
+  - null
+  showVerseInTuple: true
+  textFormats:
+    layout-orig-full: 
+      method: layoutOrig
+    layout-source-full:
+      method:  layoutSource
+    layout-trans-full:
+      method:  layoutTrans
+docs:
+  docPage: about
+  featureBase: '{docBase}/transcription.md'
+  featurePage: transcription
+interfaceDefaults:
+  lineNumbers: false
+provenanceSpec:
+  corpus: Dead Sea Scrolls
+  doi: 10.5281/zenodo.2652849
+  moduleSpecs:
+  - corpus: Parallel Passages
+    docUrl: '{urlNb}/etcbc/dss/blob/master/programs/parallels.ipynb'
+    doi: 10.5281/zenodo.2652849
+    relative: parallels/tf
+    repo: dss
+  version: '0.9'
+  webBase: https://www.deadseascrolls.org.il/explore-the-archive
+  webHint: Show this scroll in the Leon Levy library
+  webUrl: "{webBase}/search#q='<1>'"
+typeDisplay:
+  cluster:
+    stretch: false
+    label: '{type}'
+  fragment:
+    features: biblical
+  lex:
+    features: lex lexe
+    featuresBare: lexo
+    lexOcc: word
+    template: true
+    label: true
+  line:
+    features: biblical
+  scroll:
+    features: biblical
+  clause:
+    label: '{nr}'
+  phrase:
+    label: '{nr}'
+  word:
+    base: true
+    features: lang lex cl ps gn nu st vs vt md
+    featuresBare: sp
+    lineNumber: srcLn
+    label: true
+    wrap: false
+  sign:
+    exclude:
+      type: term
+writing: hbo

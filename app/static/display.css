@@ -1,0 +1,86 @@
+.full,.glyph,.punc {
+    font-family: "Ezra SIL", "SBL Hebrew", sans-serif;
+}
+.scriptpaleohebrew {
+    border: 1px dashed navy;
+}
+.scriptgreekcapital {
+    border: 1px dashed brown;
+}
+.langa {
+    text-decoration: underline;
+}
+.intl1 {
+    vertical-align: -0.25em;
+}
+.intl2 {
+    vertical-align: -0.5em;
+}
+.langg {
+    font-family: serif;
+    text-decoration: underline;
+}
+.vac1 {
+    background-color: #aaaaaa;
+    border 2pt solid #dd3333;
+    border-radius: 4pt;
+}
+.rem1 {
+    font-weight: bold;
+    color: red;
+    text-decoration: line-through;
+}
+.rem2 {
+    font-weight: bold;
+    color: maroon;
+    text-decoration: line-through;
+}
+.rec1 {
+    color: teal;
+    font-size: 80%;
+}
+.cor1 {
+    font-weight: bold;
+    color: dodgerblue;
+    text-decoration: overline;
+}
+.cor2 {
+    font-weight: bold;
+    color: navy;
+    text-decoration: overline;
+}
+.cor3 {
+    font-weight: bold;
+    color: navy;
+    text-decoration: overline;
+    vertical-align: super;
+}
+.alt1 {
+    text-decoration: overline;
+}
+
+/* UNSURE: italic*/
+
+.unc1 {
+    font-weight: bold;
+    color: #888888;
+}
+.unc2 {
+    font-weight: bold;
+    color: #bbbbbb;
+}
+.unc3 {
+    font-weight: bold;
+    color: #bbbbbb;
+    text-shadow: #cccccc 1px 1px;
+}
+.unc4 {
+    font-weight: bold;
+    color: #dddddd;
+    text-shadow: #eeeeee 2px 2px;
+}
+
+.empty {
+  color: #ff0000;
+}
+
