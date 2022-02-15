@@ -51,7 +51,7 @@ Martin Abegg.
 See also
 [about](docs/about.md)
 and
-[transcription](docs/transcription.md).
+[feature documentation](docs/transcription.md).
 
 # Software
 
