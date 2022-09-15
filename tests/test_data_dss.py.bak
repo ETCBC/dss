@@ -15,7 +15,7 @@ logging.basicConfig(
 
 def test_lexemes_nouns_ending():
     try:
-        assert all([Fdss.lex_etcbc.v(w)[-1] == '/' for w in Fdss.otype.s('word') if Fdss.lex_etcbc.v(w) and Fdss.sp_etcbc.v(w) == 'subs'])
+        assert all([Fdss.sp_etcbc.v(w)[-1] == '/' for w in Fdss.otype.s('word') if Fdss.sp_etcbc.v(w)])
         logging.info("Testing lexemes_nouns_ending: SUCCES")
     except AssertionError as err:
         logging.error("Testing lexemes_nouns_ending: there is at least one word without '/' at the end")
