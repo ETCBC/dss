@@ -26,7 +26,7 @@ provenanceSpec:
     doi: 10.5281/zenodo.2652849
     relative: parallels/tf
     repo: dss
-  version: '1.7.2'
+  version: '1.7.3'
   webBase: https://www.deadseascrolls.org.il/explore-the-archive
   webHint: Show this scroll in the Leon Levy library
   webUrl: "{webBase}/search#q='<1>'"
