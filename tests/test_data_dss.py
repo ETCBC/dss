@@ -2,7 +2,7 @@ import logging
 import pytest
 
 from tf.app import use
-DSS = use('etcbc/dss:clone', checkout='clone', version='1.6', provenanceSpec=dict(moduleSpecs=[]))
+DSS = use('etcbc/dss:clone', checkout='clone', version='1.7.2', provenanceSpec=dict(moduleSpecs=[]))
 Fdss, Ldss, Tdss = DSS.api.F, DSS.api.L, DSS.api.T
 
 
