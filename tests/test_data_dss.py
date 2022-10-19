@@ -2,7 +2,7 @@ import logging
 import pytest
 
 from tf.app import use
-DSS = use('etcbc/dss:clone', checkout='clone', version='1.7.3', provenanceSpec=dict(moduleSpecs=[]))
+DSS = use('etcbc/dss:clone', checkout='clone', version='1.7.6', provenanceSpec=dict(moduleSpecs=[]))
 Fdss, Ldss, Tdss = DSS.api.F, DSS.api.L, DSS.api.T
 
 
@@ -21,7 +21,24 @@ def test_lexemes_adjv_subs_verb_endings():
     except AssertionError as err:
         logging.error("Testing lexemes_nouns_ending: there is at least one word without '/' or '[' at the end")
         raise err
-
+        
+def test_allowed_values_for_feature_gn_etcbc():
+    try:
+        assert {Fdss.gn_etcbc.v(w) for w in Fdss.otype.s('word') if Fdss.gn_etcbc.v(w)} == {'NA', 'f', 'm', 'unknown'}
+        logging.info("Testing allowed_values_for_feature_gn_etcbc: SUCCES")
+    except AssertionError as err:
+        logging.error("Testing allowed_values_for_feature_gn_etcbc: there is at least one illegal value")
+        raise err
+        
+def test_allowed_values_for_feature_sp_etcbc():
+    """Test for legal values of feature sp_etcbc."""
+    try:
+        assert {Fdss.sp_etcbc.v(w) for w in Fdss.otype.s('word')} == {'', 'adjv', 'advb', 'art', 'conj', 'inrg', 'intj', 'nega',
+                                                                      'nmpr', 'prde', 'prep', 'prin', 'prps', 'subs', 'verb'}
+        logging.info("Testing allowed_values_for_feature_sp_etcbc: SUCCES")
+    except AssertionError as err:
+        logging.error("Testing allowed_values_for_feature_sp_etcbc: there is at least one illegal value")
+        raise err
 
 if __name__ == "__main__":
     test_lexemes_nouns_ending()
