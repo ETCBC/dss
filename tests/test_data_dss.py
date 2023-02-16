@@ -70,6 +70,18 @@ def test_allowed_values_for_feature_vs_etcbc_hebrew():
         logging.error("Testing allowed_values_for_feature_vs_etcbc: there is at least one illegal value")
         raise err
 
+def test_g_cons_is_equal_to_individual_cons():
+    try:
+        glued_cons_values = (''.join([Fdss.glyphe.v(s).upper() if Fdss.type.v(s) == 'cons' else '' for s in Ldss.d(w, 'sign')]) for w in Fdss.otype.s('word'))
+        g_cons_values = (Fdss.g_cons.v(w) if Fdss.g_cons.v(w) else '' for w in Fdss.otype.s('word')) 
+        for glued, g_cons in zip(glued_cons_values, g_cons_values):
+            if glued and g_cons:
+                assert len(glued) == len(g_cons)
+        logging.info("Testing g_cons_is_equal_to_individual_cons: SUCCES")
+    except AssertionError as err:
+        logging.error("Testing g_cons_is_equal_to_individual_cons: there is at least one g_cons not equal to individual characters")
+        raise err
+
 if __name__ == "__main__":
     test_lexemes_adjv_subs_verb_endings()
     test_lexemes_verb_endings_reversed()
@@ -77,3 +89,4 @@ if __name__ == "__main__":
     test_allowed_values_for_feature_sp_etcbc()
     test_allowed_values_for_feature_vt_etcbc()
     test_allowed_values_for_feature_vs_etcbc_hebrew()
+    test_g_cons_is_equal_to_individual_cons()
