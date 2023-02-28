@@ -13,7 +13,7 @@ latest_data_folder = sorted(os.listdir(os.path.join(ROOT_DIR, TF_FOLDER)))[-1]
 
 TF = Fabric(locations=os.path.join(ROOT_DIR, TF_FOLDER, latest_data_folder))
 api = TF.load('''
-    otype g_cons lex g_pfm g_vbs g_lex g_vbe g_nme g_uvf g_prs sp vt ps nu gn prs_nu prs_ps prs_gn
+    otype lex_etcbc sp_etcbc gn_etcbc vt_etcbc vs_etcbc lang_etcbc glyphe type g_cons
 ''')
 api.loadLog()
 api.makeAvailableIn(globals())
