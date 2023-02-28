@@ -9,10 +9,10 @@ on:
   pull_request:
     branches: [ "master" ]
   workflow_dispatch:
-  inputs:
-    name:
-      description: "Trigger tests manually."
-      default: "Tests run."
+    inputs:
+      name:
+        description: "Trigger tests manually."
+        default: "Tests run."
 
 jobs:
   build:
