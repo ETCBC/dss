@@ -1,10 +1,6 @@
 import os
 import pytest
 
-# from tf.app import use
-# DSS = use('etcbc/dss:clone', checkout='clone', version='1.7.8', provenanceSpec=dict(moduleSpecs=[]))
-# Fdss, Ldss, Tdss = DSS.api.F, DSS.api.L, DSS.api.T
-
 from tf.fabric import Fabric
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,7 +18,7 @@ Fdss, Ldss = api.F, api.L
 
 
 def test_lexemes_adjv_subs_verb_endings():
-    assert all(Fdss.lex_etcbc.v(w)[-1] == '/' for w in Fdss.otype.s('word') if Fdss.lex_etcbc.v(w) and Fdss.sp_etcbc.v(w) in {'adjv', 'subs'})
+    assert all(Fdss.lex_etcbc.v(w)[-1] == '/' for w in Fdss.otype.s('word') if Fdss.lex_etcbc.v(w) and Fdss.sp_etcbc.v(w) in {'adjv', 'subs', 'nmpr'})
     assert all(Fdss.lex_etcbc.v(w)[-1] == '[' for w in Fdss.otype.s('word') if Fdss.lex_etcbc.v(w) and Fdss.sp_etcbc.v(w) == 'verb')
 
         
@@ -60,3 +56,7 @@ def test_g_cons_is_equal_to_individual_cons():
     for glued, g_cons in zip(glued_cons_values, g_cons_values):
         if glued and g_cons:
             assert len(glued) == len(g_cons)
+
+
+if __name__ == '__main__':
+    test_lexemes_adjv_subs_verb_endings()
