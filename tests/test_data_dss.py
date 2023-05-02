@@ -16,6 +16,8 @@ api.makeAvailableIn(globals())
 
 Fdss, Ldss = api.F, api.L
 
+def test_word_count()
+    assert len([w for w in F.otype.s('word')]) > 500_000
 
 def test_lexemes_adjv_subs_verb_endings():
     assert all(Fdss.lex_etcbc.v(w)[-1] == '/' for w in Fdss.otype.s('word') if Fdss.lex_etcbc.v(w) and Fdss.sp_etcbc.v(w) in {'adjv', 'subs', 'nmpr'})
