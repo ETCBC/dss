@@ -16,7 +16,7 @@ api.makeAvailableIn(globals())
 
 Fdss, Ldss = api.F, api.L
 
-def test_word_count()
+def test_word_count():
     assert len([w for w in F.otype.s('word')]) > 500_000
 
 def test_lexemes_adjv_subs_verb_endings():
