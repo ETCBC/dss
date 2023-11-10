@@ -94,13 +94,13 @@ This version is available on GitHub but is still work in process, so it is not y
 an offical release. You can work with it by means of
 
 ``` sh
-text-fabric dss:hot --version=0.9
+text-fabric ETCBC/dss:hot --version=0.9
 ```
 
 and
 
 ``` python
-A = use("dss:hot", version="0.9")
+A = use("ETCBC/dss:hot", version="0.9")
 ```
 
 !!! caution "Rate limit"

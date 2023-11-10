@@ -54,7 +54,7 @@ def getWordSlots():
     """Get the slots (= signs) for each word in the original data.
     """
 
-    A = use("dss:clone", checkout="clone", version=SOURCE)
+    A = use("ETCBC/dss:clone", checkout="clone", version=SOURCE)
     api = A.api
     Eoslots = api.E.oslots
     Fotype = api.F.otype

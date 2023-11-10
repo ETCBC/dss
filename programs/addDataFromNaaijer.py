@@ -122,7 +122,7 @@ def readBoundaries():
     for (feat, featData) in data.items():
         print(f"property {feat} assigning values to {len(featData)} nodes")
 
-    A = use('dss:clone', checkout="clone", version='0.7')
+    A = use('ETCBC/dss:clone', checkout="clone", version='0.7')
     api = A.api
     E = api.E
     Eoslots = E.oslots.s

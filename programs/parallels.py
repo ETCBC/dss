@@ -316,7 +316,7 @@ TF.save(
 # We load the DSS corpus again, but now with the parallels module.
 
 # %%
-A = use("dss:clone", checkout="clone", hoist=globals())
+A = use("ETCBC/dss:clone", checkout="clone", hoist=globals())
 
 # %% [markdown]
 # Lo and behold: you see the parallels module listed with one feature: `sim`. It is in *italics*, which indicates
