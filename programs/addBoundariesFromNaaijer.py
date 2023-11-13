@@ -80,7 +80,7 @@ def readBoundaries():
     When we add clauses and phrases, we must map them to signs.
     That is why we make use of a mapping of words to the signs\they contain.
 
-    After reading the file, we compose a datastructure that can be fed into the
+    After reading the file, we compose a data structure that can be fed into the
     `modify` function of Text-Fabric.
     See https://annotation.github.io/text-fabric/compose/modify.html
     """

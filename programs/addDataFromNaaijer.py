@@ -73,7 +73,7 @@ def readFile(fileNum, data):
     The values are the columns to extract.
 
     The result is delivered as a dict whose keys are the column names
-    of the columns extracted, and whose values are dicts of TF nodes as keys
+    of the columns extracted, and whose values are dictionaries of TF nodes as keys
     and column values as values.
     """
 

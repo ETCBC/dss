@@ -3,8 +3,8 @@
 
 # The Dead Sea Scrolls (DSS)
 
-> The Dead Sea Scrolls (also Qumran Caves Scrolls) are ancient Jewish religious manuscripts
-found in the Qumran Caves in the Judaean Desert,
+> The Dead Sea Scrolls (also Qumran Caves Scrolls) are ancient Jewish religious
+manuscripts found in the Qumran Caves in the Judaean Desert,
 near Ein Feshkha on the northern shore of the Dead Sea.
 
 > [Wikipedia article on DSS](https://en.m.wikipedia.org/wiki/Dead_Sea_Scrolls).
@@ -21,23 +21,28 @@ a project that broke the lengthy publication monopoly held on the scrolls.
 
 The contents of this repo is created during the
 [*Creating Annotated Corpora of Classical Hebrew Texts (CACCHT) project*]()
-carried out by Jarod Jacobs, Martijn Naaijer, Dirk Roorda, Robert Rezetko, Oliver Glanz, and Wido van Peursen.
+carried out by Jarod Jacobs, Martijn Naaijer, Dirk Roorda, Robert Rezetko,
+Oliver Glanz, and Willem van Peursen.
 
-The DSS texts and morphological data connected with them were generously provided by Martin Abegg.
+The DSS texts and morphological data connected with them were generously
+provided by Martin Abegg.
 They consist of two foundational sets of data: transcriptions and morphological tagging.
 The transcriptions come from various sources,
-but primarily reflect what is found in the Discoveries in the Judean Desert series (Oxford:Clarendon Press, 1955-). 
+but primarily reflect what is found in the Discoveries in the Judean Desert
+series (Oxford:Clarendon Press, 1955-). 
 For full details see:
 
 [DSSB-Read me first](assets/readme-dssb.pdf) and
 [QUMRAN - Read me first](assets/readme-qumran.pdf).
 
-In addition to what is derived from the Abegg sources, Martijn Naaijer has provided several extras:
+In addition to what is derived from the Abegg sources, Martijn Naaijer has
+provided several extras:
 
 *   ETCBC morphological feature data 
 *   clause and phrase boundaries
 
-Both kinds of data are the result of creating models (*machine learning models*) from the BHSA and
+Both kinds of data are the result of creating models (*machine learning
+models*) from the BHSA and
 applying them to the DSS. This is experimental.
 
 ## Abegg sources
@@ -45,19 +50,22 @@ applying them to the DSS. This is experimental.
 Abegg started morphologically tagging the Qumran texts in the mid-90s
 with the assistance of several people that he mentions in the above read me first files.
 Over the following decades, Abegg completed full morphological tagging 
-of nearly every Hebrew and Aramaic scroll found in the Judaean Desert between 1947 and today.
+of nearly every Hebrew and Aramaic scroll found in the Judaean Desert between
+1947 and today.
 For more information about the development and particularities of Abegg’s data,
 we will once again point you to the DSSB and QUMRAN read me first files.
 
 The tagging scheme itself is also 
 [documented](assets/morph.pdf).
 
-After conversion to Text-Fabric, the these tags have been normalized into seperate features,
-such as *sp (part-of-speech)*, *ps (person)*, *nu (number)*, *gn (gender)*, etc.
+After conversion to Text-Fabric, the these tags have been normalized into
+separate features, such as
+*`sp` (part-of-speech)*, *`ps` (person)*, *`nu` (number)*, *`gn` (gender)*, etc.
 
-See [morhpological features in TF](transcription.md#morphological-features).
+See [morphological features in TF](transcription.md#morphological-features).
 
-Upon learning of the current project, Martin Abegg graciously gave permission to Jarod Jacobs to use his data and 
+Upon learning of the current project, Martin Abegg graciously gave permission
+to Jarod Jacobs to use his data and 
 to distribute the results under a CC-BY-NC license.
 
 The corpus consists of two files, one for the non-biblical scrolls and one for the 
@@ -69,7 +77,8 @@ who subsequently converted the source data files to Text-Fabric format
 by means of a special purpose Python program
 [tfFromAbegg.py](../programs/tfFromAbegg.py).
 
-This program performs numerous checks, and as a result several corrections have been made.
+This program performs numerous checks, and as a result several corrections have
+been made.
 
 The conversion logs have been
 [preserved](https://github.com/ETCBC/dss/tree/master/log).
@@ -82,16 +91,17 @@ They are plain text files that roughly correspond to the columns in the data fil
 A single `.tf` file is called a feature. It maps nodes to values.
 
 However, we have separated out all text-critical and morphological information into
-additional features, thereby greatly uncluttering the wealth of information in these files.
+additional features, thereby greatly uncluttering the wealth of information in
+these files.
 
 ## Naaijer extras
 
-As of data version 0.7, additional features have been added in, mostly adaptions of existing
-features to the ETCBC format, prepared by Martijn Naaijer.
+As of data version 0.7, additional features have been added in, mostly
+adaptions of existing features to the ETCBC format, prepared by Martijn Naaijer.
 
 Version 0.9 contains clause and phrase boundaries. 
 This version is available on GitHub but is still work in process, so it is not yet
-an offical release. You can work with it by means of
+an official release. You can work with it by means of
 
 ``` sh
 text-fabric ETCBC/dss:hot --version=0.9
