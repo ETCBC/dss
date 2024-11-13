@@ -636,5 +636,5 @@ The formats with `layout` result in pieces HTML with CSS-styles; the richness of
 in the plain representation, e.g. blurry characters when signs are damaged or uncertain.
 
 See also the 
-[showcases](https://nbviewer.jupyter.org/github/annotation/tutorials/blob/master/dss/display.ipynb).
+[showcases](https://nbviewer.jupyter.org/github/ETCBC/dss/blob/master/tutorial/display.ipynb).
 
