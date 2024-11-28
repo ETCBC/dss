@@ -5,14 +5,12 @@
 <img src="docs/images/dans.png" align="right" width="100"/>
 </div>
 
-# Dead Sea Scrolls
-
 [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/ETCBC/dss/)](https://archive.softwareheritage.org/browse/origin/https://github.com/ETCBC/dss/)
 [![DOI](https://zenodo.org/badge/168822533.svg)](https://zenodo.org/badge/latestdoi/168822533)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 
-# Dead Sea Scrolls in Text-Fabric
+# The Dead Sea Scrolls in Text-Fabric
 
 This repo contains transcriptions of biblical and non-biblical Dead Sea Scrolls with linguistic annotations.
 
@@ -27,19 +25,19 @@ You can run your own programs off-line, and publish your work in online notebook
 
 This dataset is developed as part of the CACCHT project, which is a collaboration of Martijn Naaijer, Christian Canu Højgaard, Martin Ehrensvärd, Robert Rezetko, Oliver Glanz, and Willem van Peursen. The goal of CACCHT is to prepare and publish ancient Semitic texts digitally, that can be used for research and education.
 
-# Software
+### Software
 
 The main processing tool is [Text-Fabric](https://github.com/annotation/text-fabric/).
 It is instrumental to turn the analysis of ancient data into computing narratives.
 
 The ecosystem is Python and Jupyter notebooks.
 
-# Getting started
+### Getting started
 
 Start with the
 [tutorial](https://nbviewer.jupyter.org/github/etcbc/dss/blob/master/tutorial/start.ipynb).
 
-# Authors
+### Authors
 
 *   [Jarod Jacobs](https://warnerpacific.academia.edu/JarodJacobs)
     at 
