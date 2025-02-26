@@ -17,7 +17,7 @@ This repo contains transcriptions of biblical and non-biblical Dead Sea Scrolls 
 See also
 [about](docs/about.md)
 and
-[feature documentation](docs/transcription.md).
+[feature documentation](docs/feature_documentation.md).
 
 You can run your own programs off-line, and publish your work in online notebooks.
 
