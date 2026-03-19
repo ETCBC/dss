@@ -60,17 +60,6 @@ and
 [Zenodo](https://zenodo.org).
 Click the badges to be taken to the archives. There you find ways to cite this work.
 
-### Status
-
-We will collect feedback for quite some time before we bump the version to 1.0 or higher.
-
-*   2019-06-11 Release 0.6, fixed the fact that the dotless shin was represented as sin, spotted by Oliver Glanz
-*   2019-05-20 Release 0.5,
-    new
-    [tests](https://nbviewer.jupyter.org/github/etcbc/dss/blob/master/programs/checks.ipynb).
-*   2019-05-09 Release 0.4.
-*   2019-05-08 Release 0.3.
-*   2019-05-05 Release 0.2.
 
 ## Related datasets
 ### BHSA Family
@@ -94,7 +83,7 @@ We will collect feedback for quite some time before we bump the version to 1.0 o
 * [sp](https://github.com/dt-ucph/sp) Samaritan Pentateuch
 * [extrabiblical](https://github.com/etcbc/extrabiblical)
   Extra-biblical writings from ETCBC-encoded texts
-* [peshitta](https://github.com/etcbc/peshitta)
-  Syriac translation of the Hebrew Bible
+* [syriac](https://github.com/etcbc/syriac)
+  The Peshitta and other Syriac literature
 * [syrnt](https://github.com/etcbc/syrnt)
   Syriac translation of the New Testament
