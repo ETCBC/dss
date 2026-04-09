@@ -9,7 +9,7 @@
 @source=Automatic generated morphological parsing corrected by Thijs Amersfoort
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2026-03-26T07:34:59+00:00Z
+@dateWritten=2026-04-09T12:09:59+00:00Z
 
 1606869	W
 <TH
@@ -267957,7 +267957,7 @@ B
 <JR/
 HJH[
 <FH[
-BHMH/
+B
 ML>KT/
 L
 KL/
@@ -268270,7 +268270,7 @@ NTN[
 MQWM/
 L
 QBR[
-BHMH/
+B
 1876101	W
 B
 KL/
@@ -268406,7 +268406,7 @@ VM>[
 W
 KL/
 >CR
-BHMH/
+B
 L
 KL/
 >JC/
@@ -268425,7 +268425,7 @@ KL/
 H
 MCQH/
 >CR
-BHMH/
+B
 1876273	W
 B
 JWM/
@@ -268913,7 +268913,7 @@ VM>H/
 1876796	W
 L>
 VM>[
-BHMH/
+B
 >CR
 >NJ
 NGD[

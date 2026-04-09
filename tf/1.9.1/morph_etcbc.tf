@@ -9,7 +9,7 @@
 @source=Automatic generated morphological parsing corrected by Thijs Amersfoort
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2026-03-26T07:35:00+00:00Z
+@dateWritten=2026-04-09T12:09:59+00:00Z
 
 1867153	KJ
 ]N](J&WR>[/
@@ -293,7 +293,7 @@ BR&WR[/:pa
 KSP/
 W
 &M&S=
-1867487	W
+1867487	W-&B=
 1867491	TMJD/
 M(N
 >T
@@ -2777,7 +2777,7 @@ L
 LWJ/JM
 1870380	X&WQ/
 <WLM/:a
-L
+L+HM&H
 W
 L
 ZR</+M&H
@@ -3038,7 +3038,7 @@ B-(H
 NR/WT
 L
 MNWR(H/WT
-1870667	B
+1870667	B+HM&H
 !J!](H]>(W&JR[W
 1870672	H
 DGL/JM
@@ -3905,7 +3905,7 @@ H
 QHL/:a
 W
 ]N]SLX[
-L
+L+HM&H
 1871630	W
 RXY[
 >T
@@ -3968,7 +3968,7 @@ BN/J
 JFR>L/
 W
 ]N]SLX[
-L
+L+HM&H
 1871703	>XR/
 !J!<FH[
 >T
@@ -4008,7 +4008,7 @@ H
 JWM/
 H
 ZH
-L
+L+HM&H
 L
 ZKRWN/:a
 1871747	W
@@ -4021,7 +4021,7 @@ KJ
 CBT/:c
 CBTWN/
 !J!HJH[
-L
+L+HM&H
 W
 K&WL/
 H
@@ -4551,7 +4551,7 @@ MTN(H/WT+M&H
 L+J
 L
 RYWN/:a
-L
+L+HM&H
 1872310	W
 RY(H&J[TJ+M
 W
@@ -4829,7 +4829,7 @@ C<R/JM
 >RB</
 >M(H=/WT
 W
-G&WBH=/(J+HM&H
+G&WBH=/(J+M&H
 CB</:a
 1872620	CL&WC/:a
 >M(H=/WT
@@ -4946,7 +4946,7 @@ H
 L&W>
 !J!HJH[
 N&WG<[/JM
-B
+B+HM&H
 K&WL/
 >DM/
 KJ
@@ -4983,7 +4983,7 @@ B(W>[/JM
 W
 H
 J&WY>[/JM
-M(N
+M(N+HM&H
 >L
 H
 XYR/:a
@@ -5002,7 +5002,7 @@ Q&WDC/
 >CR
 HMH
 !M!CRT[/JM:d
-B
+B+HM&H
 1872835	W
 <F(H&J[TM&H
 BJT/:a
@@ -5305,7 +5305,7 @@ BGD/J
 H
 Q&WDC/
 >CR
-B
+B+HM&H
 ML>[:d
 >T
 JD/J=+W
@@ -5501,7 +5501,7 @@ C<R/
 B-(H
 >M(H=/H
 W
-G&WBH=/+HM&H
+G&WBH=/+M&H
 CM&WNH/:a
 W
 <FR(J(M/JM
@@ -5681,7 +5681,7 @@ MQYW</WT
 H
 XYR/:a
 <F(H&J[T&H
-L
+L+HM&H
 MQWM/:a
 L
 KJR/JM
@@ -6061,7 +6061,7 @@ L-(H
 GR/JM
 >CR
 ]N](J&WLD[W
-L
+L+HM&H
 DWR/
 CLJCJ/
 1874044	R&WXB=/
@@ -6600,7 +6600,7 @@ L-(H
 GG/:a
 1874605	W
 NCK(H/WT:a
-BN(H&J[/WT
+BN&W(H&J[/(WT
 W
 XDR/J+HM&H
 W
@@ -7519,7 +7519,7 @@ B
 TWK/+M&H
 1875599	W
 <F(H&J[T&H
-L
+L+HM&H
 MQWM/:c
 JD/:a
 XWY/
@@ -7590,7 +7590,7 @@ H
 >(J&NC/JM
 >CR
 !J!HJH[
-L
+L+HM&H
 M(N
 QRH=/:c
 1875681	L
@@ -7674,7 +7674,7 @@ B
 <(JR/J+HM&H
 !J!HJ(H[W
 <&WF(H[/JM
-BHM(H/H
+B+HM&H
 ML>K(T/T+M&H
 L
 K&WL/
@@ -7712,7 +7712,7 @@ B
 !J!ZBX[W
 B
 MQDC/:a
-B
+B+HM&H
 !J!HJ(H[W
 !M!](H]B(W&J>[/JM
 >T
@@ -7870,7 +7870,7 @@ M(N
 RGL/J=+W
 L
 !!NT&WR[/:c
-B
+B+HM&H
 <L
 H
 >RY/:a
@@ -7979,7 +7979,7 @@ TWK/:c
 Q&WBR[/JM
 >T
 M(WT[/J+KM&H
-B
+B+HM&H
 1876092	BJN/:c
 >RB</
 <(JR/JM
@@ -7987,7 +7987,7 @@ B
 MQWM/:a
 L
 !!QB&WR[/:c
-BHM(H/H
+B+HM&H
 1876101	W
 B
 K&WL/
@@ -8123,7 +8123,7 @@ XRF/
 W
 K&WL/
 >CR
-BHM(H/H
+B+HM&H
 L
 K&WL/
 >JC/
@@ -8142,7 +8142,7 @@ K&WL/
 H
 M&WCQH/:a
 >CR
-BHM(H/H
+B+HM&H
 1876273	W
 B-(H
 JWM/
@@ -8212,7 +8212,7 @@ K&WL/
 KL(J/JM
 >CR
 JC/
-L
+L+HM&H
 VHR(H/H
 1876347	W
 BGD/JM
@@ -8503,7 +8503,7 @@ TWR(H/H
 H
 Z&W>T
 !T!<F(H[W
-L
+L+HM&H
 1876663	W
 K&WL/
 KLJ/
@@ -8550,14 +8550,14 @@ TNCM(T=/T:a
 >JC/
 >CR
 !J!(NG<[
-B
+B+HM&H
 B
 !!MWT[/+M&H
 1876716	W
 K&WL/
 H
 J&WY>[/
-M(N
+M(N+HM&H
 B
 !!MWT[/+M&H
 1876724	!J!HJ(H[W
@@ -8566,12 +8566,12 @@ L+KM&H
 1876728	W
 L&W>
 !T!](N]VM>[W
-B
+B+HM&H
 W
 K&WL/
 H
 N&WG<[/
-B
+B+HM&H
 B
 !!MWT[/+M&H
 !J!VM>[
@@ -8630,7 +8630,7 @@ VM&W>(H/WT
 1876796	W
 L&W>
 !J!](H(T]VM>[W
-BHM(H/H
+B+HM&H
 >CR
 >NJ
 !M!](H](NG&JD[/
@@ -8664,7 +8664,7 @@ B
 K&WL/
 >CR
 ]H]BDL[TJ
-L
+L+HM&H
 L
 VM>(H/H
 W
@@ -8779,11 +8779,11 @@ HMH
 Z&WBX[/JM
 W
 N&WV<[/JM
-L
+L+HM&H
 >CR(H/WT
 W
 !M!](H]Q(W&JM[/JM
-L
+L+HM&H
 MYB(H/WT:a
 W
 N&WTN[/JM
@@ -8794,7 +8794,7 @@ L
 <L&J+HM&H
 W
 B&WN(H[/JM
-L
+L+HM&H
 1876974	L&W>
 !T!(NV<[
 L+K&H
@@ -9441,7 +9441,7 @@ L&W>
 W
 L&W>
 !T!GR<[
-M(N
+M(N+HM&H
 1877654	>M
 !J!QWM[
 B
@@ -9899,7 +9899,7 @@ W
 >XR=/JM
 W
 ]HCT]XWH[
-L
+L+HM&H
 >W
 L-(H
 CMC/
@@ -10280,7 +10280,7 @@ K&WL/
 1878519	W
 BRR[
 L+W
-M(N
+M(N+HM&H
 >LP=/
 >LP=/
 MN
@@ -10379,7 +10379,7 @@ W
 L&W>
 !J!RWM[
 LBB/+W
-M(N
+M(N+HM&H
 W
 L&W>
 !J!<FH[
@@ -10389,7 +10389,7 @@ L
 K&WL/
 <Y(H/H
 XWY/
-M(N
+M(N+HM&H
 1878636	W
 >C(H/H
 L&W>
@@ -10837,7 +10837,7 @@ M<LL/J+HM&H
 1879110	W
 !>!](H]ST&JR[
 PN(H/J+(J
-M(N
+M(N+HM&H
 W
 HJ(H[W
 L
@@ -10907,7 +10907,7 @@ F(WF[TJ
 <L&J+HM&H
 W
 HJ(H&J[TJ
-L
+L+HM&H
 L
 >L&WH(J(M/JM
 W
@@ -11002,7 +11002,7 @@ L
 PN(H/J+W
 W
 MCL[/
-B
+B+HM&H
 K
 RYWN/+W
 W
@@ -11385,7 +11385,7 @@ L&W>
 DBR[W:d
 NBJ>/
 !>!](H]Q(W&JM[
-L
+L+HM&H
 M(N
 QRB/
 >X/J+HM&H
@@ -11536,7 +11536,7 @@ CN(J(M/J=
 H
 >(J&NC/JM
 >CR
-L
+L+HM&H
 H
 RJB/
 L
@@ -11644,7 +11644,7 @@ RB/
 M(N&M+K&H
 L&W>
 !T!JR>[
-M(N
+M(N+HM&H
 KJ
 >N&WKJ
 <M/+K&H
@@ -11947,7 +11947,7 @@ K&WHN/JM
 BN/J
 LWJ=/
 KJ
-B
+B+HM&H
 BXR[TJ
 L
 !!CRT[/:d
@@ -12024,7 +12024,7 @@ QRB/
 JFR>L/
 1880358	W
 !!K&WPR[:du
-L
+L+HM&H
 H
 DM/:a
 W
@@ -12344,7 +12344,7 @@ XMWR/+W
 ]N](NDX[/JM
 W
 ]HT]<LM[T&H
-M(N
+M(N+HM&H
 1880699	!!]H]C(WB[/:a
 !T!](H]C(W&JB[+M&H
 L
