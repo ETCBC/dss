@@ -9,7 +9,7 @@
 @source=Automatic generated morphological parsing corrected by Thijs Amersfoort
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2026-04-09T12:09:59+00:00Z
+@dateWritten=2026-04-13T06:48:24+00:00Z
 
 1606869	NA
 NA
