@@ -59,7 +59,7 @@ def test_g_cons_is_equal_to_individual_cons():
         if glued and g_cons:
             assert len(glued) == len(g_cons)
 
-def test_feautures_add_up_to_g_cons():
+def test_morphemes_add_up_to_g_cons():
 	for w in Fdss.otype.s('word'):
         g_cons = Fdss.g_cons.v(w)
         lex_etcbc = Fdss.lex_etcbc.v(w)
