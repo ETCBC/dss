@@ -9,7 +9,7 @@ latest_data_folder = sorted(os.listdir(os.path.join(ROOT_DIR, TF_FOLDER)))[-1]
 
 TF = Fabric(locations=os.path.join(ROOT_DIR, TF_FOLDER, latest_data_folder))
 api = TF.load('''
-    otype lex_etcbc sp_etcbc gn_etcbc vt_etcbc vs_etcbc lang_etcbc glyphe type g_cons
+    otype lex_etcbc sp_etcbc gn_etcbc vt_etcbc vs_etcbc lang_etcbc glyphe type g_cons g_lex_etcbc g_nme_etcbc g_prs_etcbc g_vbe_etcbc g_pfm_etcbc g_vbs_etcbc uvf_etcbc morph_etcbc
 ''')
 api.loadLog()
 api.makeAvailableIn(globals())
@@ -17,7 +17,7 @@ api.makeAvailableIn(globals())
 Fdss, Ldss = api.F, api.L
 
 def test_word_count():
-    assert len([w for w in F.otype.s('word')]) > 500_000
+    assert len([w for w in Fdss.otype.s('word')]) > 500_000
 
 def test_lexemes_adjv_subs_verb_endings():
     assert all(Fdss.lex_etcbc.v(w)[-1] == '/' for w in Fdss.otype.s('word') if Fdss.lex_etcbc.v(w) and Fdss.sp_etcbc.v(w) in {'adjv', 'subs', 'nmpr'})
@@ -59,6 +59,32 @@ def test_g_cons_is_equal_to_individual_cons():
         if glued and g_cons:
             assert len(glued) == len(g_cons)
 
+def test_morphemes_add_up_to_g_cons():
+    for w in Fdss.otype.s('word'):
+        g_cons = Fdss.g_cons.v(w)
+        lex_etcbc = Fdss.lex_etcbc.v(w)
+        morph_etcbc = Fdss.morph_etcbc.v(w) or ''
+
+        if not g_cons:
+            continue
+        if lex_etcbc == '=':
+            continue
+        if '-' in morph_etcbc and '(H' not in morph_etcbc: #skipt alleen de genoemde W-&B=
+            continue
+
+        reconstructed = (
+            (Fdss.g_pfm_etcbc.v(w) or '') +
+            (Fdss.g_vbs_etcbc.v(w) or '') +
+            (Fdss.g_lex_etcbc.v(w) or '') +
+            (Fdss.uvf_etcbc.v(w)   or '') +
+            (Fdss.g_nme_etcbc.v(w) or '') +
+            (Fdss.g_vbe_etcbc.v(w) or '') +
+            (Fdss.g_prs_etcbc.v(w) or '')
+        )
+
+        assert reconstructed == g_cons, (
+            f"Word {w}: reconstructed '{reconstructed}' != g_cons '{g_cons}'"
+        )
 
 if __name__ == '__main__':
     test_lexemes_adjv_subs_verb_endings()
