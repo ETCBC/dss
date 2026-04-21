@@ -17,7 +17,7 @@ api.makeAvailableIn(globals())
 Fdss, Ldss = api.F, api.L
 
 def test_word_count():
-    assert len([w for w in F.otype.s('word')]) > 500_000
+    assert len([w for w in Fdss.otype.s('word')]) > 500_000
 
 def test_lexemes_adjv_subs_verb_endings():
     assert all(Fdss.lex_etcbc.v(w)[-1] == '/' for w in Fdss.otype.s('word') if Fdss.lex_etcbc.v(w) and Fdss.sp_etcbc.v(w) in {'adjv', 'subs', 'nmpr'})
@@ -60,7 +60,7 @@ def test_g_cons_is_equal_to_individual_cons():
             assert len(glued) == len(g_cons)
 
 def test_morphemes_add_up_to_g_cons():
-	for w in Fdss.otype.s('word'):
+    for w in Fdss.otype.s('word'):
         g_cons = Fdss.g_cons.v(w)
         lex_etcbc = Fdss.lex_etcbc.v(w)
         morph_etcbc = Fdss.morph_etcbc.v(w) or ''
