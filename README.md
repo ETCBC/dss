@@ -60,6 +60,9 @@ and
 [Zenodo](https://zenodo.org).
 Click the badges to be taken to the archives. There you find ways to cite this work.
 
+## License
+
+This dataset is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
 
 ## Related datasets
 ### BHSA Family
