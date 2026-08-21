@@ -1,8 +1,5 @@
 <div>
-<img src="docs/images/dss-logo.png" align="left" width="300"/>
-<img src="docs/images/etcbc.png" align="right" width="200"/>
-<img src="docs/images/tf.png" align="right" width="200"/>
-<img src="docs/images/dans.png" align="right" width="100"/>
+<img src="images/caccht-logo.png" alt="CACCHT logo" height="200">
 </div>
 
 [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/ETCBC/dss/)](https://archive.softwareheritage.org/browse/origin/https://github.com/ETCBC/dss/)
