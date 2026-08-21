@@ -1,7 +1,7 @@
 <div>
 <img src="images/caccht-logo.png" alt="CACCHT logo" height="200">
-<img src="docs/images/etcbc.png" align="right" width="200"/>
-<img src="docs/images/tf.png" align="right" width="200"/>
+<img src="docs/images/etcbc.png" align="left" width="200"/>
+#<img src="docs/images/tf.png" align="right" width="200"/>
 </div>
 
 [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/ETCBC/dss/)](https://archive.softwareheritage.org/browse/origin/https://github.com/ETCBC/dss/)
