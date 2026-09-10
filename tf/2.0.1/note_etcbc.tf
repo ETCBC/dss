@@ -9,7 +9,7 @@
 @source=Automatic generated morphological parsing corrected by Thijs Amersfoort
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2026-09-10T05:34:34+00:00Z
+@dateWritten=2026-09-10T19:16:58+00:00Z
 
 1867215	Is de suffix zo goed?
 1867262	Abegg parses as qal, Deut 7:26 has a piel

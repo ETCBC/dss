@@ -9,7 +9,7 @@
 @source=Automatic generated morphological parsing corrected by Thijs Amersfoort
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2026-09-10T05:34:33+00:00Z
+@dateWritten=2026-09-10T19:16:57+00:00Z
 
 1867153	KJ
 NWR>
