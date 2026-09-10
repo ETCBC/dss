@@ -9,7 +9,7 @@
 @source=Automatic generated morphological parsing corrected by Thijs Amersfoort
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2026-09-07T12:45:27+00:00Z
+@dateWritten=2026-09-10T05:34:34+00:00Z
 
 1606869	W
 <TH
@@ -288582,7 +288582,7 @@ K
 KPJR/
 NHM[
 W
->XZ/
+>XZ[
 VRP/
 W
 PLV[
@@ -288604,7 +288604,7 @@ L
 >RY/
 W
 HNH
-XCK[
+XCK/
 YR/
 W
 >WR/
@@ -289820,7 +289820,7 @@ XLQ[
 CLL/
 1898090	KJ
 >T
-<L
+<L/
 SBL==/
 W
 >T
@@ -289831,7 +289831,7 @@ H
 NGF[
 B
 W
-H
+XTT[
 K
 JWM/
 MDJN=/
@@ -291004,7 +291004,7 @@ L
 CB</
 NXL/
 W
-H
+DRK[
 B
 N<L/
 1899347	W
@@ -291630,7 +291630,7 @@ NPL[
 MN
 H
 CMJM/
-H
+HJLL/
 BN/
 CXR/
 GD<[
@@ -292881,7 +292881,7 @@ PNH/
 MJM/
 >ML[
 1901334	BWC[
-<BD/
+<BD[
 PCT/
 FRJQ/
 W
@@ -294164,7 +294164,7 @@ JSD[
 L
 YJ/
 QWM[
-B
+BXWN=/
 <RR[
 >RMWN/
 FJM[
@@ -296118,7 +296118,7 @@ RXWQ/
 MN
 W
 HJH[
-JR>[
+JR>H/
 >T
 K
 MYWH/
@@ -298157,7 +298157,7 @@ GMWL/
 HW>
 BW>[
 W
-JC</
+JC<[
 1906930	>Z
 PQX[
 <JN/
@@ -299073,7 +299073,7 @@ MLK/
 >RPD/
 W
 MLK/
-L
+L<JR/
 W
 SPRWJM=/
 W
@@ -299358,7 +299358,7 @@ BW>[
 JD<[
 W
 >T
-H
+RGZ[
 >L
 1908188	W
 C>NN/
@@ -300325,7 +300325,7 @@ NHL[
 MDD[
 B
 C<L/
-MJ
+MJM/
 JM/
 W
 CMJM/
@@ -301014,7 +301014,7 @@ JXDW
 MN
 >JN/
 W
-P<L[
+P<L/
 TW<BH/
 BXR[
 B
@@ -302600,7 +302600,7 @@ JYR[
 MH
 <FH[
 W
-P<L[
+P<L/
 >JN/
 >DM/
 JD/
@@ -303244,7 +303244,7 @@ RB=/
 KCP/
 B
 <YMH/
-XBR=/
+XBR[
 M>D/
 1912303	W
 BVX[
@@ -303294,7 +303294,7 @@ JD<[
 <MD[
 N>
 B
-XBR/
+XBR[
 W
 B
 RB=/
@@ -304091,7 +304091,7 @@ GLMWD/
 W
 GLH[
 W
-SWR[
+SWR/
 >LH
 MJ
 GDL[
@@ -305538,7 +305538,7 @@ CLWM/
 L>
 MWV[
 >MR[
-MN
+RXM[
 JHWH/
 1914723	<NJ/
 SXR[
@@ -308594,7 +308594,7 @@ QRB[
 >L=
 NG<[
 B
-QDC/
+QDC[
 >LH
 <CN/
 B
@@ -308709,7 +308709,7 @@ CKX[
 HR/
 QDC/
 H
-<RK/
+<RK[
 L
 GD===/
 CLXN/

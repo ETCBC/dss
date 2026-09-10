@@ -9,7 +9,7 @@
 @source=Automatic generated morphological parsing corrected by Thijs Amersfoort
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2026-09-07T12:45:27+00:00Z
+@dateWritten=2026-09-10T05:34:35+00:00Z
 
 1606869	
 

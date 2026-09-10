@@ -1,15 +1,15 @@
 @node
 @acronym=dss-additions
-@convertedBy=Martijn Naaijer and Dirk Roorda
+@convertedBy=Martijn Naaijer, Dirk Roorda and Thijs Amersfoort
 @createdBy=Martin G. Abegg, Martijn Naaijer, ETCBC
-@createdDate=2020
-@description=Dead Sea Scrolls: additions based on BHSA and machine learning
+@createdDate=2026
+@description=The part of speech (morphology tag)
 @license=Creative Commons Attribution-NonCommercial 4.0 International License
 @licenseUrl=http://creativecommons.org/licenses/by-nc/4.0/
-@source=Martijn Naaijer's data files, personal communication
+@source=Automatic generated morphological parsing corrected by Thijs Amersfoort
 @valueType=str
 @writtenBy=Text-Fabric
-@dateWritten=2023-06-10T10:52:50Z
+@dateWritten=2026-09-10T05:34:34+00:00Z
 
 1606869	
 
@@ -288021,8 +288021,7 @@ nmpr
 nmpr
 subs
 nmpr
-
-verb
+1894880	verb
 subs
 conj
 verb
@@ -288039,8 +288038,7 @@ conj
 prps
 verb
 prep
-
-verb
+1894898	verb
 subs
 verb
 conj
@@ -288054,8 +288052,7 @@ conj
 subs
 nega
 verb
-
-intj
+1894913	intj
 subs
 verb
 subs
@@ -288074,8 +288071,7 @@ adjv
 nmpr
 verb
 subs
-
-prep
+1894933	prep
 prin
 verb
 subs
@@ -288089,8 +288085,7 @@ conj
 subs
 subs
 adjv
-
-prep
+1894948	prep
 subs
 subs
 conj
@@ -288114,9 +288109,8 @@ conj
 nega
 verb
 prep
-subs
-
 subs
+1894974	subs
 subs
 subs
 verb
@@ -288133,8 +288127,7 @@ prep
 prep
 subs
 adjv
-
-conj
+1894992	conj
 verb
 subs
 nmpr
@@ -288150,8 +288143,7 @@ subs
 prep
 subs
 verb
-
-conj
+1895009	conj
 nmpr
 subs
 verb
@@ -288165,8 +288157,7 @@ verb
 prep
 nmpr
 verb
-
-verb
+1895024	verb
 subs
 nmpr
 subs
@@ -288177,8 +288168,7 @@ subs
 subs
 subs
 nmpr
-
-inrg
+1895036	inrg
 prep
 subs
 subs
@@ -288199,8 +288189,7 @@ conj
 subs
 nega
 verb
-
-conj
+1895058	conj
 verb
 prep
 verb
@@ -288213,8 +288202,7 @@ subs
 prep
 verb
 subs
-
-nega
+1895072	nega
 verb
 prep
 verb
@@ -288234,8 +288222,7 @@ verb
 subs
 conj
 subs
-
-subs
+1895093	subs
 conj
 subs
 verb
@@ -288246,8 +288233,7 @@ prep
 subs
 verb
 verb
-
-conj
+1895105	conj
 prep
 verb
 subs
@@ -288266,8 +288252,7 @@ verb
 subs
 prep
 subs
-
-verb
+1895125	verb
 conj
 verb
 conj
@@ -288277,10 +288262,9 @@ subs
 prep
 subs
 subs
-verb
 verb
-
 verb
+1895138	verb
 verb
 verb
 subs
@@ -288290,8 +288274,7 @@ verb
 subs
 verb
 subs
-
-verb
+1895149	verb
 intj
 conj
 verb
@@ -288312,8 +288295,7 @@ subs
 prep
 subs
 verb
-
-conj
+1895171	conj
 verb
 conj
 verb
@@ -288321,9 +288303,8 @@ subs
 art
 subs
 verb
-
+1895180	conj
 conj
-conj
 verb
 conj
 verb
@@ -288334,14 +288315,13 @@ conj
 subs
 nmpr
 verb
-
-inrg
+1895193	inrg
 verb
 prep
 verb
 subs
 verb
-verb
+adjv
 subs
 subs
 verb
@@ -288349,17 +288329,15 @@ prep
 conj
 advb
 verb
-
-subs
+1895208	subs
 verb
 prep
 subs
 subs
 verb
 prep
-subs
-
 subs
+1895217	subs
 verb
 conj
 subs
@@ -288378,9 +288356,8 @@ subs
 nega
 verb
 prep
-
+1895237	advb
 advb
-advb
 subs
 art
 subs
@@ -288397,8 +288374,7 @@ verb
 prep
 art
 verb
-
-conj
+1895256	conj
 verb
 subs
 prep
@@ -288411,8 +288387,7 @@ conj
 verb
 subs
 subs
-
-conj
+1895270	conj
 verb
 verb
 prep
@@ -288432,8 +288407,7 @@ art
 subs
 subs
 verb
-
-nmpr
+1895291	nmpr
 prep
 subs
 verb
@@ -288441,8 +288415,7 @@ conj
 verb
 prep
 subs
-
-conj
+1895300	conj
 subs
 verb
 conj
@@ -288452,8 +288425,7 @@ conj
 verb
 nmpr
 verb
-
-conj
+1895311	conj
 verb
 prep
 subs
@@ -288466,8 +288438,7 @@ art
 subs
 conj
 verb
-
-conj
+1895325	conj
 verb
 prep
 subs
@@ -288480,8 +288451,7 @@ conj
 subs
 subs
 prep
-
-conj
+1895339	conj
 verb
 art
 adjv
@@ -288498,8 +288468,7 @@ advb
 conj
 subs
 verb
-
-art
+1895357	art
 subs
 conj
 verb
@@ -288510,8 +288479,7 @@ prep
 nmpr
 conj
 nmpr
-
-conj
+1895369	conj
 verb
 prep
 subs
@@ -288535,8 +288503,7 @@ prep
 subs
 art
 subs
-
-conj
+1895394	conj
 verb
 subs
 adjv
@@ -288567,15 +288534,13 @@ subs
 nmpr
 prep
 nmpr
-
-conj
+1895426	conj
 verb
 subs
 art
 subs
 conj
-conj
-conj
+1895433	conj
 verb
 subs
 prep
@@ -288603,8 +288568,7 @@ nega
 verb
 subs
 subs
-
-subs
+1895462	subs
 nmpr
 verb
 conj
@@ -288612,8 +288576,7 @@ verb
 prep
 subs
 nmpr
-
-conj
+1895471	conj
 verb
 subs
 subs
@@ -288631,8 +288594,7 @@ prep
 subs
 adjv
 verb
-
-conj
+1895490	conj
 verb
 subs
 subs
@@ -288652,8 +288614,7 @@ subs
 subs
 prep
 subs
-
-conj
+1895511	conj
 verb
 subs
 subs
@@ -288666,15 +288627,13 @@ conj
 prep
 verb
 subs
-
-conj
+1895525	conj
 verb
 subs
 conj
 verb
 subs
-
-conj
+1895532	conj
 subs
 subs
 subs
@@ -288692,8 +288651,7 @@ prep
 subs
 art
 prps
-
-conj
+1895551	conj
 subs
 prep
 nmpr
@@ -288707,8 +288665,7 @@ conj
 verb
 conj
 adjv
-
-conj
+1895566	conj
 prep
 subs
 subs
@@ -288725,8 +288682,7 @@ subs
 subs
 art
 nmpr
-
-conj
+1895584	conj
 prep
 subs
 art
@@ -288740,8 +288696,7 @@ art
 subs
 art
 verb
-
-conj
+1895599	conj
 prep
 subs
 subs
@@ -288751,8 +288706,7 @@ prep
 subs
 subs
 adjv
-
-conj
+1895610	conj
 prep
 subs
 subs
@@ -288763,8 +288717,7 @@ subs
 subs
 art
 subs
-
-conj
+1895622	conj
 verb
 subs
 art
@@ -288782,14 +288735,12 @@ prep
 subs
 art
 prps
-
-conj
+1895641	conj
 art
 subs
 adjv
 verb
-
-conj
+1895647	conj
 verb
 prep
 subs
@@ -288812,8 +288763,7 @@ prep
 verb
 art
 subs
-
-prep
+1895671	prep
 subs
 art
 prps
@@ -288833,12 +288783,10 @@ subs
 prep
 verb
 prep
-
-conj
+1895692	conj
 prep
 subs
-
-prep
+1895696	prep
 verb
 prep
 subs
@@ -288863,8 +288811,7 @@ prep
 verb
 art
 subs
-
-verb
+1895722	verb
 prep
 prep
 art
@@ -288878,8 +288825,7 @@ prep
 prin
 verb
 prps
-
-conj
+1895737	conj
 intj
 art
 subs
@@ -288898,11 +288844,10 @@ subs
 subs
 subs
 conj
-subs
 subs
 subs
-
 subs
+1895760	subs
 conj
 subs
 subs
@@ -288913,9 +288858,8 @@ conj
 verb
 conj
 adjv
-
+1895772	subs
 subs
-subs
 conj
 verb
 subs
@@ -288927,8 +288871,7 @@ subs
 conj
 verb
 subs
-
-conj
+1895786	conj
 verb
 subs
 subs
@@ -288936,8 +288879,7 @@ conj
 subs
 verb
 prep
-
-conj
+1895795	conj
 verb
 art
 subs
@@ -288958,8 +288900,7 @@ art
 verb
 prep
 verb
-
-conj
+1895817	conj
 verb
 subs
 prep
@@ -288978,8 +288919,7 @@ art
 prde
 subs
 subs
-
-conj
+1895837	conj
 verb
 prep
 subs
@@ -289002,8 +288942,7 @@ nega
 verb
 subs
 subs
-
-conj
+1895861	conj
 verb
 nmpr
 conj
@@ -289019,9 +288958,8 @@ prep
 verb
 subs
 subs
-
+1895878	subs
 subs
-subs
 verb
 prep
 conj
@@ -289039,8 +288977,7 @@ conj
 verb
 prep
 subs
-
-verb
+1895898	verb
 prep
 adjv
 conj
@@ -289049,8 +288986,7 @@ conj
 subs
 subs
 verb
-
-intj
+1895908	intj
 prep
 adjv
 verb
@@ -289059,8 +288995,7 @@ subs
 subs
 verb
 prep
-
-subs
+1895918	subs
 verb
 verb
 conj
@@ -289074,8 +289009,7 @@ conj
 subs
 subs
 verb
-
-verb
+1895933	verb
 prep
 verb
 nmpr
@@ -289083,8 +289017,7 @@ verb
 prep
 verb
 subs
-
-nmpr
+1895942	nmpr
 prep
 subs
 verb
@@ -289103,8 +289036,7 @@ art
 adjv
 prep
 subs
-
-prin
+1895962	prin
 prep
 verb
 subs
@@ -289116,8 +289048,7 @@ subs
 nmpr
 nmpr
 subs
-
-conj
+1895975	conj
 verb
 nmpr
 subs
@@ -289140,8 +289071,7 @@ conj
 prep
 subs
 verb
-
-conj
+1895999	conj
 verb
 nmpr
 nmpr
@@ -289152,8 +289082,7 @@ conj
 nmpr
 subs
 verb
-
-prep
+1896011	prep
 subs
 art
 prps
@@ -289170,8 +289099,7 @@ subs
 conj
 art
 subs
-
-conj
+1896029	conj
 art
 subs
 conj
@@ -289180,8 +289108,7 @@ subs
 conj
 art
 subs
-
-conj
+1896039	conj
 art
 subs
 conj
@@ -289196,16 +289123,14 @@ subs
 conj
 art
 subs
-
-conj
+1896055	conj
 art
 subs
 conj
 subs
 art
 subs
-
-conj
+1896063	conj
 art
 subs
 conj
@@ -289214,8 +289139,7 @@ subs
 conj
 art
 subs
-
-conj
+1896073	conj
 art
 subs
 conj
@@ -289227,8 +289151,7 @@ subs
 conj
 art
 subs
-
-conj
+1896086	conj
 verb
 subs
 art
@@ -289252,8 +289175,7 @@ conj
 subs
 subs
 subs
-
-subs
+1896111	subs
 prep
 subs
 verb
@@ -289261,8 +289183,7 @@ conj
 subs
 prep
 subs
-
-conj
+1896120	conj
 verb
 conj
 verb
@@ -289272,8 +289193,7 @@ verb
 prep
 subs
 verb
-
-conj
+1896131	conj
 verb
 subs
 subs
@@ -289297,8 +289217,7 @@ subs
 prep
 verb
 subs
-
-prep
+1896156	prep
 subs
 art
 prps
@@ -289324,8 +289243,7 @@ subs
 nmpr
 conj
 nmpr
-
-conj
+1896183	conj
 verb
 art
 verb
@@ -289346,8 +289264,7 @@ prep
 subs
 prep
 nmpr
-
-conj
+1896205	conj
 verb
 nmpr
 prep
@@ -289367,9 +289284,8 @@ subs
 conj
 prep
 subs
-verb
-
-conj
+subs
+1896227	conj
 verb
 nmpr
 prep
@@ -289382,8 +289298,7 @@ prep
 subs
 subs
 advb
-
-prep
+1896241	prep
 subs
 conj
 prep
@@ -289396,8 +289311,7 @@ subs
 conj
 prep
 subs
-
-verb
+1896255	verb
 prep
 adjv
 subs
@@ -289412,8 +289326,7 @@ prep
 subs
 subs
 subs
-
-conj
+1896271	conj
 verb
 conj
 verb
@@ -289438,8 +289351,7 @@ subs
 conj
 verb
 subs
-
-conj
+1896297	conj
 advb
 verb
 nmpr
@@ -289452,8 +289364,7 @@ subs
 conj
 subs
 subs
-
-prin
+1896311	prin
 prep
 verb
 subs
@@ -289471,8 +289382,7 @@ subs
 conj
 verb
 subs
-
-conj
+1896330	conj
 advb
 verb
 intj
@@ -289494,8 +289404,7 @@ conj
 verb
 prep
 subs
-
-conj
+1896353	conj
 verb
 subs
 conj
@@ -289518,8 +289427,7 @@ prep
 verb
 prep
 subs
-
-conj
+1896377	conj
 subs
 nmpr
 subs
@@ -289543,8 +289451,7 @@ subs
 conj
 intj
 subs
-
-intj
+1896402	intj
 verb
 subs
 subs
@@ -289563,8 +289470,7 @@ prep
 subs
 art
 subs
-
-prep
+1896422	prep
 subs
 nmpr
 subs
@@ -289581,8 +289487,7 @@ adjv
 prep
 subs
 verb
-
-conj
+1896440	conj
 subs
 subs
 subs
@@ -289594,8 +289499,7 @@ subs
 subs
 verb
 subs
-
-intj
+1896453	intj
 verb
 prep
 subs
@@ -289606,8 +289510,7 @@ prep
 subs
 subs
 verb
-
-conj
+1896465	conj
 verb
 subs
 conj
@@ -289628,9 +289531,8 @@ subs
 subs
 nega
 verb
-
+1896487	advb
 advb
-advb
 verb
 subs
 prep
@@ -289644,8 +289546,7 @@ conj
 subs
 adjv
 subs
-
-advb
+1896503	advb
 advb
 verb
 subs
@@ -289666,8 +289567,7 @@ subs
 conj
 adjv
 prep
-
-verb
+1896525	verb
 subs
 conj
 verb
@@ -289676,8 +289576,7 @@ conj
 subs
 adjv
 verb
-
-conj
+1896535	conj
 verb
 nmpr
 subs
@@ -289691,8 +289590,7 @@ adjv
 verb
 prep
 subs
-
-conj
+1896550	conj
 verb
 verb
 prep
@@ -289702,8 +289600,7 @@ subs
 subs
 verb
 verb
-
-intj
+1896561	intj
 verb
 art
 subs
@@ -289717,8 +289614,7 @@ subs
 art
 subs
 subs
-
-art
+1896576	art
 verb
 verb
 verb
@@ -289734,8 +289630,7 @@ adjv
 nmpr
 conj
 verb
-
-intj
+1896593	intj
 art
 verb
 prep
@@ -289761,8 +289656,7 @@ conj
 adjv
 prep
 adjv
-
-intj
+1896620	intj
 adjv
 prep
 subs
@@ -289770,8 +289664,7 @@ conj
 subs
 subs
 verb
-
-intj
+1896629	intj
 subs
 prep
 verb
@@ -289782,8 +289675,7 @@ subs
 prep
 verb
 subs
-
-verb
+1896641	verb
 adjv
 subs
 subs
@@ -289792,8 +289684,7 @@ subs
 adjv
 verb
 prep
-
-advb
+1896651	advb
 advb
 prep
 verb
@@ -289825,8 +289716,7 @@ subs
 adjv
 nmpr
 verb
-
-prep
+1896684	prep
 advb
 verb
 subs
@@ -289861,8 +289751,7 @@ conj
 subs
 subs
 verb
-
-conj
+1896720	conj
 verb
 subs
 prep
@@ -289881,8 +289770,7 @@ intj
 subs
 adjv
 verb
-
-subs
+1896740	subs
 adjv
 conj
 subs
@@ -289903,8 +289791,7 @@ nega
 verb
 subs
 subs
-
-conj
+1896762	conj
 subs
 verb
 conj
@@ -289920,8 +289807,7 @@ conj
 subs
 prep
 subs
-
-subs
+1896779	subs
 prep
 prep
 subs
@@ -289937,9 +289823,8 @@ conj
 verb
 conj
 subs
-verb
-
 verb
+1896797	verb
 prep
 prep
 subs
@@ -289961,8 +289846,7 @@ subs
 verb
 prep
 subs
-
-prep
+1896820	prep
 subs
 subs
 art
@@ -289982,9 +289866,8 @@ subs
 verb
 prep
 art
-subs
-
 subs
+1896842	subs
 verb
 prep
 subs
@@ -290006,8 +289889,7 @@ conj
 prep
 subs
 verb
-
-conj
+1896865	conj
 verb
 prde
 prep
@@ -290021,8 +289903,7 @@ subs
 art
 subs
 subs
-
-conj
+1896880	conj
 verb
 subs
 art
@@ -290036,8 +289917,7 @@ art
 subs
 verb
 subs
-
-conj
+1896895	conj
 verb
 intj
 prep
@@ -290064,8 +289944,7 @@ nmpr
 subs
 verb
 subs
-
-conj
+1896923	conj
 verb
 prep
 subs
@@ -290083,8 +289962,7 @@ prep
 prep
 art
 subs
-
-conj
+1896942	conj
 verb
 prep
 subs
@@ -290101,8 +289979,7 @@ subs
 conj
 subs
 verb
-
-conj
+1896960	conj
 verb
 prep
 subs
@@ -290119,8 +289996,7 @@ conj
 verb
 intj
 verb
-
-conj
+1896978	conj
 verb
 verb
 conj
@@ -290138,9 +290014,8 @@ verb
 verb
 conj
 nega
-verb
-
 verb
+1896998	verb
 subs
 art
 subs
@@ -290168,8 +290043,7 @@ verb
 conj
 verb
 prep
-
-conj
+1897027	conj
 verb
 prep
 inrg
@@ -290194,8 +290068,7 @@ art
 subs
 verb
 subs
-
-conj
+1897053	conj
 verb
 nmpr
 prep
@@ -290208,8 +290081,7 @@ prep
 subs
 art
 subs
-
-conj
+1897067	conj
 subs
 prep
 adjv
@@ -290232,8 +290104,7 @@ subs
 art
 subs
 subs
-
-conj
+1897091	conj
 verb
 prep
 subs
@@ -290264,8 +290135,7 @@ verb
 prep
 verb
 prep
-
-conj
+1897123	conj
 verb
 prep
 subs
@@ -290289,8 +290159,7 @@ prep
 subs
 art
 subs
-
-conj
+1897148	conj
 verb
 nmpr
 prep
@@ -290316,8 +290185,7 @@ prep
 subs
 subs
 verb
-
-conj
+1897175	conj
 verb
 prep
 verb
@@ -290349,8 +290217,7 @@ nmpr
 conj
 subs
 nmpr
-
-subs
+1897208	subs
 conj
 verb
 prep
@@ -290362,8 +290229,7 @@ subs
 nmpr
 prep
 verb
-
-verb
+1897221	verb
 prep
 nmpr
 conj
@@ -290379,8 +290245,7 @@ subs
 prep
 subs
 nmpr
-
-advb
+1897238	advb
 verb
 nmpr
 nmpr
@@ -290389,8 +290254,7 @@ verb
 conj
 nega
 verb
-
-conj
+1897248	conj
 subs
 nmpr
 nmpr
@@ -290409,8 +290273,7 @@ verb
 nmpr
 prep
 subs
-
-conj
+1897268	conj
 subs
 nmpr
 nmpr
@@ -290425,17 +290288,15 @@ verb
 conj
 nega
 verb
-
-conj
+1897284	conj
 verb
 nmpr
 verb
 prep
 nmpr
 prep
-verb
-
 verb
+1897293	verb
 prep
 subs
 prep
@@ -290448,8 +290309,7 @@ conj
 verb
 prep
 subs
-
-conj
+1897307	conj
 verb
 nmpr
 nega
@@ -290459,8 +290319,7 @@ nega
 verb
 prep
 nmpr
-
-conj
+1897318	conj
 verb
 verb
 intj
@@ -290476,9 +290335,8 @@ verb
 advb
 prep
 subs
-
+1897335	advb
 advb
-advb
 verb
 nmpr
 prps
@@ -290496,8 +290354,7 @@ verb
 subs
 nmpr
 nmpr
-
-subs
+1897355	subs
 conj
 subs
 verb
@@ -290510,8 +290367,7 @@ conj
 verb
 prep
 adjv
-
-conj
+1897369	conj
 prep
 subs
 verb
@@ -290534,8 +290390,7 @@ prep
 subs
 subs
 subs
-
-conj
+1897393	conj
 verb
 nmpr
 prep
@@ -290561,8 +290416,7 @@ nmpr
 prep
 subs
 nmpr
-
-conj
+1897420	conj
 verb
 prep
 subs
@@ -290584,8 +290438,7 @@ conj
 prep
 subs
 nmpr
-
-conj
+1897443	conj
 verb
 conj
 verb
@@ -290609,8 +290462,7 @@ prep
 subs
 art
 subs
-
-prep
+1897468	prep
 subs
 art
 prps
@@ -290639,8 +290491,7 @@ prep
 art
 subs
 verb
-
-conj
+1897498	conj
 verb
 prep
 subs
@@ -290653,8 +290504,7 @@ subs
 conj
 subs
 subs
-
-conj
+1897512	conj
 verb
 prep
 subs
@@ -290674,8 +290524,7 @@ prep
 subs
 art
 subs
-
-conj
+1897533	conj
 verb
 prep
 subs
@@ -290698,8 +290547,7 @@ conj
 prep
 subs
 verb
-
-prep
+1897557	prep
 subs
 conj
 prep
@@ -290714,8 +290562,7 @@ verb
 subs
 art
 subs
-
-conj
+1897573	conj
 subs
 art
 subs
@@ -290739,8 +290586,7 @@ conj
 prep
 subs
 subs
-
-conj
+1897598	conj
 verb
 nmpr
 prep
@@ -290759,8 +290605,7 @@ nmpr
 nmpr
 nmpr
 nmpr
-
-conj
+1897618	conj
 verb
 prep
 subs
@@ -290774,8 +290619,7 @@ prep
 nmpr
 subs
 nmpr
-
-conj
+1897633	conj
 verb
 prep
 art
@@ -290795,8 +290639,7 @@ nmpr
 nmpr
 nmpr
 nmpr
-
-conj
+1897654	conj
 prep
 subs
 verb
@@ -290819,8 +290662,7 @@ prep
 subs
 subs
 nmpr
-
-conj
+1897678	conj
 verb
 nmpr
 verb
@@ -290828,8 +290670,7 @@ prep
 subs
 prep
 verb
-
-subs
+1897687	subs
 conj
 verb
 art
@@ -290852,8 +290693,7 @@ conj
 prep
 subs
 nmpr
-
-conj
+1897711	conj
 advb
 advb
 intj
@@ -290888,8 +290728,7 @@ verb
 prep
 subs
 subs
-
-conj
+1897747	conj
 verb
 prep
 nmpr
@@ -290908,8 +290747,7 @@ subs
 subs
 prep
 subs
-
-verb
+1897767	verb
 subs
 conj
 verb
@@ -290921,9 +290759,8 @@ art
 subs
 verb
 conj
-verb
-
 verb
+1897781	verb
 subs
 conj
 verb
@@ -290935,8 +290772,7 @@ verb
 conj
 prep
 subs
-
-conj
+1897794	conj
 advb
 verb
 nmpr
@@ -290955,8 +290791,7 @@ art
 prde
 prep
 verb
-
-nega
+1897814	nega
 verb
 subs
 prep
@@ -290976,8 +290811,7 @@ verb
 conj
 nega
 verb
-
-prep
+1897835	prep
 nmpr
 subs
 prep
@@ -290988,8 +290822,7 @@ subs
 conj
 prps
 verb
-
-conj
+1897847	conj
 verb
 prep
 subs
@@ -291013,8 +290846,7 @@ subs
 prep
 verb
 nmpr
-
-conj
+1897872	conj
 verb
 prep
 adjv
@@ -291025,17 +290857,15 @@ verb
 conj
 verb
 conj
-verb
-
 verb
+1897885	verb
 subs
 conj
 verb
 subs
 prep
 subs
-
-conj
+1897893	conj
 verb
 prep
 nmpr
@@ -291049,8 +290879,7 @@ nmpr
 conj
 verb
 prep
-
-intj
+1897908	intj
 prps
 conj
 art
@@ -291075,9 +290904,8 @@ verb
 prep
 subs
 nmpr
-
+1897934	conj
 conj
-conj
 verb
 prep
 verb
@@ -291104,8 +290932,7 @@ adjv
 prep
 art
 verb
-
-prep
+1897963	prep
 subs
 conj
 prep
@@ -291121,8 +290948,7 @@ conj
 subs
 prep
 subs
-
-conj
+1897980	conj
 verb
 prep
 conj
@@ -291145,8 +290971,7 @@ conj
 verb
 prep
 subs
-
-conj
+1898004	conj
 prep
 art
 subs
@@ -291161,8 +290986,7 @@ subs
 conj
 subs
 verb
-
-conj
+1898020	conj
 nega
 verb
 prep
@@ -291193,8 +291017,7 @@ nmpr
 subs
 art
 subs
-
-art
+1898052	art
 subs
 art
 verb
@@ -291210,8 +291033,7 @@ subs
 subs
 verb
 prep
-
-verb
+1898069	verb
 art
 subs
 nega
@@ -291231,8 +291053,7 @@ verb
 prep
 verb
 subs
-
-conj
+1898090	conj
 prep
 subs
 subs
@@ -291249,8 +291070,7 @@ verb
 prep
 subs
 nmpr
-
-conj
+1898108	conj
 subs
 subs
 verb
@@ -291267,8 +291087,7 @@ prep
 subs
 subs
 subs
-
-conj
+1898126	conj
 subs
 verb
 prep
@@ -291293,8 +291112,7 @@ subs
 subs
 art
 subs
-
-prep
+1898152	prep
 subs
 art
 subs
@@ -291330,8 +291148,7 @@ nmpr
 subs
 verb
 prde
-
-subs
+1898189	subs
 verb
 nmpr
 prep
@@ -291340,8 +291157,7 @@ conj
 verb
 prep
 nmpr
-
-conj
+1898199	conj
 verb
 art
 subs
@@ -291358,8 +291174,7 @@ subs
 subs
 prep
 verb
-
-subs
+1898217	subs
 verb
 conj
 subs
@@ -291369,8 +291184,7 @@ verb
 conj
 subs
 verb
-
-conj
+1898228	conj
 verb
 nmpr
 prep
@@ -291381,8 +291195,7 @@ conj
 prep
 verb
 verb
-
-nmpr
+1898240	nmpr
 prep
 subs
 conj
@@ -291407,8 +291220,7 @@ conj
 subs
 subs
 verb
-
-conj
+1898266	conj
 art
 subs
 nega
@@ -291422,8 +291234,7 @@ nmpr
 subs
 nega
 verb
-
-conj
+1898281	conj
 verb
 nmpr
 prep
@@ -291437,8 +291248,7 @@ subs
 prep
 subs
 subs
-
-adjv
+1898296	adjv
 conj
 verb
 subs
@@ -291452,8 +291262,7 @@ subs
 prps
 art
 subs
-
-conj
+1898311	conj
 verb
 verb
 art
@@ -291464,8 +291273,7 @@ verb
 conj
 verb
 verb
-
-prep
+1898323	prep
 advb
 prep
 subs
@@ -291500,8 +291308,7 @@ conj
 subs
 subs
 verb
-
-conj
+1898359	conj
 verb
 prep
 subs
@@ -291520,8 +291327,7 @@ conj
 verb
 subs
 subs
-
-prep
+1898379	prep
 subs
 nmpr
 subs
@@ -291540,8 +291346,7 @@ prep
 subs
 nega
 verb
-
-conj
+1898399	conj
 verb
 prep
 subs
@@ -291558,8 +291363,7 @@ verb
 subs
 subs
 subs
-
-conj
+1898417	conj
 verb
 nmpr
 prep
@@ -291583,8 +291387,7 @@ conj
 subs
 subs
 verb
-
-intj
+1898442	intj
 verb
 subs
 subs
@@ -291592,8 +291395,7 @@ conj
 verb
 subs
 verb
-
-prep
+1898451	prep
 verb
 prep
 subs
@@ -291612,8 +291414,7 @@ conj
 prep
 subs
 verb
-
-conj
+1898471	conj
 prin
 verb
 prep
@@ -291634,8 +291435,7 @@ conj
 inrg
 verb
 subs
-
-subs
+1898493	subs
 verb
 subs
 verb
@@ -291654,8 +291454,7 @@ conj
 subs
 subs
 verb
-
-intj
+1898513	intj
 nmpr
 subs
 subs
@@ -291665,8 +291464,7 @@ prps
 prep
 subs
 subs
-
-prep
+1898524	prep
 subs
 adjv
 verb
@@ -291689,8 +291487,7 @@ subs
 prep
 subs
 subs
-
-conj
+1898548	conj
 prps
 nega
 advb
@@ -291711,16 +291508,14 @@ verb
 subs
 nega
 subs
-
-conj
+1898570	conj
 verb
 inrg
 nega
 subs
 advb
 subs
-
-inrg
+1898578	inrg
 nega
 prep
 nmpr
@@ -291735,8 +291530,7 @@ nega
 prep
 nmpr
 nmpr
-
-prep
+1898594	prep
 conj
 verb
 subs
@@ -291751,8 +291545,7 @@ nmpr
 conj
 prep
 nmpr
-
-inrg
+1898610	inrg
 nega
 prep
 conj
@@ -291769,8 +291562,7 @@ nmpr
 conj
 prep
 subs
-
-conj
+1898628	conj
 verb
 nmpr
 prep
@@ -291794,8 +291586,7 @@ prep
 subs
 subs
 subs
-
-conj
+1898653	conj
 verb
 prep
 subs
@@ -291815,10 +291606,8 @@ subs
 verb
 conj
 verb
-
-verb
-
-conj
+1898674	verb
+1898676	conj
 verb
 prep
 subs
@@ -291847,8 +291636,7 @@ verb
 subs
 conj
 verb
-
-inrg
+1898706	inrg
 verb
 art
 subs
@@ -291872,8 +291660,7 @@ verb
 subs
 nega
 subs
-
-advb
+1898731	advb
 advb
 verb
 art
@@ -291891,8 +291678,7 @@ subs
 prep
 subs
 subs
-
-conj
+1898750	conj
 verb
 subs
 nmpr
@@ -291912,8 +291698,7 @@ subs
 prep
 subs
 subs
-
-conj
+1898771	conj
 subs
 subs
 conj
@@ -291929,8 +291714,7 @@ verb
 prep
 verb
 verb
-
-conj
+1898788	conj
 subs
 subs
 subs
@@ -291939,8 +291723,7 @@ verb
 conj
 subs
 verb
-
-conj
+1898798	conj
 verb
 prep
 subs
@@ -291967,16 +291750,14 @@ adjv
 nmpr
 prep
 subs
-
-subs
+1898826	subs
 verb
 subs
 nmpr
 prep
 subs
 subs
-
-conj
+1898834	conj
 conj
 verb
 subs
@@ -291992,8 +291773,7 @@ subs
 verb
 verb
 subs
-
-conj
+1898851	conj
 subs
 conj
 verb
@@ -292006,8 +291786,7 @@ subs
 subs
 art
 subs
-
-advb
+1898865	advb
 advb
 advb
 verb
@@ -292031,8 +291810,7 @@ prep
 prep
 subs
 nmpr
-
-conj
+1898890	conj
 subs
 subs
 subs
@@ -292043,8 +291821,7 @@ conj
 subs
 prep
 subs
-
-conj
+1898902	conj
 verb
 prep
 nmpr
@@ -292066,8 +291843,7 @@ verb
 prep
 subs
 nmpr
-
-conj
+1898925	conj
 verb
 prep
 subs
@@ -292089,8 +291865,7 @@ subs
 prep
 subs
 subs
-
-verb
+1898948	verb
 prep
 nmpr
 verb
@@ -292100,8 +291875,7 @@ prep
 nmpr
 verb
 subs
-
-verb
+1898959	verb
 prep
 subs
 nmpr
@@ -292112,9 +291886,8 @@ art
 nmpr
 subs
 nmpr
-verb
-
 verb
+1898972	verb
 subs
 subs
 nmpr
@@ -292122,15 +291895,13 @@ verb
 nmpr
 adjv
 nmpr
-
-verb
+1898981	verb
 nmpr
 verb
 art
 nmpr
 verb
-
-subs
+1898988	subs
 art
 subs
 prep
@@ -292144,8 +291915,7 @@ subs
 nmpr
 subs
 nmpr
-
-intj
+1899003	intj
 art
 subs
 nmpr
@@ -292163,8 +291933,7 @@ conj
 art
 adjv
 verb
-
-conj
+1899022	conj
 verb
 subs
 art
@@ -292177,8 +291946,7 @@ nmpr
 prep
 adjv
 verb
-
-conj
+1899036	conj
 verb
 subs
 prep
@@ -292189,8 +291957,7 @@ subs
 prep
 subs
 verb
-
-conj
+1899048	conj
 verb
 prep
 subs
@@ -292208,8 +291975,7 @@ subs
 conj
 subs
 nmpr
-
-conj
+1899067	conj
 verb
 prep
 subs
@@ -292226,8 +291992,7 @@ prep
 subs
 subs
 verb
-
-conj
+1899085	conj
 verb
 prep
 subs
@@ -292255,8 +292020,7 @@ subs
 subs
 verb
 adjv
-
-conj
+1899114	conj
 verb
 subs
 subs
@@ -292265,8 +292029,7 @@ conj
 subs
 subs
 subs
-
-conj
+1899124	conj
 verb
 subs
 prep
@@ -292287,8 +292050,7 @@ subs
 adjv
 verb
 prep
-
-conj
+1899146	conj
 subs
 conj
 subs
@@ -292303,8 +292065,7 @@ prep
 subs
 verb
 subs
-
-conj
+1899162	conj
 verb
 verb
 prep
@@ -292317,8 +292078,7 @@ subs
 verb
 subs
 verb
-
-nega
+1899176	nega
 verb
 conj
 nega
@@ -292338,8 +292098,7 @@ subs
 prep
 subs
 verb
-
-conj
+1899197	conj
 verb
 prep
 subs
@@ -292359,8 +292118,7 @@ conj
 prps
 subs
 subs
-
-conj
+1899218	conj
 verb
 prep
 subs
@@ -292402,8 +292160,7 @@ prep
 subs
 art
 subs
-
-conj
+1899261	conj
 verb
 subs
 prep
@@ -292420,8 +292177,7 @@ prep
 subs
 art
 subs
-
-conj
+1899279	conj
 verb
 subs
 nmpr
@@ -292440,8 +292196,7 @@ nega
 verb
 prep
 nmpr
-
-conj
+1899299	conj
 verb
 prep
 subs
@@ -292462,8 +292217,7 @@ conj
 subs
 nmpr
 subs
-
-conj
+1899321	conj
 verb
 nmpr
 prep
@@ -292488,8 +292242,7 @@ conj
 verb
 prep
 subs
-
-conj
+1899347	conj
 verb
 subs
 prep
@@ -292510,8 +292263,7 @@ verb
 prep
 subs
 nmpr
-
-conj
+1899369	conj
 verb
 prep
 subs
@@ -292527,8 +292279,7 @@ verb
 subs
 conj
 verb
-
-intj
+1899386	intj
 prep
 subs
 subs
@@ -292546,8 +292297,7 @@ verb
 prep
 prep
 subs
-
-conj
+1899405	conj
 verb
 subs
 prep
@@ -292556,8 +292306,7 @@ prep
 subs
 art
 subs
-
-conj
+1899415	conj
 verb
 prep
 subs
@@ -292577,8 +292326,7 @@ verb
 conj
 verb
 subs
-
-verb
+1899436	verb
 prep
 nmpr
 conj
@@ -292590,8 +292338,7 @@ prep
 subs
 art
 subs
-
-verb
+1899449	verb
 conj
 verb
 subs
@@ -292603,16 +292350,14 @@ prep
 subs
 adjv
 nmpr
-
-subs
+1899462	subs
 nmpr
 conj
 verb
 nmpr
 subs
 nmpr
-
-prep
+1899470	prep
 subs
 verb
 verb
@@ -292625,8 +292370,7 @@ subs
 verb
 subs
 adjv
-
-prps
+1899484	prps
 verb
 prep
 verb
@@ -292636,9 +292380,8 @@ subs
 prep
 subs
 adjv
-subs
-
 subs
+1899496	subs
 subs
 prep
 subs
@@ -292655,8 +292398,7 @@ subs
 verb
 subs
 subs
-
-verb
+1899514	verb
 prep
 subs
 subs
@@ -292673,8 +292415,7 @@ verb
 subs
 art
 subs
-
-verb
+1899532	verb
 conj
 adjv
 subs
@@ -292684,8 +292425,7 @@ subs
 prep
 nmpr
 verb
-
-prep
+1899543	prep
 advb
 subs
 subs
@@ -292695,8 +292435,7 @@ subs
 subs
 subs
 verb
-
-conj
+1899554	conj
 verb
 subs
 conj
@@ -292713,8 +292452,7 @@ conj
 subs
 subs
 subs
-
-intj
+1899572	intj
 subs
 nmpr
 verb
@@ -292733,8 +292471,7 @@ conj
 adjv
 verb
 prep
-
-conj
+1899592	conj
 subs
 art
 subs
@@ -292753,8 +292490,7 @@ subs
 nega
 verb
 subs
-
-conj
+1899612	conj
 verb
 prep
 subs
@@ -292771,8 +292507,7 @@ conj
 subs
 adjv
 verb
-
-verb
+1899630	verb
 subs
 prep
 subs
@@ -292781,8 +292516,7 @@ subs
 prep
 subs
 nmpr
-
-prep
+1899640	prep
 advb
 subs
 verb
@@ -292801,8 +292535,7 @@ prep
 subs
 subs
 subs
-
-conj
+1899660	conj
 verb
 prep
 subs
@@ -292822,8 +292555,7 @@ subs
 prep
 subs
 verb
-
-subs
+1899681	subs
 art
 verb
 verb
@@ -292834,8 +292566,7 @@ verb
 verb
 prep
 subs
-
-conj
+1899693	conj
 subs
 verb
 prep
@@ -292846,8 +292577,7 @@ subs
 conj
 subs
 verb
-
-intj
+1899705	intj
 verb
 prep
 prep
@@ -292861,8 +292591,7 @@ subs
 nega
 verb
 prep
-
-conj
+1899720	conj
 subs
 subs
 verb
@@ -292878,8 +292607,7 @@ subs
 nega
 verb
 subs
-
-conj
+1899737	conj
 verb
 nmpr
 subs
@@ -292895,8 +292623,7 @@ nmpr
 conj
 prep
 nmpr
-
-nega
+1899754	nega
 verb
 prep
 subs
@@ -292917,8 +292644,7 @@ verb
 nega
 verb
 advb
-
-conj
+1899776	conj
 verb
 advb
 subs
@@ -292935,8 +292661,7 @@ conj
 subs
 verb
 advb
-
-conj
+1899794	conj
 verb
 subs
 prep
@@ -292955,8 +292680,7 @@ subs
 nega
 verb
 subs
-
-conj
+1899814	conj
 verb
 nmpr
 prep
@@ -292980,8 +292704,7 @@ verb
 prep
 subs
 nmpr
-
-conj
+1899839	conj
 verb
 subs
 adjv
@@ -293013,8 +292736,7 @@ conj
 verb
 prep
 verb
-
-conj
+1899872	conj
 verb
 prep
 subs
@@ -293035,8 +292757,7 @@ adjv
 conj
 verb
 prep
-
-conj
+1899894	conj
 verb
 prep
 art
@@ -293053,15 +292774,13 @@ verb
 verb
 verb
 subs
-
-verb
+1899912	verb
 nmpr
 subs
 adjv
 subs
 verb
-
-verb
+1899919	verb
 subs
 prep
 subs
@@ -293075,16 +292794,14 @@ subs
 subs
 subs
 verb
-
+1899934	verb
 verb
-verb
 subs
 art
 subs
 verb
 subs
-
-advb
+1899942	advb
 subs
 verb
 prep
@@ -293100,8 +292817,7 @@ verb
 art
 verb
 prep
-
-subs
+1899959	subs
 prep
 subs
 verb
@@ -293117,12 +292833,11 @@ subs
 subs
 verb
 prep
-subs
 subs
 subs
 subs
-
 subs
+1899980	subs
 verb
 conj
 verb
@@ -293133,8 +292848,7 @@ verb
 prep
 prep
 verb
-
-verb
+1899992	verb
 subs
 subs
 art
@@ -293146,8 +292860,7 @@ subs
 conj
 subs
 subs
-
-inrg
+1900005	inrg
 verb
 prep
 art
@@ -293161,8 +292874,7 @@ subs
 verb
 prep
 subs
-
-conj
+1900020	conj
 prps
 verb
 prep
@@ -293184,24 +292896,21 @@ subs
 prep
 subs
 subs
-
-verb
+1900043	verb
 prep
 subs
 subs
 verb
 prep
 adjv
-
-advb
+1900051	advb
 prep
 subs
 verb
 prep
 subs
 subs
-
-verb
+1900059	verb
 prep
 verb
 prep
@@ -293217,8 +292926,7 @@ subs
 art
 verb
 subs
-
-verb
+1900076	verb
 subs
 prep
 subs
@@ -293228,18 +292936,16 @@ subs
 nega
 verb
 subs
-
+1900087	subs
 subs
 subs
-subs
 verb
 prep
 subs
 subs
 prep
 subs
-
-conj
+1900097	conj
 prps
 verb
 prep
@@ -293258,8 +292964,7 @@ subs
 prep
 subs
 verb
-
-nega
+1900117	nega
 verb
 prep
 prep
@@ -293274,9 +292979,8 @@ verb
 prep
 subs
 subs
-verb
-
 verb
+1900134	verb
 prep
 subs
 subs
@@ -293293,8 +292997,7 @@ verb
 subs
 subs
 subs
-
-conj
+1900152	conj
 verb
 prep
 subs
@@ -293312,8 +293015,7 @@ conj
 subs
 subs
 nmpr
-
-conj
+1900171	conj
 verb
 prep
 subs
@@ -293328,8 +293030,7 @@ verb
 subs
 nmpr
 subs
-
-verb
+1900187	verb
 nmpr
 subs
 prep
@@ -293347,8 +293048,7 @@ conj
 verb
 prps
 verb
-
-prep
+1900206	prep
 verb
 nmpr
 prep
@@ -293368,8 +293068,7 @@ prep
 prep
 subs
 verb
-
-prde
+1900227	prde
 art
 subs
 art
@@ -293388,8 +293087,7 @@ prep
 subs
 art
 subs
-
-conj
+1900247	conj
 nmpr
 subs
 verb
@@ -293403,8 +293101,7 @@ verb
 conj
 prin
 verb
-
-prep
+1900262	prep
 subs
 subs
 art
@@ -293415,11 +293112,9 @@ art
 subs
 art
 prde
-
-nega
+1900274	nega
 verb
-
-nmpr
+1900277	nmpr
 subs
 conj
 verb
@@ -293435,8 +293130,7 @@ conj
 subs
 subs
 verb
-
-conj
+1900294	conj
 verb
 subs
 adjv
@@ -293453,8 +293147,7 @@ subs
 conj
 subs
 verb
-
-verb
+1900312	verb
 subs
 verb
 subs
@@ -293471,8 +293164,7 @@ subs
 verb
 prep
 subs
-
-conj
+1900330	conj
 prin
 verb
 subs
@@ -293485,9 +293177,8 @@ conj
 prep
 verb
 adjv
-subs
-
 subs
+1900345	subs
 nmpr
 conj
 prep
@@ -293504,8 +293195,7 @@ verb
 nmpr
 nmpr
 verb
-
-verb
+1900363	verb
 art
 subs
 conj
@@ -293529,8 +293219,7 @@ conj
 subs
 subs
 verb
-
-prep
+1900388	prep
 subs
 verb
 subs
@@ -293545,8 +293234,7 @@ conj
 verb
 prep
 subs
-
-conj
+1900404	conj
 verb
 nmpr
 conj
@@ -293563,8 +293251,7 @@ verb
 subs
 verb
 prep
-
-subs
+1900422	subs
 prep
 nmpr
 verb
@@ -293587,8 +293274,7 @@ nmpr
 subs
 subs
 verb
-
-conj
+1900446	conj
 subs
 nmpr
 subs
@@ -293601,8 +293287,7 @@ subs
 subs
 nega
 verb
-
-prep
+1900460	prep
 advb
 subs
 verb
@@ -293612,8 +293297,7 @@ prep
 subs
 subs
 verb
-
-conj
+1900471	conj
 verb
 art
 subs
@@ -293627,8 +293311,7 @@ conj
 nmpr
 nmpr
 subs
-
-conj
+1900486	conj
 subs
 nmpr
 verb
@@ -293645,8 +293328,7 @@ subs
 prep
 subs
 subs
-
-verb
+1900504	verb
 subs
 verb
 subs
@@ -293657,8 +293339,7 @@ prep
 subs
 subs
 nmpr
-
-conj
+1900516	conj
 verb
 prep
 subs
@@ -293671,8 +293352,7 @@ nmpr
 subs
 prep
 nmpr
-
-verb
+1900530	verb
 subs
 verb
 subs
@@ -293688,8 +293368,7 @@ verb
 verb
 nega
 verb
-
-verb
+1900547	verb
 prep
 verb
 nmpr
@@ -293710,8 +293389,7 @@ verb
 prep
 art
 subs
-
-conj
+1900569	conj
 verb
 prep
 subs
@@ -293731,8 +293409,7 @@ subs
 conj
 adjv
 subs
-
-verb
+1900590	verb
 subs
 nmpr
 adjv
@@ -293745,8 +293422,7 @@ subs
 nega
 adjv
 subs
-
-conj
+1900604	conj
 advb
 advb
 nega
@@ -293763,15 +293439,13 @@ nmpr
 verb
 advb
 adjv
-
-conj
+1900622	conj
 subs
 nmpr
 verb
 subs
 nmpr
-
-subs
+1900629	subs
 subs
 nmpr
 conj
@@ -293785,8 +293459,7 @@ prep
 subs
 subs
 verb
-
-conj
+1900644	conj
 verb
 subs
 conj
@@ -293811,8 +293484,7 @@ art
 verb
 subs
 verb
-
-prep
+1900670	prep
 advb
 subs
 prep
@@ -293825,8 +293497,7 @@ subs
 prep
 nmpr
 nmpr
-
-verb
+1900684	verb
 conj
 verb
 conj
@@ -293844,8 +293515,7 @@ verb
 conj
 nega
 verb
-
-prde
+1900703	prde
 art
 subs
 conj
@@ -293855,8 +293525,7 @@ prep
 nmpr
 prep
 advb
-
-conj
+1900714	conj
 advb
 verb
 nmpr
@@ -293885,8 +293554,7 @@ subs
 conj
 nega
 subs
-
-subs
+1900744	subs
 nmpr
 intj
 nmpr
@@ -293897,8 +293565,7 @@ conj
 verb
 subs
 subs
-
-verb
+1900756	verb
 subs
 nmpr
 prep
@@ -293909,8 +293576,7 @@ verb
 conj
 subs
 verb
-
-conj
+1900768	conj
 verb
 subs
 prep
@@ -293930,8 +293596,7 @@ verb
 subs
 nmpr
 subs
-
-conj
+1900789	conj
 verb
 prep
 subs
@@ -293944,8 +293609,7 @@ conj
 subs
 subs
 verb
-
-conj
+1900803	conj
 verb
 prep
 verb
@@ -293964,8 +293628,7 @@ subs
 prep
 subs
 nmpr
-
-conj
+1900823	conj
 verb
 prep
 subs
@@ -293987,8 +293650,7 @@ subs
 nmpr
 subs
 nmpr
-
-prep
+1900846	prep
 subs
 art
 prps
@@ -294003,8 +293665,7 @@ prep
 adjv
 nmpr
 verb
-
-conj
+1900862	conj
 nega
 verb
 prep
@@ -294022,8 +293683,7 @@ subs
 conj
 art
 subs
-
-prep
+1900881	prep
 subs
 art
 prps
@@ -294046,8 +293706,7 @@ nmpr
 conj
 verb
 subs
-
-conj
+1900905	conj
 verb
 subs
 subs
@@ -294065,8 +293724,7 @@ conj
 subs
 adjv
 verb
-
-prep
+1900924	prep
 subs
 subs
 verb
@@ -294083,8 +293741,7 @@ verb
 conj
 subs
 adjv
-
-intj
+1900942	intj
 subs
 subs
 adjv
@@ -294100,9 +293757,8 @@ subs
 subs
 adjv
 conj
-subs
-
 subs
+1900960	subs
 prep
 subs
 subs
@@ -294129,8 +293785,7 @@ subs
 prep
 subs
 subs
-
-prep
+1900988	prep
 subs
 subs
 conj
@@ -294148,8 +293803,7 @@ conj
 subs
 prep
 verb
-
-intj
+1901007	intj
 subs
 subs
 subs
@@ -294160,8 +293814,7 @@ subs
 prep
 subs
 nmpr
-
-art
+1901019	art
 verb
 prep
 subs
@@ -294196,8 +293849,7 @@ conj
 verb
 subs
 subs
-
-subs
+1901055	subs
 verb
 subs
 conj
@@ -294213,8 +293865,7 @@ prep
 verb
 subs
 verb
-
-conj
+1901072	conj
 advb
 verb
 nmpr
@@ -294235,8 +293886,7 @@ subs
 prep
 verb
 subs
-
-conj
+1901094	conj
 prep
 subs
 subs
@@ -294260,8 +293910,7 @@ art
 subs
 verb
 verb
-
-conj
+1901119	conj
 verb
 advb
 prep
@@ -294283,8 +293932,7 @@ art
 subs
 prep
 verb
-
-prep
+1901142	prep
 advb
 art
 prps
@@ -294320,8 +293968,7 @@ subs
 nmpr
 subs
 nmpr
-
-subs
+1901179	subs
 nmpr
 intj
 nmpr
@@ -294344,8 +293991,7 @@ nmpr
 verb
 prep
 subs
-
-conj
+1901203	conj
 verb
 nmpr
 prep
@@ -294366,8 +294012,7 @@ subs
 subs
 prep
 subs
-
-conj
+1901225	conj
 verb
 subs
 nmpr
@@ -294392,8 +294037,7 @@ conj
 prep
 art
 subs
-
-conj
+1901251	conj
 verb
 prep
 nmpr
@@ -294411,8 +294055,7 @@ art
 subs
 nmpr
 subs
-
-conj
+1901270	conj
 verb
 subs
 prep
@@ -294423,8 +294066,7 @@ subs
 verb
 conj
 verb
-
-conj
+1901282	conj
 verb
 art
 subs
@@ -294439,8 +294081,7 @@ conj
 subs
 conj
 verb
-
-subs
+1901298	subs
 prep
 nmpr
 prep
@@ -294456,8 +294097,7 @@ verb
 conj
 subs
 prep
-
-conj
+1901315	conj
 verb
 art
 subs
@@ -294475,16 +294115,14 @@ prep
 subs
 subs
 verb
-
+1901334	verb
 verb
-verb
 subs
 adjv
 conj
 verb
 subs
-
-conj
+1901342	conj
 verb
 subs
 verb
@@ -294493,8 +294131,7 @@ verb
 subs
 adjv
 subs
-
-advb
+1901352	advb
 adjv
 subs
 nmpr
@@ -294513,8 +294150,7 @@ prps
 subs
 subs
 subs
-
-inrg
+1901372	inrg
 intj
 adjv
 conj
@@ -294529,8 +294165,7 @@ nmpr
 subs
 prep
 nmpr
-
-verb
+1901388	verb
 subs
 nmpr
 subs
@@ -294541,8 +294176,7 @@ prep
 nmpr
 subs
 subs
-
-nmpr
+1901400	nmpr
 verb
 prep
 subs
@@ -294560,8 +294194,7 @@ verb
 adjv
 prep
 subs
-
-conj
+1901419	conj
 nega
 verb
 prep
@@ -294575,8 +294208,7 @@ subs
 subs
 conj
 subs
-
-prep
+1901434	prep
 subs
 prps
 verb
@@ -294598,12 +294230,10 @@ prps
 verb
 subs
 prep
-
-conj
+1901457	conj
 verb
 subs
-
-nmpr
+1901461	nmpr
 prep
 nmpr
 prep
@@ -294614,8 +294244,7 @@ verb
 prep
 prep
 verb
-
-prep
+1901473	prep
 subs
 subs
 nmpr
@@ -294624,8 +294253,7 @@ conj
 prps
 verb
 prep
-
-prep
+1901483	prep
 subs
 art
 prps
@@ -294649,8 +294277,7 @@ subs
 verb
 prep
 subs
-
-prep
+1901508	prep
 subs
 art
 prps
@@ -294668,8 +294295,7 @@ subs
 subs
 prep
 nmpr
-
-conj
+1901527	conj
 verb
 prep
 subs
@@ -294697,8 +294323,7 @@ conj
 verb
 conj
 verb
-
-conj
+1901556	conj
 verb
 nmpr
 prep
@@ -294723,8 +294348,7 @@ prep
 nmpr
 conj
 verb
-
-conj
+1901582	conj
 verb
 nmpr
 prep
@@ -294741,8 +294365,7 @@ verb
 prep
 conj
 verb
-
-prep
+1901600	prep
 subs
 art
 prps
@@ -294764,8 +294387,7 @@ conj
 verb
 prep
 nmpr
-
-prep
+1901623	prep
 subs
 art
 prps
@@ -294782,8 +294404,7 @@ prep
 subs
 art
 subs
-
-conj
+1901641	conj
 verb
 nmpr
 subs
@@ -294799,8 +294420,7 @@ nmpr
 conj
 subs
 nmpr
-
-prep
+1901658	prep
 subs
 verb
 subs
@@ -294817,8 +294437,7 @@ prep
 nmpr
 conj
 verb
-
-prep
+1901676	prep
 subs
 art
 prps
@@ -294852,8 +294471,7 @@ verb
 adjv
 conj
 adjv
-
-conj
+1901711	conj
 verb
 nmpr
 prep
@@ -294874,8 +294492,7 @@ nmpr
 conj
 prep
 nmpr
-
-advb
+1901733	advb
 verb
 subs
 nmpr
@@ -294897,8 +294514,7 @@ subs
 subs
 subs
 nmpr
-
-conj
+1901756	conj
 verb
 conj
 verb
@@ -294909,8 +294525,7 @@ conj
 prep
 nmpr
 subs
-
-conj
+1901768	conj
 verb
 verb
 art
@@ -294939,8 +294554,7 @@ conj
 inrg
 verb
 prps
-
-subs
+1901798	subs
 subs
 subs
 prep
@@ -294956,8 +294570,7 @@ prep
 subs
 verb
 adjv
-
-subs
+1901815	subs
 adjv
 verb
 prep
@@ -294975,8 +294588,7 @@ nmpr
 subs
 subs
 verb
-
-prep
+1901834	prep
 advb
 verb
 subs
@@ -294991,9 +294603,8 @@ prep
 verb
 verb
 prep
-verb
-
 verb
+1901851	verb
 conj
 subs
 subs
@@ -295005,8 +294616,7 @@ verb
 prep
 prep
 subs
-
-verb
+1901864	verb
 art
 subs
 verb
@@ -295019,8 +294629,7 @@ art
 subs
 verb
 subs
-
-conj
+1901878	conj
 advb
 verb
 prep
@@ -295033,8 +294642,7 @@ conj
 verb
 conj
 verb
-
-conj
+1901892	conj
 verb
 subs
 subs
@@ -295042,15 +294650,14 @@ subs
 subs
 verb
 subs
-subs
+verb
 subs
 conj
 verb
 subs
 adjv
 subs
-
-conj
+1901908	conj
 verb
 art
 subs
@@ -295069,8 +294676,7 @@ verb
 subs
 art
 subs
-
-conj
+1901928	conj
 intj
 prde
 verb
@@ -295091,9 +294697,8 @@ subs
 subs
 verb
 prep
-subs
-
 subs
+1901951	subs
 conj
 subs
 subs
@@ -295107,8 +294712,7 @@ subs
 nmpr
 verb
 prep
-
-subs
+1901966	subs
 nmpr
 prep
 verb
@@ -295122,10 +294726,9 @@ verb
 prin
 prep
 subs
-
+1901981	verb
 verb
 verb
-verb
 subs
 conj
 advb
@@ -295135,8 +294738,7 @@ verb
 verb
 verb
 verb
-
-subs
+1901994	subs
 prep
 nmpr
 prep
@@ -295146,8 +294748,7 @@ nmpr
 verb
 subs
 adjv
-
-prep
+1902005	prep
 verb
 adjv
 verb
@@ -295159,8 +294760,7 @@ prep
 subs
 verb
 verb
-
-conj
+1902018	conj
 prep
 subs
 subs
@@ -295179,8 +294779,7 @@ prep
 subs
 subs
 subs
-
-conj
+1902038	conj
 advb
 verb
 nmpr
@@ -295195,8 +294794,7 @@ adjv
 verb
 subs
 nmpr
-
-conj
+1902054	conj
 subs
 subs
 subs
@@ -295209,8 +294807,7 @@ nmpr
 subs
 nmpr
 verb
-
-subs
+1902068	subs
 subs
 subs
 prin
@@ -295221,8 +294818,7 @@ verb
 subs
 prep
 subs
-
-subs
+1902080	subs
 verb
 subs
 verb
@@ -295236,9 +294832,8 @@ conj
 nega
 verb
 subs
-
+1902095	subs
 subs
-subs
 verb
 subs
 prep
@@ -295251,8 +294846,7 @@ advb
 prep
 adjv
 verb
-
-prep
+1902110	prep
 advb
 verb
 verb
@@ -295269,11 +294863,9 @@ prep
 subs
 subs
 subs
-
-conj
-
+1902128	conj
+1902130	subs
 subs
-subs
 conj
 subs
 conj
@@ -295290,8 +294882,7 @@ subs
 prep
 art
 subs
-
-conj
+1902149	conj
 nmpr
 verb
 subs
@@ -295303,8 +294894,7 @@ conj
 nmpr
 verb
 subs
-
-conj
+1902162	conj
 verb
 subs
 subs
@@ -295317,8 +294907,7 @@ verb
 verb
 art
 subs
-
-conj
+1902176	conj
 verb
 prep
 subs
@@ -295334,8 +294923,7 @@ subs
 subs
 art
 subs
-
-conj
+1902193	conj
 prep
 subs
 subs
@@ -295351,8 +294939,7 @@ art
 subs
 art
 adjv
-
-conj
+1902210	conj
 prep
 subs
 nmpr
@@ -295365,8 +294952,7 @@ prep
 verb
 art
 subs
-
-conj
+1902224	conj
 subs
 verb
 subs
@@ -295389,8 +294975,7 @@ prep
 adjv
 nega
 verb
-
-conj
+1902248	conj
 verb
 nmpr
 nmpr
@@ -295411,8 +294996,7 @@ conj
 prep
 verb
 subs
-
-conj
+1902270	conj
 intj
 subs
 conj
@@ -295433,8 +295017,7 @@ verb
 conj
 subs
 verb
-
-conj
+1902292	conj
 verb
 prep
 subs
@@ -295454,8 +295037,7 @@ verb
 nmpr
 nmpr
 subs
-
-advb
+1902313	advb
 verb
 nmpr
 nmpr
@@ -295473,8 +295055,7 @@ conj
 prep
 art
 subs
-
-prin
+1902332	prin
 prep
 advb
 conj
@@ -295494,16 +295075,14 @@ prep
 subs
 subs
 prep
-
-intj
+1902353	intj
 nmpr
 verb
 subs
 subs
 verb
 verb
-
-subs
+1902361	subs
 conj
 verb
 subs
@@ -295522,8 +295101,7 @@ subs
 subs
 subs
 subs
-
-conj
+1902381	conj
 verb
 prep
 subs
@@ -295531,8 +295109,7 @@ conj
 prep
 subs
 verb
-
-conj
+1902390	conj
 verb
 prep
 subs
@@ -295546,12 +295123,10 @@ prep
 nmpr
 subs
 nmpr
-
-conj
+1902405	conj
 verb
 subs
-
-conj
+1902409	conj
 subs
 verb
 conj
@@ -295570,8 +295145,7 @@ conj
 prep
 subs
 nmpr
-
-conj
+1902429	conj
 verb
 subs
 subs
@@ -295588,8 +295162,7 @@ verb
 conj
 subs
 verb
-
-conj
+1902447	conj
 verb
 subs
 prep
@@ -295603,8 +295176,7 @@ subs
 prep
 subs
 subs
-
-conj
+1902462	conj
 verb
 prep
 subs
@@ -295629,8 +295201,7 @@ subs
 subs
 art
 subs
-
-prep
+1902488	prep
 subs
 art
 prps
@@ -295658,8 +295229,7 @@ prep
 conj
 nmpr
 verb
-
-subs
+1902517	subs
 nmpr
 verb
 subs
@@ -295675,17 +295245,15 @@ subs
 nmpr
 verb
 prep
-
+1902534	verb
 verb
-verb
 subs
 verb
 nmpr
 verb
 subs
 subs
-
-conj
+1902543	conj
 prep
 subs
 adjv
@@ -295698,8 +295266,7 @@ conj
 verb
 subs
 subs
-
-verb
+1902557	verb
 nmpr
 conj
 verb
@@ -295720,8 +295287,7 @@ verb
 subs
 verb
 subs
-
-prep
+1902579	prep
 conj
 subs
 prep
@@ -295730,14 +295296,12 @@ verb
 prep
 subs
 nmpr
-
-verb
+1902589	verb
 nmpr
 verb
 verb
 subs
-
-inrg
+1902595	inrg
 prde
 prep
 art
@@ -295747,14 +295311,13 @@ subs
 subs
 subs
 conj
-verb
+prep
 subs
 prep
 adjv
 prep
 verb
-
-prin
+1902612	prin
 verb
 prde
 prep
@@ -295768,8 +295331,7 @@ subs
 verb
 art
 subs
-
-nmpr
+1902627	nmpr
 subs
 verb
 prep
@@ -295782,8 +295344,7 @@ verb
 subs
 verb
 subs
-
-verb
+1902641	verb
 subs
 prep
 nmpr
@@ -295792,8 +295353,7 @@ nmpr
 subs
 subs
 subs
-
-subs
+1902651	subs
 verb
 prep
 art
@@ -295807,8 +295367,7 @@ nmpr
 prep
 verb
 subs
-
-conj
+1902666	conj
 verb
 nega
 verb
@@ -295827,8 +295386,7 @@ advb
 nega
 verb
 prep
-
-intj
+1902686	intj
 subs
 nmpr
 prde
@@ -295847,15 +295405,13 @@ subs
 verb
 prep
 subs
-
-verb
+1902706	verb
 subs
 nmpr
 conj
 verb
 subs
-
-conj
+1902713	conj
 verb
 prep
 subs
@@ -295866,8 +295422,7 @@ prep
 subs
 art
 verb
-
-verb
+1902725	verb
 subs
 verb
 subs
@@ -295879,8 +295434,7 @@ verb
 verb
 prep
 verb
-
-conj
+1902738	conj
 verb
 prep
 subs
@@ -295904,8 +295458,7 @@ prep
 subs
 art
 subs
-
-conj
+1902763	conj
 verb
 subs
 conj
@@ -295934,8 +295487,7 @@ conj
 prep
 subs
 adjv
-
-intj
+1902793	intj
 nmpr
 verb
 art
@@ -295948,8 +295500,7 @@ subs
 conj
 verb
 verb
-
-conj
+1902807	conj
 verb
 prep
 subs
@@ -295977,9 +295528,8 @@ prep
 conj
 verb
 prep
-
+1902836	verb
 verb
-verb
 art
 subs
 conj
@@ -295993,8 +295543,7 @@ art
 subs
 art
 prde
-
-verb
+1902852	verb
 verb
 art
 subs
@@ -296006,8 +295555,7 @@ subs
 subs
 art
 subs
-
-conj
+1902865	conj
 art
 subs
 verb
@@ -296021,8 +295569,7 @@ subs
 verb
 subs
 subs
-
-prep
+1902880	prep
 advb
 subs
 verb
@@ -296039,8 +295586,7 @@ conj
 verb
 subs
 subs
-
-verb
+1902898	verb
 subs
 verb
 subs
@@ -296048,8 +295594,7 @@ verb
 subs
 adjv
 subs
-
-verb
+1902907	verb
 subs
 subs
 verb
@@ -296058,8 +295603,7 @@ adjv
 verb
 subs
 subs
-
-prep
+1902917	prep
 subs
 nega
 verb
@@ -296068,9 +295612,8 @@ conj
 verb
 subs
 prep
-verb
-
 verb
+1902928	verb
 subs
 subs
 verb
@@ -296078,8 +295621,7 @@ subs
 subs
 prep
 verb
-
-subs
+1902937	subs
 prep
 art
 subs
@@ -296092,8 +295634,7 @@ verb
 subs
 art
 subs
-
-verb
+1902951	verb
 prep
 subs
 subs
@@ -296101,8 +295642,7 @@ conj
 subs
 verb
 subs
-
-conj
+1902960	conj
 advb
 verb
 prep
@@ -296121,20 +295661,17 @@ subs
 conj
 verb
 subs
-
-prps
+1902980	prps
 verb
 subs
 verb
 prep
 subs
 nmpr
-
-verb
+1902988	verb
 prep
 subs
-
-prep
+1902992	prep
 advb
 prep
 subs
@@ -296148,8 +295685,7 @@ subs
 nmpr
 subs
 nmpr
-
-prep
+1903007	prep
 subs
 art
 subs
@@ -296172,8 +295708,7 @@ conj
 subs
 verb
 verb
-
-subs
+1903031	subs
 conj
 subs
 conj
@@ -296182,8 +295717,7 @@ prep
 verb
 art
 subs
-
-conj
+1903041	conj
 verb
 art
 verb
@@ -296214,8 +295748,7 @@ conj
 verb
 subs
 subs
-
-verb
+1903073	verb
 verb
 art
 subs
@@ -296225,9 +295758,8 @@ subs
 verb
 verb
 subs
-
+1903084	verb
 verb
-verb
 art
 subs
 prep
@@ -296247,8 +295779,7 @@ conj
 nega
 verb
 verb
-
-conj
+1903106	conj
 verb
 prep
 subs
@@ -296270,8 +295801,7 @@ subs
 prep
 art
 subs
-
-verb
+1903129	verb
 subs
 prep
 subs
@@ -296284,8 +295814,7 @@ prep
 subs
 subs
 verb
-
-conj
+1903143	conj
 verb
 art
 subs
@@ -296307,8 +295836,7 @@ conj
 subs
 adjv
 subs
-
-nmpr
+1903166	nmpr
 subs
 prps
 verb
@@ -296317,13 +295845,11 @@ subs
 conj
 verb
 subs
-
-prep
+1903176	prep
 adjv
 subs
 subs
-
-conj
+1903181	conj
 verb
 prep
 subs
@@ -296341,8 +295867,7 @@ prep
 subs
 nega
 verb
-
-prep
+1903200	prep
 advb
 verb
 subs
@@ -296351,8 +295876,7 @@ subs
 subs
 adjv
 verb
-
-conj
+1903210	conj
 verb
 subs
 prep
@@ -296376,8 +295900,7 @@ adjv
 prep
 subs
 subs
-
-prep
+1903235	prep
 subs
 prep
 subs
@@ -296391,8 +295914,7 @@ subs
 subs
 adjv
 verb
-
-conj
+1903250	conj
 verb
 nmpr
 subs
@@ -296412,8 +295934,7 @@ subs
 verb
 subs
 verb
-
-conj
+1903271	conj
 verb
 prep
 subs
@@ -296437,8 +295958,7 @@ prep
 subs
 art
 subs
-
-verb
+1903296	verb
 art
 subs
 prep
@@ -296464,8 +295984,7 @@ subs
 conj
 nmpr
 verb
-
-conj
+1903323	conj
 verb
 prep
 subs
@@ -296488,8 +296007,7 @@ conj
 verb
 prep
 subs
-
-conj
+1903347	conj
 verb
 subs
 nmpr
@@ -296507,8 +296025,7 @@ subs
 prep
 subs
 subs
-
-conj
+1903366	conj
 verb
 subs
 prep
@@ -296526,8 +296043,7 @@ subs
 prep
 subs
 subs
-
-conj
+1903385	conj
 subs
 subs
 subs
@@ -296538,8 +296054,7 @@ prep
 subs
 prep
 subs
-
-prep
+1903397	prep
 subs
 art
 prps
@@ -296559,8 +296074,7 @@ verb
 subs
 conj
 subs
-
-verb
+1903418	verb
 subs
 conj
 verb
@@ -296568,16 +296082,14 @@ subs
 adjv
 verb
 adjv
-
-subs
+1903427	subs
 verb
 verb
 subs
 subs
 conj
 prep
-
-verb
+1903435	verb
 prep
 nmpr
 prep
@@ -296588,8 +296100,7 @@ nmpr
 nmpr
 subs
 subs
-
-conj
+1903447	conj
 verb
 verb
 subs
@@ -296601,14 +296112,12 @@ subs
 verb
 prep
 subs
-
-verb
+1903460	verb
 subs
 adjv
 subs
 adjv
-
-subs
+1903466	subs
 prep
 adjv
 subs
@@ -296616,8 +296125,7 @@ adjv
 subs
 subs
 verb
-
-advb
+1903475	advb
 subs
 subs
 nmpr
@@ -296629,8 +296137,7 @@ prep
 subs
 subs
 subs
-
-subs
+1903488	subs
 verb
 prep
 subs
@@ -296649,8 +296156,7 @@ subs
 verb
 verb
 subs
-
-verb
+1903508	verb
 adjv
 nega
 verb
@@ -296664,8 +296170,7 @@ nega
 verb
 subs
 nmpr
-
-nmpr
+1903523	nmpr
 verb
 subs
 nega
@@ -296681,8 +296186,7 @@ advb
 subs
 subs
 verb
-
-nmpr
+1903540	nmpr
 verb
 subs
 prep
@@ -296692,8 +296196,7 @@ subs
 subs
 verb
 prep
-
-nmpr
+1903551	nmpr
 subs
 verb
 subs
@@ -296703,8 +296206,7 @@ subs
 prep
 verb
 subs
-
-verb
+1903562	verb
 nega
 verb
 conj
@@ -296721,8 +296223,7 @@ verb
 subs
 subs
 prep
-
-verb
+1903580	verb
 prep
 subs
 nmpr
@@ -296734,8 +296235,7 @@ verb
 subs
 subs
 subs
-
-nmpr
+1903593	nmpr
 prep
 adjv
 verb
@@ -296743,8 +296243,7 @@ verb
 subs
 subs
 prep
-
-prep
+1903602	prep
 adjv
 verb
 prep
@@ -296758,9 +296257,8 @@ verb
 prep
 subs
 nmpr
-
+1903617	verb
 verb
-verb
 prep
 verb
 subs
@@ -296773,8 +296271,7 @@ nega
 verb
 verb
 subs
-
-verb
+1903632	verb
 verb
 subs
 verb
@@ -296791,8 +296288,7 @@ conj
 subs
 subs
 verb
-
-verb
+1903650	verb
 subs
 verb
 prep
@@ -296808,8 +296304,7 @@ subs
 prep
 verb
 subs
-
-conj
+1903667	conj
 nmpr
 verb
 prep
@@ -296833,8 +296328,7 @@ verb
 subs
 prep
 verb
-
-prep
+1903692	prep
 subs
 art
 prps
@@ -296867,8 +296361,7 @@ subs
 conj
 prep
 subs
-
-prep
+1903726	prep
 subs
 art
 prps
@@ -296876,8 +296369,7 @@ subs
 subs
 verb
 prep
-
-prps
+1903735	prps
 nmpr
 verb
 prep
@@ -296890,9 +296382,8 @@ subs
 conj
 subs
 verb
-
+1903749	subs
 subs
-subs
 prep
 prin
 verb
@@ -296906,8 +296397,7 @@ prep
 conj
 verb
 advb
-
-conj
+1903765	conj
 verb
 prep
 subs
@@ -296917,8 +296407,7 @@ prep
 subs
 verb
 prep
-
-art
+1903776	art
 verb
 verb
 nmpr
@@ -296932,8 +296421,7 @@ verb
 subs
 subs
 subs
-
-inrg
+1903791	inrg
 prep
 subs
 verb
@@ -296943,8 +296431,7 @@ prep
 subs
 verb
 verb
-
-prep
+1903802	prep
 verb
 prep
 verb
@@ -296957,9 +296444,8 @@ adjv
 prep
 subs
 subs
-
+1903816	advb
 advb
-advb
 prep
 prde
 verb
@@ -296985,8 +296471,7 @@ verb
 subs
 conj
 subs
-
-conj
+1903844	conj
 subs
 adjv
 subs
@@ -297005,12 +296490,10 @@ verb
 conj
 verb
 subs
-
-prep
+1903864	prep
 verb
 subs
-
-verb
+1903868	verb
 subs
 verb
 verb
@@ -297029,8 +296512,7 @@ conj
 verb
 nega
 verb
-
-conj
+1903888	conj
 verb
 prep
 subs
@@ -297053,8 +296535,7 @@ subs
 subs
 subs
 nmpr
-
-conj
+1903912	conj
 verb
 prep
 subs
@@ -297087,8 +296568,7 @@ art
 subs
 prep
 nmpr
-
-intj
+1903946	intj
 subs
 subs
 adjv
@@ -297105,8 +296585,7 @@ subs
 subs
 verb
 subs
-
-intj
+1903964	intj
 prep
 adjv
 conj
@@ -297129,16 +296608,14 @@ prep
 subs
 prep
 subs
-
-prep
+1903988	prep
 subs
 verb
 subs
 subs
 adjv
 nmpr
-
-conj
+1903996	conj
 verb
 subs
 verb
@@ -297149,8 +296626,7 @@ prep
 subs
 subs
 subs
-
-prep
+1904008	prep
 subs
 prep
 subs
@@ -297165,8 +296641,7 @@ subs
 prep
 subs
 verb
-
-prep
+1904024	prep
 subs
 art
 prps
@@ -297183,8 +296658,7 @@ subs
 prep
 subs
 subs
-
-conj
+1904042	conj
 prep
 subs
 subs
@@ -297199,8 +296673,7 @@ subs
 verb
 subs
 subs
-
-advb
+1904058	advb
 prde
 prep
 subs
@@ -297228,8 +296701,7 @@ prep
 subs
 verb
 subs
-
-conj
+1904087	conj
 subs
 subs
 verb
@@ -297237,8 +296709,7 @@ subs
 subs
 subs
 subs
-
-prep
+1904096	prep
 prin
 verb
 subs
@@ -297253,15 +296724,10 @@ subs
 adjv
 prep
 subs
-
-conj
-
-prep
-
-
-prep
-
-subs
+1904112	conj
+1904114	prep
+1904117	prep
+1904119	subs
 prep
 subs
 subs
@@ -297271,8 +296737,7 @@ subs
 advb
 subs
 advb
-
-conj
+1904130	conj
 prep
 subs
 subs
@@ -297286,8 +296751,7 @@ art
 subs
 art
 prde
-
-conj
+1904145	conj
 verb
 prep
 prde
@@ -297305,22 +296769,17 @@ nega
 verb
 prep
 verb
-
-conj
+1904164	conj
 verb
 prep
 subs
 nmpr
-
-prep
-
-
+1904170	prep
+1904173	prep
+1904175	subs
 prep
-
 subs
-prep
 subs
-subs
 prep
 subs
 subs
@@ -297338,8 +296797,7 @@ conj
 verb
 conj
 verb
-
-advb
+1904197	advb
 advb
 verb
 subs
@@ -297354,8 +296812,7 @@ prde
 conj
 prep
 nmpr
-
-conj
+1904213	conj
 verb
 verb
 subs
@@ -297380,10 +296837,9 @@ conj
 prep
 subs
 verb
-
+1904239	advb
 advb
 advb
-advb
 verb
 nmpr
 nmpr
@@ -297402,8 +296858,7 @@ art
 verb
 nega
 verb
-
-conj
+1904261	conj
 verb
 subs
 prep
@@ -297423,8 +296878,7 @@ subs
 subs
 conj
 verb
-
-conj
+1904282	conj
 verb
 prep
 subs
@@ -297445,8 +296899,7 @@ verb
 prep
 prep
 subs
-
-prep
+1904304	prep
 subs
 verb
 verb
@@ -297466,20 +296919,17 @@ advb
 subs
 verb
 subs
-
-conj
+1904325	conj
 verb
 art
 subs
 prep
-
-conj
+1904331	conj
 art
 subs
 prep
 verb
-
-conj
+1904337	conj
 prep
 subs
 nmpr
@@ -297501,8 +296951,7 @@ verb
 subs
 adjv
 subs
-
-conj
+1904360	conj
 advb
 nega
 verb
@@ -297522,8 +296971,7 @@ prep
 subs
 art
 subs
-
-verb
+1904381	verb
 conj
 verb
 subs
@@ -297531,8 +296979,7 @@ verb
 conj
 verb
 subs
-
-inrg
+1904390	inrg
 subs
 art
 subs
@@ -297546,8 +296993,7 @@ verb
 conj
 verb
 subs
-
-inrg
+1904405	inrg
 nega
 conj
 verb
@@ -297569,16 +297015,14 @@ verb
 conj
 subs
 subs
-
-conj
+1904428	conj
 verb
 prep
 subs
 subs
 conj
 verb
-
-conj
+1904436	conj
 nega
 prep
 subs
@@ -297599,8 +297043,7 @@ conj
 subs
 prep
 subs
-
-verb
+1904458	verb
 conj
 nega
 prep
@@ -297615,8 +297058,7 @@ conj
 subs
 nega
 verb
-
-advb
+1904474	advb
 prde
 prep
 prep
@@ -297628,8 +297070,7 @@ subs
 conj
 verb
 subs
-
-intj
+1904487	intj
 nmpr
 nmpr
 subs
@@ -297641,8 +297082,7 @@ prep
 subs
 subs
 verb
-
-conj
+1904500	conj
 verb
 prep
 nmpr
@@ -297656,8 +297096,7 @@ verb
 prep
 prep
 nmpr
-
-conj
+1904515	conj
 verb
 prep
 subs
@@ -297670,8 +297109,7 @@ conj
 verb
 prep
 subs
-
-conj
+1904529	conj
 verb
 prep
 subs
@@ -297693,8 +297131,7 @@ prep
 subs
 subs
 verb
-
-conj
+1904552	conj
 verb
 prep
 subs
@@ -297712,9 +297149,8 @@ verb
 prep
 subs
 advb
-
+1904571	prep
 prep
-prep
 nmpr
 subs
 verb
@@ -297733,8 +297169,7 @@ conj
 subs
 subs
 verb
-
-conj
+1904592	conj
 verb
 prep
 subs
@@ -297755,10 +297190,9 @@ conj
 subs
 conj
 art
-verb
+subs
 prep
-
-conj
+1904616	conj
 verb
 prep
 conj
@@ -297789,7 +297223,7 @@ intj
 adjv
 conj
 subs
-adjv
+verb
 advb
 verb
 subs
@@ -297801,8 +297235,7 @@ verb
 prep
 subs
 nmpr
-
-verb
+1904660	verb
 conj
 verb
 verb
@@ -297818,8 +297251,7 @@ prep
 conj
 nega
 subs
-
-conj
+1904677	conj
 verb
 prep
 nmpr
@@ -297838,8 +297270,7 @@ subs
 art
 subs
 verb
-
-conj
+1904697	conj
 verb
 prep
 subs
@@ -297870,8 +297301,7 @@ verb
 conj
 verb
 prps
-
-conj
+1904729	conj
 verb
 art
 subs
@@ -297890,8 +297320,7 @@ verb
 nega
 verb
 subs
-
-conj
+1904749	conj
 verb
 nmpr
 subs
@@ -297909,7 +297338,7 @@ subs
 verb
 conj
 subs
-verb
+adjv
 prep
 conj
 verb
@@ -297919,9 +297348,8 @@ prep
 subs
 subs
 verb
-
+1904778	advb
 advb
-advb
 intj
 prps
 verb
@@ -297943,8 +297371,7 @@ conj
 subs
 verb
 verb
-
-intj
+1904802	intj
 art
 verb
 prep
@@ -297964,8 +297391,7 @@ verb
 conj
 prin
 verb
-
-subs
+1904823	subs
 prep
 conj
 prep
@@ -297987,8 +297413,7 @@ prep
 verb
 nega
 verb
-
-inrg
+1904846	inrg
 nega
 subs
 subs
@@ -298004,8 +297429,7 @@ subs
 prep
 subs
 verb
-
-conj
+1904863	conj
 verb
 prep
 subs
@@ -298024,8 +297448,7 @@ subs
 subs
 adjv
 verb
-
-conj
+1904883	conj
 verb
 adjv
 prep
@@ -298038,8 +297461,7 @@ prep
 adjv
 nmpr
 verb
-
-conj
+1904897	conj
 verb
 adjv
 conj
@@ -298050,8 +297472,7 @@ verb
 subs
 verb
 subs
-
-verb
+1904909	verb
 subs
 prep
 subs
@@ -298066,10 +297487,9 @@ verb
 prep
 subs
 adjv
-
+1904925	advb
 advb
 advb
-advb
 verb
 nmpr
 prep
@@ -298088,8 +297508,7 @@ nega
 advb
 subs
 verb
-
-conj
+1904947	conj
 prep
 verb
 subs
@@ -298109,8 +297528,7 @@ prep
 subs
 nmpr
 verb
-
-conj
+1904968	conj
 verb
 verb
 subs
@@ -298119,8 +297537,7 @@ conj
 verb
 verb
 subs
-
-intj
+1904978	intj
 subs
 verb
 subs
@@ -298143,8 +297560,7 @@ verb
 subs
 prep
 subs
-
-art
+1905002	art
 verb
 prep
 verb
@@ -298164,8 +297580,7 @@ verb
 prep
 subs
 nmpr
-
-conj
+1905023	conj
 verb
 prep
 subs
@@ -298179,8 +297594,7 @@ prep
 subs
 nmpr
 prep
-
-conj
+1905038	conj
 verb
 prep
 nmpr
@@ -298189,8 +297603,7 @@ conj
 subs
 nmpr
 verb
-
-subs
+1905048	subs
 subs
 prep
 subs
@@ -298210,10 +297623,9 @@ conj
 advb
 prep
 subs
-
+1905069	subs
 subs
 subs
-subs
 prep
 subs
 subs
@@ -298245,8 +297657,7 @@ prep
 subs
 nega
 verb
-
-conj
+1905104	conj
 nmpr
 subs
 conj
@@ -298260,8 +297671,7 @@ prde
 nmpr
 prps
 subs
-
-advb
+1905119	advb
 verb
 verb
 prep
@@ -298280,8 +297690,7 @@ prep
 subs
 prep
 subs
-
-conj
+1905139	conj
 subs
 subs
 prps
@@ -298294,8 +297703,7 @@ prep
 verb
 subs
 nmpr
-
-conj
+1905153	conj
 verb
 prep
 subs
@@ -298313,8 +297721,7 @@ prep
 adjv
 verb
 subs
-
-verb
+1905172	verb
 prep
 subs
 verb
@@ -298326,10 +297733,9 @@ subs
 prep
 adjv
 nmpr
-
+1905185	advb
 advb
 advb
-advb
 verb
 adjv
 nmpr
@@ -298348,8 +297754,7 @@ verb
 conj
 verb
 prep
-
-advb
+1905207	advb
 advb
 verb
 prep
@@ -298370,8 +297775,7 @@ prep
 subs
 verb
 subs
-
-conj
+1905229	conj
 verb
 prep
 subs
@@ -298397,8 +297801,7 @@ verb
 subs
 prep
 subs
-
-conj
+1905256	conj
 advb
 verb
 nmpr
@@ -298420,8 +297823,7 @@ subs
 conj
 nega
 verb
-
-conj
+1905279	conj
 verb
 nega
 conj
@@ -298439,8 +297841,7 @@ prep
 advb
 verb
 verb
-
-subs
+1905298	subs
 subs
 prep
 subs
@@ -298465,8 +297866,7 @@ subs
 prep
 art
 subs
-
-conj
+1905324	conj
 advb
 advb
 verb
@@ -298487,8 +297887,7 @@ subs
 subs
 verb
 prep
-
-conj
+1905346	conj
 subs
 prep
 nmpr
@@ -298508,8 +297907,7 @@ verb
 prep
 verb
 verb
-
-conj
+1905367	conj
 verb
 prep
 nmpr
@@ -298529,8 +297927,7 @@ subs
 verb
 prep
 subs
-
-conj
+1905388	conj
 subs
 verb
 subs
@@ -298548,8 +297945,7 @@ verb
 conj
 conj
 verb
-
-conj
+1905407	conj
 verb
 prep
 subs
@@ -298566,8 +297962,7 @@ adjv
 subs
 verb
 prep
-
-conj
+1905425	conj
 verb
 subs
 subs
@@ -298593,8 +297988,7 @@ art
 prps
 subs
 verb
-
-conj
+1905452	conj
 art
 subs
 conj
@@ -298613,8 +298007,7 @@ subs
 conj
 prep
 subs
-
-conj
+1905472	conj
 verb
 prep
 subs
@@ -298635,8 +298028,7 @@ adjv
 prep
 verb
 subs
-
-conj
+1905494	conj
 verb
 subs
 art
@@ -298651,8 +298043,7 @@ art
 subs
 verb
 subs
-
-prep
+1905510	prep
 subs
 subs
 art
@@ -298668,8 +298059,7 @@ conj
 subs
 subs
 verb
-
-intj
+1905527	intj
 subs
 nmpr
 verb
@@ -298688,8 +298078,7 @@ subs
 prep
 subs
 verb
-
-conj
+1905547	conj
 subs
 prep
 subs
@@ -298710,8 +298099,7 @@ verb
 prep
 subs
 subs
-
-art
+1905569	art
 subs
 conj
 verb
@@ -298735,8 +298123,7 @@ nmpr
 prep
 subs
 nmpr
-
-verb
+1905594	verb
 verb
 nmpr
 prep
@@ -298759,8 +298146,7 @@ subs
 conj
 subs
 subs
-
-conj
+1905618	conj
 prep
 subs
 nmpr
@@ -298769,8 +298155,7 @@ nmpr
 prep
 subs
 verb
-
-conj
+1905628	conj
 verb
 subs
 subs
@@ -298791,8 +298176,7 @@ subs
 subs
 verb
 prep
-
-conj
+1905650	conj
 verb
 prep
 subs
@@ -298818,8 +298202,7 @@ subs
 subs
 verb
 prep
-
-intj
+1905677	intj
 art
 verb
 prep
@@ -298853,8 +298236,7 @@ prep
 nmpr
 nega
 verb
-
-conj
+1905712	conj
 advb
 prps
 adjv
@@ -298876,8 +298258,7 @@ prep
 subs
 verb
 subs
-
-conj
+1905735	conj
 nmpr
 subs
 conj
@@ -298902,8 +298283,7 @@ verb
 advb
 subs
 verb
-
-conj
+1905761	conj
 advb
 verb
 nmpr
@@ -298945,8 +298325,7 @@ nmpr
 conj
 prep
 subs
-
-prep
+1905804	prep
 subs
 verb
 advb
@@ -298962,8 +298341,7 @@ conj
 verb
 conj
 verb
-
-verb
+1905821	verb
 prep
 conj
 prep
@@ -298972,8 +298350,7 @@ verb
 subs
 subs
 nmpr
-
-conj
+1905831	conj
 prep
 subs
 art
@@ -298990,8 +298367,7 @@ verb
 prep
 subs
 subs
-
-conj
+1905849	conj
 verb
 nmpr
 prep
@@ -299015,8 +298391,7 @@ subs
 prep
 subs
 verb
-
-conj
+1905874	conj
 subs
 prep
 subs
@@ -299037,8 +298412,7 @@ subs
 prep
 prep
 nmpr
-
-intj
+1905896	intj
 prep
 subs
 verb
@@ -299049,8 +298423,7 @@ subs
 prep
 subs
 verb
-
-conj
+1905908	conj
 verb
 subs
 prep
@@ -299071,8 +298444,7 @@ adjv
 prep
 subs
 adjv
-
-conj
+1905930	conj
 nega
 verb
 subs
@@ -299081,8 +298453,7 @@ conj
 subs
 verb
 verb
-
-conj
+1905940	conj
 subs
 verb
 verb
@@ -299095,8 +298466,7 @@ verb
 prep
 verb
 adjv
-
-nega
+1905954	nega
 verb
 subs
 prep
@@ -299108,8 +298478,7 @@ subs
 nega
 verb
 subs
-
-conj
+1905967	conj
 adjv
 subs
 verb
@@ -299134,8 +298503,7 @@ conj
 subs
 adjv
 verb
-
-conj
+1905993	conj
 subs
 subs
 adjv
@@ -299154,8 +298522,7 @@ prep
 verb
 adjv
 subs
-
-conj
+1906013	conj
 adjv
 subs
 verb
@@ -299164,8 +298531,7 @@ prps
 prep
 subs
 verb
-
-subs
+1906023	subs
 adjv
 verb
 verb
@@ -299173,9 +298539,8 @@ subs
 subs
 verb
 verb
-subs
-
 subs
+1906033	subs
 prep
 subs
 verb
@@ -299187,8 +298552,7 @@ subs
 subs
 nega
 verb
-
-verb
+1906046	verb
 adjv
 verb
 verb
@@ -299200,8 +298564,7 @@ verb
 prep
 art
 subs
-
-prep
+1906059	prep
 subs
 verb
 prep
@@ -299210,8 +298573,7 @@ subs
 prep
 subs
 verb
-
-prep
+1906069	prep
 subs
 subs
 subs
@@ -299225,8 +298587,7 @@ subs
 subs
 subs
 adjv
-
-conj
+1906084	conj
 subs
 verb
 subs
@@ -299245,8 +298606,7 @@ subs
 subs
 prep
 subs
-
-prep
+1906104	prep
 verb
 prep
 subs
@@ -299262,8 +298622,7 @@ subs
 prep
 subs
 verb
-
-conj
+1906121	conj
 verb
 prep
 subs
@@ -299273,8 +298632,7 @@ subs
 prep
 subs
 verb
-
-conj
+1906132	conj
 verb
 subs
 art
@@ -299290,8 +298648,7 @@ conj
 subs
 prep
 subs
-
-conj
+1906149	conj
 verb
 subs
 prep
@@ -299305,8 +298662,7 @@ conj
 prep
 subs
 adjv
-
-conj
+1906164	conj
 verb
 prep
 verb
@@ -299317,9 +298673,8 @@ prep
 subs
 verb
 art
-subs
-
 subs
+1906177	subs
 verb
 prep
 subs
@@ -299332,8 +298687,7 @@ subs
 conj
 art
 subs
-
-intj
+1906191	intj
 verb
 conj
 prps
@@ -299355,8 +298709,7 @@ prep
 verb
 verb
 prep
-
-nmpr
+1906214	nmpr
 verb
 prep
 verb
@@ -299370,8 +298723,7 @@ verb
 prep
 subs
 subs
-
-prep
+1906229	prep
 subs
 subs
 verb
@@ -299380,8 +298732,7 @@ prep
 subs
 verb
 subs
-
-conj
+1906239	conj
 verb
 subs
 subs
@@ -299391,8 +298742,7 @@ subs
 subs
 verb
 prep
-
-verb
+1906250	verb
 nmpr
 conj
 verb
@@ -299402,8 +298752,7 @@ nmpr
 subs
 conj
 subs
-
-verb
+1906261	verb
 subs
 subs
 subs
@@ -299416,17 +298765,15 @@ subs
 nmpr
 prps
 subs
-
-intj
+1906275	intj
 subs
 verb
 subs
 subs
 subs
 adjv
-verb
-
 verb
+1906284	verb
 subs
 verb
 verb
@@ -299438,9 +298785,8 @@ subs
 nega
 verb
 subs
-
+1906297	verb
 verb
-verb
 art
 subs
 verb
@@ -299456,8 +298802,7 @@ verb
 nmpr
 conj
 nmpr
-
-advb
+1906315	advb
 verb
 verb
 nmpr
@@ -299465,16 +298810,14 @@ advb
 verb
 advb
 verb
-
-verb
+1906324	verb
 subs
 verb
 subs
 subs
 subs
 verb
-
-conj
+1906332	conj
 verb
 subs
 subs
@@ -299484,16 +298827,14 @@ verb
 prep
 subs
 verb
-
-verb
+1906343	verb
 adjv
 conj
 verb
 verb
 adjv
 subs
-
-verb
+1906351	verb
 prep
 nmpr
 adjv
@@ -299510,8 +298851,7 @@ verb
 prep
 subs
 subs
-
-verb
+1906369	verb
 subs
 conj
 verb
@@ -299537,8 +298877,7 @@ prep
 verb
 prep
 adjv
-
-prps
+1906396	prps
 subs
 verb
 subs
@@ -299548,17 +298887,15 @@ subs
 verb
 subs
 verb
-
-subs
+1906407	subs
 prep
 subs
 verb
 subs
 verb
-subs
 subs
-
 subs
+1906416	subs
 verb
 subs
 inrg
@@ -299570,8 +298907,7 @@ verb
 prep
 art
 subs
-
-prep
+1906429	prep
 subs
 verb
 nega
@@ -299584,8 +298920,7 @@ verb
 subs
 subs
 subs
-
-verb
+1906443	verb
 nmpr
 subs
 subs
@@ -299607,9 +298942,8 @@ subs
 subs
 nega
 verb
-
+1906466	conj
 conj
-conj
 advb
 adjv
 nmpr
@@ -299629,8 +298963,7 @@ subs
 adjv
 nega
 verb
-
-conj
+1906488	conj
 nmpr
 verb
 conj
@@ -299642,8 +298975,7 @@ subs
 conj
 prps
 verb
-
-verb
+1906501	verb
 subs
 nega
 verb
@@ -299660,8 +298992,7 @@ subs
 adjv
 verb
 subs
-
-conj
+1906519	conj
 nega
 verb
 verb
@@ -299673,8 +299004,7 @@ verb
 prep
 verb
 subs
-
-verb
+1906532	verb
 subs
 prep
 verb
@@ -299690,8 +299020,7 @@ subs
 conj
 subs
 subs
-
-conj
+1906549	conj
 subs
 prep
 nmpr
@@ -299708,9 +299037,8 @@ verb
 conj
 verb
 prep
-subs
-
-conj
+verb
+1906568	conj
 adjv
 verb
 conj
@@ -299723,8 +299051,7 @@ art
 subs
 prep
 subs
-
-conj
+1906582	conj
 art
 subs
 verb
@@ -299754,8 +299081,7 @@ prep
 verb
 prep
 subs
-
-conj
+1906613	conj
 verb
 prep
 subs
@@ -299769,9 +299095,8 @@ prep
 subs
 subs
 prep
-subs
-
 subs
+1906629	subs
 prep
 nmpr
 verb
@@ -299800,8 +299125,7 @@ adjv
 prep
 subs
 nmpr
-
-conj
+1906659	conj
 verb
 subs
 prep
@@ -299819,8 +299143,7 @@ subs
 prep
 subs
 verb
-
-conj
+1906678	conj
 subs
 subs
 prep
@@ -299830,8 +299153,7 @@ subs
 prep
 subs
 nmpr
-
-conj
+1906689	conj
 verb
 subs
 prep
@@ -299847,8 +299169,7 @@ prep
 subs
 conj
 verb
-
-subs
+1906706	subs
 conj
 advb
 conj
@@ -299872,8 +299193,7 @@ conj
 subs
 verb
 prep
-
-conj
+1906731	conj
 verb
 subs
 conj
@@ -299893,8 +299213,7 @@ subs
 conj
 subs
 subs
-
-conj
+1906752	conj
 subs
 conj
 subs
@@ -299907,8 +299226,7 @@ subs
 verb
 prep
 subs
-
-conj
+1906766	conj
 verb
 subs
 subs
@@ -299925,8 +299243,7 @@ subs
 prep
 subs
 subs
-
-conj
+1906784	conj
 verb
 subs
 prep
@@ -299944,8 +299261,7 @@ conj
 verb
 prep
 subs
-
-advb
+1906803	advb
 verb
 subs
 conj
@@ -299963,8 +299279,7 @@ verb
 subs
 subs
 subs
-
-verb
+1906822	verb
 prep
 prep
 subs
@@ -299985,8 +299300,7 @@ conj
 subs
 prps
 verb
-
-conj
+1906844	conj
 prps
 verb
 prep
@@ -300000,15 +299314,13 @@ subs
 prep
 subs
 verb
-
-prep
+1906859	prep
 subs
 conj
 subs
 verb
 prep
-
-verb
+1906866	verb
 subs
 conj
 subs
@@ -300019,8 +299331,7 @@ conj
 verb
 prep
 subs
-
-verb
+1906878	verb
 verb
 conj
 verb
@@ -300030,8 +299341,7 @@ conj
 verb
 subs
 nmpr
-
-verb
+1906889	verb
 prep
 subs
 art
@@ -300045,16 +299355,14 @@ subs
 nmpr
 subs
 subs
-
-verb
+1906904	verb
 subs
 adjv
 conj
 subs
 verb
 verb
-
-verb
+1906912	verb
 prep
 verb
 subs
@@ -300071,8 +299379,7 @@ prps
 verb
 conj
 verb
-
-advb
+1906930	advb
 verb
 subs
 adjv
@@ -300080,8 +299387,7 @@ conj
 subs
 adjv
 verb
-
-advb
+1906939	advb
 verb
 prep
 subs
@@ -300100,8 +299406,7 @@ subs
 prep
 subs
 verb
-
-conj
+1906959	conj
 verb
 art
 subs
@@ -300121,8 +299426,7 @@ prep
 subs
 conj
 subs
-
-verb
+1906980	verb
 advb
 advb
 subs
@@ -300145,8 +299449,7 @@ conj
 adjv
 nega
 verb
-
-nega
+1907004	nega
 verb
 advb
 subs
@@ -300163,8 +299466,7 @@ advb
 conj
 verb
 verb
-
-conj
+1907022	conj
 verb
 nmpr
 verb
@@ -300188,8 +299490,7 @@ verb
 subs
 conj
 subs
-
-conj
+1907047	conj
 verb
 prep
 subs
@@ -300210,8 +299511,7 @@ art
 adjv
 conj
 verb
-
-conj
+1907069	conj
 verb
 subs
 nmpr
@@ -300241,8 +299541,7 @@ prep
 subs
 subs
 verb
-
-conj
+1907100	conj
 verb
 prep
 nmpr
@@ -300262,8 +299561,7 @@ subs
 nmpr
 art
 verb
-
-conj
+1907121	conj
 verb
 prep
 subs
@@ -300291,8 +299589,7 @@ conj
 prps
 verb
 prep
-
-verb
+1907150	verb
 advb
 subs
 subs
@@ -300308,8 +299605,7 @@ verb
 conj
 verb
 prep
-
-intj
+1907167	intj
 verb
 prep
 subs
@@ -300340,8 +299636,7 @@ subs
 art
 verb
 prep
-
-conj
+1907199	conj
 conj
 verb
 prep
@@ -300376,8 +299671,7 @@ prde
 verb
 prep
 nmpr
-
-conj
+1907235	conj
 advb
 verb
 intj
@@ -300398,8 +299692,7 @@ verb
 prep
 verb
 prep
-
-conj
+1907257	conj
 inrg
 verb
 prep
@@ -300421,8 +299714,7 @@ subs
 conj
 prep
 subs
-
-conj
+1907280	conj
 advb
 inrg
 prep
@@ -300447,8 +299739,7 @@ art
 prde
 prep
 verb
-
-conj
+1907306	conj
 verb
 prep
 nmpr
@@ -300482,8 +299773,7 @@ verb
 prep
 art
 subs
-
-conj
+1907341	conj
 verb
 subs
 subs
@@ -300521,8 +299811,7 @@ verb
 prep
 subs
 prep
-
-conj
+1907380	conj
 verb
 subs
 art
@@ -300544,8 +299833,7 @@ art
 adjv
 subs
 nmpr
-
-advb
+1907403	advb
 verb
 subs
 nmpr
@@ -300559,8 +299847,7 @@ verb
 prep
 verb
 prep
-
-conj
+1907418	conj
 nega
 verb
 prep
@@ -300583,8 +299870,7 @@ prep
 subs
 subs
 nmpr
-
-nega
+1907442	nega
 verb
 prep
 nmpr
@@ -300613,8 +299899,7 @@ verb
 subs
 subs
 subs
-
-prep
+1907472	prep
 verb
 conj
 verb
@@ -300632,8 +299917,7 @@ subs
 subs
 conj
 subs
-
-conj
+1907491	conj
 verb
 prep
 nmpr
@@ -300652,8 +299936,7 @@ prep
 subs
 subs
 nmpr
-
-inrg
+1907511	inrg
 subs
 nmpr
 conj
@@ -300669,8 +299952,7 @@ prep
 nmpr
 prep
 subs
-
-prin
+1907528	prin
 prep
 subs
 subs
@@ -300691,8 +299973,7 @@ prep
 nmpr
 prep
 subs
-
-conj
+1907550	conj
 verb
 conj
 nega
@@ -300708,8 +299989,7 @@ prep
 verb
 nega
 verb
-
-conj
+1907567	conj
 verb
 nmpr
 subs
@@ -300739,8 +300019,7 @@ prep
 subs
 subs
 subs
-
-conj
+1907598	conj
 verb
 prep
 verb
@@ -300759,8 +300038,7 @@ conj
 verb
 subs
 nmpr
-
-conj
+1907618	conj
 verb
 prep
 nmpr
@@ -300787,8 +300065,7 @@ subs
 nmpr
 art
 subs
-
-conj
+1907646	conj
 verb
 prep
 advb
@@ -300816,8 +300093,7 @@ prep
 subs
 prep
 verb
-
-advb
+1907675	advb
 verb
 nmpr
 subs
@@ -300854,8 +300130,7 @@ prep
 subs
 art
 prde
-
-conj
+1907713	conj
 verb
 subs
 art
@@ -300863,9 +300138,7 @@ subs
 nmpr
 prep
 nmpr
-
-
-conj
+1907723	conj
 verb
 prep
 nmpr
@@ -300882,8 +300155,7 @@ prep
 subs
 art
 subs
-
-conj
+1907741	conj
 verb
 conj
 verb
@@ -300891,8 +300163,7 @@ subs
 subs
 nmpr
 prep
-
-intj
+1907750	intj
 verb
 subs
 prep
@@ -300909,8 +300180,7 @@ prep
 subs
 prep
 subs
-
-conj
+1907768	conj
 verb
 subs
 subs
@@ -300928,8 +300198,7 @@ conj
 verb
 prep
 nmpr
-
-conj
+1907787	conj
 verb
 prep
 nmpr
@@ -300952,8 +300221,7 @@ prep
 nmpr
 prep
 verb
-
-advb
+1907811	advb
 verb
 prep
 nmpr
@@ -300977,8 +300245,7 @@ prep
 subs
 subs
 nmpr
-
-intj
+1907836	intj
 prps
 verb
 prep
@@ -300995,8 +300262,7 @@ verb
 conj
 prps
 verb
-
-inrg
+1907854	inrg
 verb
 prep
 subs
@@ -301018,8 +300284,7 @@ nmpr
 conj
 prep
 nmpr
-
-inrg
+1907877	inrg
 subs
 nmpr
 conj
@@ -301036,8 +300301,7 @@ conj
 nmpr
 conj
 nmpr
-
-conj
+1907895	conj
 verb
 nmpr
 prep
@@ -301059,16 +300323,14 @@ nmpr
 prep
 subs
 nmpr
-
-conj
+1907918	conj
 verb
 nmpr
 prep
 nmpr
 prep
 verb
-
-nmpr
+1907926	nmpr
 subs
 subs
 nmpr
@@ -301095,8 +300357,7 @@ conj
 prep
 art
 subs
-
-verb
+1907954	verb
 nmpr
 subs
 conj
@@ -301118,8 +300379,7 @@ prep
 verb
 subs
 adjv
-
-advb
+1907977	advb
 nmpr
 verb
 subs
@@ -301128,8 +300388,7 @@ prep
 subs
 art
 subs
-
-conj
+1907987	conj
 verb
 prep
 subs
@@ -301149,8 +300408,7 @@ conj
 subs
 conj
 verb
-
-conj
+1908008	conj
 advb
 nmpr
 subs
@@ -301169,8 +300427,7 @@ nmpr
 subs
 prep
 subs
-
-conj
+1908028	conj
 verb
 nmpr
 subs
@@ -301191,8 +300448,7 @@ prep
 nmpr
 subs
 nmpr
-
-prde
+1908050	prde
 art
 subs
 conj
@@ -301211,8 +300467,7 @@ subs
 verb
 subs
 nmpr
-
-prep
+1908070	prep
 prin
 verb
 conj
@@ -301229,8 +300484,7 @@ subs
 prep
 adjv
 nmpr
-
-prep
+1908088	prep
 subs
 subs
 verb
@@ -301258,8 +300512,7 @@ subs
 subs
 subs
 subs
-
-prps
+1908117	prps
 verb
 conj
 verb
@@ -301273,8 +300526,7 @@ subs
 subs
 subs
 nmpr
-
-inrg
+1908132	inrg
 nega
 verb
 prep
@@ -301296,8 +300548,7 @@ subs
 verb
 subs
 adjv
-
-conj
+1908155	conj
 verb
 adjv
 subs
@@ -301316,8 +300567,7 @@ verb
 prep
 subs
 subs
-
-verb
+1908175	verb
 conj
 verb
 conj
@@ -301329,8 +300579,7 @@ conj
 prep
 verb
 prep
-
-conj
+1908188	conj
 adjv
 verb
 prep
@@ -301351,8 +300600,7 @@ subs
 conj
 verb
 prep
-
-conj
+1908210	conj
 prde
 prep
 art
@@ -301381,8 +300629,7 @@ subs
 conj
 verb
 subs
-
-conj
+1908240	conj
 verb
 subs
 subs
@@ -301397,8 +300644,7 @@ conj
 verb
 subs
 subs
-
-conj
+1908256	conj
 prep
 nmpr
 verb
@@ -301412,10 +300658,9 @@ nmpr
 subs
 verb
 prde
-
+1908271	advb
 advb
 advb
-advb
 verb
 nmpr
 prep
@@ -301442,8 +300687,7 @@ conj
 nega
 verb
 subs
-
-prep
+1908301	prep
 subs
 conj
 verb
@@ -301459,8 +300703,7 @@ nega
 verb
 subs
 nmpr
-
-conj
+1908318	conj
 verb
 prep
 art
@@ -301474,8 +300717,7 @@ conj
 prep
 nmpr
 subs
-
-conj
+1908333	conj
 verb
 subs
 nmpr
@@ -301499,8 +300741,7 @@ intj
 subs
 subs
 verb
-
-conj
+1908358	conj
 verb
 conj
 verb
@@ -301513,8 +300754,7 @@ conj
 verb
 prep
 nmpr
-
-conj
+1908372	conj
 verb
 prps
 verb
@@ -301541,8 +300781,7 @@ nmpr
 nmpr
 subs
 subs
-
-prep
+1908400	prep
 subs
 art
 prps
@@ -301573,8 +300812,7 @@ prps
 conj
 nega
 verb
-
-conj
+1908432	conj
 verb
 nmpr
 subs
@@ -301585,8 +300823,7 @@ conj
 verb
 prep
 nmpr
-
-conj
+1908444	conj
 verb
 intj
 nmpr
@@ -301614,8 +300851,7 @@ verb
 nmpr
 subs
 adjv
-
-conj
+1908473	conj
 verb
 subs
 nmpr
@@ -301623,8 +300859,7 @@ prep
 nmpr
 prep
 verb
-
-verb
+1908482	verb
 conj
 verb
 prep
@@ -301649,8 +300884,7 @@ subs
 subs
 subs
 subs
-
-conj
+1908508	conj
 prep
 subs
 subs
@@ -301674,8 +300908,7 @@ conj
 prep
 nmpr
 subs
-
-conj
+1908533	conj
 prde
 prep
 art
@@ -301693,8 +300926,7 @@ art
 prde
 conj
 verb
-
-intj
+1908552	intj
 verb
 prep
 subs
@@ -301722,8 +300954,7 @@ prep
 subs
 conj
 verb
-
-subs
+1908581	subs
 prep
 nmpr
 subs
@@ -301734,8 +300965,7 @@ conj
 verb
 prep
 subs
-
-prps
+1908593	prps
 verb
 prep
 subs
@@ -301749,8 +300979,7 @@ subs
 conj
 adjv
 subs
-
-verb
+1908608	verb
 nega
 verb
 nmpr
@@ -301764,9 +300993,8 @@ subs
 subs
 prep
 verb
-subs
-
 subs
+1908624	subs
 verb
 verb
 prep
@@ -301785,8 +301013,7 @@ subs
 prep
 subs
 verb
-
-verb
+1908644	verb
 prep
 subs
 prep
@@ -301800,8 +301027,7 @@ subs
 prep
 subs
 verb
-
-prep
+1908659	prep
 subs
 subs
 advb
@@ -301818,8 +301044,7 @@ subs
 prep
 conj
 verb
-
-prin
+1908677	prin
 verb
 conj
 verb
@@ -301834,8 +301059,7 @@ subs
 prep
 adjv
 subs
-
-nmpr
+1908693	nmpr
 prep
 conj
 verb
@@ -301843,14 +301067,13 @@ conj
 prep
 subs
 prep
-subs
+verb
 subs
 conj
 verb
 conj
 verb
-
-intj
+1908708	intj
 prep
 subs
 verb
@@ -301869,8 +301092,7 @@ subs
 subs
 subs
 subs
-
-conj
+1908728	conj
 nega
 subs
 verb
@@ -301885,9 +301107,8 @@ verb
 subs
 prep
 subs
-
+1908744	adjv
 adjv
-adjv
 prps
 verb
 prep
@@ -301899,8 +301120,7 @@ subs
 verb
 prep
 subs
-
-nmpr
+1908758	nmpr
 prep
 verb
 adjv
@@ -301927,8 +301147,7 @@ subs
 prep
 subs
 nmpr
-
-conj
+1908786	conj
 verb
 nmpr
 subs
@@ -301940,8 +301159,7 @@ art
 subs
 conj
 verb
-
-conj
+1908799	conj
 verb
 nmpr
 prin
@@ -301950,8 +301168,7 @@ conj
 verb
 subs
 nmpr
-
-prep
+1908809	prep
 subs
 art
 prps
@@ -301973,8 +301190,7 @@ conj
 verb
 conj
 verb
-
-conj
+1908832	conj
 verb
 prep
 nmpr
@@ -302026,8 +301242,7 @@ conj
 prep
 subs
 subs
-
-conj
+1908885	conj
 verb
 nmpr
 art
@@ -302060,8 +301275,7 @@ verb
 prep
 prep
 nmpr
-
-conj
+1908919	conj
 verb
 prin
 verb
@@ -302084,8 +301298,7 @@ nega
 verb
 prep
 subs
-
-conj
+1908943	conj
 verb
 nmpr
 prep
@@ -302094,8 +301307,7 @@ verb
 subs
 nmpr
 subs
-
-intj
+1908953	intj
 subs
 verb
 conj
@@ -302121,8 +301333,7 @@ verb
 subs
 verb
 nmpr
-
-conj
+1908980	conj
 prep
 subs
 conj
@@ -302139,8 +301350,7 @@ prep
 subs
 subs
 nmpr
-
-conj
+1908998	conj
 verb
 nmpr
 prep
@@ -302159,14 +301369,12 @@ conj
 subs
 prep
 subs
-
+1909018	verb
 verb
-verb
 subs
 verb
 subs
-
-verb
+1909024	verb
 prep
 subs
 nmpr
@@ -302188,8 +301396,7 @@ subs
 prep
 subs
 subs
-
-subs
+1909047	subs
 verb
 prep
 subs
@@ -302202,9 +301409,8 @@ prep
 subs
 subs
 prep
-subs
-
 subs
+1909062	subs
 subs
 verb
 conj
@@ -302224,8 +301430,7 @@ art
 subs
 prep
 subs
-
-conj
+1909083	conj
 verb
 subs
 nmpr
@@ -302238,8 +301443,7 @@ conj
 subs
 nmpr
 verb
-
-subs
+1909097	subs
 verb
 verb
 conj
@@ -302257,8 +301461,7 @@ prep
 subs
 art
 subs
-
-verb
+1909116	verb
 subs
 verb
 subs
@@ -302271,8 +301474,7 @@ intj
 subs
 art
 subs
-
-verb
+1909130	verb
 subs
 verb
 subs
@@ -302285,8 +301487,7 @@ subs
 verb
 prep
 subs
-
-prep
+1909144	prep
 subs
 adjv
 verb
@@ -302308,8 +301509,7 @@ subs
 nmpr
 intj
 subs
-
-intj
+1909167	intj
 nmpr
 nmpr
 prep
@@ -302326,8 +301526,7 @@ conj
 subs
 prep
 subs
-
-prep
+1909185	prep
 verb
 subs
 verb
@@ -302341,8 +301540,7 @@ subs
 verb
 verb
 verb
-
-prin
+1909200	prin
 verb
 prep
 subs
@@ -302369,8 +301567,7 @@ conj
 subs
 prep
 subs
-
-prin
+1909228	prin
 verb
 prep
 subs
@@ -302379,8 +301576,7 @@ subs
 conj
 subs
 verb
-
-prep
+1909238	prep
 prin
 verb
 conj
@@ -302397,8 +301593,7 @@ conj
 subs
 subs
 verb
-
-intj
+1909256	intj
 subs
 prep
 subs
@@ -302415,8 +301610,7 @@ prep
 adjv
 conj
 verb
-
-conj
+1909274	conj
 nmpr
 subs
 subs
@@ -302426,8 +301620,7 @@ subs
 subs
 subs
 subs
-
-subs
+1909285	subs
 art
 subs
 prep
@@ -302440,8 +301633,7 @@ conj
 subs
 verb
 prep
-
-conj
+1909299	conj
 prep
 prin
 verb
@@ -302451,8 +301643,7 @@ prin
 subs
 verb
 prep
-
-art
+1909310	art
 subs
 conj
 verb
@@ -302468,8 +301659,7 @@ conj
 subs
 subs
 verb
-
-art
+1909327	art
 verb
 subs
 subs
@@ -302487,8 +301677,7 @@ verb
 subs
 nega
 verb
-
-inrg
+1909346	inrg
 nega
 verb
 inrg
@@ -302505,8 +301694,7 @@ nega
 verb
 subs
 subs
-
-art
+1909364	art
 verb
 prep
 subs
@@ -302527,8 +301715,7 @@ prep
 subs
 prep
 verb
-
-art
+1909386	art
 verb
 verb
 prep
@@ -302538,8 +301725,7 @@ subs
 prep
 subs
 verb
-
-advb
+1909397	advb
 nega
 verb
 advb
@@ -302561,16 +301747,14 @@ subs
 prep
 subs
 verb
-
-prep
+1909420	prep
 prin
 verb
 conj
 verb
 verb
 adjv
-
-verb
+1909428	verb
 subs
 subs
 conj
@@ -302598,8 +301782,7 @@ conj
 subs
 nega
 verb
-
-inrg
+1909457	inrg
 verb
 nmpr
 conj
@@ -302614,8 +301797,7 @@ prep
 subs
 subs
 verb
-
-inrg
+1909473	inrg
 nega
 verb
 conj
@@ -302638,8 +301820,7 @@ subs
 subs
 prep
 subs
-
-art
+1909497	art
 verb
 prep
 adjv
@@ -302650,8 +301831,7 @@ subs
 subs
 subs
 verb
-
-conj
+1909509	conj
 verb
 subs
 conj
@@ -302660,8 +301840,7 @@ conj
 subs
 verb
 verb
-
-conj
+1909519	conj
 subs
 nmpr
 verb
@@ -302678,9 +301857,8 @@ verb
 verb
 conj
 nega
-verb
-
 verb
+1909538	verb
 prep
 subs
 conj
@@ -302694,8 +301872,7 @@ advb
 prep
 subs
 verb
-
-prin
+1909553	prin
 verb
 prep
 subs
@@ -302721,8 +301898,7 @@ prep
 subs
 verb
 subs
-
-conj
+1909580	conj
 verb
 conj
 verb
@@ -302732,8 +301908,7 @@ prep
 subs
 nega
 verb
-
-prin
+1909591	prin
 verb
 conj
 verb
@@ -302750,8 +301925,7 @@ prep
 adjv
 prps
 prps
-
-verb
+1909609	verb
 subs
 conj
 verb
@@ -302762,8 +301936,7 @@ advb
 verb
 conj
 verb
-
-subs
+1909621	subs
 prep
 subs
 verb
@@ -302771,8 +301944,7 @@ prep
 subs
 verb
 verb
-
-conj
+1909630	conj
 verb
 subs
 prep
@@ -302793,8 +301965,7 @@ prep
 subs
 nega
 verb
-
-conj
+1909652	conj
 prps
 nmpr
 subs
@@ -302804,8 +301975,7 @@ verb
 subs
 nmpr
 verb
-
-conj
+1909663	conj
 verb
 prep
 subs
@@ -302824,8 +301994,7 @@ verb
 conj
 nega
 verb
-
-nega
+1909683	nega
 verb
 conj
 prep
@@ -302843,8 +302012,7 @@ verb
 prep
 subs
 subs
-
-intj
+1909702	intj
 verb
 conj
 verb
@@ -302856,8 +302024,7 @@ verb
 subs
 subs
 subs
-
-conj
+1909715	conj
 subs
 subs
 verb
@@ -302868,8 +302035,7 @@ prep
 subs
 subs
 subs
-
-conj
+1909727	conj
 prps
 nmpr
 subs
@@ -302882,13 +302048,12 @@ nega
 verb
 prps
 verb
-
-nega
+1909741	nega
 verb
 subs
 nmpr
 conj
-subs
+verb
 nmpr
 prps
 verb
@@ -302898,8 +302063,7 @@ conj
 verb
 adjv
 nmpr
-
-intj
+1909757	intj
 verb
 prep
 subs
@@ -302915,9 +302079,8 @@ conj
 subs
 prep
 subs
-verb
-
 verb
+1909775	verb
 conj
 subs
 verb
@@ -302935,8 +302098,7 @@ prep
 adjv
 nmpr
 verb
-
-art
+1909794	art
 adjv
 art
 adjv
@@ -302955,9 +302117,8 @@ verb
 subs
 nmpr
 nega
-verb
-
 verb
+1909815	verb
 prep
 subs
 subs
@@ -302978,8 +302139,7 @@ subs
 prep
 subs
 subs
-
-verb
+1909837	verb
 prep
 subs
 subs
@@ -302997,8 +302157,7 @@ subs
 conj
 subs
 advb
-
-prep
+1909856	prep
 verb
 conj
 verb
@@ -303018,8 +302177,7 @@ conj
 adjv
 nmpr
 verb
-
-verb
+1909877	verb
 subs
 verb
 nmpr
@@ -303028,8 +302186,7 @@ subs
 verb
 subs
 nmpr
-
-verb
+1909887	verb
 conj
 verb
 prep
@@ -303052,8 +302209,7 @@ conj
 art
 verb
 verb
-
-verb
+1909911	verb
 art
 verb
 prep
@@ -303072,8 +302228,7 @@ verb
 conj
 verb
 advb
-
-intj
+1909931	intj
 prps
 prep
 subs
@@ -303082,8 +302237,7 @@ subs
 subs
 verb
 prep
-
-verb
+1909941	verb
 prep
 subs
 conj
@@ -303106,8 +302260,7 @@ subs
 conj
 verb
 subs
-
-prin
+1909965	prin
 verb
 prep
 subs
@@ -303129,8 +302282,7 @@ advb
 subs
 verb
 subs
-
-adjv
+1909988	adjv
 prep
 nmpr
 intj
@@ -303140,8 +302292,7 @@ prep
 nmpr
 verb
 verb
-
-conj
+1909999	conj
 verb
 conj
 subs
@@ -303156,8 +302307,7 @@ verb
 conj
 verb
 subs
-
-intj
+1910015	intj
 subs
 subs
 conj
@@ -303167,8 +302317,7 @@ subs
 conj
 subs
 subs
-
-intj
+1910026	intj
 subs
 verb
 prep
@@ -303183,8 +302332,7 @@ subs
 prep
 subs
 verb
-
-nega
+1910042	nega
 verb
 conj
 nega
@@ -303193,10 +302341,9 @@ conj
 nega
 verb
 prep
-subs
 subs
-
 subs
+1910054	subs
 verb
 nega
 verb
@@ -303209,8 +302356,7 @@ prep
 subs
 verb
 subs
-
-conj
+1910068	conj
 nega
 verb
 conj
@@ -303226,8 +302372,7 @@ prep
 subs
 subs
 verb
-
-advb
+1910085	advb
 verb
 art
 subs
@@ -303253,8 +302398,7 @@ subs
 prep
 verb
 prep
-
-prps
+1910112	prps
 nmpr
 verb
 prep
@@ -303273,8 +302417,7 @@ subs
 prep
 subs
 subs
-
-prep
+1910132	prep
 verb
 subs
 adjv
@@ -303289,8 +302432,7 @@ subs
 subs
 verb
 subs
-
-prps
+1910148	prps
 nmpr
 prps
 conj
@@ -303305,8 +302447,7 @@ conj
 subs
 prep
 subs
-
-art
+1910164	art
 adjv
 intj
 verb
@@ -303320,8 +302461,7 @@ subs
 verb
 verb
 prep
-
-verb
+1910179	verb
 prep
 nmpr
 subs
@@ -303339,9 +302479,8 @@ conj
 subs
 subs
 conj
-verb
-
 verb
+1910199	verb
 subs
 subs
 conj
@@ -303356,8 +302495,7 @@ prep
 subs
 subs
 verb
-
-verb
+1910215	verb
 prep
 nmpr
 subs
@@ -303366,8 +302504,7 @@ subs
 prep
 subs
 verb
-
-nmpr
+1910225	nmpr
 prep
 subs
 verb
@@ -303382,8 +302519,7 @@ verb
 prep
 verb
 verb
-
-verb
+1910241	verb
 advb
 prep
 subs
@@ -303396,8 +302532,7 @@ verb
 conj
 verb
 advb
-
-verb
+1910255	verb
 subs
 conj
 subs
@@ -303413,8 +302548,7 @@ subs
 conj
 subs
 verb
-
-conj
+1910272	conj
 verb
 adjv
 prep
@@ -303443,9 +302577,8 @@ subs
 verb
 conj
 nega
-verb
-
 verb
+1910303	verb
 subs
 conj
 verb
@@ -303460,8 +302593,7 @@ prep
 subs
 prps
 subs
-
-art
+1910319	art
 adjv
 verb
 conj
@@ -303470,8 +302602,7 @@ adjv
 verb
 prep
 verb
-
-prin
+1910329	prin
 adjv
 conj
 conj
@@ -303490,8 +302621,7 @@ adjv
 prep
 subs
 nmpr
-
-verb
+1910349	verb
 adjv
 conj
 nega
@@ -303501,8 +302631,7 @@ subs
 conj
 nega
 verb
-
-nmpr
+1910360	nmpr
 verb
 prep
 subs
@@ -303511,8 +302640,7 @@ verb
 subs
 conj
 verb
-
-conj
+1910370	conj
 prps
 subs
 verb
@@ -303539,8 +302667,7 @@ conj
 subs
 verb
 verb
-
-prin
+1910398	prin
 prep
 conj
 verb
@@ -303551,8 +302678,7 @@ conj
 verb
 prep
 subs
-
-prin
+1910410	prin
 verb
 prep
 subs
@@ -303579,8 +302705,7 @@ nega
 verb
 prep
 subs
-
-conj
+1910438	conj
 verb
 prep
 subs
@@ -303603,8 +302728,7 @@ nega
 verb
 prep
 subs
-
-conj
+1910462	conj
 advb
 advb
 verb
@@ -303623,8 +302747,7 @@ prep
 subs
 prep
 prps
-
-conj
+1910482	conj
 verb
 prep
 subs
@@ -303646,8 +302769,7 @@ subs
 nega
 verb
 prep
-
-prps
+1910505	prps
 nmpr
 subs
 adjv
@@ -303661,8 +302783,7 @@ nmpr
 conj
 nmpr
 subs
-
-prep
+1910520	prep
 conj
 verb
 prep
@@ -303679,8 +302800,7 @@ conj
 subs
 subs
 subs
-
-nega
+1910538	nega
 verb
 conj
 prep
@@ -303692,9 +302812,8 @@ subs
 conj
 prep
 subs
-verb
-
 verb
+1910552	verb
 prep
 subs
 verb
@@ -303710,11 +302829,9 @@ adjv
 conj
 subs
 prep
-
-art
-subs
-
+1910569	art
 subs
+1910572	subs
 art
 verb
 prep
@@ -303726,8 +302843,7 @@ verb
 verb
 advb
 verb
-
-verb
+1910585	verb
 subs
 adjv
 subs
@@ -303737,8 +302853,7 @@ adjv
 conj
 subs
 prep
-
-subs
+1910596	subs
 art
 subs
 verb
@@ -303763,8 +302878,7 @@ verb
 conj
 verb
 subs
-
-prps
+1910622	prps
 subs
 subs
 nmpr
@@ -303790,8 +302904,7 @@ conj
 subs
 nega
 verb
-
-prps
+1910649	prps
 prps
 nmpr
 conj
@@ -303799,8 +302912,7 @@ subs
 prep
 prep
 verb
-
-prps
+1910658	prps
 verb
 conj
 verb
@@ -303817,8 +302929,7 @@ subs
 nmpr
 prps
 subs
-
-advb
+1910676	advb
 prep
 subs
 prps
@@ -303832,8 +302943,7 @@ verb
 conj
 prin
 verb
-
-advb
+1910691	advb
 verb
 nmpr
 verb
@@ -303852,15 +302962,13 @@ nmpr
 prep
 subs
 subs
-
-prps
+1910711	prps
 nmpr
 adjv
 verb
 nmpr
 subs
-
-advb
+1910718	advb
 verb
 nmpr
 art
@@ -303873,8 +302981,7 @@ prep
 subs
 adjv
 subs
-
-art
+1910732	art
 verb
 subs
 conj
@@ -303891,16 +302998,14 @@ verb
 prep
 subs
 verb
-
-nega
+1910750	nega
 verb
 adjv
 conj
 adjv
 nega
 verb
-
-intj
+1910758	intj
 verb
 adjv
 conj
@@ -303917,8 +303022,7 @@ subs
 prep
 subs
 subs
-
-verb
+1910776	verb
 subs
 art
 subs
@@ -303939,16 +303043,14 @@ verb
 subs
 conj
 adjv
-
-subs
+1910798	subs
 prde
 verb
 prep
 conj
 subs
 verb
-
-conj
+1910806	conj
 nega
 prep
 verb
@@ -303957,8 +303059,7 @@ conj
 verb
 prep
 nmpr
-
-nega
+1910816	nega
 verb
 prep
 subs
@@ -303979,8 +303080,7 @@ nega
 verb
 prep
 subs
-
-nega
+1910838	nega
 verb
 prep
 prep
@@ -303998,8 +303098,7 @@ subs
 verb
 prep
 subs
-
-prps
+1910857	prps
 prps
 prps
 verb
@@ -304010,16 +303109,14 @@ subs
 nega
 verb
 subs
-
+1910869	verb
 verb
-verb
 advb
 verb
 prps
 prep
 verb
-
-subs
+1910877	subs
 art
 adjv
 verb
@@ -304027,8 +303124,7 @@ conj
 verb
 verb
 prep
-
-conj
+1910886	conj
 verb
 subs
 subs
@@ -304041,8 +303137,7 @@ conj
 nmpr
 prep
 verb
-
-conj
+1910900	conj
 advb
 verb
 nmpr
@@ -304051,8 +303146,7 @@ conj
 nmpr
 verb
 prep
-
-advb
+1910910	advb
 verb
 nmpr
 verb
@@ -304070,8 +303164,7 @@ conj
 nmpr
 verb
 prep
-
-conj
+1910929	conj
 verb
 subs
 prep
@@ -304089,8 +303182,7 @@ conj
 subs
 prep
 subs
-
-verb
+1910948	verb
 prep
 subs
 subs
@@ -304099,8 +303191,7 @@ subs
 prep
 subs
 subs
-
-prde
+1910958	prde
 verb
 prep
 nmpr
@@ -304122,8 +303213,7 @@ prep
 subs
 nmpr
 verb
-
-advb
+1910981	advb
 verb
 nmpr
 subs
@@ -304143,8 +303233,7 @@ prep
 prep
 subs
 subs
-
-conj
+1911002	conj
 prin
 prep
 verb
@@ -304164,8 +303253,7 @@ conj
 verb
 verb
 prep
-
-nega
+1911023	nega
 verb
 conj
 nega
@@ -304190,8 +303278,7 @@ subs
 subs
 nega
 verb
-
-conj
+1911049	conj
 verb
 subs
 subs
@@ -304209,8 +303296,7 @@ nega
 verb
 prep
 verb
-
-prin
+1911068	prin
 verb
 subs
 conj
@@ -304219,8 +303305,7 @@ verb
 prep
 subs
 verb
-
-intj
+1911078	intj
 subs
 verb
 verb
@@ -304237,13 +303322,11 @@ conj
 verb
 verb
 advb
-
+1911096	subs
 subs
 subs
-subs
 conj
-
-verb
+1911101	verb
 prep
 subs
 conj
@@ -304266,9 +303349,8 @@ verb
 subs
 conj
 verb
-
+1911125	subs
 subs
-subs
 verb
 subs
 verb
@@ -304293,16 +303375,14 @@ subs
 prep
 verb
 subs
-
-prep
+1911152	prep
 verb
 prep
 subs
 conj
 verb
 subs
-
-subs
+1911160	subs
 conj
 verb
 prep
@@ -304314,8 +303394,7 @@ subs
 conj
 subs
 verb
-
-conj
+1911173	conj
 verb
 prep
 subs
@@ -304341,8 +303420,7 @@ subs
 conj
 verb
 prep
-
-subs
+1911200	subs
 verb
 prep
 subs
@@ -304365,15 +303443,13 @@ intj
 verb
 subs
 subs
-
-conj
+1911224	conj
 subs
 prep
 subs
 verb
 prep
-
-subs
+1911231	subs
 verb
 prep
 conj
@@ -304387,8 +303463,7 @@ verb
 conj
 subs
 prps
-
-nega
+1911246	nega
 verb
 conj
 nega
@@ -304401,8 +303476,7 @@ subs
 prep
 verb
 subs
-
-conj
+1911260	conj
 nega
 verb
 prep
@@ -304438,11 +303512,9 @@ prep
 subs
 verb
 prep
-
-subs
+1911297	subs
 verb
-
-verb
+1911300	verb
 subs
 subs
 verb
@@ -304457,8 +303529,7 @@ verb
 subs
 prep
 subs
-
-verb
+1911316	verb
 prde
 nmpr
 nmpr
@@ -304472,8 +303543,7 @@ prps
 nmpr
 nega
 verb
-
-verb
+1911331	verb
 prep
 subs
 subs
@@ -304484,9 +303554,8 @@ subs
 verb
 prep
 conj
-verb
-
 verb
+1911344	verb
 subs
 conj
 verb
@@ -304511,8 +303580,7 @@ conj
 prep
 nmpr
 verb
-
-advb
+1911370	advb
 verb
 nmpr
 verb
@@ -304534,8 +303602,7 @@ art
 subs
 prin
 prep
-
-verb
+1911393	verb
 subs
 subs
 conj
@@ -304547,8 +303614,7 @@ subs
 conj
 subs
 verb
-
-verb
+1911406	verb
 subs
 subs
 conj
@@ -304568,8 +303634,7 @@ verb
 conj
 subs
 verb
-
-art
+1911427	art
 verb
 prep
 subs
@@ -304577,8 +303642,7 @@ verb
 conj
 subs
 verb
-
-art
+1911436	art
 verb
 prep
 nmpr
@@ -304596,8 +303660,7 @@ verb
 conj
 subs
 verb
-
-advb
+1911455	advb
 verb
 nmpr
 prep
@@ -304626,8 +303689,7 @@ conj
 subs
 nega
 verb
-
-prps
+1911485	prps
 prep
 subs
 verb
@@ -304641,8 +303703,7 @@ conj
 subs
 subs
 verb
-
-conj
+1911500	conj
 verb
 prep
 subs
@@ -304661,8 +303722,7 @@ prep
 subs
 subs
 nmpr
-
-prep
+1911520	prep
 subs
 nmpr
 nmpr
@@ -304677,8 +303737,7 @@ verb
 conj
 nega
 verb
-
-prps
+1911536	prps
 nmpr
 conj
 subs
@@ -304691,8 +303750,7 @@ verb
 conj
 nega
 verb
-
-prep
+1911550	prep
 verb
 prep
 subs
@@ -304708,8 +303766,7 @@ nmpr
 conj
 subs
 subs
-
-verb
+1911567	verb
 subs
 conj
 verb
@@ -304724,8 +303781,7 @@ nmpr
 verb
 subs
 prde
-
-verb
+1911583	verb
 subs
 prep
 subs
@@ -304743,8 +303799,7 @@ subs
 conj
 subs
 verb
-
-intj
+1911602	intj
 verb
 prep
 verb
@@ -304765,8 +303820,7 @@ subs
 subs
 subs
 prep
-
-intj
+1911624	intj
 art
 verb
 prep
@@ -304778,15 +303832,14 @@ prep
 subs
 prin
 verb
-
-advb
+1911637	advb
 verb
 nmpr
 adjv
 nmpr
 verb
 art
-verb
+subs
 verb
 prep
 subs
@@ -304795,8 +303848,7 @@ prep
 subs
 subs
 verb
-
-prps
+1911654	prps
 verb
 subs
 conj
@@ -304811,8 +303863,7 @@ conj
 subs
 subs
 verb
-
-prps
+1911670	prps
 verb
 prep
 subs
@@ -304836,8 +303887,7 @@ subs
 verb
 nmpr
 subs
-
-advb
+1911695	advb
 verb
 nmpr
 subs
@@ -304872,16 +303922,14 @@ subs
 subs
 subs
 subs
-
-intj
+1911731	intj
 prps
 subs
 verb
 subs
 nmpr
 verb
-
-verb
+1911739	verb
 conj
 advb
 verb
@@ -304893,8 +303941,7 @@ prep
 subs
 verb
 subs
-
-nmpr
+1911752	nmpr
 verb
 prep
 nmpr
@@ -304908,8 +303955,7 @@ verb
 prep
 subs
 subs
-
-conj
+1911767	conj
 advb
 verb
 nmpr
@@ -304940,8 +303986,7 @@ nmpr
 conj
 subs
 subs
-
-nega
+1911799	nega
 prep
 subs
 verb
@@ -304962,8 +304007,7 @@ verb
 subs
 verb
 subs
-
-verb
+1911821	verb
 conj
 verb
 verb
@@ -304984,9 +304028,8 @@ verb
 prep
 subs
 nega
-verb
-
 verb
+1911844	verb
 conj
 verb
 advb
@@ -305017,8 +304060,7 @@ verb
 conj
 subs
 subs
-
-verb
+1911876	verb
 prep
 conj
 verb
@@ -305031,8 +304073,7 @@ subs
 conj
 subs
 subs
-
-prep
+1911890	prep
 verb
 verb
 prep
@@ -305051,8 +304092,7 @@ conj
 verb
 subs
 subs
-
-advb
+1911910	advb
 prep
 nmpr
 prep
@@ -305066,9 +304106,8 @@ verb
 subs
 art
 verb
-prep
-
 prep
+1911926	prep
 nmpr
 verb
 conj
@@ -305076,8 +304115,7 @@ verb
 subs
 subs
 nmpr
-
-verb
+1911935	verb
 nmpr
 verb
 nmpr
@@ -305090,8 +304128,7 @@ subs
 subs
 verb
 subs
-
-verb
+1911949	verb
 verb
 advb
 advb
@@ -305104,8 +304141,7 @@ subs
 prep
 subs
 verb
-
-verb
+1911963	verb
 prep
 subs
 nmpr
@@ -305121,8 +304157,7 @@ conj
 verb
 prep
 subs
-
-prep
+1911980	prep
 subs
 prps
 prps
@@ -305141,8 +304176,7 @@ prps
 verb
 conj
 verb
-
-prep
+1912000	prep
 prin
 verb
 conj
@@ -305151,8 +304185,7 @@ conj
 verb
 conj
 verb
-
-art
+1912010	art
 verb
 subs
 prep
@@ -305171,8 +304204,7 @@ conj
 verb
 advb
 verb
-
-conj
+1912030	conj
 verb
 prep
 subs
@@ -305195,9 +304227,8 @@ verb
 prep
 subs
 nega
-verb
-
 verb
+1912055	verb
 prde
 conj
 verb
@@ -305205,8 +304236,7 @@ verb
 verb
 prep
 subs
-
-verb
+1912064	verb
 adjv
 prep
 subs
@@ -305220,8 +304250,7 @@ subs
 conj
 subs
 prep
-
-verb
+1912079	verb
 prep
 subs
 subs
@@ -305238,8 +304267,7 @@ conj
 subs
 subs
 verb
-
-verb
+1912097	verb
 prep
 subs
 subs
@@ -305254,9 +304282,8 @@ advb
 verb
 verb
 advb
-verb
-
 verb
+1912114	verb
 prep
 adjv
 subs
@@ -305264,8 +304291,7 @@ art
 adjv
 prep
 subs
-
-verb
+1912123	adjv
 subs
 conj
 nega
@@ -305283,8 +304309,7 @@ conj
 prep
 nmpr
 subs
-
-verb
+1912142	verb
 conj
 verb
 prep
@@ -305309,8 +304334,7 @@ prep
 adjv
 conj
 adjv
-
-verb
+1912168	verb
 subs
 conj
 verb
@@ -305323,8 +304347,7 @@ verb
 subs
 verb
 subs
-
-verb
+1912182	verb
 subs
 advb
 verb
@@ -305335,15 +304358,13 @@ conj
 nega
 verb
 subs
-
-verb
+1912194	verb
 nmpr
 subs
 subs
 adjv
 nmpr
-
-verb
+1912201	verb
 subs
 conj
 verb
@@ -305359,8 +304380,7 @@ verb
 prep
 subs
 subs
-
-verb
+1912218	verb
 prep
 subs
 conj
@@ -305379,8 +304399,7 @@ adjv
 verb
 subs
 subs
-
-conj
+1912238	conj
 verb
 prep
 subs
@@ -305395,8 +304414,7 @@ subs
 nega
 verb
 adjv
-
-conj
+1912254	conj
 advb
 verb
 prde
@@ -305420,8 +304438,7 @@ conj
 nega
 verb
 subs
-
-conj
+1912279	conj
 verb
 prep
 subs
@@ -305444,8 +304461,7 @@ prep
 subs
 verb
 subs
-
-conj
+1912303	conj
 verb
 prep
 subs
@@ -305465,8 +304481,7 @@ prps
 conj
 subs
 subs
-
-conj
+1912324	conj
 verb
 prep
 subs
@@ -305490,8 +304505,7 @@ subs
 conj
 nega
 verb
-
-conj
+1912349	conj
 verb
 intj
 prep
@@ -305509,8 +304523,7 @@ advb
 prep
 art
 subs
-
-prep
+1912368	prep
 subs
 subs
 verb
@@ -305531,8 +304544,7 @@ prep
 conj
 verb
 prep
-
-intj
+1912390	intj
 verb
 prep
 subs
@@ -305553,8 +304565,7 @@ subs
 prep
 verb
 subs
-
-advb
+1912412	advb
 verb
 prep
 conj
@@ -305568,8 +304579,7 @@ subs
 verb
 subs
 verb
-
-verb
+1912427	verb
 prde
 subs
 nmpr
@@ -305600,8 +304610,7 @@ conj
 nega
 prep
 subs
-
-conj
+1912459	conj
 prep
 subs
 art
@@ -305615,8 +304624,7 @@ verb
 nmpr
 subs
 subs
-
-art
+1912474	art
 adjv
 prep
 advb
@@ -305631,8 +304639,7 @@ advb
 verb
 conj
 verb
-
-prep
+1912490	prep
 conj
 verb
 conj
@@ -305645,8 +304652,7 @@ subs
 conj
 subs
 subs
-
-conj
+1912504	conj
 verb
 prep
 prep
@@ -305662,9 +304668,8 @@ verb
 subs
 conj
 subs
-verb
-
 verb
+1912522	verb
 verb
 subs
 conj
@@ -305680,8 +304685,7 @@ conj
 verb
 nega
 verb
-
-advb
+1912539	advb
 verb
 conj
 nega
@@ -305697,8 +304701,7 @@ conj
 verb
 intj
 verb
-
-conj
+1912556	conj
 advb
 nega
 verb
@@ -305722,8 +304725,7 @@ prep
 subs
 verb
 prep
-
-prep
+1912581	prep
 subs
 verb
 subs
@@ -305734,8 +304736,7 @@ prep
 prep
 subs
 verb
-
-intj
+1912593	intj
 verb
 conj
 nega
@@ -305745,9 +304746,8 @@ verb
 prep
 subs
 subs
-
+1912604	prep
 prep
-prep
 verb
 conj
 inrg
@@ -305757,9 +304757,8 @@ subs
 prep
 adjv
 nega
-verb
-
 verb
+1912617	verb
 prde
 nmpr
 conj
@@ -305772,8 +304771,7 @@ adjv
 advb
 prps
 adjv
-
-advb
+1912631	advb
 subs
 verb
 subs
@@ -305787,8 +304785,7 @@ prep
 conj
 verb
 advb
-
-verb
+1912646	verb
 subs
 conj
 verb
@@ -305807,9 +304804,8 @@ prep
 nmpr
 subs
 nmpr
-
+1912666	prps
 prps
-prps
 verb
 advb
 verb
@@ -305818,11 +304814,9 @@ verb
 conj
 verb
 subs
-
-verb
+1912677	verb
 prep
-
-conj
+1912680	conj
 verb
 prde
 nega
@@ -305843,8 +304837,7 @@ nmpr
 verb
 conj
 subs
-
-advb
+1912702	advb
 verb
 nmpr
 verb
@@ -305862,9 +304855,8 @@ subs
 conj
 verb
 prep
-
+1912721	conj
 conj
-conj
 verb
 prep
 subs
@@ -305879,8 +304871,7 @@ prep
 subs
 art
 subs
-
-conj
+1912738	conj
 verb
 prep
 subs
@@ -305898,8 +304889,7 @@ subs
 prep
 prep
 subs
-
-verb
+1912757	verb
 prep
 nmpr
 verb
@@ -305913,8 +304903,7 @@ conj
 verb
 prde
 prep
-
-art
+1912772	art
 subs
 verb
 verb
@@ -305922,8 +304911,7 @@ nmpr
 prep
 subs
 nmpr
-
-conj
+1912781	conj
 nega
 verb
 prep
@@ -305940,16 +304928,14 @@ subs
 conj
 verb
 subs
-
-conj
+1912799	conj
 subs
 subs
 verb
 nmpr
 prep
 adjv
-
-verb
+1912807	verb
 subs
 prep
 verb
@@ -305965,8 +304951,7 @@ subs
 subs
 verb
 subs
-
-conj
+1912824	conj
 verb
 subs
 prep
@@ -305988,8 +304973,7 @@ subs
 prep
 subs
 verb
-
-conj
+1912847	conj
 verb
 prep
 subs
@@ -305998,8 +304982,7 @@ nmpr
 conj
 prep
 verb
-
-prps
+1912857	prps
 verb
 prep
 subs
@@ -306019,8 +305002,7 @@ conj
 subs
 prep
 subs
-
-conj
+1912878	conj
 advb
 verb
 nmpr
@@ -306047,8 +305029,7 @@ conj
 subs
 verb
 subs
-
-conj
+1912906	conj
 verb
 verb
 prep
@@ -306074,11 +305055,9 @@ prep
 verb
 subs
 prep
-
-art
+1912933	art
 subs
-
-advb
+1912936	advb
 verb
 nmpr
 nmpr
@@ -306108,8 +305087,7 @@ verb
 adjv
 nmpr
 verb
-
-advb
+1912967	advb
 verb
 nmpr
 prep
@@ -306135,8 +305113,7 @@ prep
 verb
 subs
 verb
-
-prep
+1912994	prep
 verb
 prep
 verb
@@ -306156,8 +305133,7 @@ prep
 subs
 subs
 subs
-
-nega
+1913015	nega
 verb
 conj
 nega
@@ -306176,20 +305152,17 @@ prep
 subs
 subs
 verb
-
-conj
+1913035	conj
 verb
 subs
 subs
 prep
-subs
-conj
 subs
 conj
+1913043	conj
 subs
 verb
-
-intj
+1913047	intj
 prde
 prep
 adjv
@@ -306207,8 +305180,7 @@ prde
 prep
 subs
 nmpr
-
-verb
+1913066	verb
 subs
 conj
 verb
@@ -306223,8 +305195,7 @@ subs
 conj
 adjv
 verb
-
-conj
+1913082	conj
 verb
 nmpr
 verb
@@ -306234,8 +305205,7 @@ nmpr
 conj
 subs
 verb
-
-inrg
+1913093	inrg
 verb
 subs
 subs
@@ -306250,25 +305220,22 @@ conj
 prps
 nega
 verb
-
-intj
+1913109	intj
 prep
 subs
-verb
+subs
 conj
 subs
 subs
 subs
-
-verb
+1913118	verb
 verb
 verb
 conj
 verb
 prep
 verb
-
-verb
+1913126	verb
 subs
 subs
 conj
@@ -306290,8 +305257,7 @@ conj
 verb
 prep
 subs
-
-conj
+1913149	conj
 subs
 conj
 verb
@@ -306306,8 +305272,7 @@ verb
 conj
 verb
 verb
-
-subs
+1913165	subs
 verb
 prep
 subs
@@ -306321,8 +305286,7 @@ verb
 prep
 conj
 verb
-
-conj
+1913180	conj
 verb
 prep
 subs
@@ -306351,8 +305315,7 @@ subs
 prde
 inrg
 prps
-
-conj
+1913210	conj
 advb
 verb
 nmpr
@@ -306377,14 +305340,13 @@ subs
 prep
 subs
 verb
-
-conj
+1913236	conj
 intj
 subs
 verb
 conj
 subs
-verb
+subs
 subs
 subs
 verb
@@ -306402,8 +305364,7 @@ conj
 nega
 verb
 verb
-
-inrg
+1913261	inrg
 verb
 prep
 subs
@@ -306412,8 +305373,7 @@ conj
 subs
 adjv
 verb
-
-conj
+1913271	conj
 advb
 verb
 nmpr
@@ -306435,8 +305395,7 @@ prep
 subs
 prps
 verb
-
-conj
+1913294	conj
 verb
 prep
 verb
@@ -306459,8 +305418,7 @@ conj
 verb
 adjv
 nmpr
-
-advb
+1913318	advb
 verb
 nmpr
 inrg
@@ -306487,8 +305445,7 @@ prep
 subs
 verb
 subs
-
-inrg
+1913346	inrg
 verb
 conj
 subs
@@ -306526,17 +305483,15 @@ conj
 verb
 prep
 subs
-
-verb
+1913385	verb
 subs
 subs
 conj
 subs
 verb
 subs
-
+1913393	nmpr
 nmpr
-nmpr
 verb
 prep
 subs
@@ -306547,8 +305502,7 @@ prep
 verb
 prep
 adjv
-subs
-conj
+1913406	conj
 verb
 prep
 subs
@@ -306562,8 +305516,7 @@ prep
 verb
 prep
 subs
-
-nmpr
+1913421	nmpr
 subs
 verb
 prep
@@ -306575,24 +305528,22 @@ verb
 subs
 nega
 verb
-
-subs
+1913434	subs
 verb
 prep
 verb
 conj
 subs
 prep
-verb
 subs
+subs
 nega
 verb
 prep
 subs
 conj
 subs
-
-conj
+1913450	conj
 nmpr
 nmpr
 verb
@@ -306612,8 +305563,7 @@ verb
 conj
 nega
 verb
-
-adjv
+1913471	adjv
 verb
 prin
 verb
@@ -306625,8 +305575,7 @@ subs
 subs
 verb
 prep
-
-intj
+1913484	intj
 nmpr
 nmpr
 verb
@@ -306641,8 +305590,7 @@ subs
 verb
 subs
 verb
-
-prin
+1913500	prin
 prep
 adjv
 nmpr
@@ -306665,8 +305613,7 @@ conj
 verb
 prep
 subs
-
-intj
+1913524	intj
 subs
 verb
 subs
@@ -306688,8 +305635,7 @@ prep
 prep
 subs
 verb
-
-verb
+1913547	verb
 prep
 verb
 subs
@@ -306703,9 +305649,8 @@ conj
 prep
 subs
 subs
-verb
-
 verb
+1913563	verb
 prep
 nmpr
 subs
@@ -306720,8 +305665,7 @@ conj
 verb
 conj
 verb
-
-conj
+1913579	conj
 verb
 nmpr
 nmpr
@@ -306751,8 +305695,7 @@ subs
 subs
 conj
 subs
-
-verb
+1913610	verb
 prep
 subs
 conj
@@ -306770,8 +305713,7 @@ prep
 subs
 subs
 verb
-
-adjv
+1913629	adjv
 subs
 verb
 subs
@@ -306785,9 +305727,8 @@ verb
 conj
 prep
 subs
-verb
-
 verb
+1913645	verb
 subs
 subs
 conj
@@ -306817,8 +305758,7 @@ conj
 subs
 nega
 verb
-
-verb
+1913676	verb
 prep
 verb
 subs
@@ -306835,8 +305775,7 @@ prep
 subs
 nega
 verb
-
-conj
+1913694	conj
 prep
 subs
 verb
@@ -306856,10 +305795,9 @@ subs
 prep
 subs
 subs
-
+1913715	verb
 verb
 verb
-verb
 subs
 subs
 nmpr
@@ -306878,8 +305816,7 @@ verb
 subs
 verb
 subs
-
-inrg
+1913737	inrg
 nega
 prps
 prps
@@ -306898,10 +305835,8 @@ subs
 prep
 verb
 verb
-
-conj
-verb
-conj
+1913757	conj
+1913759	conj
 verb
 nmpr
 verb
@@ -306924,8 +305859,7 @@ verb
 subs
 conj
 subs
-
-prps
+1913783	prps
 prps
 prps
 verb
@@ -306942,8 +305876,7 @@ subs
 subs
 subs
 verb
-
-conj
+1913801	conj
 verb
 prep
 nmpr
@@ -306974,9 +305907,8 @@ conj
 inrg
 subs
 art
-verb
-
 verb
+1913834	verb
 subs
 prep
 verb
@@ -306989,8 +305921,7 @@ conj
 nega
 verb
 subs
-
-prps
+1913848	prps
 nmpr
 subs
 verb
@@ -307002,8 +305933,7 @@ subs
 nmpr
 subs
 subs
-
-verb
+1913861	verb
 subs
 prep
 subs
@@ -307026,10 +305956,9 @@ prep
 nmpr
 subs
 prps
-
+1913885	verb
 verb
 verb
-verb
 nmpr
 conj
 verb
@@ -307046,8 +305975,7 @@ art
 subs
 verb
 verb
-
-subs
+1913905	subs
 verb
 prep
 prep
@@ -307063,8 +305991,7 @@ prep
 subs
 subs
 verb
-
-subs
+1913922	subs
 prps
 verb
 prin
@@ -307083,8 +306010,7 @@ art
 subs
 prin
 verb
-
-subs
+1913942	subs
 verb
 verb
 prep
@@ -307100,9 +306026,8 @@ subs
 nmpr
 subs
 subs
-
+1913959	advb
 advb
-advb
 verb
 intj
 prde
@@ -307112,8 +306037,7 @@ conj
 nega
 prep
 subs
-
-advb
+1913971	advb
 verb
 subs
 nmpr
@@ -307137,8 +306061,7 @@ verb
 prep
 verb
 subs
-
-conj
+1913996	conj
 verb
 prep
 subs
@@ -307161,9 +306084,8 @@ conj
 prep
 subs
 prep
-verb
-
 verb
+1914021	verb
 verb
 verb
 subs
@@ -307184,8 +306106,7 @@ prep
 adjv
 conj
 adjv
-
-verb
+1914043	verb
 prep
 subs
 conj
@@ -307199,8 +306120,7 @@ subs
 subs
 subs
 nmpr
-
-conj
+1914058	conj
 advb
 verb
 nmpr
@@ -307211,8 +306131,7 @@ nega
 prep
 subs
 verb
-
-conj
+1914070	conj
 advb
 verb
 nmpr
@@ -307229,8 +306148,7 @@ nmpr
 prep
 subs
 verb
-
-conj
+1914088	conj
 advb
 prin
 prep
@@ -307252,8 +306170,7 @@ art
 subs
 subs
 verb
-
-advb
+1914111	advb
 advb
 verb
 subs
@@ -307268,8 +306185,7 @@ prps
 art
 verb
 intj
-
-prin
+1914127	prin
 verb
 prep
 art
@@ -307286,9 +306202,8 @@ verb
 prep
 nmpr
 verb
-subs
-
 subs
+1914146	subs
 verb
 verb
 subs
@@ -307305,8 +306220,7 @@ nmpr
 nmpr
 prep
 subs
-
-verb
+1914164	verb
 subs
 advb
 subs
@@ -307319,8 +306233,7 @@ conj
 verb
 prep
 nmpr
-
-verb
+1914178	verb
 nmpr
 prep
 subs
@@ -307339,10 +306252,9 @@ subs
 prep
 subs
 subs
-
+1914198	verb
 verb
 verb
-verb
 prep
 advb
 prep
@@ -307356,8 +306268,7 @@ verb
 verb
 subs
 nmpr
-
-conj
+1914215	conj
 nega
 prep
 subs
@@ -307381,8 +306292,7 @@ subs
 art
 subs
 verb
-
-intj
+1914240	intj
 verb
 subs
 conj
@@ -307392,14 +306302,13 @@ verb
 conj
 verb
 subs
-
-prep
+1914251	prep
 conj
 verb
 prep
 adjv
 advb
-subs
+verb
 prep
 subs
 subs
@@ -307409,8 +306318,7 @@ prep
 subs
 art
 subs
-
-advb
+1914268	advb
 verb
 subs
 adjv
@@ -307432,8 +306340,7 @@ conj
 nega
 verb
 verb
-
-prin
+1914291	prin
 verb
 prep
 subs
@@ -307443,8 +306350,7 @@ nmpr
 prep
 prin
 verb
-
-conj
+1914302	conj
 verb
 prep
 subs
@@ -307469,9 +306375,8 @@ conj
 nega
 subs
 conj
-verb
-
 verb
+1914329	verb
 conj
 adjv
 subs
@@ -307491,8 +306396,7 @@ verb
 conj
 nega
 verb
-
-intj
+1914350	intj
 subs
 prps
 verb
@@ -307508,8 +306412,7 @@ verb
 subs
 conj
 verb
-
-conj
+1914367	conj
 prps
 verb
 prep
@@ -307527,8 +306430,7 @@ prep
 subs
 verb
 prep
-
-subs
+1914386	subs
 prep
 subs
 verb
@@ -307543,8 +306445,7 @@ prep
 prep
 subs
 subs
-
-verb
+1914402	verb
 conj
 prps
 verb
@@ -307555,7 +306456,7 @@ subs
 prep
 subs
 prep
-subs
+verb
 verb
 prep
 subs
@@ -307567,8 +306468,7 @@ conj
 nega
 verb
 subs
-
-prep
+1914426	prep
 subs
 conj
 prep
@@ -307589,8 +306489,7 @@ subs
 subs
 verb
 prep
-
-conj
+1914448	conj
 verb
 prep
 adjv
@@ -307608,8 +306507,7 @@ nega
 subs
 prep
 subs
-
-conj
+1914467	conj
 nmpr
 verb
 verb
@@ -307630,8 +306528,7 @@ nmpr
 prep
 subs
 verb
-
-prep
+1914489	prep
 subs
 subs
 verb
@@ -307650,9 +306547,8 @@ conj
 subs
 prps
 verb
-
+1914509	advb
 advb
-advb
 verb
 prep
 prep
@@ -307679,10 +306575,9 @@ adjv
 verb
 conj
 prep
-verb
-verb
-
+subs
 verb
+1914540	verb
 adjv
 conj
 nega
@@ -307703,8 +306598,7 @@ subs
 verb
 verb
 nmpr
-
-verb
+1914562	verb
 subs
 subs
 conj
@@ -307719,8 +306613,7 @@ subs
 conj
 subs
 verb
-
-conj
+1914578	conj
 subs
 conj
 subs
@@ -307733,8 +306626,7 @@ conj
 subs
 verb
 verb
-
-nega
+1914592	nega
 verb
 conj
 nega
@@ -307755,8 +306647,7 @@ subs
 nega
 verb
 subs
-
-conj
+1914614	conj
 verb
 verb
 nmpr
@@ -307771,8 +306662,7 @@ subs
 art
 subs
 verb
-
-conj
+1914630	conj
 prep
 subs
 verb
@@ -307789,8 +306679,7 @@ verb
 verb
 nmpr
 subs
-
-prep
+1914648	prep
 subs
 adjv
 verb
@@ -307799,8 +306688,7 @@ prep
 subs
 adjv
 verb
-
-prep
+1914658	prep
 subs
 subs
 verb
@@ -307815,8 +306703,7 @@ verb
 verb
 verb
 nmpr
-
-conj
+1914674	conj
 subs
 nmpr
 prde
@@ -307841,8 +306728,7 @@ conj
 prep
 verb
 prep
-
-conj
+1914700	conj
 art
 subs
 verb
@@ -307864,8 +306750,7 @@ verb
 verb
 verb
 nmpr
-
-adjv
+1914723	adjv
 verb
 nega
 verb
@@ -307879,8 +306764,7 @@ conj
 subs
 prep
 subs
-
-conj
+1914738	conj
 verb
 subs
 subs
@@ -307895,8 +306779,7 @@ subs
 prep
 subs
 subs
-
-conj
+1914754	conj
 subs
 subs
 subs
@@ -307905,8 +306788,7 @@ conj
 adjv
 subs
 verb
-
-prep
+1914764	prep
 subs
 verb
 verb
@@ -307922,8 +306804,7 @@ conj
 nega
 verb
 prep
-
-intj
+1914781	intj
 verb
 verb
 subs
@@ -307934,8 +306815,7 @@ verb
 prep
 prep
 verb
-
-intj
+1914793	intj
 prps
 verb
 subs
@@ -307953,8 +306833,7 @@ verb
 subs
 prep
 verb
-
-subs
+1914812	subs
 subs
 verb
 prep
@@ -307970,8 +306849,7 @@ prep
 prep
 subs
 nmpr
-
-intj
+1914829	intj
 subs
 adjv
 verb
@@ -307994,8 +306872,7 @@ subs
 subs
 conj
 subs
-
-inrg
+1914853	inrg
 verb
 subs
 prep
@@ -308017,8 +306894,7 @@ verb
 prep
 subs
 subs
-
-verb
+1914876	verb
 subs
 conj
 verb
@@ -308037,8 +306913,7 @@ subs
 nmpr
 art
 verb
-
-intj
+1914896	intj
 subs
 subs
 verb
@@ -308046,8 +306921,7 @@ subs
 conj
 verb
 subs
-
-intj
+1914905	intj
 subs
 nega
 verb
@@ -308066,9 +306940,8 @@ prep
 adjv
 nmpr
 conj
-verb
-
 verb
+1914926	verb
 nmpr
 prep
 verb
@@ -308076,8 +306949,7 @@ verb
 prep
 verb
 adjv
-
-verb
+1914935	verb
 adjv
 subs
 conj
@@ -308097,8 +306969,7 @@ conj
 verb
 prep
 verb
-
-conj
+1914956	conj
 nega
 subs
 subs
@@ -308108,11 +306979,10 @@ subs
 subs
 subs
 nmpr
-
-conj
+1914967	conj
 prep
-verb
 subs
+subs
 prep
 subs
 advb
@@ -308124,8 +306994,7 @@ conj
 subs
 prep
 subs
-
-conj
+1914983	conj
 prep
 conj
 verb
@@ -308151,8 +307020,7 @@ conj
 verb
 conj
 verb
-
-conj
+1915010	conj
 verb
 subs
 prep
@@ -308161,8 +307029,7 @@ conj
 subs
 prep
 verb
-
-advb
+1915020	advb
 verb
 subs
 conj
@@ -308184,8 +307051,7 @@ verb
 prep
 conj
 verb
-
-conj
+1915043	conj
 prep
 subs
 verb
@@ -308208,9 +307074,8 @@ subs
 art
 subs
 verb
-subs
-
 subs
+1915068	subs
 art
 subs
 verb
@@ -308233,8 +307098,7 @@ subs
 subs
 nega
 verb
-
-conj
+1915092	conj
 advb
 verb
 nmpr
@@ -308252,8 +307116,7 @@ conj
 subs
 prep
 verb
-
-subs
+1915111	subs
 subs
 verb
 prde
@@ -308273,8 +307136,7 @@ prep
 verb
 subs
 adjv
-
-nega
+1915132	nega
 verb
 subs
 art
@@ -308300,8 +307162,7 @@ intj
 prps
 subs
 adjv
-
-conj
+1915159	conj
 advb
 verb
 nmpr
@@ -308320,8 +307181,7 @@ conj
 verb
 prep
 subs
-
-conj
+1915179	conj
 verb
 prep
 prep
@@ -308345,8 +307205,7 @@ prep
 conj
 nega
 verb
-
-conj
+1915204	conj
 subs
 art
 subs
@@ -308376,8 +307235,7 @@ conj
 verb
 prep
 subs
-
-conj
+1915235	conj
 verb
 prep
 subs
@@ -308403,9 +307261,8 @@ verb
 prep
 subs
 art
-subs
-
 subs
+1915263	subs
 nmpr
 nmpr
 verb
@@ -308416,10 +307273,9 @@ verb
 prep
 prep
 verb
-
+1915275	subs
 subs
 subs
-subs
 verb
 prep
 verb
@@ -308428,8 +307284,7 @@ subs
 subs
 prep
 subs
-
-verb
+1915287	verb
 adjv
 subs
 nega
@@ -308447,8 +307302,7 @@ verb
 verb
 prep
 verb
-
-conj
+1915306	conj
 art
 subs
 adjv
@@ -308472,8 +307326,7 @@ prep
 subs
 prep
 subs
-
-verb
+1915331	verb
 conj
 verb
 subs
@@ -308491,8 +307344,7 @@ subs
 adjv
 subs
 subs
-
-conj
+1915350	conj
 art
 adjv
 verb
@@ -308518,8 +307370,7 @@ subs
 verb
 art
 adjv
-
-conj
+1915377	conj
 verb
 subs
 conj
@@ -308528,8 +307379,7 @@ prep
 subs
 verb
 adjv
-
-conj
+1915387	conj
 prps
 verb
 advb
@@ -308539,8 +307389,7 @@ subs
 verb
 conj
 verb
-
-prep
+1915398	prep
 prin
 verb
 conj
@@ -308557,8 +307406,7 @@ adjv
 subs
 subs
 subs
-
-art
+1915416	art
 verb
 prep
 subs
@@ -308575,8 +307423,7 @@ subs
 subs
 art
 subs
-
-prep
+1915434	prep
 adjv
 subs
 subs
@@ -308593,8 +307440,7 @@ inrg
 prep
 prde
 verb
-
-prep
+1915452	prep
 subs
 adjv
 conj
@@ -308607,8 +307453,7 @@ verb
 prep
 verb
 subs
-
-conj
+1915466	conj
 subs
 art
 subs
@@ -308633,8 +307478,7 @@ verb
 subs
 subs
 verb
-
-conj
+1915492	conj
 verb
 prep
 subs
@@ -308653,8 +307497,7 @@ conj
 verb
 prep
 subs
-
-prep
+1915512	prep
 subs
 subs
 verb
@@ -308668,8 +307511,7 @@ prep
 advb
 nega
 verb
-
-conj
+1915527	conj
 prep
 prin
 verb
@@ -308698,8 +307540,7 @@ conj
 prep
 nega
 verb
-
-prps
+1915557	prps
 verb
 subs
 conj
@@ -308709,8 +307550,7 @@ conj
 nega
 verb
 verb
-
-prep
+1915568	prep
 verb
 verb
 verb
@@ -308731,8 +307571,7 @@ conj
 verb
 subs
 subs
-
-conj
+1915590	conj
 verb
 verb
 verb
@@ -308745,8 +307584,7 @@ subs
 prep
 subs
 subs
-
-conj
+1915604	conj
 advb
 verb
 verb
@@ -308778,8 +307616,7 @@ prep
 verb
 subs
 verb
-
-conj
+1915637	conj
 nega
 prep
 subs
@@ -308799,8 +307636,7 @@ conj
 subs
 prps
 verb
-
-prep
+1915658	prep
 subs
 subs
 verb
@@ -308814,10 +307650,9 @@ conj
 verb
 adjv
 prep
-subs
 subs
-
 subs
+1915675	subs
 verb
 conj
 verb
@@ -308829,8 +307664,7 @@ prep
 conj
 prep
 adjv
-
-prep
+1915688	prep
 verb
 subs
 subs
@@ -308844,8 +307678,7 @@ verb
 nmpr
 conj
 verb
-
-conj
+1915703	conj
 art
 adjv
 prep
@@ -308862,16 +307695,14 @@ subs
 subs
 conj
 subs
-
-conj
+1915721	conj
 subs
 subs
 verb
 subs
 prep
 adjv
-
-verb
+1915729	verb
 prep
 subs
 nega
@@ -308890,8 +307721,7 @@ prep
 subs
 nmpr
 subs
-
-prep
+1915749	prep
 subs
 conj
 subs
@@ -308916,8 +307746,7 @@ subs
 subs
 subs
 verb
-
-inrg
+1915775	inrg
 verb
 conj
 nega
@@ -308937,8 +307766,7 @@ conj
 subs
 subs
 verb
-
-intj
+1915796	intj
 prep
 subs
 conj
@@ -308960,8 +307788,7 @@ verb
 prep
 subs
 subs
-
-inrg
+1915819	inrg
 prep
 prde
 verb
@@ -308990,8 +307817,7 @@ subs
 subs
 prep
 nmpr
-
-inrg
+1915849	inrg
 nega
 prde
 art
@@ -309013,8 +307839,7 @@ conj
 subs
 subs
 verb
-
-inrg
+1915872	inrg
 nega
 verb
 prep
@@ -309036,8 +307861,7 @@ prep
 subs
 nega
 verb
-
-advb
+1915895	advb
 verb
 prep
 subs
@@ -309055,8 +307879,7 @@ conj
 subs
 nmpr
 verb
-
-advb
+1915914	advb
 verb
 conj
 nmpr
@@ -309076,8 +307899,7 @@ subs
 conj
 verb
 subs
-
-conj
+1915935	conj
 verb
 prep
 adjv
@@ -309095,8 +307917,7 @@ conj
 subs
 prep
 subs
-
-conj
+1915954	conj
 verb
 nmpr
 subs
@@ -309121,8 +307942,7 @@ conj
 nega
 verb
 subs
-
-conj
+1915980	conj
 verb
 prep
 subs
@@ -309141,8 +307961,7 @@ verb
 subs
 prep
 verb
-
-conj
+1916000	conj
 verb
 prep
 subs
@@ -309175,8 +307994,7 @@ subs
 conj
 verb
 subs
-
-advb
+1916034	advb
 verb
 prep
 nmpr
@@ -309194,8 +308012,7 @@ conj
 subs
 nmpr
 verb
-
-intj
+1916053	intj
 nega
 verb
 subs
@@ -309208,9 +308025,8 @@ verb
 subs
 prep
 verb
-
+1916067	conj
 conj
-conj
 subs
 verb
 verb
@@ -309225,8 +308041,7 @@ subs
 prep
 prep
 verb
-
-conj
+1916084	conj
 subs
 verb
 prep
@@ -309238,8 +308053,7 @@ subs
 subs
 subs
 verb
-
-subs
+1916097	subs
 verb
 prep
 subs
@@ -309258,9 +308072,8 @@ verb
 subs
 conj
 verb
-subs
-
 subs
+1916118	subs
 subs
 verb
 conj
@@ -309277,8 +308090,7 @@ art
 verb
 verb
 subs
-
-subs
+1916136	subs
 nega
 verb
 prep
@@ -309295,9 +308107,8 @@ conj
 subs
 subs
 prep
-subs
-
 subs
+1916155	subs
 prep
 adjv
 verb
@@ -309317,9 +308128,8 @@ conj
 subs
 prep
 subs
-
+1916176	subs
 subs
-subs
 nega
 verb
 conj
@@ -309338,8 +308148,7 @@ prep
 nega
 verb
 subs
-
-prep
+1916197	prep
 advb
 verb
 subs
@@ -309359,8 +308168,7 @@ subs
 prep
 subs
 verb
-
-verb
+1916218	verb
 prep
 adjv
 subs
@@ -309377,9 +308185,8 @@ subs
 prep
 subs
 prep
-verb
-
 verb
+1916237	verb
 prep
 subs
 subs
@@ -309397,8 +308204,7 @@ prep
 subs
 verb
 prep
-
-conj
+1916256	conj
 verb
 subs
 subs
@@ -309411,9 +308217,8 @@ subs
 prep
 conj
 subs
-verb
-
 verb
+1916271	verb
 conj
 verb
 prep
@@ -309434,8 +308239,7 @@ prep
 subs
 subs
 subs
-
-conj
+1916293	conj
 verb
 subs
 subs
@@ -309455,8 +308259,7 @@ nega
 verb
 prep
 verb
-
-conj
+1916314	conj
 verb
 art
 subs
@@ -309476,8 +308279,7 @@ subs
 conj
 subs
 subs
-
-conj
+1916335	conj
 verb
 conj
 subs
@@ -309495,8 +308297,7 @@ conj
 subs
 prps
 verb
-
-conj
+1916354	conj
 verb
 subs
 prep
@@ -309516,8 +308317,7 @@ verb
 prep
 subs
 subs
-
-prep
+1916375	prep
 subs
 subs
 prep
@@ -309533,8 +308333,7 @@ prep
 subs
 subs
 verb
-
-conj
+1916392	conj
 verb
 prep
 subs
@@ -309556,8 +308355,7 @@ subs
 nmpr
 verb
 prep
-
-conj
+1916415	conj
 verb
 prep
 nmpr
@@ -309570,8 +308368,7 @@ prep
 nmpr
 subs
 nmpr
-
-conj
+1916429	conj
 prps
 prde
 subs
@@ -309606,9 +308403,8 @@ advb
 conj
 prep
 subs
-
+1916465	verb
 verb
-verb
 conj
 verb
 subs
@@ -309616,8 +308412,7 @@ subs
 nmpr
 prep
 verb
-
-conj
+1916475	conj
 intj
 art
 subs
@@ -309634,8 +308429,7 @@ conj
 subs
 prep
 verb
-
-conj
+1916493	conj
 verb
 subs
 prep
@@ -309645,8 +308439,7 @@ subs
 prep
 subs
 subs
-
-verb
+1916504	verb
 subs
 subs
 conj
@@ -309664,8 +308457,7 @@ subs
 prep
 subs
 verb
-
-advb
+1916523	advb
 verb
 conj
 verb
@@ -309681,8 +308473,7 @@ subs
 subs
 verb
 prep
-
-subs
+1916540	subs
 subs
 verb
 subs
@@ -309701,9 +308492,8 @@ conj
 subs
 nmpr
 verb
-
+1916560	subs
 subs
-subs
 nmpr
 verb
 prep
@@ -309720,8 +308510,7 @@ conj
 subs
 subs
 verb
-
-prin
+1916579	prin
 prde
 prep
 subs
@@ -309731,8 +308520,7 @@ prep
 subs
 prep
 subs
-
-conj
+1916590	conj
 prep
 subs
 verb
@@ -309760,8 +308548,7 @@ adjv
 nmpr
 conj
 verb
-
-conj
+1916619	conj
 verb
 subs
 subs
@@ -309777,8 +308564,7 @@ conj
 prep
 subs
 verb
-
-conj
+1916636	conj
 verb
 subs
 subs
@@ -309796,8 +308582,7 @@ subs
 conj
 subs
 verb
-
-conj
+1916655	conj
 art
 subs
 conj
@@ -309812,8 +308597,7 @@ art
 subs
 verb
 verb
-
-subs
+1916671	subs
 art
 nmpr
 verb
@@ -309835,8 +308619,7 @@ conj
 subs
 subs
 verb
-
-conj
+1916694	conj
 verb
 prep
 verb
@@ -309859,8 +308642,7 @@ nmpr
 nmpr
 adjv
 nmpr
-
-subs
+1916718	subs
 verb
 verb
 conj
@@ -309877,8 +308659,7 @@ subs
 subs
 conj
 subs
-
-conj
+1916736	conj
 verb
 subs
 subs
@@ -309896,8 +308677,7 @@ conj
 verb
 adjv
 nmpr
-
-subs
+1916755	subs
 art
 subs
 verb
@@ -309925,8 +308705,7 @@ subs
 conj
 verb
 subs
-
-conj
+1916784	conj
 nega
 verb
 subs
@@ -309946,8 +308725,7 @@ subs
 conj
 subs
 subs
-
-nega
+1916805	nega
 verb
 prep
 subs
@@ -309977,8 +308755,7 @@ conj
 subs
 prep
 subs
-
-nega
+1916836	nega
 verb
 subs
 conj
@@ -309996,8 +308773,7 @@ conj
 verb
 subs
 subs
-
-conj
+1916855	conj
 subs
 subs
 adjv
@@ -310012,8 +308788,7 @@ subs
 subs
 prep
 verb
-
-art
+1916871	art
 adjv
 verb
 prep
@@ -310029,8 +308804,7 @@ nmpr
 prep
 subs
 verb
-
-subs
+1916888	subs
 nmpr
 prep
 subs
@@ -310056,8 +308830,7 @@ conj
 prep
 verb
 subs
-
-prep
+1916915	prep
 verb
 subs
 subs
@@ -310071,8 +308844,7 @@ prep
 verb
 subs
 adjv
-
-prep
+1916930	prep
 verb
 prep
 adjv
@@ -310102,8 +308874,7 @@ subs
 nmpr
 prep
 verb
-
-conj
+1916961	conj
 verb
 subs
 subs
@@ -310119,8 +308890,7 @@ subs
 conj
 subs
 verb
-
-conj
+1916978	conj
 verb
 adjv
 conj
@@ -310132,8 +308902,7 @@ subs
 subs
 conj
 subs
-
-conj
+1916991	conj
 prps
 subs
 nmpr
@@ -310150,10 +308919,9 @@ conj
 prep
 subs
 verb
-
+1917009	subs
 subs
 subs
-subs
 conj
 subs
 verb
@@ -310168,8 +308936,7 @@ subs
 subs
 verb
 prep
-
-conj
+1917027	conj
 prps
 nmpr
 verb
@@ -310189,8 +308956,7 @@ subs
 subs
 verb
 prep
-
-conj
+1917048	conj
 verb
 prep
 subs
@@ -310209,8 +308975,7 @@ prps
 subs
 verb
 nmpr
-
-verb
+1917068	verb
 verb
 prep
 nmpr
@@ -310235,8 +309000,7 @@ prep
 subs
 verb
 subs
-
-conj
+1917094	conj
 prep
 subs
 verb
@@ -310257,8 +309021,7 @@ subs
 subs
 art
 subs
-
-prep
+1917116	prep
 nmpr
 conj
 nega
@@ -310278,8 +309041,7 @@ subs
 prep
 subs
 verb
-
-conj
+1917137	conj
 verb
 subs
 subs
@@ -310296,8 +309058,7 @@ conj
 subs
 nmpr
 verb
-
-conj
+1917155	conj
 verb
 subs
 subs
@@ -310310,8 +309071,7 @@ subs
 prep
 subs
 subs
-
-conj
+1917169	conj
 nega
 verb
 prep
@@ -310340,8 +309100,7 @@ prep
 conj
 subs
 verb
-
-conj
+1917199	conj
 prep
 verb
 subs
@@ -310356,8 +309115,7 @@ subs
 verb
 prep
 subs
-
-prep
+1917215	prep
 subs
 nmpr
 verb
@@ -310378,8 +309136,7 @@ nmpr
 nega
 subs
 prep
-
-conj
+1917237	conj
 nega
 verb
 subs
@@ -310397,8 +309154,7 @@ nmpr
 subs
 prep
 subs
-
-verb
+1917256	verb
 nmpr
 prep
 subs
@@ -310421,8 +309177,7 @@ subs
 conj
 verb
 prep
-
-conj
+1917280	conj
 conj
 verb
 verb
@@ -310439,8 +309194,7 @@ subs
 subs
 verb
 subs
-
-verb
+1917298	verb
 prep
 subs
 verb
@@ -310459,13 +309213,11 @@ subs
 verb
 prep
 subs
-
-intj
+1917318	intj
 nmpr
 verb
 prep
-
-art
+1917323	art
 subs
 verb
 prep
@@ -310481,8 +309233,7 @@ conj
 subs
 prep
 subs
-
-conj
+1917340	conj
 verb
 prep
 subs
@@ -310497,8 +309248,7 @@ verb
 subs
 nega
 verb
-
-prin
+1917356	prin
 prde
 verb
 prep
@@ -310522,8 +309272,7 @@ subs
 adjv
 prep
 verb
-
-inrg
+1917381	inrg
 adjv
 prep
 subs
@@ -310533,8 +309282,7 @@ prep
 verb
 prep
 subs
-
-subs
+1917392	subs
 verb
 prep
 subs
@@ -310548,8 +309296,7 @@ conj
 subs
 subs
 verb
-
-conj
+1917407	conj
 subs
 subs
 prep
@@ -310558,8 +309305,7 @@ conj
 subs
 subs
 verb
-
-conj
+1917417	conj
 verb
 conj
 subs
@@ -310577,8 +309323,7 @@ conj
 subs
 prps
 verb
-
-conj
+1917436	conj
 verb
 subs
 prep
@@ -310592,8 +309337,7 @@ verb
 prep
 subs
 subs
-
-subs
+1917451	subs
 nmpr
 verb
 subs
@@ -310618,8 +309362,7 @@ conj
 prep
 subs
 subs
-
-conj
+1917477	conj
 verb
 advb
 subs
@@ -310632,8 +309375,7 @@ verb
 prep
 prep
 verb
-
-prep
+1917491	prep
 subs
 subs
 nega
@@ -310656,8 +309398,7 @@ verb
 subs
 subs
 subs
-
-conj
+1917515	conj
 prps
 verb
 conj
@@ -310674,8 +309415,7 @@ conj
 prps
 verb
 prep
-
-conj
+1917533	conj
 verb
 subs
 subs
@@ -310697,8 +309437,7 @@ subs
 prep
 subs
 subs
-
-conj
+1917556	conj
 verb
 prep
 subs
@@ -310713,8 +309452,7 @@ prep
 verb
 subs
 subs
-
-verb
+1917572	verb
 prep
 subs
 prep
@@ -310723,8 +309461,7 @@ prep
 subs
 nega
 verb
-
-prep
+1917582	prep
 subs
 prep
 subs
@@ -310740,8 +309477,7 @@ verb
 prep
 subs
 subs
-
-verb
+1917599	verb
 prep
 art
 subs
@@ -310762,8 +309498,7 @@ conj
 subs
 prep
 verb
-
-conj
+1917621	conj
 prps
 subs
 conj
@@ -310782,8 +309517,7 @@ verb
 prep
 subs
 subs
-
-inrg
+1917641	inrg
 nmpr
 verb
 prep
@@ -310797,8 +309531,7 @@ prep
 subs
 subs
 subs
-
-prep
+1917656	prep
 subs
 verb
 subs
@@ -310806,8 +309539,7 @@ subs
 subs
 verb
 subs
-
-verb
+1917665	verb
 prep
 subs
 nega
@@ -310826,8 +309558,7 @@ prep
 subs
 subs
 verb
-
-prep
+1917685	prep
 verb
 subs
 subs
@@ -310841,13 +309572,11 @@ verb
 subs
 prep
 subs
-
-prep
+1917700	prep
 subs
 subs
 verb
-
-prep
+1917705	prep
 verb
 verb
 verb
@@ -310856,8 +309585,7 @@ prep
 subs
 subs
 verb
-
-prep
+1917715	prep
 subs
 nega
 verb
@@ -310874,8 +309602,7 @@ verb
 prep
 verb
 prep
-
-verb
+1917733	verb
 prep
 verb
 conj
@@ -310893,8 +309620,7 @@ prep
 subs
 conj
 verb
-
-conj
+1917752	conj
 verb
 prep
 adjv
@@ -310914,8 +309640,7 @@ subs
 prep
 subs
 verb
-
-conj
+1917773	conj
 subs
 verb
 prep
@@ -310933,8 +309658,7 @@ verb
 prep
 subs
 subs
-
-conj
+1917792	conj
 advb
 nmpr
 subs
@@ -310949,8 +309673,7 @@ conj
 subs
 subs
 subs
-
-nega
+1917808	nega
 verb
 nmpr
 prep
@@ -310966,9 +309689,8 @@ verb
 intj
 subs
 subs
-
+1917825	subs
 subs
-subs
 verb
 subs
 nmpr
@@ -310977,8 +309699,7 @@ subs
 verb
 nmpr
 verb
-
-subs
+1917836	subs
 subs
 conj
 subs
@@ -310995,8 +309716,7 @@ subs
 verb
 prep
 subs
-
-inrg
+1917854	inrg
 prep
 prde
 verb
@@ -311006,8 +309726,7 @@ conj
 verb
 prep
 subs
-
-verb
+1917865	verb
 prep
 nega
 verb
@@ -311024,8 +309743,7 @@ nega
 verb
 prep
 subs
-
-verb
+1917883	verb
 subs
 subs
 art
@@ -311041,8 +309759,7 @@ nega
 adjv
 subs
 subs
-
-art
+1917900	art
 subs
 art
 verb
@@ -311060,8 +309777,7 @@ subs
 prep
 art
 subs
-
-art
+1917919	art
 verb
 prep
 subs
@@ -311079,8 +309795,7 @@ subs
 subs
 prep
 subs
-
-art
+1917938	art
 verb
 verb
 prep
@@ -311097,8 +309812,7 @@ verb
 subs
 art
 subs
-
-intj
+1917956	intj
 verb
 prep
 subs
@@ -311110,9 +309824,8 @@ verb
 conj
 verb
 prep
-subs
-
 subs
+1917970	subs
 conj
 subs
 subs
@@ -311134,8 +309847,7 @@ subs
 adjv
 prep
 subs
-
-advb
+1917993	advb
 verb
 nmpr
 prep
@@ -311161,8 +309873,7 @@ subs
 verb
 art
 subs
-
-conj
+1918020	conj
 verb
 prep
 nmpr
@@ -311179,8 +309890,7 @@ conj
 subs
 verb
 advb
-
-conj
+1918038	conj
 verb
 art
 nmpr
@@ -311197,8 +309907,7 @@ prep
 subs
 conj
 verb
-
-conj
+1918056	conj
 prps
 verb
 nmpr
@@ -311217,8 +309926,7 @@ verb
 prep
 nmpr
 subs
-
-conj
+1918076	conj
 verb
 prep
 prep
@@ -311249,8 +309957,7 @@ conj
 nega
 verb
 verb
-
-advb
+1918108	advb
 advb
 advb
 verb
@@ -311274,8 +309981,7 @@ verb
 conj
 prps
 verb
-
-intj
+1918133	intj
 subs
 verb
 prep
@@ -311292,8 +309998,7 @@ prep
 subs
 subs
 verb
-
-conj
+1918151	conj
 verb
 subs
 prep
@@ -311305,8 +310010,7 @@ verb
 nmpr
 nmpr
 subs
-
-conj
+1918164	conj
 verb
 art
 verb
@@ -311333,8 +310037,7 @@ conj
 verb
 prep
 subs
-
-conj
+1918192	conj
 intj
 verb
 subs
@@ -311352,9 +310055,8 @@ nega
 verb
 prep
 subs
-
+1918211	conj
 conj
-conj
 verb
 conj
 verb
@@ -311372,8 +310074,7 @@ subs
 conj
 subs
 subs
-
-conj
+1918231	conj
 verb
 prep
 nmpr
@@ -311391,8 +310092,7 @@ subs
 conj
 subs
 subs
-
-conj
+1918250	conj
 nega
 verb
 prep
@@ -311421,8 +310121,7 @@ subs
 subs
 subs
 verb
-
-conj
+1918280	conj
 verb
 subs
 conj
@@ -311434,8 +310133,7 @@ conj
 verb
 prep
 subs
-
-nega
+1918293	nega
 verb
 conj
 adjv
@@ -311456,8 +310154,7 @@ subs
 subs
 verb
 adjv
-
-nega
+1918315	nega
 verb
 prep
 subs
@@ -311474,8 +310171,7 @@ prps
 conj
 subs
 prep
-
-conj
+1918333	conj
 verb
 subs
 verb
@@ -311488,8 +310184,7 @@ verb
 conj
 prps
 verb
-
-subs
+1918347	subs
 conj
 subs
 verb
@@ -311516,8 +310211,7 @@ subs
 subs
 verb
 nmpr
-
-advb
+1918375	advb
 verb
 nmpr
 art
@@ -311539,8 +310233,7 @@ inrg
 prde
 subs
 subs
-
-conj
+1918398	conj
 prep
 subs
 prde
@@ -311566,8 +310259,7 @@ art
 verb
 prep
 subs
-
-verb
+1918425	verb
 art
 subs
 prep
@@ -311596,8 +310288,7 @@ prep
 subs
 subs
 verb
-
-advb
+1918455	advb
 prps
 verb
 prep
@@ -311629,8 +310320,7 @@ conj
 nega
 verb
 verb
-
-verb
+1918488	verb
 subs
 nmpr
 art
@@ -311651,8 +310341,7 @@ subs
 conj
 prps
 verb
-
-subs
+1918510	subs
 subs
 prep
 subs
@@ -311665,8 +310354,7 @@ verb
 subs
 prep
 verb
-
-prep
+1918524	prep
 subs
 verb
 verb
@@ -311677,8 +310365,7 @@ subs
 prep
 verb
 adjv
-
-prin
+1918536	prin
 verb
 prep
 prde
@@ -311705,8 +310392,7 @@ verb
 nmpr
 prep
 subs
-
-inrg
+1918564	inrg
 prps
 verb
 conj
@@ -311722,8 +310408,7 @@ conj
 verb
 verb
 subs
-
-verb
+1918581	verb
 prep
 nmpr
 conj
@@ -311738,8 +310423,7 @@ subs
 art
 verb
 prep
-
-prep
+1918597	prep
 verb
 conj
 verb
@@ -311751,10 +310435,8 @@ verb
 conj
 verb
 prep
-
-subs
-
-conj
+1918610	subs
+1918612	conj
 advb
 verb
 nmpr
@@ -311779,8 +310461,7 @@ conj
 prep
 subs
 verb
-
-prep
+1918638	prep
 subs
 conj
 subs
@@ -311792,8 +310473,7 @@ conj
 prep
 nmpr
 verb
-
-conj
+1918651	conj
 verb
 conj
 verb
@@ -311813,8 +310493,7 @@ conj
 verb
 prep
 verb
-
-conj
+1918672	conj
 intj
 nmpr
 prep
@@ -311835,8 +310514,7 @@ subs
 prep
 subs
 subs
-
-conj
+1918694	conj
 prep
 subs
 nmpr
@@ -311853,8 +310531,7 @@ subs
 conj
 verb
 adjv
-
-art
+1918712	art
 verb
 conj
 art
@@ -311879,8 +310556,7 @@ subs
 advb
 verb
 nmpr
-
-conj
+1918738	conj
 prps
 subs
 conj
@@ -311901,8 +310577,7 @@ conj
 verb
 prep
 subs
-
-conj
+1918760	conj
 verb
 prep
 subs
@@ -311942,8 +310617,7 @@ prep
 subs
 prep
 subs
-
-conj
+1918801	conj
 verb
 prep
 subs
@@ -311966,8 +310640,7 @@ prep
 subs
 conj
 prep
-
-conj
+1918825	conj
 prep
 subs
 conj
@@ -311992,8 +310665,7 @@ subs
 adjv
 subs
 nmpr
-
-conj
+1918851	conj
 advb
 prep
 verb
@@ -312004,8 +310676,7 @@ prep
 adjv
 verb
 nmpr
-
-conj
+1918863	conj
 prep
 conj
 art
@@ -312029,8 +310700,7 @@ verb
 subs
 conj
 subs
-
-conj
+1918888	conj
 verb
 prep
 subs
@@ -312053,8 +310723,7 @@ prep
 subs
 verb
 nmpr
-
-conj
+1918912	conj
 verb
 conj
 verb
@@ -312080,8 +310749,7 @@ prep
 subs
 art
 subs
-
-prep
+1918939	prep
 art
 subs
 conj
