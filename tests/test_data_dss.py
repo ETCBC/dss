@@ -20,8 +20,16 @@ def test_word_count():
     assert len([w for w in Fdss.otype.s('word')]) > 500_000
 
 def test_lexemes_adjv_subs_verb_endings():
-    assert all(Fdss.lex_etcbc.v(w)[-1] == '/' for w in Fdss.otype.s('word') if Fdss.lex_etcbc.v(w) and Fdss.sp_etcbc.v(w) in {'adjv', 'subs', 'nmpr'})
-    assert all(Fdss.lex_etcbc.v(w)[-1] == '[' for w in Fdss.otype.s('word') if Fdss.lex_etcbc.v(w) and Fdss.sp_etcbc.v(w) == 'verb')
+    bad = [w for w in Fdss.otype.s('word')
+            if Fdss.lex_etcbc.v(w) and Fdss.sp_etcbc.v(w) in {'adjv', 'subs', 'nmpr'}
+            and Fdss.lex_etcbc.v(w)[-1] != '/']
+
+    assert not bad, f"Failing word nodes: {bad}"
+    bad = [w for w in Fdss.otype.s('word')
+            if Fdss.lex_etcbc.v(w) and Fdss.sp_etcbc.v(w) == 'verb'
+            and Fdss.lex_etcbc.v(w)[-1] != '[']
+
+    assert not bad, f"Failing word nodes: {bad}"
 
         
 def test_lexemes_verb_endings_reversed():
