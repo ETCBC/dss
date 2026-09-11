@@ -7,7 +7,7 @@
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 
-# The Dead Sea Scrolls in Text-Fabric
+# The CACCHT Dead Sea Scrolls dataset
 
 This repo contains transcriptions of biblical and non-biblical Dead Sea Scrolls with linguistic annotations.
 
