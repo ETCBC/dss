@@ -299,6 +299,49 @@ feature | examples | description
 ------- | ------ | ------
 *`merr`* | `vnPfpa` `@0` | the characters are those that are not recognized by the parser at that point
 
+### Morphemes
+
+Words have been parsed into its morphemes according to the conventions of the
+[BHSA](https://etcbc.github.io/bhsa/).
+The parsing has been generated automatically and has subsequently been corrected by hand.
+The morpheme features follow the BHSA features with the same names
+(`g_pfm`, `g_vbs`, `g_lex`, `g_vbe`, `g_nme`, `g_prs`),
+with the suffix `_etcbc` added.
+
+All morpheme values are consonantal, in
+[ETCBC transliteration](https://annotation.github.io/text-fabric/tf/writing/hebrew.html),
+without the morpheme markers that are present in *`morph_etcbc`*.
+If a word does not have a certain morpheme, the corresponding feature is *absent* for that word.
+
+feature | examples | description
+------- | ------ | ------
+*`morph_etcbc`* | `!T!JR>[J` `MQWM/+W` | complete morphological parsing of a word in the BHSA convention, see below
+*`g_pfm_etcbc`* | `J` `T` `M` `>` `N` | preformative, e.g. of the imperfect or of a participle
+*`g_vbs_etcbc`* | `H` `N` `HT` | verbal stem formation, e.g. the `H` of the hifil or the `N` of the nifal
+*`g_lex_etcbc`* | `VM>` `<JR` | realised lexeme: the part of the word that represents the lexeme, as it is written in the scroll
+*`g_vbe_etcbc`* | `W` `TJ` `TH` `H` | verbal ending
+*`g_nme_etcbc`* | `JM` `J` `T` `WT` | nominal ending
+*`g_prs_etcbc`* | `W` `K` `HM` `NW` | pronominal suffix
+*`g_cons`* | `JVM>` `<JRJ` | consonantal representation of the whole word
+*`lex_etcbc`* | `VM>[` `<JR/` | lexeme of the word in BHSA transliteration (see also the general description above)
+*`lex_utf8_etcbc`* | `טמא` `עִיר` | lexeme of the word in Hebrew UNICODE
+*`note_etcbc`* | `Afgebroken` | remark (in Dutch) by the corrector about the parsing of this word
+
+The *`morph_etcbc`* feature contains the whole analysis in one string.
+Special characters mark the boundaries of the morphemes, for example:
+
+word | *`morph_etcbc`* | morphemes
+--- | --- | ---
+`JVM>` | `!J!VM>[` | preformative `J` (between `! !`), verbal lexeme `VM>` (ending in `[`)
+`TJR>J` | `!T!JR>[J` | preformative `T`, verbal lexeme `JR>`, verbal ending `J` (after `[`)
+`NWR>` | `]N](J&WR>[/` | verbal stem formation `N` (between `] ]`), verbal lexeme `JR>`
+`>LWHJM` | `>L&WH(J(M/JM` | nominal lexeme `>LHJM` (ending in `/`), nominal ending `JM`
+`MQWM'W` | `MQWM/+W` | nominal lexeme `MQWM`, pronominal suffix `W` (after `+`)
+
+The string also contains characters that indicate, among other things, vowel letters,
+lexeme letters that are not realised in the word, and the state of nouns.
+For the full encoding, see the BHSA documentation.
+
 ## Node type [`lex`](#lex)
 
 The type of lexemes, as found in the lexeme field of the source data files.
