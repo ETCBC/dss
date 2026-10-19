@@ -10,11 +10,26 @@ latest_data_folder = sorted(os.listdir(os.path.join(ROOT_DIR, TF_FOLDER)))[-1]
 TF = Fabric(locations=os.path.join(ROOT_DIR, TF_FOLDER, latest_data_folder))
 api = TF.load('''
     otype lex_etcbc sp_etcbc gn_etcbc vt_etcbc vs_etcbc lang_etcbc glyphe type g_cons g_lex_etcbc g_nme_etcbc g_prs_etcbc g_vbe_etcbc g_pfm_etcbc g_vbs_etcbc uvf_etcbc morph_etcbc
+    scroll lex_utf8_etcbc
 ''')
 api.loadLog()
 api.makeAvailableIn(globals())
 
 Fdss, Ldss = api.F, api.L
+
+PARSED_SCROLLS = ('11Q19', '1Qisaa')
+MORPHEME_FEATURES = ('g_cons', 'g_pfm_etcbc', 'g_vbs_etcbc', 'g_lex_etcbc', 'g_vbe_etcbc',
+                     'g_nme_etcbc', 'uvf_etcbc', 'g_prs_etcbc')
+
+
+def parsed_scroll_words():
+    for s in Fdss.otype.s('scroll'):
+        if Fdss.scroll.v(s) in PARSED_SCROLLS:
+            yield from Ldss.d(s, 'word')
+
+
+def cons_signs(w):
+    return ''.join(Fdss.glyphe.v(s).upper() for s in Ldss.d(w, 'sign') if Fdss.type.v(s) == 'cons')
 
 def test_word_count():
     assert len([w for w in Fdss.otype.s('word')]) > 500_000
@@ -84,15 +99,48 @@ def test_morphemes_add_up_to_g_cons():
             (Fdss.g_pfm_etcbc.v(w) or '') +
             (Fdss.g_vbs_etcbc.v(w) or '') +
             (Fdss.g_lex_etcbc.v(w) or '') +
-            (Fdss.uvf_etcbc.v(w)   or '') +
-            (Fdss.g_nme_etcbc.v(w) or '') +
             (Fdss.g_vbe_etcbc.v(w) or '') +
+            (Fdss.g_nme_etcbc.v(w) or '') +
+            (Fdss.uvf_etcbc.v(w)   or '') +
             (Fdss.g_prs_etcbc.v(w) or '')
         )
 
         assert reconstructed == g_cons, (
             f"Word {w}: reconstructed '{reconstructed}' != g_cons '{g_cons}'"
         )
+
+def test_parsed_words_have_g_cons():
+    bad = [w for w in parsed_scroll_words()
+           if Fdss.morph_etcbc.v(w) and cons_signs(w) and not Fdss.g_cons.v(w)]
+
+    assert not bad, f"Failing word nodes: {bad}"
+
+
+def test_g_cons_agrees_with_signs_in_parsed_scrolls():
+    """The scroll has # for both shin and sin."""
+    def agrees(g_cons, signs):
+        return len(g_cons) == len(signs) and all(
+            c == s or (s == '#' and c in 'CF') for c, s in zip(g_cons, signs))
+
+    bad = [w for w in parsed_scroll_words()
+           if Fdss.g_cons.v(w) and not agrees(Fdss.g_cons.v(w), cons_signs(w))]
+
+    assert not bad, f"Failing word nodes: {bad}"
+
+
+def test_morpheme_features_are_in_transliteration():
+    bad = [(w, f) for w in parsed_scroll_words() for f in MORPHEME_FEATURES
+           if any('\u0590' <= c <= '\u05ff' for c in (getattr(Fdss, f).v(w) or ''))]
+
+    assert not bad, f"Failing word nodes: {bad}"
+
+
+def test_lexemes_have_lex_utf8_in_parsed_scrolls():
+    bad = [(w, Fdss.lex_etcbc.v(w)) for w in parsed_scroll_words()
+           if Fdss.lex_etcbc.v(w) not in {None, '', '='} and not Fdss.lex_utf8_etcbc.v(w)]
+
+    assert not bad, f"Failing word nodes: {bad}"
+
 
 if __name__ == '__main__':
     test_lexemes_adjv_subs_verb_endings()
