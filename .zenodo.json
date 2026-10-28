@@ -1,0 +1,26 @@
+{
+  "title": "ETCBC/dss: The CACCHT Dead Sea Scrolls dataset",
+  "upload_type": "dataset",
+  "creators": [
+    {"name": "Roorda, Dirk", "affiliation": "KNAW/Humanities Cluster"},
+    {"name": "Naaijer, Martijn", "affiliation": "Eep Talstra Centre for Bible and Computer (ETCBC)"}
+  ],
+  "contributors": [
+    {"name": "Abegg, Martin", "type": "DataCollector"}
+  ],
+  "license": "cc-by-nc-4.0",
+  "access_right": "open",
+  "keywords": [
+    "Dead Sea Scrolls",
+    "Hebrew",
+    "Hebrew Bible",
+    "Context-Fabric",
+    "linguistic annotation",
+    "CACCHT",
+    "ETCBC"
+  ],
+  "related_identifiers": [
+    {"identifier": "10.5281/zenodo.2652849", "relation": "isNewVersionOf", "scheme": "doi"},
+    {"identifier": "https://github.com/ETCBC/dss", "relation": "isSupplementTo", "scheme": "url"}
+  ]
+}
