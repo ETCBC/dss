@@ -304,6 +304,10 @@ feature | examples | description
 Words have been parsed into its morphemes according to the conventions of the
 [BHSA](https://etcbc.github.io/bhsa/).
 The parsing has been generated automatically and has subsequently been corrected by hand.
+Parsed scrolls: 11Q19 (Temple Scroll) and 1Qisaa, corrected by Thijs Amersfoort,
+and, as of version 2.0.3, 1QpHab (Pesher Habakkuk), corrected by Saulo de Oliveira Cantanhêde.
+For these scrolls *`lex_etcbc`*, *`sp_etcbc`*, *`vs_etcbc`*, *`vt_etcbc`*, *`ps_etcbc`*, *`nu_etcbc`*
+and *`gn_etcbc`* are derived from the parsing.
 The morpheme features follow the BHSA features with the same names
 (`g_pfm`, `g_vbs`, `g_lex`, `g_vbe`, `g_nme`, `g_prs`),
 with the suffix `_etcbc` added.
@@ -325,7 +329,7 @@ feature | examples | description
 *`g_cons`* | `JVM>` `<JRJ` | consonantal representation of the whole word
 *`lex_etcbc`* | `VM>[` `<JR/` | lexeme of the word in BHSA transliteration (see also the general description above)
 *`lex_utf8_etcbc`* | `טמא` `עִיר` | lexeme of the word in Hebrew UNICODE
-*`note_etcbc`* | `Afgebroken` | remark (in Dutch) by the corrector about the parsing of this word
+*`note_etcbc`* | `Afgebroken` | remark by the corrector about the parsing of this word (in Dutch for 11Q19 and 1Qisaa, in English for 1QpHab)
 
 The *`morph_etcbc`* feature contains the whole analysis in one string.
 Special characters mark the boundaries of the morphemes, for example:

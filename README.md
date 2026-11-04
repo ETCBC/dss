@@ -49,6 +49,8 @@ Start with the
 
 * [Martin Abegg](https://en.wikipedia.org/wiki/Martin_Abegg)
   for providing his data files to us;
+* Thijs Amersfoort (11Q19, 1Qisaa) and Saulo de Oliveira Cantanhêde (1QpHab)
+  for correcting the morphological parsing of these scrolls;
 
 **N.B.:** Releases of this repo have been archived at
 the

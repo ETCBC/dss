@@ -17,7 +17,7 @@ api.makeAvailableIn(globals())
 
 Fdss, Ldss = api.F, api.L
 
-PARSED_SCROLLS = ('11Q19', '1Qisaa')
+PARSED_SCROLLS = ('11Q19', '1Qisaa', '1QpHab')
 MORPHEME_FEATURES = ('g_cons', 'g_pfm_etcbc', 'g_vbs_etcbc', 'g_lex_etcbc', 'g_vbe_etcbc',
                      'g_nme_etcbc', 'uvf_etcbc', 'g_prs_etcbc')
 
@@ -138,6 +138,24 @@ def test_morpheme_features_are_in_transliteration():
 def test_lexemes_have_lex_utf8_in_parsed_scrolls():
     bad = [(w, Fdss.lex_etcbc.v(w)) for w in parsed_scroll_words()
            if Fdss.lex_etcbc.v(w) not in {None, '', '='} and not Fdss.lex_utf8_etcbc.v(w)]
+
+    assert not bad, f"Failing word nodes: {bad}"
+
+
+def test_1QpHab_is_parsed():
+    """All words of 1QpHab with legible consonants have a parse (version 2.0.3)."""
+    scroll = [s for s in Fdss.otype.s('scroll') if Fdss.scroll.v(s) == '1QpHab'][0]
+    words = Ldss.d(scroll, 'word')
+    bad = [w for w in words if cons_signs(w) and not Fdss.morph_etcbc.v(w)]
+
+    assert not bad, f"Failing word nodes: {bad}"
+    assert sum(1 for w in words if Fdss.morph_etcbc.v(w)) == 1874
+
+
+def test_verbs_have_stem_and_tense_in_parsed_scrolls():
+    bad = [w for w in parsed_scroll_words()
+           if Fdss.sp_etcbc.v(w) == 'verb' and Fdss.scroll.v(Ldss.u(w, 'scroll')[0]) == '1QpHab'
+           and (Fdss.vs_etcbc.v(w) in {None, '', 'NA'} or Fdss.vt_etcbc.v(w) in {None, '', 'NA'})]
 
     assert not bad, f"Failing word nodes: {bad}"
 
