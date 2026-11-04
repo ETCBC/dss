@@ -23,6 +23,10 @@
     {
       "name": "de Oliveira Cantanhêde, Saulo",
       "type": "DataCurator"
+    },
+    {
+      "name": "Sikkel, Constantijn",
+      "type": "DataCollector"
     }
   ],
   "license": "cc-by-nc-4.0",
@@ -48,5 +52,5 @@
       "scheme": "url"
     }
   ],
-  "version": "2.0.3"
+  "version": "2.0.4"
 }

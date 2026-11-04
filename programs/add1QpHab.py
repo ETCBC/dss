@@ -31,6 +31,12 @@ have gender `unknown`.
 The parsing has no state markers (`:a`, `:c`), so infinitive absolutes cannot
 be recognised; they get `infc`.
 
+Since version 2.0.4 the rules follow the BHSA for verbal stems and
+participles: polel, pilpel, polal and hitpolel are not distinguished (they are
+piel, pual and hitpael), and the participles of pual, hofal and passive qal are
+passive participles (`ptcp`). Version 2.0.3 itself was made with the earlier
+rules, which followed 1Qisaa; `corrections.py` brings it into line.
+
 The notes made during the parsing are added to `note_etcbc`
 from `import/1QpHab/note_etcbc.tf`.
 """
@@ -190,7 +196,8 @@ def analyse(morph):
     rest = rest.split("+", 1)[0].split("~", 1)[0]
     match = re.match(r"([^\[/]*)(\[?)([^/]*)(/?)(.*)", rest)
     (lex, verbal, vbe, nominal, nme) = match.groups()
-    # a reduplicated last radical, such as RWM&M, marks polel and the like
+    # a reduplicated last radical, such as RWM&M (polel and the like);
+    # the BHSA does not distinguish these stems, so it is not used for the stem
     reduplicated = bool(re.search(r"([A-Z<>])&\1$", lex))
     lexeme = norm(lex) + ("[" if verbal else "/" if nominal else "")
 
@@ -212,16 +219,14 @@ def stem(a):
     ann = a["ann"]
     if vbs is None:
         if "u" in ann:
-            return "polal" if a["reduplicated"] else "pual"
-        if "d" in ann:
-            return "polel" if a["reduplicated"] else "piel"
-        if "o" in ann:
-            return "poel"
+            return "pual"
+        if "d" in ann or "o" in ann:
+            return "piel"
         return "qal"
     if "CT" in vbs:
         return "hsht"
     if "T" in vbs:
-        return "hitopel" if a["reduplicated"] else "hit"
+        return "hit"
     if "N" in vbs:
         return "nif"
     if "u" in ann:
@@ -235,14 +240,15 @@ def tense(a, afterWaw):
     ann = a["ann"]
     if a["pfm"] is not None:
         if a["pfm"] == "M":
-            return "ptca"
+            # participles of pual and hofal are passive participles
+            return "ptcp" if "u" in ann else "ptca"
         if a["nominal"]:
             return "infa" if "a" in ann else "infc"
         if a["pfm"] in {"", "H"}:
             return "impv"
         return "wayq" if afterWaw else "impf"
     if a["nominal"]:
-        return "ptcp" if "p" in ann else "ptca"
+        return "ptcp" if "p" in ann or "u" in ann else "ptca"
     return "perf"
 
 
