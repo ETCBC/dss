@@ -308,6 +308,21 @@ Parsed scrolls: 11Q19 (Temple Scroll) and 1Qisaa, corrected by Thijs Amersfoort,
 and, as of version 2.0.3, 1QpHab (Pesher Habakkuk), corrected by Saulo de Oliveira Cantanhêde.
 For these scrolls *`lex_etcbc`*, *`sp_etcbc`*, *`vs_etcbc`*, *`vt_etcbc`*, *`ps_etcbc`*, *`nu_etcbc`*
 and *`gn_etcbc`* are derived from the parsing.
+
+As of version 2.0.4, 1QS, 1QM and 1QHa have a parsing as well, taken from the ETCBC
+[extrabiblical](https://github.com/ETCBC/extrabiblical) dataset (version 0.2), which encodes these
+scrolls after an older edition. The words of the two editions have been aligned on their consonants;
+only words with identical consonants in a run of at least three such words got the parsing
+(1QS 99%, 1QM 88%, 1QHa 83% of the words with consonants). The other words, mostly reconstructed text
+and differences between the editions, keep their earlier values.
+The lexemes of extrabiblical have been mapped to the lexemes of the DSS and the BHSA;
+85 words whose homonym could not be determined keep their earlier values for now.
+The program, the alignment and the review lists are in `programs/addExtrabiblical.py` and `import/extrabiblical`.
+In these scrolls, nominal forms without suffix have the state (`:a`, `:c`) in *`morph_etcbc`*.
+
+As of version 2.0.4, the verbal stems and tenses of all scrolls follow the conventions of the BHSA:
+polel, pilpel, hitpolel and similar stems are not distinguished (they are `piel`, `pual` and `hit`),
+and the participles of pual, hofal and passive qal are passive participles (`ptcp`).
 The morpheme features follow the BHSA features with the same names
 (`g_pfm`, `g_vbs`, `g_lex`, `g_vbe`, `g_nme`, `g_prs`),
 with the suffix `_etcbc` added.

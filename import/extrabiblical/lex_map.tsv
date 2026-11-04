@@ -1,0 +1,1534 @@
+xb_lex	kind	dss_lex	basis	lex_etcbc_of_aligned_words_in_2.0.3
+<B	/	<B/	homonym chosen by DSS	<B/:2
+<BD	/	<BD/	homonym chosen by DSS	<BD/:30
+<BD=	[	<BD[	unique	<BD[:3
+<BDH	/	<BDH/	homonym chosen by DSS	<BDH/:13
+<BJ	/	<BJ/	unique	<B/:1
+<BR	[	<BR[	homonym chosen by DSS	<BR[:17
+<BR=	/	<BR/	homonym chosen by DSS	<BR/:6
+<BRH	/	<BRH=/	homonym chosen by DSS	<BRH=/:3
+<BWR	/	<BWR/	homonym chosen by DSS	<BWR/:6
+<BWT	/	<BWT/|<BWT=/	homonym undecided	<BT/:1
+<C	/	<C/	homonym chosen by DSS	<C/:1
+<CC	[	<CC[	unique	<CC[:1
+<CN	/	<CN/	homonym chosen by DSS	<CN/:1
+<CTJ	/	<CTJ/	unique	<CTJ/:1
+<D	-	<D	unique	<D:80
+<D=	/	<D=/	homonym chosen by DSS	<D=/:2
+<D==	/	<D/|<D=/|<D==/	homonym undecided	<D:33
+<DH	/	<DH/	homonym chosen by DSS	<DH/:27
+<DH==	[	<DH[	homonym chosen by DSS	<DH[:2
+<DJ	/	<DJ/	unique	<DJ/:2
+<DN	/	<DN=/	homonym chosen by DSS	<DN=/:2
+<DN=	/	<DN=/	homonym chosen by DSS	<DN=/:4
+<DR=	[	<DR[	homonym chosen by DSS	<DR[:1
+<FH	[	<FH[	unique	<FH[:54
+<FR	/	<FR/	homonym chosen by DSS	<FR/:6 <FRH=/:1
+<FR=	/	<FR=/	homonym chosen by DSS	<FR=/:3
+<FRH	/	<FRH/	homonym chosen by DSS	<FRH/:3
+<FRH=	/	<FRH=/	homonym chosen by DSS	<FRH=/:7
+<FRJM	/	<FRJM/	unique	<FRJM/:4
+<FRT	/	<FRT/	new	<FRH=/:4
+<FWR	/	<FWR/	unique	<FWR/:1
+<GLH===	/	<GLH/|<GLH=/|<GLH==/	homonym undecided	-:1
+<GN	[	<GN[	unique	<GN[:1
+<JLM	/	<JLM/	unique	<JLM/:1
+<JN	/	<JN/	homonym chosen by DSS	<JN/:24
+<JP	/	<JP/	unique	<JP/:1
+<JP=	[	<JP[	unique	<JP/:1
+<JR	/	<JR/	homonym chosen by DSS	<JR/:5
+<L	-	<L	unique	<L:229 <LH=/:2
+<LH	[	<LH[	unique	<LH[:7
+<LH=	/	<LH/	homonym chosen by DSS	<LH/:2
+<LH==	/	<LH=/	homonym chosen by DSS	<LH=/:1
+<LJLH	/	<LJLH/	unique	<LJLH/:6
+<LJLJH	/	<LJLJH/	unique	-:1
+<LJWN	/	<LJWN/	unique	<LJWN/:5
+<LM	[	<LM[	unique	<LM[:3
+<M	/	<M/	unique	<M/:44 <M:1
+<M=	-	<M	unique	<M:123 <M/:2
+<MD	[	<MD[	unique	<MD[:33 <MD=/:1
+<MD=	/	<MD/	homonym chosen by DSS	<MD/:2
+<MD==	/	<MD=/	homonym chosen by DSS	<MD=/:2 <MD/:1
+<MH	/	<MH/	homonym chosen by DSS	<MH/:1
+<MJR	/	<MJR/	unique	<MJR/:1
+<MJT	/	<MJT/	unique	<MJT/:1
+<ML	/	<ML/	homonym chosen by DSS	<ML/:4
+<MQ=	/	<MQ=/	homonym chosen by DSS	<MQ=/:1
+<MQ====	/	<MQ/|<MQ=/|<MQ==/|<MQ===/	homonym undecided	M<MQJM/:2
+<MWD	/	<MWD/	unique	<MWD/:1 <MD[:1
+<MWN	/	<MWN/	unique	<MWN/:1
+<NC	[	<NC[	unique	<NC[:20
+<NH	[	<NH[	homonym chosen by DSS	<NH[:8
+<NH=	[	<NH[	homonym chosen by DSS	<NH[:1
+<NJ	/	<NJ/	homonym chosen by DSS	<NJ/:3
+<NJ=	/	<NJ/	homonym chosen by DSS	<NJ/:2 <NJ=/:1
+<NP	/	<NP/	homonym chosen by DSS	<NP/:1
+<NW	/	<NW/	unique	<NW/:3
+<NWH	/	<NWH=/	homonym chosen by DSS	<NWH=/:9
+<PJ	/	<PJ/	unique	<PJ/:1
+<PR	/	<PR/	homonym chosen by DSS	<PR/:40
+<QB=	/	<QB=/	homonym chosen by DSS	<QB=/:1
+<R<R	/	<R<R/	unique	<R<R/:1
+<RB	/	<RB/	homonym chosen by DSS	<RB/:4
+<RB=========	[	<RB[	homonym chosen by DSS	<RB[:7
+<RBH	/	<RBH/	homonym chosen by DSS	<RBH/:2
+<RF	/	<RF/	unique	<RF/:1
+<RJY	/	<RJY/	unique	<RJY/:2
+<RK	[	<RK[	unique	<RK[:7
+<RL	/	<RL/	unique	<RL/:2
+<RL=	[	<RL[	unique	-:2
+<RLH	/	<RLH/	unique	<RLH/:2
+<RMH=	/	<RMH/	homonym chosen by DSS	<RMH/:8
+<RP	/	<RP/	unique	<RP/:8
+<RWH	/	<RWH/	unique	<RWH/:6
+<RWM	/	<RWM/	homonym chosen by DSS	<RWM/:1
+<RY	[	<RY[	unique	<RY[:2
+<T	/	<T/	unique	<T/:28
+<TD	[	<TD[	unique	-:3
+<TH	-	<TH	unique	<TH:1
+<VP	[	<VP=[	homonym chosen by DSS	<VP=[:1
+<W<JM	/	<W<JM/	unique	<W<JM/:2
+<WD	/	<WD/	unique	<WD/:14
+<WD==	[	<WD[	unique	<WD[:2
+<WH	[	<WH[	unique	<WH[:7 -:4
+<WL	/	<WL=/	homonym chosen by DSS	<WL=/:19
+<WL=	/	<WL=/	homonym chosen by DSS	<WL=/:2
+<WLH	/	<WLH/	unique	<WLH/:26 <WL/:1
+<WLL	/	<WLL/	homonym chosen by DSS	<WLL/:1
+<WLM	/	<WLM/	unique	<WLM/:128
+<WN	/	<WN/	unique	<WN/:29
+<WP	/	<WP/	unique	<WP/:1
+<WP=	[	<WP[	unique	<WP[:3
+<WPRT	/	<WPRT/	new	<WPRT/:1
+<WR=	[	<WR[	homonym chosen by DSS	<WR[:2
+<WR==	/	<WR/	homonym chosen by DSS	<WR/:1
+<WRWN	/	<WRWN/	unique	<WRWN/:1
+<WT==	[	<WT[	homonym chosen by DSS	<WT[:1
+<WY	/	<WY=/	homonym chosen by DSS	<WY=/:1
+<WZ	[	<WZ[	unique	<WZ[:3
+<Y	/	<Y/	unique	<Y/:11
+<YH	/	<YH/	homonym chosen by DSS	<YH/:53
+<YM	/	<YM/	homonym chosen by DSS	<YM/:5
+<YM=	[	<YM[	homonym chosen by DSS	<YM[:2
+<YR	[	<YR[	unique	<YR[:8
+<YWM	/	<YWM/	unique	<YM=/:1
+<Z	/	<Z/	homonym chosen by DSS	<Z/:16
+<ZB	[	<ZB[	homonym chosen by DSS	<ZB[:16
+<ZQ	[	<ZQ[	unique	<ZQ[:1
+<ZR	[	<ZR[	unique	<ZR[:6 <ZR/:1 <ZRH/:1
+<ZR=	/	<ZR/	homonym chosen by DSS	<ZR/:4
+<ZRH	/	<ZRH/	homonym chosen by DSS	<ZRH/:3
+>B	/	>B/	homonym chosen by DSS	>B/:14 -:1
+>BD	[	>BD[	unique	>BD[:3
+>BDWN	/	>BDWN/	unique	-:3
+>BJHW>	/	>BJHW>/	unique	>BJHW>/:1
+>BJWN	/	>BJWN/	unique	>BJWN/:9
+>BL	[	>BL=[|>BL[	homonym undecided	>BL===/:1 >BL==/:1
+>BL=	/	>BL==/	homonym chosen by DSS	>BL==/:4
+>BN	/	>BN/	homonym chosen by DSS	>BN/:8
+>BNV	/	>BNV/	unique	>BNV/:1
+>C	/	>C/	homonym chosen by DSS	>C/:12
+>CH	/	>CH/	homonym chosen by DSS	>CH/:6
+>CM=	[	>CM[	unique	>CM[:1
+>CMH	/	>CMH/	unique	>CMH/:36
+>CMRT	/	>CMRT/	unique	-:1
+>CR	-	>CR	unique	>CR:140
+>CWR	/	>CWR/	homonym chosen by DSS	>CWR/:6
+>DJR	/	>DJR/	unique	>DJR/:5
+>DM	/	>DM/	homonym chosen by DSS	>DM/:26
+>DM===	/	>DM/	homonym chosen by DSS	>DM/:3
+>DMH	/	>DMH/	homonym chosen by DSS	>DMH/:3
+>DNJ	/	>DNJ/	unique	>DNJ/:20
+>DWM	/	>DWM/	unique	>DWM/:1
+>DWN	/	>DWN/	homonym chosen by DSS	>DWN/:1
+>GM	/	>GM/	homonym chosen by DSS	>GM/:1
+>GP	/	>GP/	unique	>GP/:1
+>HB	[	>HB[	unique	>HB[:12
+>HBH	/	>HBH/	unique	>HBH/:7
+>HL	/	>HL/	homonym chosen by DSS	>HL/:1
+>HRWN	/	>HRN/	spelling variant chosen by DSS	>HRN/:11
+>JB	[	>JB[	unique	>JB[:26
+>JBH	/	>JBH/	unique	>JBH/:1
+>JC	/	>JC/	unique	>JC/:180
+>JK	-	>JK	unique	>JK:1
+>JKH	-	>JKH	homonym chosen by DSS	>JKH:8
+>JMH	/	>JMH/	unique	>JMH/:2
+>JN	/	>JN/	unique	>JN/:111
+>JTMR	/	>JTMR/	unique	>JTMR/:1
+>K	-	>K	unique	>K:1
+>KL	[	>KL[	unique	>KL[:15
+>KZRJ	/	>KZRJ/	unique	>KZRJ/:1
+>L	-	>L	homonym chosen by DSS	>L:31 >L/:1
+>L=	-	>L=	homonym chosen by DSS	>L=:33
+>L==	/	>L/	homonym chosen by DSS	>L/:218 -:1
+>LH	-	>LH	unique	>LH:48
+>LH=	/	>LH=/	homonym chosen by DSS	>LH=/:2
+>LHJM	/	>LHJM/	unique	>LHJM/:1
+>LJL	/	>LJL/	unique	>LJL/:1
+>LM	[	>LM[	unique	>LM[:5
+>LM===	[	>LM[	unique	>LM[:1
+>LP	/	>LP=/	homonym chosen by DSS	>LP=/:12
+>LP=	/	>LP=/	homonym chosen by DSS	>LP=/:1
+>LWH	/	>LWH/	unique	>LHJM/:2
+>M	-	>M	unique	>M:34
+>M=	/	>M/	unique	>M/:2
+>MH	/	>MH=/	homonym chosen by DSS	>MH=/:13
+>MH=	/	>MH/	homonym chosen by DSS	>MH/:1
+>MN	[	>MN[	unique	>MN[:10
+>MN=	-	>MN	unique	>MN:6
+>MN===	/	>MN=/	homonym chosen by DSS	>MN=/:1
+>MR	[	>MR[	homonym chosen by DSS	>MR[:25
+>MR=	/	>MR/	homonym chosen by DSS	>MR/:1
+>MT	/	>MT/	unique	>MT/:119 >MH/:1
+>MWNH	/	>MWNH/	unique	>MWNH/:4
+>MY	[	>MY[	unique	>MY[:4 >MJY/:1
+>MY==	/	>MY/|>MY=/	homonym undecided	>MJY/:1
+>NC	[	>NC[	unique	>NWC=/:2
+>NJ	-	>NJ	unique	>NJ:53
+>NJH	/	>NJH/	homonym chosen by DSS	>NJH/:4
+>NJN	/	>NJN/	new	-:1
+>NW	-	>NW	new	-:5
+>NWC	/	>NWC/	homonym chosen by DSS	>NWC/:23 >JC/:2
+>NWC=	/	>NWC=/	homonym chosen by DSS	>NWC=/:1
+>NXH	/	>NXH/	unique	>NXH/:7
+>NXNW	-	>NXNW	unique	>NXNW:1
+>P	/	>P/	unique	>P/:28
+>P<H	/	>P<H/	unique	>P<H/:4
+>P=	-	>P	unique	>P/:6
+>PLH	/	>PLH/	unique	>PLH/:3
+>PP	[	>PP[	unique	>PP[:2
+>PQ=	[	>PQ[	unique	>PQ[:2
+>PR	/	>PR/	homonym chosen by DSS	>PR/:4
+>PS	/	>PS/	unique	>PS/:6
+>RB	[	>RB[	unique	>RB[:1
+>RB<	/	>RB</	unique	>RB</:10
+>RGMN	/	>RGMN/	unique	>RGMN/:1
+>RJ	/	>RJ/	homonym chosen by DSS	>RJ/:1
+>RJH	/	>RJH/|>RJH=/	homonym undecided	>RJ/:1
+>RK	/	>RK=/	homonym chosen by DSS	>RK=/:8
+>RK=	[	>RK[	unique	>RK[:1
+>RK===	/	>RK==/	homonym chosen by DSS	>RK==/:5 >RK=/:1
+>RM	/	>RM/	unique	>RM/:2
+>RPKCD	/	>RPKCD/	unique	-:1
+>RR	[	>RR[	unique	>RR[:6
+>RY	/	>RY/	unique	>RY/:31
+>SP	[	>SP[	unique	>SP[:11
+>SR	[	>SR[	unique	>SR[:3
+>SR=	/	>SR/	homonym chosen by DSS	>SR/:1
+>T	-	>T	homonym chosen by DSS	>T:85
+>T=	-	>T	homonym chosen by DSS	>T:23
+>TH	-	>TH	unique	>TH:86
+>TM	-	>TM	unique	>TM:4
+>W	-	>W	unique	>W:16
+>WC	/	>WC/	new	-:5
+>WH	[	>WH[	unique	>WH[:2
+>WLT	/	>WLT/	unique	>WLT/:4
+>WN	/	>WN=/	homonym chosen by DSS	>WN=/:3
+>WR	/	>WR/	homonym chosen by DSS	>WR/:38 >RT/:1
+>WR=	[	>WR[	unique	>WR[:11
+>WRH	/	>WRH/	unique	-:3
+>WT	/	>WT/	unique	>WT/:28
+>WY	[	>WY[	unique	>WY[:2
+>WYR	/	>WYR/	unique	>WYR/:3
+>X	/	>X/	homonym chosen by DSS	>X/:5
+>XD	/	>XD/	unique	>XD/:22
+>XR	/	>XR/	homonym chosen by DSS	>XR/:32
+>XR=	/	>XR=/	homonym chosen by DSS	>XR=/:5
+>XR==	[	>XR[	unique	>XR[:2
+>XRWN	/	>XRWN/	unique	>XRWN/:1
+>XWR	/	>XWR/	unique	>XWR/:4
+>XZ	[	>XZ[	homonym chosen by DSS	>XZ[:3
+>XZH	/	>XZH/	unique	>XZH/:1
+>YB<	/	>YB</	unique	>YB</:2
+>Z	-	>Z	unique	>Z:15
+>ZN	/	>ZN/	homonym chosen by DSS	>ZN/:14
+>ZN=	[	>ZN[	homonym chosen by DSS	>ZN[:3
+>ZR	[	>ZR[	unique	>ZR[:4
+B	-	B	unique	B:1330 >HB[:1 KL/:1
+B<D	/	B<D/	unique	B<D/:11
+B<L	/	B<L/	homonym chosen by DSS	B<L/:5
+B<L=	[	B<L[	unique	B<L[:1
+B<R	[	B<R[	homonym chosen by DSS	B<R[:5
+B<T	[	B<T[	unique	B<T[:3
+B>C	[	B>C[	unique	B>C=/:1
+BCT	/	BCT/	unique	BCT/:4
+BD	/	BD/	homonym chosen by DSS	BD/:7
+BDL	[	BDL[	unique	BDL[:19
+BDN=	/	BDN/	unique	BDN/:2
+BFR	/	BFR/	unique	BFR/:42
+BFR=	[	BFR[	unique	BFR[:2
+BGD	/	BGD/	homonym chosen by DSS	BGD/:4
+BGD=	[	BGD[	unique	BGD[:3
+BHLH	/	BHLH/	unique	BHLH/:1
+BHW	/	BHW/	unique	BHW/:1
+BJN	/	BJN/	unique	BJN/:16 BN/:12 BNJM/:1
+BJN=	[	BJN[	unique	BJN[:22 BJNH/:1 BJT[:1
+BJNH	/	BJNH/	unique	BJNH/:22
+BJT	/	BJT/	unique	BJT/:10
+BKJ	/	BKJ/	unique	BKJ/:1
+BKR==	[	BKR[	unique	-:1
+BL	-	BL	unique	BL:12
+BL<	[	BL<[	homonym chosen by DSS	BL<[:3
+BL<==	[	BL<[	homonym chosen by DSS	BL<[:1
+BL<DJ	-	BL<DJ	unique	BL<DJ:7
+BLH	[	BLH[	unique	BLH[:1
+BLH===	/	BLH/|BLH=/	homonym undecided	-:1
+BLJ	/	BLJ/	unique	BLJ/:2
+BLJ<L	/	BLJ<L/	unique	BLJ<L/:29
+BLT	/	BLT/	unique	BLT/:9
+BMH	/	BMH/	unique	BMH/:1
+BN	/	BN/	homonym chosen by DSS	BN/:100
+BNH	[	BNH[	unique	-:1
+BNJH=	/	BNJH/|BNJH=/	homonym undecided	-:1
+BNJM	/	BNJM/	unique	BNJM/:14
+BNJMJN	/	BNJMN/	spelling variant chosen by DSS	BNJMN/:1
+BQ<	[	BQ<[	unique	BQ<[:2
+BQC	[	BQC[	unique	BQC[:4
+BQR	/	BQR=/	homonym chosen by DSS	BQR=/:7
+BQR==	[	BQR[	unique	-:2
+BR=	/	BR=/	homonym chosen by DSS	BR=/:1
+BR>	[	BR>[	homonym chosen by DSS	BR>[:11
+BRJT	/	BRJT/	homonym chosen by DSS	BRJT/:72
+BRJX	/	BRJX/	homonym chosen by DSS	BRJX/:4
+BRK	[	BRK[	homonym chosen by DSS	BRK[:39
+BRK=	/	BRK/	unique	BRK/:3
+BRKH	/	BRKH/	homonym chosen by DSS	BRKH/:7
+BRQ	/	BRQ/	homonym chosen by DSS	BRQ/:1
+BRQT	/	BRQT/|BRQT=/	homonym undecided	-:1
+BRR	[	BRR[	unique	BRR[:7
+BRWC	/	BRWC/	unique	BRWC/:1
+BRZL	/	BRZL/	unique	BRZL/:4
+BT	/	BT/	homonym chosen by DSS	BT/:1
+BVN	/	BVN/	homonym chosen by DSS	BVN/:3
+BVX	[	BVX[	unique	BVX[:1
+BVX=	/	BVX/	homonym chosen by DSS	BVX/:1
+BW>	[	BW>[	unique	BW>[:55
+BWQH	/	BWQH/	unique	BWQH/:1
+BWZ=	/	BWZ/	homonym chosen by DSS	BWZ/:4
+BXJR	/	BXJR/	unique	BXJR/:7
+BXN	[	BXN[	unique	BXN[:6
+BXN=	/	BXN/	homonym chosen by DSS	BXN/:1
+BXN===	/	BXN/	homonym chosen by DSS	BXN/:2
+BXR	[	BXR[	unique	BXR[:16
+BY	/	BY/	unique	-:1
+BY<	/	BY</	unique	BY</:2
+BYR	[	BYR[	homonym chosen by DSS	BYR[:1
+BZH	[	BZH[	unique	BZH[:3
+C<<	[	C<<[	homonym chosen by DSS	C<<[:7
+C<<=	[	C<<[	homonym chosen by DSS	C<<[:1
+C<N	[	C<N[	unique	C<N[:9
+C<R	/	C<R/	homonym chosen by DSS	C<R/:15
+C>L	[	C>L[	unique	C>L[:9
+C>R=	/	C>R=/	homonym chosen by DSS	C>R=/:3
+C>RJT	/	C>RJT/	unique	C>RJT/:11
+C>WL=	/	C>WL/	homonym chosen by DSS	C>WL/:9
+C>WN	/	C>WN/	homonym chosen by DSS	C>WN/:2
+C>WN=	/	C>WN/	homonym chosen by DSS	C>WN/:1
+CB<	/	CB</	homonym chosen by DSS	CB</:18
+CBH	[	CBH[	unique	CBH[:1 CBJ/:1
+CBJ<J	/	CBJ<J/	unique	CBJ<J/:3
+CBJB	/	CBJB/	unique	-:3
+CBJL	/	CBJL/	unique	-:1
+CBLT	/	CBLT/	homonym chosen by DSS	CBLT/:3
+CBR	[	CBR[	homonym chosen by DSS	CBR[:7
+CBT	/	CBT/	homonym chosen by DSS	CBT/:2
+CBT=	[	CBT[	unique	CBT[:10
+CBV	/	CBV/	homonym chosen by DSS	CBV/:12
+CBW<	/	CBW</	unique	CBW</:2
+CBW<H	/	CBW<H/	unique	CBW<H/:2
+CC	/	CC/	homonym chosen by DSS	CC/:15
+CC=	/	CC/	homonym chosen by DSS	CC/:2
+CCJ	/	CCJ/	homonym chosen by DSS	CCJ/:2
+CD=	/	CD=/	homonym chosen by DSS	CD=/:1
+CDD	[	CDD[	unique	CDD[:1
+CGG	[	CGG[	unique	-:2
+CGGH	/	CGGH/	unique	CGGH/:3
+CGH	[	CGH[	unique	CGH[:1
+CJR=	/	CJR/	unique	CJR/:1
+CJT	[	CJT[	unique	CJT[:1 NF>[:1
+CJT=	/	CJT/	homonym chosen by DSS	CJT/:1
+CKB	[	CKB[	unique	CKB[:2
+CKL	[	CKL[	unique	CKWL/:1
+CKM==	/	CKM/	homonym chosen by DSS	CKM/:1
+CLC	/	CLC/	homonym chosen by DSS	CLC/:27
+CLHBT	/	CLHBT/	unique	-:2
+CLJC	/	CLJC/	homonym chosen by DSS	CLJC/:1
+CLJCJ	/	CLJCJ/	unique	CLJCJ/:5
+CLJCJT	/	CLJCJT/	unique	CLJCJ/:2
+CLK	[	CLK[	unique	CLK[:4
+CLL	/	CLL/	homonym chosen by DSS	CLL/:3
+CLL=	[	CLL[	homonym chosen by DSS	CLL[:2 NCL[:1
+CLM	[	CLM[	unique	CLM[:8
+CLM==	/	CLM=/	homonym chosen by DSS	CLM=/:2
+CLV=	/	CLV/	unique	CLV/:1
+CLWM	/	CLWM/	homonym chosen by DSS	CLWM/:23 CLWM=/:2
+CLWM==	/	CLWM=/	homonym chosen by DSS	CLWM=/:2
+CLX	[	CLX[	unique	CLX[:14
+CLXN	/	CLXN/	unique	CLXN/:2
+CM	/	CM/	homonym chosen by DSS	CM/:51
+CM<	[	CM<[	unique	CM<[:24
+CM=	-	CM	unique	CM:15
+CMC	/	CMC/	unique	CMC/:3
+CMD	[	CMD[	unique	CMD[:7
+CMJM	/	CMJM/	unique	CMJM/:19
+CMJNJ	/	CMJNJ/	unique	CMJNJ/:2
+CMJR	/	CMJR/	homonym chosen by DSS	CMJR/:1
+CMM	[	CMM[	unique	CMM[:2
+CMMH	/	CMMH/	homonym chosen by DSS	CMMH/:1
+CMN	/	CMN/	homonym chosen by DSS	CMN/:1
+CMNH	/	CMNH/	unique	CMNH/:3
+CMR	[	CMR[	unique	CMR[:20
+CMVH	/	CMVH/	unique	CMVH/:2
+CMW<H	/	CMW<H/	unique	CMW<H/:1
+CN	/	CN/	homonym chosen by DSS	CN/:2
+CN>B==	/	CN>B/	unique	-:1
+CNH	/	CNH/	homonym chosen by DSS	CNH/:47
+CNH=	[	CNH[	unique	CNH[:6
+CNJ	/	CNJ/	homonym chosen by DSS	CNJ/:12
+CNJ=	/	CNJ=/	homonym chosen by DSS	CNJ=/:1
+CNJM	/	CNJM/	unique	CNJM/:18
+CNN	[	CNN=[	homonym chosen by DSS	CNN=[:3
+CPD	[	CPD[	new	-:1
+CPK	[	CPK[	unique	CPK[:2
+CPL	[	CPL[	unique	CPL[:5 -:1
+CPV	[	CPV[	unique	CPV[:12
+CPV=	/	CPV/	homonym chosen by DSS	CPV/:2
+CQD	[	CQD[	homonym chosen by DSS	CQD[:1
+CQH	[	CQH[	unique	CQH[:3
+CQL=	[	CQL[	unique	CQL[:1
+CQR	/	CQR/	unique	CQR/:5
+CQR=	[	CQR[	unique	CQR[:1
+CQWJ	/	CQWJ/	unique	CQWJ/:2
+CQWY	/	CQWY/	unique	CQWY/:1
+CRC	/	CRC/	homonym chosen by DSS	CRC/:6
+CRC=	[	CRC[	unique	CRC[:1
+CRRWT	/	CRRWT/	unique	CRRWT/:9
+CRT	[	CRT[	unique	CRT[:11
+CT	/	CT/	homonym chosen by DSS	CT/:1
+CTH	[	CTH[	unique	CTH[:6
+CVP	[	CVP[	unique	CVP[:3
+CVR	[	CVR[	unique	CVR[:4
+CW<H	/	CW<H/	unique	CW<H/:2
+CW>	/	CW>/	homonym chosen by DSS	CW>/:5
+CW>H	/	CW>H/	unique	CW>H/:1
+CWB	[	CWB[	homonym chosen by DSS	CWB[:75 JCB[:1
+CWBH	/	CWBH/	unique	CWBH/:1
+CWCN=	/	CWCN/|CWCN=/	homonym undecided	-:1
+CWH	[	CWH[	homonym chosen by DSS	CWH[:1
+CWPR	/	CWPR/	unique	CWPR/:5
+CWQ	/	CWQ/	homonym chosen by DSS	CWQ/:1
+CWV	[	CWV[	homonym chosen by DSS	CWV[:2
+CWV=	/	CWV/	homonym chosen by DSS	CWV/:1
+CWX=	[	CWX[	unique	-:1
+CWXH	/	CWXH/	homonym chosen by DSS	CWXH/:1
+CXD	/	CXD/	unique	CXD/:3
+CXH	[	CXH[	unique	XWH[:2
+CXQ	/	CXQ/	unique	CXQ/:4
+CXR	/	CXR/	homonym chosen by DSS	CXR/:1
+CXT	[	CXT[	unique	CXT[:5 CXT/:3
+CXT=	/	CXT/	unique	CXT/:15
+CXX	[	CXX[	unique	FJX[:1 -:1
+CZR	[	CZR[	unique	CZR[:1
+D<H	/	D<H/	unique	D<H/:13
+D<T	/	D<T/	unique	D<T/:38 JD<[:2
+DBH	/	DBH/	unique	DBH/:1
+DBQ	[	DBQ[	unique	DBQ[:4
+DBR	/	DBR/	homonym chosen by DSS	DBR/:54
+DBR=	[	DBR[	homonym chosen by DSS	DBR[:25
+DC>	/	DC>/	unique	DC>/:1
+DCN=	[	DCN[	unique	DCN[:3
+DGL	/	DGL/	unique	DGL/:15
+DGN	/	DGN/	unique	DGN/:1
+DJ	/	DJ/	unique	DJ/:2
+DJG	/	DJG/	unique	DJG/:1
+DJN	[	DJN[	unique	RNH/:1
+DJN=	/	DJN/	homonym chosen by DSS	DJN/:1
+DK>	[	DK>[	unique	DK>[:1
+DKJ	/	DKJ/	unique	-:1
+DLJT	/	DLJT/	unique	-:2
+DLQ=	/	DLQ/	new	-:1
+DLT	/	DLT/	unique	DLT/:4
+DM	/	DM/	unique	DM/:8
+DM<H	/	DM<H/	unique	DM<H/:2
+DMJN	/	DMJN/	unique	DMJN/:1
+DMMH	/	DMMH/	unique	DWMM:3
+DRC	[	DRC[	unique	DRC[:20
+DRDR	/	DRDR/	unique	DRDR/:1
+DRK	/	DRK/	unique	DRK/:72
+DRK=	[	DRK[	unique	DRK[:3
+DRWR	/	DRWR=/	homonym chosen by DSS	DRWR=/:1
+DWD	/	DWD==/	homonym chosen by DSS	DWD==/:1
+DWNG	/	DWNG/	unique	DWNG/:3
+DWR	/	DWR/	homonym chosen by DSS	DWR/:15
+DXH	[	DXH[	unique	NDX[:2
+FB<	[	FB<[	unique	FB<[:1
+FDH	/	FDH/	unique	FDH/:1
+FFWN	/	FFWN/	unique	FFWN/:1
+FGH	[	FGH[	unique	-:1
+FJBH	/	FJBH/	unique	FJBH/:2
+FJM	[	FJM[	unique	FJM[:24
+FJX	[	FJX[	unique	FJX[:3
+FKL	[	FKL[	homonym chosen by DSS	FKL[:23 MFKJL/:6
+FKL=	/	FKL/	unique	-:24
+FM>L	/	FM>L/	unique	FM>L/:6
+FMX	[	FMX[	unique	FMX[:5
+FMXH	/	FMXH/	unique	FMXH/:13
+FN>	[	FN>[	unique	FN>[:11
+FN>H	/	FN>H/	unique	FN>H/:3
+FPH	/	FPH/	unique	FPH/:22
+FR	/	FR/	unique	FR/:15
+FRJ>L	/	FRJ>L/	new	-:1
+FRJD	/	FRJD/	homonym chosen by DSS	FRJD/:1
+FRPH	/	FRPH/	unique	FRPH/:2
+FVMH	/	FVMH/	new	-:1
+FVN	/	FVN/	unique	FVN/:2
+FWF	[	FWF[	unique	FWF[:2
+FWG	[	FWG[	unique	SWG[:1 NFG[:1
+FWK	[	FWK[	unique	-:3
+FWX	[	FWX[	unique	-:1
+FXQ	[	FXQ[	unique	FXQ[:1
+G<L	[	G<L[	unique	G<L[:1
+G<R	[	G<R[	unique	G<R[:3
+G>	/	G>/	unique	G>H/:1
+G>L=	[	G>L[	homonym chosen by DSS	G>L[:1
+G>LJM	/	G>LJM/	unique	-:1
+GBH=	[	GBH[	unique	-:1
+GBL	[	GBL[	unique	-:2
+GBR	/	GBR/	homonym chosen by DSS	GBR/:9
+GBR=	[	GBR[	unique	GBR[:16
+GBRJ>L	/	GBRJ>L/	unique	GBRJ>L/:1
+GBWL	/	GBWL/	unique	GBWL/:5
+GBWLH	/	GBWLH/	unique	GBWLH/:1
+GBWR	/	GBWR/	unique	GBWR/:26
+GBWRH	/	GBWRH/	unique	GBWRH/:53
+GCM	/	GCM/	homonym chosen by DSS	GCM/:1
+GDL	[	GDL[	unique	GDL[:6
+GDL=	/	GDL/	homonym chosen by DSS	GDL/:3
+GDL====	/	GDL/|GDL=/|GDL==/|GDL===/	homonym undecided	-:2
+GDP	[	GDP[	unique	GDP[:1
+GDWD	/	GDWD/	homonym chosen by DSS	GDWD/:6
+GDWL	/	GDWL/	unique	GDWL/:32 GDL/:6
+GDWP	/	GDWP/	unique	GDWP/:1 -:1
+GJL	[	GJL[	unique	GJL[:6
+GJLH	/	GJLH/	unique	GJLH/:2
+GJX	[	GJX[	unique	GJX[:1
+GL	/	GL/	homonym chosen by DSS	GL/:4
+GLH	[	GLH[	unique	GLH[:25
+GLJL	/	GLJL/	homonym chosen by DSS	GLJL/:1
+GLJT	/	GLJT/	unique	GLJT/:1
+GLL	[	GLL[	unique	GLL[:5
+GLWL	/	GLWLJM/	spelling variant chosen by DSS	GLWLJM/:5
+GM	-	GM	unique	GM:10
+GML=	[	GML[	unique	GML[:3
+GMWL	/	GMWL/	homonym chosen by DSS	GMWL/:9
+GN	/	GN/	unique	GN/:1
+GRC	[	GRC[	unique	GRC[:3
+GRM	/	GRM/	unique	-:1
+GTJ	/	GTJ/	unique	GTJ/:1
+GWD	[	GWD[	unique	GWR[:1
+GWDL	/	GWDL/	new	-:1
+GWG	/	GWG/	unique	GWG/:1
+GWH	/	GWH/|GWH=/	homonym undecided	-:1
+GWJ	/	GWJ/	unique	GWJ/:17
+GWJH	/	GWJH/	unique	GWJH/:2
+GWLH	/	GWLH/	unique	GWLH/:2
+GWR	[	GWR[	homonym chosen by DSS	GWR[:2
+GWR===	[	GWR[	homonym chosen by DSS	GWR[:2
+GWRL	/	GWRL/	unique	GWRL/:42
+GZ<	/	GZ</	unique	GZ</:4
+H	-	H	homonym chosen by DSS	H:721
+HBL	/	HBL/	homonym chosen by DSS	HBL/:8
+HDR	/	HDR/	homonym chosen by DSS	HDR/:1
+HDR==	/	HDR/	homonym chosen by DSS	HDR/:2
+HGH	[	HGH[	homonym chosen by DSS	HGH[:1
+HGH=	/	HGH/	unique	-:2
+HJ>	-	HJ>	unique	HJ>:13
+HJH	[	HJH[	unique	HJH[:120 HWH[:5
+HJKL	/	HJKL/	unique	HJKL/:2
+HLK	[	HLK[	unique	HLK[:64
+HLL	[	HLL[	homonym chosen by DSS	HLL[:12
+HLL=	[	HLL[	homonym chosen by DSS	HLL[:3
+HM=	-	HM	unique	HM:6
+HMH	-	HMH	unique	HM:16
+HMH=	[	HMH[	unique	HMH[:8
+HMWN	/	HMWN/	unique	HMWN/:29
+HNH	-	HNH	homonym chosen by DSS	HNH:1
+HNH=	-	HNH=	homonym chosen by DSS	HNH=:3
+HNH==	-	HNH=	homonym chosen by DSS	HNH=:2 HNH:1
+HPK	[	HPK[	unique	HPK[:7
+HR	/	HR/	homonym chosen by DSS	HR/:2
+HRGH	/	HRGH/	unique	HRGH/:2
+HRH	[	HRH[	unique	HRH[:2
+HRJH	/	HRH/	spelling variant chosen by DSS	HRH/:7
+HSH	[	HSH[	unique	-:1
+HW>	-	HW>	unique	HW>:32 JHWH/:1
+HWD	/	HWD/	homonym chosen by DSS	HWD/:1
+HWDH	/	HWDH/	new	-:5
+HWH	/	HWH/	homonym chosen by DSS	HWH/:14
+HWH==	/	HWH/	homonym chosen by DSS	HWH/:4
+HWH===	/	HWH/	homonym chosen by DSS	HWH/:1
+HWLL	/	HWLL/	new	-:3
+HWM	[	HWM[	unique	HMH[:4
+HWN	/	HWN/	unique	HWN/:27
+J<D	[	J<D[	unique	J<D[:11
+J<L	[	J<L[	unique	J<L[:1
+J<QB	/	J<QB/	unique	J<QB/:2
+J<R	/	J<R/	homonym chosen by DSS	J<R/:1
+J<Y	[	J<Y[	unique	-:2 J<Y[:1
+J>L	[	J>L[	homonym chosen by DSS	J>L[:1
+JBC	[	JBC[	unique	JBC[:1
+JBC==	/	JBC/	unique	JBJC=/:2
+JBCH	/	JBCH/	unique	JBCH/:2 JBJC=/:1
+JBWL	/	JBWL/	unique	JBWL/:1
+JC	/	JC/	unique	JC/:6
+JC<	[	JC<[	unique	JC<[:5
+JC<=	/	JC</	unique	JC</:1
+JCB	[	JCB[	unique	JCB[:8
+JCM<>L	/	JCM<>L/	unique	JCM<>L/:1
+JCN	[	JCN=[	homonym chosen by DSS	JCN=[:1
+JCR	/	JCR/	homonym chosen by DSS	JCR/:6
+JCR=	[	JCR[	unique	JCR[:5 JCR=/:1
+JCR==	/	JCR=/	homonym chosen by DSS	JCR=/:2
+JCW<H	/	JCW<H/	unique	JCW<H/:12
+JCWR	/	JCR=/	spelling variant chosen by DSS	JCR=/:1
+JD	/	JD/	unique	JD/:101
+JD<	[	JD<[	unique	JD<[:77
+JDH	[	JDH[	homonym chosen by DSS	JDH[:14
+JFR>L	/	JFR>L/	unique	JFR>L/:44
+JGWN	/	JGWN/	unique	JGWN/:11
+JHWDH	/	JHWDH/	unique	JHWDH/:3
+JHWH	/	JHWH/	unique	JHWH/:1
+JKL	[	JKL[	unique	JKL[:8
+JKX	[	JKX[	unique	JKX[:11
+JLD	[	JLD[	unique	JLD[:6
+JM	/	JM/	unique	JM/:12
+JMJN	/	JMJN/	homonym chosen by DSS	JMJN/:10
+JMR	[	JMR[	unique	MWR[:1
+JNQ	[	JNQ[	unique	JNQ[:1
+JP<	[	JP<[	unique	JP<[:13
+JPT	/	JPT/	unique	-:3
+JQD	[	JQD[	unique	JQD[:1
+JQR=	/	JQR/	homonym chosen by DSS	JQR/:1
+JQWM	/	JQWM/	unique	JQWM/:2
+JR>	[	JR>[	unique	JR>[:6
+JR>H	/	JR>H/	unique	JR>H/:1
+JRC	[	JRC[	unique	JRC[:1
+JRCH	/	JRCH/	homonym chosen by DSS	JRCH/:1 -:1
+JRD	[	JRD[	unique	JRD[:4
+JRH	[	JRH[	homonym chosen by DSS	JRH[:5
+JRH=	[	JRH[	homonym chosen by DSS	JRH[:2
+JRWCLM	/	JRWCLM/	unique	JRWCLM/:5
+JRX=	/	JRX/	homonym chosen by DSS	JRX/:1
+JSD	[	JSD[	homonym chosen by DSS	JSD[:4
+JSP	[	JSP[	unique	JSP[:4 >SP[:2
+JSR	[	JSR[	unique	JSR[:2
+JSWD	/	JSWD/	unique	JSWD/:7
+JSWDH	/	JSWDH/	unique	JSWD/:1
+JSWR	/	JSWR/	unique	-:2
+JTR	[	JTR[	unique	JTR[:3
+JTWM	/	JTWM/	unique	JTWM/:1
+JWBL	/	JWBL/	homonym chosen by DSS	JWBL/:1
+JWBL=	/	JWBL/|JWBL=/|JWBL==/	homonym undecided	JBL/:2
+JWM	/	JWM/	unique	JWM/:58
+JWMM	-	JWMM	unique	JWMM:5
+JWRH	/	JWRH/	homonym chosen by DSS	JWRH/:1
+JXD	/	JXD/	unique	JXD/:89 JXD[:1
+JXD=	[	JXD[	unique	JXD[:7
+JXDW	-	JXDW	unique	JXD/:1
+JXL	[	JXL[	unique	JXL[:4
+JY>	[	JY>[	unique	JY>[:38
+JYB	[	JYB[	unique	JYB[:14
+JYHR	/	JYHR/	homonym chosen by DSS	JYHR/:1
+JYR	[	JYR[	unique	JYR[:8
+JYR=	/	JYR/	homonym chosen by DSS	JYR/:42
+JYW<	/	JYW</	unique	JYW</:2
+K<S=	/	K<S/	unique	K<S/:1
+K=	-	K	unique	K:161 BXN[:1
+K>B	[	K>B[	unique	K>B/:1
+K>B=	/	K>B/	unique	K>B/:1
+KBCN	/	KBCN/	unique	KBCN/:1
+KBD	[	KBD[	unique	KBD[:9
+KBD===	/	KBD/|KBD=/|KBD==/	homonym undecided	KBWD/:1
+KBL	/	KBL/	unique	KBL/:1
+KBS	[	KBS[	unique	KBS[:1
+KBWD	/	KBWD/	unique	KBWD/:73 KBD==/:1
+KCL	[	KCL[	unique	KCL[:10
+KCLWN	/	KCLWN/	unique	-:1
+KHH	[	KHH[	homonym chosen by DSS	KHH[:1
+KHN	/	KHN/	unique	KHN/:53
+KHNH	/	KHNH/	unique	KHNH/:1
+KJ	-	KJ	unique	KJ:233 -:1
+KJDWN	/	KJDWN/	unique	KJDWN/:5
+KL	/	KL/	unique	KL/:574
+KL>=	/	KL>/	unique	KL>/:1
+KLH	[	KLH[	unique	KLH[:8 KLH=/:3
+KLH==	/	KLH=/	homonym chosen by DSS	KLH=/:23 KLH[:1
+KLJ	/	KLJ/	unique	KLJ/:9
+KLJL=	/	KLJL/	unique	-:2
+KLMH	/	KLMH/	unique	KLMH/:2
+KMW	-	KMW	unique	KMW:11
+KN	-	KN	unique	KN:16
+KN<	[	KN<[	unique	KN<[:7
+KNP	/	KNP/	unique	KNP/:4
+KNWR	/	KNWR/	unique	KNWR/:4
+KP	/	KP/	homonym chosen by DSS	KP/:6
+KPJR	/	KPJR/	unique	KPJR/:1
+KPJS	/	KPJS/	unique	KPJS/:2
+KPR	[	KPR[	unique	KPR[:11
+KPR=	/	KPR/	homonym chosen by DSS	KPR/:1
+KPRJM	/	KPRJM/	unique	KPRJM/:2
+KR<	[	KR<[	unique	KR<[:1
+KRT	[	KRT[	unique	KRT[:4
+KSH	[	KSH[	unique	KSH[:2
+KSP	/	KSP/	unique	KSP/:5
+KTB	[	KTB[	unique	KTB[:46
+KTJ	/	KTJ/	unique	KTJ/:17
+KTNT	/	KTNT/	unique	KTNT/:1
+KTT	[	KTT[	unique	KTT[:1
+KWKB	/	KWKB/	unique	KWKB/:2
+KWL	[	KWL[	unique	KWL[:4
+KWN	[	KWN[	unique	KWN[:50
+KWR	/	KWR/	unique	KWR/:6
+KWS	/	KWS/	homonym chosen by DSS	KWS/:1
+KX	/	KX/	homonym chosen by DSS	KX/:38
+KXC=	/	KXC/	homonym chosen by DSS	KXC/:2
+KXD	[	KXD[	unique	KXD[:1
+KXS	[	KXS[	new	KXC[:1
+KZB	/	KZB/	unique	KZB/:4
+KZB=	[	KZB[	unique	KZB[:1
+L	-	L	unique	L:1427 -:1
+L<G=	/	L<G/	homonym chosen by DSS	L<G/:1
+L<NH	/	L<NH/	unique	L<NH/:1
+L>	-	L>	unique	L>:259 L:1
+L>M	/	L>M/	unique	L>M/:1
+LB	/	LB/	unique	LB/:67
+LBB	/	LBB/	unique	LBB/:33
+LBC	[	LBC[	unique	LBC[:2
+LBJ>	/	LBJ>/	homonym chosen by DSS	LBJ>/:1
+LBN=	/	LBN/	homonym chosen by DSS	LBN/:2
+LBN==	[	LBN=[	homonym chosen by DSS	LBN=[:1
+LBV	[	LBV[	unique	LBV[:2
+LCWN	/	LCWN/	unique	LCWN/:24
+LDH	/	LDH/	unique	-:1
+LHB	/	LHB/	unique	LHB/:1 -:1
+LHB=	/	LHB/	unique	-:3
+LHB==	[	LHB[	new	-:1
+LHV=	/	LHV/	unique	-:1
+LJLH	/	LJLH/	unique	LJLH/:10
+LJY	[	LJY[	unique	-:9
+LKD	[	LKD[	unique	LKD[:2
+LM<N	-	LM<N	unique	LM<N:9
+LMD	[	LMD[	unique	LMD[:8 LMD/:1
+LMD=	/	LMD/	unique	LMD/:2
+LPJD	/	LPJD/	unique	LPJD/:1
+LQX	[	LQX[	unique	LQX[:4
+LQX=	/	LQX/	unique	LQX/:1
+LW	-	LW	unique	L>:1
+LWD	/	LWD/	unique	LWD/:1
+LWH	[	LWH=[	homonym chosen by DSS	LWH=[:1
+LWH=	[	LWH=[	homonym chosen by DSS	LWH=[:1
+LWJ	/	LWJ/	homonym chosen by DSS	LWJ/:15
+LWJ=	/	LWJ/	homonym chosen by DSS	LWJ/:2
+LWN	[	LWN[	unique	LWN[:3
+LWX	/	LWX/	unique	LWX/:2
+LWZ=	[	LWZ[	unique	LWZ[:1
+LX	/	LX/|LX=/	homonym undecided	-:2
+LXM	/	LXM/	homonym chosen by DSS	LXM/:7
+LXM=	[	LXM[	homonym chosen by DSS	LXM[:11
+LY	/	LY/	unique	-:1
+M<FH	/	M<FH/	unique	M<FH/:103
+M<JN	/	M<JN/	unique	M<JN/:9 M<WN/:1
+M<L==	/	M<L/	homonym chosen by DSS	M<L/:8
+M<LH	/	M<LH/|M<LH=/	homonym undecided	M<L/:1
+M<LH=	/	M<LH/|M<LH=/	homonym undecided	M<L/:1
+M<MD	/	M<MD/	homonym chosen by DSS	M<MD/:25
+M<MD=	/	M<MD/	homonym chosen by DSS	M<MD/:3
+M<NH=	/	M<NH=/	homonym chosen by DSS	M<NH=/:8
+M<RKH	/	M<RKH/	unique	M<RKH/:45
+M<RKT	/	M<RKT/	unique	M<RKH/:1
+M<V	/	M<V/	unique	-:1 M<V/:1
+M<WN	/	M<WN/	homonym chosen by DSS	M<WN/:8
+M<WNH	/	M<NH/	spelling variant chosen by DSS	M<NH/:1
+M<WZ	/	M<WZ/	unique	M<WZ/:6
+M>D	/	M>D/	unique	M>D/:7
+M>H	/	M>H/	homonym chosen by DSS	M>H/:14
+M>R	[	M>R[	unique	M>R[:2
+M>RB	/	M>RB/	unique	M>RB/:2
+M>S	[	M>S[	homonym chosen by DSS	M>S[:7
+M>SP	/	M>SP/	new	-:2
+M>WM	/	M>WM/	unique	M>WM/:1
+M>WMH	/	M>WMH/	unique	M>WMH/:1
+M>WR	/	M>WR/	unique	M>WR/:10
+MB<	/	MB</	new	-:2
+MBNH	/	MBNH/	unique	-:1
+MBNJT	/	MBNJT/	new	-:4
+MBQ<	/	MBQ</	new	-:1
+MBW<	/	MBW</	unique	MBW</:2
+MBW>	/	MBW>/	unique	MBW>/:5
+MBYR	/	MBYR/	homonym chosen by DSS	MBYR/:2
+MC<N	/	MC<N=/	homonym chosen by DSS	MC<N=/:2
+MC<NH	/	MC<NH/	unique	MC<NH/:2
+MC<NT	/	MC<NT/	unique	MC<NH/:3
+MC>=	/	MC>/|MC>=/	homonym undecided	-:1
+MCBR	/	MCBR/	homonym chosen by DSS	MCBR/:6
+MCBR=	/	MCBR/	homonym chosen by DSS	MCBR/:5 MCBR=/:1
+MCGH	/	MCGH/	unique	-:1
+MCH	/	MCH=/	homonym chosen by DSS	MCH=/:6
+MCJX	/	MCJX/	unique	MCJX/:2
+MCJXH	/	MCJXH/	new	-:1
+MCKB	/	MCKB/	unique	MCKB/:1
+MCL	[	MCL[	homonym chosen by DSS	MCL[:6
+MCLWX	/	MCLWX/	unique	MCLWX/:1
+MCLX	/	MCLX/	unique	MCLWX/:2
+MCMR	/	MCMR/	unique	MCMR/:4
+MCMRT	/	MCMRT/	unique	MCMRT/:5
+MCNH	/	MCNH/	unique	MCNH/:1
+MCPV	/	MCPV/	unique	MCPV/:119
+MCPXH	/	MCPXH/	unique	MCPXH/:3
+MCQH	/	MCQH/	unique	CQH[:4
+MCQL	/	MCQL/	unique	MCQL/:1
+MCQLT	/	MCQLT/	unique	MCQLT/:2
+MCW>H	/	MCW>H/	unique	MCW>H/:1
+MCWB	/	MCWB/	new	-:6 CWB[:3
+MCXJT	/	MCXJT/	unique	MCXJT/:1
+MD<	/	MD</	homonym chosen by DSS	MD</:3
+MD<=	/	MD</|MD<=/	homonym undecided	MW<D=/:1
+MDBR	/	MDBR/	homonym chosen by DSS	MDBR/:9
+MDH	/	MDH/	homonym chosen by DSS	MDH/:6
+MDH=	/	MDH/	homonym chosen by DSS	MDH/:1
+MDHB	/	MDHB/	new	-:1
+MDHBH	/	MDHBH/	unique	MDHBH/:2
+MDRC	/	MDRC/	unique	-:3
+MDWN	/	MDWN/|MDWN=/	homonym undecided	-:3
+MDWR	/	MDWR/	new	-:2
+MF>	/	MF>=/	homonym chosen by DSS	MF>=/:2
+MF>H	/	MF>H/	unique	MF>H/:1
+MFGB	/	MFGB/	unique	MFGB/:1
+MFRH	/	MFRH/	unique	MFRH/:3
+MFVMH	/	MFVMH/	unique	-:3
+MGB<H	/	MGB<H/	unique	MGB<H/:1
+MGBL	/	MGBL/	new	-:3
+MGDL	/	MGDL/	homonym chosen by DSS	MGDL/:9
+MGN	/	MGN/	homonym chosen by DSS	MGN/:13
+MGN==	[	MGN[	unique	MGN[:1
+MGPH	/	MGPH/	unique	MGPH/:2
+MGR	[	MGR[	unique	NGR[:1
+MGWR=	/	MGWR/	unique	MGWRJM/:2
+MGWRJM	/	MGWRJM/	unique	MGWRJM/:1
+MH	-	MH	unique	MH:38
+MHR	[	MHR[	homonym chosen by DSS	MHR[:7
+MHWMH	/	MHWMH/	unique	MHWMH/:6
+MJ	-	MJ	unique	MJ:15
+MJCRJM	/	MJCRJM/	unique	MJCRJM/:1
+MJCWR	/	MJCWR/	unique	MJCWR/:3
+MJK>L	/	MJK>L/	unique	MJK>L/:4
+MJM	/	MJM/	unique	MJM/:33
+MJN	/	MJN/	unique	MJN/:1
+MK>WB	/	MK>WB/	unique	MK>WB/:4
+MKCWL	/	MKCWL/	unique	MKCWL/:8
+MKH	/	MKH/	unique	MKH/:2
+MKMRT	/	MKMRT/	unique	MKMRT/:2
+MKNS	/	MKNS/	unique	MKNS/:1
+MKWN	/	MKWN/	unique	MKWN/:5
+ML>	[	ML>[	unique	ML>[:13
+ML>==	/	ML>=/	homonym chosen by DSS	ML>=/:2
+ML>K	/	ML>K/	unique	ML>K/:19
+ML>KH	/	ML>KH/	unique	ML>KH/:3
+MLK	/	MLK/	homonym chosen by DSS	MLK/:10
+MLK=	[	MLK[	homonym chosen by DSS	MLK[:2
+MLKWT	/	MLKWT/	unique	MLKWT/:2
+MLL=	[	MLL=[	homonym chosen by DSS	MLL=[:1
+MLV	[	MLV[	homonym chosen by DSS	MLV[:1
+MLWKH	/	MLWKH/	unique	MLWKH/:1
+MLX=	/	MLX=/	homonym chosen by DSS	MLX=/:2
+MLX====	[	MLX[	homonym chosen by DSS	MLX[:1
+MLXH	/	MLXH/	unique	-:1
+MLXMH	/	MLXMH/	unique	MLXMH/:98
+MMCL	/	MMCL/	unique	-:2 MMCLT/:1
+MMCLH	/	MMCLH/	unique	MMCLT/:29
+MMLKH	/	MMLKH/	unique	MMLKH/:1
+MMRWRJM	/	MMRWRJM/	unique	-:1
+MMWN	/	MMWN/	new	-:1
+MMZR	/	MMZR/	unique	-:2
+MN	-	MN	homonym chosen by DSS	MN:295
+MNT	/	MNT/	unique	MNH/:1
+MNWS	/	MNWS/	unique	MNWS/:4
+MNWX=	/	MNWX/	homonym chosen by DSS	MNWX/:4
+MNXH	/	MNXH/	unique	MNXH/:1
+MPF<	/	MPF</	new	-:1
+MPLGH	/	MPLGH/	unique	-:5
+MPLV	/	MPLV/	unique	PLV[:1
+MPRD	/	MPRD/	new	-:1
+MPRF	/	MPRF/	unique	-:1 PRF[:1
+MPTX=	/	MPTX/|MPTX=/	homonym undecided	-:1
+MPY	/	MPY/|MPY=/	homonym undecided	-:1
+MQDC	/	MQDC/	unique	MQDC/:2
+MQNH	/	MQNH/	homonym chosen by DSS	MQNH/:2
+MQR>	/	MQR>/	unique	MQR>/:9
+MQVRT	/	MQVRT/	unique	-:1
+MQWH	/	MQWH/	homonym chosen by DSS	MQWH/:1
+MQWH=	/	MQWH/	homonym chosen by DSS	MQWH/:6
+MQWH==	/	MQWH/	homonym chosen by DSS	MQWH/:5
+MQWM	/	MQWM/	unique	MQWM/:8
+MQWR	/	MQWR/	unique	MQWR/:23
+MR	/	MR/	homonym chosen by DSS	MR/:1
+MR>H	/	MR>H/	homonym chosen by DSS	MR>H/:2
+MR>H=	/	MR>H=/	homonym chosen by DSS	MR>H=/:2
+MRBH	/	MRBH/	homonym chosen by DSS	MRBH/:1
+MRDP=	/	MRDP/	unique	-:4
+MRH	[	MRH[	unique	MRH[:2
+MRJBH=	/	MRJBH=/	homonym chosen by DSS	MRJBH=/:1
+MRKBH	/	MRKBH/	unique	MRKBH/:1
+MRMH	/	MRMH/	homonym chosen by DSS	MRMH/:3
+MRMS	/	MRMS/	unique	MRMS/:1
+MRP>	/	MRP>/	homonym chosen by DSS	MRP>/:3 -:1
+MRQ=	[	MRQ[	unique	-:1
+MRR	[	MRR[	unique	-:3
+MRR=	/	MRR/	unique	-:1
+MRR==	/	MRR/	unique	-:3
+MRRJ	/	MRRJ=/	homonym chosen by DSS	MRRJ=/:2
+MRWGLT	/	MRWGLT/	new	RGL[:1
+MRWM	/	MRWM/	homonym chosen by DSS	MRWM/:4
+MRXB	/	MRXB/	unique	MRXB/:2
+MRY	[	MRY[	unique	MRY[:2 -:1
+MS<	/	MS</	homonym chosen by DSS	MS</:1
+MSH=	[	MSH[	unique	MSS[:5 -:1
+MSLH	/	MSLH/	unique	MSLH/:1
+MSPD	/	MSPD/	unique	MSPD/:1
+MSPR	/	MSPR/	homonym chosen by DSS	MSPR/:6
+MSRT	/	MSRT/	unique	-:3
+MSS	[	MSS[	unique	MSS[:4
+MTK	/	MTK/	new	-:1
+MTL<WT	/	MTL<WT/	unique	-:1
+MTNJM	/	MTNJM/	unique	MTNJM/:5
+MTWR	/	MTWR/	new	TWR[:1
+MV<	/	MV</	unique	MV</:5
+MV<T	/	MV<T/	new	-:6
+MVH	/	MVH/|MVH=/|MVH==/|MVH===/|MVH====/|MVH=====/	homonym undecided	-:1
+MVMN	/	MVMN/	unique	MVMN/:1
+MVR	/	MVR/	unique	MVR/:1
+MW<D	/	MW<D/	homonym chosen by DSS	MW<D/:48
+MW>B	/	MW>B/	unique	MW>B/:2
+MWC	[	MWC[	homonym chosen by DSS	MWC[:3
+MWCB	/	MWCB/	unique	MWCB/:11
+MWG	[	MWG[	unique	MWG[:3
+MWL=	[	MWL[	homonym chosen by DSS	MWL[:1
+MWLD=	/	MWLD/	new	-:3
+MWPT	/	MWPT/	unique	MWPT/:3
+MWQC	/	MWQC/	unique	MWQC/:1
+MWR	[	MWR[	unique	MWR[:3
+MWR>	/	MWR>/	unique	MWR>/:1
+MWRD	/	MWRD/	unique	MWRD/:1
+MWSD	/	MWSD/	homonym chosen by DSS	MWSD/:2
+MWSR	/	MWSR/	homonym chosen by DSS	MWSR/:4
+MWT	[	MWT[	unique	MWT[:3
+MWT=	/	MWT/	unique	MWT/:5
+MWV	[	MWV[	unique	MWV[:4
+MWY>	/	MWY>/	homonym chosen by DSS	MWY>/:5
+MXBRT	/	MXBRT/	unique	MXBRT/:2
+MXCB	/	MXCB/	new	-:2
+MXCBH	/	MXCBH/	unique	MXCBH/:31
+MXCK	/	MXCK/	unique	MXCK/:1
+MXH	[	MXH[	homonym chosen by DSS	MXH[:1
+MXJH	/	MXJH/	unique	MXJH/:2
+MXJR	/	MXJR/	homonym chosen by DSS	MXJR/:2
+MXLQT	/	MXLQT/	unique	-:1
+MXNH	/	MXNH/	unique	MXNH/:14
+MXRC	/	MXRC/	new	-:1
+MXSH	/	MXSH/	unique	MXSH/:2
+MXSWR	/	MXSWR/	unique	MXSWR/:1
+MXY	[	MXY[	unique	MXY[:2
+MXY=	/	MXY/	unique	MXY/:1
+MY	/	MY/	homonym chosen by DSS	MY/:1
+MY<D	/	MY<D/	unique	-:7
+MY<R	/	MY<R/	unique	MY<R/:1
+MY>	[	MY>[	unique	MY>[:11
+MYJRWQ	/	MYJRWQ/	new	-:4
+MYR	/	MYR/	unique	MYR/:1
+MYRJM	/	MYRJM/	unique	MYRJM/:2
+MYRP	/	MYRP/	unique	-:9
+MYWD	/	MYWD/	unique	MYWDH/:1
+MYWDH	/	MYWDH/	homonym chosen by DSS	MYWDH/:1
+MYWDH=	/	MYWDH/	homonym chosen by DSS	MYWDH/:1
+MYWH	/	MYWH/	unique	MYWH/:4
+MYWLH	/	MYWLH/	unique	-:3
+MYWQH	/	MYWQH/	unique	MYWQH/:1
+MYWR	/	MYWR==/	homonym chosen by DSS	MYWR==/:2
+MZL	/	MZL/	new	-:2
+MZMH	/	MZMH/	unique	MZMH/:8
+MZMWR	/	MZMWR/	unique	MZMWR/:2
+MZRWT	/	MZRWT/	unique	-:1
+MZZ	[	MZZ[	new	-:2
+N<R	/	N<R/	homonym chosen by DSS	N<R/:1
+N<WRJM	/	N<WRJM/	unique	N<WRJM/:1
+N>Y	[	N>Y[	unique	N>Y[:4 N>YH/:1
+NB<	[	NB<[	unique	NB<[:2
+NBJ>	/	NBJ>/	unique	NBJ>/:4
+NBL	/	NBL==/	homonym chosen by DSS	NBL==/:3
+NBL=	[	NBL[	unique	NBL[:2
+NBL===	/	NBL===/	homonym chosen by DSS	NBL===/:1
+NBLWT	/	NBLWT/	unique	-:1
+NBV	[	NBV[	unique	NBV[:12
+NBWK	/	NBWK/	new	-:1
+NCK=	[	NCK=[|NCK[	homonym undecided	-:1
+NCMH	/	NCMH/	unique	NCMH/:1
+NDB	/	NDB/	unique	NDB/:1
+NDB=	[	NDB[	unique	-:9
+NDBH	/	NDBH/	unique	NDBH/:6
+NDH	/	NDH/	homonym chosen by DSS	NDH/:16
+NDJB	/	NDJB/	unique	NDJB/:2
+NF>	[	NF>[	unique	NF>[:10
+NFG	[	NFG[	unique	NFG[:3
+NFJ>	/	NFJ>/	homonym chosen by DSS	NFJ>/:5
+NG<	[	NG<[	unique	NG<[:10
+NG<=	/	NG</	unique	NG</:24
+NGC	[	NGC[	unique	NGC[:13
+NGD	[	NGD[	unique	NGD[:3
+NGD=	/	NGD/	unique	NGD/:16
+NGH	/	NGH/	homonym chosen by DSS	NGH/:1
+NGJNH	/	NGJNH/	unique	NGJNH/:3
+NGP	[	NGP[	unique	NGP[:6
+NGR	[	NGR[	unique	NGR[:1
+NHL	[	NHL[	unique	NHL[:2
+NHM	[	NHM[	unique	NHM[:1
+NHMH	/	NHMH/	unique	NHMH/:1
+NHR	/	NHR/	unique	NHR/:4 -:1
+NJXX	/	NJXX/	unique	NJXX/:4
+NK>	/	NK>/|NK>=/	homonym undecided	-:2
+NKH	[	NKH[	unique	MWK[:1 NKH[:1
+NKR	[	NKR[	unique	NKR[:6
+NKR=	/	NKR/	homonym chosen by DSS	NKR/:1
+NKX=	/	NKX/	homonym chosen by DSS	NKX/:1
+NPC	/	NPC/	unique	NPC/:56
+NPL	[	NPL[	unique	NPL[:27
+NPX	[	NPX[	unique	NPX[:1
+NPY=	/	NPY/	unique	NPY/:1
+NQM	[	NQM[	unique	NQM[:5
+NQM=	/	NQM/	unique	NQM/:7
+NQMH	/	NQMH/	unique	NQMH/:4
+NS	/	NS/	unique	NS/:3
+NSH	[	NSH[	unique	-:1 NSH[:1
+NTJB	/	NTJB/	unique	NTJBH/:3
+NTJBH	/	NTJBH/	unique	NTJBH/:2
+NTN	[	NTN[	unique	NTN[:28
+NTQ	[	NTQ[	unique	NTQ[:1
+NVH	[	NVH[	unique	NVH[:3
+NVR	[	NVR[	homonym chosen by DSS	NVR[:2
+NWB	[	NWB[	unique	NWB[:1
+NWP	[	NWP[	homonym chosen by DSS	NWP[:5
+NWP=	[	NWP[	homonym chosen by DSS	NWP[:1
+NWS	[	NWS[	unique	NWS[:2
+NWX	[	NWX[	homonym chosen by DSS	NWX[:1
+NWX=	/	NWX/	unique	-:2
+NXCJR	/	NXCJR/	new	-:3
+NXCT	/	NXCT/	homonym chosen by DSS	NXCT/:4
+NXCWL	/	NXCWL/	new	-:1
+NXH	[	NXH[	homonym chosen by DSS	NXH[:1
+NXL	/	NXL/	unique	NXL/:5
+NXL=	[	NXL[	unique	NXL[:5
+NXLH	/	NXLH/	unique	NXLH/:10
+NXM	[	NXM[	unique	NXM[:7
+NY=	/	NY/	homonym chosen by DSS	NY/:1
+NYL	[	NYL[	unique	NYL[:5
+NYR=	/	NYR/	unique	NYR/:4
+NYX	[	NYX[	unique	NYX[:9
+NYX=	/	NYX/	homonym chosen by DSS	NYX/:18
+NZH	[	NZH[	unique	NZH[:2
+NZL	[	NZL[	unique	NZL[:1
+P<L	[	P<L[	unique	P<L[:2
+P<LH	/	P<LH/	unique	P<LH/:8
+P<M	/	P<M/	unique	P<M/:20
+P>H	/	P>H/	homonym chosen by DSS	P>H/:1
+P>R	[	P>R[	homonym chosen by DSS	P>R[:1
+P>RH==	/	P>RH/|P>RH=/	homonym undecided	-:2
+PC<	/	PC</	unique	PC</:31
+PC<=	[	PC<[	unique	PC<[:3
+PCV	[	PCV[	unique	PCV[:3
+PDH	[	PDH[	unique	PDH[:4 PDWT/:3
+PDWT	/	PDWT/	unique	PDWT/:4
+PG<	[	PG<[	unique	PG<[:2
+PGR	/	PGR/	unique	PGR/:4
+PH	/	PH/	unique	PH/:84
+PL>	[	PL>[	unique	PL>[:29
+PL>=	/	PL>/	unique	PL>/:30
+PLCT	/	PLCT/	unique	PLCT/:1
+PLCTJ	/	PLCTJ/	unique	PLCTJ/:1
+PLG	/	PLG/	homonym chosen by DSS	PLG/:4
+PLG==	[	PLG[	unique	PLG[:3 -:1
+PLH	[	PLH[	unique	PL>[:3
+PLJVH	/	PLJVH/	unique	PLJVH/:2
+PLV	[	PLV[	unique	PLJV=/:6 PLV[:2
+PLYWT	/	PLYWT/	unique	PLYWT/:3
+PN	-	PN	unique	PN:3
+PNH	/	PNH/	homonym chosen by DSS	PNH/:98
+PNH=	[	PNH[	unique	PNH[:6
+PNH==	/	PNH=/	homonym chosen by DSS	PNH=/:1
+PQD	[	PQD[	unique	PQD[:12
+PQDH	/	PQDH/	unique	PQDH/:9
+PQJD	/	PQJD/	unique	PQJD/:1
+PR<	[	PR<[	unique	PR<[:1
+PR<H	/	PR<H/	unique	PR<H/:1
+PRC	/	PRC/	homonym chosen by DSS	PRC/:6
+PRD	[	PRD[	unique	PRD[:3
+PRF	[	PRF[	unique	PRF[:3
+PRH	[	PRH[	unique	PRH[:1
+PRJ	/	PRJ/	unique	PRJ/:6 P>R/:1
+PRJY	/	PRJY/	homonym chosen by DSS	PRJY/:1
+PRR	[	PRR[	homonym chosen by DSS	PRR[:3
+PRS	/	PRS=/	homonym chosen by DSS	PRS=/:1
+PRT	/	PRT/	homonym chosen by DSS	PRT/:1
+PRWC	/	PRWC/	new	-:5
+PRX	[	PRX[	homonym chosen by DSS	PRX[:8
+PRX=	/	PRX/	unique	PRX/:1
+PSX=	/	PSX=/	homonym chosen by DSS	PSX=/:1
+PT<	/	PT</	unique	PT</:1
+PT>M	-	PT>M	unique	PT>M:2
+PTH	[	PTH[	homonym chosen by DSS	PTH[:3
+PTJ==	/	PTJ/	homonym chosen by DSS	PTJ/:2
+PTL	[	PTL[	unique	PTL[:1
+PTN	/	PTN/	unique	PTN/:1
+PTX	/	PTX/	homonym chosen by DSS	PTX/:1
+PTX=	[	PTX[	homonym chosen by DSS	PTX[:39
+PTX==	[	PTX[	homonym chosen by DSS	PTX[:1
+PVR=	[	PVR[	unique	PVR[:2
+PWX==	[	PWX=[|PWX[	homonym undecided	-:1
+PWY	[	PWY[	unique	PWY[:1
+PX	/	PX=/	homonym chosen by DSS	PX=/:7
+PXD	/	PXD/	homonym chosen by DSS	PXD/:5
+PXD=	[	PXD[	unique	PXD[:3
+PYH	[	PYH[	unique	PYH[:2
+QBL	[	QBL[	unique	QBL[:1
+QBR	[	QBR[	unique	QBR[:1
+QCH	/	QCH/	unique	QCH/:3
+QCJ	/	QCJ/	unique	-:2 QCJ/:1
+QCT	/	QCT/	homonym chosen by DSS	QCT/:3
+QDC	/	QDC/	homonym chosen by DSS	QDC/:71
+QDC=	[	QDC[	unique	QDC[:7 QDWC/:1
+QDM	/	QDM/	unique	QDM/:6
+QDM=	[	QDM[	unique	QDM[:1
+QDMNJ=	/	QDMNJ/	homonym chosen by DSS	QDMNJ/:1
+QDRWT	/	QDRWT/	unique	QDRWT/:1
+QDWC	/	QDWC/	unique	QDWC/:27
+QHL	/	QHL/	unique	QHL/:5
+QHL=	[	QHL[	unique	QHL[:1
+QHLH	/	QHLH/	unique	QHLH/:2
+QJM=	/	QJM/	unique	-:1
+QJNH	/	QJNH/	homonym chosen by DSS	QJNH/:2
+QJR	/	QJR/	homonym chosen by DSS	QJR/:2
+QJY=	/	QJY/	unique	QJY/:1
+QL	/	QL/	homonym chosen by DSS	QL/:2
+QL<=	/	QL</	homonym chosen by DSS	QL</:1
+QLL	[	QLL[	unique	QLL[:3
+QLS=	/	QLS/	unique	QLS/:2
+QLWN	/	QLWN/	unique	QLWN/:2
+QN	/	QN/	unique	QNH/:2 QN/:1
+QN>	[	QN>[	unique	QN>[:2
+QN>H	/	QN>H/	unique	QN>H/:14
+QNH	[	QNH[	homonym chosen by DSS	QNH[:1
+QNJN	/	QNJN/	unique	QNJN/:1
+QR>	[	QR>[	homonym chosen by DSS	QR>[:8
+QR>=	[	QR>[	homonym chosen by DSS	QR>[:2
+QRB	[	QRB[	unique	QRB[:15 QRB=/:1
+QRB=	/	QRB/	homonym chosen by DSS	QRB/:3
+QRB===	/	QRB==/	homonym chosen by DSS	QRB==/:2
+QRJ	/	QRJ/	unique	QRJ/:1
+QRJ>	/	QRJ>/	unique	QRJ>/:1
+QRN	/	QRN/	unique	QRN/:4
+QRWB	/	QRWB/	unique	QRWB/:1
+QRY	[	QRY[	unique	QRY[:2
+QVN=	/	QVN=/	homonym chosen by DSS	QVN=/:2
+QVWRH	/	QVWRH/|QVWRH=/	homonym undecided	-:1
+QW	/	QW=/	homonym chosen by DSS	QW=/:9
+QWH	[	QWH[	homonym chosen by DSS	QWH[:2
+QWL	/	QWL/	unique	QWL/:35
+QWM	[	QWM[	unique	QWM[:19
+QWMH	/	QWMH/	unique	QWMH/:2
+QWY	/	QWY/	homonym chosen by DSS	QWY/:1
+QY	/	QY/	unique	QY/:54
+QYH	/	QYH=/	homonym chosen by DSS	QYH=/:2
+QYJR	/	QYJR/	homonym chosen by DSS	QYJR/:1
+QYR=	[	QYR=[|QYR[	homonym undecided	QYR/:1
+QYR===	/	QYR/	homonym chosen by DSS	QYR/:1
+QYT	/	QYT/	unique	QYH/:1
+R<	/	R</	homonym chosen by DSS	R</:8
+R<<	[	R<<[	homonym chosen by DSS	R<<[:1
+R<<=	[	R<<[	homonym chosen by DSS	R<<[:1
+R<=	/	R<=/	homonym chosen by DSS	R<=/:26
+R<==	/	R</	homonym chosen by DSS	R</:5 R<===/:2
+R<D	[	R<D[	unique	R<D[:1
+R<D=	/	R<D/	unique	R<D/:1
+R<DH	/	R<DH/	unique	R<DH/:1
+R<H	/	R<H/	homonym chosen by DSS	R<H/:4
+R<H=	[	R<H[	homonym chosen by DSS	R<H[:1
+R<M	[	R<M[	homonym chosen by DSS	R<M[:1
+R>C	/	R>C/	homonym chosen by DSS	R>C/:33
+R>C=	/	R>C/	homonym chosen by DSS	R>C/:1
+R>CJT	/	R>CJT/	unique	R>CJT/:11
+R>CWN	/	R>CWN/	unique	R>CWN/:15
+R>H	[	R>H[	unique	R>H[:6
+RB	/	RB/	homonym chosen by DSS	RB/:52
+RB=	/	RB=/	homonym chosen by DSS	RB=/:43
+RBH	[	RBH[	homonym chosen by DSS	RBH[:5
+RBJ<J	/	RBJ<J/	unique	RBJ<J/:4
+RBJBJM	/	RBJBJM/	unique	RBJBJM/:2
+RBW>	/	RBW>/	unique	RBW>/:3
+RC<	/	RC</	homonym chosen by DSS	RC</:16 RC<=/:5
+RC<=	[	RC<[	unique	RC<[:12
+RC<==	/	RC<=/	homonym chosen by DSS	RC<=/:6 RC</:1
+RC<H	/	RC<H/	unique	RC<H/:32
+RCM	[	RCM[	unique	RCM[:1
+RCT	/	RCT/	unique	RCT/:2
+RCWT	/	RCWT/	new	-:1
+RDD	[	RDD[	unique	RDD[:2
+RDH	[	RDH[	homonym chosen by DSS	RDH[:3
+RDP	[	RDP[	unique	RDP[:3 -:2
+RGC=	[	RGC[	unique	RGC[:4
+RGL	/	RGL/	unique	RGL/:14
+RGN	[	RGN[	unique	RGN[:2
+RGN=	/	RGN/	new	-:1
+RJB	[	RJB[	unique	RJB[:4
+RJB=	/	RJB/	unique	RJB/:15
+RJQ=	/	RJQ=/	homonym chosen by DSS	RJQ=/:1
+RJX	/	RJX/	unique	RJX/:1
+RK	/	RK/	homonym chosen by DSS	RK/:1
+RKB	/	RKB/|RKB=/|RKB==/	homonym undecided	-:6
+RKB=	[	RKB[	unique	RKB[:2
+RKJL	/	RKJL/	unique	RKJL/:3
+RKK	[	RKK[	unique	RKK[:1
+RMH=	/	RMH==/	homonym chosen by DSS	RMH==/:1
+RMH==	[	RMH[	homonym chosen by DSS	RMH[:3
+RMH===	/	RMH/	homonym chosen by DSS	RMH/:3
+RMJH	/	RMJH=/	homonym chosen by DSS	RMJH=/:17
+RMS	[	RMS[	unique	RMS[:1
+RMX	/	RMX/	unique	RMX/:4
+RNH	/	RNH/	homonym chosen by DSS	RNH/:8
+RNN	[	RNN[	unique	RNN[:4
+RP>L	/	RP>L/	unique	-:1
+RPC	/	RPC/	unique	RPC/:3
+RPH=	/	RPH/	homonym chosen by DSS	RPH/:1
+RQ	-	RQ	unique	RQ:5
+RQJ<	/	RQJ</	unique	RQJ</:3
+RQQ	[	RQQ[	unique	-:1
+RTQ	[	RTQ[	unique	RTQ[:1
+RTT	/	RTT/	unique	RTT/:1
+RTX	[	RTX[	unique	-:1
+RVC	[	RVC[	unique	RVC[:1
+RW<	[	RW<[	unique	RW<[:17
+RWC	[	RWC[	unique	RWC[:3
+RWH	[	RWH[	unique	RWH[:1
+RWH=	/	RWH/	unique	RWJH/:1
+RWM	[	RWM[	unique	RWM[:30
+RWM=	/	RWM=/	homonym chosen by DSS	RWM=/:8 RWM[:1
+RWMM	/	RWMM/	unique	-:1
+RWX	/	RWX/	homonym chosen by DSS	RWX/:133
+RWX==	/	RWX/	homonym chosen by DSS	-:2 RWX/:1
+RXB	/	RXB=/	homonym chosen by DSS	RXB=/:2
+RXB=	/	RXB=/	homonym chosen by DSS	RXB=/:1
+RXB==	[	RXB[	unique	RXB=/:1 RXB[:1
+RXM	[	RXM[	unique	RXM[:2
+RXM=	/	RXM/	homonym chosen by DSS	RXM/:4 RXMJM/:1
+RXMJM	/	RXMJM/	unique	RXMJM/:36
+RXQ	[	RXQ[	unique	RXQ[:5
+RXWM	/	RXWM/	homonym chosen by DSS	RXWM/:1
+RXWQ	/	RXWQ/	unique	RXWQ/:3
+RXY	[	RXY[	unique	RXY[:1
+RXY=	/	RXY/	unique	-:1
+RYH	[	RYH[	homonym chosen by DSS	RYH[:11
+RYWN	/	RYWN/	unique	RYWN/:39
+RZ	/	RZ/	unique	RZ/:40
+S<RH	/	S<RH/	unique	S<RH/:2 S<R[:1
+S>WN	/	S>WN/	unique	S>WN/:1
+SBB	[	SBB[	unique	SBB[:6
+SBJB	/	SBJB/	unique	SBJB/:4
+SDR	/	SDR/	unique	-:12
+SDR=	[	SDR[	new	-:6
+SGR	[	SGR[	unique	SGR[:4
+SGR=	/	SGR/	new	-:3
+SKLWT	/	SKLWT/	unique	-:1
+SL<	/	SL</	homonym chosen by DSS	SL</:6
+SLJXH	/	SLJXH/	unique	SLJXH/:12
+SLX	[	SLX[	unique	SLX[:2
+SMK	[	SMK[	unique	SMK[:12
+SPH	[	SPH[	unique	SPH[:1
+SPH=	/	SPH/	new	FPH/:1
+SPR	/	SPR/	homonym chosen by DSS	SPR/:5
+SPR=	[	SPR[	unique	SPR[:23
+SRK	/	SRK/	new	-:27
+SRK=	[	SRK[	new	-:3
+SRR	[	SRR[	unique	SRR[:2
+STR	[	STR[	unique	STR[:14
+STR=	/	STR/	unique	STR/:1
+SWD	/	SWD/	unique	SWD/:38
+SWD==	/	SWD/	unique	SWD/:2
+SWG	[	SWG[	homonym chosen by DSS	SWG[:2
+SWP	/	SWP/	homonym chosen by DSS	SWP/:2
+SWR	[	SWR[	unique	SWR[:11
+SWS	/	SWS/	unique	SWS/:1
+T<B	[	T<B[	unique	T<B[:11
+T<H	[	T<H[	unique	T<H[:5 TW<H/:1
+T<NWG	/	T<NWG/	unique	T<NWG/:1
+T<R	/	T<R/	unique	T<R/:1
+T<WDH	/	T<WDH/	unique	T<WDH/:16
+T<WT	/	T<WT/	new	-:7
+T>CWR	/	T>CWR/	unique	T>CWR/:1
+TBL	/	TBL/	homonym chosen by DSS	TBL/:17
+TBNJT	/	TBNJT/	unique	TBNJT/:1
+TC<	/	TC</	unique	TC</:1
+TCBXH	/	TCBXH/	new	-:1
+TCJ<J	/	TCJ<J/	unique	TCJ<J/:1
+TCWBH	/	TCWBH/	unique	-:6
+TCWQH	/	TCWQH/	unique	TCWQH/:3
+TDHR	/	TDHR/	unique	-:1
+THLH	/	THLH/	homonym chosen by DSS	THLH/:6
+THW	/	THW/	unique	THW/:3
+THWM	/	THWM/	unique	THWM/:11
+TJKWN	/	TJKWN/	unique	TJKWN/:1
+TJRWC	/	TJRWC/	unique	TJRWC/:4
+TKLT	/	TKLT/	unique	TKLT/:1
+TKM	/	TKM/	new	-:4
+TKMJM	/	TKMJM/	new	-:1
+TKN	[	TKN[	unique	TKN[:1
+TKWN	/	TKWN/	unique	-:25
+TLWNH	/	TLWNH/	new	TLNWT/:3
+TM	/	TM=/	homonym chosen by DSS	TMM[:7 TM=/:5
+TMJD	/	TMJD/	unique	TMJD/:14
+TMJM	/	TMJM/	homonym chosen by DSS	TMJM/:21
+TMK	[	TMK[	unique	TMK[:5
+TMM	[	TMM[	unique	TMM[:10
+TNJN	/	TNJN/	unique	TNJN/:2
+TNWBH	/	TNWBH/	unique	TNWBH/:1
+TP	/	TP/	unique	TP/:1
+TP>RT	/	TP>RT/	unique	TP>RT/:2
+TPF	[	TPF[	unique	TPF[:3
+TPL	/	TPL/|TPL=/|TPL==/	homonym undecided	-:1
+TPLH	/	TPLH/	homonym chosen by DSS	TPLH/:2
+TQ<	[	TQ<[	unique	TQ<[:15
+TQWH	/	TQWH/	homonym chosen by DSS	TQWH/:4
+TQWPH	/	TQWPH/	unique	TQWPH/:9
+TRN	/	TRN/	unique	TRN/:1
+TRW<H	/	TRW<H/	unique	TRW<H/:16
+TRWMH	/	TRWMH/	unique	TRWMH/:5
+TW<BH	/	TW<BH/	unique	TW<BH/:5
+TWCJH	/	TWCJH/	unique	TWCJH/:2
+TWGR	/	TWGR/	new	-:1
+TWK	/	TWK/	unique	TWK/:25
+TWKXH	/	TWKXH/	unique	TWKXT/:6
+TWKXT	/	TWKXT/	unique	TWKXT/:1
+TWL<H	/	TWL<H/	unique	TWL<T/:3
+TWLDWT	/	TWLDWT/	unique	TWLDWT/:6
+TWR	[	TWR[	unique	TWR[:1
+TWR==	/	TWR/	homonym chosen by DSS	TWR/:1
+TWRH	/	TWRH/	unique	TWRH/:16
+TWXLT	/	TWXLT/	unique	-:1
+TXL>JM	/	TXL>JM/	unique	TXL>JM/:1
+TXNH	/	TXNH/	homonym chosen by DSS	TXNH/:2
+TXT	/	TXT/	homonym chosen by DSS	TXT/:1
+TXTJ	/	TXTJ/	unique	TXTJ/:1
+V>V>=	[	V>V>[	unique	-:1
+VB<	[	VB<[	unique	VB<[:1
+VHR=	[	VHR[	unique	VHR[:18 VHR/:4
+VHRH	/	VHRH/	unique	VHRH/:11
+VJV	/	VJV/	unique	VJV/:2
+VL	/	VL/	unique	VL/:2
+VM>=	/	VM>/	unique	VM>/:6
+VM>H	/	VM>H/	unique	VM>H/:4
+VMN	[	VMN[	unique	VMN[:2
+VPX	/	VPX/	homonym chosen by DSS	VPX/:2
+VRD	[	VRD[	unique	VRD[:3
+VRM	/	VRM/	unique	VRM/:9
+VRP=	/	VRP/	homonym chosen by DSS	VRP/:1
+VWB	/	VWB/	homonym chosen by DSS	VWB/:12
+VWB==	/	VWB=/	homonym chosen by DSS	VWB=/:15
+VWL	[	VWL[	unique	VWL[:4
+VWX	[	VWX[	unique	VWX[:1
+W	-	W	unique	W:2334
+XB>	[	XB>[	unique	XB>[:4
+XBH	[	XBH[	unique	XBH[:2
+XBL	/	XBL=/	homonym chosen by DSS	XBL=/:2
+XBL===	/	XBL/	homonym chosen by DSS	XBL/:6
+XBL=======	/	XBL=/	homonym chosen by DSS	XBL=/:3
+XBR	[	XBR[	homonym chosen by DSS	XBR[:2
+XBR======	/	XBR=/	homonym chosen by DSS	XBR=/:1
+XCB	[	XCB[	unique	XCB[:18 -:3 MXCBH/:1
+XCBWN=	/	XCBWN==/	homonym chosen by DSS	XCBWN==/:2
+XCH	[	XCH[	unique	XCH[:3
+XCK	/	XCK/	homonym chosen by DSS	XCK/:35
+XCK=	[	XCK[	unique	XCK[:1
+XD	/	XD/	homonym chosen by DSS	XD/:1
+XD=	/	XD/	homonym chosen by DSS	XD/:3
+XDC	/	XDC=/	homonym chosen by DSS	XDC=/:9
+XDC=	/	XDC/	homonym chosen by DSS	XDC/:2
+XDC==	[	XDC[	unique	XDC[:2
+XDL	[	XDL[	unique	XDL[:2
+XDR	/	XDR/	unique	XDR/:1
+XGR	[	XGR[	unique	XGR[:1
+XGR=	/	XGR/	new	-:1
+XJ	/	XJ/	unique	XJ/:8
+XJH	[	XJH[	unique	XJH[:1
+XJH=	/	XJH/	homonym chosen by DSS	XJH/:3
+XJH==	/	XJH/|XJH=/|XJH==/	homonym undecided	XJ/:1
+XJJM	/	XJJM/	unique	-:15 XJ/:2
+XJL	/	XJL/	homonym chosen by DSS	XJL/:20
+XJL=	[	XJL[	homonym chosen by DSS	XJL[:1
+XJQ	/	XJQ/	unique	XJQ/:4
+XKM	/	XKM/	unique	XKM/:3
+XKMH	/	XKMH/	unique	XKMH/:14
+XLB	/	XLB=/	homonym chosen by DSS	XLB=/:1
+XLH	[	XLH[	unique	XLH[:2
+XLJ	/	XLJ/	homonym chosen by DSS	XLJ/:1
+XLJL	/	XLJL/	unique	XLJLH:2
+XLJPH	/	XLJPH/	unique	XLJPH/:1
+XLKH	/	XLKH/	unique	XLKH/:4
+XLL	[	XLL[	homonym chosen by DSS	XLL[:7
+XLL=	/	XLL/	unique	XLL/:28
+XLMJC	/	XLMJC/	unique	XLMJC/:2
+XLQ=	[	XLQ[	homonym chosen by DSS	XLQ[:4
+XLQ==	/	XLQ=/	homonym chosen by DSS	XLQ=/:3
+XLQ===	[	XLQ[	homonym chosen by DSS	XLQ[:1
+XLQH	/	XLQH/	homonym chosen by DSS	XLQH/:1
+XLXLH	/	XLXLH/	unique	XLXLH/:1
+XLY	[	XLY[	unique	XLY[:3
+XM	/	XM===/	homonym chosen by DSS	XM===/:1
+XM=	/	XM/|XM=/|XM==/|XM===/	homonym undecided	XMM[:2
+XMC	/	XMC/	homonym chosen by DSS	XMC/:16
+XMDH	/	XMDH/	unique	XMDH/:1
+XMH	/	XMH/	homonym chosen by DSS	XMH/:6
+XMJCJ	/	XMJCJ/	unique	XMJCJT/:2
+XMR	/	XMR==/	homonym chosen by DSS	XMR==/:14
+XMS	/	XMS/	unique	XMS/:4
+XMY=	/	XMY=/	homonym chosen by DSS	XMY=/:1
+XNH	[	XNH[	homonym chosen by DSS	XNH[:3
+XNJNH	/	XNJNH/	unique	-:1
+XNJT	/	XNJT/	unique	XNJT/:5
+XNM	-	XNM	unique	XNM:1
+XNN	[	XNN[	homonym chosen by DSS	XNN[:7
+XNP==	/	XNP=/	homonym chosen by DSS	XNP=/:1
+XNWN	/	XNWN/	homonym chosen by DSS	XNWN/:1
+XPC=	[	XPC[	unique	XPF[:2
+XPY	[	XPY[	homonym chosen by DSS	XPY[:2
+XPY=	/	XPY/	homonym chosen by DSS	XPY/:8 PWY[:1
+XPZ	[	XPZ[	unique	XPZ[:2
+XQ	/	XQ/	unique	XQ/:30 XQH/:2
+XQH=	[	XQH[	unique	XQQ[:1
+XQQ	[	XQQ[	unique	XQQ[:3
+XQR=	/	XQR/	unique	XQR/:6
+XRB	/	XRB/	homonym chosen by DSS	XRB/:13
+XRC=	/	XRC/	homonym chosen by DSS	XRC/:4
+XRJCJ	/	XRJCJ/	unique	XRJCJ/:1
+XRM	[	XRM[	homonym chosen by DSS	XRM[:1
+XRM=	/	XRM/	homonym chosen by DSS	XRM/:1
+XRPH	/	XRPH/	unique	XRPH/:3
+XRQ	[	XRQ[	unique	XRQ[:1
+XRT=	[	XRT[	unique	XRT[:4
+XRT==	/	XRT/	unique	-:1
+XRV	/	XRV/	unique	XRV/:1
+XRWL	/	XRWL/	unique	XRWL/:1
+XRWN	/	XRWN/	unique	XRWN/:6
+XRY	[	XRY[	homonym chosen by DSS	XRY[:7
+XSD	/	XSD/	homonym chosen by DSS	XSD/:55
+XSH	[	XSH[	unique	XSH[:1
+XTM	[	XTM[	unique	XTM[:1
+XTT	[	XTT[	unique	XTT[:1
+XV>	[	XV>[	unique	XV>[:5
+XV>==	/	XV>/|XV>=/	homonym undecided	XV>H/:1
+XV>H	/	XV>H/	homonym chosen by DSS	XV>H/:5
+XV>T	/	XV>T/	unique	XV>T/:6 XV>H/:1
+XWC	[	XWC[	homonym chosen by DSS	XWC[:3
+XWG	/	XWG/	unique	XWG/:1
+XWL==	/	XWL/|XWL=/|XWL==/	homonym undecided	-:1
+XWMH	/	XWMH/	unique	XWMH/:5
+XY	/	XY/	unique	XY/:6
+XYJ	/	XYJ/	homonym chosen by DSS	XYJ/:4
+XYYRH	/	XYYRH/	unique	XYYRH/:45
+XZH	[	XZH[	unique	XZH=/:4
+XZQ	[	XZQ[	unique	XZQ[:33 XZQ=/:1
+XZQ=	/	XZQ/	homonym chosen by DSS	XZQ/:5
+XZQ==	/	XZQ=/	homonym chosen by DSS	XZQ=/:3
+XZWN	/	XZWN/	unique	XZWN/:2
+Y<D	/	Y<D/	unique	Y<D/:5
+Y<D=	[	Y<D[	unique	Y<D[:2
+Y>Y>JM	/	Y>Y>JM/	unique	Y>Y>JM/:6
+YB>	/	YB>/	homonym chosen by DSS	YB>/:19
+YB>=	[	YB>[	unique	YB>/:2
+YD	/	YD/	homonym chosen by DSS	YD/:1
+YDJQ	/	YDJQ/	unique	YDJQ/:10
+YDQ	/	YDQ/	unique	YDQ/:45 YDQH/:1
+YDQ=	[	YDQ[	unique	YDQ[:11
+YDQH	/	YDQH/	unique	YDQH/:29
+YDWQ	/	YDWQ/	unique	YDWQ/:2
+YJD==	/	YJD/|YJD=/|YJD==/	homonym undecided	-:1
+YJDH	/	YJDH/	unique	YJDH/:1
+YJH	/	YJH/	unique	YJH/:1
+YJR=	/	YJR===/	homonym chosen by DSS	YJR===/:3
+YJWN	/	YJWN==/	homonym chosen by DSS	YJWN==/:2
+YJY	/	YJY/	homonym chosen by DSS	YJY/:1
+YL	/	YL/	unique	YL/:1
+YLL=	[	YLL[	homonym chosen by DSS	YLL[:1
+YLMWT	/	YLMWT/	unique	YLMWT/:1
+YM>=	[	YM>[	unique	YM>/:1
+YM>==	/	YM>/	homonym chosen by DSS	YM>/:1
+YM>H	/	YM>H/	unique	YM>=/:1
+YMD=	[	YMD[	unique	YMD[:2
+YMJD	/	YMJD/	homonym chosen by DSS	YMJD/:3
+YMJM	/	YMJM/	unique	-:1
+YN<	[	YN<[	unique	-:3
+YPH	[	YPH=[	homonym chosen by DSS	YPH=[:1
+YPH=	[	YPH=[	homonym chosen by DSS	YPH=[:3
+YPWN	/	YPWN/	homonym chosen by DSS	YPWN/:1
+YPWR	/	YPWR/	homonym chosen by DSS	YPWR/:2
+YR	/	YR=/	homonym chosen by DSS	YR=/:6
+YR==	/	YR/|YR=/|YR==/|YR===/|YR====/|YR=====/	homonym undecided	YRH/:1
+YRH	/	YRH/	homonym chosen by DSS	YRH/:11
+YRR	[	YRR[	homonym chosen by DSS	YRR[:1
+YRR=	[	YRR[	homonym chosen by DSS	YRR[:1
+YRWR	/	YRWR/	homonym chosen by DSS	YRWR/:1
+YRX	[	YRX[	unique	YRX[:2
+YWH	[	YWH[	unique	YWH[:14
+YWQ	[	YWQ[	unique	YWQH/:1
+YWQH	/	YWQH/	unique	YWQH/:2
+YWR	/	YWR/	homonym chosen by DSS	YWR/:2
+YWRH	/	YWRH/	unique	-:5
+YWY	[	YWY[	homonym chosen by DSS	YWY[:1
+YXH==	[	YXH[	unique	-:1
+Z<M	/	Z<M/	unique	Z<M/:1
+Z<M=	[	Z<M[	unique	Z<M[:4
+Z<P	/	Z<P/	homonym chosen by DSS	Z<P/:2
+Z<VWV	/	Z<VWV/	new	-:1
+Z<WH	/	Z<WH/	unique	Z<WH/:2
+Z>T	-	Z>T	unique	ZH:9
+ZBL=	/	ZBL/	homonym chosen by DSS	ZBL/:4
+ZBX	/	ZBX/	homonym chosen by DSS	ZBX/:2
+ZD	/	ZD/	unique	ZD/:1
+ZDWN	/	ZDWN/	unique	ZDWN/:2
+ZH	-	ZH	homonym chosen by DSS	ZH:22
+ZHB	/	ZHB/	unique	ZHB/:7
+ZJDWN	/	ZJDWN/	unique	-:1
+ZKH	[	ZKH[	unique	ZKH[:1
+ZKK	[	ZKK[	unique	ZKH[:2
+ZKR	[	ZKR[	unique	ZKR[:5
+ZKR=	/	ZKR=/	homonym chosen by DSS	ZKR=/:2
+ZKR==	/	ZKR/	homonym chosen by DSS	ZKR/:1
+ZKRWN	/	ZKRWN/	unique	ZKRWN/:6
+ZL<PH	/	ZL<PH/	unique	ZL<PH/:1
+ZMH	/	ZMH/	homonym chosen by DSS	ZMH/:2
+ZMM	[	ZMM[	unique	ZMM[:4
+ZMR	[	ZMR[	homonym chosen by DSS	ZMR[:3
+ZNWT	/	ZNWT/	unique	ZNWT/:2
+ZNX	[	ZNX[	homonym chosen by DSS	ZNX[:3
+ZPT	/	ZPT/	unique	ZPT/:1
+ZQ	/	ZQ/	unique	ZQJM/:1
+ZQJM	/	ZQJM/	unique	ZQJM/:2
+ZQJM=	/	ZQJM/	unique	ZQJM/:1
+ZQN	/	ZQN/	homonym chosen by DSS	ZQN/:2
+ZQP	[	ZQP[	unique	ZQP[:1
+ZQQ	[	ZQQ[	unique	ZQQ[:4
+ZR	/	ZR/	homonym chosen by DSS	ZR/:2
+ZR<	/	ZR</	unique	ZR</:4
+ZRM	/	ZRM/	unique	ZRM/:3
+ZRQ==	/	ZRQ/	new	-:5
+ZRW<	/	ZRW</	homonym chosen by DSS	ZRW</:4
+ZW<	[	ZW<[	unique	ZW<[:4
+ZWLH	/	ZWLH/	unique	ZWLH/:5
+ZWR	[	ZWR[	homonym chosen by DSS	ZWR[:1
+ZXL	[	ZXL[	unique	ZXL[:1

@@ -17,7 +17,7 @@ api.makeAvailableIn(globals())
 
 Fdss, Ldss = api.F, api.L
 
-PARSED_SCROLLS = ('11Q19', '1Qisaa', '1QpHab')
+PARSED_SCROLLS = ('11Q19', '1Qisaa', '1QpHab', '1QS', '1QM', '1QHa')
 MORPHEME_FEATURES = ('g_cons', 'g_pfm_etcbc', 'g_vbs_etcbc', 'g_lex_etcbc', 'g_vbe_etcbc',
                      'g_nme_etcbc', 'uvf_etcbc', 'g_prs_etcbc')
 
@@ -68,11 +68,13 @@ def test_allowed_values_for_feature_vt_etcbc():
  
       
 def test_allowed_values_for_feature_vs_etcbc_hebrew():
-    """Test for legal values of feature vt_etcbc."""
-    assert {Fdss.vs_etcbc.v(w) for w in Fdss.otype.s('word') if Fdss.lang_etcbc.v(w) == 'Hebrew'} == {'NA', 'hif',
-                            'hit', 'hitopel', 'hitpalpel', 'hof', 'hotp', 'hpealal', 'hsht', 'htpo', 'nif', 'nit',
-                            'palel', 'pasq', 'peal', 'piel', 'pilpel', 'poal', 'poel', 'polal', 'polel', 'pual',
-                            'pulal', 'qal', 'tif', 'unknown'}
+    """Test for legal values of feature vs_etcbc.
+
+    Since 2.0.4 the stems follow the BHSA: polel, pilpel, hitpolel etc. are piel, hitpael etc.
+    """
+    assert {Fdss.vs_etcbc.v(w) for w in Fdss.otype.s('word') if Fdss.lang_etcbc.v(w) == 'Hebrew'} <= {'NA', 'hif',
+                            'hit', 'hof', 'hotp', 'hpealal', 'hsht', 'htpo', 'nif', 'nit',
+                            'pasq', 'peal', 'piel', 'poal', 'poel', 'pual', 'qal', 'tif', 'unknown'}
 
 
 def test_g_cons_is_equal_to_individual_cons():
@@ -156,6 +158,20 @@ def test_verbs_have_stem_and_tense_in_parsed_scrolls():
     bad = [w for w in parsed_scroll_words()
            if Fdss.sp_etcbc.v(w) == 'verb' and Fdss.scroll.v(Ldss.u(w, 'scroll')[0]) == '1QpHab'
            and (Fdss.vs_etcbc.v(w) in {None, '', 'NA'} or Fdss.vt_etcbc.v(w) in {None, '', 'NA'})]
+
+    assert not bad, f"Failing word nodes: {bad}"
+
+
+BHSA_STEMS = {'NA', 'unknown', 'qal', 'nif', 'piel', 'pual', 'hit', 'hif', 'hof', 'hsht',
+              'hotp', 'pasq', 'poel', 'poal', 'tif', 'nit', 'htpo'}
+
+
+def test_parsed_scrolls_follow_bhsa_stems_and_participles():
+    """Polel, hitpolel etc. are piel, hitpael etc.; passive stems have passive participles."""
+    bad = [w for w in parsed_scroll_words()
+           if Fdss.morph_etcbc.v(w) and (
+               Fdss.vs_etcbc.v(w) not in BHSA_STEMS
+               or (Fdss.vt_etcbc.v(w) == 'ptca' and Fdss.vs_etcbc.v(w) in {'pual', 'hof', 'pasq'}))]
 
     assert not bad, f"Failing word nodes: {bad}"
 

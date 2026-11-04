@@ -51,6 +51,8 @@ Start with the
   for providing his data files to us;
 * Thijs Amersfoort (11Q19, 1Qisaa) and Saulo de Oliveira Cantanhêde (1QpHab)
   for correcting the morphological parsing of these scrolls;
+* the encoders of the ETCBC [extrabiblical](https://github.com/ETCBC/extrabiblical) dataset
+  (Constantijn Sikkel and others) for the parsing of 1QS, 1QM and 1QHa;
 
 **N.B.:** Releases of this repo have been archived at
 the
