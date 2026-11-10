@@ -1,4 +1,5 @@
 import os
+import re
 import pytest
 
 from tf.fabric import Fabric
@@ -110,6 +111,23 @@ def test_morphemes_add_up_to_g_cons():
         assert reconstructed == g_cons, (
             f"Word {w}: reconstructed '{reconstructed}' != g_cons '{g_cons}'"
         )
+
+def realise(morph):
+    """The consonants of a morph string, as in programs/morphemes.py."""
+    morph = re.sub(r":[a-z]+", "", morph)
+    morph = re.sub(r"\([A-Z<>]", "", morph)
+    return re.sub(r"[^A-Z<>]", "", morph)
+
+
+def test_morph_etcbc_realises_g_cons_in_1Qisaa():
+    """morph_etcbc of 1Qisaa realises g_cons (2.0.5, programs/fixMorph1Qisaa.py)."""
+    scroll = [s for s in Fdss.otype.s('scroll') if Fdss.scroll.v(s) == '1Qisaa'][0]
+    bad = [(w, Fdss.morph_etcbc.v(w), Fdss.g_cons.v(w)) for w in Ldss.d(scroll, 'word')
+           if Fdss.morph_etcbc.v(w) and Fdss.g_cons.v(w)
+           and realise(Fdss.morph_etcbc.v(w)) != Fdss.g_cons.v(w)]
+
+    assert not bad, f"Failing word nodes: {bad}"
+
 
 def test_parsed_words_have_g_cons():
     bad = [w for w in parsed_scroll_words()
